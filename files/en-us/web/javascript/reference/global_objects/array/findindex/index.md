@@ -43,22 +43,22 @@ findIndex(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callbackFn`
+*   `callbackFn`
 
-  - : A function to execute on each value in the array until the function
-    returns `true`, indicating that the satisfying element was found.
+    *   : A function to execute on each value in the array until the function
+        returns `true`, indicating that the satisfying element was found.
 
-    It takes three arguments:
+        It takes three arguments:
 
-    - `element`
-      - : The current element being processed in the array.
-    - `index` {{optional_inline}}
-      - : The index of the current element being processed in the array.
-    - `array` {{optional_inline}}
-      - : The array `findIndex()` was called upon.
+        *   `element`
+            *   : The current element being processed in the array.
+        *   `index` {{optional_inline}}
+            *   : The index of the current element being processed in the array.
+        *   `array` {{optional_inline}}
+            *   : The array `findIndex()` was called upon.
 
-- `thisArg` {{optional_inline}}
-  - : Optional object to use as `this` when executing `callbackFn`.
+*   `thisArg` {{optional_inline}}
+    *   : Optional object to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -147,7 +147,7 @@ console.log(fruits[index]); // blueberries
 
 ## See also
 
-- A polyfill of `Array.prototype.findIndex` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.find()")}}
-- {{jsxref("Array.prototype.indexOf()")}}
+*   A polyfill of `Array.prototype.findIndex` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.find()")}}
+*   {{jsxref("Array.prototype.indexOf()")}}

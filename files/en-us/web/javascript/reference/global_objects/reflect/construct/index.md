@@ -28,15 +28,15 @@ Reflect.construct(target, argumentsList, newTarget)
 
 ### Parameters
 
-- `target`
-  - : The target function to call.
-- `argumentsList`
-  - : An array-like object specifying the arguments with which `target` should
-    be called.
-- `newTarget` {{optional_inline}}
-  - : The constructor whose prototype should be used. See also the
-    [`new.target`](/en-US/docs/Web/JavaScript/Reference/Operators/new.target)
-    operator. If `newTarget` is not present, its value defaults to `target`.
+*   `target`
+    *   : The target function to call.
+*   `argumentsList`
+    *   : An array-like object specifying the arguments with which `target` should
+        be called.
+*   `newTarget` {{optional_inline}}
+    *   : The constructor whose prototype should be used. See also the
+        [`new.target`](/en-US/docs/Web/JavaScript/Reference/Operators/new.target)
+        operator. If `newTarget` is not present, its value defaults to `target`.
 
 ### Return value
 
@@ -56,9 +56,10 @@ of arguments. (This would also be possible by using the
 combined with the
 [`new` operator](/en-US/docs/Web/JavaScript/Reference/Operators/new).)
 
-<pre class="brush: js">let obj = new Foo(...<var>args</var>)
-let obj = Reflect.construct(Foo, <var>args</var>)
-</pre>
+```js
+let obj = new Foo(...args)
+let obj = Reflect.construct(Foo, args)
+```
 
 ### `Reflect.construct()` vs `Object.create()`
 
@@ -113,7 +114,8 @@ When invoking `Reflect.construct()`, on the other hand, the `new.target`
 operator will point to the `newTarget` parameter if supplied, or `target` if
 not.
 
-<pre class="brush: js">function OneClass() {
+```js
+function OneClass() {
     console.log('OneClass')
     console.log(new.target)
 }
@@ -122,22 +124,22 @@ function OtherClass() {
     console.log(new.target)
 }
 
-let obj1 = Reflect.construct(OneClass, <var>args</var>)
+let obj1 = Reflect.construct(OneClass, args)
 // Output:
 //     OneClass
 //     function OneClass { ... }
 
-let obj2 = Reflect.construct(OneClass, <var>args</var>, OtherClass)
+let obj2 = Reflect.construct(OneClass, args, OtherClass)
 // Output:
 //     OneClass
 //     function OtherClass { ... }
 
 let obj3 = Object.create(OtherClass.prototype);
-OneClass.apply(obj3, <var>args</var>)
+OneClass.apply(obj3, args)
 // Output:
 //     OneClass
 //     undefined
-</pre>
+```
 
 ## Examples
 
@@ -159,8 +161,8 @@ d.getFullYear()    // 1776
 
 ## See also
 
-- A polyfill of `Reflect.construct` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- {{jsxref("Operators/new", "new")}}
-- [`new.target`](/en-US/docs/Web/JavaScript/Reference/Operators/new.target)
+*   A polyfill of `Reflect.construct` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   {{jsxref("Operators/new", "new")}}
+*   [`new.target`](/en-US/docs/Web/JavaScript/Reference/Operators/new.target)

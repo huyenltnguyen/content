@@ -13,19 +13,21 @@ browser-compat: javascript.builtins.RegExp.@@match
 ---
 {{JSRef}}
 
-The **`[@@match]()`** method retrieves the matches when matching a _string_
-against a _regular expression_.
+The **`[@@match]()`** method retrieves the matches when matching a *string*
+against a *regular expression*.
 
 {{EmbedInteractiveExample("pages/js/regexp-prototype-@@match.html")}}
 
 ## Syntax
 
-<pre class="brush: js"><var>regexp</var>[Symbol.match](<var>str</var>)</pre>
+```js
+regexp[Symbol.match](str)
+```
 
 ### Parameters
 
-- `str`
-  - : A {{jsxref("String")}} that is a target of the match.
+*   `str`
+    *   : A {{jsxref("String")}} that is a target of the match.
 
 ### Return value
 
@@ -52,7 +54,7 @@ This method exists for customizing match behavior within `RegExp` subclasses.
 
 ### Direct call
 
-This method can be used in _almost_ the same way as
+This method can be used in *almost* the same way as
 {{jsxref("String.prototype.match()")}}, except the different
 `this` and the different arguments order.
 
@@ -99,11 +101,11 @@ console.log(result.group(3)); // 02
 
 ## See also
 
-- A polyfill of `RegExp.prototype[@@match]` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.match()")}}
-- {{jsxref("RegExp.prototype.@@replace()", "RegExp.prototype[@@replace]()")}}
-- {{jsxref("RegExp.prototype.@@search()", "RegExp.prototype[@@search]()")}}
-- {{jsxref("RegExp.prototype.@@split()", "RegExp.prototype[@@split]()")}}
-- {{jsxref("RegExp.prototype.exec()")}}
-- {{jsxref("RegExp.prototype.test()")}}
+*   A polyfill of `RegExp.prototype[@@match]` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.match()")}}
+*   {{jsxref("RegExp.prototype.@@replace()", "RegExp.prototype[@@replace]()")}}
+*   {{jsxref("RegExp.prototype.@@search()", "RegExp.prototype[@@search]()")}}
+*   {{jsxref("RegExp.prototype.@@split()", "RegExp.prototype[@@split]()")}}
+*   {{jsxref("RegExp.prototype.exec()")}}
+*   {{jsxref("RegExp.prototype.test()")}}

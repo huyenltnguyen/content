@@ -11,7 +11,7 @@ browser-compat: javascript.builtins.WeakSet
 ---
 {{JSRef}}
 
-The **`WeakSet`** object lets you store weakly held _objects_ in a collection.
+The **`WeakSet`** object lets you store weakly held *objects* in a collection.
 
 ## Description
 
@@ -21,14 +21,14 @@ objects in a `WeakSet`'s collection are unique.
 
 The main differences to the {{jsxref("Set")}} object are:
 
-- `WeakSet`s are collections of **objects only**. They cannot contain arbitrary
-  values of any type, as {{jsxref("Set")}}s can.
-- The `WeakSet` is _weak_, meaning references to objects in a `WeakSet` are held
-  _weakly_. If no other references to an object stored in the `WeakSet` exist,
-  those objects can be garbage collected.
+*   `WeakSet`s are collections of **objects only**. They cannot contain arbitrary
+    values of any type, as {{jsxref("Set")}}s can.
+*   The `WeakSet` is *weak*, meaning references to objects in a `WeakSet` are held
+    *weakly*. If no other references to an object stored in the `WeakSet` exist,
+    those objects can be garbage collected.
 
-  > **Note:** This also means that there is no list of current objects stored in
-  > the collection. `WeakSets` are not enumerable.
+    > **Note:** This also means that there is no list of current objects stored in
+    > the collection. `WeakSets` are not enumerable.
 
 ### Use case: Detecting circular references
 
@@ -75,20 +75,19 @@ object references, especially if a very large number of objects is involved.
 
 ## Constructor
 
-- {{jsxref("WeakSet/WeakSet", "WeakSet()")}}
-  - : Creates a new `WeakSet` object.
+*   {{jsxref("WeakSet/WeakSet", "WeakSet()")}}
+    *   : Creates a new `WeakSet` object.
 
 ## Instance methods
 
-- {{jsxref("WeakSet.add", "WeakSet.prototype.add(<var>value</var>)")}}
-  - : Appends `value` to the `WeakSet` object.
-- {{jsxref("WeakSet.delete", "WeakSet.prototype.delete(<var>value</var>)")}}
-  - : Removes `value` from the `WeakSet`.
-    <code>WeakSet.prototype.has(<var>value</var>)</code> will return `false`
-    afterwards.
-- {{jsxref("WeakSet.has", "WeakSet.prototype.has(<var>value</var>)")}}
-  - : Returns a boolean asserting whether `value` is present in the `WeakSet`
-    object or not.
+*   {{jsxref("WeakSet.add", "WeakSet.prototype.add(<var>value</var>)")}}
+    *   : Appends `value` to the `WeakSet` object.
+*   {{jsxref("WeakSet.delete", "WeakSet.prototype.delete(<var>value</var>)")}}
+    *   : Removes `value` from the `WeakSet`. <code>WeakSet.prototype.has(<var>value</var>)</code> will return `false`
+        afterwards.
+*   {{jsxref("WeakSet.has", "WeakSet.prototype.has(<var>value</var>)")}}
+    *   : Returns a boolean asserting whether `value` is present in the `WeakSet`
+        object or not.
 
 ## Examples
 
@@ -123,8 +122,8 @@ same object\***. And so they are both added to the set.
 
 ## See also
 
-- A polyfill of `WeakSet` is available in
-  [`core-js`](https://github.com/zloirock/core-js#weakset)
-- {{jsxref("Map")}}
-- {{jsxref("Set")}}
-- {{jsxref("WeakMap")}}
+*   A polyfill of `WeakSet` is available in
+    [`core-js`](https://github.com/zloirock/core-js#weakset)
+*   {{jsxref("Map")}}
+*   {{jsxref("Set")}}
+*   {{jsxref("WeakMap")}}

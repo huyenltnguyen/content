@@ -22,11 +22,11 @@ unregister(unregisterToken);
 
 ### Parameters
 
-- `unregisterToken`
-  - : The token used with the
-    {{jsxref("FinalizationRegistry.prototype.register",
+*   `unregisterToken`
+    *   : The token used with the
+        {{jsxref("FinalizationRegistry.prototype.register",
         "register")}}
-    method when registering the target object.
+        method when registering the target object.
 
 ### Return value
 
@@ -125,4 +125,4 @@ unregister token:
 
 ## See also
 
-- {{jsxref("FinalizationRegistry")}}
+*   {{jsxref("FinalizationRegistry")}}

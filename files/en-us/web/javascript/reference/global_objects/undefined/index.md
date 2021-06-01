@@ -25,7 +25,7 @@ undefined
 
 ## Description
 
-`undefined` is a property of the _global object_. That is, it is a variable in
+`undefined` is a property of the *global object*. That is, it is a variable in
 global scope. The initial value of `undefined` is the primitive value
 `{{Glossary("Undefined", "undefined")}}`.
 
@@ -79,8 +79,8 @@ else {
 }
 ```
 
-> **Note:** The _strict equality_ operator (as opposed to the _standard
-> equality_ operator) must be used here, because `x == undefined` also checks
+> **Note:** The *strict equality* operator (as opposed to the *standard
+> equality* operator) must be used here, because `x == undefined` also checks
 > whether `x` is `null`, while strict equality doesn't. This is because `null`
 > is not equivalent to `undefined`.
 >
@@ -120,7 +120,7 @@ is declared in an enclosing context.
 The global scope is bound to the
 {{jsxref("globalThis", "global object", "", 1)}}, so checking
 the existence of a variable in the global context can be done by checking the
-existence of a property on the _global object_, using the
+existence of a property on the *global object*, using the
 {{jsxref("Operators/in", "in")}} operator, for instance:
 
 ```js
@@ -156,5 +156,5 @@ if (y === void 0) {
 
 ## See also
 
-- JavaScript's {{Glossary("Primitive", "primitive types")}}
-- {{jsxref("null")}}
+*   JavaScript's {{Glossary("Primitive", "primitive types")}}
+*   {{jsxref("null")}}

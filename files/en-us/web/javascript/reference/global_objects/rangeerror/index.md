@@ -20,40 +20,40 @@ function that does not allow a range that includes the value.
 
 This can be encountered when:
 
-- passing a value that is not one of the allowed string values
-  to {{jsxref("String.prototype.normalize()")}}, or
-- when attempting to create an array of an illegal length with the
-  {{jsxref("Array")}} constructor, or
-- when passing bad values to the numeric methods
-  {{jsxref("Number.prototype.toExponential()")}},
-  {{jsxref("Number.prototype.toFixed()")}} or
-  {{jsxref("Number.prototype.toPrecision()")}}.
+*   passing a value that is not one of the allowed string values
+    to {{jsxref("String.prototype.normalize()")}}, or
+*   when attempting to create an array of an illegal length with the
+    {{jsxref("Array")}} constructor, or
+*   when passing bad values to the numeric methods
+    {{jsxref("Number.prototype.toExponential()")}},
+    {{jsxref("Number.prototype.toFixed()")}} or
+    {{jsxref("Number.prototype.toPrecision()")}}.
 
 ## Constructor
 
-- {{jsxref("RangeError/RangeError", "RangeError()")}}
-  - : Creates a new `RangeError` object.
+*   {{jsxref("RangeError/RangeError", "RangeError()")}}
+    *   : Creates a new `RangeError` object.
 
 ## Instance properties
 
-- {{jsxref("Error.prototype.message", "RangeError.prototype.message")}}
-  - : Error message. Although ECMA-262 specifies that
-    {{jsxref("RangeError")}} should provide its own `message` property,
-    in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
-    {{jsxref("Error.prototype.message")}}.
-- {{jsxref("Error.prototype.name", "RangeError.prototype.name")}}
-  - : Error name. Inherited from {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.fileName", "RangeError.prototype.fileName")}}
-  - : Path to file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.lineNumber", "RangeError.prototype.lineNumber")}}
-  - : Line number in file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.columnNumber", "RangeError.prototype.columnNumber")}}
-  - : Column number in line that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.stack", "RangeError.prototype.stack")}}
-  - : Stack trace. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.message", "RangeError.prototype.message")}}
+    *   : Error message. Although ECMA-262 specifies that
+        {{jsxref("RangeError")}} should provide its own `message` property,
+        in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
+        {{jsxref("Error.prototype.message")}}.
+*   {{jsxref("Error.prototype.name", "RangeError.prototype.name")}}
+    *   : Error name. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.fileName", "RangeError.prototype.fileName")}}
+    *   : Path to file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.lineNumber", "RangeError.prototype.lineNumber")}}
+    *   : Line number in file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.columnNumber", "RangeError.prototype.columnNumber")}}
+    *   : Column number in line that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.stack", "RangeError.prototype.stack")}}
+    *   : Stack trace. Inherited from {{jsxref("Error")}}.
 
 ## Examples
 
@@ -115,9 +115,9 @@ catch(error)
 
 ## See also
 
-- {{jsxref("Error")}}
-- {{jsxref("Array")}}
-- {{jsxref("Number.toExponential()")}}
-- {{jsxref("Number.toFixed()")}}
-- {{jsxref("Number.toPrecision()")}}
-- {{jsxref("String.prototype.normalize()")}}
+*   {{jsxref("Error")}}
+*   {{jsxref("Array")}}
+*   {{jsxref("Number.toExponential()")}}
+*   {{jsxref("Number.toFixed()")}}
+*   {{jsxref("Number.toPrecision()")}}
+*   {{jsxref("String.prototype.normalize()")}}

@@ -31,8 +31,7 @@ time zone, and as evaluated in the local time zone.
 ## Description
 
 <code><var>date</var>.getTimezoneOffset()</code> returns the difference, in
-minutes, between <var>date</var> as evaluated in the UTC time zone, and
-<var>date</var> as evaluated in the local time zone — that is, the time zone of
+minutes, between <var>date</var> as evaluated in the UTC time zone, and <var>date</var> as evaluated in the local time zone — that is, the time zone of
 the host system in which the browser is being used (if the code is run from the
 Web in a browser), or otherwise the host system of whatever JavaScript runtime
 (for example, a Node.js environment) the code is executed in.
@@ -51,36 +50,35 @@ In a time zone that annually shifts in and out of Daylight Saving Time (DST),
 the number of minutes returned by calling `getTimezoneOffset()` can vary.
 
 Consider a given local time zone and a date <var>date1</var> that are both in
-DST, and consider <var>minutes</var>, the number of minutes returned by calling
-<code><var>date1</var>.getTimezoneOffset()</code>; then:
+DST, and consider <var>minutes</var>, the number of minutes returned by calling <code><var>date1</var>.getTimezoneOffset()</code>; then:
 
-- If the local time zone is currently in DST, but a given date
+*   If the local time zone is currently in DST, but a given date
 
-  <var>date2</var>
+    <var>date2</var>
 
-  is _not_ in DST, then the number of minutes returned by
+    is *not* in DST, then the number of minutes returned by
 
-  <code><var>date2</var>.getTimezoneOffset()</code>
+    <code><var>date2</var>.getTimezoneOffset()</code>
 
-  is
+    is
 
-  <var>minutes</var>
+    <var>minutes</var>
 
-  ± 60.
+    ± 60.
 
-- If the local time zone is _not_ currently in DST, but a given date
+*   If the local time zone is *not* currently in DST, but a given date
 
-  <var>date3</var>
+    <var>date3</var>
 
-  is in DST, then the number of minutes returned by
+    is in DST, then the number of minutes returned by
 
-  <code><var>date3</var>.getTimezoneOffset()</code>
+    <code><var>date3</var>.getTimezoneOffset()</code>
 
-  is
+    is
 
-  <var>minutes</var>
+    <var>minutes</var>
 
-  ± 60.
+    ± 60.
 
 In a time zone that doesn’t annually shift in and out of Daylight Saving Time
 (DST), the number of minutes returned by calling `getTimezoneOffset()` always
@@ -114,4 +112,4 @@ currentLocalDate.getTimezoneOffset() === laborDay2016at0324GMTminus2.getTimezone
 
 ## See also
 
-- {{jsxref("Date")}}
+*   {{jsxref("Date")}}

@@ -15,33 +15,33 @@ the JavaScript engine.
 
 Example cases are mostly when something is too large, e.g.:
 
-- "too many switch cases",
-- "too many parentheses in regular expression",
-- "array initializer too large",
-- "too much recursion".
+*   "too many switch cases",
+*   "too many parentheses in regular expression",
+*   "array initializer too large",
+*   "too much recursion".
 
 ## Constructor
 
-- {{jsxref("InternalError/InternalError", "InternalError()")}}
-  - : Creates a new `InternalError` object.
+*   {{jsxref("InternalError/InternalError", "InternalError()")}}
+    *   : Creates a new `InternalError` object.
 
 ## Instance properties
 
-- {{jsxref("Error.prototype.message", "InternalError.prototype.message")}}
-  - : Error message. Inherited from {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.name", "InternalError.prototype.name")}}
-  - : Error name. Inherited from {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.fileName", "InternalError.prototype.fileName")}}
-  - : Path to file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.lineNumber", "InternalError.prototype.lineNumber")}}
-  - : Line number in file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.columnNumber", "InternalError.prototype.columnNumber")}}
-  - : Column number in line that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.stack", "InternalError.prototype.stack")}}
-  - : Stack trace. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.message", "InternalError.prototype.message")}}
+    *   : Error message. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.name", "InternalError.prototype.name")}}
+    *   : Error name. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.fileName", "InternalError.prototype.fileName")}}
+    *   : Path to file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.lineNumber", "InternalError.prototype.lineNumber")}}
+    *   : Line number in file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.columnNumber", "InternalError.prototype.columnNumber")}}
+    *   : Column number in line that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.stack", "InternalError.prototype.stack")}}
+    *   : Stack trace. Inherited from {{jsxref("Error")}}.
 
 ## Examples
 
@@ -86,5 +86,5 @@ Not part of any standard.
 
 ## See also
 
-- {{jsxref("Error")}}
-- [InternalError: too much recursion](/en-US/docs/Web/JavaScript/Reference/Errors/Too_much_recursion)
+*   {{jsxref("Error")}}
+*   [InternalError: too much recursion](/en-US/docs/Web/JavaScript/Reference/Errors/Too_much_recursion)

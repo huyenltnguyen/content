@@ -29,17 +29,17 @@ A string representing the source code of the array.
 
 The `toSource` method returns the following values:
 
-- For the built-in {{jsxref("Array")}} object, `toSource` returns the
-  following string indicating that the source code is not available:
+*   For the built-in {{jsxref("Array")}} object, `toSource` returns the
+    following string indicating that the source code is not available:
 
-  ```js
-    function Array() {
-        [native code]
-    }
+    ```js
+      function Array() {
+          [native code]
+      }
     ```
 
-- For instances of {{jsxref("Array")}}, `toSource` returns a string
-  representing the source code.
+*   For instances of {{jsxref("Array")}}, `toSource` returns a string
+    representing the source code.
 
 This method is usually called internally by JavaScript and not explicitly in
 code. You can call `toSource` while debugging to examine the contents of an
@@ -68,5 +68,5 @@ Not part of any standard. Implemented in JavaScript 1.3.
 
 ## See also
 
-- {{jsxref("Object.prototype.toSource()")}}
-- {{jsxref("Array.prototype.toString()")}}
+*   {{jsxref("Object.prototype.toSource()")}}
+*   {{jsxref("Array.prototype.toString()")}}

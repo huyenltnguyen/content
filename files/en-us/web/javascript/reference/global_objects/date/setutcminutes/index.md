@@ -26,16 +26,16 @@ setUTCMinutes(minutesValue, secondsValue, msValue)
 
 ### Parameters
 
-- `minutesValue`
-  - : An integer between 0 and 59, representing the minutes.
-- `secondsValue`
-  - : Optional. An integer between 0 and 59, representing the seconds. If you
-    specify the `secondsValue` parameter, you must also specify the
-    `minutesValue`.
-- `msValue`
-  - : Optional. A number between 0 and 999, representing the milliseconds. If
-    you specify the `msValue` parameter, you must also specify the
-    `minutesValue` and `secondsValue`.
+*   `minutesValue`
+    *   : An integer between 0 and 59, representing the minutes.
+*   `secondsValue`
+    *   : Optional. An integer between 0 and 59, representing the seconds. If you
+        specify the `secondsValue` parameter, you must also specify the
+        `minutesValue`.
+*   `msValue`
+    *   : Optional. A number between 0 and 999, representing the milliseconds. If
+        you specify the `msValue` parameter, you must also specify the
+        `minutesValue` and `secondsValue`.
 
 ### Return value
 
@@ -76,5 +76,5 @@ theBigDay.setUTCMinutes(43);
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCMinutes()")}}
-- {{jsxref("Date.prototype.setMinutes()")}}
+*   {{jsxref("Date.prototype.getUTCMinutes()")}}
+*   {{jsxref("Date.prototype.setMinutes()")}}

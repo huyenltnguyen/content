@@ -16,7 +16,7 @@ browser-compat: javascript.builtins.TypedArray.indexOf
 The **`indexOf()`** method returns the first index at which a given element can
 be found in the typed array, or -1 if it is not present. This method has the
 same algorithm as {{jsxref("Array.prototype.indexOf()")}}.
-_TypedArray_ is one of the
+*TypedArray* is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
 
@@ -31,16 +31,16 @@ indexOf(searchElement, fromIndex)
 
 ### Parameters
 
-- `searchElement`
-  - : Element to locate in the typed array.
-- `fromIndex` {{optional_inline}}
-  - : The index to start the search at. If the index is greater than or equal to
-    the typed array's length, -1 is returned, which means the typed array will
-    not be searched. If the provided index value is a negative number, it is
-    taken as the offset from the end of the typed array. Note: if the provided
-    index is negative, the typed array is still searched from front to back. If
-    the calculated index is less than 0, then the whole typed array will be
-    searched. Default: 0 (entire typed array is searched).
+*   `searchElement`
+    *   : Element to locate in the typed array.
+*   `fromIndex` {{optional_inline}}
+    *   : The index to start the search at. If the index is greater than or equal to
+        the typed array's length, -1 is returned, which means the typed array will
+        not be searched. If the provided index value is a negative number, it is
+        taken as the offset from the end of the typed array. Note: if the provided
+        index is negative, the typed array is still searched from front to back. If
+        the calculated index is less than 0, then the whole typed array will be
+        searched. Default: 0 (entire typed array is searched).
 
 ### Return value
 
@@ -75,7 +75,7 @@ uint8.indexOf(2, -3); // 0
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.indexOf` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray.prototype.lastIndexOf()")}}
-- {{jsxref("Array.prototype.indexOf()")}}
+*   A polyfill of `TypedArray.prototype.indexOf` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray.prototype.lastIndexOf()")}}
+*   {{jsxref("Array.prototype.indexOf()")}}

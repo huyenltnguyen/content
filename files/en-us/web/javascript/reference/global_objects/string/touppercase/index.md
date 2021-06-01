@@ -28,10 +28,10 @@ A new string representing the calling string converted to upper case.
 
 ### Exceptions
 
-- {{jsxref("TypeError")}}
-  - : When called on {{jsxref("null")}} or
-    {{jsxref("undefined")}}, for example,
-    `String.prototype.toUpperCase.call(undefined)`.
+*   {{jsxref("TypeError")}}
+    *   : When called on {{jsxref("null")}} or
+        {{jsxref("undefined")}}, for example,
+        `String.prototype.toUpperCase.call(undefined)`.
 
 ## Description
 
@@ -75,6 +75,6 @@ console.log(a, b);
 
 ## See also
 
-- {{jsxref("String.prototype.toLocaleLowerCase()")}}
-- {{jsxref("String.prototype.toLocaleUpperCase()")}}
-- {{jsxref("String.prototype.toLowerCase()")}}
+*   {{jsxref("String.prototype.toLocaleLowerCase()")}}
+*   {{jsxref("String.prototype.toLocaleUpperCase()")}}
+*   {{jsxref("String.prototype.toLowerCase()")}}

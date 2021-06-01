@@ -27,14 +27,15 @@ A string containing the source code of the error.
 ### Using toSource
 
 Calling the `toSource` method of an {{jsxref("Error")}} instance (including
-_[NativeErrors](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Error_types)_)
+*[NativeErrors](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Error_types)*)
 will return a string containing the source code of the error. This string can be
 evaluated to create an (approximately) equal object. Naturally, the string
 containing the source follows the structure of the {{jsxref("Error")}}
 constructor. For example:
 
-<pre class="brush: js">(new<em>name</em>(<em>message</em> ,<em>fileName</em>,<em>lineNumber</em>))
-</pre>
+```js
+(newname(message ,fileName,lineNumber))
+```
 
 where these attributes correspond to the respective properties of the error
 instance.
@@ -54,8 +55,8 @@ Not part of any standard.
 
 ## See also
 
-- {{jsxref("Error.prototype.fileName")}}
-- {{jsxref("Error.prototype.lineNumber")}}
-- {{jsxref("Error.prototype.message")}}
-- {{jsxref("Error.prototype.name")}}
-- {{jsxref("Object.prototype.toSource()")}}
+*   {{jsxref("Error.prototype.fileName")}}
+*   {{jsxref("Error.prototype.lineNumber")}}
+*   {{jsxref("Error.prototype.message")}}
+*   {{jsxref("Error.prototype.name")}}
+*   {{jsxref("Object.prototype.toSource()")}}

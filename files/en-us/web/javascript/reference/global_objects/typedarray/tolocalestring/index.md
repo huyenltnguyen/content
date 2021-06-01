@@ -18,7 +18,7 @@ locale-specific string (such as a comma “,”). This method has the same algor
 as {{jsxref("Array.prototype.toLocaleString()")}} and, as the
 typed array elements are numbers, the same algorithm
 as {{jsxref("Number.prototype.toLocaleString()")}} applies for
-each element. _TypedArray_ is one of the
+each element. *TypedArray* is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
 
@@ -32,12 +32,15 @@ toLocaleString(locales, options)
 
 ### Parameters
 
-<div><p>The <code>locales</code> and <code>options</code> arguments customize the behavior of
-the function and let applications specify the language whose formatting conventions
-should be used. In implementations, which ignore the <code>locales</code> and
-<code>options</code> arguments, the locale used and the form of the string returned
-are entirely implementation dependent.</p><div>See the {{jsxref("Intl/NumberFormat/NumberFormat", "Intl.NumberFormat()")}}
-constructor for details on these parameters and how to use them.</div></div>
+The `locales` and `options` arguments customize the behavior of the function and
+let applications specify the language whose formatting conventions should be
+used. In implementations, which ignore the `locales` and `options` arguments,
+the locale used and the form of the string returned are entirely implementation
+dependent.
+
+See the
+{{jsxref("Intl/NumberFormat/NumberFormat", "Intl.NumberFormat()")}}
+constructor for details on these parameters and how to use them.
 
 ### Return value
 
@@ -71,5 +74,5 @@ uint.toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' });
 
 ## See also
 
-- {{jsxref("Array.prototype.toLocaleString()")}}
-- {{jsxref("Number.prototype.toLocaleString()")}}
+*   {{jsxref("Array.prototype.toLocaleString()")}}
+*   {{jsxref("Number.prototype.toLocaleString()")}}

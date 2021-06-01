@@ -50,7 +50,7 @@ prototype chain is reached.
 >
 > It should not be confused with the <code><em>func</em>.prototype</code>
 > property of functions, which instead specifies the `[[Prototype]]` to be
-> assigned to all _instances_ of objects created by the given function when used
+> assigned to all *instances* of objects created by the given function when used
 > as a constructor. The **`Object.prototype`** property represents the
 > {{jsxref("Object")}} prototype object.
 
@@ -109,7 +109,7 @@ with a
 JavaScript does not have "methods" in the form that class-based languages define
 them. In JavaScript, any function can be added to an object in the form of a
 property. An inherited function acts just as any other property, including
-property shadowing as shown above (in this case, a form of _method overriding_).
+property shadowing as shown above (in this case, a form of *method overriding*).
 
 When an inherited function is executed, the value of
 [`this`](/en-US/docs/Web/JavaScript/Reference/Operators/this) points to the
@@ -461,7 +461,7 @@ properties will always traverse the full prototype chain.
 
 Also, when iterating over the properties of an object, **every** enumerable
 property that is on the prototype chain will be enumerated. To check whether an
-object has a property defined on _itself_ and not somewhere on its prototype
+object has a property defined on *itself* and not somewhere on its prototype
 chain, it is necessary to use the
 [`hasOwnProperty`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
 method which all objects inherit from `Object.prototype`. To give you a concrete
@@ -501,9 +501,9 @@ console), except in different ways.
 > **Warning:** One misfeature that is often used is to extend `Object.prototype`
 > or one of the other built-in prototypes.
 >
-> This technique is called monkey patching and breaks _encapsulation_. While
+> This technique is called monkey patching and breaks *encapsulation*. While
 > used by popular frameworks such as Prototype.js, there is still no good reason
-> for cluttering built-in types with additional _non-standard_ functionality.
+> for cluttering built-in types with additional *non-standard* functionality.
 >
 > The **only** good reason for extending a built-in prototype is to backport the
 > features of newer JavaScript engines, like `Array.forEach`.
@@ -653,8 +653,8 @@ all dynamic, all runtime, and it has no classes at all. It's all just instances
 (objects). Even the "classes" we simulate are just a function object.
 
 You probably already noticed that our
-[function A](#4_setting_the___proto___property) has a special property called
-`prototype`. This special property works with the JavaScript `new `operator. The
+[function A](#4\_setting_the\_\__proto\_\__property) has a special property called
+`prototype`. This special property works with the JavaScript ` new  `operator. The
 reference to the prototype object is copied to the internal `[[Prototype]]`
 property of the new instance. For example, when you do `var a1 = new A()`,
 JavaScript (after creating the object in memory and before running function
@@ -674,10 +674,10 @@ If, in the example above, you do `var a1 = new A(); var a2 = new A();` then
 In short, `prototype` is for types, while `Object.getPrototypeOf()` is the same
 for instances.
 
-`[[Prototype]]` is looked at _recursively_, i.e. `a1.doSomething`,
+`[[Prototype]]` is looked at *recursively*, i.e. `a1.doSomething`,
 `Object.getPrototypeOf(a1).doSomething`,
 `Object.getPrototypeOf(Object.getPrototypeOf(a1)).doSomething` etc., until it's
-found or `Object.getPrototypeOf `returns null.
+found or ` Object.getPrototypeOf  `returns null.
 
 So, when you call
 

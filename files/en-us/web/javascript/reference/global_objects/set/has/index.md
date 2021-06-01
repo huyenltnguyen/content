@@ -24,8 +24,8 @@ has(value)
 
 ### Parameters
 
-- `value`
-  - : The value to test for presence in the `Set` object.
+*   `value`
+    *   : The value to test for presence in the `Set` object.
 
 ### Return value
 
@@ -66,6 +66,6 @@ set1.add({'key1': 1}); // now set1 contains 2 entries
 
 ## See also
 
-- {{jsxref("Set")}}
-- {{jsxref("Set.prototype.add()")}}
-- {{jsxref("Set.prototype.delete()")}}
+*   {{jsxref("Set")}}
+*   {{jsxref("Set.prototype.add()")}}
+*   {{jsxref("Set.prototype.delete()")}}

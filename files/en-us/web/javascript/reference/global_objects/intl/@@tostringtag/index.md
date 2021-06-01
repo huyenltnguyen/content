@@ -45,4 +45,4 @@ Intl.toString() // "[object Intl]"
 
 ## See also
 
-- {{jsxref("Symbol.toStringTag")}}
+*   {{jsxref("Symbol.toStringTag")}}

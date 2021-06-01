@@ -48,8 +48,8 @@ Function.prototype.toString.call('foo'); // TypeError
 ```
 
 If the `toString()` method is called on built-in function objects or a function
-created by `Function.prototype.bind`, `toString()` returns a _native function
-string_ which looks like
+created by `Function.prototype.bind`, `toString()` returns a *native function
+string* which looks like
 
 ```js
 "function () {\n    [native code]\n}"
@@ -87,4 +87,4 @@ console.log(foo + ''); // "function foo() { return 'bar' }"
 
 ## See also
 
-- {{jsxref("Object.prototype.toString()")}}
+*   {{jsxref("Object.prototype.toString()")}}

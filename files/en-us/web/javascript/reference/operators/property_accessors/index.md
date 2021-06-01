@@ -17,14 +17,15 @@ notation or the bracket notation.
 
 ## Syntax
 
-<pre class="brush: js"><var>object</var>.<var>property</var>
-<var>object</var>['<var>property</var>']
-</pre>
+```js
+object.property
+object['property']
+```
 
 ## Description
 
-One can think of an object as an _associative array_ (a.k.a. _map_,
-_dictionary_, _hash_, _lookup table_). The _keys_ in this array are the names of
+One can think of an object as an *associative array* (a.k.a. *map*,
+*dictionary*, *hash*, *lookup table*). The *keys* in this array are the names of
 the object's properties.
 
 It's typical when speaking of an object's properties to make a distinction
@@ -33,21 +34,20 @@ little more than a convention. A method is a property that can be called (for
 example, if it has a reference to a {{jsxref("Function")}} instance as its
 value).
 
-There are two ways to access properties: _dot notation_ and _bracket notation_.
+There are two ways to access properties: *dot notation* and *bracket notation*.
 
 ### Dot notation
 
 In the `object.property` syntax, the `property` must be a valid JavaScript
 [identifier](/en-US/docs/Glossary/Identifier). (In the ECMAScript standard, the
 names of properties are technically "IdentifierNames", not "Identifiers", so
-reserved words can be used but are not recommended). For example,
-<code><var>object</var>.$1</code> is valid, while
-<code><var>object</var>.1</code> is not.
+reserved words can be used but are not recommended). For example, <code><var>object</var>.$1</code> is valid, while <code><var>object</var>.1</code> is not.
 
-<pre class="brush: js">const variable = <var>object</var>.<var>property_name;</var>
+```js
+const variable = object.property_name;
 
-<var>object</var>.<var>property_name</var> = value;
-</pre>
+object.property_name = value;
+```
 
 ```js
 const object = {};
@@ -91,8 +91,10 @@ In the `object[property_name]` syntax, the `property_name` is just a string or
 [Symbol](/en-US/docs/Glossary/Symbol). So, it can be any string, including
 `'1foo'`, `'!bar!'`, or even `' '` (a space).
 
-<pre class="brush: js">const variable = <var>object</var>[<var>property_name</var>]
-<var>object</var>[<var>property_name</var>] = value;</pre>
+```js
+const variable = object[property_name]
+object[property_name] = value;
+```
 
 This does the exact same thing as the previous example.
 
@@ -170,6 +172,6 @@ x = document.forms['form_name'].elements[strFormControl].value
 
 ## See also
 
-- {{jsxref("Object")}}
-- {{jsxref("Object.defineProperty()")}}
-- [Optional chaining](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+*   {{jsxref("Object")}}
+*   {{jsxref("Object.defineProperty()")}}
+*   [Optional chaining](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)

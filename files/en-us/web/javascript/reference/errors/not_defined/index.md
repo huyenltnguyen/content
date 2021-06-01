@@ -8,7 +8,7 @@ tags:
 ---
 {{jsSidebar("Errors")}}
 
-The JavaScript exception "_variable_ is not defined" occurs when there is a
+The JavaScript exception "*variable* is not defined" occurs when there is a
 non-existent variable referenced somewhere.
 
 ## Message
@@ -82,6 +82,6 @@ console.log(numbers()); // 5
 
 ## See also
 
-- [Scope](/en-US/docs/Glossary/Scope)
-- [Declaring variables in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declaring_variables)
-- [Function scope in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Functions#function_scope)
+*   [Scope](/en-US/docs/Glossary/Scope)
+*   [Declaring variables in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declaring_variables)
+*   [Function scope in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Functions#function_scope)

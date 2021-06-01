@@ -71,14 +71,14 @@ Let's start off by looking at the building blocks of any language: the types.
 JavaScript programs manipulate values, and those values all belong to a type.
 JavaScript's types are:
 
-- [Number](/en-US/docs/Web/JavaScript/Data_structures#number_type)
-- [BigInt](/en-US/docs/Web/JavaScript/Data_structures#bigint_type)
-- [String](/en-US/docs/Web/JavaScript/Data_structures#string_type)
-- [Boolean](/en-US/docs/Web/JavaScript/Data_structures#boolean_type)
-- {{jsxref("Function")}}
-- [Object](/en-US/docs/Web/JavaScript/Data_structures#objects)
-- [Symbol](/en-US/docs/Web/JavaScript/Data_structures#symbol_type) (new in
-  ES2015)
+*   [Number](/en-US/docs/Web/JavaScript/Data_structures#number_type)
+*   [BigInt](/en-US/docs/Web/JavaScript/Data_structures#bigint_type)
+*   [String](/en-US/docs/Web/JavaScript/Data_structures#string_type)
+*   [Boolean](/en-US/docs/Web/JavaScript/Data_structures#boolean_type)
+*   {{jsxref("Function")}}
+*   [Object](/en-US/docs/Web/JavaScript/Data_structures#objects)
+*   [Symbol](/en-US/docs/Web/JavaScript/Data_structures#symbol_type) (new in
+    ES2015)
 
 ... oh, and
 [undefined](/en-US/docs/Web/JavaScript/Data_structures#undefined_type) and
@@ -88,21 +88,27 @@ And {{jsxref("Date")}} and {{jsxref("RegExp")}}, which are objects
 that you get for free. And to be technically accurate, functions are just a
 special type of object. So the type diagram looks more like this:
 
-- [Number](/en-US/docs/Web/JavaScript/Data_structures#number_type)
-- [BigInt](/en-US/docs/Web/JavaScript/Data_structures#bigint_type)
-- [String](/en-US/docs/Web/JavaScript/Data_structures#string_type)
-- [Boolean](/en-US/docs/Web/JavaScript/Data_structures#boolean_type)
-- [Symbol](/en-US/docs/Web/JavaScript/Data_structures#symbol_type) (new in
-  ES2015)
-- [Object](/en-US/docs/Web/JavaScript/Data_structures#objects)
+*   [Number](/en-US/docs/Web/JavaScript/Data_structures#number_type)
 
-  - {{jsxref("Function")}}
-  - {{jsxref("Array")}}
-  - {{jsxref("Date")}}
-  - {{jsxref("RegExp")}}
+*   [BigInt](/en-US/docs/Web/JavaScript/Data_structures#bigint_type)
 
-- [null](/en-US/docs/Web/JavaScript/Data_structures#null_type)
-- [undefined](/en-US/docs/Web/JavaScript/Data_structures#undefined_type)
+*   [String](/en-US/docs/Web/JavaScript/Data_structures#string_type)
+
+*   [Boolean](/en-US/docs/Web/JavaScript/Data_structures#boolean_type)
+
+*   [Symbol](/en-US/docs/Web/JavaScript/Data_structures#symbol_type) (new in
+    ES2015)
+
+*   [Object](/en-US/docs/Web/JavaScript/Data_structures#objects)
+
+    *   {{jsxref("Function")}}
+    *   {{jsxref("Array")}}
+    *   {{jsxref("Date")}}
+    *   {{jsxref("RegExp")}}
+
+*   [null](/en-US/docs/Web/JavaScript/Data_structures#null_type)
+
+*   [undefined](/en-US/docs/Web/JavaScript/Data_structures#undefined_type)
 
 And there are some built-in {{jsxref("Error")}} types as well. Things are a
 lot easier if we stick with the first diagram, however, so we'll discuss the
@@ -115,14 +121,16 @@ ECMAScript has two built-in numeric types: **Number** and **BigInt**.
 The Number type is a
 [double-precision 64-bit binary format IEEE 754 value](https://en.wikipedia.org/wiki/Double_precision_floating-point_format)
 (numbers between -(2^53 − 1) and 2^53 − 1). And where this article and other MDN
-articles refer to “integers”, what’s usually meant is a _representation_ of an
+articles refer to “integers”, what’s usually meant is a *representation* of an
 integer using a Number value. But because such Number values aren’t real
 integers, you have to be a little careful. For example:
 
-<pre class="brush: js">console.log(3 / 2);             // 1.5, <em>not</em> 1
-console.log(Math.floor(3 / 2)); // 1</pre>
+```js
+console.log(3 / 2);             // 1.5, not 1
+console.log(Math.floor(3 / 2)); // 1
+```
 
-So an _apparent integer_ is in fact _implicitly a float_.
+So an *apparent integer* is in fact *implicitly a float*.
 
 Also, watch out for stuff like:
 
@@ -169,8 +177,8 @@ parseInt('0x10'); // 16
 Here, we see the
 {{jsxref("Global_Objects/parseInt", "parseInt()")}} function
 treat the first string as octal due to the leading 0, and the second string as
-hexadecimal due to the leading "0x". The _hexadecimal notation is still in
-place_; only octal has been removed.
+hexadecimal due to the leading "0x". The *hexadecimal notation is still in
+place*; only octal has been removed.
 
 If you want to convert a binary number to an integer, just change the base:
 
@@ -322,8 +330,8 @@ For this reason, we sometimes speak of "true values" and "false values," meaning
 values that become `true` and `false`, respectively, when converted to booleans.
 Alternatively, such values can be called "truthy" and "falsy", respectively.
 
-Boolean operations such as `&&` (logical _and_), `||` (logical _or_), and `!`
-(logical _not_) are supported; see below.
+Boolean operations such as `&&` (logical *and*), `||` (logical *or*), and `!`
+(logical *not*) are supported; see below.
 
 ## Variables
 
@@ -333,7 +341,7 @@ New variables in JavaScript are declared using one of three keywords:
 [`var`](/en-US/docs/Web/JavaScript/Reference/Statements/var).
 
 **`let`** allows you to declare block-level variables. The declared variable is
-available from the _block_ it is enclosed in.
+available from the *block* it is enclosed in.
 
 ```js
 let a;
@@ -353,7 +361,7 @@ for (let myLetVariable = 0; myLetVariable < 5; myLetVariable++) {
 ```
 
 **`const`** allows you to declare variables whose values are never intended to
-change. The variable is available from the _block_ it is declared in.
+change. The variable is available from the *block* it is declared in.
 
 ```js
 const Pi = 3.14; // variable Pi is set
@@ -363,7 +371,7 @@ Pi = 1; // will throw an error because you cannot change a constant variable.
 **`var`** is the most common declarative keyword. It does not have the
 restrictions that the other two keywords have. This is because it was
 traditionally the only way to declare a variable in JavaScript. A variable
-declared with the **`var`** keyword is available from the _function_ it is
+declared with the **`var`** keyword is available from the *function* it is
 declared in.
 
 ```js
@@ -399,7 +407,7 @@ allow you to create block-scoped variables.
 
 JavaScript's numeric operators are `+`, `-`, `*`, `/` and `%` which is the
 remainder operator
-([which is the same as modulo](/en-US/docs/Web/JavaScript/Reference/Operators#remainder_%28%29).)
+([which is the same as modulo](/en-US/docs/Web/JavaScript/Reference/Operators#remainder\_%28%29).)
 Values are assigned using `=`, and there are also compound assignment statements
 such as `+=` and `-=`. These extend out to <code>x = x <em>operator</em>
 y</code>.
@@ -585,11 +593,11 @@ switch (1 + 3) {
 JavaScript objects can be thought of as simple collections of name-value pairs.
 As such, they are similar to:
 
-- Dictionaries in Python.
-- Hashes in Perl and Ruby.
-- Hash tables in C and C++.
-- HashMaps in Java.
-- Associative arrays in PHP.
+*   Dictionaries in Python.
+*   Hashes in Perl and Ruby.
+*   Hash tables in C and C++.
+*   HashMaps in Java.
+*   Associative arrays in PHP.
 
 The fact that this data structure is so widely used is a testament to its
 versatility. Since everything (bar core types) in JavaScript is an object, any
@@ -782,7 +790,20 @@ a.push(item);
 Arrays come with a number of methods. See also the
 [full documentation for array methods](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
-<table><thead><tr><th scope="col">Method name</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>a.toString()</code></td><td>Returns a string with the <code>toString()</code> of each element separated by commas.</td></tr><tr><td><code>a.toLocaleString()</code></td><td>Returns a string with the <code>toLocaleString()</code> of each element separated by commas.</td></tr><tr><td><code>a.concat(item1[, item2[, ...[, itemN]]])</code></td><td>Returns a new array with the items added on to it.</td></tr><tr><td><code>a.join(sep)</code></td><td>Converts the array to a string — with values delimited by the <code>sep</code> param</td></tr><tr><td><code>a.pop()</code></td><td>Removes and returns the last item.</td></tr><tr><td><code>a.push(item1, ..., itemN)</code></td><td>Appends items to the end of the array.</td></tr><tr><td><code>a.shift()</code></td><td>Removes and returns the first item.</td></tr><tr><td><code>a.unshift(item1[, item2[, ...[, itemN]]])</code></td><td>Prepends items to the start of the array.</td></tr><tr><td><code>a.slice(start[, end])</code></td><td>Returns a sub-array.</td></tr><tr><td><code>a.sort([cmpfn])</code></td><td>Takes an optional comparison function.</td></tr><tr><td><code>a.splice(start, delcount[, item1[, ...[, itemN]]])</code></td><td>Lets you modify an array by deleting a section and replacing it with more items.</td></tr><tr><td><code>a.reverse()</code></td><td>Reverses the array.</td></tr></tbody></table>
+| Method name                                          | Description                                                                       |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `a.toString()`                                       | Returns a string with the `toString()` of each element separated by commas.       |
+| `a.toLocaleString()`                                 | Returns a string with the `toLocaleString()` of each element separated by commas. |
+| `a.concat(item1[, item2[, ...[, itemN]]])`           | Returns a new array with the items added on to it.                                |
+| `a.join(sep)`                                        | Converts the array to a string — with values delimited by the `sep` param         |
+| `a.pop()`                                            | Removes and returns the last item.                                                |
+| `a.push(item1, ..., itemN)`                          | Appends items to the end of the array.                                            |
+| `a.shift()`                                          | Removes and returns the first item.                                               |
+| `a.unshift(item1[, item2[, ...[, itemN]]])`          | Prepends items to the start of the array.                                         |
+| `a.slice(start[, end])`                              | Returns a sub-array.                                                              |
+| `a.sort([cmpfn])`                                    | Takes an optional comparison function.                                            |
+| `a.splice(start, delcount[, item1[, ...[, itemN]]])` | Lets you modify an array by deleting a section and replacing it with more items.  |
+| `a.reverse()`                                        | Reverses the array.                                                               |
 
 ## Functions
 
@@ -878,8 +899,8 @@ In the above code, the variable **args** holds all the values that were passed
 into the function.
 
 It is important to note that wherever the rest parameter operator is placed in a
-function declaration it will store all arguments _after_ its declaration, but
-not before. i.e. _function avg(**firstValue,** ...args)_ will store the first
+function declaration it will store all arguments *after* its declaration, but
+not before. i.e. *function avg(**firstValue,** ...args)* will store the first
 value passed into the function in the **firstValue** variable and the remaining
 arguments in **args**. That's another useful language feature but it does lead
 us to a new problem. The `avg()` function takes a comma-separated list of
@@ -1325,7 +1346,7 @@ What's happening here is pretty much the same as was happening with the inner
 functions earlier on: a function defined inside another function has access to
 the outer function's variables. The only difference here is that the outer
 function has returned, and hence common sense would seem to dictate that its
-local variables no longer exist. But they _do_ still exist — otherwise, the
+local variables no longer exist. But they *do* still exist — otherwise, the
 adder functions would be unable to work. What's more, there are two different
 "copies" of `makeAdder()`'s local variables — one in which `a` is 5 and the
 other one where `a` is 20. So the result of that function calls is as follows:

@@ -22,8 +22,8 @@ Math.tan(x)
 
 ### Parameters
 
-- `x`
-  - : A number representing an angle in radians.
+*   `x`
+    *   : A number representing an angle in radians.
 
 ### Return value
 
@@ -67,9 +67,9 @@ function getTanDeg(deg) {
 
 ## See also
 
-- {{jsxref("Math.acos()")}}
-- {{jsxref("Math.asin()")}}
-- {{jsxref("Math.atan()")}}
-- {{jsxref("Math.atan2()")}}
-- {{jsxref("Math.cos()")}}
-- {{jsxref("Math.sin()")}}
+*   {{jsxref("Math.acos()")}}
+*   {{jsxref("Math.asin()")}}
+*   {{jsxref("Math.atan()")}}
+*   {{jsxref("Math.atan2()")}}
+*   {{jsxref("Math.cos()")}}
+*   {{jsxref("Math.sin()")}}

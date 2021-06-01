@@ -16,8 +16,10 @@ object.
 
 ## Syntax
 
-<pre class="brush: js"><var>dateObj</var>.toSource()
-Date.toSource()</pre>
+```js
+dateObj.toSource()
+Date.toSource()
+```
 
 ### Return value
 
@@ -48,4 +50,4 @@ Not part of any standard.
 
 ## See also
 
-- {{jsxref("Object.prototype.toSource()")}}
+*   {{jsxref("Object.prototype.toSource()")}}

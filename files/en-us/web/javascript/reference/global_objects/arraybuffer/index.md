@@ -31,34 +31,34 @@ also get an array buffer from existing data, for example, from a
 
 ## Constructor
 
-- {{jsxref("ArrayBuffer.ArrayBuffer", "ArrayBuffer()")}}
-  - : Creates a new `ArrayBuffer` object.
+*   {{jsxref("ArrayBuffer.ArrayBuffer", "ArrayBuffer()")}}
+    *   : Creates a new `ArrayBuffer` object.
 
 ## Static properties
 
-- {{jsxref("ArrayBuffer.@@species", "get ArrayBuffer[@@species]")}}
-  - : The constructor function that is used to create derived objects.
+*   {{jsxref("ArrayBuffer.@@species", "get ArrayBuffer[@@species]")}}
+    *   : The constructor function that is used to create derived objects.
 
 ## Static methods
 
-- {{jsxref("ArrayBuffer.isView", "ArrayBuffer.isView(<var>arg</var>)")}}
-  - : Returns `true` if `arg` is one of the ArrayBuffer views, such as
-    [typed array objects](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
-    or a {{jsxref("DataView")}}. Returns `false` otherwise.
+*   {{jsxref("ArrayBuffer.isView", "ArrayBuffer.isView(<var>arg</var>)")}}
+    *   : Returns `true` if `arg` is one of the ArrayBuffer views, such as
+        [typed array objects](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
+        or a {{jsxref("DataView")}}. Returns `false` otherwise.
 
 ## Instance properties
 
-- {{jsxref("ArrayBuffer.prototype.byteLength")}}
-  - : The read-only size, in bytes, of the `ArrayBuffer`. This is established
-    when the array is constructed and cannot be changed.
+*   {{jsxref("ArrayBuffer.prototype.byteLength")}}
+    *   : The read-only size, in bytes, of the `ArrayBuffer`. This is established
+        when the array is constructed and cannot be changed.
 
 ## Instance methods
 
-- {{jsxref("ArrayBuffer.prototype.slice()")}}
-  - : Returns a new `ArrayBuffer` whose contents are a copy of this
-    `ArrayBuffer`'s bytes from `begin` (inclusive) up to `end` (exclusive). If
-    either `begin` or `end` is negative, it refers to an index from the end of
-    the array, as opposed to from the beginning.
+*   {{jsxref("ArrayBuffer.prototype.slice()")}}
+    *   : Returns a new `ArrayBuffer` whose contents are a copy of this
+        `ArrayBuffer`'s bytes from `begin` (inclusive) up to `end` (exclusive). If
+        either `begin` or `end` is negative, it refers to an index from the end of
+        the array, as opposed to from the beginning.
 
 ## Examples
 
@@ -82,8 +82,8 @@ const view = new Int32Array(buffer);
 
 ## See also
 
-- A polyfill of `ArrayBuffer` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- {{jsxref("SharedArrayBuffer")}}
-- [RangeError: invalid array length](/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_array_length)
+*   A polyfill of `ArrayBuffer` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("SharedArrayBuffer")}}
+*   [RangeError: invalid array length](/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_array_length)

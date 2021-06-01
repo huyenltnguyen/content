@@ -27,16 +27,16 @@ A **`Promise`** is a proxy for a value not necessarily known when the promise is
 created. It allows you to associate handlers with an asynchronous action's
 eventual success value or failure reason. This lets asynchronous methods return
 values like synchronous methods: instead of immediately returning the final
-value, the asynchronous method returns a _promise_ to supply the value at some
+value, the asynchronous method returns a *promise* to supply the value at some
 point in the future.
 
 A `Promise` is in one of these states:
 
-- _pending_: initial state, neither fulfilled nor rejected.
-- _fulfilled_: meaning that the operation was completed successfully.
-- _rejected_: meaning that the operation failed.
+*   *pending*: initial state, neither fulfilled nor rejected.
+*   *fulfilled*: meaning that the operation was completed successfully.
+*   *rejected*: meaning that the operation failed.
 
-A pending promise can either be _fulfilled_ with a value or _rejected_ with a
+A pending promise can either be *fulfilled* with a value or *rejected* with a
 reason (error). When either of these options happens, the associated handlers
 queued up by a promise's `then` method are called. If the promise has already
 been fulfilled or rejected when a corresponding handler is attached, the handler
@@ -59,8 +59,8 @@ methods return promises, they can be chained.
 > with no arguments: <code>f = () => <em>expression</em></code> to create the
 > lazily-evaluated expression, and `f()` to evaluate.
 
-> **Note:** A promise is said to be _settled_ if it is either fulfilled or
-> rejected, but not pending. You will also hear the term _resolved_ used with
+> **Note:** A promise is said to be *settled* if it is either fulfilled or
+> rejected, but not pending. You will also hear the term *resolved* used with
 > promises — this means that the promise is settled or “locked-in” to match the
 > state of another promise.
 > [States and fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md)
@@ -92,7 +92,7 @@ myPromise
 
 Processing continues to the next link of the chain even when a `.then()` lacks a
 callback function that returns a Promise object. Therefore, a chain can safely
-omit every _rejection_ callback function until the final `.catch()`.
+omit every *rejection* callback function until the final `.catch()`.
 
 Handling a rejected promise in each `.then()` has consequences further down the
 promise chain. Sometimes there is no choice, because an error must be handled
@@ -270,57 +270,59 @@ incumbent, we may end up using the wrong environment to send the message.
 
 ## Constructor
 
-- {{jsxref("Promise/Promise", "Promise()")}}
-  - : Creates a new `Promise` object. The constructor is primarily used to wrap
-    functions that do not already support promises.
+*   {{jsxref("Promise/Promise", "Promise()")}}
+    *   : Creates a new `Promise` object. The constructor is primarily used to wrap
+        functions that do not already support promises.
 
 ## Static methods
 
-- {{JSxRef("Promise.all", "Promise.all(iterable)")}}
+*   {{JSxRef("Promise.all", "Promise.all(iterable)")}}
 
-  - : Wait for all promises to be resolved, or for any to be rejected.
+    *   : Wait for all promises to be resolved, or for any to be rejected.
 
-    If the returned promise resolves, it is resolved with an aggregating array
-    of the values from the resolved promises, in the same order as defined in
-    the iterable of multiple promises.
+        If the returned promise resolves, it is resolved with an aggregating array
+        of the values from the resolved promises, in the same order as defined in
+        the iterable of multiple promises.
 
-    If it rejects, it is rejected with the reason from the first promise in the
-    iterable that was rejected.
+        If it rejects, it is rejected with the reason from the first promise in the
+        iterable that was rejected.
 
-- {{JSxRef("Promise.allSettled", "Promise.allSettled(iterable)")}}
+*   {{JSxRef("Promise.allSettled", "Promise.allSettled(iterable)")}}
 
-  - : Wait until all promises have settled (each may resolve or reject).
+    *   : Wait until all promises have settled (each may resolve or reject).
 
-    Returns a Promise that resolves after all of the given promises have either
-    resolved or rejected, with an array of objects that each describe the
-    outcome of each promise.
+        Returns a Promise that resolves after all of the given promises have either
+        resolved or rejected, with an array of objects that each describe the
+        outcome of each promise.
 
-- {{JSxRef("Promise.any", "Promise.any(iterable)")}}
-  - : Takes an iterable of Promise objects and, as soon as one of the promises
-    in the iterable fulfills, returns a single promise that resolves with the
-    value from that promise.
-- {{JSxRef("Promise.race", "Promise.race(iterable)")}}
+*   {{JSxRef("Promise.any", "Promise.any(iterable)")}}
+    *   : Takes an iterable of Promise objects and, as soon as one of the promises
+        in the iterable fulfills, returns a single promise that resolves with the
+        value from that promise.
 
-  - : Wait until any of the promises is resolved or rejected.
+*   {{JSxRef("Promise.race", "Promise.race(iterable)")}}
 
-    If the returned promise resolves, it is resolved with the value of the first
-    promise in the iterable that resolved.
+    *   : Wait until any of the promises is resolved or rejected.
 
-    If it rejects, it is rejected with the reason from the first promise that
-    was rejected.
+        If the returned promise resolves, it is resolved with the value of the first
+        promise in the iterable that resolved.
 
-- {{JSxRef("Promise.reject", "Promise.reject(reason)")}}
-  - : Returns a new `Promise` object that is rejected with the given reason.
-- {{JSxRef("Promise.resolve", "Promise.resolve(value)")}}
+        If it rejects, it is rejected with the reason from the first promise that
+        was rejected.
 
-  - : Returns a new `Promise` object that is resolved with the given value. If
-    the value is a thenable (i.e. has a `then` method), the returned promise
-    will "follow" that thenable, adopting its eventual state; otherwise, the
-    returned promise will be fulfilled with the value.
+*   {{JSxRef("Promise.reject", "Promise.reject(reason)")}}
+    *   : Returns a new `Promise` object that is rejected with the given reason.
 
-    Generally, if you don't know if a value is a promise or not,
-    {{JSxRef("Promise.resolve", "Promise.resolve(value)")}} it
-    instead and work with the return value as a promise.
+*   {{JSxRef("Promise.resolve", "Promise.resolve(value)")}}
+
+    *   : Returns a new `Promise` object that is resolved with the given value. If
+        the value is a thenable (i.e. has a `then` method), the returned promise
+        will "follow" that thenable, adopting its eventual state; otherwise, the
+        returned promise will be fulfilled with the value.
+
+        Generally, if you don't know if a value is a promise or not,
+        {{JSxRef("Promise.resolve", "Promise.resolve(value)")}} it
+        instead and work with the return value as a promise.
 
 ## Instance methods
 
@@ -328,19 +330,19 @@ See the
 [Microtask guide](/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide "Microtask_guide")
 to learn more about how these methods use the Microtask queue and services.
 
-- {{jsxref("Promise.prototype.catch()")}}
-  - : Appends a rejection handler callback to the promise, and returns a new
-    promise resolving to the return value of the callback if it is called, or to
-    its original fulfillment value if the promise is instead fulfilled.
-- {{jsxref("Promise.prototype.then()")}}
-  - : Appends fulfillment and rejection handlers to the promise, and returns a
-    new promise resolving to the return value of the called handler, or to its
-    original settled value if the promise was not handled (i.e. if the relevant
-    handler `onFulfilled` or `onRejected` is not a function).
-- {{jsxref("Promise.prototype.finally()")}}
-  - : Appends a handler to the promise, and returns a new promise that is
-    resolved when the original promise is resolved. The handler is called when
-    the promise is settled, whether fulfilled or rejected.
+*   {{jsxref("Promise.prototype.catch()")}}
+    *   : Appends a rejection handler callback to the promise, and returns a new
+        promise resolving to the return value of the callback if it is called, or to
+        its original fulfillment value if the promise is instead fulfilled.
+*   {{jsxref("Promise.prototype.then()")}}
+    *   : Appends fulfillment and rejection handlers to the promise, and returns a
+        new promise resolving to the return value of the called handler, or to its
+        original settled value if the promise was not handled (i.e. if the relevant
+        handler `onFulfilled` or `onRejected` is not a function).
+*   {{jsxref("Promise.prototype.finally()")}}
+    *   : Appends a handler to the promise, and returns a new promise that is
+        resolved when the original promise is resolved. The handler is called when
+        the promise is settled, whether fulfilled or rejected.
 
 ## Examples
 
@@ -559,17 +561,17 @@ closely.
 
 ## See also
 
-- A polyfill of `Promise` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
-- [Using promises](/en-US/docs/Web/JavaScript/Guide/Using_promises)
-- [Promises/A+ specification](http://promisesaplus.com/)
-- [Venkatraman.R - JS Promise (Part 1, Basics)](https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53)
-- [Venkatraman.R - JS Promise (Part 2 - Using Q.js, When.js and RSVP.js)](https://medium.com/@ramsunvtech/js-promise-part-2-q-js-when-js-and-rsvp-js-af596232525c#.dzlqh6ski)
-- [Venkatraman.R - Tools for Promises Unit Testing](https://tech.io/playgrounds/11107/tools-for-promises-unittesting/introduction)
-- [Jake Archibald: JavaScript Promises: There and Back Again](http://www.html5rocks.com/en/tutorials/es6/promises/)
-- [Domenic Denicola: Callbacks, Promises, and Coroutines – Asynchronous Programming Patterns in JavaScript](http://de.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript)
-- [Matt Greer: JavaScript Promises ... In Wicked Detail](http://www.mattgreer.org/articles/promises-in-wicked-detail/)
-- [Forbes Lindesay: promisejs.org](https://www.promisejs.org/)
-- [Speed-polyfill to polyfill both promise availability and promise performance.](https://github.com/anonyco/SPromiseMeSpeedJS/blob/master/README.md)
-- [Promise polyfill](https://github.com/jakearchibald/es6-promise/)
-- [Udacity: JavaScript Promises](https://www.udacity.com/course/javascript-promises--ud898)
+*   A polyfill of `Promise` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
+*   [Using promises](/en-US/docs/Web/JavaScript/Guide/Using_promises)
+*   [Promises/A+ specification](http://promisesaplus.com/)
+*   [Venkatraman.R - JS Promise (Part 1, Basics)](https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53)
+*   [Venkatraman.R - JS Promise (Part 2 - Using Q.js, When.js and RSVP.js)](https://medium.com/@ramsunvtech/js-promise-part-2-q-js-when-js-and-rsvp-js-af596232525c#.dzlqh6ski)
+*   [Venkatraman.R - Tools for Promises Unit Testing](https://tech.io/playgrounds/11107/tools-for-promises-unittesting/introduction)
+*   [Jake Archibald: JavaScript Promises: There and Back Again](http://www.html5rocks.com/en/tutorials/es6/promises/)
+*   [Domenic Denicola: Callbacks, Promises, and Coroutines – Asynchronous Programming Patterns in JavaScript](http://de.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript)
+*   [Matt Greer: JavaScript Promises ... In Wicked Detail](http://www.mattgreer.org/articles/promises-in-wicked-detail/)
+*   [Forbes Lindesay: promisejs.org](https://www.promisejs.org/)
+*   [Speed-polyfill to polyfill both promise availability and promise performance.](https://github.com/anonyco/SPromiseMeSpeedJS/blob/master/README.md)
+*   [Promise polyfill](https://github.com/jakearchibald/es6-promise/)
+*   [Udacity: JavaScript Promises](https://www.udacity.com/course/javascript-promises--ud898)

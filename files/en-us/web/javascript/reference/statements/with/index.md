@@ -8,7 +8,7 @@ tags:
 - Statement
 browser-compat: javascript.statements.with
 ---
-> **Warning:**Use of the `with` statement is not recommended, as it may be the
+> \*\*Warning:\*\*Use of the `with` statement is not recommended, as it may be the
 > source of confusing bugs and compatibility issues. See the "Ambiguity Contra"
 > paragraph in the "Description" section below for details.
 
@@ -18,17 +18,18 @@ The **with statement** extends the scope chain for a statement.
 
 ## Syntax
 
-<pre class="brush: js">with (<var>expression</var>)
-  <var>statement</var>
-</pre>
+```js
+with (expression)
+  statement
+```
 
-- `expression`
-  - : Adds the given expression to the scope chain used when evaluating the
-    statement. The parentheses around the expression are required.
-- `statement`
-  - : Any statement. To execute multiple statements, use a
-    [block](/en-US/docs/Web/JavaScript/Reference/Statements/block) statement ({
-    ... }) to group those statements.
+*   `expression`
+    *   : Adds the given expression to the scope chain used when evaluating the
+        statement. The parentheses around the expression are required.
+*   `statement`
+    *   : Any statement. To execute multiple statements, use a
+        [block](/en-US/docs/Web/JavaScript/Reference/Statements/block) statement ({
+        ... }) to group those statements.
 
 ## Description
 
@@ -133,7 +134,7 @@ with (Math) {
 
 ## See also
 
-- {{jsxref("Statements/block", "block", "", 1)}}
-- [Strict mode](/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
-- {{jsxref("Symbol.unscopables")}}
-- {{jsxref("Array.@@unscopables", "Array.prototype[@@unscopables]")}}
+*   {{jsxref("Statements/block", "block", "", 1)}}
+*   [Strict mode](/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
+*   {{jsxref("Symbol.unscopables")}}
+*   {{jsxref("Array.@@unscopables", "Array.prototype[@@unscopables]")}}

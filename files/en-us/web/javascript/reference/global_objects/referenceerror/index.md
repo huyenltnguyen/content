@@ -16,29 +16,29 @@ is referenced.
 
 ## Constructor
 
-- {{jsxref("Global_Objects/ReferenceError/ReferenceError", "ReferenceError()")}}
-  - : Creates a new `ReferenceError` object.
+*   {{jsxref("Global_Objects/ReferenceError/ReferenceError", "ReferenceError()")}}
+    *   : Creates a new `ReferenceError` object.
 
 ## Instance properties
 
-- {{jsxref("Error.prototype.message", "ReferenceError.prototype.message")}}
-  - : Error message. Although ECMA-262 specifies that
-    {{jsxref("ReferenceError")}} should provide its own `message`
-    property, in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it
-    inherits {{jsxref("Error.prototype.message")}}.
-- {{jsxref("Error.prototype.name", "ReferenceError.prototype.name")}}
-  - : Error name. Inherited from {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.fileName", "ReferenceError.prototype.fileName")}}
-  - : Path to file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.lineNumber", "ReferenceError.prototype.lineNumber")}}
-  - : Line number in file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.columnNumber", "ReferenceError.prototype.columnNumber")}}
-  - : Column number in line that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.stack", "ReferenceError.prototype.stack")}}
-  - : Stack trace. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.message", "ReferenceError.prototype.message")}}
+    *   : Error message. Although ECMA-262 specifies that
+        {{jsxref("ReferenceError")}} should provide its own `message`
+        property, in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it
+        inherits {{jsxref("Error.prototype.message")}}.
+*   {{jsxref("Error.prototype.name", "ReferenceError.prototype.name")}}
+    *   : Error name. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.fileName", "ReferenceError.prototype.fileName")}}
+    *   : Path to file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.lineNumber", "ReferenceError.prototype.lineNumber")}}
+    *   : Line number in file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.columnNumber", "ReferenceError.prototype.columnNumber")}}
+    *   : Column number in line that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.stack", "ReferenceError.prototype.stack")}}
+    *   : Stack trace. Inherited from {{jsxref("Error")}}.
 
 ## Examples
 
@@ -84,4 +84,4 @@ try {
 
 ## See also
 
-- {{jsxref("Error")}}
+*   {{jsxref("Error")}}

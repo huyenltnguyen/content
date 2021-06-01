@@ -26,8 +26,8 @@ push(element0, element1, ... , elementN)
 
 ### Parameters
 
-- <code>element<em>N</em></code>
-  - : The element(s) to add to the end of the array.
+*   <code>element<em>N</em></code>
+    *   : The element(s) to add to the end of the array.
 
 ### Return value
 
@@ -74,7 +74,7 @@ console.log(total)   // 4
 This example uses {{jsxref("Function.apply", "apply()")}} to push
 all elements from a second array.
 
-Do _not_ use this method if the second array (`moreVegs` in the example) is very
+Do *not* use this method if the second array (`moreVegs` in the example) is very
 large because the maximum number of parameters that one function can take is
 limited in practice. See {{jsxref("Function.apply", "apply()")}}
 for more details.
@@ -134,7 +134,7 @@ actual array.
 
 ## See also
 
-- {{jsxref("Array.prototype.pop()")}}
-- {{jsxref("Array.prototype.shift()")}}
-- {{jsxref("Array.prototype.unshift()")}}
-- {{jsxref("Array.prototype.concat()")}}
+*   {{jsxref("Array.prototype.pop()")}}
+*   {{jsxref("Array.prototype.shift()")}}
+*   {{jsxref("Array.prototype.unshift()")}}
+*   {{jsxref("Array.prototype.concat()")}}

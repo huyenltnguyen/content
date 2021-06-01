@@ -78,6 +78,6 @@ console.log(d.toDateString()); // logs Mon Jun 28 1993
 
 ## See also
 
-- {{jsxref("Date.prototype.toLocaleDateString()")}}
-- {{jsxref("Date.prototype.toTimeString()")}}
-- {{jsxref("Date.prototype.toString()")}}
+*   {{jsxref("Date.prototype.toLocaleDateString()")}}
+*   {{jsxref("Date.prototype.toTimeString()")}}
+*   {{jsxref("Date.prototype.toString()")}}

@@ -23,18 +23,29 @@ semicolons to end statements.
 Control characters have no visual representation but are used to control the
 interpretation of the text.
 
-<table class="standard-table"><caption>Unicode format-control characters</caption><thead><tr><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th></tr></thead><tbody><tr><td><code>U+200C</code></td><td>Zero width non-joiner</td><td>&#x3C;ZWNJ></td><td>Placed between characters to prevent being connected into ligatures in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">Wikipedia</a>).</td></tr><tr><td><code>U+200D</code></td><td>Zero width joiner</td><td>&#x3C;ZWJ></td><td>Placed between characters that would not normally be connected in order to cause the characters to be rendered using their connected form in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_joiner">Wikipedia</a>).</td></tr><tr><td><code>U+FEFF</code></td><td>Byte order mark</td><td>&#x3C;BOM></td><td>Used at the start of the script to mark it as Unicode and the text's byte order (<a href="https://en.wikipedia.org/wiki/Byte_order_mark">Wikipedia</a>).</td></tr></tbody></table>
+| Code point | Name                  | Abbreviation | Description                                                                                                                                                                                                                    |
+| ---------- | --------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `U+200C`   | Zero width non-joiner | <ZWNJ>       | Placed between characters to prevent being connected into ligatures in certain languages ([Wikipedia](https://en.wikipedia.org/wiki/Zero-width_non-joiner)).                                                                   |
+| `U+200D`   | Zero width joiner     | <ZWJ>        | Placed between characters that would not normally be connected in order to cause the characters to be rendered using their connected form in certain languages ([Wikipedia](https://en.wikipedia.org/wiki/Zero-width_joiner)). |
+| `U+FEFF`   | Byte order mark       | <BOM>        | Used at the start of the script to mark it as Unicode and the text's byte order ([Wikipedia](https://en.wikipedia.org/wiki/Byte_order_mark)).                                                                                  |
 
 ## White space
 
 [White space](/en-US/docs/Glossary/Whitespace) characters improve the
 readability of source text and separate tokens from each other. These characters
 are usually unnecessary for the functionality of the code.
-[Minification tools](https://en.wikipedia.org/wiki/Minification_%28programming%29)
+[Minification tools](https://en.wikipedia.org/wiki/Minification\_%28programming%29)
 are often used to remove whitespace in order to reduce the amount of data that
 needs to be transferred.
 
-<table class="standard-table"><caption>White space characters</caption><thead><tr><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th><th>Escape sequence</th></tr></thead><tbody><tr><td>U+0009</td><td>Character tabulation</td><td>&#x3C;HT></td><td>Horizontal tabulation</td><td>\t</td></tr><tr><td>U+000B</td><td>Line tabulation</td><td>&#x3C;VT></td><td>Vertical tabulation</td><td>\v</td></tr><tr><td>U+000C</td><td>Form feed</td><td>&#x3C;FF></td><td>Page breaking control character (<a href="https://en.wikipedia.org/wiki/Page_break#Form_feed">Wikipedia</a>).</td><td>\f</td></tr><tr><td>U+0020</td><td>Space</td><td>&#x3C;SP></td><td>Normal space</td><td></td></tr><tr><td>U+00A0</td><td>No-break space</td><td>&#x3C;NBSP></td><td>Normal space, but no point at which a line may break</td><td></td></tr><tr><td>Others</td><td>Other Unicode space characters</td><td>&#x3C;USP></td><td><a href="https://en.wikipedia.org/wiki/Space_%28punctuation%29#Spaces_in_Unicode">Spaces in Unicode on Wikipedia</a></td><td></td></tr></tbody></table>
+| Code point | Name                           | Abbreviation | Description                                                                                               | Escape sequence |
+| ---------- | ------------------------------ | ------------ | --------------------------------------------------------------------------------------------------------- | --------------- |
+| U+0009     | Character tabulation           | <HT>         | Horizontal tabulation                                                                                     | \t              |
+| U+000B     | Line tabulation                | <VT>         | Vertical tabulation                                                                                       | \v              |
+| U+000C     | Form feed                      | <FF>         | Page breaking control character ([Wikipedia](https://en.wikipedia.org/wiki/Page_break#Form_feed)).        | \f              |
+| U+0020     | Space                          | <SP>         | Normal space                                                                                              |                 |
+| U+00A0     | No-break space                 | <NBSP>       | Normal space, but no point at which a line may break                                                      |                 |
+| Others     | Other Unicode space characters | <USP>        | [Spaces in Unicode on Wikipedia](https://en.wikipedia.org/wiki/Space\_%28punctuation%29#Spaces_in_Unicode) |                 |
 
 ## Line terminators
 
@@ -51,7 +62,12 @@ Only the following Unicode code points are treated as line terminators in
 ECMAScript, other line breaking characters are treated as white space (for
 example, Next Line, NEL, U+0085 is considered as white space).
 
-<table class="standard-table"><caption>Line terminator characters</caption><thead><tr><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th><th>Escape sequence</th></tr></thead><tbody><tr><td>U+000A</td><td>Line Feed</td><td>&#x3C;LF></td><td>New line character in UNIX systems.</td><td>\n</td></tr><tr><td>U+000D</td><td>Carriage Return</td><td>&#x3C;CR></td><td>New line character in Commodore and early Mac systems.</td><td>\r</td></tr><tr><td>U+2028</td><td>Line Separator</td><td>&#x3C;LS></td><td><a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a></td><td></td></tr><tr><td>U+2029</td><td>Paragraph Separator</td><td>&#x3C;PS></td><td><a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a></td><td></td></tr></tbody></table>
+| Code point | Name                | Abbreviation | Description                                            | Escape sequence |
+| ---------- | ------------------- | ------------ | ------------------------------------------------------ | --------------- |
+| U+000A     | Line Feed           | <LF>         | New line character in UNIX systems.                    | \n              |
+| U+000D     | Carriage Return     | <CR>         | New line character in Commodore and early Mac systems. | \r              |
+| U+2028     | Line Separator      | <LS>         | [Wikipedia](https://en.wikipedia.org/wiki/Newline)     |                 |
+| U+2029     | Paragraph Separator | <PS>         | [Wikipedia](https://en.wikipedia.org/wiki/Newline)     |                 |
 
 ## Comments
 
@@ -62,7 +78,7 @@ tool.
 
 JavaScript has two long-standing ways to add comments to code.
 
-The first way is the `//` comment**;** this makes all text following it on the
+The first way is the `//` comment\*\*;\*\* this makes all text following it on the
 same line into a comment. For example:
 
 ```js
@@ -141,7 +157,7 @@ console.log("Hello world");
 ```
 
 > **Note:** Hashbang comments in JavaScript mimic
-> [shebangs in Unix](<https://en.wikipedia.org/wiki/Shebang_(Unix)>) used to run
+> [shebangs in Unix](https://en.wikipedia.org/wiki/Shebang_\(Unix\)) used to run
 > files with proper interpreter.
 
 > **Warning:** Although [BOM](https://en.wikipedia.org/wiki/Byte_order_mark)
@@ -157,39 +173,39 @@ all other cases just use a `//` comment (or mulitiline comment).
 
 ### Reserved keywords as of ECMAScript 2015
 
-- {{jsxref("Statements/break", "break")}}
-- {{jsxref("Statements/switch", "case")}}
-- {{jsxref("Statements/try...catch", "catch")}}
-- {{jsxref("Statements/class", "class")}}
-- {{jsxref("Statements/const", "const")}}
-- {{jsxref("Statements/continue", "continue")}}
-- {{jsxref("Statements/debugger", "debugger")}}
-- {{jsxref("Statements/switch", "default")}}
-- {{jsxref("Operators/delete", "delete")}}
-- {{jsxref("Statements/do...while", "do")}}
-- {{jsxref("Statements/if...else", "else")}}
-- {{jsxref("Statements/export", "export")}}
-- {{jsxref("Statements/class", "extends")}}
-- {{jsxref("Statements/try...catch", "finally")}}
-- {{jsxref("Statements/for", "for")}}
-- {{jsxref("Statements/function", "function")}}
-- {{jsxref("Statements/if...else", "if")}}
-- {{jsxref("Statements/import", "import")}}
-- {{jsxref("Operators/in", "in")}}
-- {{jsxref("Operators/instanceof", "instanceof")}}
-- {{jsxref("Operators/new", "new")}}
-- {{jsxref("Statements/return", "return")}}
-- {{jsxref("Operators/super", "super")}}
-- {{jsxref("Statements/switch", "switch")}}
-- {{jsxref("Operators/this", "this")}}
-- {{jsxref("Statements/throw", "throw")}}
-- {{jsxref("Statements/try...catch", "try")}}
-- {{jsxref("Operators/typeof", "typeof")}}
-- {{jsxref("Statements/var", "var")}}
-- {{jsxref("Operators/void", "void")}}
-- {{jsxref("Statements/while", "while")}}
-- {{jsxref("Statements/with", "with")}}
-- {{jsxref("Operators/yield", "yield")}}
+*   {{jsxref("Statements/break", "break")}}
+*   {{jsxref("Statements/switch", "case")}}
+*   {{jsxref("Statements/try...catch", "catch")}}
+*   {{jsxref("Statements/class", "class")}}
+*   {{jsxref("Statements/const", "const")}}
+*   {{jsxref("Statements/continue", "continue")}}
+*   {{jsxref("Statements/debugger", "debugger")}}
+*   {{jsxref("Statements/switch", "default")}}
+*   {{jsxref("Operators/delete", "delete")}}
+*   {{jsxref("Statements/do...while", "do")}}
+*   {{jsxref("Statements/if...else", "else")}}
+*   {{jsxref("Statements/export", "export")}}
+*   {{jsxref("Statements/class", "extends")}}
+*   {{jsxref("Statements/try...catch", "finally")}}
+*   {{jsxref("Statements/for", "for")}}
+*   {{jsxref("Statements/function", "function")}}
+*   {{jsxref("Statements/if...else", "if")}}
+*   {{jsxref("Statements/import", "import")}}
+*   {{jsxref("Operators/in", "in")}}
+*   {{jsxref("Operators/instanceof", "instanceof")}}
+*   {{jsxref("Operators/new", "new")}}
+*   {{jsxref("Statements/return", "return")}}
+*   {{jsxref("Operators/super", "super")}}
+*   {{jsxref("Statements/switch", "switch")}}
+*   {{jsxref("Operators/this", "this")}}
+*   {{jsxref("Statements/throw", "throw")}}
+*   {{jsxref("Statements/try...catch", "try")}}
+*   {{jsxref("Operators/typeof", "typeof")}}
+*   {{jsxref("Statements/var", "var")}}
+*   {{jsxref("Operators/void", "void")}}
+*   {{jsxref("Statements/while", "while")}}
+*   {{jsxref("Statements/with", "with")}}
+*   {{jsxref("Operators/yield", "yield")}}
 
 ### Future reserved keywords
 
@@ -199,45 +215,45 @@ time, so they cannot be used as identifiers.
 
 These are always reserved:
 
-- `enum`
+*   `enum`
 
 The following are only reserved when they are found in strict mode code:
 
-- `implements`
-- `interface`
-- {{jsxref("Statements/let", "let")}}
-- `package`
-- `private`
-- `protected`
-- `public`
-- `static`
-- {{jsxref("Operators/yield", "yield")}}
+*   `implements`
+*   `interface`
+*   {{jsxref("Statements/let", "let")}}
+*   `package`
+*   `private`
+*   `protected`
+*   `public`
+*   `static`
+*   {{jsxref("Operators/yield", "yield")}}
 
 The following are only reserved when they are found in module code:
 
-- `await`
+*   `await`
 
 #### Future reserved keywords in older standards
 
 The following are reserved as future keywords by older ECMAScript specifications
 (ECMAScript 1 till 3).
 
-- `abstract`
-- `boolean`
-- `byte`
-- `char`
-- `double`
-- `final`
-- `float`
-- `goto`
-- `int`
-- `long`
-- `native`
-- `short`
-- `synchronized`
-- `throws`
-- `transient`
-- `volatile`
+*   `abstract`
+*   `boolean`
+*   `byte`
+*   `char`
+*   `double`
+*   `final`
+*   `float`
+*   `goto`
+*   `int`
+*   `long`
+*   `native`
+*   `short`
+*   `synchronized`
+*   `throws`
+*   `transient`
+*   `volatile`
 
 Additionally, the literals `null`, `true`, and `false` cannot be used as
 identifiers in ECMAScript.
@@ -246,7 +262,7 @@ identifiers in ECMAScript.
 
 Reserved words actually only apply to *Identifier*s (vs. *IdentifierName*s) . As
 described in [es5.github.com/#A.1](https://es5.github.com/#A.1), these are all
-*IdentifierName*s which do not exclude _ReservedWords_.
+*IdentifierName*s which do not exclude *ReservedWords*.
 
 ```js
 a.import
@@ -254,10 +270,10 @@ a['import']
 a = { import: 'test' }.
 ```
 
-On the other hand the following is illegal because it's an _Identifier_, which
-is an _IdentifierName_ without the reserved words. Identifiers are used for
-_FunctionDeclaration_, _FunctionExpression_, _VariableDeclaration_ and so on.
-_IdentifierNames_ are used for _MemberExpression_, _CallExpression_ and so on.
+On the other hand the following is illegal because it's an *Identifier*, which
+is an *IdentifierName* without the reserved words. Identifiers are used for
+*FunctionDeclaration*, *FunctionExpression*, *VariableDeclaration* and so on.
+*IdentifierNames* are used for *MemberExpression*, *CallExpression* and so on.
 
 ```js
 function import() {} // Illegal.
@@ -268,9 +284,9 @@ function import() {} // Illegal.
 A few identifiers have a special meaning in some contexts without being keywords
 of any kind. They include:
 
-- {{jsxref("Functions/arguments", "arguments")}}
-- {{jsxref("Functions/get", "get")}}
-- {{jsxref("Functions/set", "set")}}
+*   {{jsxref("Functions/arguments", "arguments")}}
+*   {{jsxref("Functions/get", "get")}}
+*   {{jsxref("Functions/set", "set")}}
 
 ## Literals
 
@@ -317,7 +333,7 @@ page about {{jsxref("parseInt", "parseInt()")}}
 
 The decimal exponential literal is specified by the following format: `beN`;
 where `b` is a base number (integer or floating), followed by `e` char
-(which serves as separator or _exponent indicator_) and `N`, which is *exponent*
+(which serves as separator or *exponent indicator*) and `N`, which is *exponent*
 or *power* number – a signed integer (as per 2019 ECMA-262 specs):
 
 ```js
@@ -471,9 +487,9 @@ double quotes. Unicode code points may also be represented by an escape
 sequence. All code points may appear literally in a string literal except for
 these closing quote code points:
 
-- U+005C \ (backslash),
-- U+000D \<CR>,
-- and U+000A \<LF>.
+*   U+005C \ (backslash),
+*   U+000D \<CR>,
+*   and U+000A \<LF>.
 
 Prior to the
 [proposal to make all JSON text valid ECMA-262](https://github.com/tc39/proposal-json-superset),
@@ -568,13 +584,13 @@ Some [JavaScript statements](/en-US/docs/Web/JavaScript/Reference/Statements)
 must be terminated with semicolons and are therefore affected by automatic
 semicolon insertion (ASI):
 
-- Empty statement
-- `let`, `const`, variable statement
-- `import`, `export`, module declaration
-- Expression statement
-- `debugger`
-- `continue`, `break`, `throw`
-- `return`
+*   Empty statement
+*   `let`, `const`, variable statement
+*   `import`, `export`, module declaration
+*   Expression statement
+*   `debugger`
+*   `continue`, `break`, `throw`
+*   `return`
 
 The ECMAScript specification mentions
 [three rules of semicolon insertion](https://tc39.github.io/ecma262/#sec-rules-of-automatic-semicolon-insertion).
@@ -614,12 +630,12 @@ a = b;
 productions in the grammar is followed by a line terminator. These statements
 with "no LineTerminator here" rules are:
 
-- PostfixExpressions (`++` and `--`)
-- `continue`
-- `break`
-- `return`
-- `yield`, `yield*`
-- `module`
+*   PostfixExpressions (`++` and `--`)
+*   `continue`
+*   `break`
+*   `return`
+*   `yield`, `yield*`
+*   `module`
 
 ```js
 return
@@ -637,10 +653,10 @@ a + b;
 
 ## See also
 
-- [Lexical grammar in the ECMAScript specification](https://tc39.es/ecma262/#sec-ecmascript-language-lexical-grammar)
-- [Jeff Walden: Binary and octal numbers](http://whereswalden.com/2013/08/12/micro-feature-from-es6-now-in-firefox-aurora-and-nightly-binary-and-octal-numbers/)
-- [Mathias Bynens: JavaScript character escape sequences](http://mathiasbynens.be/notes/javascript-escapes)
-- {{jsxref("Boolean")}}
-- {{jsxref("Number")}}
-- {{jsxref("RegExp")}}
-- {{jsxref("String")}}
+*   [Lexical grammar in the ECMAScript specification](https://tc39.es/ecma262/#sec-ecmascript-language-lexical-grammar)
+*   [Jeff Walden: Binary and octal numbers](http://whereswalden.com/2013/08/12/micro-feature-from-es6-now-in-firefox-aurora-and-nightly-binary-and-octal-numbers/)
+*   [Mathias Bynens: JavaScript character escape sequences](http://mathiasbynens.be/notes/javascript-escapes)
+*   {{jsxref("Boolean")}}
+*   {{jsxref("Number")}}
+*   {{jsxref("RegExp")}}
+*   {{jsxref("String")}}

@@ -54,5 +54,5 @@ class MyArrayBuffer extends ArrayBuffer {
 
 ## See also
 
-- {{jsxref("ArrayBuffer")}}
-- {{jsxref("Symbol.species")}}
+*   {{jsxref("ArrayBuffer")}}
+*   {{jsxref("Symbol.species")}}

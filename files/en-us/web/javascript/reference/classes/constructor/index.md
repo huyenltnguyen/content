@@ -198,8 +198,8 @@ console.log(newInstance.name); //Polygon
 
 ## See also
 
-- {{jsxref("Operators/super", "super()")}}
-- {{jsxref("Statements/class", "class declaration", "", "true")}}
-- {{jsxref("Operators/class", "class expression", "", "true")}}
-- {{jsxref("Classes")}}
-- [Object.prototype.constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)
+*   {{jsxref("Operators/super", "super()")}}
+*   {{jsxref("Statements/class", "class declaration", "", "true")}}
+*   {{jsxref("Operators/class", "class expression", "", "true")}}
+*   {{jsxref("Classes")}}
+*   [Object.prototype.constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)

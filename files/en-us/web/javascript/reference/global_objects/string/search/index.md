@@ -25,15 +25,15 @@ search(regexp)
 
 ### Parameters
 
-- `regexp`
+*   `regexp`
 
-  - : A
-    [regular expression](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-    object.
+    *   : A
+        [regular expression](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+        object.
 
-    If a non-RegExp object `regexp` is passed, it is implicitly converted to a
-    {{jsxref("RegExp")}} with <code>new
-    RegExp(<var>regexp</var>)</code>.
+        If a non-RegExp object `regexp` is passed, it is implicitly converted to a
+        {{jsxref("RegExp")}} with <code>new
+        RegExp(<var>regexp</var>)</code>.
 
 ### Return value
 
@@ -42,7 +42,7 @@ string, or `-1` if no match was found.
 
 ## Description
 
-When you want to know whether a pattern is found, and _also_ know its index
+When you want to know whether a pattern is found, and *also* know its index
 within a string, use `search()`. (If you only want to know if it exists, use the
 similar {{jsxref("RegExp.prototype.test()", "test()")}} method
 on the `RegExp` prototype, which returns a boolean.)
@@ -79,6 +79,6 @@ console.log(str.search(reDot)) // returns -1 cannot find '.' dot punctuation
 
 ## See also
 
-- [Using regular expressions in JavaScript](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-- {{jsxref("String.prototype.match()")}}
-- {{jsxref("RegExp.prototype.exec()")}}
+*   [Using regular expressions in JavaScript](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+*   {{jsxref("String.prototype.match()")}}
+*   {{jsxref("RegExp.prototype.exec()")}}

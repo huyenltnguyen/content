@@ -38,58 +38,93 @@ For more information about the distinction between the
 These global properties return a simple value. They have no properties or
 methods.
 
-- {{JSxRef("Infinity")}}
-- {{JSxRef("NaN")}}
-- {{JSxRef("undefined")}}
-- {{JSxRef("globalThis")}}
+*   {{JSxRef("Infinity")}}
+*   {{JSxRef("NaN")}}
+*   {{JSxRef("undefined")}}
+*   {{JSxRef("globalThis")}}
 
 ### Function properties
 
 These global functions—functions which are called globally, rather than on an
 object—directly return their results to the caller.
 
-<div class="twocolumns"><ul><li>{{JSxRef("Global_Objects/eval", "eval()")}}</li><li>{{Non-Standard_Inline}} {{JSxRef("Global_Objects/uneval", "uneval()")}} </li><li>{{JSxRef("Global_Objects/isFinite", "isFinite()")}}</li><li>{{JSxRef("Global_Objects/isNaN", "isNaN()")}}</li><li>{{JSxRef("Global_Objects/parseFloat", "parseFloat()")}}</li><li>{{JSxRef("Global_Objects/parseInt", "parseInt()")}}</li><li>{{JSxRef("Global_Objects/encodeURI", "encodeURI()")}}</li><li>{{JSxRef("Global_Objects/encodeURIComponent", "encodeURIComponent()")}}</li><li>{{JSxRef("Global_Objects/decodeURI", "decodeURI()")}}</li><li>{{JSxRef("Global_Objects/decodeURIComponent", "decodeURIComponent()")}}</li><li><strong>Deprecated</strong><ul><li>{{Deprecated_Inline}} {{JSxRef("Global_Objects/escape", "escape()")}}</li><li>{{Deprecated_Inline}} {{JSxRef("Global_Objects/unescape", "unescape()")}}</li></ul></li></ul></div>
+*   {{JSxRef("Global_Objects/eval", "eval()")}}
+*   {{Non-Standard_Inline}}
+    {{JSxRef("Global_Objects/uneval", "uneval()")}}
+*   {{JSxRef("Global_Objects/isFinite", "isFinite()")}}
+*   {{JSxRef("Global_Objects/isNaN", "isNaN()")}}
+*   {{JSxRef("Global_Objects/parseFloat", "parseFloat()")}}
+*   {{JSxRef("Global_Objects/parseInt", "parseInt()")}}
+*   {{JSxRef("Global_Objects/encodeURI", "encodeURI()")}}
+*   {{JSxRef("Global_Objects/encodeURIComponent", "encodeURIComponent()")}}
+*   {{JSxRef("Global_Objects/decodeURI", "decodeURI()")}}
+*   {{JSxRef("Global_Objects/decodeURIComponent", "decodeURIComponent()")}}
+*   **Deprecated**
+
+    *   {{Deprecated_Inline}}
+        {{JSxRef("Global_Objects/escape", "escape()")}}
+    *   {{Deprecated_Inline}}
+        {{JSxRef("Global_Objects/unescape", "unescape()")}}
 
 ### Fundamental objects
 
 These are the fundamental, basic objects upon which all other objects are based.
 This includes general objects, booleans, functions, and symbols.
 
-- {{JSxRef("Object")}}
-- {{JSxRef("Function")}}
-- {{JSxRef("Boolean")}}
-- {{JSxRef("Symbol")}}
+*   {{JSxRef("Object")}}
+*   {{JSxRef("Function")}}
+*   {{JSxRef("Boolean")}}
+*   {{JSxRef("Symbol")}}
 
 ### Error objects
 
 Error objects are a special type of fundamental object. They include the basic
 {{JSxRef("Error")}} type, as well as several specialized error types.
 
-<div class="twocolumns"><ul><li>{{JSxRef("Error")}}</li><li>{{JSxRef("AggregateError")}} </li><li>{{JSxRef("EvalError")}}</li><li>{{JSxRef("InternalError")}}</li><li>{{JSxRef("RangeError")}}</li><li>{{JSxRef("ReferenceError")}}</li><li>{{JSxRef("SyntaxError")}}</li><li>{{JSxRef("TypeError")}}</li><li>{{JSxRef("URIError")}}</li></ul></div>
+*   {{JSxRef("Error")}}
+*   {{JSxRef("AggregateError")}}
+*   {{JSxRef("EvalError")}}
+*   {{JSxRef("InternalError")}}
+*   {{JSxRef("RangeError")}}
+*   {{JSxRef("ReferenceError")}}
+*   {{JSxRef("SyntaxError")}}
+*   {{JSxRef("TypeError")}}
+*   {{JSxRef("URIError")}}
 
 ### Numbers and dates
 
 These are the base objects representing numbers, dates, and mathematical
 calculations.
 
-- {{JSxRef("Number")}}
-- {{JSxRef("BigInt")}}
-- {{JSxRef("Math")}}
-- {{JSxRef("Date")}}
+*   {{JSxRef("Number")}}
+*   {{JSxRef("BigInt")}}
+*   {{JSxRef("Math")}}
+*   {{JSxRef("Date")}}
 
 ### Text processing
 
 These objects represent strings and support manipulating them.
 
-- {{JSxRef("String")}}
-- {{JSxRef("RegExp")}}
+*   {{JSxRef("String")}}
+*   {{JSxRef("RegExp")}}
 
 ### Indexed collections
 
 These objects represent collections of data which are ordered by an index value.
 This includes (typed) arrays and array-like constructs.
 
-<div class="twocolumns"><ul><li>{{JSxRef("Array")}}</li><li>{{JSxRef("Int8Array")}}</li><li>{{JSxRef("Uint8Array")}}</li><li>{{JSxRef("Uint8ClampedArray")}}</li><li>{{JSxRef("Int16Array")}}</li><li>{{JSxRef("Uint16Array")}}</li><li>{{JSxRef("Int32Array")}}</li><li>{{JSxRef("Uint32Array")}}</li><li>{{JSxRef("Float32Array")}}</li><li>{{JSxRef("Float64Array")}}</li><li>{{JSxRef("BigInt64Array")}}</li><li>{{JSxRef("BigUint64Array")}}</li></ul></div>
+*   {{JSxRef("Array")}}
+*   {{JSxRef("Int8Array")}}
+*   {{JSxRef("Uint8Array")}}
+*   {{JSxRef("Uint8ClampedArray")}}
+*   {{JSxRef("Int16Array")}}
+*   {{JSxRef("Uint16Array")}}
+*   {{JSxRef("Int32Array")}}
+*   {{JSxRef("Uint32Array")}}
+*   {{JSxRef("Float32Array")}}
+*   {{JSxRef("Float64Array")}}
+*   {{JSxRef("BigInt64Array")}}
+*   {{JSxRef("BigUint64Array")}}
 
 ### Keyed collections
 
@@ -97,49 +132,63 @@ These objects represent collections which use keys. The iterable collections
 ({{JSxRef("Map")}} and {{JSxRef("Set")}}) contain elements which
 are easily iterated in the order of insertion.
 
-- {{JSxRef("Map")}}
-- {{JSxRef("Set")}}
-- {{JSxRef("WeakMap")}}
-- {{JSxRef("WeakSet")}}
+*   {{JSxRef("Map")}}
+*   {{JSxRef("Set")}}
+*   {{JSxRef("WeakMap")}}
+*   {{JSxRef("WeakSet")}}
 
 ### Structured data
 
 These objects represent and interact with structured data buffers and data coded
 using JavaScript Object Notation (JSON).
 
-- {{JSxRef("ArrayBuffer")}}
-- {{JSxRef("SharedArrayBuffer")}}
-- {{JSxRef("Atomics")}}
-- {{JSxRef("DataView")}}
-- {{JSxRef("JSON")}}
+*   {{JSxRef("ArrayBuffer")}}
+*   {{JSxRef("SharedArrayBuffer")}}
+*   {{JSxRef("Atomics")}}
+*   {{JSxRef("DataView")}}
+*   {{JSxRef("JSON")}}
 
 ### Control abstraction objects
 
 Control abstractions can help to structure code, especially async code (without
 using deeply nested callbacks, for example).
 
-- {{JSxRef("Promise")}}
-- {{JSxRef("Generator")}}
-- {{JSxRef("GeneratorFunction")}}
-- {{JSxRef("AsyncFunction")}}
-- {{JSxRef("Global_Objects/AsyncGenerator", "AsyncGenerator")}}
-- {{JSxRef("Global_Objects/AsyncGeneratorFunction", "AsyncGeneratorFunction")}}
+*   {{JSxRef("Promise")}}
+*   {{JSxRef("Generator")}}
+*   {{JSxRef("GeneratorFunction")}}
+*   {{JSxRef("AsyncFunction")}}
+*   {{JSxRef("Global_Objects/AsyncGenerator", "AsyncGenerator")}}
+*   {{JSxRef("Global_Objects/AsyncGeneratorFunction", "AsyncGeneratorFunction")}}
 
 ### Reflection
 
-- {{JSxRef("Reflect")}}
-- {{JSxRef("Proxy")}}
+*   {{JSxRef("Reflect")}}
+*   {{JSxRef("Proxy")}}
 
 ### Internationalization
 
 Additions to the ECMAScript core for language-sensitive functionalities.
 
-<div class="twocolumns"><ul><li>{{JSxRef("Intl")}}</li><li>{{JSxRef("Global_Objects/Intl/Collator", "Intl.Collator")}}</li><li>{{JSxRef("Global_Objects/Intl/DateTimeFormat", "Intl.DateTimeFormat")}}</li><li>{{JSxRef("Global_Objects/Intl/ListFormat", "Intl.ListFormat")}}</li><li>{{JSxRef("Global_Objects/Intl/NumberFormat", "Intl.NumberFormat")}}</li><li>{{JSxRef("Global_Objects/Intl/PluralRules", "Intl.PluralRules")}}</li><li>{{JSxRef("Global_Objects/Intl/RelativeTimeFormat", "Intl.RelativeTimeFormat")}}</li><li>{{JSxRef("Global_Objects/Intl/Locale", "Intl.Locale")}}</li></ul></div>
+*   {{JSxRef("Intl")}}
+*   {{JSxRef("Global_Objects/Intl/Collator", "Intl.Collator")}}
+*   {{JSxRef("Global_Objects/Intl/DateTimeFormat", "Intl.DateTimeFormat")}}
+*   {{JSxRef("Global_Objects/Intl/ListFormat", "Intl.ListFormat")}}
+*   {{JSxRef("Global_Objects/Intl/NumberFormat", "Intl.NumberFormat")}}
+*   {{JSxRef("Global_Objects/Intl/PluralRules", "Intl.PluralRules")}}
+*   {{JSxRef("Global_Objects/Intl/RelativeTimeFormat", "Intl.RelativeTimeFormat")}}
+*   {{JSxRef("Global_Objects/Intl/Locale", "Intl.Locale")}}
 
 ### WebAssembly
 
-<div class="twocolumns"><ul><li>{{JSxRef("WebAssembly")}}</li><li>{{JSxRef("WebAssembly.Module")}}</li><li>{{JSxRef("WebAssembly.Instance")}}</li><li>{{JSxRef("WebAssembly.Memory")}}</li><li>{{JSxRef("WebAssembly.Table")}}</li><li>{{JSxRef("WebAssembly.CompileError")}}</li><li>{{JSxRef("WebAssembly.LinkError")}}</li><li>{{JSxRef("WebAssembly.RuntimeError")}}</li></ul></div>
+*   {{JSxRef("WebAssembly")}}
+*   {{JSxRef("WebAssembly.Module")}}
+*   {{JSxRef("WebAssembly.Instance")}}
+*   {{JSxRef("WebAssembly.Memory")}}
+*   {{JSxRef("WebAssembly.Table")}}
+*   {{JSxRef("WebAssembly.CompileError")}}
+*   {{JSxRef("WebAssembly.LinkError")}}
+*   {{JSxRef("WebAssembly.RuntimeError")}}
 
 ### Other
 
-- {{JSxRef("Functions/arguments", "arguments")}}
+*   {{JSxRef("Functions/arguments", "arguments")}}

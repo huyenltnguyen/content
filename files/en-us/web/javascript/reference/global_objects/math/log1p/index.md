@@ -15,13 +15,7 @@ browser-compat: javascript.builtins.Math.log1p
 The **`Math.log1p()`** function returns the natural logarithm (base
 {{jsxref("Math.E", "e")}}) of 1 + a number, that is
 
-<math display="block"><semantics><mrow><mo>∀</mo> <mi>x</mi> <mo>></mo>
-<mo>-</mo> <mn>1</mn> <mo>,</mo>
-<mstyle mathvariant="monospace"><mrow><mo lspace="0em" rspace="thinmathspace">Math.log1p</mo>
-<mo stretchy="false">(</mo> <mi>x</mi> <mo stretchy="false">)</mo>
-</mrow></mstyle><mo>=</mo> <mo lspace="0em" rspace="0em">ln</mo>
-<mo stretchy="false">(</mo> <mn>1</mn> <mo>+</mo> <mi>x</mi>
-<mo stretchy="false">)</mo> </mrow><annotation encoding="TeX">\forall x > -1,
+<math display="block"><semantics><mrow><mo>∀</mo> <mi>x</mi> <mo>></mo> <mo>-</mo> <mn>1</mn> <mo>,</mo> <mstyle mathvariant="monospace"><mrow><mo lspace="0em" rspace="thinmathspace">Math.log1p</mo> <mo stretchy="false">(</mo> <mi>x</mi> <mo stretchy="false">)</mo> </mrow></mstyle><mo>=</mo> <mo lspace="0em" rspace="0em">ln</mo> <mo stretchy="false">(</mo> <mn>1</mn> <mo>+</mo> <mi>x</mi> <mo stretchy="false">)</mo> </mrow><annotation encoding="TeX">\forall x > -1,
 \mathtt{\operatorname{Math.log1p}(x)} = \ln(1 +
 x)</annotation></semantics></math>
 
@@ -35,8 +29,8 @@ Math.log1p(x)
 
 ### Parameters
 
-- `x`
-  - : A number.
+*   `x`
+    *   : A number.
 
 ### Return value
 
@@ -46,7 +40,7 @@ returned.
 
 ## Description
 
-For very small values of _x_, adding 1 can reduce or eliminate precision.  The
+For very small values of *x*, adding 1 can reduce or eliminate precision.  The
 double floats used in JS give you about 15 digits of precision.  1 + 1e-15
 \= 1.000000000000001, but 1 + 1e-16 = 1.000000000000000 and therefore exactly
 1.0 in that arithmetic, because digits past 15 are rounded off.
@@ -89,11 +83,11 @@ Math.log1p(-2); // NaN
 
 ## See also
 
-- A polyfill of `Math.log1p` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
-- {{jsxref("Math.exp()")}}
-- {{jsxref("Math.log()")}}
-- {{jsxref("Math.expm1()")}}
-- {{jsxref("Math.log10()")}}
-- {{jsxref("Math.log2()")}}
-- {{jsxref("Math.pow()")}}
+*   A polyfill of `Math.log1p` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
+*   {{jsxref("Math.exp()")}}
+*   {{jsxref("Math.log()")}}
+*   {{jsxref("Math.expm1()")}}
+*   {{jsxref("Math.log10()")}}
+*   {{jsxref("Math.log2()")}}
+*   {{jsxref("Math.pow()")}}

@@ -57,5 +57,5 @@ class MyRegExp extends RegExp {
 
 ## See also
 
-- {{jsxref("RegExp")}}
-- {{jsxref("Symbol.species")}}
+*   {{jsxref("RegExp")}}
+*   {{jsxref("Symbol.species")}}

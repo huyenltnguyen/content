@@ -27,8 +27,8 @@ get(key)
 
 ### Parameters
 
-- `key`
-  - : The key of the element to return from the `Map` object.
+*   `key`
+    *   : The key of the element to return from the `Map` object.
 
 ### Return value
 
@@ -57,6 +57,6 @@ myMap.get('baz');   // Returns undefined
 
 ## See also
 
-- {{jsxref("Map")}}
-- {{jsxref("Map.prototype.set()")}}
-- {{jsxref("Map.prototype.has()")}}
+*   {{jsxref("Map")}}
+*   {{jsxref("Map.prototype.set()")}}
+*   {{jsxref("Map.prototype.has()")}}

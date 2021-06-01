@@ -22,27 +22,27 @@ time formatting.
 
 ## Constructor
 
-- {{jsxref("Intl/RelativeTimeFormat/RelativeTimeFormat", "Intl.RelativeTimeFormat()")}}
-  - : Creates a new `Intl.RelativeTimeFormat` object.
+*   {{jsxref("Intl/RelativeTimeFormat/RelativeTimeFormat", "Intl.RelativeTimeFormat()")}}
+    *   : Creates a new `Intl.RelativeTimeFormat` object.
 
 ## Static methods
 
-- {{jsxref("Intl/RelativeTimeFormat/supportedLocalesOf", "Intl.RelativeTimeFormat.supportedLocalesOf()")}}
-  - : Returns an array containing those of the provided locales that are
-    supported without having to fall back to the runtime's default locale.
+*   {{jsxref("Intl/RelativeTimeFormat/supportedLocalesOf", "Intl.RelativeTimeFormat.supportedLocalesOf()")}}
+    *   : Returns an array containing those of the provided locales that are
+        supported without having to fall back to the runtime's default locale.
 
 ## Instance methods
 
-- {{jsxref("Intl/RelativeTimeFormat/format", "Intl.RelativeTimeFormat.prototype.format()")}}
-  - : Formats a `value` and a `unit` according to the locale and formatting
-    options of the given {{jsxref("Intl.RelativeTimeFormat")}}
-    object.
-- {{jsxref("Intl/RelativeTimeFormat/formatToParts", "Intl.RelativeTimeFormat.prototype.formatToParts()")}}
-  - : Returns an {{jsxref("Array")}} of objects representing the relative
-    time format in parts that can be used for custom locale-aware formatting.
-- {{jsxref("Intl/RelativeTimeFormat/resolvedOptions", "Intl.RelativeTimeFormat.prototype.resolvedOptions()")}}
-  - : Returns a new object with properties reflecting the locale and formatting
-    options computed during initialization of the object.
+*   {{jsxref("Intl/RelativeTimeFormat/format", "Intl.RelativeTimeFormat.prototype.format()")}}
+    *   : Formats a `value` and a `unit` according to the locale and formatting
+        options of the given {{jsxref("Intl.RelativeTimeFormat")}}
+        object.
+*   {{jsxref("Intl/RelativeTimeFormat/formatToParts", "Intl.RelativeTimeFormat.prototype.formatToParts()")}}
+    *   : Returns an {{jsxref("Array")}} of objects representing the relative
+        time format in parts that can be used for custom locale-aware formatting.
+*   {{jsxref("Intl/RelativeTimeFormat/resolvedOptions", "Intl.RelativeTimeFormat.prototype.resolvedOptions()")}}
+    *   : Returns a new object with properties reflecting the locale and formatting
+        options computed during initialization of the object.
 
 ## Examples
 
@@ -101,5 +101,5 @@ rtf.formatToParts(100, "day");
 
 ## See also
 
-- {{jsxref("Intl")}}
-- [The Intl.RelativeTimeFormat API](https://developers.google.com/web/updates/2018/10/intl-relativetimeformat)
+*   {{jsxref("Intl")}}
+*   [The Intl.RelativeTimeFormat API](https://developers.google.com/web/updates/2018/10/intl-relativetimeformat)

@@ -95,7 +95,8 @@ order to get the format of the language used in the user interface of your
 application, make sure to specify that language (and possibly some fallback
 languages) using the `locales` argument:
 
-<pre class="brush: js">let date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+```js
+let date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
 
 // formats below assume the local time zone of the locale;
 // America/Los_Angeles for the US
@@ -114,7 +115,7 @@ console.log(date.toLocaleString('ko-KR'));
 
 // Arabic in most Arabic speaking countries uses real Arabic digits
 console.log(date.toLocaleString('ar-EG'));
-// → "<span dir="rtl">٢٠‏/١٢‏/٢٠١٢ ٥:٠٠:٠٠ ص</span>"
+// → "٢٠‏/١٢‏/٢٠١٢ ٥:٠٠:٠٠ ص"
 
 // for Japanese, applications may want to use the Japanese calendar,
 // where 2012 was the year 24 of the Heisei era
@@ -125,7 +126,7 @@ console.log(date.toLocaleString('ja-JP-u-ca-japanese'));
 // Balinese, include a fallback language (in this case, Indonesian)
 console.log(date.toLocaleString(['ban', 'id']));
 // → "20/12/2012 11.00.00"
-</pre>
+```
 
 ### Using options
 
@@ -186,7 +187,7 @@ For this reason, you cannot expect to be able to compare the results of
 
 ## See also
 
-- {{jsxref("Global_Objects/Intl/DateTimeFormat", "Intl.DateTimeFormat")}}
-- {{jsxref("Date.prototype.toLocaleDateString()")}}
-- {{jsxref("Date.prototype.toLocaleTimeString()")}}
-- {{jsxref("Date.prototype.toString()")}}
+*   {{jsxref("Global_Objects/Intl/DateTimeFormat", "Intl.DateTimeFormat")}}
+*   {{jsxref("Date.prototype.toLocaleDateString()")}}
+*   {{jsxref("Date.prototype.toLocaleTimeString()")}}
+*   {{jsxref("Date.prototype.toString()")}}

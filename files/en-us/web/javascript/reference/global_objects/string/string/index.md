@@ -18,13 +18,15 @@ useful.
 
 ## Syntax
 
-<pre class="brush: js">new String(<var>thing</var>)
-String(<var>thing</var>)</pre>
+```js
+new String(thing)
+String(thing)
+```
 
 ### Parameters
 
-- `thing`
-  - : Anything to be converted to a string.
+*   `thing`
+    *   : Anything to be converted to a string.
 
 ## Examples
 
@@ -52,4 +54,4 @@ at all.
 
 ## See also
 
-- [Text formatting in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Text_formatting)
+*   [Text formatting in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Text_formatting)

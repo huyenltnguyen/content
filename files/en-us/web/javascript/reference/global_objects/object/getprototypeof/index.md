@@ -18,12 +18,14 @@ of the internal `[[Prototype]]` property) of the specified object.
 
 ## Syntax
 
-<pre class="brush: js">Object.getPrototypeOf(<var>obj</var>)</pre>
+```js
+Object.getPrototypeOf(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object whose prototype is to be returned.
+*   `obj`
+    *   : The object whose prototype is to be returned.
 
 ### Return value
 
@@ -42,8 +44,7 @@ Object.getPrototypeOf(obj) === proto; // true
 
 ### Non-object coercion
 
-In ES5, it will throw a {{jsxref("TypeError")}} exception if the
-<var>obj</var> parameter isn't an object. In ES2015, the parameter will be
+In ES5, it will throw a {{jsxref("TypeError")}} exception if the <var>obj</var> parameter isn't an object. In ES2015, the parameter will be
 coerced to an {{jsxref("Object")}}.
 
 ```js
@@ -69,11 +70,11 @@ Opera supports the non-standard
 
 ## See also
 
-- A polyfill of `Object.getPrototypeOf` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- {{jsxref("Object.prototype.isPrototypeOf()")}}
-- {{jsxref("Object.setPrototypeOf()")}}
-- {{jsxref("Object/proto","Object.prototype.__proto__")}}
-- John Resig's post on
-  [getPrototypeOf](http://ejohn.org/blog/objectgetprototypeof/)
-- {{jsxref("Reflect.getPrototypeOf()")}}
+*   A polyfill of `Object.getPrototypeOf` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   {{jsxref("Object.prototype.isPrototypeOf()")}}
+*   {{jsxref("Object.setPrototypeOf()")}}
+*   {{jsxref("Object/proto","Object.prototype.__proto__")}}
+*   John Resig's post on
+    [getPrototypeOf](http://ejohn.org/blog/objectgetprototypeof/)
+*   {{jsxref("Reflect.getPrototypeOf()")}}

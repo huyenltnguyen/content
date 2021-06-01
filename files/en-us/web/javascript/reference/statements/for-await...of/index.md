@@ -30,16 +30,17 @@ used inside an
 
 ## Syntax
 
-<pre class="brush: js">for await (<var>variable</var> of <var>iterable</var>) {
-  <var>statement</var>
+```js
+for await (variable of iterable) {
+  statement
 }
-</pre>
+```
 
-- `variable`
-  - : On each iteration a value of a different property is assigned to
-    `variable`. `variable` may be declared with `const`, `let`, or `var`.
-- `iterable`
-  - : Object whose iterable properties are to be iterated over.
+*   `variable`
+    *   : On each iteration a value of a different property is assigned to
+        `variable`. `variable` may be declared with `const`, `let`, or `var`.
+*   `iterable`
+    *   : Object whose iterable properties are to be iterated over.
 
 ## Examples
 
@@ -258,5 +259,5 @@ loop.
 
 ## See also
 
-- {{jsxref("Global_Objects/Symbol/asyncIterator", "Symbol.asyncIterator")}}
-- {{jsxref("Statements/for...of", "for...of")}}
+*   {{jsxref("Global_Objects/Symbol/asyncIterator", "Symbol.asyncIterator")}}
+*   {{jsxref("Statements/for...of", "for...of")}}

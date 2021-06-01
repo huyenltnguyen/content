@@ -24,20 +24,21 @@ Async functions may also be defined
 
 ## Syntax
 
-<pre class="brush: js">async function <var>name</var>([<var>param</var>[, <var>param</var>[, ...<var>param</var>]]]) {
-   <var>statements</var>
+```js
+async function name([param[, param[, ...param]]]) {
+   statements
 }
-</pre>
+```
 
 ### Parameters
 
-- `name`
-  - : The function’s name.
-- `param`
-  - : The name of an argument to be passed to the function.
-- `statements`
-  - : The statements comprising the body of the function.  The `await` mechanism
-    may be used.
+*   `name`
+    *   : The function’s name.
+*   `param`
+    *   : The name of an argument to be passed to the function.
+*   `statements`
+    *   : The statements comprising the body of the function.  The `await` mechanism
+        may be used.
 
 ### Return value
 
@@ -74,17 +75,19 @@ promise.
 
 For example, the following:
 
-<pre class="brush: js">async function <var>foo</var>() {
-   <var>return 1</var>
+```js
+async function foo() {
+   return 1
 }
-</pre>
+```
 
 ...is similar to:
 
-<pre class="brush: js">function <var>foo</var>() {
-   <var>return Promise.resolve(1)</var>
+```js
+function foo() {
+   return Promise.resolve(1)
 }
-</pre>
+```
 
 <div class="notecard note"><h4 id="checking_equality_with_promise_resolve_vs_async_return">Checking equality with <code>Promise.resolve</code> vs <code>async</code> return</h4><p>Even though the return value of an async function behaves as if it's wrapped in a <code>Promise.resolve</code>, they are not equivalent.</p><p>An async function will return a different <em>reference</em>, whereas <code>Promise.resolve</code> returns the same reference if the given value is a promise.</p><p>It can be a problem when you want to check the equality of a promise and a return value of an async function.</p><pre class="brush: js">const p = new Promise((res, rej) => {
   res(1);
@@ -106,17 +109,19 @@ always complete asynchronously.
 
 For example:
 
-<pre class="brush: js">async function <var>foo</var>() {
-   <var>await 1</var>
+```js
+async function foo() {
+   await 1
 }
-</pre>
+```
 
 ...is equivalent to:
 
-<pre class="brush: js">function <var>foo</var>() {
-   <var>return Promise.resolve(1).then(() => undefined)</var>
+```js
+function foo() {
+   return Promise.resolve(1).then(() => undefined)
 }
-</pre>
+```
 
 Code after each await expression can be thought of as existing in a `.then`
 callback. In this way a promise chain is progressively constructed with each
@@ -143,11 +148,13 @@ through function `foo` in three stages.
     default return value of `undefined` is returned as the resolution value of
     the current promise.
 
-<pre class="brush: js">async function <var>foo</var>() {
-   const result1 = <var>await new Promise((resolve) => setTimeout(() => resolve('1')))
-</var>   const result2 = <var>await new Promise((resolve) => setTimeout(() => resolve('2')))</var>
+```js
+async function foo() {
+   const result1 = await new Promise((resolve) => setTimeout(() => resolve('1')))
+   const result2 = await new Promise((resolve) => setTimeout(() => resolve('2')))
 }
-foo()</pre>
+foo()
+```
 
 Note how the promise chain is not built-up in one go. Instead, the promise chain
 is constructed in stages as control is successively yielded from and returned to
@@ -159,13 +166,14 @@ thrown, even if a `.catch` handler has been configured further along the promise
 chain. This is because `p2` will not be "wired into" the promise chain until
 control returns from `p1`.
 
-<pre class="brush: js">async function <var>foo</var>() {
-   const p1 = <var>new Promise((resolve) => setTimeout(() => resolve('1'), 1000))
-</var>   const p2 = <var>new Promise((_,reject) => setTimeout(() => reject('2'), 500))
-   const results = [await p1, await p2] // Do not do this! Use Promise.all or Promise.allSettled instead.</var>
+```js
+async function foo() {
+   const p1 = new Promise((resolve) => setTimeout(() => resolve('1'), 1000))
+   const p2 = new Promise((_,reject) => setTimeout(() => reject('2'), 500))
+   const results = [await p1, await p2] // Do not do this! Use Promise.all or Promise.allSettled instead.
 }
 foo().catch(() => {}) // Attempt to swallow all errors...
-</pre>
+```
 
 ## Examples
 
@@ -340,7 +348,7 @@ keyword, although that would be valid too: The return value of an
 >
 > This highlights the subtle difference between `return foo;` and
 > `return await foo;` — `return foo` immediately returns `foo` and never throws,
-> even if `foo` is a Promise that rejects. `return await foo` will _wait_ for
+> even if `foo` is a Promise that rejects. `return await foo` will *wait* for
 > `foo` to resolve or reject if it's a Promise, and throws **before returning**
 > if it rejects.
 
@@ -354,7 +362,7 @@ keyword, although that would be valid too: The return value of an
 
 ## See also
 
-- {{jsxref("Operators/async_function", "async function expression")}}
-- {{jsxref("AsyncFunction")}} object
-- {{jsxref("Operators/await", "await")}}
-- ["Decorating Async Javascript Functions" on "innolitics.com"](http://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)
+*   {{jsxref("Operators/async_function", "async function expression")}}
+*   {{jsxref("AsyncFunction")}} object
+*   {{jsxref("Operators/await", "await")}}
+*   ["Decorating Async Javascript Functions" on "innolitics.com"](http://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)

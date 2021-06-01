@@ -28,10 +28,10 @@ new WeakMap(iterable)
 
 ### Parameters
 
-- `iterable`
-  - : Iterable is an Array or other iterable object whose elements are key-value
-    pairs (2-element Arrays). Each key-value pair will be added to the new
-    WeakMap. null is treated as undefined.
+*   `iterable`
+    *   : Iterable is an Array or other iterable object whose elements are key-value
+        pairs (2-element Arrays). Each key-value pair will be added to the new
+        WeakMap. null is treated as undefined.
 
 ## Examples
 
@@ -77,10 +77,10 @@ wm1.has(o1); // false
 
 ## See also
 
-- A polyfill of `WeakMap` is available in
-  [`core-js`](https://github.com/zloirock/core-js#weakmap)
-- [`WeakMap` in the JavaScript guide](/en-US/docs/Web/JavaScript/Guide/Keyed_collections#WeakMap_object)
-- [Hiding Implementation Details with ECMAScript 6 WeakMaps](http://fitzgeraldnick.com/weblog/53/)
-- {{jsxref("Map")}}
-- {{jsxref("Set")}}
-- {{jsxref("WeakSet")}}
+*   A polyfill of `WeakMap` is available in
+    [`core-js`](https://github.com/zloirock/core-js#weakmap)
+*   [`WeakMap` in the JavaScript guide](/en-US/docs/Web/JavaScript/Guide/Keyed_collections#WeakMap_object)
+*   [Hiding Implementation Details with ECMAScript 6 WeakMaps](http://fitzgeraldnick.com/weblog/53/)
+*   {{jsxref("Map")}}
+*   {{jsxref("Set")}}
+*   {{jsxref("WeakSet")}}

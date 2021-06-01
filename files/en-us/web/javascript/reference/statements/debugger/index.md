@@ -36,7 +36,7 @@ function potentiallyBuggyCode() {
 When the debugger is invoked, execution is paused at the `debugger` statement.
 It is like a breakpoint in the script source.
 
-[![Paused at a debugger statement.](screen_shot_2014-02-07_at_9.14.35_am.png)](https://mdn.mozillademos.org/files/6963/Screen%20Shot%202014-02-07%20at%209.14.35%20AM.png)
+[![Paused at a debugger statement.](screen_shot\_2014-02-07\_at\_9.14.35\_am.png)](https://mdn.mozillademos.org/files/6963/Screen%20Shot%202014-02-07%20at%209.14.35%20AM.png)
 
 ## Specifications
 
@@ -48,5 +48,5 @@ It is like a breakpoint in the script source.
 
 ## See also
 
-- [Debugging JavaScript](/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
-- [The Debugger in the Firefox Developer Tools](/en-US/docs/Tools/Debugger)
+*   [Debugging JavaScript](/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
+*   [The Debugger in the Firefox Developer Tools](/en-US/docs/Tools/Debugger)

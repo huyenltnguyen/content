@@ -28,15 +28,17 @@ lastIndexOf(searchValue, fromIndex)
 
 ### Parameters
 
-- `searchValue`
-  - : A string representing the value to search for. If `searchValue` is an
-    empty string, then `fromIndex` is returned.
-- `fromIndex` {{optional_inline}}
-  - : The index of the last character in the string to be considered as the
-    beginning of a match. The default value is `+Infinity`. If
-    <code><var>fromIndex</var> >= <var>str</var>.length</code>, the whole string
-    is searched. If <code><var>fromIndex</var> &#x3C; 0</code>, the behavior
-    will be the same as if it would be `0`.
+*   `searchValue`
+    *   : A string representing the value to search for. If `searchValue` is an
+        empty string, then `fromIndex` is returned.
+*   `fromIndex` {{optional_inline}}
+
+    *   : The index of the last character in the string to be considered as the
+        beginning of a match. The default value is `+Infinity`. If
+
+        <code><var>fromIndex</var> >= <var>str</var>.length</code> , the whole
+        string is searched. If <code><var>fromIndex</var> < 0</code> , the
+        behavior will be the same as if it would be `0`.
 
 ### Return value
 
@@ -45,8 +47,7 @@ The index of the last occurrence of `searchValue`; `-1` if not found.
 ## Description
 
 Characters in a string are indexed from left to right. The index of the first
-character is `0`, and the index of the last character is
-<code><var>str</var>.length - 1</code>.
+character is `0`, and the index of the last character is <code><var>str</var>.length - 1</code>.
 
 ```js
 'canal'.lastIndexOf('a');     // returns 3
@@ -102,8 +103,8 @@ console.log('The index of "new" from the end is ' + anyString.lastIndexOf('new')
 
 ## See also
 
-- {{jsxref("String.prototype.charAt()")}}
-- {{jsxref("String.prototype.indexOf()")}}
-- {{jsxref("String.prototype.split()")}}
-- {{jsxref("Array.prototype.indexOf()")}}
-- {{jsxref("Array.prototype.lastIndexOf()")}}
+*   {{jsxref("String.prototype.charAt()")}}
+*   {{jsxref("String.prototype.indexOf()")}}
+*   {{jsxref("String.prototype.split()")}}
+*   {{jsxref("Array.prototype.indexOf()")}}
+*   {{jsxref("Array.prototype.lastIndexOf()")}}

@@ -44,10 +44,10 @@ characters.
 
 The most common radixes:
 
-- 2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
-- 8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
-- 10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
-- 16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
+*   2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
+*   8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
+*   10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
+*   16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
 
 ## Examples
 
@@ -73,5 +73,5 @@ The most common radixes:
 
 ## See also
 
-- {{jsxref("Number.prototype.toString()")}}
-- {{jsxref("BigInt.prototype.toString()")}}
+*   {{jsxref("Number.prototype.toString()")}}
+*   {{jsxref("BigInt.prototype.toString()")}}

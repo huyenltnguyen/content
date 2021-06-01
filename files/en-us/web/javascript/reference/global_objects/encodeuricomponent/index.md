@@ -20,12 +20,14 @@ character (will only be four escape sequences for characters composed of two
 
 ## Syntax
 
-<pre class="brush: js">encodeURIComponent(<var>str</var>);</pre>
+```js
+encodeURIComponent(str);
+```
 
 ### Parameters
 
-- `str`
-  - : String. A component of a URI.
+*   `str`
+    *   : String. A component of a URI.
 
 ### Return value
 
@@ -35,11 +37,11 @@ A new string representing the provided string encoded as a URI component.
 
 `encodeURIComponent()` escapes all characters **except**:
 
-<pre class="brush: plain"><strong>Not Escaped</strong>:
+```plain
+Not Escaped:
 
-    A-Z a-z 0-9 <code>-</code> <code>_</code> <code>.</code> <code>!</code> <code>~</code> <code>*</code> <code>'</code> <code>(</code> <code>)
-</code>
-</pre>
+    A-Z a-z 0-9 - _ . ! ~ * ' ( )
+```
 
 `encodeURIComponent()` differs from **`encodeURI`** as follows:
 
@@ -154,6 +156,6 @@ function encodeRFC5987ValueChars2(str) {
 
 ## See also
 
-- {{jsxref("decodeURI")}}
-- {{jsxref("encodeURI")}}
-- {{jsxref("decodeURIComponent")}}
+*   {{jsxref("decodeURI")}}
+*   {{jsxref("encodeURI")}}
+*   {{jsxref("decodeURIComponent")}}

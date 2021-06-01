@@ -11,28 +11,27 @@ browser-compat: javascript.builtins.WebAssembly.Module
 ---
 {{JSRef}}
 
-<span class="seoSummary">A <strong><code>WebAssembly.Module</code></strong>
-object contains stateless WebAssembly code that has already been compiled by the
-browser — this can be efficiently
-<a href="/en-US/docs/Web/API/Worker/postMessage">shared with Workers</a>, and
-instantiated multiple times.</span>
+A **`WebAssembly.Module`** object contains stateless WebAssembly code that has
+already been compiled by the browser — this can be efficiently
+[shared with Workers](/en-US/docs/Web/API/Worker/postMessage), and instantiated
+multiple times.
 
 ## Constructor
 
-- {{jsxref("Global_Objects/WebAssembly/Module/Module", "WebAssembly.Module()")}}
-  - : Creates a new `Module` object.
+*   {{jsxref("Global_Objects/WebAssembly/Module/Module", "WebAssembly.Module()")}}
+    *   : Creates a new `Module` object.
 
 ## Static properties
 
-- {{jsxref("Global_Objects/WebAssembly/Module/customSections", "WebAssembly.Module.customSections()")}}
-  - : Given a `Module` and string, returns a copy of the contents of all custom
-    sections in the module with the given string name.
-- {{jsxref("Global_Objects/WebAssembly/Module/exports", "WebAssembly.Module.exports()")}}
-  - : Given a `Module`, returns an array containing descriptions of all the
-    declared exports.
-- {{jsxref("Global_Objects/WebAssembly/Module/imports", "WebAssembly.Module.imports()")}}
-  - : Given a `Module`, returns an array containing descriptions of all the
-    declared imports.
+*   {{jsxref("Global_Objects/WebAssembly/Module/customSections", "WebAssembly.Module.customSections()")}}
+    *   : Given a `Module` and string, returns a copy of the contents of all custom
+        sections in the module with the given string name.
+*   {{jsxref("Global_Objects/WebAssembly/Module/exports", "WebAssembly.Module.exports()")}}
+    *   : Given a `Module`, returns an array containing descriptions of all the
+        declared exports.
+*   {{jsxref("Global_Objects/WebAssembly/Module/imports", "WebAssembly.Module.imports()")}}
+    *   : Given a `Module`, returns an array containing descriptions of all the
+        declared imports.
 
 ## Examples
 
@@ -94,6 +93,6 @@ onmessage = function(e) {
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

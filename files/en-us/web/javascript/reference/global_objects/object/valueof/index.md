@@ -66,13 +66,15 @@ automatically calls the function defined in the preceding code.
 An object's `valueOf` method is usually invoked by JavaScript, but you can
 invoke it yourself as follows:
 
-<pre class="brush: js"><var>myNumberType</var>.valueOf()</pre>
+```js
+myNumberType.valueOf()
+```
 
 > **Note:** Objects in string contexts convert via the
 > {{jsxref("Object.toString", "toString()")}} method, which is
 > different from {{jsxref("String")}} objects converting to string
 > primitives using `valueOf`. All objects have a string conversion, if only
-> "<code>[object <em>type</em>]</code>". But many objects do not convert to
+> "<code>\[object <em>type</em>]</code>". But many objects do not convert to
 > number, boolean, or function.
 
 ## Examples
@@ -122,6 +124,6 @@ myObj + 3; // 7
 
 ## See also
 
-- {{jsxref("Object.prototype.toString()")}}
-- {{jsxref("parseInt", "parseInt()")}}
-- {{jsxref("Symbol.toPrimitive")}}
+*   {{jsxref("Object.prototype.toString()")}}
+*   {{jsxref("parseInt", "parseInt()")}}
+*   {{jsxref("Symbol.toPrimitive")}}

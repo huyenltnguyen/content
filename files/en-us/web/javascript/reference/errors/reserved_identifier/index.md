@@ -9,7 +9,7 @@ tags:
 ---
 {{jsSidebar("Errors")}}
 
-The JavaScript exception "_variable_ is a reserved identifier" occurs when
+The JavaScript exception "*variable* is a reserved identifier" occurs when
 [reserved keywords](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords)
 are used as identifiers.
 
@@ -31,18 +31,18 @@ SyntaxError: Unexpected reserved word (Chrome)
 will throw in if they are used as identifiers. These are reserved in strict mode
 and sloppy mode:
 
-- `enum`
+*   `enum`
 
 The following are only reserved when they are found in strict mode code:
 
-- `implements`
-- `interface`
-- {{jsxref("Statements/let", "let")}}
-- `package`
-- `private`
-- `protected`
-- `public`
-- `static`
+*   `implements`
+*   `interface`
+*   {{jsxref("Statements/let", "let")}}
+*   `package`
+*   `private`
+*   `protected`
+*   `public`
+*   `static`
 
 ## Examples
 
@@ -88,4 +88,4 @@ class DocArchiver {}
 
 ## See also
 
-- [Good variable names](http://wiki.c2.com/?GoodVariableNames)
+*   [Good variable names](http://wiki.c2.com/?GoodVariableNames)

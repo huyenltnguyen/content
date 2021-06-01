@@ -30,8 +30,8 @@ Array.isArray(value)
 
 ### Parameters
 
-- `value`
-  - : The value to be checked.
+*   `value`
+    *   : The value to be checked.
 
 ### Return value
 
@@ -101,7 +101,7 @@ arr instanceof Array; // false
 
 ## See also
 
-- A polyfill of `Array.isArray` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
-- {{jsxref("Array")}}
+*   A polyfill of `Array.isArray` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+*   {{jsxref("Array")}}

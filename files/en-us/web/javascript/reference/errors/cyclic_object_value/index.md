@@ -81,8 +81,8 @@ JSON.stringify(circularReference, getCircularReplacer());
 
 ## See also
 
-- {{jsxref("JSON.stringify")}}
-- [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) –
-  Introduces two functions, `JSON.decycle` and `JSON.retrocycle`, which makes it
-  possible to encode and decode cyclical structures and dags into an extended
-  and retrocompatible JSON format.
+*   {{jsxref("JSON.stringify")}}
+*   [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) –
+    Introduces two functions, `JSON.decycle` and `JSON.retrocycle`, which makes it
+    possible to encode and decode cyclical structures and dags into an extended
+    and retrocompatible JSON format.

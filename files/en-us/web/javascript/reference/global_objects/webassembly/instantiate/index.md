@@ -16,16 +16,16 @@ browser-compat: javascript.builtins.WebAssembly.instantiate
 The **`WebAssembly.instantiate()`** function allows you to compile and
 instantiate WebAssembly code. This function has two overloads:
 
-- The primary overload takes the WebAssembly binary code, in the form of a
-  [typed array](/en-US/docs/Web/JavaScript/Typed_arrays) or
-  {{jsxref("ArrayBuffer")}}, and performs both compilation and
-  instantiation in one step. The returned `Promise` resolves to both a compiled
-  {{jsxref("WebAssembly.Module")}} and its first
-  {{jsxref("WebAssembly.Instance")}}.
-- The secondary overload takes an already-compiled
-  {{jsxref("WebAssembly.Module")}} and returns a `Promise` that
-  resolves to an `Instance` of that `Module`. This overload is useful if the
-  `Module` has already been compiled.
+*   The primary overload takes the WebAssembly binary code, in the form of a
+    [typed array](/en-US/docs/Web/JavaScript/Typed_arrays) or
+    {{jsxref("ArrayBuffer")}}, and performs both compilation and
+    instantiation in one step. The returned `Promise` resolves to both a compiled
+    {{jsxref("WebAssembly.Module")}} and its first
+    {{jsxref("WebAssembly.Instance")}}.
+*   The secondary overload takes an already-compiled
+    {{jsxref("WebAssembly.Module")}} and returns a `Promise` that
+    resolves to an `Instance` of that `Module`. This overload is useful if the
+    `Module` has already been compiled.
 
 > **Warning:** This method is not the most efficient way of fetching and
 > instantiating wasm modules. If at all possible, you should use the newer
@@ -44,39 +44,39 @@ WebAssembly.instantiate(bufferSource, importObject);
 
 #### Parameters
 
-- _bufferSource_
-  - : A [typed array](/en-US/docs/Web/JavaScript/Typed_arrays) or
-    {{jsxref("ArrayBuffer")}} containing the binary code of the .wasm
-    module you want to compile.
-- _importObject_ {{optional_inline}}
-  - : An object containing the values to be imported into the newly-created
-    `Instance`, such as functions or
-    {{jsxref("WebAssembly.Memory")}} objects. There must be one
-    matching property for each declared import of the compiled module or else a
-    {{jsxref("WebAssembly.LinkError")}} is thrown.
+*   *bufferSource*
+    *   : A [typed array](/en-US/docs/Web/JavaScript/Typed_arrays) or
+        {{jsxref("ArrayBuffer")}} containing the binary code of the .wasm
+        module you want to compile.
+*   *importObject* {{optional_inline}}
+    *   : An object containing the values to be imported into the newly-created
+        `Instance`, such as functions or
+        {{jsxref("WebAssembly.Memory")}} objects. There must be one
+        matching property for each declared import of the compiled module or else a
+        {{jsxref("WebAssembly.LinkError")}} is thrown.
 
 #### Return value
 
 A `Promise` that resolves to a `ResultObject` which contains two fields:
 
-- `module`: A {{jsxref("WebAssembly.Module")}} object representing
-  the compiled WebAssembly module. This `Module` can be instantiated again,
-  shared via
-  {{domxref("Worker.postMessage", "postMessage()")}} or
-  [cached in IndexedDB](/en-US/docs/WebAssembly/Caching_modules).
-- `instance`: A {{jsxref("WebAssembly.Instance")}} object that
-  contains all the
-  [Exported WebAssembly functions](/en-US/docs/WebAssembly/Exported_functions).
+*   `module`: A {{jsxref("WebAssembly.Module")}} object representing
+    the compiled WebAssembly module. This `Module` can be instantiated again,
+    shared via
+    {{domxref("Worker.postMessage", "postMessage()")}} or
+    [cached in IndexedDB](/en-US/docs/WebAssembly/Caching_modules).
+*   `instance`: A {{jsxref("WebAssembly.Instance")}} object that
+    contains all the
+    [Exported WebAssembly functions](/en-US/docs/WebAssembly/Exported_functions).
 
 #### Exceptions
 
-- If either of the parameters are not of the correct type or structure, a
-  {{jsxref("TypeError")}} is thrown.
-- If the operation fails, the promise rejects with a
-  {{jsxref("WebAssembly.CompileError")}},
-  {{jsxref("WebAssembly.LinkError")}}, or
-  {{jsxref("WebAssembly.RuntimeError")}}, depending on the cause
-  of the failure.
+*   If either of the parameters are not of the correct type or structure, a
+    {{jsxref("TypeError")}} is thrown.
+*   If the operation fails, the promise rejects with a
+    {{jsxref("WebAssembly.CompileError")}},
+    {{jsxref("WebAssembly.LinkError")}}, or
+    {{jsxref("WebAssembly.RuntimeError")}}, depending on the cause
+    of the failure.
 
 ### Secondary overload — taking a module object instance
 
@@ -86,15 +86,15 @@ WebAssembly.instantiate(module, importObject);
 
 #### Parameters
 
-- _module_
-  - : The {{jsxref("WebAssembly.Module")}} object to be
-    instantiated.
-- _importObject_ {{optional_inline}}
-  - : An object containing the values to be imported into the newly-created
-    `Instance`, such as functions or
-    {{jsxref("WebAssembly.Memory")}} objects. There must be one
-    matching property for each declared import of `module` or else a
-    {{jsxref("WebAssembly.LinkError")}} is thrown.
+*   *module*
+    *   : The {{jsxref("WebAssembly.Module")}} object to be
+        instantiated.
+*   *importObject* {{optional_inline}}
+    *   : An object containing the values to be imported into the newly-created
+        `Instance`, such as functions or
+        {{jsxref("WebAssembly.Memory")}} objects. There must be one
+        matching property for each declared import of `module` or else a
+        {{jsxref("WebAssembly.LinkError")}} is thrown.
 
 #### Return value
 
@@ -103,13 +103,13 @@ object.
 
 #### Exceptions
 
-- If either of the parameters are not of the correct type or structure, a
-  {{jsxref("TypeError")}} is thrown.
-- If the operation fails, the promise rejects with a
-  {{jsxref("WebAssembly.CompileError")}},
-  {{jsxref("WebAssembly.LinkError")}}, or
-  {{jsxref("WebAssembly.RuntimeError")}}, depending on the cause
-  of the failure.
+*   If either of the parameters are not of the correct type or structure, a
+    {{jsxref("TypeError")}} is thrown.
+*   If the operation fails, the promise rejects with a
+    {{jsxref("WebAssembly.CompileError")}},
+    {{jsxref("WebAssembly.LinkError")}}, or
+    {{jsxref("WebAssembly.RuntimeError")}}, depending on the cause
+    of the failure.
 
 ## Examples
 
@@ -206,6 +206,6 @@ onmessage = function(e) {
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

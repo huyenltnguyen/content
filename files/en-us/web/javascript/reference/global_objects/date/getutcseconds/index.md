@@ -49,5 +49,5 @@ var seconds = today.getUTCSeconds();
 
 ## See also
 
-- {{jsxref("Date.prototype.getSeconds()")}}
-- {{jsxref("Date.prototype.setUTCSeconds()")}}
+*   {{jsxref("Date.prototype.getSeconds()")}}
+*   {{jsxref("Date.prototype.setUTCSeconds()")}}

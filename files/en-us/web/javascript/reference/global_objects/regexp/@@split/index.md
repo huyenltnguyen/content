@@ -20,17 +20,19 @@ an array of strings by separating the string into substrings.
 
 ## Syntax
 
-<pre class="brush: js"><var>regexp</var>[Symbol.split](<var>str</var>[, <var>limit</var>])</pre>
+```js
+regexp[Symbol.split](str[, limit])
+```
 
 ### Parameters
 
-- `str`
-  - : The target of the split operation.
-- `limit` {{optional_inline}}
-  - : Integer specifying a limit on the number of splits to be found. The
-    `[@@split]()` method still splits on every match of `this` RegExp pattern
-    (or, in the Syntax above, `regexp`), until the number of split items match
-    the `limit` or the string falls short of `this` pattern.
+*   `str`
+    *   : The target of the split operation.
+*   `limit` {{optional_inline}}
+    *   : Integer specifying a limit on the number of splits to be found. The
+        `[@@split]()` method still splits on every match of `this` RegExp pattern
+        (or, in the Syntax above, `regexp`), until the number of split items match
+        the `limit` or the string falls short of `this` pattern.
 
 ### Return value
 
@@ -97,11 +99,11 @@ console.log(result); // ["(2016)", "(01)", "(02)"]
 
 ## See also
 
-- A polyfill of `RegExp.prototype[@@split]` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.split()")}}
-- {{jsxref("RegExp.prototype.@@match()", "RegExp.prototype[@@match]()")}}
-- {{jsxref("RegExp.prototype.@@replace()", "RegExp.prototype[@@replace]()")}}
-- {{jsxref("RegExp.prototype.@@search()", "RegExp.prototype[@@search]()")}}
-- {{jsxref("RegExp.prototype.exec()")}}
-- {{jsxref("RegExp.prototype.test()")}}
+*   A polyfill of `RegExp.prototype[@@split]` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.split()")}}
+*   {{jsxref("RegExp.prototype.@@match()", "RegExp.prototype[@@match]()")}}
+*   {{jsxref("RegExp.prototype.@@replace()", "RegExp.prototype[@@replace]()")}}
+*   {{jsxref("RegExp.prototype.@@search()", "RegExp.prototype[@@search]()")}}
+*   {{jsxref("RegExp.prototype.exec()")}}
+*   {{jsxref("RegExp.prototype.test()")}}

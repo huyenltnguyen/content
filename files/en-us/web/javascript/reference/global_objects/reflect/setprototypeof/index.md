@@ -22,15 +22,16 @@ the operation was successful, or `false` otherwise.
 
 ## Syntax
 
-<pre class="brush: js">Reflect.setPrototypeOf(<var>target</var>, <var>prototype</var>)
-</pre>
+```js
+Reflect.setPrototypeOf(target, prototype)
+```
 
 ### Parameters
 
-- `target`
-  - : The target object of which to set the prototype.
-- `prototype`
-  - : The object's new prototype (an object or {{jsxref("null")}}).
+*   `target`
+    *   : The target object of which to set the prototype.
+*   `prototype`
+    *   : The object's new prototype (an object or {{jsxref("null")}}).
 
 ### Return value
 
@@ -77,7 +78,7 @@ Reflect.setPrototypeOf(target, proto)  // false
 
 ## See also
 
-- A polyfill of `Reflect.setPrototypeOf` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- {{jsxref("Object.setPrototypeOf()")}}
+*   A polyfill of `Reflect.setPrototypeOf` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   {{jsxref("Object.setPrototypeOf()")}}

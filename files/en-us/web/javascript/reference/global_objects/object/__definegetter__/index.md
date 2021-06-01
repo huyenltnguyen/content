@@ -31,11 +31,11 @@ __defineGetter__(prop, func)
 
 ### Parameters
 
-- `prop`
-  - : A string containing the name of the property to bind to the given
-    function.
-- `func`
-  - : A function to be bound to a lookup of the specified property.
+*   `prop`
+    *   : A string containing the name of the property to bind to the given
+        function.
+*   `func`
+    *   : A function to be bound to a lookup of the specified property.
 
 ### Return value
 
@@ -84,13 +84,13 @@ console.log(o.gimmeFive); // 5
 
 ## See also
 
-- A polyfill of `Object.prototype.__defineGetter__` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- {{jsxref("Object.prototype.__defineSetter__()")}}
-- {{jsxref("Functions/get", "get")}} operator
-- {{jsxref("Object.defineProperty()")}}
-- {{jsxref("Object.prototype.__lookupGetter__()")}}
-- {{jsxref("Object.prototype.__lookupSetter__()")}}
-- [JS Guide: Defining Getters and Setters](/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#defining_getters_and_setters)
-- [\[Blog Post\] Deprecation of \_\_defineGetter\_\_ and \_\_defineSetter\_\_](https://whereswalden.com/2010/04/16/more-spidermonkey-changes-ancient-esoteric-very-rarely-used-syntax-for-creating-getters-and-setters-is-being-removed/)
-- {{bug(647423)}}
+*   A polyfill of `Object.prototype.__defineGetter__` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   {{jsxref("Object.prototype.__defineSetter__()")}}
+*   {{jsxref("Functions/get", "get")}} operator
+*   {{jsxref("Object.defineProperty()")}}
+*   {{jsxref("Object.prototype.__lookupGetter__()")}}
+*   {{jsxref("Object.prototype.__lookupSetter__()")}}
+*   [JS Guide: Defining Getters and Setters](/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#defining_getters_and_setters)
+*   [\[Blog Post\] Deprecation of \__defineGetter\_\_ and \__defineSetter\_\_](https://whereswalden.com/2010/04/16/more-spidermonkey-changes-ancient-esoteric-very-rarely-used-syntax-for-creating-getters-and-setters-is-being-removed/)
+*   {{bug(647423)}}

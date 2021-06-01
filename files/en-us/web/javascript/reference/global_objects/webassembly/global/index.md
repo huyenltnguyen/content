@@ -17,8 +17,8 @@ linking of multiple modules.
 
 ## Constructor
 
-- [`WebAssembly.Global()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global)
-  - : Creates a new `Global` object.
+*   [`WebAssembly.Global()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global)
+    *   : Creates a new `Global` object.
 
 ## Global instances
 
@@ -27,22 +27,22 @@ object — this can be modified to affect all `Global` instances.
 
 ### Instance properties
 
-- `Global.prototype.constructor`
-  - : Returns the function that created this object's instance. By default this
-    is the {{jsxref("WebAssembly.Global()")}} constructor.
-- `Global.prototype[@@toStringTag]`
-  - : The initial value of the
-    [@@toStringTag](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag)
-    property is the String value "WebAssembly.Global".
-- `Global.prototype.value`
-  - : The value contained inside the global variable — this can be used to
-    directly set and get the global's value.
+*   `Global.prototype.constructor`
+    *   : Returns the function that created this object's instance. By default this
+        is the {{jsxref("WebAssembly.Global()")}} constructor.
+*   `Global.prototype[@@toStringTag]`
+    *   : The initial value of the
+        [@@toStringTag](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag)
+        property is the String value "WebAssembly.Global".
+*   `Global.prototype.value`
+    *   : The value contained inside the global variable — this can be used to
+        directly set and get the global's value.
 
 ### Instance methods
 
-- `Global.prototype.valueOf()`
-  - : Old-style method that returns the value contained inside the global
-    variable.
+*   `Global.prototype.valueOf()`
+    *   : Old-style method that returns the value contained inside the global
+        variable.
 
 ## Examples
 
@@ -97,7 +97,7 @@ WebAssembly.instantiateStreaming(fetch('global.wasm'), { js: { global } })
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
-- [Import/Export mutable globals proposal](https://github.com/WebAssembly/mutable-global/blob/master/proposals/mutable-global/Overview.md)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [Import/Export mutable globals proposal](https://github.com/WebAssembly/mutable-global/blob/master/proposals/mutable-global/Overview.md)

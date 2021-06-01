@@ -31,39 +31,39 @@ foo     = true;  // foo is now a boolean
 
 The latest ECMAScript standard defines nine types:
 
-- Six **Data Types** that are [primitives](/en-US/docs/Glossary/Primitive),
-  checked by [typeof](/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
-  operator:
+*   Six **Data Types** that are [primitives](/en-US/docs/Glossary/Primitive),
+    checked by [typeof](/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+    operator:
 
-  - [undefined](/en-US/docs/Glossary/undefined) : `typeof instance === "undefined"`
-  - [Boolean](/en-US/docs/Glossary/Boolean) : `typeof instance === "boolean"`
-  - [Number](/en-US/docs/Glossary/Number) : `typeof instance === "number"`
-  - [String](/en-US/docs/Glossary/String) : `typeof instance === "string"`
-  - [BigInt](/en-US/docs/Glossary/BigInt) : `typeof instance === "bigint"`
-  - [Symbol](/en-US/docs/Glossary/Symbol) : `typeof instance === "symbol"`
+    *   [undefined](/en-US/docs/Glossary/undefined) : `typeof instance === "undefined"`
+    *   [Boolean](/en-US/docs/Glossary/Boolean) : `typeof instance === "boolean"`
+    *   [Number](/en-US/docs/Glossary/Number) : `typeof instance === "number"`
+    *   [String](/en-US/docs/Glossary/String) : `typeof instance === "string"`
+    *   [BigInt](/en-US/docs/Glossary/BigInt) : `typeof instance === "bigint"`
+    *   [Symbol](/en-US/docs/Glossary/Symbol) : `typeof instance === "symbol"`
 
-- **Structural** **Types**:
+*   **Structural** **Types**:
 
-  - [Object](/en-US/docs/Glossary/Object) : `typeof instance === "object"`.
-    Special non-data but **Structural** **type** for any
-    [constructed](/en-US/docs/Learn/JavaScript/Objects#the_constructor) object
-    instance also used as data structures: new {{jsxref("Object")}}, new
-    {{jsxref("Array")}}, new {{jsxref("Map")}}, new
-    {{jsxref("Set")}}, new {{jsxref("WeakMap")}}, new
-    {{jsxref("WeakSet")}}, new {{jsxref("Date")}} and almost
-    everything made with
-    [new keyword](/en-US/docs/Web/JavaScript/Reference/Operators/new);
-  - [Function](/en-US/docs/Glossary/Function) : a non-data structure, though it
-    also answers for `typeof` operator: `typeof instance === "function"`. This
-    is merely a special shorthand for Functions, though every Function
-    constructor is derived from Object constructor.
+    *   [Object](/en-US/docs/Glossary/Object) : `typeof instance === "object"`.
+        Special non-data but **Structural** **type** for any
+        [constructed](/en-US/docs/Learn/JavaScript/Objects#the_constructor) object
+        instance also used as data structures: new {{jsxref("Object")}}, new
+        {{jsxref("Array")}}, new {{jsxref("Map")}}, new
+        {{jsxref("Set")}}, new {{jsxref("WeakMap")}}, new
+        {{jsxref("WeakSet")}}, new {{jsxref("Date")}} and almost
+        everything made with
+        [new keyword](/en-US/docs/Web/JavaScript/Reference/Operators/new);
+    *   [Function](/en-US/docs/Glossary/Function) : a non-data structure, though it
+        also answers for `typeof` operator: `typeof instance === "function"`. This
+        is merely a special shorthand for Functions, though every Function
+        constructor is derived from Object constructor.
 
-- **Structural Root** Primitive:
+*   **Structural Root** Primitive:
 
-  - **[null](/en-US/docs/Glossary/Null)** : `typeof instance === "object"`.
-    Special [primitive](/en-US/docs/Glossary/Primitive) type having
-    additional usage for its value: if object is not inherited, then `null` is
-    shown;
+    *   **[null](/en-US/docs/Glossary/Null)** : `typeof instance === "object"`.
+        Special [primitive](/en-US/docs/Glossary/Primitive) type having
+        additional usage for its value: if object is not inherited, then `null` is
+        shown;
 
 Keep in mind the only valuable purpose of `typeof` operator usage is checking
 the Data Type. If we wish to check any Structural Type derived from Object it is
@@ -84,7 +84,7 @@ structural meaning.
 
 All types except objects define immutable values (that is, values which can't be
 changed). For example (and unlike in C), Strings are immutable. We refer to
-values of these types as "_primitive values_".
+values of these types as "*primitive values*".
 
 ### Boolean type
 
@@ -144,9 +144,9 @@ Infinity
 Although a number often represents only its value, JavaScript provides
 {{jsxref("Operators", "binary (bitwise) operators")}}.
 
-> **Note:** Although bitwise operators _can_ be used to represent several
+> **Note:** Although bitwise operators *can* be used to represent several
 > Boolean values within a single number using
-> [bit masking](https://en.wikipedia.org/wiki/Mask_%28computing%29), this is
+> [bit masking](https://en.wikipedia.org/wiki/Mask\_%28computing%29), this is
 > usually considered a bad practice. JavaScript offers other means to represent
 > a set of Booleans (like an array of Booleans, or an object with Boolean values
 > assigned to named properties). Bit masking also tends to make the code more
@@ -207,25 +207,25 @@ This means that once a string is created, it is not possible to modify it.
 However, it is still possible to create another string based on an operation on
 the original string. For example:
 
-- A substring of the original by picking individual letters or using
-  {{jsxref("String.substr()")}}.
-- A concatenation of two strings using the concatenation operator (`+`) or
-  {{jsxref("String.concat()")}}.
+*   A substring of the original by picking individual letters or using
+    {{jsxref("String.substr()")}}.
+*   A concatenation of two strings using the concatenation operator (`+`) or
+    {{jsxref("String.concat()")}}.
 
 #### Beware of "stringly-typing" your code!
 
 It can be tempting to use strings to represent complex data. Doing this comes
 with short-term benefits:
 
-- It is easy to build complex strings with concatenation.
-- Strings are easy to debug (what you see printed is always what is in the
-  string).
-- Strings are the common denominator of a lot of APIs
-  ([input fields](/en-US/docs/Web/API/HTMLInputElement),
-  [local storage](/en-US/docs/Storage) values,
-  [`XMLHttpRequest`](/en-US/docs/Web/API/XMLHttpRequest "Use XMLHttpRequest (XHR) objects to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing.")
-  responses when using `responseText`, etc.) and it can be tempting to only work
-  with strings.
+*   It is easy to build complex strings with concatenation.
+*   Strings are easy to debug (what you see printed is always what is in the
+    string).
+*   Strings are the common denominator of a lot of APIs
+    ([input fields](/en-US/docs/Web/API/HTMLInputElement),
+    [local storage](/en-US/docs/Storage) values,
+    [`XMLHttpRequest`](/en-US/docs/Web/API/XMLHttpRequest "Use XMLHttpRequest (XHR) objects to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing.")
+    responses when using `responseText`, etc.) and it can be tempting to only work
+    with strings.
 
 With conventions, it is possible to represent any data structure in a string.
 This does not make it a good idea. For instance, with a separator, one could
@@ -234,7 +234,7 @@ when the separator is used in one of the "list" elements, then, the list is
 broken. An escape character can be chosen, etc. All of this requires conventions
 and creates an unnecessary maintenance burden.
 
-Use strings for textual data. When representing complex data, _parse_ strings,
+Use strings for textual data. When representing complex data, *parse* strings,
 and use the appropriate abstraction.
 
 ### Symbol type
@@ -258,10 +258,10 @@ In JavaScript, objects can be seen as a collection of properties. With the
 a limited set of properties are initialized; then properties can be added and
 removed. Property values can be values of any type, including other objects,
 which enables building complex data structures. Properties are identified using
-_key_ values. A _key_ value is either a String or a Symbol value.
+*key* values. A *key* value is either a String or a Symbol value.
 
 There are two types of object properties which have certain attributes: The
-_data_ property and the _accessor_ property.
+*data* property and the *accessor* property.
 
 > **Note:** Each property has corresponding *attributes.* Attributes are used
 > internally by the JavaScript engine, so you cannot directly access
@@ -276,23 +276,32 @@ Associates a key with a value, and has the following attributes:
 
 <table class="standard-table"><caption>Attributes of a data property</caption><thead><tr><th scope="col">Attribute</th><th scope="col">Type</th><th scope="col">Description</th><th scope="col">Default value</th></tr></thead><tbody><tr><td>[[Value]]</td><td>Any JavaScript type</td><td>The value retrieved by a get access of the property.</td><td><code>undefined</code></td></tr><tr><td>[[Writable]]</td><td>Boolean</td><td>If <code>false</code>, the property's [[Value]] cannot be changed.</td><td><code>false</code></td></tr><tr><td>[[Enumerable]]</td><td>Boolean</td><td><p>If <code>true</code>, the property will be enumerated in <a href="/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for...in</a> loops.<br>See also <a href="/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">Enumerability and ownership of properties</a>.</p></td><td><code>false</code></td></tr><tr><td>[[Configurable]]</td><td>Boolean</td><td>If <code>false</code>, the property cannot be deleted, cannot be changed to an accessor property, and attributes other than [[Value]] and [[Writable]] cannot be changed.</td><td><code>false</code></td></tr></tbody></table>
 
-<table class="standard-table"><caption>Obsolete attributes (as of ECMAScript 3, renamed in ECMAScript 5)</caption><thead><tr><th scope="col">Attribute</th><th scope="col">Type</th><th scope="col">Description</th></tr></thead><tbody><tr><td>Read-only</td><td>Boolean</td><td>Reversed state of the ES5 [[Writable]] attribute.</td></tr><tr><td>DontEnum</td><td>Boolean</td><td>Reversed state of the ES5 [[Enumerable]] attribute.</td></tr><tr><td>DontDelete</td><td>Boolean</td><td>Reversed state of the ES5 [[Configurable]] attribute.</td></tr></tbody></table>
+| Attribute  | Type    | Description                                           |
+| ---------- | ------- | ----------------------------------------------------- |
+| Read-only  | Boolean | Reversed state of the ES5 \[\[Writable]] attribute.     |
+| DontEnum   | Boolean | Reversed state of the ES5 \[\[Enumerable]] attribute.   |
+| DontDelete | Boolean | Reversed state of the ES5 \[\[Configurable]] attribute. |
 
 #### Accessor property
 
 Associates a key with one of two accessor functions (`get` and `set`) to
 retrieve or store a value, and has the following attributes:
 
-<table class="standard-table"><caption>Attributes of an accessor property</caption><thead><tr><th scope="col">Attribute</th><th scope="col">Type</th><th scope="col">Description</th><th scope="col">Default value</th></tr></thead><tbody><tr><td>[[Get]]</td><td>Function object or <code>undefined</code></td><td>The function is called with an empty argument list and retrieves the property value whenever a get access to the value is performed.<br>See also <a href="/en-US/docs/Web/JavaScript/Reference/Functions/get"><code>get</code></a>.</td><td><code>undefined</code></td></tr><tr><td>[[Set]]</td><td>Function object or <code>undefined</code></td><td>The function is called with an argument that contains the assigned value and is executed whenever a specified property is attempted to be changed.<br>See also <a href="/en-US/docs/Web/JavaScript/Reference/Functions/set"><code>set</code></a>.</td><td><code>undefined</code></td></tr><tr><td>[[Enumerable]]</td><td>Boolean</td><td>If <code>true</code>, the property will be enumerated in <a href="/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for...in</a> loops.</td><td><code>false</code></td></tr><tr><td>[[Configurable]]</td><td>Boolean</td><td>If <code>false</code>, the property can't be deleted and can't be changed to a data property.</td><td><code>false</code></td></tr></tbody></table>
+| Attribute        | Type                           | Description                                                                                                                                                                                                              | Default value |
+| ---------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| \[\[Get]]          | Function object or `undefined` | The function is called with an empty argument list and retrieves the property value whenever a get access to the value is performed. See also [`get`](/en-US/docs/Web/JavaScript/Reference/Functions/get).               | `undefined`   |
+| \[\[Set]]          | Function object or `undefined` | The function is called with an argument that contains the assigned value and is executed whenever a specified property is attempted to be changed. See also [`set`](/en-US/docs/Web/JavaScript/Reference/Functions/set). | `undefined`   |
+| \[\[Enumerable]]   | Boolean                        | If `true`, the property will be enumerated in [for...in](/en-US/docs/Web/JavaScript/Reference/Statements/for...in) loops.                                                                                                | `false`       |
+| \[\[Configurable]] | Boolean                        | If `false`, the property can't be deleted and can't be changed to a data property.                                                                                                                                       | `false`       |
 
 ### "Normal" objects, and functions
 
-A JavaScript object is a mapping between _keys_ and _values_. Keys are strings
-(or {{jsxref("Symbol")}}s), and _values_ can be anything. This makes
+A JavaScript object is a mapping between *keys* and *values*. Keys are strings
+(or {{jsxref("Symbol")}}s), and *values* can be anything. This makes
 objects a natural fit for [hashmaps](https://en.wikipedia.org/wiki/Hash_table).
 
 Functions are regular objects with the additional capability of being
-_callable_.
+*callable*.
 
 ### Dates
 
@@ -318,7 +327,19 @@ represent lists or sets.
 with ECMAScript 2015, and present an array-like view of an underlying binary
 data buffer. The following table helps determine the equivalent C data types:
 
-<table class="standard-table"><thead><tr><th class="header" scope="col">Type</th><th class="header" scope="col">Value Range</th><th class="header" scope="col">Size in bytes</th><th class="header" scope="col">Description</th><th class="header" scope="col">Web IDL type</th><th class="header" scope="col">Equivalent C type</th></tr></thead><tbody><tr><td>{{jsxref("Int8Array")}}</td><td><code>-128</code> to <code>127</code></td><td>1</td><td>8-bit two's complement signed integer</td><td><code>byte</code></td><td><code>int8_t</code></td></tr><tr><td>{{jsxref("Uint8Array")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Uint8ClampedArray")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer (clamped)</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Int16Array")}}</td><td><code>-32768</code> to <code>32767</code></td><td>2</td><td>16-bit two's complement signed integer</td><td><code>short</code></td><td><code>int16_t</code></td></tr><tr><td>{{jsxref("Uint16Array")}}</td><td><code>0</code> to <code>65535</code></td><td>2</td><td>16-bit unsigned integer</td><td><code>unsigned short</code></td><td><code>uint16_t</code></td></tr><tr><td>{{jsxref("Int32Array")}}</td><td><code>-2147483648</code> to <code>2147483647</code></td><td>4</td><td>32-bit two's complement signed integer</td><td><code>long</code></td><td><code>int32_t</code></td></tr><tr><td>{{jsxref("Uint32Array")}}</td><td><code>0</code> to <code>4294967295</code></td><td>4</td><td>32-bit unsigned integer</td><td><code>unsigned long</code></td><td><code>uint32_t</code></td></tr><tr><td>{{jsxref("Float32Array")}}</td><td><code>1.2E-38</code> to <code>3.4E38</code></td><td>4</td><td>32-bit IEEE floating point number (7 significant digits e.g., <code>1.1234567</code>)</td><td><code>unrestricted float</code></td><td><code>float</code></td></tr><tr><td>{{jsxref("Float64Array")}}</td><td><code>5E-324</code> to <code>1.8E308</code></td><td>8</td><td>64-bit IEEE floating point number (16 significant digits e.g., <code>1.123...15</code>)</td><td><code>unrestricted double</code></td><td><code>double</code></td></tr><tr><td>{{jsxref("BigInt64Array")}}</td><td><code>-2^63</code> to <code>2^63 - 1</code></td><td>8</td><td>64-bit two's complement signed integer</td><td><code>bigint</code></td><td><code>int64_t (signed long long)</code></td></tr><tr><td>{{jsxref("BigUint64Array")}}</td><td><code>0</code> to <code>2^64 - 1</code></td><td>8</td><td>64-bit unsigned integer</td><td><code>bigint</code></td><td><code>uint64_t (unsigned long long)</code></td></tr></tbody></table>
+| Type                                     | Value Range                   | Size in bytes | Description                                                                  | Web IDL type          | Equivalent C type               |
+| ---------------------------------------- | ----------------------------- | ------------- | ---------------------------------------------------------------------------- | --------------------- | ------------------------------- |
+| {{jsxref("Int8Array")}}         | `-128` to `127`               | 1             | 8-bit two's complement signed integer                                        | `byte`                | `int8_t`                        |
+| {{jsxref("Uint8Array")}}         | `0` to `255`                  | 1             | 8-bit unsigned integer                                                       | `octet`               | `uint8_t`                       |
+| {{jsxref("Uint8ClampedArray")}} | `0` to `255`                  | 1             | 8-bit unsigned integer (clamped)                                             | `octet`               | `uint8_t`                       |
+| {{jsxref("Int16Array")}}         | `-32768` to `32767`           | 2             | 16-bit two's complement signed integer                                       | `short`               | `int16_t`                       |
+| {{jsxref("Uint16Array")}}         | `0` to `65535`                | 2             | 16-bit unsigned integer                                                      | `unsigned short`      | `uint16_t`                      |
+| {{jsxref("Int32Array")}}         | `-2147483648` to `2147483647` | 4             | 32-bit two's complement signed integer                                       | `long`                | `int32_t`                       |
+| {{jsxref("Uint32Array")}}         | `0` to `4294967295`           | 4             | 32-bit unsigned integer                                                      | `unsigned long`       | `uint32_t`                      |
+| {{jsxref("Float32Array")}}     | `1.2E-38` to `3.4E38`         | 4             | 32-bit IEEE floating point number (7 significant digits e.g., `1.1234567`)   | `unrestricted float`  | `float`                         |
+| {{jsxref("Float64Array")}}     | `5E-324` to `1.8E308`         | 8             | 64-bit IEEE floating point number (16 significant digits e.g., `1.123...15`) | `unrestricted double` | `double`                        |
+| {{jsxref("BigInt64Array")}}     | `-2^63` to `2^63 - 1`         | 8             | 64-bit two's complement signed integer                                       | `bigint`              | `int64_t (signed long long)`    |
+| {{jsxref("BigUint64Array")}}     | `0` to `2^64 - 1`             | 8             | 64-bit unsigned integer                                                      | `bigint`              | `uint64_t (unsigned long long)` |
 
 ### Keyed collections: Maps, Sets, WeakMaps, WeakSets
 
@@ -340,7 +361,7 @@ logarithmic to constant time.
 Usually, to bind data to a DOM node, one could set properties directly on the
 object, or use `data-*` attributes. This has the downside that the data is
 available to any script running in the same context. `Map`s and `WeakMap`s make
-it easy to _privately_ bind data to an object.
+it easy to *privately* bind data to an object.
 
 ### Structured data: JSON
 
@@ -369,6 +390,6 @@ details and edge cases.
 
 ## See also
 
-- [Nicholas Zakas collection of common data structure and common algorithms in JavaScript.](https://github.com/nzakas/computer-science-in-javascript/)
-- [Search Tre(i)es implemented in JavaScript](https://github.com/monmohan/DataStructures_In_Javascript)
-- [Data Types and Values in the ECMAScript specification](https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values)
+*   [Nicholas Zakas collection of common data structure and common algorithms in JavaScript.](https://github.com/nzakas/computer-science-in-javascript/)
+*   [Search Tre(i)es implemented in JavaScript](https://github.com/monmohan/DataStructures_In_Javascript)
+*   [Data Types and Values in the ECMAScript specification](https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values)

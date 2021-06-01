@@ -24,15 +24,15 @@ register(target, heldValue, unregisterToken);
 
 ### Parameters
 
-- `target`
-  - : The target object to register.
-- `heldValue`
-  - : The value to pass to the finalizer for this object. This cannot be the
-    `target` object.
-- `unregisterToken` {{optional_inline}}
-  - : A token that may be used with the `unregister` method later to unregister
-    the target object. If provided (and not `undefined`), this must be an
-    object. If not provided, the target cannot be unregistered.
+*   `target`
+    *   : The target object to register.
+*   `heldValue`
+    *   : The value to pass to the finalizer for this object. This cannot be the
+        `target` object.
+*   `unregisterToken` {{optional_inline}}
+    *   : A token that may be used with the `unregister` method later to unregister
+        the target object. If provided (and not `undefined`), this must be an
+        object. If not provided, the target cannot be unregistered.
 
 ### Return value
 
@@ -77,4 +77,4 @@ registry.register(target, {"useful": "info about target"});
 
 ## See also
 
-- {{jsxref("FinalizationRegistry")}}
+*   {{jsxref("FinalizationRegistry")}}

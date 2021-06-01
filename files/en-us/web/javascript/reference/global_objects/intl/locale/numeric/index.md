@@ -74,4 +74,4 @@ console.log(us12hour.numeric); // Prints "true"
 
 ## See also
 
-- {{jsxref("Intl.Locale")}}
+*   {{jsxref("Intl.Locale")}}

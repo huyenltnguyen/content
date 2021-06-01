@@ -29,7 +29,7 @@ allowed (e.g. a {{jsxref("Symbol")}} can't be a `WeakMap` key).
 
 ### Why *Weak*Map?
 
-A map API _could_ be implemented in JavaScript with two arrays (one for keys,
+A map API *could* be implemented in JavaScript with two arrays (one for keys,
 one for values) shared by the four API methods. Setting elements on this map
 would involve pushing a key and value onto the end of each of those arrays
 simultaneously. As a result, the indices of the key and value would correspond
@@ -39,7 +39,7 @@ corresponding value from the array of values.
 
 Such an implementation would have two main inconveniences:
 
-1.  The first one is an _O(<var>n</var>)_ set and search (
+1.  The first one is an *O(<var>n</var>)* set and search (
 
     <var>n</var>
 
@@ -56,8 +56,8 @@ By contrast, native `WeakMap`s hold "weak" references to key objects. As such
 native `WeakMap`s do not prevent garbage collection, which eventually removes
 references to the key object. "Weak" references also avoid preventing garbage
 collection of values in the map. `WeakMap`s can be particularly useful
-constructs when mapping keys to information about the key that is valuable _only
-if_ the key has not been garbage collected.
+constructs when mapping keys to information about the key that is valuable *only
+if* the key has not been garbage collected.
 
 **Because the references are weak, `WeakMap` keys are not enumerable.** There is
 no method to obtain a list of the keys. If there was, the list would depend on
@@ -66,24 +66,23 @@ have a list of keys, you should use a {{jsxref("Map")}}.
 
 ## Constructor
 
-- {{jsxref("WeakMap/WeakMap", "WeakMap()")}}
-  - : Creates a new `WeakMap` object.
+*   {{jsxref("WeakMap/WeakMap", "WeakMap()")}}
+    *   : Creates a new `WeakMap` object.
 
 ## Instance methods
 
-- {{jsxref("WeakMap.delete", "WeakMap.prototype.delete(<var>key</var>)")}}
-  - : Removes any value associated to the `key`.
-    <code>WeakMap.prototype.has(<var>key</var>)</code> will return `false`
-    afterwards.
-- {{jsxref("WeakMap.get", "WeakMap.prototype.get(<var>key</var>)")}}
-  - : Returns the value associated to the `key`, or `undefined` if there is
-    none.
-- {{jsxref("WeakMap.has", "WeakMap.prototype.has(<var>key</var>)")}}
-  - : Returns a Boolean asserting whether a value has been associated to the
-    `key` in the `WeakMap` object or not.
-- {{jsxref("WeakMap.set", "WeakMap.prototype.set(<var>key</var>, <var>value</var>)")}}
-  - : Sets the `value` for the `key` in the `WeakMap` object. Returns the
-    `WeakMap` object.
+*   {{jsxref("WeakMap.delete", "WeakMap.prototype.delete(<var>key</var>)")}}
+    *   : Removes any value associated to the `key`. <code>WeakMap.prototype.has(<var>key</var>)</code> will return `false`
+        afterwards.
+*   {{jsxref("WeakMap.get", "WeakMap.prototype.get(<var>key</var>)")}}
+    *   : Returns the value associated to the `key`, or `undefined` if there is
+        none.
+*   {{jsxref("WeakMap.has", "WeakMap.prototype.has(<var>key</var>)")}}
+    *   : Returns a Boolean asserting whether a value has been associated to the
+        `key` in the `WeakMap` object or not.
+*   {{jsxref("WeakMap.set", "WeakMap.prototype.set(<var>key</var>, <var>value</var>)")}}
+    *   : Sets the `value` for the `key` in the `WeakMap` object. Returns the
+        `WeakMap` object.
 
 ## Examples
 
@@ -155,10 +154,10 @@ class ClearableWeakMap {
 
 ## See also
 
-- A polyfill of `WeakMap` is available in
-  [`core-js`](https://github.com/zloirock/core-js#weakmap)
-- [`WeakMap` in the JavaScript guide](/en-US/docs/Web/JavaScript/Guide/Keyed_collections#WeakMap_object)
-- [Hiding Implementation Details with ECMAScript 6 WeakMaps](http://fitzgeraldnick.com/weblog/53/)
-- {{jsxref("Map")}}
-- {{jsxref("Set")}}
-- {{jsxref("WeakSet")}}
+*   A polyfill of `WeakMap` is available in
+    [`core-js`](https://github.com/zloirock/core-js#weakmap)
+*   [`WeakMap` in the JavaScript guide](/en-US/docs/Web/JavaScript/Guide/Keyed_collections#WeakMap_object)
+*   [Hiding Implementation Details with ECMAScript 6 WeakMaps](http://fitzgeraldnick.com/weblog/53/)
+*   {{jsxref("Map")}}
+*   {{jsxref("Set")}}
+*   {{jsxref("WeakSet")}}

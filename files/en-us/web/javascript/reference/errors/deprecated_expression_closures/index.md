@@ -93,6 +93,6 @@ var obj = {
 
 ## See also
 
-- [Expression closures](/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures)
-- [Arrow functions](/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-- [Method definitions](/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)
+*   [Expression closures](/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures)
+*   [Arrow functions](/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+*   [Method definitions](/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)

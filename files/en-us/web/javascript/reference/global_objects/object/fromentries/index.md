@@ -18,14 +18,16 @@ an object.
 
 ## Syntax
 
-<pre class="brush: js">Object.fromEntries(<var>iterable</var>);</pre>
+```js
+Object.fromEntries(iterable);
+```
 
 ### Parameters
 
-- `iterable`
-  - : An iterable such as {{jsxref("Array")}} or {{jsxref("Map")}}
-    or other objects implementing the
-    [iterable protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol).
+*   `iterable`
+    *   : An iterable such as {{jsxref("Array")}} or {{jsxref("Map")}}
+        or other objects implementing the
+        [iterable protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol).
 
 ### Return value
 
@@ -71,7 +73,7 @@ console.log(obj); // { 0: "a", 1: "b", 2: "c" }
 
 With `Object.fromEntries`, its reverse method
 {{jsxref("Object.entries()")}}, and
-[array manipulation methods](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#methods_2),
+[array manipulation methods](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#methods\_2),
 you are able to transform objects like this:
 
 ```js
@@ -96,11 +98,11 @@ console.log(object2);
 
 ## See also
 
-- A polyfill of `Object.fromEntries` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- {{jsxref("Object.entries()")}}
-- {{jsxref("Object.keys()")}}
-- {{jsxref("Object.values()")}}
-- {{jsxref("Map.prototype.entries()")}}
-- {{jsxref("Map.prototype.keys()")}}
-- {{jsxref("Map.prototype.values()")}}
+*   A polyfill of `Object.fromEntries` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   {{jsxref("Object.entries()")}}
+*   {{jsxref("Object.keys()")}}
+*   {{jsxref("Object.values()")}}
+*   {{jsxref("Map.prototype.entries()")}}
+*   {{jsxref("Map.prototype.keys()")}}
+*   {{jsxref("Map.prototype.values()")}}

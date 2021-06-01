@@ -61,16 +61,21 @@ keep adding an additional 12 to the end of the array.
 
 For function calls:
 
-<pre class="brush: js"><var>myFunction</var>(...<var>iterableObj</var>); // pass all elements of <em>iterableObj</em> as arguments to function <em>myFunction</em>
-</pre>
+```js
+myFunction(...iterableObj); // pass all elements of iterableObj as arguments to function myFunction
+```
 
 For array literals or strings:
 
-<pre class="brush: js">[...<var>iterableObj</var>, '4', 'five', 6]; // combine two arrays by inserting all elements from <em>iterableObj</em></pre>
+```js
+[...iterableObj, '4', 'five', 6]; // combine two arrays by inserting all elements from iterableObj
+```
 
 For object literals (new in ECMAScript 2018):
 
-<pre class="brush: js">let <var>objClone</var> = { ...<var>obj</var> }; // pass all <em>key:value</em> pairs from an object </pre>
+```js
+let objClone = { ...obj }; // pass all key:value pairs from an object 
+```
 
 ## Rest syntax (parameters)
 
@@ -299,7 +304,7 @@ let mergedObj2 = merge ({}, obj1, obj2);
 ```
 
 In the above example, the spread syntax does not work as one might expect: it
-spreads an _array_ of arguments into the object literal, due to the rest
+spreads an *array* of arguments into the object literal, due to the rest
 parameter.
 
 ### Only for iterables
@@ -337,6 +342,6 @@ details.
 
 ## See also
 
-- {{jsxref("Functions/rest_parameters", "Rest parameters", "", 1)}} (also
-  ‘`...`’)
-- {{jsxref("Function.prototype.apply()")}} (also ‘`...`’)
+*   {{jsxref("Functions/rest_parameters", "Rest parameters", "", 1)}} (also
+    ‘`...`’)
+*   {{jsxref("Function.prototype.apply()")}} (also ‘`...`’)

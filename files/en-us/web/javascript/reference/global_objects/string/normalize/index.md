@@ -27,22 +27,22 @@ normalize(form)
 
 ### Parameters
 
-- `form` {{optional_inline}}
+*   `form` {{optional_inline}}
 
-  - : One of `"NFC"`, `"NFD"`, `"NFKC"`, or `"NFKD"`, specifying the Unicode
-    Normalization Form. If omitted or {{jsxref("undefined")}}, `"NFC"`
-    is used.
+    *   : One of `"NFC"`, `"NFD"`, `"NFKC"`, or `"NFKD"`, specifying the Unicode
+        Normalization Form. If omitted or {{jsxref("undefined")}}, `"NFC"`
+        is used.
 
-    These values have the following meanings:
+        These values have the following meanings:
 
-    - `"NFC"`
-      - : Canonical Decomposition, followed by Canonical Composition.
-    - `"NFD"`
-      - : Canonical Decomposition.
-    - `"NFKC"`
-      - : Compatibility Decomposition, followed by Canonical Composition.
-    - `"NFKD"`
-      - : Compatibility Decomposition.
+        *   `"NFC"`
+            *   : Canonical Decomposition, followed by Canonical Composition.
+        *   `"NFD"`
+            *   : Canonical Decomposition.
+        *   `"NFKC"`
+            *   : Compatibility Decomposition, followed by Canonical Composition.
+        *   `"NFKD"`
+            *   : Compatibility Decomposition.
 
 ### Return value
 
@@ -50,21 +50,21 @@ A string containing the Unicode Normalization Form of the given string.
 
 ### Errors thrown
 
-- {{jsxref("RangeError")}}
-  - : A {{jsxref("RangeError")}} is thrown if `form` isn't one of the
-    values specified above.
+*   {{jsxref("RangeError")}}
+    *   : A {{jsxref("RangeError")}} is thrown if `form` isn't one of the
+        values specified above.
 
 ## Description
 
-Unicode assigns a unique numerical value, called a _code point_, to each
+Unicode assigns a unique numerical value, called a *code point*, to each
 character. For example, the code point for `"A"` is given as U+0041. However,
 sometimes more than one code point, or sequence of code points, can represent
 the same abstract character — the character `"ñ"` for example can be represented
 by either of:
 
-- The single code point U+00F1.
-- The code point for `"n"` (U+006E) followed by the code point for the combining
-  tilde (U+0303).
+*   The single code point U+00F1.
+*   The code point for `"n"` (U+006E) followed by the code point for the combining
+    tilde (U+0303).
 
 ```js
 let string1 = '\u00F1';
@@ -149,13 +149,13 @@ All canonically equivalent sequences are also compatible, but not vice versa.
 
 For example:
 
-- the code point U+FB00 represents the [ligature](/en-US/docs/Glossary/Ligature)
-  `"ﬀ"`. It is compatible with two consecutive U+0066 code points (`"ff"`).
-- the code point U+24B9 represents the symbol
+*   the code point U+FB00 represents the [ligature](/en-US/docs/Glossary/Ligature)
+    `"ﬀ"`. It is compatible with two consecutive U+0066 code points (`"ff"`).
+*   the code point U+24B9 represents the symbol
 
-  <code><span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="cm-string">"Ⓓ"</span></span></span></span></code>
+    <code><span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="cm-string">"Ⓓ"</span></span></span></span></code>
 
-  . It is compatible with the U+0044 code point (`"D"`).
+    . It is compatible with the U+0044 code point (`"D"`).
 
 In some respects (such as sorting) they should be treated as equivalent—and in
 some (such as visual appearance) they should not, so they are not canonically
@@ -242,5 +242,5 @@ str.normalize('NFKD'); // '\u0073\u0323\u0307'
 
 ## See also
 
-- [Unicode Standard Annex #15, Unicode Normalization Forms](http://www.unicode.org/reports/tr15/)
-- [Unicode equivalence](https://en.wikipedia.org/wiki/Unicode_equivalence)
+*   [Unicode Standard Annex #15, Unicode Normalization Forms](http://www.unicode.org/reports/tr15/)
+*   [Unicode equivalence](https://en.wikipedia.org/wiki/Unicode_equivalence)

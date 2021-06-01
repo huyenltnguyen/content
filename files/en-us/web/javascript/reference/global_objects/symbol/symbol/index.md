@@ -30,9 +30,9 @@ Symbol(description)
 
 ### Parameters
 
-- `description` {{optional_inline}}
-  - : A string. A description of the symbol which can be used for debugging but
-    not to access the symbol itself.
+*   `description` {{optional_inline}}
+    *   : A string. A description of the symbol which can be used for debugging but
+        not to access the symbol itself.
 
 ## Examples
 
@@ -88,6 +88,6 @@ typeof symObj // => "object"
 
 ## See also
 
-- A polyfill of `Symbol` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
-- [Glossary: Symbol data type](/en-US/docs/Glossary/Symbol)
+*   A polyfill of `Symbol` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
+*   [Glossary: Symbol data type](/en-US/docs/Glossary/Symbol)

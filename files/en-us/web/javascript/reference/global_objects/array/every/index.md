@@ -38,7 +38,16 @@ every(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-<dl><dt><code><var>callbackFn</var></code></dt><dd>A function to test for each element, taking three arguments:<dl><dt><code><var>element</var></code></dt><dd>The current element being processed in the array.</dd><dt><code><var>index</var></code> {{Optional_inline}}</dt><dd>The index of the current element being processed in the array.</dd><dt><code><var>array</var></code> {{Optional_inline}}</dt><dd>The array <code>every</code> was called upon.</dd></dl></dd><dt><code><var>thisArg</var></code> {{Optional_inline}}</dt><dd>A value to use as <code>this</code> when executing <code><var>callbackFn</var></code>.</dd></dl>
+*   `callbackFn`
+    *   : A function to test for each element, taking three arguments:
+        *   `element`
+            *   : The current element being processed in the array.
+        *   `index` {{Optional_inline}}
+            *   : The index of the current element being processed in the array.
+        *   `array` {{Optional_inline}}
+            *   : The array `every` was called upon.
+*   `thisArg` {{Optional_inline}}
+    *   : A value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -90,8 +99,7 @@ inserting the following code at the beginning of your scripts, allowing use of
 `every` in implementations which do not natively support it.
 
 This algorithm is exactly the one specified in ECMA-262, 5th edition, assuming
-`Object` and `TypeError` have their original values, and that
-<code><var>callbackfn</var>.call</code> evaluates to the original value of
+`Object` and `TypeError` have their original values, and that <code><var>callbackfn</var>.call</code> evaluates to the original value of
 {{jsxref("Function.prototype.call")}}.
 
 ```js
@@ -253,9 +261,9 @@ arr.every( (elem, index, arr) => {
 
 ## See also
 
-- A polyfill of `Array.prototype.every` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.forEach()")}}
-- {{jsxref("Array.prototype.some()")}}
-- {{jsxref("Array.prototype.find()")}}
-- {{jsxref("TypedArray.prototype.every()")}}
+*   A polyfill of `Array.prototype.every` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.forEach()")}}
+*   {{jsxref("Array.prototype.some()")}}
+*   {{jsxref("Array.prototype.find()")}}
+*   {{jsxref("TypedArray.prototype.every()")}}

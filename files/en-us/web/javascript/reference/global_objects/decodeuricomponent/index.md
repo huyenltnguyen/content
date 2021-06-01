@@ -17,12 +17,14 @@ The **`decodeURIComponent()`** function decodes a Uniform Resource Identifier
 
 ## Syntax
 
-<pre class="brush: js">decodeURIComponent(<em>encodedURI</em>)</pre>
+```js
+decodeURIComponent(encodedURI)
+```
 
 ### Parameters
 
-- `encodedURI`
-  - : An encoded component of a Uniform Resource Identifier.
+*   `encodedURI`
+    *   : An encoded component of a Uniform Resource Identifier.
 
 ### Return value
 
@@ -84,6 +86,6 @@ decodeQueryParam('search+query%20%28correct%29');
 
 ## See also
 
-- {{jsxref("decodeURI")}}
-- {{jsxref("encodeURI")}}
-- {{jsxref("encodeURIComponent")}}
+*   {{jsxref("decodeURI")}}
+*   {{jsxref("encodeURI")}}
+*   {{jsxref("encodeURIComponent")}}

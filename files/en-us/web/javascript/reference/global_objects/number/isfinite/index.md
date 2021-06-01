@@ -20,12 +20,14 @@ finite number — that is, it checks that the type of a given value is
 
 ## Syntax
 
-<pre class="brush: js">Number.isFinite(<var>value</var>)</pre>
+```js
+Number.isFinite(value)
+```
 
 ### Parameters
 
-- `value`
-  - : The value to be tested for finiteness.
+*   `value`
+    *   : The value to be tested for finiteness.
 
 ### Return value
 
@@ -36,7 +38,7 @@ finite number.
 
 In comparison to the global {{jsxref("isFinite", "isFinite()")}}
 function, this method doesn't first convert the parameter to a number. This
-means only values of the type number _and_ are finite return `true`.
+means only values of the type number *and* are finite return `true`.
 
 ## Examples
 
@@ -74,7 +76,7 @@ if (Number.isFinite === undefined) Number.isFinite = function(value) {
 
 ## See also
 
-- A polyfill of `Number.isFinite` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
-- The {{jsxref("Number")}} object it belongs to.
-- The global function {{jsxref("isFinite")}}.
+*   A polyfill of `Number.isFinite` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
+*   The {{jsxref("Number")}} object it belongs to.
+*   The global function {{jsxref("isFinite")}}.

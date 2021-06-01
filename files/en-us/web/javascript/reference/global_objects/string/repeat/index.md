@@ -27,10 +27,10 @@ repeat(count)
 
 ### Parameters
 
-- `count`
-  - : An integer between `0` and
-    {{jsxref("Global_Objects/Number/POSITIVE_INFINITY", "+Infinity")}},
-    indicating the number of times to repeat the string.
+*   `count`
+    *   : An integer between `0` and
+        {{jsxref("Global_Objects/Number/POSITIVE_INFINITY", "+Infinity")}},
+        indicating the number of times to repeat the string.
 
 ### Return value
 
@@ -38,10 +38,10 @@ A new string containing the specified number of copies of the given string.
 
 ### Exceptions
 
-- {{jsxref("Errors/Negative_repetition_count", "RangeError")}}:
-  repeat count must be non-negative.
-- {{jsxref("Errors/Resulting_string_too_large", "RangeError")}}:
-  repeat count must be less than infinity and not overflow maximum string size.
+*   {{jsxref("Errors/Negative_repetition_count", "RangeError")}}:
+    repeat count must be non-negative.
+*   {{jsxref("Errors/Resulting_string_too_large", "RangeError")}}:
+    repeat count must be less than infinity and not overflow maximum string size.
 
 ## Examples
 
@@ -117,6 +117,6 @@ if (!String.prototype.repeat) {
 
 ## See also
 
-- A polyfill of `String.prototype.repeat` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.concat()")}}
+*   A polyfill of `String.prototype.repeat` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.concat()")}}

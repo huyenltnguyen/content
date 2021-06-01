@@ -18,18 +18,20 @@ of an Object.
 
 ## Syntax
 
-<pre class="brush: js">uneval(<var>object</var>)</pre>
+```js
+uneval(object)
+```
 
 ### Parameters
 
-- `object`
-  - : A JavaScript expression or statement.
+*   `object`
+    *   : A JavaScript expression or statement.
 
 ### Return value
 
 A string representing the source code of `object`.
 
-> **Note:** This will _not_ return a JSON representation of `object`.
+> **Note:** This will *not* return a JSON representation of `object`.
 
 ## Description
 
@@ -63,7 +65,7 @@ Not part of any standard.
 
 ## See also
 
-- {{JSxRef("Global_Objects/eval", "eval()")}}
-- {{JSxRef("JSON.stringify()")}}
-- {{JSxRef("JSON.parse()")}}
-- {{JSxRef("Object.toSource()")}}
+*   {{JSxRef("Global_Objects/eval", "eval()")}}
+*   {{JSxRef("JSON.stringify()")}}
+*   {{JSxRef("JSON.parse()")}}
+*   {{JSxRef("Object.toSource()")}}

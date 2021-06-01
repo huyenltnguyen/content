@@ -29,8 +29,8 @@ setDate(dayValue)
 
 ### Parameters
 
-- `dayValue`
-  - : An integer representing the day of the month.
+*   `dayValue`
+    *   : An integer representing the day of the month.
 
 ### Return value
 
@@ -73,5 +73,5 @@ theBigDay.setDate(-50); // 1962-08-11 (11th of August 1962)
 
 ## See also
 
-- {{jsxref("Date.prototype.getDate()")}}
-- {{jsxref("Date.prototype.setUTCDate()")}}
+*   {{jsxref("Date.prototype.getDate()")}}
+*   {{jsxref("Date.prototype.setUTCDate()")}}

@@ -38,123 +38,123 @@ The following are now properties of `RegExp` instances, no longer of the
 
 ### RegExp methods
 
-- The {{jsxref("RegExp.compile", "compile()")}} method is
-  deprecated.
-- The `valueOf` method is no longer specialized for `RegExp`. Use
-  {{jsxref("Object.valueOf()")}}.
+*   The {{jsxref("RegExp.compile", "compile()")}} method is
+    deprecated.
+*   The `valueOf` method is no longer specialized for `RegExp`. Use
+    {{jsxref("Object.valueOf()")}}.
 
 ### Function properties
 
-- The {{jsxref("Global_Objects/Function/caller", "caller")}}
-  and
-  {{jsxref("Global_Objects/Function/arguments", "arguments")}}
-  properties are deprecated, because they leak the function caller. Instead of
-  the arguments property, you should use the
-  {{jsxref("Functions/arguments", "arguments")}} object inside
-  function closures.
+*   The {{jsxref("Global_Objects/Function/caller", "caller")}}
+    and
+    {{jsxref("Global_Objects/Function/arguments", "arguments")}}
+    properties are deprecated, because they leak the function caller. Instead of
+    the arguments property, you should use the
+    {{jsxref("Functions/arguments", "arguments")}} object inside
+    function closures.
 
 ### Legacy generator
 
-- {{jsxref("Statements/Legacy_generator_function", "Legacy generator function statement")}}
-  and
-  {{jsxref("Operators/Legacy_generator_function", "Legacy generator function expression")}}
-  are deprecated. Use
-  {{jsxref("Statements/function*", "function* statement")}}
-  and
-  {{jsxref("Operators/function*", "function* expression")}}
-  instead.
-- {{jsxref("Operators/Array_comprehensions", "JS1.7/JS1.8 Array comprehension", "#Differences_to_the_older_JS1.7.2FJS1.8_comprehensions")}}
-  and
-  {{jsxref("Operators/Generator_comprehensions", "JS1.7/JS1.8 Generator comprehension", "#Differences_to_the_older_JS1.7.2FJS1.8_comprehensions")}}
-  are deprecated.
+*   {{jsxref("Statements/Legacy_generator_function", "Legacy generator function statement")}}
+    and
+    {{jsxref("Operators/Legacy_generator_function", "Legacy generator function expression")}}
+    are deprecated. Use
+    {{jsxref("Statements/function*", "function* statement")}}
+    and
+    {{jsxref("Operators/function*", "function* expression")}}
+    instead.
+*   {{jsxref("Operators/Array_comprehensions", "JS1.7/JS1.8 Array comprehension", "#Differences_to_the_older_JS1.7.2FJS1.8_comprehensions")}}
+    and
+    {{jsxref("Operators/Generator_comprehensions", "JS1.7/JS1.8 Generator comprehension", "#Differences_to_the_older_JS1.7.2FJS1.8_comprehensions")}}
+    are deprecated.
 
 ### Iterator
 
-- {{jsxref("Global_Objects/StopIteration", "StopIteration")}}
-  is deprecated.
-- {{jsxref("Global_Objects/Iterator", "Iterator")}} is
-  deprecated.
+*   {{jsxref("Global_Objects/StopIteration", "StopIteration")}}
+    is deprecated.
+*   {{jsxref("Global_Objects/Iterator", "Iterator")}} is
+    deprecated.
 
 ### Object methods
 
-- {{jsxref("Object.watch", "watch")}} and
-  {{jsxref("Object.unwatch", "unwatch")}} are deprecated. Use
-  {{jsxref("Proxy")}} instead.
-- `__iterator__` is deprecated.
-- {{jsxref("Object.noSuchMethod", "__noSuchMethod__")}} is
-  deprecated. Use {{jsxref("Proxy")}} instead.
+*   {{jsxref("Object.watch", "watch")}} and
+    {{jsxref("Object.unwatch", "unwatch")}} are deprecated. Use
+    {{jsxref("Proxy")}} instead.
+*   `__iterator__` is deprecated.
+*   {{jsxref("Object.noSuchMethod", "__noSuchMethod__")}} is
+    deprecated. Use {{jsxref("Proxy")}} instead.
 
 ### Date methods
 
-- {{jsxref("Global_Objects/Date/getYear", "getYear")}} and
-  {{jsxref("Global_Objects/Date/setYear", "setYear")}} are
-  affected by the Year-2000-Problem and have been subsumed by
-  {{jsxref("Global_Objects/Date/getFullYear", "getFullYear")}}
-  and
-  {{jsxref("Global_Objects/Date/setFullYear", "setFullYear")}}.
-- You should use
-  {{jsxref("Global_Objects/Date/toISOString", "toISOString")}}
-  instead of the deprecated
-  {{jsxref("Global_Objects/Date/toGMTString", "toGMTString")}}
-  method in new code.
-- {{jsxref("Global_Objects/Date/toLocaleFormat", "toLocaleFormat")}}
-  is deprecated.
+*   {{jsxref("Global_Objects/Date/getYear", "getYear")}} and
+    {{jsxref("Global_Objects/Date/setYear", "setYear")}} are
+    affected by the Year-2000-Problem and have been subsumed by
+    {{jsxref("Global_Objects/Date/getFullYear", "getFullYear")}}
+    and
+    {{jsxref("Global_Objects/Date/setFullYear", "setFullYear")}}.
+*   You should use
+    {{jsxref("Global_Objects/Date/toISOString", "toISOString")}}
+    instead of the deprecated
+    {{jsxref("Global_Objects/Date/toGMTString", "toGMTString")}}
+    method in new code.
+*   {{jsxref("Global_Objects/Date/toLocaleFormat", "toLocaleFormat")}}
+    is deprecated.
 
 ### Functions
 
-- {{jsxref("Operators/Expression_closures", "Expression closures", "", 1)}}
-  are deprecated. Use regular
-  {{jsxref("Operators/function", "functions")}} or
-  {{jsxref("Functions/Arrow_functions", "arrow functions", "", 1)}}
-  instead.
+*   {{jsxref("Operators/Expression_closures", "Expression closures", "", 1)}}
+    are deprecated. Use regular
+    {{jsxref("Operators/function", "functions")}} or
+    {{jsxref("Functions/Arrow_functions", "arrow functions", "", 1)}}
+    instead.
 
 ### Proxy
 
-- [Proxy.create](/en-US/docs/Archive/Web/Old_Proxy_API) and
-  [Proxy.createFunction](/en-US/docs/Archive/Web/Old_Proxy_API) are deprecated.
-  Use {{jsxref("Proxy")}} instead.
-- The following traps are obsolete:
+*   [Proxy.create](/en-US/docs/Archive/Web/Old_Proxy_API) and
+    [Proxy.createFunction](/en-US/docs/Archive/Web/Old_Proxy_API) are deprecated.
+    Use {{jsxref("Proxy")}} instead.
+*   The following traps are obsolete:
 
-  - `hasOwn` ([bug 980565](https://bugzilla.mozilla.org/show_bug.cgi?id=980565),
-    Firefox 33).
-  - `getEnumerablePropertyKeys`
-    ([bug 783829](https://bugzilla.mozilla.org/show_bug.cgi?id=783829),
-    Firefox 37)
-  - `getOwnPropertyNames`
-    ([bug 1007334](https://bugzilla.mozilla.org/show_bug.cgi?id=1007334),
-    Firefox 33)
-  - `keys` ([bug 1007334](https://bugzilla.mozilla.org/show_bug.cgi?id=1007334),
-    Firefox 33)
+    *   `hasOwn` ([bug 980565](https://bugzilla.mozilla.org/show_bug.cgi?id=980565),
+        Firefox 33).
+    *   `getEnumerablePropertyKeys`
+        ([bug 783829](https://bugzilla.mozilla.org/show_bug.cgi?id=783829),
+        Firefox 37)
+    *   `getOwnPropertyNames`
+        ([bug 1007334](https://bugzilla.mozilla.org/show_bug.cgi?id=1007334),
+        Firefox 33)
+    *   `keys` ([bug 1007334](https://bugzilla.mozilla.org/show_bug.cgi?id=1007334),
+        Firefox 33)
 
 ### Escape sequences
 
-- Octal escape sequences (\ followed by one, two, or three octal digits) are
-  deprecated in string and regular expression literals.
-- The {{jsxref("Global_Objects/escape", "escape")}} and
-  {{jsxref("Global_Objects/unescape", "unescape")}} functions are
-  deprecated. Use
-  {{jsxref("Global_Objects/encodeURI", "encodeURI")}},
-  {{jsxref("Global_Objects/encodeURIComponent", "encodeURIComponent")}},
-  {{jsxref("Global_Objects/decodeURI", "decodeURI")}} or
-  {{jsxref("Global_Objects/decodeURIComponent", "decodeURIComponent")}}
-  to encode and decode escape sequences for special characters.
+*   Octal escape sequences (\ followed by one, two, or three octal digits) are
+    deprecated in string and regular expression literals.
+*   The {{jsxref("Global_Objects/escape", "escape")}} and
+    {{jsxref("Global_Objects/unescape", "unescape")}} functions are
+    deprecated. Use
+    {{jsxref("Global_Objects/encodeURI", "encodeURI")}},
+    {{jsxref("Global_Objects/encodeURIComponent", "encodeURIComponent")}},
+    {{jsxref("Global_Objects/decodeURI", "decodeURI")}} or
+    {{jsxref("Global_Objects/decodeURIComponent", "decodeURIComponent")}}
+    to encode and decode escape sequences for special characters.
 
 ### String methods
 
-- HTML wrapper methods like {{jsxref("String.prototype.fontsize")}}
-  and {{jsxref("String.prototype.big")}}.
-- {{jsxref("String.prototype.quote")}} is removed from Firefox 37.
-- non standard `flags` parameter in
-  {{jsxref("String.prototype.search")}},
-  {{jsxref("String.prototype.match")}}, and
-  {{jsxref("String.prototype.replace")}} are deprecated.
-- {{jsxref("String.prototype.substr")}} probably won't be removed
-  anytime soon, but it's defined
-  in [Annex B](https://www.ecma-international.org/ecma-262/9.0/index.html#sec-string.prototype.substr) of
-  the ECMA-262 standard, whose
-  [introduction](https://www.ecma-international.org/ecma-262/9.0/index.html#sec-additional-ecmascript-features-for-web-browsers)
-  states: "… Programmers should not use or assume the existence of these
-  features and behaviors when writing new ECMAScript code. …"
+*   HTML wrapper methods like {{jsxref("String.prototype.fontsize")}}
+    and {{jsxref("String.prototype.big")}}.
+*   {{jsxref("String.prototype.quote")}} is removed from Firefox 37.
+*   non standard `flags` parameter in
+    {{jsxref("String.prototype.search")}},
+    {{jsxref("String.prototype.match")}}, and
+    {{jsxref("String.prototype.replace")}} are deprecated.
+*   {{jsxref("String.prototype.substr")}} probably won't be removed
+    anytime soon, but it's defined
+    in [Annex B](https://www.ecma-international.org/ecma-262/9.0/index.html#sec-string.prototype.substr) of
+    the ECMA-262 standard, whose
+    [introduction](https://www.ecma-international.org/ecma-262/9.0/index.html#sec-additional-ecmascript-features-for-web-browsers)
+    states: "… Programmers should not use or assume the existence of these
+    features and behaviors when writing new ECMAScript code. …"
 
 ## Obsolete features
 
@@ -180,28 +180,25 @@ longer be used as of the indicated version of JavaScript.
 
 ### Array
 
-| Property                                 | Description                                 |
-| ---------------------------------------- | ------------------------------------------- |
-| {{jsxref("Array.observe()")}} | Asynchronously observing changes to Arrays. |
-| {{jsxref("Array.unobserve()")}} | Remove observers.                           |
+<table class="standard-table"><tbody><tr><td>Property</td><td>Description</td></tr><tr><td>{{jsxref("Array.observe()")}}</td><td>Asynchronously observing changes to Arrays.</td></tr><tr><td>{{jsxref("Array.unobserve()")}}</td><td>Remove observers.</td></tr></tbody></table>
 
 ### Number
 
-- {{jsxref("Number.toInteger()")}}
+*   {{jsxref("Number.toInteger()")}}
 
 ### ParallelArray
 
-- {{jsxref("ParallelArray")}}
+*   {{jsxref("ParallelArray")}}
 
 ### Statements
 
-- {{jsxref("Statements/for_each...in", "for each...in")}} is
-  deprecated. Use {{jsxref("Statements/for...of", "for...of")}}
-  instead.
-- Destructuring {{jsxref("Statements/for...in", "for...in")}} is
-  deprecated. Use {{jsxref("Statements/for...of", "for...of")}}
-  instead.
-- let blocks and let expressions are obsolete.
+*   {{jsxref("Statements/for_each...in", "for each...in")}} is
+    deprecated. Use {{jsxref("Statements/for...of", "for...of")}}
+    instead.
+*   Destructuring {{jsxref("Statements/for...in", "for...in")}} is
+    deprecated. Use {{jsxref("Statements/for...of", "for...of")}}
+    instead.
+*   let blocks and let expressions are obsolete.
 
 ### E4X
 

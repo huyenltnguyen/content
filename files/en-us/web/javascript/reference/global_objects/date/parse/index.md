@@ -26,20 +26,22 @@ parsed (a library can help if many different formats are to be accommodated).
 
 Direct call:
 
-<pre class="brush: js">Date.parse(<var>dateString</var>)
-</pre>
+```js
+Date.parse(dateString)
+```
 
 Implicit call:
 
-<pre class="brush: js">new Date(<var>dateString</var>)
-</pre>
+```js
+new Date(dateString)
+```
 
 ### Parameters
 
-- `dateString`
-  - : A string representing
-    [a simplification of the ISO 8601 calendar date extended format](#date_time_string_format).
-    (Other formats may be used, but results are implementation-dependent.)
+*   `dateString`
+    *   : A string representing
+        [a simplification of the ISO 8601 calendar date extended format](#date_time_string_format).
+        (Other formats may be used, but results are implementation-dependent.)
 
 ### Return value
 
@@ -65,8 +67,8 @@ the ISO 8601 calendar date extended format. (See the section
 [Date Time String Format](https://tc39.github.io/ecma262/#sec-date-time-string-format)
 in the ECMAScript specification for more details.)
 
-For example, "`2011-10-10`" (_date-only_ form), "`2011-10-10T14:48:00`"
-(_date-time_ form), or "`2011-10-10T14:48:00.000+09:00`" (_date-time_ form with
+For example, "`2011-10-10`" (*date-only* form), "`2011-10-10T14:48:00`"
+(*date-time* form), or "`2011-10-10T14:48:00.000+09:00`" (*date-time* form with
 milliseconds and time zone) can be passed and will be parsed. When the time zone
 offset is absent, date-only forms are interpreted as a UTC time and date-time
 forms are interpreted as local time.
@@ -238,21 +240,21 @@ provided.
 
 ### Compatibility notes
 
-- Firefox 49 changed the parsing of 2-digit years to be aligned with the Google
-  Chrome browser instead of Internet Explorer. Now, 2-digit years that are less
-  than `50` are parsed as 21st century years. For example, `04/16/17`,
-  previously parsed as April 16, 1917, will be April 16, 2017 now. To avoid any
-  interoperability issues or ambiguous years, it is recommended to use the ISO
-  8601 format like "`2017-04-16`"
-  ([bug 1265136](https://bugzilla.mozilla.org/show_bug.cgi?id=1265136)).
-- Google Chrome will accept a numerical string as a valid
+*   Firefox 49 changed the parsing of 2-digit years to be aligned with the Google
+    Chrome browser instead of Internet Explorer. Now, 2-digit years that are less
+    than `50` are parsed as 21st century years. For example, `04/16/17`,
+    previously parsed as April 16, 1917, will be April 16, 2017 now. To avoid any
+    interoperability issues or ambiguous years, it is recommended to use the ISO
+    8601 format like "`2017-04-16`"
+    ([bug 1265136](https://bugzilla.mozilla.org/show_bug.cgi?id=1265136)).
+*   Google Chrome will accept a numerical string as a valid
 
-  <code><em>dateString</em></code>
+    <code><em>dateString</em></code>
 
-  parameter. This means that, for instance, while `!!Date.parse("42")` evaluates
-  to `false` in Firefox, it evaluates to `true` in Google Chrome because "`42`"
-  is interpreted as the first of January 2042.
+    parameter. This means that, for instance, while `!!Date.parse("42")` evaluates
+    to `false` in Firefox, it evaluates to `true` in Google Chrome because "`42`"
+    is interpreted as the first of January 2042.
 
 ## See also
 
-- {{jsxref("Date.UTC()")}}
+*   {{jsxref("Date.UTC()")}}

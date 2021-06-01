@@ -18,12 +18,14 @@ finite number. If  needed, the parameter is first converted to a number.
 
 ## Syntax
 
-<pre class="brush: js">isFinite(<var>testValue</var>)</pre>
+```js
+isFinite(testValue)
+```
 
 ### Parameters
 
-- `testValue`
-  - : The value to be tested for finiteness.
+*   `testValue`
+    *   : The value to be tested for finiteness.
 
 ### Return value
 
@@ -70,7 +72,7 @@ isFinite('0');       // true, would've been false with the
 
 ## See also
 
-- {{jsxref("Number.isFinite()")}}
-- {{jsxref("Number.NaN")}}
-- {{jsxref("Number.POSITIVE_INFINITY")}}
-- {{jsxref("Number.NEGATIVE_INFINITY")}}
+*   {{jsxref("Number.isFinite()")}}
+*   {{jsxref("Number.NaN")}}
+*   {{jsxref("Number.POSITIVE_INFINITY")}}
+*   {{jsxref("Number.NEGATIVE_INFINITY")}}

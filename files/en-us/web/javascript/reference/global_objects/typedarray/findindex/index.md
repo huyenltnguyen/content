@@ -45,7 +45,17 @@ findIndex(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-<dl><dt><code><var>callbackFn</var></code></dt><dd>Function to execute on each value in the typed array, taking three arguments:<dl><dt><code><var>element</var></code></dt><dd>The current element being processed in the typed array.</dd><dt><code><var>index</var></code></dt><dd>The index of the current element being processed in the typed array.</dd><dt><code><var>array</var></code></dt><dd>The typed array <code>findIndex()</code> was called upon.</dd></dl></dd><dt><code><var>thisArg</var></code> {{optional_inline}}</dt><dd>Object to use as <code>this</code> when executing <code><var>callbackFn</var></code>.</dd></dl>
+*   `callbackFn`
+    *   : Function to execute on each value in the typed array, taking three
+        arguments:
+        *   `element`
+            *   : The current element being processed in the typed array.
+        *   `index`
+            *   : The index of the current element being processed in the typed array.
+        *   `array`
+            *   : The typed array `findIndex()` was called upon.
+*   `thisArg` {{optional_inline}}
+    *   : Object to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -151,7 +161,7 @@ TypedArray.prototype.findIndex = Array.prototype.findIndex = Array.prototype.fin
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.findIndex` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray.prototype.find()")}}
-- {{jsxref("TypedArray.prototype.indexOf()")}}
+*   A polyfill of `TypedArray.prototype.findIndex` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray.prototype.find()")}}
+*   {{jsxref("TypedArray.prototype.indexOf()")}}

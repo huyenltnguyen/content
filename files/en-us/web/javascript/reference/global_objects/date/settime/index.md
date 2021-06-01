@@ -24,9 +24,9 @@ setTime(timeValue)
 
 ### Parameters
 
-- `timeValue`
-  - : An integer representing the number of milliseconds since 1 January 1970,
-    00:00:00 UTC.
+*   `timeValue`
+    *   : An integer representing the number of milliseconds since 1 January 1970,
+        00:00:00 UTC.
 
 ### Return value
 
@@ -58,5 +58,5 @@ sameAsBigDay.setTime(theBigDay.getTime());
 
 ## See also
 
-- {{jsxref("Date.prototype.getTime()")}}
-- {{jsxref("Date.prototype.setUTCHours()")}}
+*   {{jsxref("Date.prototype.getTime()")}}
+*   {{jsxref("Date.prototype.setUTCHours()")}}

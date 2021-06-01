@@ -34,36 +34,53 @@ A string representing the given date.
 string representation of the Date in the format specified in ECMA-262 which can
 be summarised as:
 
-- Week day: 3 letter English week day name, e.g. "Sat"
-- space
-- Month name: 3 letter English month name, e.g. "Sep"
-- space
-- Date: 2 digit day in month, e.g. "01"
-- space
-- Year: 4 digit year, e.g. "2018"
-- space
-- Hour: 2 digit hour of day, e.g. "14"
-- colon
-- Minute: 2 digit minute of hour, e.g. "53"
-- colon
-- Second: 2 digit second of minute, e.g. "26"
-- space
-- The string "GMT"
-- Timezone offset sign, either:
+*   Week day: 3 letter English week day name, e.g. "Sat"
 
-  - "+" for positive offsets (0 or greater)
-  - "-" for negative offsets (less than zero)
+*   space
 
-- Two digit hour offset, e.g. "14"
-- Two digit minute offset, e.g. "00"
-- Optionally, a timezone name consisting of:
+*   Month name: 3 letter English month name, e.g. "Sep"
 
-  - space
-  - Left bracket, i.e. "("
-  - An implementation dependent string representation of the timezone, which
-    might be an abbreviation or full name (there is no standard for names or
-    abbreviations of timezones), e.g. "Line Islands Time" or "LINT"
-  - Right bracket, i.e. ")"
+*   space
+
+*   Date: 2 digit day in month, e.g. "01"
+
+*   space
+
+*   Year: 4 digit year, e.g. "2018"
+
+*   space
+
+*   Hour: 2 digit hour of day, e.g. "14"
+
+*   colon
+
+*   Minute: 2 digit minute of hour, e.g. "53"
+
+*   colon
+
+*   Second: 2 digit second of minute, e.g. "26"
+
+*   space
+
+*   The string "GMT"
+
+*   Timezone offset sign, either:
+
+    *   "+" for positive offsets (0 or greater)
+    *   "-" for negative offsets (less than zero)
+
+*   Two digit hour offset, e.g. "14"
+
+*   Two digit minute offset, e.g. "00"
+
+*   Optionally, a timezone name consisting of:
+
+    *   space
+    *   Left bracket, i.e. "("
+    *   An implementation dependent string representation of the timezone, which
+        might be an abbreviation or full name (there is no standard for names or
+        abbreviations of timezones), e.g. "Line Islands Time" or "LINT"
+    *   Right bracket, i.e. ")"
 
 E.g. "Sat Sep 01 2018 14:53:26 GMT+1400 (LINT)"
 
@@ -104,7 +121,7 @@ var myVar = x.toString(); // assigns a string value to myVar in the same format 
 
 ## See also
 
-- {{jsxref("Object.prototype.toString()")}}
-- {{jsxref("Date.prototype.toDateString()")}}
-- {{jsxref("Date.prototype.toLocaleString()")}}
-- {{jsxref("Date.prototype.toTimeString()")}}
+*   {{jsxref("Object.prototype.toString()")}}
+*   {{jsxref("Date.prototype.toDateString()")}}
+*   {{jsxref("Date.prototype.toLocaleString()")}}
+*   {{jsxref("Date.prototype.toTimeString()")}}

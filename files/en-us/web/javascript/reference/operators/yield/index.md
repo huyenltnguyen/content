@@ -20,15 +20,17 @@ The `yield` keyword is used to pause and resume a generator function
 
 ## Syntax
 
-<pre class="brush: js">[<var>rv</var>] = <strong>yield</strong> [<var>expression</var>]</pre>
+```js
+[rv] = yield [expression]
+```
 
-- `expression` {{optional_inline}}
-  - : Defines the value to return from the generator function via
-    [the iterator protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol).
-    If omitted, `undefined` is returned instead.
-- `rv` {{optional_inline}}
-  - : Retrieves the optional value passed to the generator's `next()` method to
-    resume its execution.
+*   `expression` {{optional_inline}}
+    *   : Defines the value to return from the generator function via
+        [the iterator protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol).
+        If omitted, `undefined` is returned instead.
+*   `rv` {{optional_inline}}
+    *   : Retrieves the optional value passed to the generator's `next()` method to
+        resume its execution.
 
 ## Description
 
@@ -49,20 +51,20 @@ paused until the generator's `next()` method is called. Each time the
 generator's `next()` method is called, the generator resumes execution, and runs
 until it reaches one of the following:
 
-- A `yield`, which causes the generator to once again pause and return the
-  generator's new value. The next time `next()` is called, execution resumes
-  with the statement immediately after the `yield`.
-- {{jsxref("Statements/throw", "throw")}} is used to throw an
-  exception from the generator. This halts execution of the generator entirely,
-  and execution resumes in the caller (as is normally the case when an exception
-  is thrown).
-- The end of the generator function is reached. In this case, execution of the
-  generator ends and an `IteratorResult` is returned to the caller in which the
-  `value` is {{jsxref("undefined")}} and `done` is `true`.
-- A {{jsxref("Statements/return", "return")}} statement is
-  reached. In this case, execution of the generator ends and an `IteratorResult`
-  is returned to the caller in which the `value` is the value specified by the
-  `return` statement and `done` is `true`.
+*   A `yield`, which causes the generator to once again pause and return the
+    generator's new value. The next time `next()` is called, execution resumes
+    with the statement immediately after the `yield`.
+*   {{jsxref("Statements/throw", "throw")}} is used to throw an
+    exception from the generator. This halts execution of the generator entirely,
+    and execution resumes in the caller (as is normally the case when an exception
+    is thrown).
+*   The end of the generator function is reached. In this case, execution of the
+    generator ends and an `IteratorResult` is returned to the caller in which the
+    `value` is {{jsxref("undefined")}} and `done` is `true`.
+*   A {{jsxref("Statements/return", "return")}} statement is
+    reached. In this case, execution of the generator ends and an `IteratorResult`
+    is returned to the caller in which the `value` is the value specified by the
+    `return` statement and `done` is `true`.
 
 If an optional value is passed to the generator's `next()` method, that value
 becomes the value returned by the generator's current `yield` operation.
@@ -138,7 +140,7 @@ console.log(generatorFunc.next(10).value); // 26
 
 ## See also
 
-- [The Iterator protocol](/en-US/docs/Web/JavaScript/Guide/The_Iterator_protocol)
-- {{jsxref("Statements/function*", "function*")}}
-- {{jsxref("Operators/function*", "function* expression")}}
-- {{jsxref("Operators/yield*", "yield*")}}
+*   [The Iterator protocol](/en-US/docs/Web/JavaScript/Guide/The_Iterator_protocol)
+*   {{jsxref("Statements/function*", "function*")}}
+*   {{jsxref("Operators/function*", "function* expression")}}
+*   {{jsxref("Operators/yield*", "yield*")}}

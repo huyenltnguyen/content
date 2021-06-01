@@ -23,16 +23,18 @@ the target object.</span>
 
 ## Syntax
 
-<pre class="brush: js">Object.assign(<var>target</var>, ...<var>sources</var>)</pre>
+```js
+Object.assign(target, ...sources)
+```
 
 ### Parameters
 
-- `target`
-  - : The target object — what to apply the sources’ properties to, which is
-    returned after it is modified.
-- `sources`
-  - : The source object(s) — objects containing the properties you want to
-    apply.
+*   `target`
+    *   : The target object — what to apply the sources’ properties to, which is
+        returned after it is modified.
+*   `sources`
+    *   : The source object(s) — objects containing the properties you want to
+        apply.
 
 ### Return value
 
@@ -44,12 +46,12 @@ Properties in the target object are overwritten by properties in the sources if
 they have the same {{jsxref("Object/keys", "key", "", 1)}}. Later
 sources' properties overwrite earlier ones.
 
-The `Object.assign()` method only copies _enumerable_ and _own_ properties from
+The `Object.assign()` method only copies *enumerable* and *own* properties from
 a source object to a target object. It uses `[[Get]]` on the source and
 `[[Set]]` on the target, so it will invoke
 [getters](/en-US/docs/Web/JavaScript/Reference/Functions/get) and
 [setters](/en-US/docs/Web/JavaScript/Reference/Functions/set). Therefore it
-_assigns_ properties, versus copying or defining new properties. This may make
+*assigns* properties, versus copying or defining new properties. This may make
 it unsuitable for merging new properties into a prototype if the merge sources
 contain getters.
 
@@ -290,8 +292,8 @@ console.log(copy);
 
 ## See also
 
-- A polyfill of `Object.assign` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- {{jsxref("Object.defineProperties()")}}
-- [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
-- [Spread in object literals](/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals)
+*   A polyfill of `Object.assign` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   {{jsxref("Object.defineProperties()")}}
+*   [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+*   [Spread in object literals](/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals)

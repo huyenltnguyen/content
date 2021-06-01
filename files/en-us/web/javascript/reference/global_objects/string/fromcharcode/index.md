@@ -27,10 +27,10 @@ String.fromCharCode(num1, num2, ..., numN)
 
 ### Parameters
 
-- <code>num1, ..., num<em>N</em></code>
-  - : A sequence of numbers that are UTF-16 code units. The range is between `0`
-    and `65535` (`0xFFFF`). Numbers greater than `0xFFFF` are truncated. No
-    validity checks are performed.
+*   <code>num1, ..., num<em>N</em></code>
+    *   : A sequence of numbers that are UTF-16 code units. The range is between `0`
+        and `65535` (`0xFFFF`). Numbers greater than `0xFFFF` are truncated. No
+        validity checks are performed.
 
 ### Return value
 
@@ -104,7 +104,7 @@ String.fromCharCode(0xD834, 0xDF06, 0x61, 0xD834, 0xDF07); // "\uD834\uDF06a\uD8
 
 ## See also
 
-- {{jsxref("String.fromCodePoint()")}}
-- {{jsxref("String.prototype.charAt()")}}
-- {{jsxref("String.prototype.charCodeAt()")}}
-- {{jsxref("String.prototype.codePointAt()")}}
+*   {{jsxref("String.fromCodePoint()")}}
+*   {{jsxref("String.prototype.charAt()")}}
+*   {{jsxref("String.prototype.charCodeAt()")}}
+*   {{jsxref("String.prototype.codePointAt()")}}

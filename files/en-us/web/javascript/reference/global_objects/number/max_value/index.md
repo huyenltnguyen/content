@@ -13,9 +13,7 @@ browser-compat: javascript.builtins.Number.MAX_VALUE
 The **`Number.MAX_VALUE`** property represents the maximum numeric value
 representable in JavaScript.
 
-{{EmbedInteractiveExample("pages/js/number-maxvalue.html")}}
-
-{{js_property_attributes(0, 0, 0)}}
+{{EmbedInteractiveExample("pages/js/number-maxvalue.html")}}{{js_property_attributes(0, 0, 0)}}
 
 ## Description
 
@@ -52,5 +50,5 @@ if (num1 * num2 <= Number.MAX_VALUE) {
 
 ## See also
 
-- {{jsxref("Number.MIN_VALUE")}}
-- The {{jsxref("Number")}} object it belongs to
+*   {{jsxref("Number.MIN_VALUE")}}
+*   The {{jsxref("Number")}} object it belongs to

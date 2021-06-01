@@ -42,7 +42,17 @@ flatMap(function callbackFn(currentValue, index, array) { ... }, thisArg)
 
 ### Parameters
 
-<dl><dt><code>callback</code></dt><dd>Function that produces an element of the new Array, taking three arguments:<dl><dt><code>currentValue</code></dt><dd>The current element being processed in the array.</dd><dt><code>index</code>{{optional_inline}}</dt><dd>The index of the current element being processed in the array.</dd><dt><code>array</code>{{optional_inline}}</dt><dd>The array <code>map</code> was called upon.</dd></dl></dd><dt><code>thisArg</code>{{optional_inline}}</dt><dd>Value to use as <code>this</code> when executing <code>callback</code>.</dd></dl>
+*   `callback`
+    *   : Function that produces an element of the new Array, taking three
+        arguments:
+        *   `currentValue`
+            *   : The current element being processed in the array.
+        *   `index`{{optional_inline}}
+            *   : The index of the current element being processed in the array.
+        *   `array`{{optional_inline}}
+            *   : The array `map` was called upon.
+*   `thisArg`{{optional_inline}}
+    *   : Value to use as `this` when executing `callback`.
 
 ### Return value
 
@@ -114,9 +124,9 @@ Notice, the output list length can be different from the input list length.
 ### For adding and removing items during a `map()`
 
 `flatMap` can be used as a way to add and remove items (modify the number of
-items) during a `map`. In other words, it allows you to map _many items to many
-items_ (by handling each input item separately), rather than always
-_one-to-one_. In this sense, it works like the opposite of
+items) during a `map`. In other words, it allows you to map *many items to many
+items* (by handling each input item separately), rather than always
+*one-to-one*. In this sense, it works like the opposite of
 [filter](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
 Return a 1-element array to keep the item, a multiple-element array to add
 items, or a 0-element array to remove the item.
@@ -147,10 +157,10 @@ a.flatMap( (n) =>
 
 ## See also
 
-- A polyfill of `Array.prototype.flatMap` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.flat()")}}
-- {{jsxref("Array.prototype.map()")}}
-- {{jsxref("Array.prototype.reduce()")}}
-- {{jsxref("Array.prototype.concat()")}}
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+*   A polyfill of `Array.prototype.flatMap` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.flat()")}}
+*   {{jsxref("Array.prototype.map()")}}
+*   {{jsxref("Array.prototype.reduce()")}}
+*   {{jsxref("Array.prototype.concat()")}}
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)

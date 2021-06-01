@@ -33,46 +33,47 @@ punctuations, letters (even letters from specific languages or scripts), etc.
 
 ## Syntax
 
-<pre class="brush: js">// Non-binary values
-\p{<em>UnicodePropertyValue</em>}
-\p{<em>UnicodePropertyName</em>=<em>UnicodePropertyValue</em>}
+```js
+// Non-binary values
+\p{UnicodePropertyValue}
+\p{UnicodePropertyName=UnicodePropertyValue}
 
 // Binary and non-binary values
-\p{<em>UnicodeBinaryPropertyName</em>}
+\p{UnicodeBinaryPropertyName}
 
 // Negation: \P is negated \p
-\P{<em>UnicodePropertyValue</em>}
-\P{<em>UnicodeBinaryPropertyName</em>}
-</pre>
+\P{UnicodePropertyValue}
+\P{UnicodeBinaryPropertyName}
+```
 
-- [General_Category](https://unicode.org/reports/tr18/#General_Category_Property)
-  (`gc`)
-- [Script](https://unicode.org/reports/tr24/#Script) (`sc`)
-- [Script_Extensions](https://unicode.org/reports/tr24/#Script_Extensions) (`scx`)
+*   [General_Category](https://unicode.org/reports/tr18/#General_Category_Property)
+    (`gc`)
+*   [Script](https://unicode.org/reports/tr24/#Script) (`sc`)
+*   [Script_Extensions](https://unicode.org/reports/tr24/#Script_Extensions) (`scx`)
 
 See also
 [PropertyValueAliases.txt](https://www.unicode.org/Public/UCD/latest/ucd/PropertyValueAliases.txt)
 
-- UnicodeBinaryPropertyName
-  - : The name of a
-    [binary property](https://tc39.es/ecma262/#table-binary-unicode-properties).
-    E.g.: [`ASCII`](https://unicode.org/reports/tr18/#General_Category_Property), [`Alpha`](https://unicode.org/reports/tr44/#Alphabetic),
-    `Math`,
-    [`Diacritic`](https://unicode.org/reports/tr44/#Diacritic), [`Emoji`](https://unicode.org/reports/tr51/#Emoji_Properties), [`Hex_Digit`](https://unicode.org/reports/tr44/#Hex_Digit), `Math`,
-    [`White_space`](https://unicode.org/reports/tr44/#White_Space), etc. See
-    [Unicode Data PropList.txt ](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt)for
-    more info.
-- UnicodePropertyName
-  - : The name of a
-    [non-binary](https://tc39.es/ecma262/#table-nonbinary-unicode-properties)
-    property:
-- UnicodePropertyValue
-  - : One of the tokens listed in the Values section, below. Many values have
-    aliases or shorthand (e.g. the value `Decimal_Number` for the
-    `General_Category` property may be written `Nd`, `digit`, or
-    `Decimal_Number`). For most values, the *`UnicodePropertyName`* part and
-    equals sign may be omitted. If a *`UnicodePropertyName`* is specified, the
-    value must correspond to the property type given.
+*   UnicodeBinaryPropertyName
+    *   : The name of a
+        [binary property](https://tc39.es/ecma262/#table-binary-unicode-properties).
+        E.g.: [`ASCII`](https://unicode.org/reports/tr18/#General_Category_Property), [`Alpha`](https://unicode.org/reports/tr44/#Alphabetic),
+        `Math`,
+        [`Diacritic`](https://unicode.org/reports/tr44/#Diacritic), [`Emoji`](https://unicode.org/reports/tr51/#Emoji_Properties), [`Hex_Digit`](https://unicode.org/reports/tr44/#Hex_Digit), `Math`,
+        [`White_space`](https://unicode.org/reports/tr44/#White_Space), etc. See
+        [Unicode Data PropList.txt ](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt)for
+        more info.
+*   UnicodePropertyName
+    *   : The name of a
+        [non-binary](https://tc39.es/ecma262/#table-nonbinary-unicode-properties)
+        property:
+*   UnicodePropertyValue
+    *   : One of the tokens listed in the Values section, below. Many values have
+        aliases or shorthand (e.g. the value `Decimal_Number` for the
+        `General_Category` property may be written `Nd`, `digit`, or
+        `Decimal_Number`). For most values, the *`UnicodePropertyName`* part and
+        equals sign may be omitted. If a *`UnicodePropertyName`* is specified, the
+        value must correspond to the property type given.
 
 > **Note:** As there are many properties and values available, we will not
 > describe them exhaustively here but rather provide various examples
@@ -164,7 +165,7 @@ property (`Scx` for short).
 With JavaScript regular expressions, it is also possible to use
 [character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
 and especially `\w` or `\d` to match letters or digits. However, such forms only
-match characters from the _Latin_ script (in other words, `a` to `z` and `A` to
+match characters from the *Latin* script (in other words, `a` to `z` and `A` to
 `Z` for `\w` and `0` to `9` for `\d`). As shown in
 [this example](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes#looking_for_a_word_from_unicode_characters),
 it might be a bit clumsy to work with non Latin texts.
@@ -188,16 +189,21 @@ console.table(nonEnglishText.match(regexpUPE));
 
 ## See also
 
-- [Regular expressions guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+*   [Regular expressions guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
-  - [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
-  - [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
-  - [Quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
-  - [Groups and ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
+    *   [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
+    *   [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
+    *   [Quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
+    *   [Groups and ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
 
-- [The `RegExp()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
-- [`RegExp.prototype.unicode`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)
-- [Unicode character property — Wikipedia](https://en.wikipedia.org/wiki/Unicode_character_property)
-- [A blog post from Axel Rauschmayer about Unicode property escapes](https://2ality.com/2017/07/regexp-unicode-property-escapes.html)
-- [The Unicode document for Unicode properties](https://unicode.org/reports/tr18/#Categories)
-- [UnicodeMatchProperty in the ECMAScript specification](https://tc39.es/ecma262/#sec-runtime-semantics-unicodematchproperty-p)
+*   [The `RegExp()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+
+*   [`RegExp.prototype.unicode`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)
+
+*   [Unicode character property — Wikipedia](https://en.wikipedia.org/wiki/Unicode_character_property)
+
+*   [A blog post from Axel Rauschmayer about Unicode property escapes](https://2ality.com/2017/07/regexp-unicode-property-escapes.html)
+
+*   [The Unicode document for Unicode properties](https://unicode.org/reports/tr18/#Categories)
+
+*   [UnicodeMatchProperty in the ECMAScript specification](https://tc39.es/ecma262/#sec-runtime-semantics-unicodematchproperty-p)

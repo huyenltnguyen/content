@@ -17,21 +17,22 @@ The **`handler.deleteProperty()`** method is a trap for the
 
 ## Syntax
 
-<pre class="brush: js">const p = new Proxy(<var>target</var>, {
-  deleteProperty: function(<var>target</var>, <var>property</var>) {
+```js
+const p = new Proxy(target, {
+  deleteProperty: function(target, property) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameters are passed to the `deleteProperty()` method. `this` is
 bound to the handler.
 
-- `target`
-  - : The target object.
-- `property`
-  - : The name or {{jsxref("Symbol")}} of the property to delete.
+*   `target`
+    *   : The target object.
+*   `property`
+    *   : The name or {{jsxref("Symbol")}} of the property to delete.
 
 ### Return value
 
@@ -47,23 +48,23 @@ The **`handler.deleteProperty()`** method is a trap for the
 
 This trap can intercept these operations:
 
-- Property deletion:
+*   Property deletion:
 
-  <code>delete <var>proxy</var>[<var>foo</var>]</code>
+    <code>delete <var>proxy</var>\[<var>foo</var>]</code>
 
-  and
+    and
 
-  <code>delete <var>proxy</var>.<var>foo</var></code>
+    <code>delete <var>proxy</var>.<var>foo</var></code>
 
-- {{jsxref("Reflect.deleteProperty()")}}
+*   {{jsxref("Reflect.deleteProperty()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- A property cannot be deleted, if it exists as a non-configurable own property
-  of the target object.
+*   A property cannot be deleted, if it exists as a non-configurable own property
+    of the target object.
 
 ## Examples
 
@@ -110,7 +111,7 @@ console.log(result)    // false
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Operators/delete", "delete")}} operator
-- {{jsxref("Reflect.deleteProperty()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Operators/delete", "delete")}} operator
+*   {{jsxref("Reflect.deleteProperty()")}}

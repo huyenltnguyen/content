@@ -47,12 +47,13 @@ or that an object variant of a {{jsxref("String")}} or a
 
 ### Invalid cases
 
-<pre class="brush: js example-bad">'use strict';
+```js example-bad
+'use strict';
 
 var foo = "my string";
 // The following line does nothing if not in strict mode.
-foo.bar = {}; // <span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body">TypeError: can't assign to property "bar" on "my string": not an object</span></span></span>
-</pre>
+foo.bar = {}; // TypeError: can't assign to property "bar" on "my string": not an object
+```
 
 ### Fixing the issue
 
@@ -69,5 +70,5 @@ foo.bar = {};
 
 ## See also
 
-- {{jsxref("Strict_mode")}}
-- [primitive](/en-US/docs/Glossary/Primitive)
+*   {{jsxref("Strict_mode")}}
+*   [primitive](/en-US/docs/Glossary/Primitive)

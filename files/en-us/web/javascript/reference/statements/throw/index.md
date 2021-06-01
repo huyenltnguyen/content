@@ -21,10 +21,12 @@ will terminate.
 
 ## Syntax
 
-<pre class="brush: js">throw <var>expression</var>; </pre>
+```js
+throw expression; 
+```
 
-- `expression`
-  - : The expression to throw.
+*   `expression`
+    *   : The expression to throw.
 
 ## Description
 
@@ -180,5 +182,5 @@ try {
 
 ## See also
 
-- {{jsxref("Statements/try...catch", "try...catch")}}
-- {{jsxref("Global_Objects/Error", "Error")}}
+*   {{jsxref("Statements/try...catch", "try...catch")}}
+*   {{jsxref("Global_Objects/Error", "Error")}}

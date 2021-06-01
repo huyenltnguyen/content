@@ -17,7 +17,7 @@ array to the position starting at `target`. The copy is taken from the index
 positions of the second and third arguments `start` and `end`. The `end`
 argument is optional and defaults to the length of the array. This method has
 the same algorithm as {{jsxref("Array.prototype.copyWithin")}}.
-_TypedArray_ is one of the
+*TypedArray* is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
 
@@ -32,12 +32,12 @@ copyWithin(target, start, end)
 
 ### Parameters
 
-- `target`
-  - : Target start index position where to copy the elements to.
-- `start`
-  - : Source start index position where to start copying elements from.
-- `end` {{optional_inline}}
-  - : Optional. Source end index position where to end copying elements from.
+*   `target`
+    *   : Target start index position where to copy the elements to.
+*   `start`
+    *   : Source start index position where to start copying elements from.
+*   `end` {{optional_inline}}
+    *   : Optional. Source end index position where to end copying elements from.
 
 ### Return value
 
@@ -70,6 +70,6 @@ console.log(uint8); // Uint8Array [ 1, 2, 3, 1, 2, 3, 0, 0 ]
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.copyWithin` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray")}}
+*   A polyfill of `TypedArray.prototype.copyWithin` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray")}}

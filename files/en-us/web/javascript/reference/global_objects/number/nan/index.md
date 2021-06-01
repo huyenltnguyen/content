@@ -48,5 +48,5 @@ on the `NaN` page.
 
 ## See also
 
-- The global {{jsxref("NaN")}} object.
-- The {{jsxref("Number")}} object it belongs to.
+*   The global {{jsxref("NaN")}} object.
+*   The {{jsxref("Number")}} object it belongs to.

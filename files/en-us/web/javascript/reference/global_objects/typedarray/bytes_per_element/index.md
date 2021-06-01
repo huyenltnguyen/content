@@ -13,9 +13,7 @@ browser-compat: javascript.builtins.TypedArray.BYTES_PER_ELEMENT
 The **`TypedArray.BYTES_PER_ELEMENT`** property represents the size in bytes of
 each element in an typed array.
 
-{{EmbedInteractiveExample("pages/js/typedarray-bytes-per-element.html","shorter")}}
-
-{{js_property_attributes(0,0,0)}}
+{{EmbedInteractiveExample("pages/js/typedarray-bytes-per-element.html","shorter")}}{{js_property_attributes(0,0,0)}}
 
 ## Description
 
@@ -49,5 +47,5 @@ Float64Array.BYTES_PER_ELEMENT;      // 8
 
 ## See also
 
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- {{jsxref("TypedArray")}}
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("TypedArray")}}

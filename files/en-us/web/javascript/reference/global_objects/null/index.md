@@ -72,6 +72,6 @@ isNaN(1 + undefined) // true
 
 ## See also
 
-- {{jsxref("undefined")}}
-- {{jsxref("NaN")}}
-- {{jsxref("Operators/void", "void operator")}}
+*   {{jsxref("undefined")}}
+*   {{jsxref("NaN")}}
+*   {{jsxref("Operators/void", "void operator")}}

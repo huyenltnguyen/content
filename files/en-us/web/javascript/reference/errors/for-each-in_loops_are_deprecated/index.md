@@ -202,6 +202,6 @@ for (var [key, value] of Object.entries(object)) {
 
 ## See also
 
-- {{jsxref("Statements/for...of", "for...of")}}
-- {{jsxref("Object.values")}}
-- {{jsxref("Object.entries")}}
+*   {{jsxref("Statements/for...of", "for...of")}}
+*   {{jsxref("Object.values")}}
+*   {{jsxref("Object.entries")}}

@@ -16,8 +16,8 @@ The **`entries()`** method returns a new
 [Iterator](/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) object
 that contains **an array of `[value, value]`** for each element in the `Set`
 object, in insertion order. For `Set` objects there is no `key` like in `Map`
-objects. However, to keep the API similar to the `Map` object, each _entry_ has
-the same value for its _key_ and _value_ here, so that an array `[value, value]`
+objects. However, to keep the API similar to the `Map` object, each *entry* has
+the same value for its *key* and *value* here, so that an array `[value, value]`
 is returned.
 
 {{EmbedInteractiveExample("pages/js/set-prototype-entries.html")}}
@@ -60,5 +60,5 @@ console.log(setIter.next().value); // ["baz", "baz"]
 
 ## See also
 
-- {{jsxref("Set.prototype.keys()")}}
-- {{jsxref("Set.prototype.values()")}}
+*   {{jsxref("Set.prototype.keys()")}}
+*   {{jsxref("Set.prototype.values()")}}

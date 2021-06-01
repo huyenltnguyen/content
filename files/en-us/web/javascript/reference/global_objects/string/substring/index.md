@@ -25,10 +25,10 @@ substring(indexStart, indexEnd)
 
 ### Parameters
 
-- `indexStart`
-  - : The index of the first character to include in the returned substring.
-- `indexEnd` {{optional_inline}}
-  - : The index of the first character to exclude from the returned substring.
+*   `indexStart`
+    *   : The index of the first character to include in the returned substring.
+*   `indexEnd` {{optional_inline}}
+    *   : The index of the first character to exclude from the returned substring.
 
 ### Return value
 
@@ -36,14 +36,14 @@ A new string containing the specified part of the given string.
 
 ## Description
 
-`substring()` extracts characters from `indexStart` up to _but not including_
+`substring()` extracts characters from `indexStart` up to *but not including*
 `indexEnd`. In particular:
 
-- If `indexEnd` is omitted, `substring()` extracts characters to the end of the
-  string.
-- If `indexStart` is equal to `indexEnd`, `substring()` returns an empty string.
-- If `indexStart` is greater than `indexEnd`, then the effect of `substring()`
-  is as if the two arguments were swapped; See example below.
+*   If `indexEnd` is omitted, `substring()` extracts characters to the end of the
+    string.
+*   If `indexStart` is equal to `indexEnd`, `substring()` returns an empty string.
+*   If `indexStart` is greater than `indexEnd`, then the effect of `substring()`
+    is as if the two arguments were swapped; See example below.
 
 Any argument value that is less than `0` or greater than `stringName.length` is
 treated as if it were `0` and `stringName.length`, respectively.
@@ -200,5 +200,5 @@ replace substrings, most of the time you will want to use
 
 ## See also
 
-- {{jsxref("String.prototype.substr()")}}
-- {{jsxref("String.prototype.slice()")}}
+*   {{jsxref("String.prototype.substr()")}}
+*   {{jsxref("String.prototype.slice()")}}

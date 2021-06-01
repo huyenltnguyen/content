@@ -22,24 +22,26 @@ each match.
 
 ## Syntax
 
-<pre class="brush: js"><var>regexp</var>[Symbol.replace](<var>str<var>, <var>newSubStr</var>|<var>function</var>)</var></var></pre>
+```js
+regexp[Symbol.replace](str, newSubStr|function)
+```
 
 ### Parameters
 
-- `str`
-  - : A {{jsxref("String")}} that is a target of the replacement.
-- `newSubStr` (replacement)
-  - : The {{jsxref("String")}} that replaces the substring. A number of
-    special replacement patterns are supported; see the
-    {{jsxref("String.prototype.replace",
+*   `str`
+    *   : A {{jsxref("String")}} that is a target of the replacement.
+*   `newSubStr` (replacement)
+    *   : The {{jsxref("String")}} that replaces the substring. A number of
+        special replacement patterns are supported; see the
+        {{jsxref("String.prototype.replace",
     "Specifying a string as a parameter", "#Specifying_a_string_as_a_parameter", 1)}}
-    section in {{jsxref("String.prototype.replace()")}} page.
-- `function` (replacement)
-  - : A function to be invoked to create the new substring. The arguments
-    supplied to this function are described in the
-    {{jsxref("String.prototype.replace", "Specifying a
+        section in {{jsxref("String.prototype.replace()")}} page.
+*   `function` (replacement)
+    *   : A function to be invoked to create the new substring. The arguments
+        supplied to this function are described in the
+        {{jsxref("String.prototype.replace", "Specifying a
     function as a parameter", "#Specifying_a_function_as_a_parameter", 1)}}
-    section in {{jsxref("String.prototype.replace()")}} page.
+        section in {{jsxref("String.prototype.replace()")}} page.
 
 ### Return value
 
@@ -116,11 +118,11 @@ console.log(newstr); // ###34567
 
 ## See also
 
-- A polyfill of `RegExp.prototype[@@replace]` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.replace()")}}
-- {{jsxref("RegExp.prototype.@@match()", "RegExp.prototype[@@match]()")}}
-- {{jsxref("RegExp.prototype.@@search()", "RegExp.prototype[@@search]()")}}
-- {{jsxref("RegExp.prototype.@@split()", "RegExp.prototype[@@split]()")}}
-- {{jsxref("RegExp.prototype.exec()")}}
-- {{jsxref("RegExp.prototype.test()")}}
+*   A polyfill of `RegExp.prototype[@@replace]` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.replace()")}}
+*   {{jsxref("RegExp.prototype.@@match()", "RegExp.prototype[@@match]()")}}
+*   {{jsxref("RegExp.prototype.@@search()", "RegExp.prototype[@@search]()")}}
+*   {{jsxref("RegExp.prototype.@@split()", "RegExp.prototype[@@split]()")}}
+*   {{jsxref("RegExp.prototype.exec()")}}
+*   {{jsxref("RegExp.prototype.test()")}}

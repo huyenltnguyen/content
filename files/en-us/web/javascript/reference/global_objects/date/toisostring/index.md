@@ -12,12 +12,11 @@ browser-compat: javascript.builtins.Date.toISOString
 ---
 {{JSRef}}
 
-The **`toISOString()`** method returns a string in _simplified_ extended ISO
-format ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)), which is always 24
+The **`toISOString()`** method returns a string in *simplified* extended ISO
+format ([ISO 8601](https://en.wikipedia.org/wiki/ISO\_8601)), which is always 24
 or 27 characters long
 (<code><var>YYYY</var>-<var>MM</var>-<var>DD</var>T<var>HH</var>:<var>mm</var>:<var>ss.sss</var>Z</code>
-or
-<code><var>±</var><var>YYYYYY</var>-<var>MM</var>-<var>DD</var>T<var>HH</var>:<var>mm</var>:<var>ss.sss</var>Z</code>,
+or <code><var>±</var><var>YYYYYY</var>-<var>MM</var>-<var>DD</var>T<var>HH</var>:<var>mm</var>:<var>ss.sss</var>Z</code>,
 respectively). The timezone is always zero UTC offset, as denoted by the suffix
 "`Z`".
 
@@ -32,7 +31,7 @@ toISOString()
 ### Return value
 
 A string representing the given date in the
-[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format according to universal
+[ISO 8601](https://en.wikipedia.org/wiki/ISO\_8601) format according to universal
 time.
 
 ## Examples
@@ -58,7 +57,7 @@ correctly parsed in non–Mozilla browsers.
 
 ## See also
 
-- {{jsxref("Date.prototype.toLocaleDateString()")}}
-- {{jsxref("Date.prototype.toTimeString()")}}
-- {{jsxref("Date.prototype.toUTCString()")}}
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/date.polyfill.js)
+*   {{jsxref("Date.prototype.toLocaleDateString()")}}
+*   {{jsxref("Date.prototype.toTimeString()")}}
+*   {{jsxref("Date.prototype.toUTCString()")}}
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/date.polyfill.js)

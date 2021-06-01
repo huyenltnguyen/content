@@ -39,17 +39,17 @@ forEach(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callbackFn`
-  - : Function to execute on each element. It accepts between one and three
-    arguments:
-    - `element`
-      - : The current element being processed in the array.
-    - `index` {{optional_inline}}
-      - : The index of `element` in the array.
-    - `array` {{optional_inline}}
-      - : The array `forEach()` was called upon.
-- `thisArg` {{optional_inline}}
-  - : Value to use as `this` when executing `callbackFn`.
+*   `callbackFn`
+    *   : Function to execute on each element. It accepts between one and three
+        arguments:
+        *   `element`
+            *   : The current element being processed in the array.
+        *   `index` {{optional_inline}}
+            *   : The index of `element` in the array.
+        *   `array` {{optional_inline}}
+            *   : The array `forEach()` was called upon.
+*   `thisArg` {{optional_inline}}
+    *   : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -99,13 +99,13 @@ typical use case is to execute side effects at the end of a chain.
 >
 > Early termination may be accomplished with:
 >
-> - A simple [for](/en-US/docs/Web/JavaScript/Reference/Statements/for) loop
-> - A [for...of](/en-US/docs/Web/JavaScript/Reference/Statements/for...of) /
->   [for...in](/en-US/docs/Web/JavaScript/Reference/Statements/for...in) loops
-> - {{jsxref("Array.prototype.every()")}}
-> - {{jsxref("Array.prototype.some()")}}
-> - {{jsxref("Array.prototype.find()")}}
-> - {{jsxref("Array.prototype.findIndex()")}}
+> *   A simple [for](/en-US/docs/Web/JavaScript/Reference/Statements/for) loop
+> *   A [for...of](/en-US/docs/Web/JavaScript/Reference/Statements/for...of) /
+>     [for...in](/en-US/docs/Web/JavaScript/Reference/Statements/for...in) loops
+> *   {{jsxref("Array.prototype.every()")}}
+> *   {{jsxref("Array.prototype.some()")}}
+> *   {{jsxref("Array.prototype.find()")}}
+> *   {{jsxref("Array.prototype.findIndex()")}}
 >
 > Array methods:
 > {{jsxref("Array.prototype.every()", "every()")}},
@@ -392,13 +392,13 @@ flatten(nested) // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ## See also
 
-- A polyfill of `Array.prototype.forEach` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.find()")}}
-- {{jsxref("Array.prototype.findIndex()")}}
-- {{jsxref("Array.prototype.map()")}}
-- {{jsxref("Array.prototype.filter()")}}
-- {{jsxref("Array.prototype.every()")}}
-- {{jsxref("Array.prototype.some()")}}
-- {{jsxref("Map.prototype.forEach()")}}
-- {{jsxref("Set.prototype.forEach()")}}
+*   A polyfill of `Array.prototype.forEach` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.find()")}}
+*   {{jsxref("Array.prototype.findIndex()")}}
+*   {{jsxref("Array.prototype.map()")}}
+*   {{jsxref("Array.prototype.filter()")}}
+*   {{jsxref("Array.prototype.every()")}}
+*   {{jsxref("Array.prototype.some()")}}
+*   {{jsxref("Map.prototype.forEach()")}}
+*   {{jsxref("Set.prototype.forEach()")}}

@@ -76,7 +76,7 @@ ws.add(window);
 
 ## See also
 
-- {{jsxref("Object.create()")}}
-- {{jsxref("Object.defineProperty()")}},
-  {{jsxref("Object.defineProperties()")}}
-- {{jsxref("WeakMap")}}, {{jsxref("WeakSet")}}
+*   {{jsxref("Object.create()")}}
+*   {{jsxref("Object.defineProperty()")}},
+    {{jsxref("Object.defineProperties()")}}
+*   {{jsxref("WeakMap")}}, {{jsxref("WeakSet")}}

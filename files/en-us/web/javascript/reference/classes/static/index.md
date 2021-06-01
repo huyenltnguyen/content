@@ -30,9 +30,10 @@ proposal at [TC39](https://tc39.es/).
 
 ## Syntax
 
-<pre class="brush: js">static <var>methodName</var>() { ... }
-static <var>propertyName </var>[= <var>value</var>];
-</pre>
+```js
+static methodName() { ... }
+static propertyName [= value];
+```
 
 ## Examples
 
@@ -106,7 +107,7 @@ Static members are not directly accessible using the
 methods. You need to call them using the class name:
 `CLASSNAME.STATIC_METHOD_NAME()` / `CLASSNAME.STATIC_PROPERTY_NAME` or by
 calling the method as a property of the `constructor`:
-`this.constructor.STATIC_METHOD_NAME() `/
+` this.constructor.STATIC_METHOD_NAME()  `/
 `this.constructor.STATIC_PROPERTY_NAME`
 
 ```js
@@ -135,6 +136,6 @@ class StaticMethodCall {
 
 ## See also
 
-- [`class` expression](/en-US/docs/Web/JavaScript/Reference/Operators/class)
-- [`class` declaration](/en-US/docs/Web/JavaScript/Reference/Statements/class)
-- [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)
+*   [`class` expression](/en-US/docs/Web/JavaScript/Reference/Operators/class)
+*   [`class` declaration](/en-US/docs/Web/JavaScript/Reference/Statements/class)
+*   [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)

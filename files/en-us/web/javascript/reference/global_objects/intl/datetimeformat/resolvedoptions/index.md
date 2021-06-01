@@ -39,33 +39,33 @@ options computed during the initialization of the given
 
 The resulting object has the following properties:
 
-- `locale`
-  - : The BCP 47 language tag for the locale actually used. If any Unicode
-    extension values were requested in the input BCP 47 language tag that led to
-    this locale, the key-value pairs that were requested and are supported for
-    this locale are included in `locale`.
-- `calendar`
-  - : E.g. "gregory"
-- `numberingSystem`
-  - : The values requested using the Unicode extension keys `"ca"` and `"nu"` or
-    filled in as default values.
-- `timeZone`
-  - : The value provided for this property in the `options` argument;
-    {{jsxref("undefined")}} (representing the runtime's default time
-    zone) if none was provided. Warning: Applications should not rely on
-    {{jsxref("undefined")}} being returned, as future versions may
-    return a {{jsxref("String")}} value identifying the runtime’s
-    default time zone instead.
-- `hour12`
-  - : The value provided for this property in the `options` argument or filled
-    in as a default.
-- `weekday`, `era`, `year`, `month`, `day`, `hour`, `minute`, `second`,
-  `timeZoneName`
-  - : The values resulting from format matching between the corresponding
-    properties in the `options` argument and the available combinations and
-    representations for date-time formatting in the selected locale. Some of
-    these properties may not be present, indicating that the corresponding
-    components will not be represented in formatted output.
+*   `locale`
+    *   : The BCP 47 language tag for the locale actually used. If any Unicode
+        extension values were requested in the input BCP 47 language tag that led to
+        this locale, the key-value pairs that were requested and are supported for
+        this locale are included in `locale`.
+*   `calendar`
+    *   : E.g. "gregory"
+*   `numberingSystem`
+    *   : The values requested using the Unicode extension keys `"ca"` and `"nu"` or
+        filled in as default values.
+*   `timeZone`
+    *   : The value provided for this property in the `options` argument;
+        {{jsxref("undefined")}} (representing the runtime's default time
+        zone) if none was provided. Warning: Applications should not rely on
+        {{jsxref("undefined")}} being returned, as future versions may
+        return a {{jsxref("String")}} value identifying the runtime’s
+        default time zone instead.
+*   `hour12`
+    *   : The value provided for this property in the `options` argument or filled
+        in as a default.
+*   `weekday`, `era`, `year`, `month`, `day`, `hour`, `minute`, `second`,
+    `timeZoneName`
+    *   : The values resulting from format matching between the corresponding
+        properties in the `options` argument and the available combinations and
+        representations for date-time formatting in the selected locale. Some of
+        these properties may not be present, indicating that the corresponding
+        components will not be represented in formatted output.
 
 ## Examples
 
@@ -92,4 +92,4 @@ usedOptions.month;           // "numeric"
 
 ## See also
 
-- {{jsxref("Intl.DateTimeFormat")}}
+*   {{jsxref("Intl.DateTimeFormat")}}

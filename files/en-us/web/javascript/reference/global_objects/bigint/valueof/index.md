@@ -18,7 +18,9 @@ The **`valueOf()`** method returns the wrapped primitive value of a
 
 ## Syntax
 
-<pre class="brush: js"><var>bigIntObj</var>.valueOf()</pre>
+```js
+bigIntObj.valueOf()
+```
 
 ### Return value
 
@@ -44,4 +46,4 @@ typeof Object(1n).valueOf(); // bigint
 
 ## See also
 
-- {{jsxref("BigInt.prototype.toString()")}}
+*   {{jsxref("BigInt.prototype.toString()")}}

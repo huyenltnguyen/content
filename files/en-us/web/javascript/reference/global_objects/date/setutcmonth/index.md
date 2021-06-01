@@ -25,11 +25,11 @@ setUTCMonth(monthValue, dayValue)
 
 ### Parameters
 
-- `monthValue`
-  - : An integer between 0 and 11, representing the months January through
-    December.
-- `dayValue`
-  - : Optional. An integer from 1 to 31, representing the day of the month.
+*   `monthValue`
+    *   : An integer between 0 and 11, representing the months January through
+        December.
+*   `dayValue`
+    *   : Optional. An integer from 1 to 31, representing the day of the month.
 
 ### Return value
 
@@ -66,5 +66,5 @@ theBigDay.setUTCMonth(11);
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCMonth()")}}
-- {{jsxref("Date.prototype.setMonth()")}}
+*   {{jsxref("Date.prototype.getUTCMonth()")}}
+*   {{jsxref("Date.prototype.setMonth()")}}

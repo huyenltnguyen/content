@@ -17,12 +17,14 @@ The **`Object.isSealed()`** method determines if an object is sealed.
 
 ## Syntax
 
-<pre class="brush: js">Object.isSealed(<var>obj</var>)</pre>
+```js
+Object.isSealed(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object which should be checked.
+*   `obj`
+    *   : The object which should be checked.
 
 ### Return value
 
@@ -111,8 +113,8 @@ Object.isSealed(1);
 
 ## See also
 
-- {{jsxref("Object.seal()")}}
-- {{jsxref("Object.preventExtensions()")}}
-- {{jsxref("Object.isExtensible()")}}
-- {{jsxref("Object.freeze()")}}
-- {{jsxref("Object.isFrozen()")}}
+*   {{jsxref("Object.seal()")}}
+*   {{jsxref("Object.preventExtensions()")}}
+*   {{jsxref("Object.isExtensible()")}}
+*   {{jsxref("Object.freeze()")}}
+*   {{jsxref("Object.isFrozen()")}}

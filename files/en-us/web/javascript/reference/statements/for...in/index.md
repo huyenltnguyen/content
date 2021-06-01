@@ -19,15 +19,16 @@ including inherited enumerable properties.
 
 ## Syntax
 
-<pre class="brush: js">for (<var>variable</var> in <var>object</var>) {
-  <var>statement</var>
+```js
+for (variable in object) {
+  statement
 }
-</pre>
+```
 
-- `variable`
-  - : A different property name is assigned to `variable` on each iteration.
-- `object`
-  - : Object whose non-Symbol enumerable properties are iterated over.
+*   `variable`
+    *   : A different property name is assigned to `variable` on each iteration.
+*   `object`
+    *   : Object whose non-Symbol enumerable properties are iterated over.
 
 ## Description
 
@@ -188,15 +189,15 @@ investigating whether to remove the nonstandard behavior as well.
 
 ## See also
 
-- {{jsxref("Statements/for...of", "for...of")}} – a similar
-  statement that iterates over the property _values_
-- {{jsxref("Statements/for_each...in", "for each...in")}} – a
-  similar but deprecated statement that iterates over the values of an object's
-  properties, rather than the property names themselves
-- {{jsxref("Statements/for", "for")}}
-- [Iterators and Generator functions](/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
-  (usable with `for...of` syntax)
-- [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
-- {{jsxref("Object.getOwnPropertyNames()")}}
-- {{jsxref("Object.prototype.hasOwnProperty()")}}
-- {{jsxref("Array.prototype.forEach()")}}
+*   {{jsxref("Statements/for...of", "for...of")}} – a similar
+    statement that iterates over the property *values*
+*   {{jsxref("Statements/for_each...in", "for each...in")}} – a
+    similar but deprecated statement that iterates over the values of an object's
+    properties, rather than the property names themselves
+*   {{jsxref("Statements/for", "for")}}
+*   [Iterators and Generator functions](/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
+    (usable with `for...of` syntax)
+*   [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+*   {{jsxref("Object.getOwnPropertyNames()")}}
+*   {{jsxref("Object.prototype.hasOwnProperty()")}}
+*   {{jsxref("Array.prototype.forEach()")}}

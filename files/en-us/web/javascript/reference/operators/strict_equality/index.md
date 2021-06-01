@@ -30,17 +30,17 @@ The strict equality operators (`===` and `!==`) use the
 [Strict Equality Comparison Algorithm](http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.6)
 to compare two operands.
 
-- If the operands are of different types, return `false`.
-- If both operands are objects, return `true` only if they refer to the same
-  object.
-- If both operands are `null` or both operands are `undefined`, return `true`.
-- If either operand is `NaN`, return `false`.
-- Otherwise, compare the two operand's values:
+*   If the operands are of different types, return `false`.
+*   If both operands are objects, return `true` only if they refer to the same
+    object.
+*   If both operands are `null` or both operands are `undefined`, return `true`.
+*   If either operand is `NaN`, return `false`.
+*   Otherwise, compare the two operand's values:
 
-  - Numbers must have the same numeric values. `+0` and `-0` are considered to
-    be the same value.
-  - Strings must have the same characters in the same order.
-  - Booleans must be both `true` or both `false`.
+    *   Numbers must have the same numeric values. `+0` and `-0` are considered to
+        be the same value.
+    *   Strings must have the same characters in the same order.
+    *   Booleans must be both `true` or both `false`.
 
 The most notable difference between this operator and the
 [equality](/en-US/docs/Web/JavaScript/Reference/Operators/Equality) (`==`)
@@ -99,6 +99,6 @@ console.log(object1 === object1);  // true
 
 ## See also
 
-- [Equality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Equality)
-- [Inequality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Inequality)
-- [Strict inequality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality)
+*   [Equality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Equality)
+*   [Inequality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Inequality)
+*   [Strict inequality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality)

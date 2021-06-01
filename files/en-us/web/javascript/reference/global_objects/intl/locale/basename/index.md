@@ -72,4 +72,4 @@ console.log(dutch.baseName); // Prints out "nl-Latn-NL"
 
 ## See also
 
-- {{jsxref("Intl.Locale")}}
+*   {{jsxref("Intl.Locale")}}

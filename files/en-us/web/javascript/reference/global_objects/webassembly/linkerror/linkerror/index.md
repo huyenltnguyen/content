@@ -26,12 +26,12 @@ new WebAssembly.LinkError(message, fileName, lineNumber)
 
 ### Parameters
 
-- `message` {{optional_inline}}
-  - : Human-readable description of the error.
-- `fileName` {{optional_inline}}
-  - : The name of the file containing the code that caused the exception.
-- `lineNumber` {{optional_inline}}
-  - : The line number of the code that caused the exception.
+*   `message` {{optional_inline}}
+    *   : Human-readable description of the error.
+*   `fileName` {{optional_inline}}
+    *   : The name of the file containing the code that caused the exception.
+*   `lineNumber` {{optional_inline}}
+    *   : The line number of the code that caused the exception.
 
 ## Examples
 
@@ -64,6 +64,6 @@ try {
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

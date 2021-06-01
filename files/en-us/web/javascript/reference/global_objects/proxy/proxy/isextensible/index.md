@@ -17,19 +17,20 @@ The **`handler.isExtensible()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  isExtensible: function(<var>target</var>) {
+```js
+const p = new Proxy(target, {
+  isExtensible: function(target) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameter is passed to the `isExtensible()` method. `this` is
 bound to the handler.
 
-- `target`
-  - : The target object.
+*   `target`
+    *   : The target object.
 
 ### Return value
 
@@ -44,21 +45,21 @@ The **`handler.isExtensible()`** method is a trap for
 
 This trap can intercept these operations:
 
-- {{jsxref("Object.isExtensible()")}}
-- {{jsxref("Reflect.isExtensible()")}}
+*   {{jsxref("Object.isExtensible()")}}
+*   {{jsxref("Reflect.isExtensible()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- <code>Object.isExtensible(<var>proxy</var>)</code>
+*   <code>Object.isExtensible(<var>proxy</var>)</code>
 
-  must return the same value as
+    must return the same value as
 
-  <code>Object.isExtensible(<var>target</var>)</code>
+    <code>Object.isExtensible(<var>target</var>)</code>
 
-  .
+    .
 
 ## Examples
 
@@ -100,7 +101,7 @@ Object.isExtensible(p); // TypeError is thrown
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Object.isExtensible()")}}
-- {{jsxref("Reflect.isExtensible()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Object.isExtensible()")}}
+*   {{jsxref("Reflect.isExtensible()")}}

@@ -52,4 +52,4 @@ this: \[0, +∞).
 
 ## See also
 
-- {{jsxref("String.prototype.repeat()")}}
+*   {{jsxref("String.prototype.repeat()")}}

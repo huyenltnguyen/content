@@ -29,10 +29,10 @@ fontcolor(color)
 
 ### Parameters
 
-- `color`
-  - : A string expressing the color as a hexadecimal RGB triplet or as a string
-    literal. String literals for color names are listed in the
-    [CSS color reference](/en-US/docs/Web/CSS/color_value).
+*   `color`
+    *   : A string expressing the color as a hexadecimal RGB triplet or as a string
+        literal. String literals for color names are listed in the
+        [CSS color reference](/en-US/docs/Web/CSS/color_value).
 
 ### Return value
 
@@ -80,6 +80,6 @@ document.getElementById('yourElemId').style.color = 'red';
 
 ## See also
 
-- A polyfill of `String.prototype.fontcolor` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.fontsize()")}}
+*   A polyfill of `String.prototype.fontcolor` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.fontsize()")}}

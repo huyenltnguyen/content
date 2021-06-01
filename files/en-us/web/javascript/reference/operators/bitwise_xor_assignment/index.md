@@ -19,8 +19,10 @@ the variable.
 
 ## Syntax
 
-<pre class="brush: js"><strong>Operator:</strong> x ^= y
-<strong>Meaning:</strong>  x  = x ^ y</pre>
+```js
+Operator: x ^= y
+Meaning:  x  = x ^ y
+```
 
 ## Examples
 
@@ -50,5 +52,5 @@ console.log(b); // 00000000000000000000000000000101
 
 ## See also
 
-- [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
-- [Bitwise XOR operator](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR)
+*   [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
+*   [Bitwise XOR operator](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR)

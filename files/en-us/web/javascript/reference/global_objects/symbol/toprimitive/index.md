@@ -66,7 +66,7 @@ console.log(obj2 + ''); // "true"    -- hint is "default"
 
 ## See also
 
-- {{jsxref("Date.@@toPrimitive", "Date.prototype[@@toPrimitive]")}}
-- {{jsxref("Symbol.@@toPrimitive", "Symbol.prototype[@@toPrimitive]")}}
-- {{jsxref("Object.prototype.toString()")}}
-- {{jsxref("Object.prototype.valueOf()")}}
+*   {{jsxref("Date.@@toPrimitive", "Date.prototype[@@toPrimitive]")}}
+*   {{jsxref("Symbol.@@toPrimitive", "Symbol.prototype[@@toPrimitive]")}}
+*   {{jsxref("Object.prototype.toString()")}}
+*   {{jsxref("Object.prototype.valueOf()")}}

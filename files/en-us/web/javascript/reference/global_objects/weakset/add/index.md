@@ -23,8 +23,8 @@ add(value)
 
 ### Parameters
 
-- value
-  - : Required. The object to add to the `WeakSet` collection.
+*   value
+    *   : Required. The object to add to the `WeakSet` collection.
 
 ### Return value
 
@@ -57,6 +57,6 @@ ws.add(1);
 
 ## See also
 
-- {{jsxref("WeakSet")}}
-- {{jsxref("WeakSet.prototype.delete()")}}
-- {{jsxref("WeakSet.prototype.has()")}}
+*   {{jsxref("WeakSet")}}
+*   {{jsxref("WeakSet.prototype.delete()")}}
+*   {{jsxref("WeakSet.prototype.has()")}}

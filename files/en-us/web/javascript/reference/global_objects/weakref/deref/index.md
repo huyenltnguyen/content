@@ -64,4 +64,4 @@ const tick = () => {
 
 ## See also
 
-- {{jsxref("WeakRef")}}
+*   {{jsxref("WeakRef")}}

@@ -24,12 +24,12 @@ new ReferenceError(message, fileName, lineNumber)
 
 ### Parameters
 
-- `message` {{optional_inline}}
-  - : Human-readable description of the error.
-- `fileName` {{optional_inline}}
-  - : The name of the file containing the code that caused the exception.
-- `lineNumber` {{optional_inline}}
-  - : The line number of the code that caused the exception
+*   `message` {{optional_inline}}
+    *   : Human-readable description of the error.
+*   `fileName` {{optional_inline}}
+    *   : The name of the file containing the code that caused the exception.
+*   `lineNumber` {{optional_inline}}
+    *   : The line number of the code that caused the exception
 
 ## Examples
 
@@ -75,4 +75,4 @@ try {
 
 ## See also
 
-- {{jsxref("Error")}}
+*   {{jsxref("Error")}}

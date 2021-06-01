@@ -137,15 +137,35 @@ and not as a property of a `Number` object you create yourself.
 
 The following table summarizes the `Number` object's properties.
 
-<table class="standard-table"><caption>Properties of <code>Number</code></caption><thead><tr><th scope="col">Property</th><th scope="col">Description</th></tr></thead><tbody><tr><td>{{jsxref("Number.MAX_VALUE")}}</td><td>The largest representable number (<code>±1.7976931348623157e+308</code>)</td></tr><tr><td>{{jsxref("Number.MIN_VALUE")}}</td><td>The smallest representable number (<code>±5e-324</code>)</td></tr><tr><td>{{jsxref("Number.NaN")}}</td><td>Special "not a number" value</td></tr><tr><td>{{jsxref("Number.NEGATIVE_INFINITY")}}</td><td>Special negative infinite value; returned on overflow</td></tr><tr><td>{{jsxref("Number.POSITIVE_INFINITY")}}</td><td>Special positive infinite value; returned on overflow</td></tr><tr><td>{{jsxref("Number.EPSILON")}}</td><td>Difference between <code>1</code> and the smallest value greater than <code>1</code> that can be represented as a {{jsxref("Number")}} (<code>2.220446049250313e-16</code>)</td></tr><tr><td>{{jsxref("Number.MIN_SAFE_INTEGER")}}</td><td>Minimum safe integer in JavaScript (−2^53 + 1, or <code>−9007199254740991</code>)</td></tr><tr><td>{{jsxref("Number.MAX_SAFE_INTEGER")}}</td><td>Maximum safe integer in JavaScript (+2^53 − 1, or <code>+9007199254740991</code>)</td></tr></tbody></table>
+| Property                                             | Description                                                                                                                                        |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {{jsxref("Number.MAX_VALUE")}}             | The largest representable number (`±1.7976931348623157e+308`)                                                                                      |
+| {{jsxref("Number.MIN_VALUE")}}             | The smallest representable number (`±5e-324`)                                                                                                      |
+| {{jsxref("Number.NaN")}}                     | Special "not a number" value                                                                                                                       |
+| {{jsxref("Number.NEGATIVE_INFINITY")}} | Special negative infinite value; returned on overflow                                                                                              |
+| {{jsxref("Number.POSITIVE_INFINITY")}} | Special positive infinite value; returned on overflow                                                                                              |
+| {{jsxref("Number.EPSILON")}}                 | Difference between `1` and the smallest value greater than `1` that can be represented as a {{jsxref("Number")}} (`2.220446049250313e-16`) |
+| {{jsxref("Number.MIN_SAFE_INTEGER")}}     | Minimum safe integer in JavaScript (−2^53 + 1, or `−9007199254740991`)                                                                             |
+| {{jsxref("Number.MAX_SAFE_INTEGER")}}     | Maximum safe integer in JavaScript (+2^53 − 1, or `+9007199254740991`)                                                                             |
 
-<table class="standard-table"><caption>Methods of <code>Number</code></caption><thead><tr><th>Method</th><th>Description</th></tr></thead><tbody><tr><td>{{jsxref("Number.parseFloat()")}}</td><td>Parses a string argument and returns a floating point number.<br>Same as the global {{jsxref("parseFloat", "parseFloat()")}} function.</td></tr><tr><td>{{jsxref("Number.parseInt()")}}</td><td>Parses a string argument and returns an integer of the specified radix or base.<br>Same as the global {{jsxref("parseInt", "parseInt()")}} function.</td></tr><tr><td>{{jsxref("Number.isFinite()")}}</td><td>Determines whether the passed value is a finite number.</td></tr><tr><td>{{jsxref("Number.isInteger()")}}</td><td>Determines whether the passed value is an integer.</td></tr><tr><td>{{jsxref("Number.isNaN()")}}</td><td>Determines whether the passed value is {{jsxref("Global_Objects/NaN", "NaN")}}. More robust version of the original global {{jsxref("Global_Objects/isNaN", "isNaN()")}}.</td></tr><tr><td>{{jsxref("Number.isSafeInteger()")}}</td><td>Determines whether the provided value is a number that is a <dfn>safe integer</dfn>.</td></tr></tbody></table>
+| Method                                           | Description                                                                                                                                                                                           |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| {{jsxref("Number.parseFloat()")}}     | Parses a string argument and returns a floating point number. Same as the global {{jsxref("parseFloat", "parseFloat()")}} function.                                                       |
+| {{jsxref("Number.parseInt()")}}         | Parses a string argument and returns an integer of the specified radix or base. Same as the global {{jsxref("parseInt", "parseInt()")}} function.                                         |
+| {{jsxref("Number.isFinite()")}}         | Determines whether the passed value is a finite number.                                                                                                                                               |
+| {{jsxref("Number.isInteger()")}}     | Determines whether the passed value is an integer.                                                                                                                                                    |
+| {{jsxref("Number.isNaN()")}}             | Determines whether the passed value is {{jsxref("Global_Objects/NaN", "NaN")}}. More robust version of the original global {{jsxref("Global_Objects/isNaN", "isNaN()")}}. |
+| {{jsxref("Number.isSafeInteger()")}} | Determines whether the provided value is a number that is a <dfn>safe integer</dfn>.                                                                                                                  |
 
 The `Number` prototype provides methods for retrieving information from `Number`
 objects in various formats. The following table summarizes the methods of
 `Number.prototype`.
 
-<table class="standard-table"><caption>Methods of <code>Number.prototype</code></caption><thead><tr><th scope="col">Method</th><th scope="col">Description</th></tr></thead><tbody><tr><td>{{jsxref("Number.toExponential", "toExponential()")}}</td><td>Returns a string representing the number in exponential notation.</td></tr><tr><td>{{jsxref("Number.toFixed", "toFixed()")}}</td><td>Returns a string representing the number in fixed-point notation.</td></tr><tr><td>{{jsxref("Number.toPrecision", "toPrecision()")}}</td><td>Returns a string representing the number to a specified precision in fixed-point notation.</td></tr></tbody></table>
+| Method                                                                   | Description                                                                                |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| {{jsxref("Number.toExponential", "toExponential()")}} | Returns a string representing the number in exponential notation.                          |
+| {{jsxref("Number.toFixed", "toFixed()")}}                 | Returns a string representing the number in fixed-point notation.                          |
+| {{jsxref("Number.toPrecision", "toPrecision()")}}         | Returns a string representing the number to a specified precision in fixed-point notation. |
 
 ## Math object
 
@@ -204,25 +224,25 @@ current date and time.
 
 The `parameters` in the preceding syntax can be any of the following:
 
-- Nothing: creates today's date and time. For example, `today = new Date();`.
-- A string representing a date in the following form: "Month day, year
-  hours:minutes:seconds." For example,
-  `var Xmas95 = new Date("December 25, 1995 13:30:00")`. If you omit hours,
-  minutes, or seconds, the value will be set to zero.
-- A set of integer values for year, month, and day. For example,
-  `var Xmas95 = new Date(1995, 11, 25)`.
-- A set of integer values for year, month, day, hour, minute, and seconds. For
-  example, `var Xmas95 = new Date(1995, 11, 25, 9, 30, 0);`.
+*   Nothing: creates today's date and time. For example, `today = new Date();`.
+*   A string representing a date in the following form: "Month day, year
+    hours:minutes:seconds." For example,
+    `var Xmas95 = new Date("December 25, 1995 13:30:00")`. If you omit hours,
+    minutes, or seconds, the value will be set to zero.
+*   A set of integer values for year, month, and day. For example,
+    `var Xmas95 = new Date(1995, 11, 25)`.
+*   A set of integer values for year, month, day, hour, minute, and seconds. For
+    example, `var Xmas95 = new Date(1995, 11, 25, 9, 30, 0);`.
 
 ### Methods of the Date object
 
 The `Date` object methods for handling dates and times fall into these broad
 categories:
 
-- "set" methods, for setting date and time values in `Date` objects.
-- "get" methods, for getting date and time values from `Date` objects.
-- "to" methods, for returning string values from `Date` objects.
-- parse and UTC methods, for parsing `Date` strings.
+*   "set" methods, for setting date and time values in `Date` objects.
+*   "get" methods, for getting date and time values from `Date` objects.
+*   "to" methods, for returning string values from `Date` objects.
+*   parse and UTC methods, for parsing `Date` strings.
 
 With the "get" and "set" methods you can get and set seconds, minutes, hours,
 day of the month, day of the week, months, and years separately. There is a
@@ -230,12 +250,12 @@ day of the month, day of the week, months, and years separately. There is a
 method, because the day of the week is set automatically. These methods use
 integers to represent these values as follows:
 
-- Seconds and minutes: 0 to 59
-- Hours: 0 to 23
-- Day: 0 (Sunday) to 6 (Saturday)
-- Date: 1 to 31 (day of the month)
-- Months: 0 (January) to 11 (December)
-- Year: years since 1900
+*   Seconds and minutes: 0 to 59
+*   Hours: 0 to 23
+*   Day: 0 (Sunday) to 6 (Saturday)
+*   Date: 1 to 31 (day of the month)
+*   Months: 0 (January) to 11 (December)
+*   Year: years since 1900
 
 For example, suppose you define the following date:
 

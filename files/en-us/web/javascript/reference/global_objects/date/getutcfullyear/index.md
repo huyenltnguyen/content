@@ -53,5 +53,5 @@ var year = today.getUTCFullYear();
 
 ## See also
 
-- {{jsxref("Date.prototype.getFullYear()")}}
-- {{jsxref("Date.prototype.setFullYear()")}}
+*   {{jsxref("Date.prototype.getFullYear()")}}
+*   {{jsxref("Date.prototype.setFullYear()")}}

@@ -18,13 +18,14 @@ The **`ArrayBuffer()`** constructor is used to create
 
 ## Syntax
 
-<pre class="brush: js">new ArrayBuffer(<var>length</var>)
-</pre>
+```js
+new ArrayBuffer(length)
+```
 
 ### Parameters
 
-- `length`
-  - : The size, in bytes, of the array buffer to create.
+*   `length`
+    *   : The size, in bytes, of the array buffer to create.
 
 ### Return value
 
@@ -77,7 +78,7 @@ var view   = new Int32Array(buffer);
 
 ## See also
 
-- A polyfill of `ArrayBuffer` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- {{jsxref("SharedArrayBuffer")}}
+*   A polyfill of `ArrayBuffer` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("SharedArrayBuffer")}}

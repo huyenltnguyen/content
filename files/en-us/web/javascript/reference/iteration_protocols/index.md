@@ -13,7 +13,7 @@ tags:
 {{jsSidebar("More")}}
 
 As a couple of additions to ECMAScript 2015, **Iteration protocols** aren't new
-built-ins or syntax, but _protocols_. These protocols can be implemented by any
+built-ins or syntax, but *protocols*. These protocols can be implemented by any
 object by following some conventions.
 
 There are two protocols: The [iterable protocol](#the_iterable_protocol) and the
@@ -35,7 +35,9 @@ method, meaning that the object (or one of the objects up its
 must have a property with a `@@iterator` key which is available via constant
 {{jsxref("Symbol.iterator")}}:
 
-<table class="standard-table"><thead><tr><th scope="col">Property</th><th scope="col">Value</th></tr></thead><tbody><tr><td><code>[Symbol.iterator]</code></td><td>A zero-argument function that returns an object, conforming to the <a href="#the_iterator_protocol">iterator protocol</a>.</td></tr></tbody></table>
+| Property            | Value                                                                                                           |
+| ------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `[Symbol.iterator]` | A zero-argument function that returns an object, conforming to the [iterator protocol](#the_iterator_protocol). |
 
 Whenever an object needs to be iterated (such as at the beginning of a
 {{jsxref("Statements/for...of", "for...of")}} loop), its
@@ -64,7 +66,7 @@ following semantics:
 
 > **Note:** It is not possible to know reflectively whether a particular object
 > implements the iterator protocol. However, it is easy to create an object that
-> satisfies _both_ the iterator and iterable protocols (as shown in the example
+> satisfies *both* the iterator and iterable protocols (as shown in the example
 > below).
 >
 > Doing so allows an iterator to be consumed by the various syntaxes expecting
@@ -173,10 +175,10 @@ console.log([...myIterable]); // [1, 2, 3]
 
 There are many APIs that accept iterables. Some examples include:
 
-- {{jsxref("Map", "new Map([<var>iterable</var>])")}}
-- {{jsxref("WeakMap", "new WeakMap([<var>iterable</var>])")}}
-- {{jsxref("Set", "new Set([<var>iterable</var>])")}}
-- {{jsxref("WeakSet", "new WeakSet([<var>iterable</var>])")}}
+*   {{jsxref("Map", "new Map([<var>iterable</var>])")}}
+*   {{jsxref("WeakMap", "new WeakMap([<var>iterable</var>])")}}
+*   {{jsxref("Set", "new Set([<var>iterable</var>])")}}
+*   {{jsxref("WeakSet", "new WeakSet([<var>iterable</var>])")}}
 
 ```js
 new Map([[1, 'a'], [2, 'b'], [3, 'c']]).get(2); // "b"
@@ -201,9 +203,9 @@ new WeakSet(function* () {
 
 #### See also
 
-- {{jsxref("Promise.all()", "Promise.all(<var>iterable</var>)")}}
-- {{jsxref("Promise.race()", "Promise.race(<var>iterable</var>)")}}
-- {{jsxref("Array.from()", "Array.from(<var>iterable</var>)")}}
+*   {{jsxref("Promise.all()", "Promise.all(<var>iterable</var>)")}}
+*   {{jsxref("Promise.race()", "Promise.race(<var>iterable</var>)")}}
+*   {{jsxref("Array.from()", "Array.from(<var>iterable</var>)")}}
 
 ### Syntaxes expecting iterables
 
@@ -236,7 +238,7 @@ console.log(a);            // "a"
 ### Non-well-formed iterables
 
 If an iterable's `@@iterator` method doesn't return an iterator object, then
-it's considered a _non-well-formed_ iterable.
+it's considered a *non-well-formed* iterable.
 
 Using one is likely to result in runtime errors or buggy behavior:
 
@@ -361,7 +363,7 @@ for (const val of simple) {
 
 ## Is a generator object an iterator or an iterable?
 
-A {{jsxref("Generator", "generator object", "", 1)}} is _both_
+A {{jsxref("Generator", "generator object", "", 1)}} is *both*
 iterator and iterable:
 
 ```js
@@ -389,5 +391,5 @@ console.log(Symbol.iterator in aGeneratorObject)
 
 ## See also
 
-- {{jsxref("Statements/function*", "the <code>function*</code> documentation", "", 1)}}
-- [Iteration in the ECMAScript specification](https://tc39.es/ecma262/#sec-iteration)
+*   {{jsxref("Statements/function*", "the <code>function*</code> documentation", "", 1)}}
+*   [Iteration in the ECMAScript specification](https://tc39.es/ecma262/#sec-iteration)

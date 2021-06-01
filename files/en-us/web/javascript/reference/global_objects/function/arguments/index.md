@@ -69,5 +69,5 @@ Not part of any standard. Deprecated in favor of
 
 ## See also
 
-- {{jsxref("Functions/arguments", "arguments")}} object
-- {{jsxref("Functions", "Functions and function scope", "", 1)}}
+*   {{jsxref("Functions/arguments", "arguments")}} object
+*   {{jsxref("Functions", "Functions and function scope", "", 1)}}

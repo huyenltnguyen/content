@@ -26,8 +26,8 @@ unshift(element0, element1, ... , elementN)
 
 ### Parameters
 
-- <code>element<em>N</em></code>
-  - : The elements to add to the front of the `arr`.
+*   <code>element<em>N</em></code>
+    *   : The elements to add to the front of the `arr`.
 
 ### Return value
 
@@ -55,11 +55,12 @@ yield the same results.
 
 See example:
 
-<pre class="brush: js">let arr = [4, 5, 6]
+```js
+let arr = [4, 5, 6]
 
 arr.unshift(1, 2, 3)
 console.log(arr);
-// [<strong>1, 2, 3</strong>, 4, 5, 6]
+// [1, 2, 3, 4, 5, 6]
 
 arr = [4, 5, 6] // resetting the array
 
@@ -68,8 +69,8 @@ arr.unshift(2)
 arr.unshift(3)
 
 console.log(arr)
-// [<strong>3, 2, 1</strong>, 4, 5, 6]
-</pre>
+// [3, 2, 1, 4, 5, 6]
+```
 
 ## Examples
 
@@ -101,7 +102,7 @@ arr.unshift([-7, -6], [-5])  // the new array length is 8
 
 ## See also
 
-- {{jsxref("Array.prototype.push()")}}
-- {{jsxref("Array.prototype.pop()")}}
-- {{jsxref("Array.prototype.shift()")}}
-- {{jsxref("Array.prototype.concat()")}}
+*   {{jsxref("Array.prototype.push()")}}
+*   {{jsxref("Array.prototype.pop()")}}
+*   {{jsxref("Array.prototype.shift()")}}
+*   {{jsxref("Array.prototype.concat()")}}

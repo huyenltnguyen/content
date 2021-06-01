@@ -21,15 +21,23 @@ new WebAssembly.Table(tableDescriptor)
 
 ### Parameters
 
-<dl><dt><em>tableDescriptor</em></dt><dd>An object that can contain the following members:<dl><dt><em>element</em></dt><dd>A string representing the type of value to be stored in the table. At the moment
-this can only have a value of <code>"anyfunc"</code> (functions).</dd><dt><em>initial</em></dt><dd>The initial number of elements of the WebAssembly Table.</dd><dt><em>maximum {{optional_inline}}</em></dt><dd>The maximum number of elements the WebAssembly Table is allowed to grow to.</dd></dl></dd></dl>
+*   *tableDescriptor*
+    *   : An object that can contain the following members:
+        *   *element*
+            *   : A string representing the type of value to be stored in the table. At
+                the moment this can only have a value of `"anyfunc"` (functions).
+        *   *initial*
+            *   : The initial number of elements of the WebAssembly Table.
+        *   *maximum {{optional_inline}}*
+            *   : The maximum number of elements the WebAssembly Table is allowed to
+                grow to.
 
 ### Exceptions
 
-- If `tableDescriptor` is not of type object, a {{jsxref("TypeError")}}
-  is thrown.
-- If `maximum` is specified and is smaller than `initial`, a
-  {{jsxref("RangeError")}} is thrown.
+*   If `tableDescriptor` is not of type object, a {{jsxref("TypeError")}}
+    is thrown.
+*   If `maximum` is specified and is smaller than `initial`, a
+    {{jsxref("RangeError")}} is thrown.
 
 ## Examples
 
@@ -97,6 +105,6 @@ but the same table is visible and callable inside the wasm instance too.
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

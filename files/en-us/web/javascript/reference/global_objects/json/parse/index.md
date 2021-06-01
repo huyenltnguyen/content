@@ -27,12 +27,12 @@ JSON.parse(text, reviver)
 
 ### Parameters
 
-- `text`
-  - : The string to parse as JSON. See the {{jsxref("JSON")}} object for a
-    description of JSON syntax.
-- `reviver` {{optional_inline}}
-  - : If a function, this prescribes how the value originally produced by
-    parsing is transformed, before being returned.
+*   `text`
+    *   : The string to parse as JSON. See the {{jsxref("JSON")}} object for a
+        description of JSON syntax.
+*   `reviver` {{optional_inline}}
+    *   : If a function, this prescribes how the value originally produced by
+        parsing is transformed, before being returned.
 
 ### Return value
 
@@ -159,7 +159,7 @@ JSON.parse('null');            // null
 
 ### Using the reviver parameter
 
-If a `reviver` is specified, the value computed by parsing is _transformed_
+If a `reviver` is specified, the value computed by parsing is *transformed*
 before being returned. Specifically, the computed value and all its properties
 (beginning with the most nested properties and proceeding to the original value
 itself) are individually run through the `reviver`. Then it is called, with the
@@ -221,4 +221,4 @@ JSON.parse("{'foo': 1}");
 
 ## See also
 
-- {{jsxref("JSON.stringify()")}}
+*   {{jsxref("JSON.stringify()")}}

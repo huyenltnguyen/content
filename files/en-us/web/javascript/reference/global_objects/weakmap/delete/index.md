@@ -25,8 +25,8 @@ delete(key)
 
 ### Parameters
 
-- `key`
-  - : The key of the element to remove from the `WeakMap` object.
+*   `key`
+    *   : The key of the element to remove from the `WeakMap` object.
 
 ### Return value
 
@@ -56,4 +56,4 @@ wm.has(window);    // Returns false. The window object is no longer in the WeakM
 
 ## See also
 
-- {{jsxref("WeakMap")}}
+*   {{jsxref("WeakMap")}}

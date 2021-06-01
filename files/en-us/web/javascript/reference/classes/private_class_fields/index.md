@@ -86,8 +86,8 @@ console.assert(error instanceof TypeError)
 
 ### Private instance fields
 
-Private instance fields are declared with **# names** (pronounced "_hash
-names_"), which are identifiers prefixed with `#`. The `#` is a part of the name
+Private instance fields are declared with **# names** (pronounced "*hash
+names*"), which are identifiers prefixed with `#`. The `#` is a part of the name
 itself. It is used for declaration and accessing as well.
 
 The encapsulation is enforced by the language. It is a syntax error to refer to
@@ -215,11 +215,11 @@ new ClassWithPrivateAccessor();
 
 ## See also
 
-- [Public class fields](/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)
-- [Public and private class fields](https://v8.dev/features/class-fields)
-  article at the v8.dev site.
-- [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript)
-  explainer, by the
-  [Public and private instance fields](https://github.com/tc39/proposal-class-fields)
-  authors
-- [The Semantics of All JS Class Elements](https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html)
+*   [Public class fields](/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)
+*   [Public and private class fields](https://v8.dev/features/class-fields)
+    article at the v8.dev site.
+*   [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript)
+    explainer, by the
+    [Public and private instance fields](https://github.com/tc39/proposal-class-fields)
+    authors
+*   [The Semantics of All JS Class Elements](https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html)

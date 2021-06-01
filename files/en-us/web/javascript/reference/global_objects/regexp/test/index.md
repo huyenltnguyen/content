@@ -25,8 +25,8 @@ test(str)
 
 ### Parameters
 
-- `str`
-  - : The string against which to match the regular expression.
+*   `str`
+    *   : The string against which to match the regular expression.
 
 ### Returns
 
@@ -79,7 +79,7 @@ function testInput(re, str) {
 ### Using test() on a regex with the "global" flag
 
 When a regex has the
-[global flag](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags_2)
+[global flag](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags\_2)
 set, `test()` will advance the
 {{jsxref("RegExp.lastIndex",
   "lastIndex")}} of the regex.
@@ -90,7 +90,7 @@ Further calls to <code>test(<var>str</var>)</code> will resume searching `str`
 starting from `lastIndex`. The `lastIndex` property will continue to increase
 each time `test()` returns `true`.
 
-> **Note:** As long as `test()` returns `true`, `lastIndex` will _not_
+> **Note:** As long as `test()` returns `true`, `lastIndex` will *not*
 > reset—even when testing a different string!
 
 When `test()` returns `false`, the calling regex's `lastIndex` property will
@@ -127,7 +127,7 @@ regex.test('foobar')  //false
 
 ## See also
 
-- [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-  chapter in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
-- {{jsxref("RegExp")}}
-- {{jsxref("RegExp.prototype")}}
+*   [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+    chapter in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
+*   {{jsxref("RegExp")}}
+*   {{jsxref("RegExp.prototype")}}

@@ -18,29 +18,29 @@ parsing code.
 
 ## Constructor
 
-- {{jsxref("Global_Objects/SyntaxError/SyntaxError", "SyntaxError()")}}
-  - : Creates a new `SyntaxError` object.
+*   {{jsxref("Global_Objects/SyntaxError/SyntaxError", "SyntaxError()")}}
+    *   : Creates a new `SyntaxError` object.
 
 ## Instance properties
 
-- {{jsxref("Error.prototype.message", "SyntaxError.prototype.message")}}
-  - : Error message. Although ECMA-262 specifies that
-    {{jsxref("SyntaxError")}} should provide its own `message` property,
-    in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
-    {{jsxref("Error.prototype.message")}}.
-- {{jsxref("Error.prototype.name", "SyntaxError.prototype.name")}}
-  - : Error name. Inherited from {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.fileName", "SyntaxError.prototype.fileName")}}
-  - : Path to file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.lineNumber", "SyntaxError.prototype.lineNumber")}}
-  - : Line number in file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.columnNumber", "SyntaxError.prototype.columnNumber")}}
-  - : Column number in line that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.stack", "SyntaxError.prototype.stack")}}
-  - : Stack trace. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.message", "SyntaxError.prototype.message")}}
+    *   : Error message. Although ECMA-262 specifies that
+        {{jsxref("SyntaxError")}} should provide its own `message` property,
+        in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
+        {{jsxref("Error.prototype.message")}}.
+*   {{jsxref("Error.prototype.name", "SyntaxError.prototype.name")}}
+    *   : Error name. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.fileName", "SyntaxError.prototype.fileName")}}
+    *   : Path to file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.lineNumber", "SyntaxError.prototype.lineNumber")}}
+    *   : Line number in file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.columnNumber", "SyntaxError.prototype.columnNumber")}}
+    *   : Column number in line that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.stack", "SyntaxError.prototype.stack")}}
+    *   : Stack trace. Inherited from {{jsxref("Error")}}.
 
 ## Examples
 
@@ -86,4 +86,4 @@ try {
 
 ## See also
 
-- {{jsxref("Error")}}
+*   {{jsxref("Error")}}

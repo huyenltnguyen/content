@@ -28,13 +28,13 @@ fill(value, start, end)
 
 ### Parameters
 
-- `value`
-  - : Value to fill the array with. (Note all elements in the array will be this
-    exact value.)
-- `start` {{optional_inline}}
-  - : Start index, default `0`.
-- `end` {{optional_inline}}
-  - : End index, default `arr.length`.
+*   `value`
+    *   : Value to fill the array with. (Note all elements in the array will be this
+        exact value.)
+*   `start` {{optional_inline}}
+    *   : Start index, default `0`.
+*   `end` {{optional_inline}}
+    *   : End index, default `arr.length`.
 
 ### Return value
 
@@ -42,24 +42,26 @@ The modified array, filled with `value`.
 
 ## Description
 
-- If `start` is negative, it is treated as
+*   If `start` is negative, it is treated as
 
-  <code>array.length + <var>start</var></code>
+    <code>array.length + <var>start</var></code>
 
-  .
+    .
 
-- If `end` is negative, it is treated as
+*   If `end` is negative, it is treated as
 
-  <code>array.length + <var>end</var></code>
+    <code>array.length + <var>end</var></code>
 
-  .
+    .
 
-- `fill` is intentionally generic: it does not require that its `this` value be
-  an `Array` object.
-- `fill` is a mutator method: it will change the array itself and return it, not
-  a copy of it.
-- If the first parameter is an object, each slot in the array will reference
-  that object.
+*   `fill` is intentionally generic: it does not require that its `this` value be
+    an `Array` object.
+
+*   `fill` is a mutator method: it will change the array itself and return it, not
+    a copy of it.
+
+*   If the first parameter is an object, each slot in the array will reference
+    that object.
 
 ## Polyfill
 
@@ -137,7 +139,7 @@ arr[0].hi = "hi"            // [{ hi: "hi" }, { hi: "hi" }, { hi: "hi" }]
 
 ### Using fill() to create a matrix of all 1
 
-This example shows how to create a matrix of all 1, like the _ones()_ function
+This example shows how to create a matrix of all 1, like the *ones()* function
 of Octave or MATLAB.
 
 ```js
@@ -161,7 +163,7 @@ console.log(arr[2][0]); // 1
 
 ## See also
 
-- A polyfill of `Array.prototype.fill` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array")}}
-- {{jsxref("TypedArray.prototype.fill()")}}
+*   A polyfill of `Array.prototype.fill` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array")}}
+*   {{jsxref("TypedArray.prototype.fill()")}}

@@ -29,8 +29,8 @@ A variable is missing a name. This is likely due to a syntax error in your code.
 Probably a comma is wrong somewhere or you struggled with coming up with a name.
 Totally understandable! Naming things is so hard.
 
-- Check to ensure the previous lines / declaration does not end with a comma
-  instead of a semi-colon.
+*   Check to ensure the previous lines / declaration does not end with a comma
+    instead of a semi-colon.
 
 ## Examples
 
@@ -100,6 +100,6 @@ var arr = [1,2,3,4,5];
 
 ## See also
 
-- [Good variable names](http://wiki.c2.com/?GoodVariableNames)
-- {{jsxref("Statements/var", "var")}}
-- [Variable declarations in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations)
+*   [Good variable names](http://wiki.c2.com/?GoodVariableNames)
+*   {{jsxref("Statements/var", "var")}}
+*   [Variable declarations in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations)

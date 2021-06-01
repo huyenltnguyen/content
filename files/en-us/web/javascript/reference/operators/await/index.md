@@ -19,13 +19,15 @@ within regular JavaScript code; however it can be used on its own with
 
 ## Syntax
 
-<pre class="brush: js">[<em>rv</em>] = await <em>expression</em>;</pre>
+```js
+[rv] = await expression;
+```
 
-- `expression`
-  - : A {{jsxref("Promise")}} or any value to wait for.
-- `rv`
-  - : Returns the fulfilled value of the promise, or the value itself if it's
-    not a `Promise`.
+*   `expression`
+    *   : A {{jsxref("Promise")}} or any value to wait for.
+*   `rv`
+    *   : Returns the fulfilled value of the promise, or the value itself if it's
+        not a `Promise`.
 
 ## Description
 
@@ -36,7 +38,7 @@ of the `async` function after fulfillment. When resumed, the value of the
 
 If the `Promise` is rejected, the `await` expression throws the rejected value.
 
-If the value of the _expression_ following the `await` operator is not a
+If the value of the *expression* following the `await` operator is not a
 `Promise`, it's converted to a
 [resolved Promise](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve).
 
@@ -160,7 +162,7 @@ export default await colors;
 
 ## See also
 
-- {{jsxref("Statements/async_function", "async function")}}
-- {{jsxref("Operators/async_function", "async function expression")}}
-- {{jsxref("AsyncFunction")}} object
-- [Top level await](https://v8.dev/features/top-level-await) on v8.dev
+*   {{jsxref("Statements/async_function", "async function")}}
+*   {{jsxref("Operators/async_function", "async function expression")}}
+*   {{jsxref("AsyncFunction")}} object
+*   [Top level await](https://v8.dev/features/top-level-await) on v8.dev

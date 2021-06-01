@@ -17,15 +17,15 @@ that allow calling into WebAssembly code from JavaScript.
 
 ## Constructor
 
-- [`WebAssembly.Instance()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance/Instance)
-  - : Creates a new `Instance` object.
+*   [`WebAssembly.Instance()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance/Instance)
+    *   : Creates a new `Instance` object.
 
 ## Instance properties
 
-- {{jsxref("WebAssembly/Instance/exports", "Instance.prototype.exports")}}
-  - : Returns an object containing as its members all the functions exported
-    from the WebAssembly module instance, to allow them to be accessed and used
-    by JavaScript. Read-only.
+*   {{jsxref("WebAssembly/Instance/exports", "Instance.prototype.exports")}}
+    *   : Returns an object containing as its members all the functions exported
+        from the WebAssembly module instance, to allow them to be accessed and used
+        by JavaScript. Read-only.
 
 ## Examples
 
@@ -83,6 +83,6 @@ functions.
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

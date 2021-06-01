@@ -31,8 +31,7 @@ Every object has a `toString()` method that is automatically called when the
 object is to be represented as a text value or when an object is referred to in
 a manner in which a string is expected. By default, the `toString()` method is
 inherited by every object descended from `Object`. If this method is not
-overridden in a custom object, `toString()` returns "<code>[object
-<var>type</var>]</code>", where `type` is the object type. The following code
+overridden in a custom object, `toString()` returns "<code>\[object <var>type</var>]</code>", where `type` is the object type. The following code
 illustrates this:
 
 ```js
@@ -41,9 +40,8 @@ o.toString(); // returns [object Object]
 ```
 
 > **Note:** Starting in JavaScript 1.8.5, `toString()` called on
-> {{jsxref("null")}} returns <code>[object <em>Null</em>]</code>, and
-> {{jsxref("undefined")}} returns <code>[object
-> <em>Undefined</em>]</code>, as defined in the 5th Edition of ECMAScript and
+> {{jsxref("null")}} returns <code>\[object <em>Null</em>]</code>, and
+> {{jsxref("undefined")}} returns <code>\[object <em>Undefined</em>]</code>, as defined in the 5th Edition of ECMAScript and
 > subsequent Errata.
 >
 > See
@@ -74,10 +72,10 @@ console.log(bigNum.toString(2));
 
 Some common radix are
 
-- 2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
-- 8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
-- 10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
-- 16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
+*   2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
+*   8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
+*   10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
+*   16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
 
 ## Examples
 
@@ -185,10 +183,10 @@ Object.prototype.toString.call(new Date()); // [object prototype polluted]
 
 ## See also
 
-- A polyfill of `Object.prototype.toString` with `Symbol.toStringTag` support is
-  available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- {{jsxref("Object.prototype.toSource()")}}
-- {{jsxref("Object.prototype.valueOf()")}}
-- {{jsxref("Number.prototype.toString()")}}
-- {{jsxref("Symbol.toPrimitive")}}
+*   A polyfill of `Object.prototype.toString` with `Symbol.toStringTag` support is
+    available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   {{jsxref("Object.prototype.toSource()")}}
+*   {{jsxref("Object.prototype.valueOf()")}}
+*   {{jsxref("Number.prototype.toString()")}}
+*   {{jsxref("Symbol.toPrimitive")}}

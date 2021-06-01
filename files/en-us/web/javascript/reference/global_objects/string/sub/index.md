@@ -59,6 +59,6 @@ console.log('This is what a ' + subText.sub() + ' looks like.');
 
 ## See also
 
-- A polyfill of `String.prototype.sub` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.sup()")}}
+*   A polyfill of `String.prototype.sub` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.sup()")}}

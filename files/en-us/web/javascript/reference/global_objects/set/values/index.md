@@ -59,4 +59,4 @@ console.log(setIter.next().value); // "baz"
 
 ## See also
 
-- {{jsxref("Set.prototype.entries()")}}
+*   {{jsxref("Set.prototype.entries()")}}

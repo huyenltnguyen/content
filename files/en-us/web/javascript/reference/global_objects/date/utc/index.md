@@ -28,28 +28,28 @@ Date.UTC(year, month, day, hour, minute, second)
 Date.UTC(year, month, day, hour, minute, second, millisecond)
 ```
 
-- `year`
-  - : A full year.
-- `month` {{optional_inline}}
-  - : An integer between `0` (January) and `11` (December) representing the
-    month. Since ECMAScript 2017 it defaults to `0` if omitted. _(Up until
-    ECMAScript 2016, `month` was a required parameter. As of ES2017, it no
-    longer is.)_
-- `day` {{optional_inline}}
-  - : An integer between `1` and `31` representing the day of the month. If
-    omitted, defaults to `1`.
-- `hour` {{optional_inline}}
-  - : An integer between `0` and `23` representing the hours. If omitted,
-    defaults to `0`.
-- `minute` {{optional_inline}}
-  - : An integer between `0` and `59` representing the minutes. If omitted,
-    defaults to `0`.
-- `second` {{optional_inline}}
-  - : An integer between `0` and `59` representing the seconds. If omitted,
-    defaults to `0`.
-- `millisecond` {{optional_inline}}
-  - : An integer between `0` and `999` representing the milliseconds. If
-    omitted, defaults to `0`.
+*   `year`
+    *   : A full year.
+*   `month` {{optional_inline}}
+    *   : An integer between `0` (January) and `11` (December) representing the
+        month. Since ECMAScript 2017 it defaults to `0` if omitted. *(Up until
+        ECMAScript 2016, `month` was a required parameter. As of ES2017, it no
+        longer is.)*
+*   `day` {{optional_inline}}
+    *   : An integer between `1` and `31` representing the day of the month. If
+        omitted, defaults to `1`.
+*   `hour` {{optional_inline}}
+    *   : An integer between `0` and `23` representing the hours. If omitted,
+        defaults to `0`.
+*   `minute` {{optional_inline}}
+    *   : An integer between `0` and `59` representing the minutes. If omitted,
+        defaults to `0`.
+*   `second` {{optional_inline}}
+    *   : An integer between `0` and `59` representing the seconds. If omitted,
+        defaults to `0`.
+*   `millisecond` {{optional_inline}}
+    *   : An integer between `0` and `999` representing the milliseconds. If
+        omitted, defaults to `0`.
 
 ### Return value
 
@@ -125,5 +125,5 @@ Date.UTC(1);
 
 ## See also
 
-- {{jsxref("Date.parse()")}}
-- {{jsxref("Date")}}
+*   {{jsxref("Date.parse()")}}
+*   {{jsxref("Date")}}

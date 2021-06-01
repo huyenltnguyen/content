@@ -25,8 +25,8 @@ JavaScript documentation of core language features (pure
 [ECMAScript](/en-US/docs/Web/JavaScript/Language_Resources), for the most part)
 includes the following:
 
-- The [JavaScript guide](/en-US/docs/Web/JavaScript/Guide)
-- The [JavaScript reference](/en-US/docs/Web/JavaScript/Reference)
+*   The [JavaScript guide](/en-US/docs/Web/JavaScript/Guide)
+*   The [JavaScript reference](/en-US/docs/Web/JavaScript/Reference)
 
 If you are new to JavaScript, start with the
 [guide](/en-US/docs/Web/JavaScript/Guide). Once you have a firm grasp of the
@@ -37,29 +37,29 @@ to get more details on individual objects and language constructs.
 
 In the JavaScript reference you can find the following chapters:
 
-- [Standard built-in objects](/en-US/docs/Web/JavaScript/Reference/Global_Objects)
-  - : This chapter documents all the JavaScript standard built-in objects, along
-    with their methods and properties.
-- [Statements and declarations](/en-US/docs/Web/JavaScript/Reference/Statements)
-  - : JavaScript applications consist of statements with an appropriate syntax.
-    A single statement may span multiple lines. Multiple statements may occur on
-    a single line if each statement is separated by a semicolon. This isn't a
-    keyword, but a group of keywords.
-- [Expressions and operators](/en-US/docs/Web/JavaScript/Reference/Operators)
-  - : This chapter documents all the JavaScript language operators, expressions
-    and keywords.
-- [Functions](/en-US/docs/Web/JavaScript/Reference/Functions)
-  - : Chapter about JavaScript functions.
-- [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)
-  - : Chapter about JavaScript classes introduced in ECMAScript 2015.
-- [Errors](/en-US/docs/Web/JavaScript/Reference/Errors)
-  - : Chapter about specific errors, exceptions and warnings thrown by
-    JavaScript.
-- [New in JavaScript](/en-US/docs/Web/JavaScript/New_in_JavaScript)
-  - : Chapter about JavaScript version history.
+*   [Standard built-in objects](/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+    *   : This chapter documents all the JavaScript standard built-in objects, along
+        with their methods and properties.
+*   [Statements and declarations](/en-US/docs/Web/JavaScript/Reference/Statements)
+    *   : JavaScript applications consist of statements with an appropriate syntax.
+        A single statement may span multiple lines. Multiple statements may occur on
+        a single line if each statement is separated by a semicolon. This isn't a
+        keyword, but a group of keywords.
+*   [Expressions and operators](/en-US/docs/Web/JavaScript/Reference/Operators)
+    *   : This chapter documents all the JavaScript language operators, expressions
+        and keywords.
+*   [Functions](/en-US/docs/Web/JavaScript/Reference/Functions)
+    *   : Chapter about JavaScript functions.
+*   [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)
+    *   : Chapter about JavaScript classes introduced in ECMAScript 2015.
+*   [Errors](/en-US/docs/Web/JavaScript/Reference/Errors)
+    *   : Chapter about specific errors, exceptions and warnings thrown by
+        JavaScript.
+*   [New in JavaScript](/en-US/docs/Web/JavaScript/New_in_JavaScript)
+    *   : Chapter about JavaScript version history.
 
 ### More reference pages
 
-- [Deprecated and obsolete features](/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
-- [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
-- [Data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
+*   [Deprecated and obsolete features](/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
+*   [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
+*   [Data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)

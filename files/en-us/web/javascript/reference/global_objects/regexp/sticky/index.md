@@ -20,9 +20,7 @@ in strings only from the index indicated by the
 regular expression). `sticky` is a read-only property of an individual regular
 expression object.
 
-{{EmbedInteractiveExample("pages/js/regexp-prototype-sticky.html", "taller")}}
-
-{{js_property_attributes(0, 0, 1)}}
+{{EmbedInteractiveExample("pages/js/regexp-prototype-sticky.html", "taller")}}{{js_property_attributes(0, 0, 1)}}
 
 ## Description
 
@@ -90,13 +88,13 @@ regex2.test('.\nfoo'); // true - index 2 is the beginning of a line
 
 ## See also
 
-- A polyfill of `sticky` `RegExp` flag is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("RegExp.lastIndex")}}
-- {{JSxRef("RegExp.prototype.dotAll")}}
-- {{JSxRef("RegExp.prototype.global")}}
-- {{JSxRef("RegExp.prototype.hasIndices")}}
-- {{JSxRef("RegExp.prototype.ignoreCase")}}
-- {{JSxRef("RegExp.prototype.multiline")}}
-- {{JSxRef("RegExp.prototype.source")}}
-- {{JSxRef("RegExp.prototype.unicode")}}
+*   A polyfill of `sticky` `RegExp` flag is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("RegExp.lastIndex")}}
+*   {{JSxRef("RegExp.prototype.dotAll")}}
+*   {{JSxRef("RegExp.prototype.global")}}
+*   {{JSxRef("RegExp.prototype.hasIndices")}}
+*   {{JSxRef("RegExp.prototype.ignoreCase")}}
+*   {{JSxRef("RegExp.prototype.multiline")}}
+*   {{JSxRef("RegExp.prototype.source")}}
+*   {{JSxRef("RegExp.prototype.unicode")}}

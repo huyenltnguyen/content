@@ -24,10 +24,10 @@ setUint8(byteOffset, value)
 
 ### Parameters
 
-- `byteOffset`
-  - : The offset, in byte, from the start of the view where to store the data.
-- `value`
-  - : The value to set.
+*   `byteOffset`
+    *   : The offset, in byte, from the start of the view where to store the data.
+*   `value`
+    *   : The value to set.
 
 ### Return value
 
@@ -35,9 +35,9 @@ setUint8(byteOffset, value)
 
 ### Errors thrown
 
-- {{jsxref("RangeError")}}
-  - : Thrown if the `byteOffset` is set such as it would store beyond the end of
-    the view.
+*   {{jsxref("RangeError")}}
+    *   : Thrown if the `byteOffset` is set such as it would store beyond the end of
+        the view.
 
 ## Examples
 
@@ -60,5 +60,5 @@ dataview.getUint8(1); // 3
 
 ## See also
 
-- {{jsxref("DataView")}}
-- {{jsxref("ArrayBuffer")}}
+*   {{jsxref("DataView")}}
+*   {{jsxref("ArrayBuffer")}}

@@ -20,12 +20,14 @@ against a string.
 
 ## Syntax
 
-<pre class="brush: js"><var>regexp</var>[Symbol.matchAll](<var>str</var>)</pre>
+```js
+regexp[Symbol.matchAll](str)
+```
 
 ### Parameters
 
-- `str`
-  - : A {{jsxref("String")}} that is a target of the match.
+*   `str`
+    *   : A {{jsxref("String")}} that is a target of the match.
 
 ### Return value
 
@@ -100,7 +102,7 @@ console.log(result[1]); // [ "2019-03-07", "2019", "03", "07" ]
 
 ## See also
 
-- A polyfill of `RegExp.prototype[@@matchAll]` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{JSxRef("String.prototype.matchAll()")}}
-- {{JSxRef("Symbol.matchAll")}}
+*   A polyfill of `RegExp.prototype[@@matchAll]` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{JSxRef("String.prototype.matchAll()")}}
+*   {{JSxRef("Symbol.matchAll")}}

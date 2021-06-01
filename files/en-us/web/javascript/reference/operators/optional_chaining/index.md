@@ -35,11 +35,12 @@ with an undefined root object.
 
 ## Syntax
 
-<pre class="brush: js"><var>obj.val</var>?.<var>prop</var>
-<var>obj.val</var>?.[<var>expr</var>]
-<em>obj.arr</em>?.[<var>index</var>]
-<var>obj.func</var>?.(<var>args</var>)
-</pre>
+```js
+obj.val?.prop
+obj.val?.[expr]
+obj.arr?.[index]
+obj.func?.(args)
+```
 
 ## Description
 
@@ -234,6 +235,6 @@ console.log(customerCity); // Unknown city
 
 ## See also
 
-- The
-  {{JSxRef("Operators/Nullish_Coalescing_Operator", "Nullish Coalescing Operator",
+*   The
+    {{JSxRef("Operators/Nullish_Coalescing_Operator", "Nullish Coalescing Operator",
     '', 1)}}

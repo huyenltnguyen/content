@@ -20,9 +20,9 @@ typed array.
 
 The `length` property is an accessor property whose set accessor function is
 `undefined`, meaning that you can only read this property. The value is
-established when a _TypedArray_ is constructed and cannot be changed. If the
-_TypedArray_ is not specifying a `byteOffset` or a `length`, the length of the
-referenced {{jsxref("ArrayBuffer")}} will be returned. _TypedArray_ is
+established when a *TypedArray* is constructed and cannot be changed. If the
+*TypedArray* is not specifying a `byteOffset` or a `length`, the length of the
+referenced {{jsxref("ArrayBuffer")}} will be returned. *TypedArray* is
 one of the
 [TypedArray objects](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects).
 
@@ -53,5 +53,5 @@ uint8.length; // 6 (due to the offset of the constructed Uint8Array)
 
 ## See also
 
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- {{jsxref("TypedArray")}}
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("TypedArray")}}

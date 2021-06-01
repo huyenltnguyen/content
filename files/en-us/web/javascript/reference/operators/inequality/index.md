@@ -106,6 +106,6 @@ object2 != object2 // false
 
 ## See also
 
-- [Equality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Equality)
-- [Strict equality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)
-- [Strict inequality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality)
+*   [Equality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Equality)
+*   [Strict equality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)
+*   [Strict inequality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality)

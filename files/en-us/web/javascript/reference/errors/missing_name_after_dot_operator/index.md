@@ -83,4 +83,4 @@ console.log("Hello" + "World");
 
 ## See also
 
-- [Property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)
+*   [Property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)

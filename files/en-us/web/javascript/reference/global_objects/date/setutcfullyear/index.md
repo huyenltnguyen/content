@@ -26,15 +26,15 @@ setUTCFullYear(yearValue, monthValue, dayValue)
 
 ### Parameters
 
-- `yearValue`
-  - : An integer specifying the numeric value of the year, for example, 1995.
-- `monthValue`
-  - : Optional. An integer between 0 and 11 representing the months January
-    through December.
-- `dayValue`
-  - : Optional. An integer between 1 and 31 representing the day of the month.
-    If you specify the `dayValue` parameter, you must also specify the
-    `monthValue`.
+*   `yearValue`
+    *   : An integer specifying the numeric value of the year, for example, 1995.
+*   `monthValue`
+    *   : Optional. An integer between 0 and 11 representing the months January
+        through December.
+*   `dayValue`
+    *   : Optional. An integer between 1 and 31 representing the day of the month.
+        If you specify the `dayValue` parameter, you must also specify the
+        `monthValue`.
 
 ### Return value
 
@@ -74,5 +74,5 @@ theBigDay.setUTCFullYear(1997);
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCFullYear()")}}
-- {{jsxref("Date.prototype.setFullYear()")}}
+*   {{jsxref("Date.prototype.getUTCFullYear()")}}
+*   {{jsxref("Date.prototype.setFullYear()")}}

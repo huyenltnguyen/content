@@ -18,7 +18,9 @@ then returns {{jsxref("undefined")}}.
 
 ## Syntax
 
-<pre class="brush: js">void <em>expression</em></pre>
+```js
+void expression
+```
 
 ## Description
 
@@ -108,4 +110,4 @@ This ensures the return value of `doSomething` changing from `undefined` to
 
 ## See also
 
-- {{jsxref("undefined")}}
+*   {{jsxref("undefined")}}

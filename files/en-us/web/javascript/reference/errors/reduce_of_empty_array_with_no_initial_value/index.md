@@ -26,10 +26,10 @@ TypeError: reduce of empty array with no initial value
 
 In JavaScript, there are several reduce functions:
 
-- {{jsxref("Array.prototype.reduce()")}},
-  {{jsxref("Array.prototype.reduceRight()")}} and
-- {{jsxref("TypedArray.prototype.reduce()")}}, 
-  {{jsxref("TypedArray.prototype.reduceRight()")}}).
+*   {{jsxref("Array.prototype.reduce()")}},
+    {{jsxref("Array.prototype.reduceRight()")}} and
+*   {{jsxref("TypedArray.prototype.reduce()")}}, 
+    {{jsxref("TypedArray.prototype.reduceRight()")}}).
 
 These functions optionally take an `initialValue` (which will be used as the
 first argument to the first call of the `callback`). However, if no initial
@@ -96,11 +96,11 @@ var name_list2 = Array.prototype.reduce.call(names, (acc, name) => {
 
 ## See also
 
-- {{jsxref("Array.prototype.reduce()")}}
-- {{jsxref("Array.prototype.reduceRight()")}}
-- {{jsxref("TypedArray.prototype.reduce()")}}
-- {{jsxref("TypedArray.prototype.reduceRight()")}}
-- {{jsxref("Array")}}
-- {{jsxref("TypedArray")}}
-- {{jsxref("Array.prototype.filter()")}}
-- {{jsxref("TypedArray.prototype.filter()")}}
+*   {{jsxref("Array.prototype.reduce()")}}
+*   {{jsxref("Array.prototype.reduceRight()")}}
+*   {{jsxref("TypedArray.prototype.reduce()")}}
+*   {{jsxref("TypedArray.prototype.reduceRight()")}}
+*   {{jsxref("Array")}}
+*   {{jsxref("TypedArray")}}
+*   {{jsxref("Array.prototype.filter()")}}
+*   {{jsxref("TypedArray.prototype.filter()")}}

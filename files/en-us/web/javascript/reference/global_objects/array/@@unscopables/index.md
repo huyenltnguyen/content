@@ -21,15 +21,15 @@ bindings.
 
 The default array properties that are excluded from `with` bindings are:
 
-- {{jsxref("Array.prototype.at()", "at()")}}
-- {{jsxref("Array.prototype.copyWithin()", "copyWithin()")}}
-- {{jsxref("Array.prototype.entries()", "entries()")}}
-- {{jsxref("Array.prototype.fill()", "fill()")}}
-- {{jsxref("Array.prototype.find()", "find()")}}
-- {{jsxref("Array.prototype.findIndex()", "findIndex()")}}
-- {{jsxref("Array.prototype.includes()", "includes()")}}
-- {{jsxref("Array.prototype.keys()", "keys()")}}
-- {{jsxref("Array.prototype.values()", "values()")}}
+*   {{jsxref("Array.prototype.at()", "at()")}}
+*   {{jsxref("Array.prototype.copyWithin()", "copyWithin()")}}
+*   {{jsxref("Array.prototype.entries()", "entries()")}}
+*   {{jsxref("Array.prototype.fill()", "fill()")}}
+*   {{jsxref("Array.prototype.find()", "find()")}}
+*   {{jsxref("Array.prototype.findIndex()", "findIndex()")}}
+*   {{jsxref("Array.prototype.includes()", "includes()")}}
+*   {{jsxref("Array.prototype.keys()", "keys()")}}
+*   {{jsxref("Array.prototype.values()", "values()")}}
 
 See {{jsxref("Symbol.unscopables")}} for how to set `unscopables`
 for your own objects.
@@ -69,4 +69,4 @@ Object.keys(Array.prototype[Symbol.unscopables]);
 
 ## See also
 
-- {{jsxref("Symbol.unscopables")}}
+*   {{jsxref("Symbol.unscopables")}}

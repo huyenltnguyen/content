@@ -21,14 +21,16 @@ value is a boolean value.
 
 ## Syntax
 
-<pre class="brush: js"><var>object</var> instanceof <var>constructor</var></pre>
+```js
+object instanceof constructor
+```
 
 ### Parameters
 
-- `object`
-  - : The object to test.
-- `constructor`
-  - : Function to test against
+*   `object`
+    *   : The object to test.
+*   `constructor`
+    *   : Function to test against
 
 ## Description
 
@@ -77,14 +79,13 @@ Different scopes have different execution environments. This means that they
 have different built-ins (different global object, different constructors,
 etc.). This may result in unexpected results. For instance,
 `[] instanceof window.frames[0].Array` will return `false`, because
-` Array.prototype !== ``window.frames[0].Array.prototype` and arrays inherit
+`  Array.prototype !== ``window.frames[0].Array.prototype ` and arrays inherit
 from the former.
 
 This may not make sense at first, but for scripts dealing with multiple frames
 or windows, and passing objects from one context to another via functions, this
 will be a valid and strong issue. For instance, you can securely check if a
-given object is, in fact, an Array using
-<code>Array.isArray(<var>myObj</var>)</code>
+given object is, in fact, an Array using <code>Array.isArray(<var>myObj</var>)</code>
 
 For example, checking if a [Node](/en-US/docs/Web/API/Node) is
 a [SVGElement](/en-US/docs/Web/API/SVGElement) in a different context, you can
@@ -201,6 +202,6 @@ you always try to know if a boolean is an instance of `Car`).
 
 ## See also
 
-- [`typeof`](/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
-- {{jsxref("Symbol.hasInstance")}}
-- {{jsxref("Object.prototype.isPrototypeOf")}}
+*   [`typeof`](/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+*   {{jsxref("Symbol.hasInstance")}}
+*   {{jsxref("Object.prototype.isPrototypeOf")}}

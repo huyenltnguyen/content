@@ -27,15 +27,15 @@ Object.create(proto, propertiesObject)
 
 ### Parameters
 
-- `proto`
-  - : The object which should be the prototype of the newly-created object.
-- `propertiesObject` {{Optional_inline}}
-  - : If specified and not {{jsxref("undefined")}}, an object whose
-    enumerable own properties (that is, those properties defined upon itself and
-    _not_ enumerable properties along its prototype chain) specify property
-    descriptors to be added to the newly-created object, with the corresponding
-    property names. These properties correspond to the second argument of
-    {{jsxref("Object.defineProperties()")}}.
+*   `proto`
+    *   : The object which should be the prototype of the newly-created object.
+*   `propertiesObject` {{Optional_inline}}
+    *   : If specified and not {{jsxref("undefined")}}, an object whose
+        enumerable own properties (that is, those properties defined upon itself and
+        *not* enumerable properties along its prototype chain) specify property
+        descriptors to be added to the newly-created object, with the corresponding
+        property names. These properties correspond to the second argument of
+        {{jsxref("Object.defineProperties()")}}.
 
 ### Return value
 
@@ -45,9 +45,9 @@ A new object with the specified prototype object and properties.
 
 The `proto` parameter has to be either
 
-- {{jsxref("null")}} or
-- an {{jsxref("Object")}} excluding
-  [primitive wrapper objects](/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript).
+*   {{jsxref("null")}} or
+*   an {{jsxref("Object")}} excluding
+    [primitive wrapper objects](/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript).
 
 If `proto` is neither of these a {{jsxref("TypeError")}} is thrown.
 
@@ -106,7 +106,7 @@ of the problem more clearly:
 As said, these differences can make debugging even simple-seeming problems
 quickly go astray. For example:
 
-_A simple common debugging function:_
+*A simple common debugging function:*
 
 ```js
 // display top-level property name:value pairs of given object
@@ -117,8 +117,8 @@ function ShowProperties(obj){
 }
 ```
 
-_Not such simple results: (especially if silent error-trapping had hidden the
-error messages)_
+*Not such simple results: (especially if silent error-trapping had hidden the
+error messages)*
 
 ```js
 ob={}; ob.po=oco; ob.pn=ocn; // create a compound object using the test objects from above as property values
@@ -130,8 +130,8 @@ ob={}; ob.po=oco; ob.pn=ocn; // create a compound object using the test objects 
 Note that only first property gets shown.
 ```
 
-_(But if the same object is created in a different order -- at least in some
-implementations...)_
+*(But if the same object is created in a different order -- at least in some
+implementations...)*
 
 ```js
 ob={}; ob.pn=ocn; ob.po=oco; // create same compound object again, but create same properties in different order
@@ -228,7 +228,7 @@ ocn = Object.create( null );                  // create "null" object (same as b
 Object.setPrototypeOf(ocn, Object.prototype); // set new object's prototype to the "generic" object (NOT standard-object)
 ```
 
-_(In addition to all the string-related functions shown above, this also adds:)_
+*(In addition to all the string-related functions shown above, this also adds:)*
 
 ```js
 > ocn.valueOf() // shows {}
@@ -428,11 +428,11 @@ o2 = Object.create({p: 42}) */
 
 ## See also
 
-- A polyfill of `Object.create` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- {{jsxref("Object.defineProperty()")}}
-- {{jsxref("Object.defineProperties()")}}
-- {{jsxref("Object.prototype.isPrototypeOf()")}}
-- {{jsxref("Reflect.construct()")}}
-- John Resig's post on
-  [getPrototypeOf()](http://ejohn.org/blog/objectgetprototypeof/)
+*   A polyfill of `Object.create` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   {{jsxref("Object.defineProperty()")}}
+*   {{jsxref("Object.defineProperties()")}}
+*   {{jsxref("Object.prototype.isPrototypeOf()")}}
+*   {{jsxref("Reflect.construct()")}}
+*   John Resig's post on
+    [getPrototypeOf()](http://ejohn.org/blog/objectgetprototypeof/)

@@ -20,15 +20,16 @@ function.
 
 ## Syntax
 
-<pre class="brush: js">Reflect.has(<var>target</var>, <var>propertyKey</var>)
-</pre>
+```js
+Reflect.has(target, propertyKey)
+```
 
 ### Parameters
 
-- `target`
-  - : The target object in which to look for the property.
-- `propertyKey`
-  - : The name of the property to check.
+*   `target`
+    *   : The target object in which to look for the property.
+*   `propertyKey`
+    *   : The name of the property to check.
 
 ### Return value
 
@@ -87,7 +88,7 @@ Reflect.has(c, 'foo') // true
 
 ## See also
 
-- A polyfill of `Reflect.has` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- [`in` operator](/en-US/docs/Web/JavaScript/Reference/Operators/in)
+*   A polyfill of `Reflect.has` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   [`in` operator](/en-US/docs/Web/JavaScript/Reference/Operators/in)

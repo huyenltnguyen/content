@@ -12,10 +12,10 @@ browser-compat: javascript.builtins.TypedArray.subarray
 ---
 {{JSRef}}
 
-The **`subarray()`** method returns a new _TypedArray_ on the same
+The **`subarray()`** method returns a new *TypedArray* on the same
 {{jsxref("ArrayBuffer")}} store and with the same element types as for
-this _TypedArray_ object. The begin offset is **inclusive** and the end offset
-is **exclusive**. _TypedArray_ is one of the
+this *TypedArray* object. The begin offset is **inclusive** and the end offset
+is **exclusive**. *TypedArray* is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects).
 
 {{EmbedInteractiveExample("pages/js/typedarray-subarray.html")}}
@@ -30,13 +30,13 @@ subarray(begin, end)
 
 ### Parameters
 
-- `begin` {{optional_inline}}
-  - : Element to begin at. The offset is inclusive. The whole array will be
-    included in the new view if this value is not specified.
-- `end` {{optional_inline}}
-  - : Element to end at. The offset is exclusive. If not specified, all elements
-    from the one specified by `begin` to the end of the array are included in
-    the new view.
+*   `begin` {{optional_inline}}
+    *   : Element to begin at. The offset is inclusive. The whole array will be
+        included in the new view if this value is not specified.
+*   `end` {{optional_inline}}
+    *   : Element to end at. The offset is exclusive. If not specified, all elements
+        from the one specified by `begin` to the end of the array are included in
+        the new view.
 
 ### Return value
 
@@ -78,8 +78,8 @@ console.log(sub);   // Uint8Array [ 1, 2, 3, 0 ]
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.subarray` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- {{jsxref("TypedArray")}}
-- {{jsxref("ArrayBuffer")}}
+*   A polyfill of `TypedArray.prototype.subarray` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("TypedArray")}}
+*   {{jsxref("ArrayBuffer")}}

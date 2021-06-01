@@ -18,38 +18,38 @@ from the start function).
 
 ## Constructor
 
-- [`WebAssembly.LinkError()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/LinkError/LinkError)
-  - : Creates a new `WebAssembly.LinkError` object.
+*   [`WebAssembly.LinkError()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/LinkError/LinkError)
+    *   : Creates a new `WebAssembly.LinkError` object.
 
 ## Instance properties
 
-- {{jsxref("Error.prototype.message", "WebAssembly.LinkError.prototype.message")}}
-  - : Error message. Although ECMA-262 specifies that
-    {{jsxref("URIError")}} should provide its own `message` property, in
-    [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
-    {{jsxref("Error.prototype.message")}}.
-- {{jsxref("Error.prototype.name", "WebAssembly.LinkError.prototype.name")}}
-  - : Error name. Inherited from {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.fileName", "WebAssembly.LinkError.prototype.fileName")}}
-  - : Path to file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.lineNumber", "WebAssembly.LinkError.prototype.lineNumber")}}
-  - : Line number in file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.columnNumber", "WebAssembly.LinkError.prototype.columnNumber")}}
-  - : Column number in line that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.stack", "WebAssembly.LinkError.prototype.stack")}}
-  - : Stack trace. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.message", "WebAssembly.LinkError.prototype.message")}}
+    *   : Error message. Although ECMA-262 specifies that
+        {{jsxref("URIError")}} should provide its own `message` property, in
+        [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
+        {{jsxref("Error.prototype.message")}}.
+*   {{jsxref("Error.prototype.name", "WebAssembly.LinkError.prototype.name")}}
+    *   : Error name. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.fileName", "WebAssembly.LinkError.prototype.fileName")}}
+    *   : Path to file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.lineNumber", "WebAssembly.LinkError.prototype.lineNumber")}}
+    *   : Line number in file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.columnNumber", "WebAssembly.LinkError.prototype.columnNumber")}}
+    *   : Column number in line that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.stack", "WebAssembly.LinkError.prototype.stack")}}
+    *   : Stack trace. Inherited from {{jsxref("Error")}}.
 
 ## Instance methods
 
-- {{jsxref("Error.prototype.toSource", "WebAssembly.LinkError.prototype.toSource()")}}
-  - : Returns code that could eval to the same error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.toString", "WebAssembly.LinkError.prototype.toString()")}}
-  - : Returns a string representing the specified `Error` object.. Inherited
-    from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.toSource", "WebAssembly.LinkError.prototype.toSource()")}}
+    *   : Returns code that could eval to the same error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.toString", "WebAssembly.LinkError.prototype.toString()")}}
+    *   : Returns a string representing the specified `Error` object.. Inherited
+        from {{jsxref("Error")}}.
 
 ## Examples
 
@@ -82,6 +82,6 @@ try {
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

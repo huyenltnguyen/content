@@ -23,9 +23,9 @@ __lookupGetter__(sprop)
 
 ### Parameters
 
-- `sprop`
-  - : A string containing the name of the property whose getter should be
-    returned.
+*   `sprop`
+    *   : A string containing the name of the property whose getter should be
+        returned.
 
 ### Return value
 
@@ -72,12 +72,12 @@ Object.getOwnPropertyDescriptor(obj, "foo").get;
 
 ## See also
 
-- A polyfill of `Object.prototype.__lookupGetter__` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- {{jsxref("Object.prototype.__lookupSetter__()")}}
-- {{jsxref("Functions/get", "get")}} operator
-- {{jsxref("Object.getOwnPropertyDescriptor()")}} and
-  {{jsxref("Object.getPrototypeOf()")}}
-- {{jsxref("Object.prototype.__defineGetter__()")}}
-- {{jsxref("Object.prototype.__defineSetter__()")}}
-- [JS Guide: Defining Getters and Setters](/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#defining_getters_and_setters)
+*   A polyfill of `Object.prototype.__lookupGetter__` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   {{jsxref("Object.prototype.__lookupSetter__()")}}
+*   {{jsxref("Functions/get", "get")}} operator
+*   {{jsxref("Object.getOwnPropertyDescriptor()")}} and
+    {{jsxref("Object.getPrototypeOf()")}}
+*   {{jsxref("Object.prototype.__defineGetter__()")}}
+*   {{jsxref("Object.prototype.__defineSetter__()")}}
+*   [JS Guide: Defining Getters and Setters](/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#defining_getters_and_setters)

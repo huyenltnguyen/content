@@ -29,7 +29,7 @@ implement and heavily optimize the described semantics.
 
 ### Stack
 
-Function calls form a stack of _frames_.
+Function calls form a stack of *frames*.
 
 ```js
 function foo(b) {
@@ -112,12 +112,12 @@ any other event.
 The function
 [`setTimeout`](/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) is
 called with 2 arguments: a message to add to the queue, and a time value
-(optional; defaults to `0`). The _time value_ represents the (minimum) delay
+(optional; defaults to `0`). The *time value* represents the (minimum) delay
 after which the message will actually be pushed into the queue. If there is no
 other message in the queue, and the stack is empty, the message is processed
 right after the delay. However, if there are messages, the `setTimeout` message
 will have to wait for other messages to be processed. For this reason, the
-second argument indicates a _minimum_ time—not a _guaranteed_ time.
+second argument indicates a *minimum* time—not a *guaranteed* time.
 
 Here is an example that demonstrates this concept (`setTimeout` does not run
 immediately after its timer expires):
@@ -149,8 +149,8 @@ given interval.
 The execution depends on the number of waiting tasks in the queue. In the
 example below, the message `''this is just a message''` will be written to the
 console before the message in the callback gets processed, because the delay is
-the _minimum_ time required for the runtime to process the request (not a
-_guaranteed_ time).
+the *minimum* time required for the runtime to process the request (not a
+*guaranteed* time).
 
 Basically, the `setTimeout` needs to wait for all the code for queued messages
 to complete even though you specified a particular time limit for your
@@ -205,5 +205,5 @@ good practice to avoid them. Beware:
 
 ## See also
 
-- [Event loops in the HTML standard](https://html.spec.whatwg.org/multipage/webappapis.html#event-loops)
-- [Node.js Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop)
+*   [Event loops in the HTML standard](https://html.spec.whatwg.org/multipage/webappapis.html#event-loops)
+*   [Node.js Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop)

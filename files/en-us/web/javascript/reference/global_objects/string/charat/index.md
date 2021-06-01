@@ -11,8 +11,7 @@ browser-compat: javascript.builtins.String.charAt
 ---
 {{JSRef}}
 
-<span class="seoSummary">The {{jsxref("String")}} object's
-<strong><code>charAt()</code></strong> method returns a new string consisting of
+<span class="seoSummary">The {{jsxref("String")}} object's <strong><code>charAt()</code></strong> method returns a new string consisting of
 the single UTF-16 code unit located at the specified offset into the
 string.</span>
 
@@ -26,10 +25,10 @@ charAt(index)
 
 ### Parameters
 
-- `index`
-  - : An integer between `0` and <code><var>str</var>.length - 1</code>. If the
-    `index` cannot be converted to the integer or no `index` is provided, the
-    default is `0`, so the first character of `str` is returned.
+*   `index`
+    *   : An integer between `0` and <code><var>str</var>.length - 1</code> . If the
+        `index` cannot be converted to the integer or no `index` is provided, the
+        default is `0`, so the first character of `str` is returned.
 
 ### Return value
 
@@ -199,7 +198,7 @@ function getWholeCharAndI(str, i) {
 
 While the previous example may be more useful for programs that must support
 non-BMP characters (since it does not require the caller to know where any
-non-BMP character might appear), in the event that one _does_ wish, in choosing
+non-BMP character might appear), in the event that one *does* wish, in choosing
 a character by index, to treat the surrogate pairs within a string as the single
 characters they represent, one can use the following:
 
@@ -243,10 +242,10 @@ function fixedCharAt(str, idx) {
 
 ## See also
 
-- {{jsxref("String.prototype.indexOf()")}}
-- {{jsxref("String.prototype.lastIndexOf()")}}
-- {{jsxref("String.prototype.charCodeAt()")}}
-- {{jsxref("String.prototype.codePointAt()")}}
-- {{jsxref("String.prototype.split()")}}
-- {{jsxref("String.fromCodePoint()")}}
-- [JavaScript has a Unicode problem – Mathias Bynens](https://mathiasbynens.be/notes/javascript-unicode)
+*   {{jsxref("String.prototype.indexOf()")}}
+*   {{jsxref("String.prototype.lastIndexOf()")}}
+*   {{jsxref("String.prototype.charCodeAt()")}}
+*   {{jsxref("String.prototype.codePointAt()")}}
+*   {{jsxref("String.prototype.split()")}}
+*   {{jsxref("String.fromCodePoint()")}}
+*   [JavaScript has a Unicode problem – Mathias Bynens](https://mathiasbynens.be/notes/javascript-unicode)

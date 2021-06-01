@@ -26,16 +26,17 @@ of each distinct property of the object.
 
 ## Syntax
 
-<pre class="brush: js">for (<var>variable</var> of <var>iterable</var>) {
-  <var>statement</var>
+```js
+for (variable of iterable) {
+  statement
 }
-</pre>
+```
 
-- `variable`
-  - : On each iteration a value of a different property is assigned to
-    `variable`. `variable` may be declared with `const`, `let`, or `var`.
-- `iterable`
-  - : Object whose iterable properties are iterated.
+*   `variable`
+    *   : On each iteration a value of a different property is assigned to
+        `variable`. `variable` may be declared with `const`, `let`, or `var`.
+*   `iterable`
+    *   : Object whose iterable properties are iterated.
 
 ## Examples
 
@@ -184,7 +185,7 @@ console.log('done');
 ### Iterating over generators
 
 You can also iterate over
-[generators](/en-US/docs/Web/JavaScript/Reference/Statements/function*), i.e.
+[generators](/en-US/docs/Web/JavaScript/Reference/Statements/function\*), i.e.
 functions generating an iterable object:
 
 ```js
@@ -368,7 +369,7 @@ but none of the object's **properties**.
 
 ## See also
 
-- {{jsxref("Array.prototype.forEach()")}}
-- {{jsxref("Map.prototype.forEach()")}}
-- {{jsxref("Object.entries()")}} – Useful when using **`for...of`**
-  over an object.
+*   {{jsxref("Array.prototype.forEach()")}}
+*   {{jsxref("Map.prototype.forEach()")}}
+*   {{jsxref("Object.entries()")}} – Useful when using **`for...of`**
+    over an object.

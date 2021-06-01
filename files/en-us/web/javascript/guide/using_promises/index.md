@@ -47,20 +47,20 @@ This convention has several advantages. We will explore each one.
 
 ## Guarantees
 
-Unlike old-fashioned _passed-in_ callbacks, a promise comes with some
+Unlike old-fashioned *passed-in* callbacks, a promise comes with some
 guarantees:
 
-- Callbacks added
-  with [`then()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
-  will never be invoked before the
-  [completion of the current run](/en-US/docs/Web/JavaScript/EventLoop#run-to-completion)
-  of the JavaScript event loop.
-- These callbacks will be invoked even if they were added _after_ the success or
-  failure of the asynchronous operation that the promise represents.
-- Multiple callbacks may be added by
-  calling [`then()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
-  several times. They will be invoked one after another, in the order in which
-  they were inserted.
+*   Callbacks added
+    with [`then()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+    will never be invoked before the
+    [completion of the current run](/en-US/docs/Web/JavaScript/EventLoop#run-to-completion)
+    of the JavaScript event loop.
+*   These callbacks will be invoked even if they were added *after* the success or
+    failure of the asynchronous operation that the promise represents.
+*   Multiple callbacks may be added by
+    calling [`then()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+    several times. They will be invoked one after another, in the order in which
+    they were inserted.
 
 One of the great things about using promises is **chaining**.
 
@@ -145,7 +145,7 @@ of a previous promise (with arrow functions `() => x` is short for
 
 ### Chaining after a catch
 
-It's possible to chain _after_ a failure, i.e. a `catch`, which is useful to
+It's possible to chain *after* a failure, i.e. a `catch`, which is useful to
 accomplish new actions even after an action failed in the chain. Read the
 following example:
 
@@ -241,12 +241,12 @@ or, if being used in a web worker, it's the
 [`Worker`](/en-US/docs/Web/API/Worker "The Worker interface of the Web Workers API represents a background task that can be created via script, which can send messages back to its creator.")
 or other worker-based interface). The two events are:
 
-- [`rejectionhandled`](/en-US/docs/Web/API/Window/rejectionhandled_event "The rejectionhandled event is sent to the script's global scope (usually window but also Worker) whenever a JavaScript Promise is rejected but after the promise rejection has been handled.")
-  - : Sent when a promise is rejected, after that rejection has been handled by
-    the executor's `reject` function.
-- [`unhandledrejection`](/en-US/docs/Web/API/Window/unhandledrejection_event "The unhandledrejection event is sent to the global scope of a script when a JavaScript Promise that has no rejection handler is rejected; typically, this is the window, but may also be a Worker.")
-  - : Sent when a promise is rejected but there is no rejection handler
-    available.
+*   [`rejectionhandled`](/en-US/docs/Web/API/Window/rejectionhandled_event "The rejectionhandled event is sent to the script's global scope (usually window but also Worker) whenever a JavaScript Promise is rejected but after the promise rejection has been handled.")
+    *   : Sent when a promise is rejected, after that rejection has been handled by
+        the executor's `reject` function.
+*   [`unhandledrejection`](/en-US/docs/Web/API/Window/unhandledrejection_event "The unhandledrejection event is sent to the global scope of a script when a JavaScript Promise that has no rejection handler is rejected; typically, this is the window, but may also be a Worker.")
+    *   : Sent when a promise is rejected but there is no rejection handler
+        available.
 
 In both cases, the event (of type
 [`PromiseRejectionEvent`](/en-US/docs/Web/API/PromiseRejectionEvent "The PromiseRejectionEvent interface represents events which are sent to the global script context when JavaScript Promises are rejected."))
@@ -528,12 +528,12 @@ to enqueue a function as a microtask.
 
 ## See also
 
-- {{jsxref("Promise.then()")}}
-- [`async`/`await`](/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
-- [Promises/A+ specification](http://promisesaplus.com/)
-- [Venkatraman.R - JS Promise (Part 1, Basics)](https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53)
-- [Venkatraman.R - JS Promise (Part 2 - Using Q.js, When.js and RSVP.js)](https://medium.com/@ramsunvtech/js-promise-part-2-q-js-when-js-and-rsvp-js-af596232525c#.dzlqh6ski)
-- [Venkatraman.R - Tools for Promises Unit Testing](https://tech.io/playgrounds/11107/tools-for-promises-unittesting/introduction)
-- [Nolan Lawson: We have a problem with promises — Common mistakes with promises](http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+*   {{jsxref("Promise.then()")}}
+*   [`async`/`await`](/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+*   [Promises/A+ specification](http://promisesaplus.com/)
+*   [Venkatraman.R - JS Promise (Part 1, Basics)](https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53)
+*   [Venkatraman.R - JS Promise (Part 2 - Using Q.js, When.js and RSVP.js)](https://medium.com/@ramsunvtech/js-promise-part-2-q-js-when-js-and-rsvp-js-af596232525c#.dzlqh6ski)
+*   [Venkatraman.R - Tools for Promises Unit Testing](https://tech.io/playgrounds/11107/tools-for-promises-unittesting/introduction)
+*   [Nolan Lawson: We have a problem with promises — Common mistakes with promises](http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
 
 {{PreviousNext("Web/JavaScript/Guide/Details_of_the_Object_Model", "Web/JavaScript/Guide/Iterators_and_Generators")}}

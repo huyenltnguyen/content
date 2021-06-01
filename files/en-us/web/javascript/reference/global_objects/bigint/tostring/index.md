@@ -25,9 +25,9 @@ toString(radix)
 
 ### Parameters
 
-- `radix`{{optional_inline}}
-  - : Optional. An integer in the range 2 through 36 specifying the base to use
-    for representing numeric values.
+*   `radix`{{optional_inline}}
+    *   : Optional. An integer in the range 2 through 36 specifying the base to use
+        for representing numeric values.
 
 ### Return value
 
@@ -35,9 +35,9 @@ A string representing the specified {{jsxref("BigInt")}} object.
 
 ### Exceptions
 
-- {{jsxref("RangeError")}}
-  - : If `toString()` is given a radix less than 2 or greater than 36, a
-    {{jsxref("RangeError")}} is thrown.
+*   {{jsxref("RangeError")}}
+    *   : If `toString()` is given a radix less than 2 or greater than 36, a
+        {{jsxref("RangeError")}} is thrown.
 
 ## Description
 
@@ -92,6 +92,6 @@ BigInt(-0).toString(); // '0'
 
 ## See also
 
-- {{jsxref("BigInt.prototype.toLocaleString()")}}
-- {{jsxref("BigInt.prototype.valueOf()")}}
-- {{jsxref("Number.prototype.toString()")}}
+*   {{jsxref("BigInt.prototype.toLocaleString()")}}
+*   {{jsxref("BigInt.prototype.valueOf()")}}
+*   {{jsxref("Number.prototype.toString()")}}

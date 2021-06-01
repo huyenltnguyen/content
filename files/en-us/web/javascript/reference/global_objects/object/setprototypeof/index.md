@@ -20,7 +20,7 @@ The **`Object.setPrototypeOf()`** method sets the prototype (i.e., the internal
 > currently a very slow operation in every browser and JavaScript engine. In
 > addition, the effects of altering inheritance are subtle and far-flung, and
 > are not limited to the time spent in the `Object.setPrototypeOf(...)`
-> statement, but may extend to **_any_** code that has access to any object
+> statement, but may extend to ***any*** code that has access to any object
 > whose `[[Prototype]]` has been altered.
 >
 > Because this feature is a part of the language, it is still the burden on
@@ -32,14 +32,16 @@ The **`Object.setPrototypeOf()`** method sets the prototype (i.e., the internal
 
 ## Syntax
 
-<pre class="brush: js"><code>Object.setPrototypeOf(<var>obj</var>, <var>prototype</var>)</code></pre>
+```js
+Object.setPrototypeOf(obj, prototype)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object which is to have its prototype set.
-- `prototype`
-  - : The object's new prototype (an object or {{jsxref("null")}}).
+*   `obj`
+    *   : The object which is to have its prototype set.
+*   `prototype`
+    *   : The object's new prototype (an object or {{jsxref("null")}}).
 
 ### Return value
 
@@ -218,7 +220,7 @@ if (!Object.setPrototypeOf) {
 
 ## See also
 
-- {{jsxref("Reflect.setPrototypeOf()")}}
-- {{jsxref("Object.prototype.isPrototypeOf()")}}
-- {{jsxref("Object.getPrototypeOf()")}}
-- {{jsxref("Object.prototype.__proto__")}}
+*   {{jsxref("Reflect.setPrototypeOf()")}}
+*   {{jsxref("Object.prototype.isPrototypeOf()")}}
+*   {{jsxref("Object.getPrototypeOf()")}}
+*   {{jsxref("Object.prototype.__proto__")}}

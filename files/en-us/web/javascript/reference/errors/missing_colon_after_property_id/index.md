@@ -94,4 +94,4 @@ var obj = { ['b'+'ar']: 'foo' };
 
 ## See also
 
-- [Object initializer](/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+*   [Object initializer](/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)

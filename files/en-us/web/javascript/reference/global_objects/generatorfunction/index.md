@@ -34,13 +34,13 @@ new Function(arg1, ... , argN, functionBody)
 
 ### Parameters
 
-- <code>arg1, arg2, ... arg<em>N</em></code>
-  - : Names to be used by the function as formal argument names. Each must be a
-    string that corresponds to a valid JavaScript identifier or a list of such
-    strings separated with a comma; for example "`x`", "`theValue`", or "`a,b`".
-- `functionBody`
-  - : A string containing the JavaScript statements comprising the function
-    definition.
+*   <code>arg1, arg2, ... arg<em>N</em></code>
+    *   : Names to be used by the function as formal argument names. Each must be a
+        string that corresponds to a valid JavaScript identifier or a list of such
+        strings separated with a comma; for example "`x`", "`theValue`", or "`a,b`".
+*   `functionBody`
+    *   : A string containing the JavaScript statements comprising the function
+        definition.
 
 ## Description
 
@@ -93,9 +93,9 @@ console.log(iterator.next().value); // 20
 
 ## See also
 
-- {{jsxref("Statements/function*", "function* function", "", 1)}}
-- {{jsxref("Operators/function*", "function* expression", "", 1)}}
-- {{jsxref("Global_Objects/Function", "Function")}}
-- {{jsxref("Statements/function", "function statement", "", 1)}}
-- {{jsxref("Operators/function", "function expression", "", 1)}}
-- {{jsxref("Functions", "Functions and function scope", "", 1)}}
+*   {{jsxref("Statements/function*", "function* function", "", 1)}}
+*   {{jsxref("Operators/function*", "function* expression", "", 1)}}
+*   {{jsxref("Global_Objects/Function", "Function")}}
+*   {{jsxref("Statements/function", "function statement", "", 1)}}
+*   {{jsxref("Operators/function", "function expression", "", 1)}}
+*   {{jsxref("Functions", "Functions and function scope", "", 1)}}

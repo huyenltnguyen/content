@@ -32,8 +32,8 @@ isPrototypeOf(object)
 
 ### Parameters
 
-- `object`
-  - : The object whose prototype chain will be searched.
+*   `object`
+    *   : The object whose prototype chain will be searched.
 
 ### Return value
 
@@ -42,9 +42,9 @@ prototype chain of the specified object.
 
 ### Errors thrown
 
-- {{jsxref("TypeError")}}
-  - : A {{jsxref("TypeError")}} is thrown if `prototypeObj` is
-    undefined or null.
+*   {{jsxref("TypeError")}}
+    *   : A {{jsxref("TypeError")}} is thrown if `prototypeObj` is
+        undefined or null.
 
 ## Description
 
@@ -110,7 +110,7 @@ if (Foo.prototype.isPrototypeOf(baz)) {
 
 ## See also
 
-- {{jsxref("Operators/instanceof", "instanceof")}}
-- {{jsxref("Object.getPrototypeOf()")}}
-- {{jsxref("Object.setPrototypeOf()")}}
-- {{jsxref("Object/proto")}}
+*   {{jsxref("Operators/instanceof", "instanceof")}}
+*   {{jsxref("Object.getPrototypeOf()")}}
+*   {{jsxref("Object.setPrototypeOf()")}}
+*   {{jsxref("Object/proto")}}

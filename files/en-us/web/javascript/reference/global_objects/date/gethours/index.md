@@ -52,5 +52,5 @@ console.log(hours); // 23
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCHours()")}}
-- {{jsxref("Date.prototype.setHours()")}}
+*   {{jsxref("Date.prototype.getUTCHours()")}}
+*   {{jsxref("Date.prototype.setHours()")}}

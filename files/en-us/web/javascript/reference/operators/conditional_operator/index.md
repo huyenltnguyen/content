@@ -27,20 +27,22 @@ the [`if`](/en-US/docs/Web/JavaScript/Reference/Statements/if...else) statement.
 
 ## Syntax
 
-<pre class="brush: js"><var>condition</var> ? <var>exprIfTrue</var> : <var>exprIfFalse</var></pre>
+```js
+condition ? exprIfTrue : exprIfFalse
+```
 
 ### Parameters
 
-- `condition`
-  - : An expression whose value is used as a condition.
-- `exprIfTrue`
-  - : An expression which is evaluated if the `condition` evaluates to a
-    {{Glossary("truthy")}} value (one which equals or can be converted to
-    `true`).
-- `exprIfFalse`
-  - : An expression which is executed if the `condition` is
-    {{Glossary("falsy")}} (that is, has a value which can be converted to
-    `false`).
+*   `condition`
+    *   : An expression whose value is used as a condition.
+*   `exprIfTrue`
+    *   : An expression which is evaluated if the `condition` evaluates to a
+        {{Glossary("truthy")}} value (one which equals or can be converted to
+        `true`).
+*   `exprIfFalse`
+    *   : An expression which is executed if the `condition` is
+        {{Glossary("falsy")}} (that is, has a value which can be converted to
+        `false`).
 
 ## Description
 
@@ -106,8 +108,8 @@ function example(…) {
 
 ## See also
 
-- [if statement](/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-- [Nullish coalescing operator](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
-- [Optional chaining](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
-- [Making decisions in your code — conditionals](/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
-- [Expressions and operators](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+*   [if statement](/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+*   [Nullish coalescing operator](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
+*   [Optional chaining](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+*   [Making decisions in your code — conditionals](/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+*   [Expressions and operators](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)

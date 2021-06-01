@@ -18,8 +18,10 @@ to the right and assigns the result to the variable.
 
 ## Syntax
 
-<pre class="brush: js"><strong>Operator:</strong> x >>= y
-<strong>Meaning:</strong>  x   = x >> y</pre>
+```js
+Operator: x >>= y
+Meaning:  x   = x >> y
+```
 
 ## Examples
 
@@ -43,5 +45,5 @@ b >>= 2;  // -2 (-00000000000000000000000000000010)
 
 ## See also
 
-- [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
-- [Right shift operator](/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift)
+*   [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
+*   [Right shift operator](/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift)

@@ -22,39 +22,41 @@ message / error.
 
 ## Syntax
 
-<pre class="brush: js">Promise.all(<var>iterable</var>);</pre>
+```js
+Promise.all(iterable);
+```
 
 ### Parameters
 
-- `iterable`
-  - : An
-    [iterable](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol)
-    object such as an {{jsxref("Array")}}.
+*   `iterable`
+    *   : An
+        [iterable](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol)
+        object such as an {{jsxref("Array")}}.
 
 ### Return value
 
-- An **already resolved** {{jsxref("Promise")}} if the
+*   An **already resolved** {{jsxref("Promise")}} if the
 
-  <var>iterable</var>
+    <var>iterable</var>
 
-  passed is empty.
+    passed is empty.
 
-- An **asynchronously resolved** {{jsxref("Promise")}} if the
+*   An **asynchronously resolved** {{jsxref("Promise")}} if the
 
-  <var>iterable</var>
+    <var>iterable</var>
 
-  passed contains no promises. Note, Google Chrome 58 returns an **already
-  resolved** promise in this case.
+    passed contains no promises. Note, Google Chrome 58 returns an **already
+    resolved** promise in this case.
 
-- A **pending** {{jsxref("Promise")}} in all other cases. This returned
-  promise is then resolved/rejected **asynchronously** (as soon as the stack is
-  empty) when all the promises in the given
+*   A **pending** {{jsxref("Promise")}} in all other cases. This returned
+    promise is then resolved/rejected **asynchronously** (as soon as the stack is
+    empty) when all the promises in the given
 
-  <var>iterable</var>
+    <var>iterable</var>
 
-  have resolved, or if any of the promises reject. See the example about
-  "Asynchronicity or synchronicity of Promise.all" below. Returned values will
-  be in order of the Promises passed, regardless of completion order.
+    have resolved, or if any of the promises reject. See the example about
+    "Asynchronicity or synchronicity of Promise.all" below. Returned values will
+    be in order of the Promises passed, regardless of completion order.
 
 ## Description
 
@@ -75,16 +77,16 @@ The returned promise is fulfilled with an array containing **all** the resolved
 values (including non-promise values) in the <var>iterable</var> passed as the
 argument.
 
-- If an empty
+*   If an empty
 
-  <var>iterable</var>
+    <var>iterable</var>
 
-  is passed, then the promise returned by this method is fulfilled
-  synchronously. The resolved value is an empty array.
+    is passed, then the promise returned by this method is fulfilled
+    synchronously. The resolved value is an empty array.
 
-- If a nonempty _iterable_ is passed, and **all** of the promises fulfill, or
-  are not promises, then the promise returned by this method is fulfilled
-  asynchronously.
+*   If a nonempty *iterable* is passed, and **all** of the promises fulfill, or
+    are not promises, then the promise returned by this method is fulfilled
+    asynchronously.
 
 ### Rejection
 
@@ -139,8 +141,7 @@ setTimeout(function() {
 
 ### Asynchronicity or synchronicity of `Promise.all`
 
-This following example demonstrates the asynchronicity (or synchronicity, if the
-<var>iterable</var> passed is empty) of `Promise.all`:
+This following example demonstrates the asynchronicity (or synchronicity, if the <var>iterable</var> passed is empty) of `Promise.all`:
 
 ```js
 // we are passing as argument an array of promises that are already resolved,
@@ -180,8 +181,7 @@ setTimeout(function() {
 // Promise { <state>: "rejected", <reason>: 44 }
 ```
 
-But, `Promise.all` resolves synchronously **if and only if** the
-<var>iterable</var> passed is empty:
+But, `Promise.all` resolves synchronously **if and only if** the <var>iterable</var> passed is empty:
 
 ```js
 var p = Promise.all([]); // will be immediately resolved
@@ -266,5 +266,5 @@ Promise.all([
 
 ## See also
 
-- {{jsxref("Promise")}}
-- {{jsxref("Promise.race()")}}
+*   {{jsxref("Promise")}}
+*   {{jsxref("Promise.race()")}}

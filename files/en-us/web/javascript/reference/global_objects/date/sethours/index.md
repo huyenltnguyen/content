@@ -29,24 +29,24 @@ setHours(hoursValue, minutesValue, secondsValue, msValue)
 
 ### Parameters
 
-- `hoursValue`
-  - : Ideally, an integer between 0 and 23, representing the hour. If a value
-    greater than 23 is provided, the datetime will be incremented by the extra
-    hours.
-- `minutesValue`
-  - : Optional. Ideally, an integer between 0 and 59, representing the minutes.
-    If a value greater than 59 is provided, the datetime will be incremented by
-    the extra minutes.
-- `secondsValue`
-  - : Optional. Ideally, an integer between 0 and 59, representing the seconds.
-    If a value greater than 59 is provided, the datetime will be incremented by
-    the extra seconds. If you specify the `secondsValue` parameter, you must
-    also specify the `minutesValue`.
-- `msValue`
-  - : Optional. Ideally, a number between 0 and 999, representing the
-    milliseconds. If a value greater than 999 is provided, the datetime will be
-    incremented by the extra milliseconds. If you specify the `msValue`
-    parameter, you must also specify the `minutesValue` and `secondsValue`.
+*   `hoursValue`
+    *   : Ideally, an integer between 0 and 23, representing the hour. If a value
+        greater than 23 is provided, the datetime will be incremented by the extra
+        hours.
+*   `minutesValue`
+    *   : Optional. Ideally, an integer between 0 and 59, representing the minutes.
+        If a value greater than 59 is provided, the datetime will be incremented by
+        the extra minutes.
+*   `secondsValue`
+    *   : Optional. Ideally, an integer between 0 and 59, representing the seconds.
+        If a value greater than 59 is provided, the datetime will be incremented by
+        the extra seconds. If you specify the `secondsValue` parameter, you must
+        also specify the `minutesValue`.
+*   `msValue`
+    *   : Optional. Ideally, a number between 0 and 999, representing the
+        milliseconds. If a value greater than 999 is provided, the datetime will be
+        incremented by the extra milliseconds. If you specify the `msValue`
+        parameter, you must also specify the `minutesValue` and `secondsValue`.
 
 ### Return value
 
@@ -88,5 +88,5 @@ theBigDay.setHours(7);
 
 ## See also
 
-- {{jsxref("Date.prototype.getHours()")}}
-- {{jsxref("Date.prototype.setUTCHours()")}}
+*   {{jsxref("Date.prototype.getHours()")}}
+*   {{jsxref("Date.prototype.setUTCHours()")}}

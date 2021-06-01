@@ -24,26 +24,26 @@ Atomics.notify(typedArray, index, count)
 
 ### Parameters
 
-- `typedArray`
-  - : A shared {{jsxref("Int32Array")}}.
-- `index`
-  - : The position in the `typedArray` to wake up on.
-- `count` {{optional_inline}}
-  - : The number of sleeping agents to notify. Defaults to
-    {{jsxref("Infinity",
+*   `typedArray`
+    *   : A shared {{jsxref("Int32Array")}}.
+*   `index`
+    *   : The position in the `typedArray` to wake up on.
+*   `count` {{optional_inline}}
+    *   : The number of sleeping agents to notify. Defaults to
+        {{jsxref("Infinity",
     "+Infinity")}}.
 
 ### Return value
 
-- Returns the number of woken up agents.
-- Returns `0`, if a non-shared {{jsxref("ArrayBuffer")}} object is used.
+*   Returns the number of woken up agents.
+*   Returns `0`, if a non-shared {{jsxref("ArrayBuffer")}} object is used.
 
 ### Exceptions
 
-- Throws a {{jsxref("TypeError")}}, if `typedArray` is not a
-  {{jsxref("Int32Array")}}.
-- Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
-  `typedArray`.
+*   Throws a {{jsxref("TypeError")}}, if `typedArray` is not a
+    {{jsxref("Int32Array")}}.
+*   Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
+    `typedArray`.
 
 ## Examples
 
@@ -85,5 +85,5 @@ Atomics.notify(int32, 0, 1);
 
 ## See also
 
-- {{jsxref("Atomics")}}
-- {{jsxref("Atomics.wait()")}}
+*   {{jsxref("Atomics")}}
+*   {{jsxref("Atomics.wait()")}}

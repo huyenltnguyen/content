@@ -26,8 +26,8 @@ Math.ceil(x)
 
 ### Parameters
 
-- `x`
-  - : A number.
+*   `x`
+    *   : A number.
 
 ### Return value
 
@@ -137,8 +137,8 @@ Math.ceil10(-59, 1);       // -50
 
 ## See also
 
-- {{jsxref("Math.abs()")}}
-- {{jsxref("Math.floor()")}}
-- {{jsxref("Math.round()")}}
-- {{jsxref("Math.sign()")}}
-- {{jsxref("Math.trunc()")}}
+*   {{jsxref("Math.abs()")}}
+*   {{jsxref("Math.floor()")}}
+*   {{jsxref("Math.round()")}}
+*   {{jsxref("Math.sign()")}}
+*   {{jsxref("Math.trunc()")}}

@@ -11,10 +11,9 @@ browser-compat: javascript.builtins.Set.Set
 ---
 {{JSRef}}
 
-<span class="seoSummary">The <strong><code>Set</code> constructor</strong> lets
-you create <code>Set</code> objects that store unique values of any type,
-whether <a href="/en-US/docs/Glossary/Primitive">primitive values</a> or object
-references.</span>
+The **`Set` constructor** lets you create `Set` objects that store unique values
+of any type, whether [primitive values](/en-US/docs/Glossary/Primitive) or
+object references.
 
 {{EmbedInteractiveExample("pages/js/set-prototype-constructor.html")}}
 
@@ -27,14 +26,14 @@ new Set(iterable)
 
 ### Parameters
 
-- `iterable` {{optional_inline}}
+*   `iterable` {{optional_inline}}
 
-  - : If an
-    [iterable object](/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
-    is passed, all of its elements will be added to the new `Set`.
+    *   : If an
+        [iterable object](/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+        is passed, all of its elements will be added to the new `Set`.
 
-    If you don't specify this parameter, or its value is `null`, the new `Set`
-    is empty.
+        If you don't specify this parameter, or its value is `null`, the new `Set`
+        is empty.
 
 ### Return value
 
@@ -65,6 +64,6 @@ mySet.add(o)
 
 ## See also
 
-- A polyfill of `Set` is available in
-  [`core-js`](https://github.com/zloirock/core-js#set)
-- {{jsxref("Set")}}
+*   A polyfill of `Set` is available in
+    [`core-js`](https://github.com/zloirock/core-js#set)
+*   {{jsxref("Set")}}

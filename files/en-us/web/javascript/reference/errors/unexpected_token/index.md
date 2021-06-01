@@ -85,4 +85,4 @@ function round(n, upperBound, lowerBound){
 
 ## See also
 
-- {{jsxref("SyntaxError")}}
+*   {{jsxref("SyntaxError")}}

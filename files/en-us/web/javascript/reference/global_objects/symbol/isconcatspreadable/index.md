@@ -23,10 +23,10 @@ The `@@isConcatSpreadable` symbol (`Symbol.isConcatSpreadable`) can be defined
 as an own or inherited property and its value is a boolean. It can control
 behavior for arrays and array-like objects:
 
-- For array objects, the default behavior is to spread (flatten) elements.
-  `Symbol.isConcatSpreadable` can avoid flattening in these cases.
-- For array-like objects, the default behavior is no spreading or flattening.
-  `Symbol.isConcatSpreadable` can force flattening in these cases.
+*   For array objects, the default behavior is to spread (flatten) elements.
+    `Symbol.isConcatSpreadable` can avoid flattening in these cases.
+*   For array-like objects, the default behavior is no spreading or flattening.
+    `Symbol.isConcatSpreadable` can force flattening in these cases.
 
 {{js_property_attributes(0,0,0)}}
 
@@ -92,6 +92,6 @@ x.concat(fakeArray)  // [1, 2, 3, "hello", "world"]
 
 ## See also
 
-- A polyfill of `Symbol.isConcatSpreadable` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
-- {{jsxref("Array.prototype.concat()")}}
+*   A polyfill of `Symbol.isConcatSpreadable` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
+*   {{jsxref("Array.prototype.concat()")}}

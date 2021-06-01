@@ -17,22 +17,23 @@ The **`handler.has()`** method is a trap for the
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  has: function(<var>target</var>, <var>prop</var>) {
+```js
+const p = new Proxy(target, {
+  has: function(target, prop) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameters are passed to `has()` method. `this` is bound to the
 handler.
 
-- `target`
-  - : The target object.
-- `prop`
-  - : The name or {{jsxref("Symbol")}} of the property to check for
-    existence.
+*   `target`
+    *   : The target object.
+*   `prop`
+    *   : The name or {{jsxref("Symbol")}} of the property to check for
+        existence.
 
 ### Return value
 
@@ -47,29 +48,29 @@ The **`handler.has()`** method is a trap for the
 
 This trap can intercept these operations:
 
-- Property query:
+*   Property query:
 
-  <code><var>foo</var> in <var>proxy</var></code>
+    <code><var>foo</var> in <var>proxy</var></code>
 
-- Inherited property query:
+*   Inherited property query:
 
-  <code>foo in Object.create(<var>proxy</var>)</code>
+    <code>foo in Object.create(<var>proxy</var>)</code>
 
-- `with` check:
+*   `with` check:
 
-  <code>with(<var>proxy</var>) { (<var>foo</var>); }</code>
+    <code>with(<var>proxy</var>) { (<var>foo</var>); }</code>
 
-- {{jsxref("Reflect.has()")}}
+*   {{jsxref("Reflect.has()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- A property cannot be reported as non-existent, if it exists as a
-  non-configurable own property of the target object.
-- A property cannot be reported as non-existent, if it exists as an own property
-  of the target object and the target object is not extensible.
+*   A property cannot be reported as non-existent, if it exists as a
+    non-configurable own property of the target object.
+*   A property cannot be reported as non-existent, if it exists as an own property
+    of the target object and the target object is not extensible.
 
 ## Examples
 
@@ -115,7 +116,7 @@ const p = new Proxy(obj, {
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Operators/in", "in")}} operator
-- {{jsxref("Reflect.has()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Operators/in", "in")}} operator
+*   {{jsxref("Reflect.has()")}}

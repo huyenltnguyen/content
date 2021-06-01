@@ -22,38 +22,38 @@ formatting.
 
 ## Constructor
 
-- {{jsxref("Intl/DateTimeFormat/DateTimeFormat", "Intl.DateTimeFormat()")}}
-  - : Creates a new `Intl.DateTimeFormat` object.
+*   {{jsxref("Intl/DateTimeFormat/DateTimeFormat", "Intl.DateTimeFormat()")}}
+    *   : Creates a new `Intl.DateTimeFormat` object.
 
 ## Static methods
 
-- {{jsxref("Intl/DateTimeFormat/supportedLocalesOf", "Intl.DateTimeFormat.supportedLocalesOf()")}}
-  - : Returns an array containing those of the provided locales that are
-    supported without having to fall back to the runtime's default locale.
+*   {{jsxref("Intl/DateTimeFormat/supportedLocalesOf", "Intl.DateTimeFormat.supportedLocalesOf()")}}
+    *   : Returns an array containing those of the provided locales that are
+        supported without having to fall back to the runtime's default locale.
 
 ## Instance methods
 
-- {{jsxref("Intl/DateTimeFormat/format", "Intl.DateTimeFormat.prototype.format()")}}
-  - : Getter function that formats a date according to the locale and formatting
-    options of this
-    {{jsxref("Intl/DateTimeFormat", "DateTimeFormat")}} object.
-- {{jsxref("Intl/DateTimeFormat/formatToParts", "Intl.DateTimeFormat.prototype.formatToParts()")}}
-  - : Returns an {{jsxref("Array")}} of objects representing the date
-    string in parts that can be used for custom locale-aware formatting.
-- {{jsxref("Intl/DateTimeFormat/resolvedOptions", "Intl.DateTimeFormat.prototype.resolvedOptions()")}}
-  - : Returns a new object with properties reflecting the locale and formatting
-    options computed during initialization of the object.
-- {{jsxref("Intl/DateTimeFormat/formatRange", "Intl.DateTimeFormat.prototype.formatRange()")}}
-  - : This method receives two
-    [Dates](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) and
-    formats the date range in the most concise way based on the locale and
-    options provided when instantiating
-    {{jsxref("Intl/DateTimeFormat", "DateTimeFormat")}}.
-- {{jsxref("Intl/DateTimeFormat/formatRangeToParts", "Intl.DateTimeFormat.prototype.formatRangeToParts()")}}
-  - : This method receives two
-    [Dates](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) and
-    returns an Array of objects containing the locale-specific tokens
-    representing each part of the formatted date range.
+*   {{jsxref("Intl/DateTimeFormat/format", "Intl.DateTimeFormat.prototype.format()")}}
+    *   : Getter function that formats a date according to the locale and formatting
+        options of this
+        {{jsxref("Intl/DateTimeFormat", "DateTimeFormat")}} object.
+*   {{jsxref("Intl/DateTimeFormat/formatToParts", "Intl.DateTimeFormat.prototype.formatToParts()")}}
+    *   : Returns an {{jsxref("Array")}} of objects representing the date
+        string in parts that can be used for custom locale-aware formatting.
+*   {{jsxref("Intl/DateTimeFormat/resolvedOptions", "Intl.DateTimeFormat.prototype.resolvedOptions()")}}
+    *   : Returns a new object with properties reflecting the locale and formatting
+        options computed during initialization of the object.
+*   {{jsxref("Intl/DateTimeFormat/formatRange", "Intl.DateTimeFormat.prototype.formatRange()")}}
+    *   : This method receives two
+        [Dates](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) and
+        formats the date range in the most concise way based on the locale and
+        options provided when instantiating
+        {{jsxref("Intl/DateTimeFormat", "DateTimeFormat")}}.
+*   {{jsxref("Intl/DateTimeFormat/formatRangeToParts", "Intl.DateTimeFormat.prototype.formatRangeToParts()")}}
+    *   : This method receives two
+        [Dates](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) and
+        returns an Array of objects containing the locale-specific tokens
+        representing each part of the formatted date range.
 
 ## Examples
 
@@ -78,7 +78,8 @@ order to get the format of the language used in the user interface of your
 application, make sure to specify that language (and possibly some fallback
 languages) using the `locales` argument:
 
-<pre class="brush: js">var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+```js
+var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
 
 // Results below use the time zone of America/Los_Angeles (UTC-0800, Pacific Standard Time)
 
@@ -96,7 +97,7 @@ console.log(new Intl.DateTimeFormat('ko-KR').format(date));
 
 // Arabic in most Arabic speaking countries uses real Arabic digits
 console.log(new Intl.DateTimeFormat('ar-EG').format(date));
-// → "١٩<span dir="rtl">‏/١٢‏/٢٠١٢</span>"
+// → "١٩‏/١٢‏/٢٠١٢"
 
 // for Japanese, applications may want to use the Japanese calendar,
 // where 2012 was the year 24 of the Heisei era
@@ -107,7 +108,7 @@ console.log(new Intl.DateTimeFormat('ja-JP-u-ca-japanese').format(date));
 // Balinese, include a fallback language, in this case Indonesian
 console.log(new Intl.DateTimeFormat(['ban', 'id']).format(date));
 // → "19/12/2012"
-</pre>
+```
 
 ### Using options
 
@@ -193,4 +194,4 @@ console.log(usedOptions.timeZone);
 
 ## See also
 
-- {{jsxref("Intl")}}
+*   {{jsxref("Intl")}}

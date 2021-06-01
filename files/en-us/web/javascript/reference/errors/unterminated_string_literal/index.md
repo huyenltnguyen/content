@@ -33,10 +33,10 @@ distinction between single-quoted strings and double-quoted strings.
 work in strings created with either single or double quotes. To fix this error,
 check if:
 
-- you have opening and closing quotes (single or double) for your string
-  literal,
-- you have escaped your string literal correctly,
-- your string literal isn't split across multiple lines.
+*   you have opening and closing quotes (single or double) for your string
+    literal,
+*   you have escaped your string literal correctly,
+*   your string literal isn't split across multiple lines.
 
 ## Examples
 
@@ -86,5 +86,5 @@ var longString = `This is a very long string which needs
 
 ## See also
 
-- {{jsxref("String")}}
-- [Template literals](/en-US/docs/Web/JavaScript/Reference/Template_literals)
+*   {{jsxref("String")}}
+*   [Template literals](/en-US/docs/Web/JavaScript/Reference/Template_literals)

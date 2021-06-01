@@ -19,12 +19,14 @@ logarithms.
 
 ## Syntax
 
-<pre class="brush: js">Math.expm1(<var>x</var>)</pre>
+```js
+Math.expm1(x)
+```
 
 ### Parameters
 
-- `x`
-  - : A number.
+*   `x`
+    *   : A number.
 
 ### Return value
 
@@ -58,12 +60,12 @@ Math.expm1(1);  // 1.718281828459045
 
 ## See also
 
-- A polyfill of `Math.expm1` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
-- {{jsxref("Math.E")}}
-- {{jsxref("Math.exp()")}}
-- {{jsxref("Math.log()")}}
-- {{jsxref("Math.log10()")}}
-- {{jsxref("Math.log1p()")}}
-- {{jsxref("Math.log2()")}}
-- {{jsxref("Math.pow()")}}
+*   A polyfill of `Math.expm1` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
+*   {{jsxref("Math.E")}}
+*   {{jsxref("Math.exp()")}}
+*   {{jsxref("Math.log()")}}
+*   {{jsxref("Math.log10()")}}
+*   {{jsxref("Math.log1p()")}}
+*   {{jsxref("Math.log2()")}}
+*   {{jsxref("Math.pow()")}}

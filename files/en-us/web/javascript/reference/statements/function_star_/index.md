@@ -13,7 +13,7 @@ browser-compat: javascript.statements.generator_function
 {{jsSidebar("Statements")}}
 
 The **`function*`** declaration (`function` keyword followed by an asterisk)
-defines a _generator function_, which returns a
+defines a *generator function*, which returns a
 {{jsxref("Global_Objects/Generator","Generator")}} object.
 
 {{EmbedInteractiveExample("pages/js/statement-functionasterisk.html")}}
@@ -24,17 +24,18 @@ syntax.
 
 ## Syntax
 
-<pre class="brush: js">function* <var>name</var>([<var>param</var>[, <var>param</var>[, ... <var>param</var>]]]) {
-   <var>statements</var>
+```js
+function* name([param[, param[, ... param]]]) {
+   statements
 }
-</pre>
+```
 
-- `name`
-  - : The function name.
-- `param` {{optional_inline}}
-  - : The name of a formal parameter for the function.
-- `statements`
-  - : The statements comprising the body of the function.
+*   `name`
+    *   : The function name.
+*   `param` {{optional_inline}}
+    *   : The name of a formal parameter for the function.
+*   `statements`
+    *   : The statements comprising the body of the function.
 
 ## Description
 
@@ -43,7 +44,7 @@ Generators are functions that can be exited and later re-entered. Their context
 
 Generators in JavaScript -- especially when combined with Promises -- are a very
 powerful tool for asynchronous programming as they mitigate -- if not entirely
-eliminate \-- the problems with callbacks, such as
+eliminate -- the problems with callbacks, such as
 [Callback Hell](http://callbackhell.com/) and
 [Inversion of Control](https://frontendmasters.com/courses/rethinking-async-js/callback-problems-inversion-of-control/).
 However, an even simpler solution to these problems can be achieved with
@@ -260,19 +261,19 @@ for(let power of powers(2)){
 
 ## See also
 
-- {{jsxref("Operators/function*", "function*")}} expression
-- {{jsxref("GeneratorFunction")}} object
-- [Iteration protocols](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
-- {{jsxref("Operators/yield", "yield")}}
-- {{jsxref("Operators/yield*", "yield*")}}
-- {{jsxref("Function")}} object
-- {{jsxref("Statements/function", "function")}} declaration
-- {{jsxref("Operators/function", "function")}} expression
-- {{jsxref("Functions", "Functions and function scope", "", 1)}}
-- Other web resources:
+*   {{jsxref("Operators/function*", "function*")}} expression
+*   {{jsxref("GeneratorFunction")}} object
+*   [Iteration protocols](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
+*   {{jsxref("Operators/yield", "yield")}}
+*   {{jsxref("Operators/yield*", "yield*")}}
+*   {{jsxref("Function")}} object
+*   {{jsxref("Statements/function", "function")}} declaration
+*   {{jsxref("Operators/function", "function")}} expression
+*   {{jsxref("Functions", "Functions and function scope", "", 1)}}
+*   Other web resources:
 
-  - [Regenerator](https://facebook.github.io/regenerator/) an ES2015 generator
-    compiler to ES5
-  - [Forbes Lindesay: Promises and Generators: control flow utopia -- JSConf EU 2013](http://www.youtube.com/watch?v=qbKWsbJ76-s)
-  - [Task.js](https://github.com/mozilla/task.js)
-  - [Iterating generators asynchronously](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously)
+    *   [Regenerator](https://facebook.github.io/regenerator/) an ES2015 generator
+        compiler to ES5
+    *   [Forbes Lindesay: Promises and Generators: control flow utopia -- JSConf EU 2013](http://www.youtube.com/watch?v=qbKWsbJ76-s)
+    *   [Task.js](https://github.com/mozilla/task.js)
+    *   [Iterating generators asynchronously](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously)

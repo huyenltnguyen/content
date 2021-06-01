@@ -20,23 +20,27 @@ initializing it to a value.
 
 ## Syntax
 
-<pre class="brush: js">let <var>name1</var> [= <var>value1</var>] [, <var>name2</var> [= <var>value2</var>]] [, ..., <var>nameN</var> [= <var>valueN</var>];</pre>
+```js
+let name1 [= value1] [, name2 [= value2]] [, ..., nameN [= valueN];
+```
 
 ### Parameters
 
-- `nameN`
-  - : The names of the variable or variables to declare. Each must be a legal
-    JavaScript identifier.
-- ` value``N ` {{optional_inline}}
-  - : For each variable declared, you may optionally specify its initial value
-    to any legal JavaScript expression.
+*   `nameN`
+    *   : The names of the variable or variables to declare. Each must be a legal
+        JavaScript identifier.
+*   `value``N` {{optional_inline}}
+    *   : For each variable declared, you may optionally specify its initial value
+        to any legal JavaScript expression.
 
 Alternatively, the
 [Destructuring Assignment ](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)syntax
 can also be used to declare variables.
 
-<pre class="brush: js">let <var>{ bar }</var> = <em>foo</em>; // where foo = { bar:10, baz:12 };
-/* This creates a variable with the name 'bar', which has a value of 10 */</pre>
+```js
+let { bar } = foo; // where foo = { bar:10, baz:12 };
+/* This creates a variable with the name 'bar', which has a value of 10 */
+```
 
 ## Description
 
@@ -47,11 +51,11 @@ expression on which it is used, unlike the
 variable globally, or locally to an entire function regardless of block scope.
 The other difference between {{jsxref("statements/var", "var")}}
 and `let` is that the latter is initialized to a value only when a
-[parser evaluates it (see below)](#Temporal_dead_zone).
+[parser evaluates it (see below)](#temporal_dead_zone_tdz).
 
 Just like
 {{jsxref("statements/const", "const", "Description")}} the
-`let` does _not_ create properties of the {{domxref("window")}} object
+`let` does *not* create properties of the {{domxref("window")}} object
 when declared globally (in the top-most scope).
 
 An explanation of why the name "**let**" was chosen can be found
@@ -226,7 +230,7 @@ The term "temporal" is used because the zone depends on the order of execution
 (time) rather than the order in which the code is written (position). For
 example, the code below works because, even though the function that uses
 the `let` variable appears before the variable is declared, the function is
-_called_ outside the TDZ.
+*called* outside the TDZ.
 
 ```js
 {
@@ -275,7 +279,7 @@ test();
 
 The `if` block is evaluated because the outer `var foo` has a value. However due
 to lexical scoping this value is not available inside the block: the identifier
-`foo` _inside_ the `if` block is the `let foo`. The
+`foo` *inside* the `if` block is the `let foo`. The
 expression `(foo + 55)` throws a `ReferenceError` because initialization of
 `let foo` has not completed — it is still in the temporal dead zone.
 
@@ -344,10 +348,10 @@ let x = 1;
 
 ## See also
 
-- {{jsxref("Statements/var", "var")}}
-- {{jsxref("Statements/const", "const")}}
-- [ES6 In Depth: `let` and `const`](https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/)
-- [Breaking changes in `let` and `const` in Firefox 44](https://blog.mozilla.org/addons/2015/10/14/breaking-changes-let-const-firefox-nightly-44/)
-- [You Don't Know JS: Scope & Closures: Chapter 3: Function vs. Block Scope](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/scope%20%26%20closures/ch3.md)
-- [StackOverflow: What is the Temporal Dead Zone](https://stackoverflow.com/a/33198850/1125029)?
-- [StackOverflow: What is the difference between using `let` and `var`?](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable)
+*   {{jsxref("Statements/var", "var")}}
+*   {{jsxref("Statements/const", "const")}}
+*   [ES6 In Depth: `let` and `const`](https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/)
+*   [Breaking changes in `let` and `const` in Firefox 44](https://blog.mozilla.org/addons/2015/10/14/breaking-changes-let-const-firefox-nightly-44/)
+*   [You Don't Know JS: Scope & Closures: Chapter 3: Function vs. Block Scope](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/scope%20%26%20closures/ch3.md)
+*   [StackOverflow: What is the Temporal Dead Zone](https://stackoverflow.com/a/33198850/1125029)?
+*   [StackOverflow: What is the difference between using `let` and `var`?](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable)

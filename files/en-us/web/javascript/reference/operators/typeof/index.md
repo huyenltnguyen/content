@@ -20,15 +20,16 @@ unevaluated operand.
 
 The `typeof` operator is followed by its operand:
 
-<pre class="brush: js">typeof <var>operand</var>
-typeof(<var>operand</var>)
-</pre>
+```js
+typeof operand
+typeof(operand)
+```
 
 ### Parameters
 
-- `operand`
-  - : An expression representing the object or
-    [primitive](/en-US/docs/Glossary/Primitive) whose type is to be returned.
+*   `operand`
+    *   : An expression representing the object or
+        [primitive](/en-US/docs/Glossary/Primitive) whose type is to be returned.
 
 ## Description
 
@@ -36,8 +37,17 @@ The following table summarizes the possible return values of `typeof`. For more
 information about types and primitives, see also the
 [JavaScript data structure](/en-US/docs/Web/JavaScript/Data_structures) page.
 
-<table class="standard-table"><thead><tr><th scope="col">Type</th><th scope="col">Result</th></tr></thead><tbody><tr><td><a href="/en-US/docs/Glossary/Undefined">Undefined</a></td><td><code>"undefined"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/Null">Null</a></td><td><code>"object"</code> (see <a href="#typeof_null">below</a>)</td></tr><tr><td><a href="/en-US/docs/Glossary/Boolean">Boolean</a></td><td><code>"boolean"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/Number">Number</a></td><td><code>"number"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/BigInt">BigInt</a> (new in ECMAScript 2020)</td><td><code>"bigint"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/String">String</a></td><td><code>"string"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/Symbol">Symbol</a> (new in ECMAScript 2015)</td><td><code>"symbol"</code></td></tr><tr><td><a href="/en-US/docs/Glossary/Function">Function</a> object (implements [[Call]]
-in ECMA-262 terms)</td><td><code>"function"</code></td></tr><tr><td>Any other object</td><td><code>"object"</code></td></tr></tbody></table>
+| Type                                                                                     | Result                                 |
+| ---------------------------------------------------------------------------------------- | -------------------------------------- |
+| [Undefined](/en-US/docs/Glossary/Undefined)                                              | `"undefined"`                          |
+| [Null](/en-US/docs/Glossary/Null)                                                        | `"object"` (see [below](#typeof_null)) |
+| [Boolean](/en-US/docs/Glossary/Boolean)                                                  | `"boolean"`                            |
+| [Number](/en-US/docs/Glossary/Number)                                                    | `"number"`                             |
+| [BigInt](/en-US/docs/Glossary/BigInt) (new in ECMAScript 2020)                           | `"bigint"`                             |
+| [String](/en-US/docs/Glossary/String)                                                    | `"string"`                             |
+| [Symbol](/en-US/docs/Glossary/Symbol) (new in ECMAScript 2015)                           | `"symbol"`                             |
+| [Function](/en-US/docs/Glossary/Function) object (implements \[\[Call]] in ECMA-262 terms) | `"function"`                           |
+| Any other object                                                                         | `"object"`                             |
 
 > **Note:** ECMAScript 2019 and older permitted implementations to have `typeof`
 > return any implementation-defined string value for non-callable non-standard
@@ -50,7 +60,8 @@ in ECMA-262 terms)</td><td><code>"function"</code></td></tr><tr><td>Any other ob
 
 ### Basic usage
 
-<pre class="brush: js">// Numbers
+```js
+// Numbers
 typeof 37 === 'number';
 typeof 3.14 === 'number';
 typeof(42) === 'number';
@@ -89,7 +100,7 @@ typeof undeclaredVariable === 'undefined';
 // Objects
 typeof {a: 1} === 'object';
 
-// use <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray">Array.isArray</a> or Object.prototype.toString.call
+// use Array.isArray or Object.prototype.toString.call
 // to differentiate regular objects from arrays
 typeof [1, 2, 4] === 'object';
 
@@ -104,7 +115,8 @@ typeof new String('abc') === 'object';
 // Functions
 typeof function() {} === 'function';
 typeof class C {} === 'function';
-typeof Math.sin === 'function';</pre>
+typeof Math.sin === 'function';
+```
 
 ### `typeof null`
 
@@ -261,5 +273,5 @@ typeof window.external.IsSearchProviderInstalled === "unknown";
 
 ## See also
 
-- {{JSxRef("Operators/instanceof", "instanceof")}}
-- [`document.all` willful violation of the standard](https://github.com/tc39/ecma262/issues/668)
+*   {{JSxRef("Operators/instanceof", "instanceof")}}
+*   [`document.all` willful violation of the standard](https://github.com/tc39/ecma262/issues/668)

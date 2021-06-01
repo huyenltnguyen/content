@@ -16,12 +16,14 @@ The **`Math.sin()`** function returns the sine of a number.
 
 ## Syntax
 
-<pre class="brush: js">Math.sin(<var>x</var>)</pre>
+```js
+Math.sin(x)
+```
 
 ### Parameters
 
-- `x`
-  - : A number (given in radians).
+*   `x`
+    *   : A number (given in radians).
 
 ### Return value
 
@@ -57,9 +59,9 @@ Math.sin(Math.PI / 2); // 1
 
 ## See also
 
-- {{jsxref("Math.acos()")}}
-- {{jsxref("Math.asin()")}}
-- {{jsxref("Math.atan()")}}
-- {{jsxref("Math.atan2()")}}
-- {{jsxref("Math.cos()")}}
-- {{jsxref("Math.tan()")}}
+*   {{jsxref("Math.acos()")}}
+*   {{jsxref("Math.asin()")}}
+*   {{jsxref("Math.atan()")}}
+*   {{jsxref("Math.atan2()")}}
+*   {{jsxref("Math.cos()")}}
+*   {{jsxref("Math.tan()")}}

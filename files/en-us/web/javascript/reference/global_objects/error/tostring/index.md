@@ -92,4 +92,4 @@ console.log(e5.toString()); // 'hello'
 
 ## See also
 
-- {{jsxref("Error.prototype.toSource()")}}
+*   {{jsxref("Error.prototype.toSource()")}}

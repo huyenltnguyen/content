@@ -29,8 +29,8 @@ compare(string1, string2)
 
 ### Parameters
 
-- `string1`, `string2`
-  - : The strings to compare against each other.
+*   `string1`, `string2`
+    *   : The strings to compare against each other.
 
 ## Description
 
@@ -79,5 +79,5 @@ console.log(matches.join(', '));
 
 ## See also
 
-- {{jsxref("Intl.Collator")}}
-- {{jsxref("String.prototype.localeCompare()")}}
+*   {{jsxref("Intl.Collator")}}
+*   {{jsxref("String.prototype.localeCompare()")}}

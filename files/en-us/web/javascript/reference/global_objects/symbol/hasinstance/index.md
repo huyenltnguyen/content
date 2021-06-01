@@ -16,9 +16,7 @@ constructor object recognizes an object as its instance. The
 {{jsxref("Operators/instanceof", "instanceof")}} operator's
 behavior can be customized by this symbol.
 
-{{EmbedInteractiveExample("pages/js/symbol-hasinstance.html")}}
-
-{{js_property_attributes(0,0,0)}}
+{{EmbedInteractiveExample("pages/js/symbol-hasinstance.html")}}{{js_property_attributes(0,0,0)}}
 
 ## Examples
 
@@ -69,4 +67,4 @@ console.log(Animal[Symbol.hasInstance](cat)); // true
 
 ## See also
 
-- {{jsxref("Operators/instanceof", "instanceof")}}
+*   {{jsxref("Operators/instanceof", "instanceof")}}

@@ -18,32 +18,32 @@ constructors and other language sensitive functions.
 
 ## Constructor properties
 
-- {{jsxref("Global_Objects/Intl/Collator/Collator", "Intl.Collator()")}}
-  - : Constructor for collators, which are objects that enable
-    language-sensitive string comparison.
-- {{jsxref("Global_Objects/Intl/DateTimeFormat/DateTimeFormat", "Intl.DateTimeFormat()")}}
-  - : Constructor for objects that enable language-sensitive date and time
-    formatting.
-- {{jsxref("Global_Objects/Intl/DisplayNames/DisplayNames", "Intl.DisplayNames()")}}
-  - : Constructor for objects that enable the consistent translation of
-    language, region and script display names.
-- {{jsxref("Global_Objects/Intl/ListFormat/ListFormat", "Intl.ListFormat()")}}
-  - : Constructor for objects that enable language-sensitive list formatting.
-- {{jsxref("Global_Objects/Intl/Locale/Locale", "Intl.Locale()")}}
-  - : Constructor for objects that represents a Unicode locale identifier.
-- {{jsxref("Global_Objects/Intl/NumberFormat/NumberFormat", "Intl.NumberFormat()")}}
-  - : Constructor for objects that enable language-sensitive number formatting.
-- {{jsxref("Global_Objects/Intl/PluralRules/PluralRules", "Intl.PluralRules()")}}
-  - : Constructor for objects that enable plural-sensitive formatting and
-    language-specific rules for plurals.
-- {{jsxref("Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat", "Intl.RelativeTimeFormat()")}}
-  - : Constructor for objects that enable language-sensitive relative time
-    formatting.
+*   {{jsxref("Global_Objects/Intl/Collator/Collator", "Intl.Collator()")}}
+    *   : Constructor for collators, which are objects that enable
+        language-sensitive string comparison.
+*   {{jsxref("Global_Objects/Intl/DateTimeFormat/DateTimeFormat", "Intl.DateTimeFormat()")}}
+    *   : Constructor for objects that enable language-sensitive date and time
+        formatting.
+*   {{jsxref("Global_Objects/Intl/DisplayNames/DisplayNames", "Intl.DisplayNames()")}}
+    *   : Constructor for objects that enable the consistent translation of
+        language, region and script display names.
+*   {{jsxref("Global_Objects/Intl/ListFormat/ListFormat", "Intl.ListFormat()")}}
+    *   : Constructor for objects that enable language-sensitive list formatting.
+*   {{jsxref("Global_Objects/Intl/Locale/Locale", "Intl.Locale()")}}
+    *   : Constructor for objects that represents a Unicode locale identifier.
+*   {{jsxref("Global_Objects/Intl/NumberFormat/NumberFormat", "Intl.NumberFormat()")}}
+    *   : Constructor for objects that enable language-sensitive number formatting.
+*   {{jsxref("Global_Objects/Intl/PluralRules/PluralRules", "Intl.PluralRules()")}}
+    *   : Constructor for objects that enable plural-sensitive formatting and
+        language-specific rules for plurals.
+*   {{jsxref("Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat", "Intl.RelativeTimeFormat()")}}
+    *   : Constructor for objects that enable language-sensitive relative time
+        formatting.
 
 ## Static methods
 
-- {{jsxref("Intl.getCanonicalLocales()")}}
-  - : Returns canonical locale names.
+*   {{jsxref("Intl.getCanonicalLocales()")}}
+    *   : Returns canonical locale names.
 
 ## Locale identification and negotiation
 
@@ -61,12 +61,12 @@ operation. The JavaScript implementation examines `locales`, and then computes a
 locale it understands that comes closest to satisfying the expressed preference.
 `locales` may be:
 
-- `undefined` (or omitted): The implementation's default locale will be used.
-- A locale: A locale identifier or an
-  [`Intl.Locale`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale)
-  object that wraps a locale identifier.
-- A list of locales: Any other value, that will be converted into an object and
-  then treated as an array of locales.
+*   `undefined` (or omitted): The implementation's default locale will be used.
+*   A locale: A locale identifier or an
+    [`Intl.Locale`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale)
+    object that wraps a locale identifier.
+*   A list of locales: Any other value, that will be converted into an object and
+    then treated as an array of locales.
 
 In the latter two cases, the actual locale used is the best-supported locale
 determined by [locale negotiation](#locale_negotiation).
@@ -86,12 +86,12 @@ case (first letter capitalized, successive letters lower case) for script
 subtags, upper case for region subtags, and lower case for everything else. For
 example:
 
-- "`hi`": Hindi (language)
-- "`de-AT`": German (language) as used in Austria (region)
-- "`zh-Hans-CN`": Chinese (language) written in simplified characters (script)
-  as used in China (region)
-- "`en-emodeng`": English (language) in the "Early modern English" dialect
-  (variant)
+*   "`hi`": Hindi (language)
+*   "`de-AT`": German (language) as used in Austria (region)
+*   "`zh-Hans-CN`": Chinese (language) written in simplified characters (script)
+    as used in China (region)
+*   "`en-emodeng`": English (language) in the "Early modern English" dialect
+    (variant)
 
 Subtags identifying languages, scripts, regions (including countries), and
 (rarely used) variants are registered in the
@@ -106,31 +106,31 @@ hyphens. Only one sequence is permitted for each digit or letter:
 [Unicode CLDR Project](https://github.com/unicode-org/cldr/tree/master/common/bcp47).
 Currently only two extensions have defined semantics:
 
-- The `"u"` (Unicode) extension can be used to request additional customization
-  of {{jsxref("Intl/Collator")}},
-  {{jsxref("Intl/NumberFormat")}}, or
-  {{jsxref("Intl/DateTimeFormat")}} objects. Examples:
+*   The `"u"` (Unicode) extension can be used to request additional customization
+    of {{jsxref("Intl/Collator")}},
+    {{jsxref("Intl/NumberFormat")}}, or
+    {{jsxref("Intl/DateTimeFormat")}} objects. Examples:
 
-  - "`de-DE-u-co-phonebk`": Use the phonebook variant of the German sort order,
-    which interprets umlauted vowels as corresponding character pairs: ä → ae, ö
-    → oe, ü → ue.
-  - "`th-TH-u-nu-thai`": Use Thai digits (๐, ๑, ๒, ๓, ๔, ๕, ๖, ๗, ๘, ๙) in
-    number formatting.
-  - "`ja-JP-u-ca-japanese`": Use the Japanese calendar in date and time
-    formatting, so that 2013 is expressed as the year 25 of the Heisei period,
-    or 平成 25.
-  - "`en-GB-u-ca-islamic`": use British English with the Islamic (Hijri)
-    calendar, where the Gregorian date 14 October, 2017 is the Hijri date 24
-    Muharram, 1439.
+    *   "`de-DE-u-co-phonebk`": Use the phonebook variant of the German sort order,
+        which interprets umlauted vowels as corresponding character pairs: ä → ae, ö
+        → oe, ü → ue.
+    *   "`th-TH-u-nu-thai`": Use Thai digits (๐, ๑, ๒, ๓, ๔, ๕, ๖, ๗, ๘, ๙) in
+        number formatting.
+    *   "`ja-JP-u-ca-japanese`": Use the Japanese calendar in date and time
+        formatting, so that 2013 is expressed as the year 25 of the Heisei period,
+        or 平成 25.
+    *   "`en-GB-u-ca-islamic`": use British English with the Islamic (Hijri)
+        calendar, where the Gregorian date 14 October, 2017 is the Hijri date 24
+        Muharram, 1439.
 
-- The `"t"` (transformed) extension indicates transformed content: for example,
-  text that was translated from another locale. No `Intl` functionality
-  currently considers the `"t"` extension. However, this extension sometimes
-  contains a nested locale (with no extensions): for example, the transformed
-  extension in "`de-t-en`" contains the locale identifier for English. If a
-  nested locale is present, it must be a valid locale identifier. For example,
-  because "`en-emodeng-emodeng`" is invalid (because it contains a duplicate
-  `emodeng` variant subtag), "`de-t-en-emodeng-emodeng`" is also invalid.
+*   The `"t"` (transformed) extension indicates transformed content: for example,
+    text that was translated from another locale. No `Intl` functionality
+    currently considers the `"t"` extension. However, this extension sometimes
+    contains a nested locale (with no extensions): for example, the transformed
+    extension in "`de-t-en`" contains the locale identifier for English. If a
+    nested locale is present, it must be a valid locale identifier. For example,
+    because "`en-emodeng-emodeng`" is invalid (because it contains a duplicate
+    `emodeng` variant subtag), "`de-t-en-emodeng-emodeng`" is also invalid.
 
 Finally, a private-use extension sequence using the letter `"x"` may appear,
 followed by one or more one- to eight-letter or digit subtags separated by
@@ -205,22 +205,23 @@ log("de-DE");
 
 ## See also
 
-- Introduction:
-  [The ECMAScript Internationalization API](https://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html)
-- Constructors
+*   Introduction:
+    [The ECMAScript Internationalization API](https://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html)
 
-  - {{jsxref("Intl/Collator", "Intl.Collator")}}
-  - {{jsxref("Intl/DateTimeFormat", "Intl.DateTimeFormat")}}
-  - {{jsxref("Intl/ListFormat", "Intl.ListFormat")}}
-  - {{jsxref("Intl/NumberFormat", "Intl.NumberFormat")}}
-  - {{jsxref("Intl/PluralRules", "Intl.PluralRules")}}
-  - {{jsxref("Intl/RelativeTimeFormat", "Intl.RelativeTimeFormat")}}
-  - {{jsxref("Intl/Locale", "Intl.Locale")}}
+*   Constructors
 
-- Methods
+    *   {{jsxref("Intl/Collator", "Intl.Collator")}}
+    *   {{jsxref("Intl/DateTimeFormat", "Intl.DateTimeFormat")}}
+    *   {{jsxref("Intl/ListFormat", "Intl.ListFormat")}}
+    *   {{jsxref("Intl/NumberFormat", "Intl.NumberFormat")}}
+    *   {{jsxref("Intl/PluralRules", "Intl.PluralRules")}}
+    *   {{jsxref("Intl/RelativeTimeFormat", "Intl.RelativeTimeFormat")}}
+    *   {{jsxref("Intl/Locale", "Intl.Locale")}}
 
-  - {{jsxref("String.prototype.localeCompare()")}}
-  - {{jsxref("Number.prototype.toLocaleString()")}}
-  - {{jsxref("Date.prototype.toLocaleString()")}}
-  - {{jsxref("Date.prototype.toLocaleDateString()")}}
-  - {{jsxref("Date.prototype.toLocaleTimeString()")}}
+*   Methods
+
+    *   {{jsxref("String.prototype.localeCompare()")}}
+    *   {{jsxref("Number.prototype.toLocaleString()")}}
+    *   {{jsxref("Date.prototype.toLocaleString()")}}
+    *   {{jsxref("Date.prototype.toLocaleDateString()")}}
+    *   {{jsxref("Date.prototype.toLocaleTimeString()")}}

@@ -19,9 +19,7 @@ For more information, see
 {{jsxref("RegExp.@@search", "RegExp.prototype[@@search]()")}}
 and {{jsxref("String.prototype.search()")}}.
 
-{{EmbedInteractiveExample("pages/js/symbol-search.html")}}
-
-{{js_property_attributes(0,0,0)}}
+{{EmbedInteractiveExample("pages/js/symbol-search.html")}}{{js_property_attributes(0,0,0)}}
 
 ## Examples
 
@@ -51,9 +49,9 @@ console.log('foobar'.search(new caseInsensitiveSearch('BaR')));
 
 ## See also
 
-- A polyfill of `Symbol.search` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
-- {{jsxref("Symbol.match")}}
-- {{jsxref("Symbol.replace")}}
-- {{jsxref("Symbol.split")}}
-- {{jsxref("RegExp.@@search", "RegExp.prototype[@@search]()")}}
+*   A polyfill of `Symbol.search` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
+*   {{jsxref("Symbol.match")}}
+*   {{jsxref("Symbol.replace")}}
+*   {{jsxref("Symbol.split")}}
+*   {{jsxref("RegExp.@@search", "RegExp.prototype[@@search]()")}}

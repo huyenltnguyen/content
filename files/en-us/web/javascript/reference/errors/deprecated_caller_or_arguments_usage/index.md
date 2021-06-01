@@ -86,8 +86,8 @@ console.log('returned: ' + g.arguments);
 
 ## See also
 
-- [Deprecated and obsolete features](/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
-- [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)
-- {{jsxref("Function.arguments")}}
-- {{jsxref("Function.caller")}} and
-  [`arguments.callee.caller`](/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee)
+*   [Deprecated and obsolete features](/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
+*   [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+*   {{jsxref("Function.arguments")}}
+*   {{jsxref("Function.caller")}} and
+    [`arguments.callee.caller`](/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee)

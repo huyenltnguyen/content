@@ -11,7 +11,23 @@ tags:
   - Reference
 browser-compat: javascript.builtins.Object.proto
 ---
-<div>{{JSRef}}{{Deprecated_header}}<div class="notecard warning"><p><strong>Warning:</strong> Changing the <code>[[Prototype]]</code> of an object is, by the nature of how modern JavaScript engines optimize property accesses, a very slow operation, in <strong><em>every</em></strong> browser and JavaScript engine. The effects on the performance of altering inheritance are subtle and far-flung, and are not limited to the time spent in <code>obj.__proto__ = ...</code> statements, but may extend to <strong><em>any</em></strong> code that has access to <strong><em>any</em></strong> object whose <code>[[Prototype]]</code> has been altered. If you care about performance you should avoid setting the <code>[[Prototype]]</code> of an object. Instead, create a new object with the desired <code>[[Prototype]]</code> using {{JSxRef("Object.create()")}}.</p></div><div class="notecard warning"><p><strong>Warning:</strong> While <code>Object.prototype.__proto__</code> is supported today in most browsers, its existence and exact behavior has only been standardized in the ECMAScript 2015 specification as a legacy feature to ensure compatibility for web browsers. For better support, use {{JSxRef("Object.getPrototypeOf()")}} instead.</p></div></div>
+{{JSRef}}{{Deprecated_header}}
+
+> **Warning:** Changing the `[[Prototype]]` of an object is, by the nature of
+> how modern JavaScript engines optimize property accesses, a very slow
+> operation, in ***every*** browser and JavaScript engine. The effects on the
+> performance of altering inheritance are subtle and far-flung, and are not
+> limited to the time spent in `obj.__proto__ = ...` statements, but may extend
+> to ***any*** code that has access to ***any*** object whose `[[Prototype]]`
+> has been altered. If you care about performance you should avoid setting the
+> `[[Prototype]]` of an object. Instead, create a new object with the desired
+> `[[Prototype]]` using {{JSxRef("Object.create()")}}.
+
+> **Warning:** While `Object.prototype.__proto__` is supported today in most
+> browsers, its existence and exact behavior has only been standardized in the
+> ECMAScript 2015 specification as a legacy feature to ensure compatibility for
+> web browsers. For better support, use
+> {{JSxRef("Object.getPrototypeOf()")}} instead.
 
 The `__proto__` property of {{JSxRef("Object.prototype")}} is an
 accessor property (a getter function and a setter function) that exposes the
@@ -75,7 +91,7 @@ the one found on {{JSxRef("Object.prototype")}}.
 
 ## Examples
 
-### Using \_\_proto\_\_
+### Using \__proto\_\_
 
 ```js
 
@@ -150,6 +166,6 @@ obj.myname(); // myname
 
 ## See also
 
-- {{JSxRef("Object.prototype.isPrototypeOf()")}}
-- {{JSxRef("Object.getPrototypeOf()")}}
-- {{JSxRef("Object.setPrototypeOf()")}}
+*   {{JSxRef("Object.prototype.isPrototypeOf()")}}
+*   {{JSxRef("Object.getPrototypeOf()")}}
+*   {{JSxRef("Object.setPrototypeOf()")}}

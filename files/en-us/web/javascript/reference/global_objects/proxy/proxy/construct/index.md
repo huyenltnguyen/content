@@ -20,23 +20,24 @@ initialize the proxy must itself have a `[[Construct]]` internal method (i.e.
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  construct: function(<var>target</var>, <var>argumentsList</var>, <var>newTarget</var>) {
+```js
+const p = new Proxy(target, {
+  construct: function(target, argumentsList, newTarget) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameters are passed to the `construct()` method. `this` is bound
 to the handler.
 
-- `target`
-  - : The target object.
-- `argumentsList`
-  - : The list of arguments for the constructor.
-- `newTarget`
-  - : The constructor that was originally called, `p` above.
+*   `target`
+    *   : The target object.
+*   `argumentsList`
+    *   : The list of arguments for the constructor.
+*   `newTarget`
+    *   : The constructor that was originally called, `p` above.
 
 ### Return value
 
@@ -51,15 +52,15 @@ The **`handler.construct()`** method is a trap for the
 
 This trap can intercept these operations:
 
-- `new myFunction(...args)`
-- {{jsxref("Reflect.construct()")}}
+*   `new myFunction(...args)`
+*   {{jsxref("Reflect.construct()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- The result must be an `Object`.
+*   The result must be an `Object`.
 
 ## Examples
 
@@ -116,7 +117,7 @@ new p(); // TypeError is thrown, "p" is not a constructor
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy/Proxy", "handler")}}
-- {{jsxref("Operators/new", "new")}} operator.
-- {{jsxref("Reflect.construct()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy/Proxy", "handler")}}
+*   {{jsxref("Operators/new", "new")}} operator.
+*   {{jsxref("Reflect.construct()")}}

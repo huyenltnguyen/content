@@ -108,4 +108,4 @@ The following is a shim to provide support to non-supporting browsers:
 
 ## See also
 
-- {{jsxref("String")}}
+*   {{jsxref("String")}}

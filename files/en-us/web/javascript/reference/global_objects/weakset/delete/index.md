@@ -23,8 +23,8 @@ delete(value)
 
 ### Parameters
 
-- `value`
-  - : Required. The object remove from the `WeakSet` object.
+*   `value`
+    *   : Required. The object remove from the `WeakSet` object.
 
 ### Return value
 
@@ -58,5 +58,5 @@ ws.has(window);    // Returns false. The window is no longer present in the Weak
 
 ## See also
 
-- {{jsxref("WeakSet")}}
-- {{jsxref("WeakSet.prototype.clear()")}}
+*   {{jsxref("WeakSet")}}
+*   {{jsxref("WeakSet.prototype.clear()")}}

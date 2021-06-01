@@ -25,16 +25,17 @@ intercept certain operations and to implement custom behaviors.
 
 For example, getting a property on an object:
 
-<pre class="brush: js">let <var>handler</var> = {
-  get: function(<var>target</var>, name) {
-    return name in <var>target</var> ? <var>target</var>[name] : 42
+```js
+let handler = {
+  get: function(target, name) {
+    return name in target ? target[name] : 42
   }
 }
 
-let p = new Proxy({}, <var>handler</var>)
+let p = new Proxy({}, handler)
 p.a = 1
 console.log(p.a, p.b) // 1, 42
-</pre>
+```
 
 The `Proxy` object defines a <dfn><code><var>target</var></code></dfn> (an empty
 object here) and a <dfn><code><var>handler</var></code></dfn> object, in which a
@@ -49,20 +50,20 @@ page.
 
 The following terms are used when talking about the functionality of proxies.
 
-- {{jsxref("Global_Objects/Proxy/Proxy","handler","","true")}}
-  - : Placeholder object which contains traps.
-- traps
-  - : The methods that provide property access. (This is analogous to the
-    concept of _traps_ in operating systems.)
-- target
-  - : Object which the proxy virtualizes. It is often used as storage backend
-    for the proxy. Invariants (semantics that remain unchanged) regarding object
-    non-extensibility or non-configurable properties are verified against the
-    target.
-- invariants
-  - : Semantics that remain unchanged when implementing custom operations are
-    called _invariants_. If you violate the invariants of a handler, a
-    {{jsxref("TypeError")}} will be thrown.
+*   {{jsxref("Global_Objects/Proxy/Proxy","handler","","true")}}
+    *   : Placeholder object which contains traps.
+*   traps
+    *   : The methods that provide property access. (This is analogous to the
+        concept of *traps* in operating systems.)
+*   target
+    *   : Object which the proxy virtualizes. It is often used as storage backend
+        for the proxy. Invariants (semantics that remain unchanged) regarding object
+        non-extensibility or non-configurable properties are verified against the
+        target.
+*   invariants
+    *   : Semantics that remain unchanged when implementing custom operations are
+        called *invariants*. If you violate the invariants of a handler, a
+        {{jsxref("TypeError")}} will be thrown.
 
 ## Handlers and traps
 

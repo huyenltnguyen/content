@@ -16,12 +16,14 @@ The **`return()`** method returns the given value and finishes the generator.
 
 ## Syntax
 
-<pre class="brush: js">return(<var>value</var>)</pre>
+```js
+return(value)
+```
 
 ### Parameters
 
-- `value`
-  - : The value to return.
+*   `value`
+    *   : The value to return.
 
 ### Return value
 
@@ -80,4 +82,4 @@ g.return(1); // { value: 1, done: true }
 
 ## See also
 
-- {{jsxref("Statements/function*", "function*")}}
+*   {{jsxref("Statements/function*", "function*")}}

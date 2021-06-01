@@ -12,7 +12,7 @@ browser-compat: javascript.builtins.TypedArray.buffer
 {{JSRef}}
 
 The **`buffer`** accessor property represents the
-{{jsxref("ArrayBuffer")}} referenced by a _TypedArray_ at construction
+{{jsxref("ArrayBuffer")}} referenced by a *TypedArray* at construction
 time.
 
 {{EmbedInteractiveExample("pages/js/typedarray-buffer.html","shorter")}}
@@ -21,8 +21,8 @@ time.
 
 The `buffer` property is an accessor property whose set accessor function is
 `undefined`, meaning that you can only read this property. The value is
-established when the _TypedArray_ is constructed and cannot be changed.
-_TypedArray_ is one of the
+established when the *TypedArray* is constructed and cannot be changed.
+*TypedArray* is one of the
 [TypedArray objects](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects).
 
 ## Examples
@@ -45,5 +45,5 @@ uint16.buffer; // ArrayBuffer { byteLength: 8 }
 
 ## See also
 
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- {{jsxref("TypedArray")}}
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("TypedArray")}}

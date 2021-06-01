@@ -58,5 +58,5 @@ console.log(mapIter.next().value)  // [Object, "baz"]
 
 ## See also
 
-- {{jsxref("Map.prototype.keys()")}}
-- {{jsxref("Map.prototype.values()")}}
+*   {{jsxref("Map.prototype.keys()")}}
+*   {{jsxref("Map.prototype.values()")}}

@@ -46,7 +46,7 @@ console.log(rest); // {c: 30, d: 40}
 
 ## Description
 
-The object and array literal expressions provide an easy way to create _ad hoc_
+The object and array literal expressions provide an easy way to create *ad hoc*
 packages of data.
 
 ```js
@@ -300,8 +300,8 @@ console.log(b); // 5
 
 A property can be both
 
-- Unpacked from an object and assigned to a variable with a different name.
-- Assigned a default value in case the unpacked value is `undefined`.
+*   Unpacked from an object and assigned to a variable with a different name.
+*   Assigned a default value in case the unpacked value is `undefined`.
 
 ```js
 const {a: aa = 10, b: bb = 5} = {a: 3};
@@ -507,5 +507,5 @@ const {self, prot} = obj;
 
 ## See also
 
-- [Assignment operators](/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
-- ["ES6 in Depth: Destructuring" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
+*   [Assignment operators](/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
+*   ["ES6 in Depth: Destructuring" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)

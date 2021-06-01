@@ -16,7 +16,7 @@ value**, or sometimes just a **BigInt** — to represent whole numbers larger th
 2^53 - 1
 ([`Number.MAX_SAFE_INTEGER`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER)),
 which is the largest number JavaScript can represent with a `number`
-{{Glossary("Primitive", "primitive")}} (or _Number value_). BigInt
+{{Glossary("Primitive", "primitive")}} (or *Number value*). BigInt
 values can be used for arbitrarily large integers.
 
 ## Description
@@ -124,7 +124,7 @@ const truncated = 5n / 2n
 
 ### Comparisons
 
-A BigInt value is not strictly equal to a Number value, but it _is_ loosely so:
+A BigInt value is not strictly equal to a Number value, but it *is* loosely so:
 
 ```js
 0n === 0
@@ -186,15 +186,15 @@ o === o                    // true
 
 A BigInt value behaves like a Number value in cases where:
 
-- it is converted to a
-  [`Boolean`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean): via
-  the [`Boolean`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
-  function;
-- when used with
-  [logical operators](/en-US/docs/Web/JavaScript/Reference/Operators) `||`,
-  `&&`, and `!`; or
-- within a conditional test like an
-  [`if`](/en-US/docs/Web/JavaScript/Reference/Statements/if...else) statement.
+*   it is converted to a
+    [`Boolean`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean): via
+    the [`Boolean`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+    function;
+*   when used with
+    [logical operators](/en-US/docs/Web/JavaScript/Reference/Operators) `||`,
+    `&&`, and `!`; or
+*   within a conditional test like an
+    [`if`](/en-US/docs/Web/JavaScript/Reference/Statements/if...else) statement.
 
 ```js
 if (0n) {
@@ -226,33 +226,33 @@ Boolean(12n)
 
 ## Constructor
 
-- [`BigInt()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt)
-  - : Creates a new BigInt value.
+*   [`BigInt()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt)
+    *   : Creates a new BigInt value.
 
 ## Static methods
 
-- [`BigInt.asIntN()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asIntN)
-  - : Clamps a BigInt value to a signed integer value, and returns that value.
-- [`BigInt.asUintN()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asUintN)
-  - : Clamps a BigInt value to an unsigned integer value, and returns that
-    value.
+*   [`BigInt.asIntN()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asIntN)
+    *   : Clamps a BigInt value to a signed integer value, and returns that value.
+*   [`BigInt.asUintN()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asUintN)
+    *   : Clamps a BigInt value to an unsigned integer value, and returns that
+        value.
 
 ## Instance methods
 
-- [`BigInt.prototype.toLocaleString()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/toLocaleString)
-  - : Returns a string with a language-sensitive representation of this BigInt
-    value. Overrides the
-    [`Object.prototype.toLocaleString()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString)
-    method.
-- [`BigInt.prototype.toString()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/toString)
-  - : Returns a string representing this BigInt value in the specified radix
-    (base). Overrides the
-    [`Object.prototype.toString()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
-    method.
-- [`BigInt.prototype.valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/valueOf)
-  - : Returns this BigInt value. Overrides the
-    [`Object.prototype.valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf)
-    method.
+*   [`BigInt.prototype.toLocaleString()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/toLocaleString)
+    *   : Returns a string with a language-sensitive representation of this BigInt
+        value. Overrides the
+        [`Object.prototype.toLocaleString()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString)
+        method.
+*   [`BigInt.prototype.toString()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/toString)
+    *   : Returns a string representing this BigInt value in the specified radix
+        (base). Overrides the
+        [`Object.prototype.toString()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
+        method.
+*   [`BigInt.prototype.valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/valueOf)
+    *   : Returns this BigInt value. Overrides the
+        [`Object.prototype.valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf)
+        method.
 
 ## Usage recommendations
 
@@ -261,8 +261,8 @@ Boolean(12n)
 Because coercing between Number values and BigInt values can lead to loss of
 precision, the following are recommended:
 
-- Only use a BigInt value when values greater than 2^53 are reasonably expected.
-- Don’t coerce between BigInt values and Number values.
+*   Only use a BigInt value when values greater than 2^53 are reasonably expected.
+*   Don’t coerce between BigInt values and Number values.
 
 ### Cryptography
 
@@ -332,5 +332,5 @@ nthPrime(20n)
 
 ## See also
 
-- [`Number`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-- [`Number.MAX_SAFE_INTEGER`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER)
+*   [`Number`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+*   [`Number.MAX_SAFE_INTEGER`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER)

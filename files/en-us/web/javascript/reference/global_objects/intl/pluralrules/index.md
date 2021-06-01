@@ -18,23 +18,23 @@ plural-related language rules.
 
 ## Constructor
 
-- {{jsxref("Intl/PluralRules/PluralRules", "Intl.PluralRules()")}}
-  - : Creates a new `Intl.PluralRules` object.
+*   {{jsxref("Intl/PluralRules/PluralRules", "Intl.PluralRules()")}}
+    *   : Creates a new `Intl.PluralRules` object.
 
 ## Static methods
 
-- {{jsxref("Intl/PluralRules/supportedLocalesOf", "Intl.PluralRules.supportedLocalesOf()")}}
-  - : Returns an array containing those of the provided locales that are
-    supported without having to fall back to the runtime's default locale.
+*   {{jsxref("Intl/PluralRules/supportedLocalesOf", "Intl.PluralRules.supportedLocalesOf()")}}
+    *   : Returns an array containing those of the provided locales that are
+        supported without having to fall back to the runtime's default locale.
 
 ## Instance methods
 
-- {{jsxref("Intl/PluralRules/resolvedOptions", "Intl.PluralRules.prototype.resolvedOptions()")}}
-  - : Returns a new object with properties reflecting the locale and collation
-    options computed during initialization of the object.
-- {{jsxref("Intl/PluralRules/select", "Intl.PluralRules.prototype.select()")}}
-  - : Returns a {{jsxref("String")}} indicating which plural rule to use
-    for locale-aware formatting.
+*   {{jsxref("Intl/PluralRules/resolvedOptions", "Intl.PluralRules.prototype.resolvedOptions()")}}
+    *   : Returns a new object with properties reflecting the locale and collation
+        options computed during initialization of the object.
+*   {{jsxref("Intl/PluralRules/select", "Intl.PluralRules.prototype.select()")}}
+    *   : Returns a {{jsxref("String")}} indicating which plural rule to use
+        for locale-aware formatting.
 
 ## Examples
 
@@ -74,4 +74,4 @@ new Intl.PluralRules('ar-EG').select(18);
 
 ## See also
 
-- {{jsxref("Intl")}}
+*   {{jsxref("Intl")}}

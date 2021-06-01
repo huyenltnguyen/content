@@ -39,22 +39,22 @@ filter(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callbackFn`
+*   `callbackFn`
 
-  - : Function is a predicate, to test each element of the array. Return a value
-    that coerces to `true` to keep the element, or to `false` otherwise.
+    *   : Function is a predicate, to test each element of the array. Return a value
+        that coerces to `true` to keep the element, or to `false` otherwise.
 
-    It accepts three arguments:
+        It accepts three arguments:
 
-    - `element`
-      - : The current element being processed in the array.
-    - `index`{{optional_inline}}
-      - : The index of the current element being processed in the array.
-    - `array`{{optional_inline}}
-      - : The array `filter` was called upon.
+        *   `element`
+            *   : The current element being processed in the array.
+        *   `index`{{optional_inline}}
+            *   : The index of the current element being processed in the array.
+        *   `array`{{optional_inline}}
+            *   : The array `filter` was called upon.
 
-- `thisArg`{{optional_inline}}
-  - : Value to use as `this` when executing `callbackFn`.
+*   `thisArg`{{optional_inline}}
+    *   : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -305,10 +305,10 @@ console.log(deleteWords)
 
 ## See also
 
-- A polyfill of `Array.prototype.filter` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.forEach()")}}
-- {{jsxref("Array.prototype.every()")}}
-- {{jsxref("Array.prototype.some()")}}
-- {{jsxref("Array.prototype.reduce()")}}
-- {{jsxref("Array.prototype.find()")}}
+*   A polyfill of `Array.prototype.filter` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.forEach()")}}
+*   {{jsxref("Array.prototype.every()")}}
+*   {{jsxref("Array.prototype.some()")}}
+*   {{jsxref("Array.prototype.reduce()")}}
+*   {{jsxref("Array.prototype.find()")}}

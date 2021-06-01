@@ -19,12 +19,14 @@ the base of the natural logarithms.
 
 ## Syntax
 
-<pre class="brush: js">Math.exp(<var>x</var>)</pre>
+```js
+Math.exp(x)
+```
 
 ### Parameters
 
-- `x`
-  - : A number.
+*   `x`
+    *   : A number.
 
 ### Return value
 
@@ -58,10 +60,10 @@ Math.exp(1);  // 2.718281828459045
 
 ## See also
 
-- {{jsxref("Math.E")}}
-- {{jsxref("Math.expm1()")}}
-- {{jsxref("Math.log()")}}
-- {{jsxref("Math.log10()")}}
-- {{jsxref("Math.log1p()")}}
-- {{jsxref("Math.log2()")}}
-- {{jsxref("Math.pow()")}}
+*   {{jsxref("Math.E")}}
+*   {{jsxref("Math.expm1()")}}
+*   {{jsxref("Math.log()")}}
+*   {{jsxref("Math.log10()")}}
+*   {{jsxref("Math.log1p()")}}
+*   {{jsxref("Math.log2()")}}
+*   {{jsxref("Math.pow()")}}

@@ -27,9 +27,9 @@ flat(depth)
 
 ### Parameters
 
-- `depth` {{optional_inline}}
-  - : The depth level specifying how deep a nested array structure should be
-    flattened. Defaults to 1.
+*   `depth` {{optional_inline}}
+    *   : The depth level specifying how deep a nested array structure should be
+        flattened. Defaults to 1.
 
 ### Return value
 
@@ -158,10 +158,10 @@ arr5.flat();
 
 ## See also
 
-- A polyfill of `Array.prototype.flat` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.flatMap()")}}
-- {{jsxref("Array.prototype.map()")}}
-- {{jsxref("Array.prototype.reduce()")}}
-- {{jsxref("Array.prototype.concat()")}}
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+*   A polyfill of `Array.prototype.flat` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.flatMap()")}}
+*   {{jsxref("Array.prototype.map()")}}
+*   {{jsxref("Array.prototype.reduce()")}}
+*   {{jsxref("Array.prototype.concat()")}}
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)

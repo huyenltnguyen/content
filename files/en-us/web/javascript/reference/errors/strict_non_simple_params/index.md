@@ -40,9 +40,9 @@ SyntaxError: Illegal 'use strict' directive in function with non-simple paramete
 A `"use strict"` directive is written at the top of a function that has one of
 the following parameters:
 
-- {{jsxref("Functions/Default_parameters", "Default parameters", "", 1)}}
-- {{jsxref("Functions/rest_parameters", "Rest parameters", "", 1)}}
-- {{jsxref("Operators/Destructuring_assignment", "Destructuring parameters", "", 1)}}
+*   {{jsxref("Functions/Default_parameters", "Default parameters", "", 1)}}
+*   {{jsxref("Functions/rest_parameters", "Rest parameters", "", 1)}}
+*   {{jsxref("Operators/Destructuring_assignment", "Destructuring parameters", "", 1)}}
 
 A `"use strict"` directive is not allowed at the top of such functions per the
 ECMAScript specification.
@@ -122,9 +122,9 @@ var callback = (() => {
 
 ## See also
 
-- {{jsxref("Strict_mode", "Strict mode", "", 1)}}
-- {{jsxref("Statements/function", "function statement", "", 1)}}
-- {{jsxref("Operators/function", "function expression", "", 1)}}
-- {{jsxref("Functions/Default_parameters", "Default parameters", "", 1)}}
-- {{jsxref("Functions/rest_parameters", "Rest parameters", "", 1)}}
-- {{jsxref("Operators/Destructuring_assignment", "Destructuring parameters", "", 1)}}
+*   {{jsxref("Strict_mode", "Strict mode", "", 1)}}
+*   {{jsxref("Statements/function", "function statement", "", 1)}}
+*   {{jsxref("Operators/function", "function expression", "", 1)}}
+*   {{jsxref("Functions/Default_parameters", "Default parameters", "", 1)}}
+*   {{jsxref("Functions/rest_parameters", "Rest parameters", "", 1)}}
+*   {{jsxref("Operators/Destructuring_assignment", "Destructuring parameters", "", 1)}}

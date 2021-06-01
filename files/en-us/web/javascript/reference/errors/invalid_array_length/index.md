@@ -40,15 +40,15 @@ RangeError: Array buffer allocation failed (Chromium-based)
 
 An invalid array length might appear in these situations:
 
-- Creating an {{jsxref("Array")}} or {{jsxref("ArrayBuffer")}} with
-  a negative length, or setting a negative value for the
-  {{jsxref("Array.length")}} property.
-- Creating an {{jsxref("Array")}} or setting the
-  {{jsxref("Array.length")}} property greater than 2GB-1 (2^32-1).
-- Creating an {{jsxref("ArrayBuffer")}} that is bigger than 2GB-1
-  (2^32-1) on a 32-bit system or 8GB (2^33) on a 64-bit system.
-- Before Firefox 89: Creating an {{jsxref("ArrayBuffer")}} that is bigger
-  than 2GB-1 (2^32-1).
+*   Creating an {{jsxref("Array")}} or {{jsxref("ArrayBuffer")}} with
+    a negative length, or setting a negative value for the
+    {{jsxref("Array.length")}} property.
+*   Creating an {{jsxref("Array")}} or setting the
+    {{jsxref("Array.length")}} property greater than 2GB-1 (2^32-1).
+*   Creating an {{jsxref("ArrayBuffer")}} that is bigger than 2GB-1
+    (2^32-1) on a 32-bit system or 8GB (2^33) on a 64-bit system.
+*   Before Firefox 89: Creating an {{jsxref("ArrayBuffer")}} that is bigger
+    than 2GB-1 (2^32-1).
 
 If you are creating an `Array`, using the constructor, you probably want to use
 the literal notation instead, as the first argument is interpreted as the length
@@ -95,6 +95,6 @@ b.length = Math.min(0xffffffff, b.length + 1);
 
 ## See also
 
-- {{jsxref("Array")}}
-- {{jsxref("Array.length")}}
-- {{jsxref("ArrayBuffer")}}
+*   {{jsxref("Array")}}
+*   {{jsxref("Array.length")}}
+*   {{jsxref("ArrayBuffer")}}

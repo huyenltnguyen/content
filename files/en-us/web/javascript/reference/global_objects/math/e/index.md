@@ -14,11 +14,9 @@ The **`Math.E`** property represents Euler's number, the base of natural
 logarithms, e, which is approximately 2.718.
 
 <math display="block"><semantics><mrow><mstyle mathvariant="monospace"><mi>Math.E</mi></mstyle><mo>=</mo><mi>e</mi><mo>≈</mo><mn>2.718</mn></mrow><annotation encoding="TeX">\mathtt{\mi{Math.E}}
-= e \approx 2.718</annotation></semantics></math>
+\= e \approx 2.718</annotation></semantics></math>
 
-{{EmbedInteractiveExample("pages/js/math-e.html")}}
-
-{{js_property_attributes(0, 0, 0)}}
+{{EmbedInteractiveExample("pages/js/math-e.html")}}{{js_property_attributes(0, 0, 0)}}
 
 ## Description
 
@@ -50,6 +48,6 @@ getNapier(); // 2.718281828459045
 
 ## See also
 
-- {{jsxref("Math.exp()")}}
-- {{jsxref("Math.log()")}}
-- {{jsxref("Math.log1p()")}}
+*   {{jsxref("Math.exp()")}}
+*   {{jsxref("Math.log()")}}
+*   {{jsxref("Math.log1p()")}}

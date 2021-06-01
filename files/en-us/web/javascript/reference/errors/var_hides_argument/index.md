@@ -70,4 +70,4 @@ function f(arg) {
 
 ## See also
 
-- [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+*   [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)

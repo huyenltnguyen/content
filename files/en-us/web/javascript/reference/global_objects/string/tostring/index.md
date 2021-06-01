@@ -57,5 +57,5 @@ console.log(x.toString()); // logs 'Hello world'
 
 ## See also
 
-- {{jsxref("Object.prototype.toSource()")}}
-- {{jsxref("String.prototype.valueOf()")}}
+*   {{jsxref("Object.prototype.toSource()")}}
+*   {{jsxref("String.prototype.valueOf()")}}

@@ -13,7 +13,7 @@ browser-compat: javascript.builtins.Array.sort
 {{JSRef}}
 
 The **`sort()`** method sorts the elements of an array
-_[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_ and returns the
+*[in place](https://en.wikipedia.org/wiki/In-place_algorithm)* and returns the
 sorted array. The default sort order is ascending, built upon converting the
 elements into strings, then comparing their sequences of UTF-16 code units
 values.
@@ -41,12 +41,19 @@ sort(function compareFn(firstEl, secondEl) { ... })
 
 ### Parameters
 
-<dl><dt><code>compareFunction</code> {{optional_inline}}</dt><dd>Specifies a function that defines the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.<dl><dt><code>firstEl</code></dt><dd>The first element for comparison.</dd><dt><code>secondEl</code></dt><dd>The second element for comparison.</dd></dl></dd></dl>
+*   `compareFunction` {{optional_inline}}
+    *   : Specifies a function that defines the sort order. If omitted, the array
+        elements are converted to strings, then sorted according to each character's
+        Unicode code point value.
+        *   `firstEl`
+            *   : The first element for comparison.
+        *   `secondEl`
+            *   : The second element for comparison.
 
 ### Return value
 
 The sorted array. Note that the array is sorted
-_[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_, and no copy is
+*[in place](https://en.wikipedia.org/wiki/In-place_algorithm)*, and no copy is
 made.
 
 ## Description
@@ -69,19 +76,20 @@ according to the return value of the compare function (all `undefined` elements
 are sorted to the end of the array, with no call to `compareFunction`). If `a`
 and `b` are two elements being compared, then:
 
-- If `compareFunction(a, b)` returns a value > than 0, sort `b` before `a`.
-- If `compareFunction(a, b)` returns a value ≤ 0, leave `a` and `b` in the same
-  order.
+*   If `compareFunction(a, b)` returns a value > than 0, sort `b` before `a`.
 
-  > **Note:** The
-  > [ECMAScript Standard, 10th edition](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro)
-  > (2019) algorithm mandates stable sorting, which means than elements that
-  > compare equal must remain in their original order with respect to each
-  > other. This behaviour may not be respected by older browsers.
+*   If `compareFunction(a, b)` returns a value ≤ 0, leave `a` and `b` in the same
+    order.
 
-- `compareFunction(a, b)` must always return the same value when given a
-  specific pair of elements `a` and `b` as its two arguments. If inconsistent
-  results are returned, then the sort order is undefined.
+    > **Note:** The
+    > [ECMAScript Standard, 10th edition](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro)
+    > (2019) algorithm mandates stable sorting, which means than elements that
+    > compare equal must remain in their original order with respect to each
+    > other. This behaviour may not be respected by older browsers.
+
+*   `compareFunction(a, b)` must always return the same value when given a
+    specific pair of elements `a` and `b` as its two arguments. If inconsistent
+    results are returned, then the sort order is undefined.
 
 So, the compare function has the following form:
 
@@ -316,8 +324,8 @@ meaning that you could end up with the following:
 
 ## See also
 
-- {{jsxref("Array.prototype.reverse()")}}
-- {{jsxref("String.prototype.localeCompare()")}}
-- [About the stability of the algorithm used by V8 engine](https://v8.dev/blog/array-sort)
-- [V8 sort stability](https://v8.dev/features/stable-sort)
-- [Mathias Bynens' sort stability demo](https://mathiasbynens.be/demo/sort-stability)
+*   {{jsxref("Array.prototype.reverse()")}}
+*   {{jsxref("String.prototype.localeCompare()")}}
+*   [About the stability of the algorithm used by V8 engine](https://v8.dev/blog/array-sort)
+*   [V8 sort stability](https://v8.dev/features/stable-sort)
+*   [Mathias Bynens' sort stability demo](https://mathiasbynens.be/demo/sort-stability)

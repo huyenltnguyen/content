@@ -23,12 +23,12 @@ new RangeError(message, fileName, lineNumber)
 
 ### Parameters
 
-- `message` {{optional_inline}}
-  - : Human-readable description of the error.
-- `fileName` {{optional_inline}}
-  - : The name of the file containing the code that caused the exception
-- `lineNumber` {{optional_inline}}
-  - : The line number of the code that caused the exception
+*   `message` {{optional_inline}}
+    *   : Human-readable description of the error.
+*   `fileName` {{optional_inline}}
+    *   : The name of the file containing the code that caused the exception
+*   `lineNumber` {{optional_inline}}
+    *   : The line number of the code that caused the exception
 
 ## Examples
 
@@ -90,9 +90,9 @@ catch(error)
 
 ## See also
 
-- {{jsxref("Error")}}
-- {{jsxref("Array")}}
-- {{jsxref("Number.toExponential()")}}
-- {{jsxref("Number.toFixed()")}}
-- {{jsxref("Number.toPrecision()")}}
-- {{jsxref("String.prototype.normalize()")}}
+*   {{jsxref("Error")}}
+*   {{jsxref("Array")}}
+*   {{jsxref("Number.toExponential()")}}
+*   {{jsxref("Number.toFixed()")}}
+*   {{jsxref("Number.toPrecision()")}}
+*   {{jsxref("String.prototype.normalize()")}}

@@ -25,9 +25,11 @@ You can also define functions using the
 
 The expression is not allowed at the start of a statement.
 
-<pre class="brush: js">function [<var>name</var>]([<var>param1</var>[, <var>param2[</var>, ..., <var>paramN</var>]]]) {
-   <var>statements</var>
-}</pre>
+```js
+function [name]([param1[, param2[, ..., paramN]]]) {
+   statements
+}
+```
 
 As of ES2015, you can also use
 {{jsxref("Functions/Arrow_functions", "arrow functions",
@@ -35,13 +37,13 @@ As of ES2015, you can also use
 
 ### Parameters
 
-- `name` {{optional_inline}}
-  - : The function name. Can be omitted, in which case the function is
-    _anonymous_. The name is only local to the function body.
-- `paramN` {{optional_inline}}
-  - : The name of an argument to be passed to the function.
-- `statements` {{optional_inline}}
-  - : The statements which comprise the body of the function.
+*   `name` {{optional_inline}}
+    *   : The function name. Can be omitted, in which case the function is
+        *anonymous*. The name is only local to the function body.
+*   `paramN` {{optional_inline}}
+    *   : The name of an argument to be passed to the function.
+*   `statements` {{optional_inline}}
+    *   : The statements which comprise the body of the function.
 
 ## Description
 
@@ -49,8 +51,8 @@ A function expression is very similar to and has almost the same syntax as a
 function declaration (see
 {{jsxref("Statements/function", "function")}} statement for
 details). The main difference between a function expression and a function
-declaration is the _function name_, which can be omitted in function expressions
-to create _anonymous_ functions. A function expression can be used as an
+declaration is the *function name*, which can be omitted in function expressions
+to create *anonymous* functions. A function expression can be used as an
 [IIFE (Immediately Invoked Function Expression)](/en-US/docs/Glossary/IIFE)
 which runs as soon as it is defined. See also the chapter about
 {{jsxref("Functions",
@@ -169,12 +171,12 @@ An anonymous function is created and called:
 
 ## See also
 
-- {{jsxref("Arrow_functions", "Arrow functions", "", 1)}}
-- {{jsxref("Functions_and_function_scope", "Functions and function scope", "", 1)}}
-- {{jsxref("Function")}}
-- {{jsxref("Statements/function", "function")}} statement
-- {{jsxref("Statements/function*", "function*")}} statement
-- {{jsxref("Operators/function*", "function*")}} expression
-- {{jsxref("GeneratorFunction")}}
-- {{jsxref("Statements/async_function", "async function", "", 1)}}
-- {{jsxref("Operators/async_function", "async function expression", "", 1)}}
+*   {{jsxref("Arrow_functions", "Arrow functions", "", 1)}}
+*   {{jsxref("Functions_and_function_scope", "Functions and function scope", "", 1)}}
+*   {{jsxref("Function")}}
+*   {{jsxref("Statements/function", "function")}} statement
+*   {{jsxref("Statements/function*", "function*")}} statement
+*   {{jsxref("Operators/function*", "function*")}} expression
+*   {{jsxref("GeneratorFunction")}}
+*   {{jsxref("Statements/async_function", "async function", "", 1)}}
+*   {{jsxref("Operators/async_function", "async function expression", "", 1)}}

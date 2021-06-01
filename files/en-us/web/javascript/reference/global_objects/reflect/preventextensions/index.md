@@ -21,13 +21,14 @@ some [differences](#difference_from_object.preventExtensions).
 
 ## Syntax
 
-<pre class="brush: js">Reflect.preventExtensions(<var>target</var>)
-</pre>
+```js
+Reflect.preventExtensions(target)
+```
 
 ### Parameters
 
-- `target`
-  - : The target object on which to prevent extensions.
+*   `target`
+    *   : The target object on which to prevent extensions.
 
 ### Return value
 
@@ -86,7 +87,7 @@ Object.preventExtensions(1)
 
 ## See also
 
-- A polyfill of `Reflect.preventExtensions` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- {{jsxref("Object.isExtensible()")}}
+*   A polyfill of `Reflect.preventExtensions` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   {{jsxref("Object.isExtensible()")}}

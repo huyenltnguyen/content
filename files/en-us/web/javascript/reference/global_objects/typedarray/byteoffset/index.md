@@ -18,8 +18,8 @@ typed array from the start of its {{jsxref("ArrayBuffer")}}.
 
 The `byteOffset` property is an accessor property whose set accessor function is
 `undefined`, meaning that you can only read this property. The value is
-established when a _TypedArray_ is constructed and cannot be changed.
-_TypedArray_ is one of the
+established when a *TypedArray* is constructed and cannot be changed.
+*TypedArray* is one of the
 [TypedArray objects](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects).
 
 ## Examples
@@ -46,5 +46,5 @@ uint8.byteOffset; // 3 (as specified when constructing Uint8Array)
 
 ## See also
 
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- {{jsxref("TypedArray")}}
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("TypedArray")}}

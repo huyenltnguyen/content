@@ -21,7 +21,9 @@ property is the same function object as the initial value of the
 
 ## Syntax
 
-<pre class="brush: js"><var>myMap</var>[Symbol.iterator]</pre>
+```js
+myMap[Symbol.iterator]
+```
 
 ### Return value
 
@@ -79,6 +81,6 @@ for (const [key, value] of myMap) {
 
 ## See also
 
-- {{jsxref("Map.prototype.entries()")}}
-- {{jsxref("Map.prototype.keys()")}}
-- {{jsxref("Map.prototype.values()")}}
+*   {{jsxref("Map.prototype.entries()")}}
+*   {{jsxref("Map.prototype.keys()")}}
+*   {{jsxref("Map.prototype.values()")}}

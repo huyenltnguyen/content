@@ -23,8 +23,9 @@ obtain a modulo in JavaScript, in place of `a % n`, use `((a % n ) + n ) % n`.
 
 ## Syntax
 
-<pre class="brush: js"><strong>Operator:</strong> <var>var1</var> % <var>var2</var>
-</pre>
+```js
+Operator: var1 % var2
+```
 
 ## Examples
 
@@ -70,12 +71,12 @@ Infinity % Infinity // NaN
 
 ## See also
 
-- [Addition operator](/en-US/docs/Web/JavaScript/Reference/Operators/Addition)
-- [Subtraction operator](/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction)
-- [Division operator](/en-US/docs/Web/JavaScript/Reference/Operators/Division)
-- [Multiplication operator](/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication)
-- [Exponentiation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)
-- [Increment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Increment)
-- [Decrement operator](/en-US/docs/Web/JavaScript/Reference/Operators/Decrement)
-- [Unary negation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation)
-- [Unary plus operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus)
+*   [Addition operator](/en-US/docs/Web/JavaScript/Reference/Operators/Addition)
+*   [Subtraction operator](/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction)
+*   [Division operator](/en-US/docs/Web/JavaScript/Reference/Operators/Division)
+*   [Multiplication operator](/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication)
+*   [Exponentiation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)
+*   [Increment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Increment)
+*   [Decrement operator](/en-US/docs/Web/JavaScript/Reference/Operators/Decrement)
+*   [Unary negation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation)
+*   [Unary plus operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus)

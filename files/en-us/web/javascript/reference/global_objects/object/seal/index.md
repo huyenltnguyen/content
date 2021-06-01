@@ -20,12 +20,14 @@ Values of present properties can still be changed as long as they are writable.
 
 ## Syntax
 
-<pre class="brush: js">Object.seal(<var>obj</var>)</pre>
+```js
+Object.seal(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object which should be sealed.
+*   `obj`
+    *   : The object which should be sealed.
 
 ### Return value
 
@@ -138,8 +140,8 @@ Object.seal(1);
 
 ## See also
 
-- {{jsxref("Object.isSealed()")}}
-- {{jsxref("Object.preventExtensions()")}}
-- {{jsxref("Object.isExtensible()")}}
-- {{jsxref("Object.freeze()")}}
-- {{jsxref("Object.isFrozen()")}}
+*   {{jsxref("Object.isSealed()")}}
+*   {{jsxref("Object.preventExtensions()")}}
+*   {{jsxref("Object.isExtensible()")}}
+*   {{jsxref("Object.freeze()")}}
+*   {{jsxref("Object.isFrozen()")}}

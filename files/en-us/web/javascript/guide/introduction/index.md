@@ -18,24 +18,24 @@ concepts.
 
 This guide assumes you have the following basic background:
 
-- A general understanding of the Internet and the World Wide Web
-  ([WWW](/en-US/docs/Glossary/World_Wide_Web)).
-- Good working knowledge of HyperText Markup Language
-  ([HTML](/en-US/docs/Glossary/HTML)).
-- Some programming experience. If you are new to programming, try one of the
-  tutorials linked on the main page about
-  [JavaScript](/en-US/docs/Web/JavaScript).
+*   A general understanding of the Internet and the World Wide Web
+    ([WWW](/en-US/docs/Glossary/World_Wide_Web)).
+*   Good working knowledge of HyperText Markup Language
+    ([HTML](/en-US/docs/Glossary/HTML)).
+*   Some programming experience. If you are new to programming, try one of the
+    tutorials linked on the main page about
+    [JavaScript](/en-US/docs/Web/JavaScript).
 
 ## Where to find JavaScript information
 
 The JavaScript documentation on MDN includes the following:
 
-- [Learn Web Development](/en-US/docs/Learn) provides information for beginners
-  and introduces basic concepts of programming and the Internet.
-- [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide) (this guide) provides an
-  overview about the JavaScript language and its objects.
-- [JavaScript Reference](/en-US/docs/Web/JavaScript/Reference) provides detailed
-  reference material for JavaScript.
+*   [Learn Web Development](/en-US/docs/Learn) provides information for beginners
+    and introduces basic concepts of programming and the Internet.
+*   [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide) (this guide) provides an
+    overview about the JavaScript language and its objects.
+*   [JavaScript Reference](/en-US/docs/Web/JavaScript/Reference) provides detailed
+    reference material for JavaScript.
 
 If you are new to JavaScript, start with the articles in the
 [learning area](/en-US/docs/Learn) and the
@@ -60,16 +60,16 @@ JavaScript contains a standard library of objects, such as `Array`, `Date`, and
 structures, and statements. Core JavaScript can be extended for a variety of
 purposes by supplementing it with additional objects; for example:
 
-- _Client-side JavaScript_ extends the core language by supplying objects to
-  control a browser and its _Document Object Model_ (DOM). For example,
-  client-side extensions allow an application to place elements on an HTML form
-  and respond to user events such as mouse clicks, form input, and page
-  navigation.
-- _Server-side JavaScript_ extends the core language by supplying objects
-  relevant to running JavaScript on a server. For example, server-side
-  extensions allow an application to communicate with a database, provide
-  continuity of information from one invocation to another of the application,
-  or perform file manipulations on a server.
+*   *Client-side JavaScript* extends the core language by supplying objects to
+    control a browser and its *Document Object Model* (DOM). For example,
+    client-side extensions allow an application to place elements on an HTML form
+    and respond to user events such as mouse clicks, form input, and page
+    navigation.
+*   *Server-side JavaScript* extends the core language by supplying objects
+    relevant to running JavaScript on a server. For example, server-side
+    extensions allow an application to communicate with a database, provide
+    continuity of information from one invocation to another of the application,
+    or perform file manipulations on a server.
 
 This means that in the browser, JavaScript can change the way the webpage (DOM)
 looks. And, likewise, Node.js JavaScript on the server can respond to custom
@@ -112,7 +112,11 @@ programming tools to a much wider audience because of their easier syntax,
 specialized built-in functionality, and minimal requirements for object
 creation.
 
-<table class="standard-table"><caption>JavaScript compared to Java</caption><thead><tr><th scope="col">JavaScript</th><th scope="col">Java</th></tr></thead><tbody><tr><td>Object-oriented. No distinction between types of objects. Inheritance is through the prototype mechanism, and properties and methods can be added to any object dynamically.</td><td>Class-based. Objects are divided into classes and instances with all inheritance through the class hierarchy. Classes and instances cannot have properties or methods added dynamically.</td></tr><tr><td>Variable data types are not declared (dynamic typing, loosely typed).</td><td>Variable data types must be declared (static typing, strongly typed).</td></tr><tr><td>Cannot automatically write to hard disk.</td><td>Can automatically write to hard disk.</td></tr></tbody></table>
+| JavaScript                                                                                                                                                                   | Java                                                                                                                                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Object-oriented. No distinction between types of objects. Inheritance is through the prototype mechanism, and properties and methods can be added to any object dynamically. | Class-based. Objects are divided into classes and instances with all inheritance through the class hierarchy. Classes and instances cannot have properties or methods added dynamically. |
+| Variable data types are not declared (dynamic typing, loosely typed).                                                                                                        | Variable data types must be declared (static typing, strongly typed).                                                                                                                    |
+| Cannot automatically write to hard disk.                                                                                                                                     | Can automatically write to hard disk.                                                                                                                                                    |
 
 For more information on the differences between JavaScript and Java, see the
 chapter
@@ -152,7 +156,7 @@ ECMAScript. It is useful if you want to implement standards-compliant language
 features in your ECMAScript implementation or engine (such as SpiderMonkey in
 Firefox, or V8 in Chrome).
 
-The ECMAScript document is _not_ intended to help script programmers. Use the
+The ECMAScript document is *not* intended to help script programmers. Use the
 JavaScript documentation for information when writing scripts.
 
 The ECMAScript specification uses terminology and syntax that may be unfamiliar
@@ -170,7 +174,7 @@ This guide includes some JavaScript features which are only currently available
 in the latest versions of Firefox, so using the most recent version of Firefox
 is recommended.
 
-The _Web Console_ tool built into Firefox is useful for experimenting with
+The *Web Console* tool built into Firefox is useful for experimenting with
 JavaScript; you can use it into two modes: single-line input mode, and
 multi-line input mode.
 
@@ -188,7 +192,7 @@ The Web Console appears at the bottom of the browser window. Along the bottom of
 the console is an input line that you can use to enter JavaScript, and the
 output appears in the panel above:
 
-![](2019-04-04_00-15-29.png)
+![](2019-04-04\_00-15-29.png)
 
 The console works the exact same way as `eval`: the last expression entered is
 returned. For the sake of simplicity, it can be imagined that every time

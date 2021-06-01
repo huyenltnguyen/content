@@ -89,8 +89,8 @@ console.log(popped); // 'sturgeon'
 
 ## See also
 
-- {{jsxref("Array.prototype.push()")}}
-- {{jsxref("Array.prototype.shift()")}}
-- {{jsxref("Array.prototype.unshift()")}}
-- {{jsxref("Array.prototype.concat()")}}
-- {{jsxref("Array.prototype.splice()")}}
+*   {{jsxref("Array.prototype.push()")}}
+*   {{jsxref("Array.prototype.shift()")}}
+*   {{jsxref("Array.prototype.unshift()")}}
+*   {{jsxref("Array.prototype.concat()")}}
+*   {{jsxref("Array.prototype.splice()")}}

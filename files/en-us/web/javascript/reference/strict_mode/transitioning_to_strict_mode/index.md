@@ -29,25 +29,25 @@ transition code to strict mode down to the function granularity.
 When adding `'use strict';`, the following cases will throw a
 {{jsxref("SyntaxError")}} before the script is executing:
 
-- Octal syntax `var n = 023;`
-- [`with`](/en-US/docs/Web/JavaScript/Reference/Statements/with) statement
-- Using [`delete`](/en-US/docs/Web/JavaScript/Reference/Operators/delete) on a
-  variable name `delete myVariable`;
-- Using [`eval`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) or
-  [`arguments`](/en-US/docs/Web/JavaScript/Reference/Functions/arguments) as
-  variable or function argument name
-- Using one of the newly
-  [reserved keywords](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords)
-  (in prevision for ECMAScript 2015): `implements`, `interface`, `let`,
-  `package`, `private`, `protected`, `public`, `static`, and `yield`
-- Declaring function in blocks `if (a < b) { function f() {} }`
-- Obvious errors
+*   Octal syntax `var n = 023;`
+*   [`with`](/en-US/docs/Web/JavaScript/Reference/Statements/with) statement
+*   Using [`delete`](/en-US/docs/Web/JavaScript/Reference/Operators/delete) on a
+    variable name `delete myVariable`;
+*   Using [`eval`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) or
+    [`arguments`](/en-US/docs/Web/JavaScript/Reference/Functions/arguments) as
+    variable or function argument name
+*   Using one of the newly
+    [reserved keywords](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords)
+    (in prevision for ECMAScript 2015): `implements`, `interface`, `let`,
+    `package`, `private`, `protected`, `public`, `static`, and `yield`
+*   Declaring function in blocks `if (a < b) { function f() {} }`
+*   Obvious errors
 
-  - Declaring twice the same name for a property name in an object literal
-    `{a: 1, b: 3, a: 7}` This is no longer the case in ECMAScript
-    2015 ([bug 1041128](https://bugzilla.mozilla.org/show_bug.cgi?id=1041128)).
-  - Declaring two function parameters with the same name
-    `function f(a, b, b) {}`
+    *   Declaring twice the same name for a property name in an object literal
+        `{a: 1, b: 3, a: 7}` This is no longer the case in ECMAScript
+        2015 ([bug 1041128](https://bugzilla.mozilla.org/show_bug.cgi?id=1041128)).
+    *   Declaring two function parameters with the same name
+        `function f(a, b, b) {}`
 
 These errors are good, because they reveal plain errors or bad practices. They
 occur before the code is running.
@@ -183,4 +183,4 @@ make your code strictness-neutral:
 
 ## See also
 
-- [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+*   [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)

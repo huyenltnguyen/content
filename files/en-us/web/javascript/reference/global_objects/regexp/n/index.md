@@ -43,7 +43,7 @@ included in the regular expression, the script interprets `$n`'s literally
 The following script uses the
 {{jsxref("String.prototype.replace()", "replace()")}} method
 of the {{jsxref("String")}} instance to match a name in the format
-_first last_ and output it in the format _last, first_. In the replacement text,
+*first last* and output it in the format *last, first*. In the replacement text,
 the script uses `$1` and `$2` to indicate the results of the corresponding
 matching parentheses in the regular expression pattern.
 
@@ -82,8 +82,8 @@ otherwise the result might be unexpected.
 
 ## See also
 
-- {{jsxref("RegExp.input", "RegExp.input ($_)")}}
-- {{jsxref("RegExp.lastMatch", "RegExp.lastMatch ($&amp;)")}}
-- {{jsxref("RegExp.lastParen", "RegExp.lastParen ($+)")}}
-- {{jsxref("RegExp.leftContext", "RegExp.leftContext ($`)")}}
-- {{jsxref("RegExp.rightContext", "RegExp.rightContext ($')")}}
+*   {{jsxref("RegExp.input", "RegExp.input ($_)")}}
+*   {{jsxref("RegExp.lastMatch", "RegExp.lastMatch ($&amp;)")}}
+*   {{jsxref("RegExp.lastParen", "RegExp.lastParen ($+)")}}
+*   {{jsxref("RegExp.leftContext", "RegExp.leftContext ($`)")}}
+*   {{jsxref("RegExp.rightContext", "RegExp.rightContext ($')")}}

@@ -63,5 +63,5 @@ var str = 'Hello, '
 
 ## See also
 
-- [Assignment operators](/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators)
-- [Comparison operators](/en-US/docs/Web/JavaScript/Reference/Operators)
+*   [Assignment operators](/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators)
+*   [Comparison operators](/en-US/docs/Web/JavaScript/Reference/Operators)

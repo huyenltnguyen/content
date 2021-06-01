@@ -77,4 +77,4 @@ class ClassWithPrivateField {
 
 ## See also
 
-- {{jsxref("SyntaxError")}}
+*   {{jsxref("SyntaxError")}}

@@ -12,7 +12,7 @@ browser-compat: javascript.builtins.Object.entries
 {{JSRef}}
 
 The **`Object.entries()`** method returns an array of a given object's own
-enumerable string-keyed property <code>[<var>key</var>, <var>value</var>]</code>
+enumerable string-keyed property <code>\[<var>key</var>, <var>value</var>]</code>
 pairs, in the same order as that provided by a
 {{jsxref("Statements/for...in", "for...in")}} loop. (The only
 important difference is that a `for...in` loop enumerates properties in the
@@ -27,24 +27,26 @@ should be sorted first, like
 
 ## Syntax
 
-<pre class="brush: js">Object.entries(<var>obj</var>)</pre>
+```js
+Object.entries(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object whose own enumerable string-keyed property
-    <code>[<var>key</var>, <var>value</var>]</code> pairs are to be returned.
+*   `obj`
+
+    *   : The object whose own enumerable string-keyed property
+
+        <code>\[<var>key</var>, <var>value</var>]</code> pairs are to be returned.
 
 ### Return value
 
-An array of the given object's own enumerable string-keyed property
-<code>[<var>key</var>, <var>value</var>]</code> pairs.
+An array of the given object's own enumerable string-keyed property <code>\[<var>key</var>, <var>value</var>]</code> pairs.
 
 ## Description
 
 `Object.entries()` returns an array whose elements are arrays corresponding to
-the enumerable string-keyed property <code>[<var>key</var>,
-<var>value</var>]</code> pairs found directly upon `object`. The ordering of the
+the enumerable string-keyed property <code>\[<var>key</var>, <var>value</var>]</code> pairs found directly upon `object`. The ordering of the
 properties is the same as that given by looping over the property values of the
 object manually.
 
@@ -53,13 +55,13 @@ object manually.
 To add compatible `Object.entries()` support in older environments that do not
 natively support it, you can use any of the following:
 
-- a demonstration implementation of `Object.entries` in the
-  [tc39/proposal-object-values-entries](https://github.com/tc39/proposal-object-values-entries) (if
-  you don't need any support for IE);
-- a polyfill in the
-  [es-shims/Object.entries](https://github.com/es-shims/Object.entries)
-  repositories;
-- or, you can use the simple, ready-to-deploy polyfill listed below:
+*   a demonstration implementation of `Object.entries` in the
+    [tc39/proposal-object-values-entries](https://github.com/tc39/proposal-object-values-entries) (if
+    you don't need any support for IE);
+*   a polyfill in the
+    [es-shims/Object.entries](https://github.com/es-shims/Object.entries)
+    repositories;
+*   or, you can use the simple, ready-to-deploy polyfill listed below:
 
 ```js
 if (!Object.entries) {
@@ -149,15 +151,15 @@ Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`)); 
 
 ## See also
 
-- A polyfill of `Object.entries` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
-- {{jsxref("Object.keys()")}}
-- {{jsxref("Object.values()")}}
-- {{jsxref("Object.prototype.propertyIsEnumerable()")}}
-- {{jsxref("Object.create()")}}
-- {{jsxref("Object.fromEntries()")}}
-- {{jsxref("Object.getOwnPropertyNames()")}}
-- {{jsxref("Map.prototype.entries()")}}
-- {{jsxref("Map.prototype.keys()")}}
-- {{jsxref("Map.prototype.values()")}}
+*   A polyfill of `Object.entries` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+*   {{jsxref("Object.keys()")}}
+*   {{jsxref("Object.values()")}}
+*   {{jsxref("Object.prototype.propertyIsEnumerable()")}}
+*   {{jsxref("Object.create()")}}
+*   {{jsxref("Object.fromEntries()")}}
+*   {{jsxref("Object.getOwnPropertyNames()")}}
+*   {{jsxref("Map.prototype.entries()")}}
+*   {{jsxref("Map.prototype.keys()")}}
+*   {{jsxref("Map.prototype.values()")}}

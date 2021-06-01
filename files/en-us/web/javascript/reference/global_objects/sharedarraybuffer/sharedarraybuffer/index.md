@@ -32,8 +32,8 @@ new SharedArrayBuffer(length)
 
 ### Parameters
 
-- `length` {{optional_inline}}
-  - : The size, in bytes, of the array buffer to create.
+*   `length` {{optional_inline}}
+    *   : The size, in bytes, of the array buffer to create.
 
 ### Return value
 
@@ -69,6 +69,6 @@ var sab = new SharedArrayBuffer(1024);
 
 ## See also
 
-- {{jsxref("Atomics")}}
-- {{jsxref("ArrayBuffer")}}
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("Atomics")}}
+*   {{jsxref("ArrayBuffer")}}
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)

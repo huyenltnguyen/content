@@ -17,10 +17,12 @@ loop with the next iteration.
 
 ## Syntax
 
-<pre class="brush: js">continue [<var>label</var>];</pre>
+```js
+continue [label];
+```
 
-- `label`
-  - : Identifier associated with the label of the statement.
+*   `label`
+    *   : Identifier associated with the label of the statement.
 
 ## Description
 
@@ -28,13 +30,13 @@ In contrast to the {{jsxref("Statements/break", "break")}}
 statement, `continue` does not terminate the execution of the loop entirely:
 instead,
 
-- In a {{jsxref("Statements/while", "while")}} loop, it jumps back
-  to the condition.
+*   In a {{jsxref("Statements/while", "while")}} loop, it jumps back
+    to the condition.
 
 <!---->
 
-- In a {{jsxref("Statements/for", "for")}} loop, it jumps to the
-  update expression.
+*   In a {{jsxref("Statements/for", "for")}} loop, it jumps to the
+    update expression.
 
 The `continue` statement can include an optional label that allows the program
 to jump to the next iteration of a labeled loop statement instead of the current
@@ -139,5 +141,5 @@ j = 4
 
 ## See also
 
-- {{jsxref("Statements/break", "break")}}
-- {{jsxref("Statements/label", "label", "", 1)}}
+*   {{jsxref("Statements/break", "break")}}
+*   {{jsxref("Statements/label", "label", "", 1)}}

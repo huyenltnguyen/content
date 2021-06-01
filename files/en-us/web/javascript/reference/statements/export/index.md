@@ -32,37 +32,39 @@ There are two types of exports:
 1.  Named Exports (Zero or more exports per module)
 2.  Default Exports (One per module)
 
-<pre class="brush: js">// Exporting individual features
-export let <var>name1</var>, <var>name2</var>, …, <var>nameN</var>; // also var, const
-export let <var>name1</var> = …, <var>name2</var> = …, …, <var>nameN</var>; // also var, const
+```js
+// Exporting individual features
+export let name1, name2, …, nameN; // also var, const
+export let name1 = …, name2 = …, …, nameN; // also var, const
 export function functionName(){...}
 export class ClassName {...}
 
 // Export list
-export { <var>name1</var>, <var>name2</var>, …, <var>nameN</var> };
+export { name1, name2, …, nameN };
 
 // Renaming exports
-export { <var>variable1</var> as <var>name1</var>, <var>variable2</var> as <var>name2</var>, …, <var>nameN</var> };
+export { variable1 as name1, variable2 as name2, …, nameN };
 
 // Exporting destructured assignments with renaming
-export const { <var>name1</var>, <var>name2: bar</var> } = o;
+export const { name1, name2: bar } = o;
 
 // Default exports
-export default <em>expression</em>;
+export default expression;
 export default function (…) { … } // also class, function*
 export default function name1(…) { … } // also class, function*
-export { <var>name1</var> as default, … };
+export { name1 as default, … };
 
 // Aggregating modules
 export * from …; // does not set the default export
 export * as name1 from …; // Draft ECMAScript® 2O21
-export { <var>name1</var>, <var>name2</var>, …, <var>nameN</var> } from …;
-export { <var>import1</var> as <var>name1</var>, <var>import2</var> as <var>name2</var>, …, <var>nameN</var> } from …;
-export { default, … } from …;</pre>
+export { name1, name2, …, nameN } from …;
+export { import1 as name1, import2 as name2, …, nameN } from …;
+export { default, … } from …;
+```
 
-- `nameN`
-  - : Identifier to be exported (so that it can be imported via
-    {{jsxref("Statements/import", "import")}} in another script).
+*   `nameN`
+    *   : Identifier to be exported (so that it can be imported via
+        {{jsxref("Statements/import", "import")}} in another script).
 
 ## Description
 
@@ -113,9 +115,10 @@ console.log(m);        // will log 12
 
 You can also rename named exports to avoid naming conflicts:
 
-<pre class="brush: js">export { <var>myFunction</var> as <var>function1</var>,<var>
-         myVariable</var> as variable };
-</pre>
+```js
+export { myFunction as function1,
+         myVariable as variable };
+```
 
 ### Re-exporting / Aggregating
 
@@ -209,12 +212,12 @@ console.log(foo);    // 4.555806215962888
 
 It is important to note the following:
 
-- You need to include this script in your HTML with a
-  {{htmlelement("script")}} element of type="module", so that it gets
-  recognized as a module and dealt with appropriately.
-- You can't run JS modules via a `file://` URL — you'll get
-  [CORS](/en-US/docs/Web/HTTP/CORS) errors. You need to run it via an HTTP
-  server.
+*   You need to include this script in your HTML with a
+    {{htmlelement("script")}} element of type="module", so that it gets
+    recognized as a module and dealt with appropriately.
+*   You can't run JS modules via a `file://` URL — you'll get
+    [CORS](/en-US/docs/Web/HTTP/CORS) errors. You need to run it via an HTTP
+    server.
 
 ### Using the default export
 
@@ -240,10 +243,10 @@ console.log(cube(3)); // 27
 
 Let's take an example where we have the following hierarchy:
 
-- `childModule1.js`: exporting `myFunction` and `myVariable`
-- `childModule2.js`: exporting `myClass`
-- `parentModule.js`: acting as an aggregator (and doing nothing else)
-- top level module: consuming the exports of `parentModule.js`
+*   `childModule1.js`: exporting `myFunction` and `myVariable`
+*   `childModule2.js`: exporting `myClass`
+*   `parentModule.js`: acting as an aggregator (and doing nothing else)
+*   top level module: consuming the exports of `parentModule.js`
 
 This is what it would look like using code snippets:
 
@@ -285,10 +288,10 @@ import { myFunction, myVariable, myClass } from 'parentModule.js'
 
 ## See also
 
-- {{jsxref("Statements/import", "import")}}
-- [JavaScript modules](/en-US/docs/Web/JavaScript/Guide/Modules) guide
-- [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/),
-  Hacks blog post by Jason Orendorff
-- [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/),
-  Hacks blog post by Lin Clark
-- [Axel Rauschmayer's book: "Exploring JS: Modules"](http://exploringjs.com/es6/ch_modules.html)
+*   {{jsxref("Statements/import", "import")}}
+*   [JavaScript modules](/en-US/docs/Web/JavaScript/Guide/Modules) guide
+*   [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/),
+    Hacks blog post by Jason Orendorff
+*   [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/),
+    Hacks blog post by Lin Clark
+*   [Axel Rauschmayer's book: "Exploring JS: Modules"](http://exploringjs.com/es6/ch_modules.html)

@@ -18,20 +18,20 @@ between the positive x-axis and the ray from (0,0) to the point (x,y), for
 
 ## Syntax
 
-<pre class="brush: js">Math.atan2(<var>y</var>, <var>x</var>)</pre>
+```js
+Math.atan2(y, x)
+```
 
 ### Parameters
 
-- `y`
-  - : The y coordinate of the point.
-- `x`
-  - : The x coordinate of the point
+*   `y`
+    *   : The y coordinate of the point.
+*   `x`
+    *   : The x coordinate of the point
 
 ### Return value
 
-The angle in radians (in <math><semantics><mrow><mo stretchy="false">[</mo>
-<mo>-</mo> <mi>π</mi> <mo>,</mo> <mi>π</mi> <mo stretchy="false">]</mo>
-</mrow><annotation encoding="TeX">[-\pi, \pi]</annotation> </semantics></math>)
+The angle in radians (in <math><semantics><mrow><mo stretchy="false">\[</mo> <mo>-</mo> <mi>π</mi> <mo>,</mo> <mi>π</mi> <mo stretchy="false">]</mo> </mrow><annotation encoding="TeX">\[-\pi, \pi]</annotation> </semantics></math>)
 between the positive x-axis and the ray from (0,0) to the point (x,y).
 
 ## Description
@@ -82,9 +82,9 @@ Math.atan2(±Infinity, +Infinity); // ±PI/4.
 
 ## See also
 
-- {{jsxref("Math.acos()")}}
-- {{jsxref("Math.asin()")}}
-- {{jsxref("Math.atan()")}}
-- {{jsxref("Math.cos()")}}
-- {{jsxref("Math.sin()")}}
-- {{jsxref("Math.tan()")}}
+*   {{jsxref("Math.acos()")}}
+*   {{jsxref("Math.asin()")}}
+*   {{jsxref("Math.atan()")}}
+*   {{jsxref("Math.cos()")}}
+*   {{jsxref("Math.sin()")}}
+*   {{jsxref("Math.tan()")}}

@@ -18,8 +18,9 @@ corresponding bits of either or both operands are `1`s.
 
 ## Syntax
 
-<pre class="brush: js"><code><var>a</var> | <var>b</var></code>
-</pre>
+```js
+a | b
+```
 
 ## Description
 
@@ -34,14 +35,19 @@ After:              10100000000000000110000000000001
 ```
 
 Each bit in the first operand is paired with the corresponding bit in the second
-operand: _first bit_ to _first bit_, _second bit_ to _second bit_, and so on.
+operand: *first bit* to *first bit*, *second bit* to *second bit*, and so on.
 
 The operator is applied to each pair of bits, and the result is constructed
 bitwise.
 
 The truth table for the OR operation is:
 
-<table class="standard-table"><thead><tr><th class="header" scope="col">a</th><th class="header" scope="col">b</th><th class="header" scope="col">a OR b</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></tbody></table>
+| a   | b   | a OR b |
+| --- | --- | ------ |
+| 0   | 0   | 0      |
+| 0   | 1   | 1      |
+| 1   | 0   | 1      |
+| 1   | 1   | 1      |
 
 ```js
 .    9 (base 10) = 00000000000000000000000000001001 (base 2)
@@ -74,5 +80,5 @@ Bitwise ORing any number `x` with `0` yields `x`.
 
 ## See also
 
-- [Bitwise operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise)
-- [Bitwise OR assignment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment)
+*   [Bitwise operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise)
+*   [Bitwise OR assignment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment)

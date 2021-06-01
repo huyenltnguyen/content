@@ -28,33 +28,33 @@ slice(start, end)
 
 ### Parameters
 
-- `start` {{optional_inline}}
+*   `start` {{optional_inline}}
 
-  - : Zero-based index at which to start extraction.
+    *   : Zero-based index at which to start extraction.
 
-    A negative index can be used, indicating an offset from the end of the
-    sequence. `slice(-2)` extracts the last two elements in the sequence.
+        A negative index can be used, indicating an offset from the end of the
+        sequence. `slice(-2)` extracts the last two elements in the sequence.
 
-    If `start` is undefined, `slice` starts from the index `0`.
+        If `start` is undefined, `slice` starts from the index `0`.
 
-    If `start` is greater than the index range of the sequence, an empty array
-    is returned.
+        If `start` is greater than the index range of the sequence, an empty array
+        is returned.
 
-- `end` {{optional_inline}}
+*   `end` {{optional_inline}}
 
-  - : Zero-based index _before_ which to end extraction. `slice` extracts up to
-    but not including `end`. For example, `slice(1,4)` extracts the second
-    element through the fourth element (elements indexed 1, 2, and 3).
+    *   : Zero-based index *before* which to end extraction. `slice` extracts up to
+        but not including `end`. For example, `slice(1,4)` extracts the second
+        element through the fourth element (elements indexed 1, 2, and 3).
 
-    A negative index can be used, indicating an offset from the end of the
-    sequence. `slice(2,-1)` extracts the third element through the
-    second-to-last element in the sequence.
+        A negative index can be used, indicating an offset from the end of the
+        sequence. `slice(2,-1)` extracts the third element through the
+        second-to-last element in the sequence.
 
-    If `end` is omitted, `slice` extracts through the end of the sequence
-    (<code><var>arr</var>.length</code>).
+        If `end` is omitted, `slice` extracts through the end of the sequence
+        (<code><var>arr</var>.length</code>).
 
-    If `end` is greater than the length of the sequence, `slice` extracts
-    through to the end of the sequence (<code><var>arr</var>.length</code>).
+        If `end` is greater than the length of the sequence, `slice` extracts
+        through to the end of the sequence (<code><var>arr</var>.length</code>).
 
 ### Return value
 
@@ -66,13 +66,13 @@ A new array containing the extracted elements.
 from the original array. Elements of the original array are copied into the
 returned array as follows:
 
-- For object `slice` copies object references into the new array. Both the
-  original and new array refer to the same object. If an object changes, the
-  changes are visible to both the new and original arrays.
-- For strings, numbers and booleans (not {{jsxref("String")}},
-  {{jsxref("Number")}} and {{jsxref("Boolean")}} objects),
-  `slice` copies the values into the new array. Changes to the string, number,
-  or boolean in one array do not affect the other array.
+*   For object `slice` copies object references into the new array. Both the
+    original and new array refer to the same object. If an object changes, the
+    changes are visible to both the new and original arrays.
+*   For strings, numbers and booleans (not {{jsxref("String")}},
+    {{jsxref("Number")}} and {{jsxref("Boolean")}} objects),
+    `slice` copies the values into the new array. Changes to the string, number,
+    or boolean in one array do not affect the other array.
 
 If a new element is added to either array, the other array is not affected.
 
@@ -174,6 +174,6 @@ let list1 = list(1, 2, 3) // [1, 2, 3]
 
 ## See also
 
-- {{jsxref("Array.prototype.splice()")}}
-- {{jsxref("Function.prototype.call()")}}
-- {{jsxref("Function.prototype.bind()")}}
+*   {{jsxref("Array.prototype.splice()")}}
+*   {{jsxref("Function.prototype.call()")}}
+*   {{jsxref("Function.prototype.bind()")}}

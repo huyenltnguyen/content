@@ -28,8 +28,8 @@ setUTCDate(dayValue)
 
 ### Parameters
 
-- `dayValue`
-  - : An integer from 1 to 31, representing the day of the month.
+*   `dayValue`
+    *   : An integer from 1 to 31, representing the day of the month.
 
 ### Return value
 
@@ -63,5 +63,5 @@ theBigDay.setUTCDate(20);
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCDate()")}}
-- {{jsxref("Date.prototype.setDate()")}}
+*   {{jsxref("Date.prototype.getUTCDate()")}}
+*   {{jsxref("Date.prototype.setDate()")}}

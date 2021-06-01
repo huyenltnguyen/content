@@ -29,9 +29,9 @@ fontsize(size)
 
 ### Parameters
 
-- `size`
-  - : An integer between 1 and 7, a string representing a signed integer between
-    1 and 7.
+*   `size`
+    *   : An integer between 1 and 7, a string representing a signed integer between
+        1 and 7.
 
 ### Return value
 
@@ -77,7 +77,7 @@ document.getElementById('yourElemId').style.fontSize = '0.7em';
 
 ## See also
 
-- A polyfill of `String.prototype.fontsize` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.big()")}}
-- {{jsxref("String.prototype.small()")}}
+*   A polyfill of `String.prototype.fontsize` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.big()")}}
+*   {{jsxref("String.prototype.small()")}}

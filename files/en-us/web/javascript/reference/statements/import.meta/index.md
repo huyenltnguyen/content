@@ -101,5 +101,5 @@ HTML file path) (or on Node.js, through `process.argv`).
 
 ## See also
 
-- {{JSxRef("Statements/import", "import")}}
-- {{JSxRef("Statements/export", "export")}}
+*   {{JSxRef("Statements/import", "import")}}
+*   {{JSxRef("Statements/export", "export")}}

@@ -87,6 +87,6 @@ x = null;
 
 ## See also
 
-- [`delete`](/en-US/docs/Web/JavaScript/Reference/Operators/delete)
-- [Memory management](/en-US/docs/Web/JavaScript/Memory_Management)
-- [TypeError: property "x" is non-configurable and can't be deleted](/en-US/docs/Web/JavaScript/Reference/Errors/Cant_delete)
+*   [`delete`](/en-US/docs/Web/JavaScript/Reference/Operators/delete)
+*   [Memory management](/en-US/docs/Web/JavaScript/Memory_Management)
+*   [TypeError: property "x" is non-configurable and can't be deleted](/en-US/docs/Web/JavaScript/Reference/Errors/Cant_delete)

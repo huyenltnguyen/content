@@ -38,8 +38,8 @@ Array.of(element0, element1, ... , elementN)
 
 ### Parameters
 
-- <code><var>element<em>N</em></var></code>
-  - : Elements used to create the array.
+*   <code><var>element<em>N</em></var></code>
+    *   : Elements used to create the array.
 
 ### Return value
 
@@ -51,9 +51,9 @@ This function is part of the ECMAScript 2015 standard.
 
 For more information, see:
 
-- [`Array.of()`](https://gist.github.com/rwaldron/1074126)
-- [`Array.from()` proposal](https://gist.github.com/rwaldron/1074126)
-- [`Array.of()` polyfill](https://gist.github.com/rwaldron/3186576)
+*   [`Array.of()`](https://gist.github.com/rwaldron/1074126)
+*   [`Array.from()` proposal](https://gist.github.com/rwaldron/1074126)
+*   [`Array.of()` polyfill](https://gist.github.com/rwaldron/3186576)
 
 ## Examples
 
@@ -75,9 +75,9 @@ Array.of(undefined); // [undefined]
 
 ## See also
 
-- A polyfill of `Array.of` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
-- {{jsxref("Array")}}
-- {{jsxref("Array.from()")}}
-- {{jsxref("TypedArray.of()")}}
+*   A polyfill of `Array.of` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+*   {{jsxref("Array")}}
+*   {{jsxref("Array.from()")}}
+*   {{jsxref("TypedArray.of()")}}

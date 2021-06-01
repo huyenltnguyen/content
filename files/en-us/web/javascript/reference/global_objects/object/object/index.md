@@ -12,24 +12,26 @@ browser-compat: javascript.builtins.Object.Object
 
 The **`Object` constructor** creates an object wrapper for the given value.
 
-- If the value is {{jsxref("null")}} or {{jsxref("undefined")}},
-  it will create and return an empty object.
-- Otherwise, it will return an object of a Type that corresponds to the given
-  value.
-- If the value is an object already, it will return the value.
+*   If the value is {{jsxref("null")}} or {{jsxref("undefined")}},
+    it will create and return an empty object.
+*   Otherwise, it will return an object of a Type that corresponds to the given
+    value.
+*   If the value is an object already, it will return the value.
 
 When called in a non-constructor context, `Object` behaves identically to
 `new Object()`.
 
 ## Syntax
 
-<pre class="brush: js">new Object()
-new Object(<var>value</var>)</pre>
+```js
+new Object()
+new Object(value)
+```
 
 ### Parameters
 
-- `value`
-  - : Any value.
+*   `value`
+    *   : Any value.
 
 ## Examples
 
@@ -69,4 +71,4 @@ let o = new Object(null)
 
 ## See also
 
-- [Object initializer](/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+*   [Object initializer](/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)

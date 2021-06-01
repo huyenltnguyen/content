@@ -30,8 +30,8 @@ format(list)
 
 ### Parameters
 
-- `list`
-  - : An iterable object, such as an Array.
+*   `list`
+    *   : An iterable object, such as an Array.
 
 ### Return value
 
@@ -74,4 +74,4 @@ const list = ['Motorcycle', 'Bus', 'Car'];
 
 ## See also
 
-- {{jsxref("Intl.ListFormat")}}
+*   {{jsxref("Intl.ListFormat")}}

@@ -66,11 +66,11 @@ console.log(eArr.next().value); // [4, 50]
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.entries` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- {{jsxref("TypedArray")}}
-- {{jsxref("TypedArray.prototype.keys()")}}
-- {{jsxref("TypedArray.prototype.values()")}}
-- {{jsxref("TypedArray.prototype.@@iterator()",
+*   A polyfill of `TypedArray.prototype.entries` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("TypedArray")}}
+*   {{jsxref("TypedArray.prototype.keys()")}}
+*   {{jsxref("TypedArray.prototype.values()")}}
+*   {{jsxref("TypedArray.prototype.@@iterator()",
     "TypedArray.prototype[@@iterator]()")}}

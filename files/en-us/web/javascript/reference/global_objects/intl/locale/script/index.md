@@ -64,5 +64,5 @@ console.log(scriptObj.script); // Prints "Latn"
 
 ## See also
 
-- {{jsxref("Intl.Locale")}}
-- [Unicode's script subtag specification](https://www.unicode.org/reports/tr35/#unicode_script_subtag_validity)
+*   {{jsxref("Intl.Locale")}}
+*   [Unicode's script subtag specification](https://www.unicode.org/reports/tr35/#unicode_script_subtag_validity)

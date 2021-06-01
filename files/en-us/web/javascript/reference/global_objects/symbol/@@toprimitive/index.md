@@ -16,8 +16,9 @@ value.
 
 ## Syntax
 
-<pre class="brush: js">Symbol()[Symbol.toPrimitive](<var>hint</var>)
-</pre>
+```js
+Symbol()[Symbol.toPrimitive](hint)
+```
 
 ### Return value
 
@@ -53,4 +54,4 @@ sym === sym[Symbol.toPrimitive](); // true
 
 ## See also
 
-- {{jsxref("Symbol.toPrimitive")}}
+*   {{jsxref("Symbol.toPrimitive")}}

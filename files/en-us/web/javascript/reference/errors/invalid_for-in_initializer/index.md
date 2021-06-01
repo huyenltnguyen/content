@@ -91,8 +91,8 @@ for (var i = 2; i < arr.length; i++) {
 
 ## See also
 
-- [`for...in`](/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
-- [`for...of`](/en-US/docs/Web/JavaScript/Reference/Statements/for...of) – also
-  disallows an initializer in both strict and non-strict mode.
-- [`for`](/en-US/docs/Web/JavaScript/Reference/Statements/for) – preferred for
-  array iteration, allows to define an initializer.
+*   [`for...in`](/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+*   [`for...of`](/en-US/docs/Web/JavaScript/Reference/Statements/for...of) – also
+    disallows an initializer in both strict and non-strict mode.
+*   [`for`](/en-US/docs/Web/JavaScript/Reference/Statements/for) – preferred for
+    array iteration, allows to define an initializer.

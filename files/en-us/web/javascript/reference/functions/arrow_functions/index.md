@@ -18,23 +18,23 @@ but is limited and can't be used in all situations.
 
 **Differences & Limitations:**
 
-- Does not have its own bindings to
-  [`this`](/en-US/docs/Web/JavaScript/Reference/Operators/this) or
-  [`super`](/en-US/docs/Web/JavaScript/Reference/Operators/super), and should
-  not be used as [`methods`](/en-US/docs/Glossary/Method).
-- Does not have
-  [`arguments`](/en-US/docs/Web/JavaScript/Reference/Functions/arguments), or
-  [`new.target`](/en-US/docs/Web/JavaScript/Reference/Operators/new.target) keywords.
-- Not suitable for
-  [`call`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call),
-  [`apply`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
-  and
-  [`bind`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
-  methods, which generally rely on establishing a
-  [scope](/en-US/docs/Glossary/Scope).
-- Can not be used as [constructors](/en-US/docs/Glossary/constructor).
-- Can not use [`yield`](/en-US/docs/Web/JavaScript/Reference/Operators/yield),
-  within its body.
+*   Does not have its own bindings to
+    [`this`](/en-US/docs/Web/JavaScript/Reference/Operators/this) or
+    [`super`](/en-US/docs/Web/JavaScript/Reference/Operators/super), and should
+    not be used as [`methods`](/en-US/docs/Glossary/Method).
+*   Does not have
+    [`arguments`](/en-US/docs/Web/JavaScript/Reference/Functions/arguments), or
+    [`new.target`](/en-US/docs/Web/JavaScript/Reference/Operators/new.target) keywords.
+*   Not suitable for
+    [`call`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call),
+    [`apply`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+    and
+    [`bind`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+    methods, which generally rely on establishing a
+    [scope](/en-US/docs/Glossary/Scope).
+*   Can not be used as [constructors](/en-US/docs/Glossary/constructor).
+*   Can not use [`yield`](/en-US/docs/Web/JavaScript/Reference/Operators/yield),
+    within its body.
 
 {{EmbedInteractiveExample("pages/js/functions-arrow.html")}}
 
@@ -553,4 +553,4 @@ setTimeout( () => {
 
 ## See also
 
-- ["ES6 In Depth: Arrow functions" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
+*   ["ES6 In Depth: Arrow functions" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)

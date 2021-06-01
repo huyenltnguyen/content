@@ -21,12 +21,14 @@ chain as well.)
 
 ## Syntax
 
-<pre class="brush: js">Object.values(<var>obj</var>)</pre>
+```js
+Object.values(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object whose enumerable own property values are to be returned.
+*   `obj`
+    *   : The object whose enumerable own property values are to be returned.
 
 ### Return value
 
@@ -82,11 +84,11 @@ console.log(Object.values('foo')); // ['f', 'o', 'o']
 
 ## See also
 
-- A polyfill of `Object.values` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
-- {{jsxref("Object.keys()")}}
-- {{jsxref("Object.entries()")}}
-- {{jsxref("Object.prototype.propertyIsEnumerable()")}}
-- {{jsxref("Object.create()")}}
-- {{jsxref("Object.getOwnPropertyNames()")}}
+*   A polyfill of `Object.values` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+*   {{jsxref("Object.keys()")}}
+*   {{jsxref("Object.entries()")}}
+*   {{jsxref("Object.prototype.propertyIsEnumerable()")}}
+*   {{jsxref("Object.create()")}}
+*   {{jsxref("Object.getOwnPropertyNames()")}}

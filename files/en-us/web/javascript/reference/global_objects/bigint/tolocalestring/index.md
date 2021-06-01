@@ -33,8 +33,9 @@ used. In implementations that ignore the `locales` and `options` arguments, the
 locale used and the form of the string returned are entirely
 implementation-dependent.
 
-<div>See the <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat/NumberFormat"><code>Intl.NumberFormat()</code>
-constructor</a> for details on these parameters and how to use them.</div>
+See the
+[`Intl.NumberFormat()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat/NumberFormat)
+for details on these parameters and how to use them.
 
 ### Return value
 
@@ -67,13 +68,14 @@ to get the format of the language used in the user interface of your
 application, make sure to specify that language (and possibly some fallback
 languages) using the `locales` argument:
 
-<pre class="brush: js">var bigint = 123456789123456789n;
+```js
+var bigint = 123456789123456789n;
 
 // German uses period for thousands
 console.log(bigint.toLocaleString('de-DE'));
 // → 123.456.789.123.456.789
 
-// Arabic in most Arabic speaking countries uses <a href="https://en.wikipedia.org/wiki/Eastern_Arabic_numerals">Eastern Arabic</a> digits
+// Arabic in most Arabic speaking countries uses Eastern Arabic digits
 console.log(bigint.toLocaleString('ar-EG'));
 // → ١٢٣٬٤٥٦٬٧٨٩٬١٢٣٬٤٥٦٬٧٨٩
 
@@ -89,7 +91,7 @@ console.log(bigint.toLocaleString('zh-Hans-CN-u-nu-hanidec'));
 // Balinese, include a fallback language, in this case Indonesian
 console.log(bigint.toLocaleString(['ban', 'id']));
 // → 123.456.789.123.456.789
-</pre>
+```
 
 ### Using `options`
 
@@ -122,4 +124,4 @@ console.log(bigint.toLocaleString('en-IN', { maximumSignificantDigits: 3 }));
 
 ## See also
 
-- {{jsxref("BigInt.toString()")}}
+*   {{jsxref("BigInt.toString()")}}

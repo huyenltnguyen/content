@@ -17,8 +17,9 @@ operand is the dividend and the right operand is the divisor.
 
 ## Syntax
 
-<pre class="brush: js"><strong>Operator:</strong> <var>x</var> / <var>y</var>
-</pre>
+```js
+Operator: x / y
+```
 
 ## Examples
 
@@ -52,12 +53,12 @@ Math.floor(3 / 2) // 1
 
 ## See also
 
-- [Addition operator](/en-US/docs/Web/JavaScript/Reference/Operators/Addition)
-- [Subtraction operator](/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction)
-- [Multiplication operator](/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication)
-- [Remainder operator](/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
-- [Exponentiation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)
-- [Increment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Increment)
-- [Decrement operator](/en-US/docs/Web/JavaScript/Reference/Operators/Decrement)
-- [Unary negation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation)
-- [Unary plus operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus)
+*   [Addition operator](/en-US/docs/Web/JavaScript/Reference/Operators/Addition)
+*   [Subtraction operator](/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction)
+*   [Multiplication operator](/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication)
+*   [Remainder operator](/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
+*   [Exponentiation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)
+*   [Increment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Increment)
+*   [Decrement operator](/en-US/docs/Web/JavaScript/Reference/Operators/Decrement)
+*   [Unary negation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation)
+*   [Unary plus operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus)

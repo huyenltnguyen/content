@@ -17,24 +17,25 @@ The **`handler.defineProperty()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  defineProperty: function(<var>target</var>, <var>property</var>, <var>descriptor</var>) {
+```js
+const p = new Proxy(target, {
+  defineProperty: function(target, property, descriptor) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameters are passed to the `defineProperty()` method. `this` is
 bound to the handler.
 
-- `target`
-  - : The target object.
-- `property`
-  - : The name or {{jsxref("Symbol")}} of the property whose description
-    is to be retrieved.
-- `descriptor`
-  - : The descriptor for the property being defined or modified.
+*   `target`
+    *   : The target object.
+*   `property`
+    *   : The name or {{jsxref("Symbol")}} of the property whose description
+        is to be retrieved.
+*   `descriptor`
+    *   : The descriptor for the property being defined or modified.
 
 ### Return value
 
@@ -50,28 +51,30 @@ The **`handler.defineProperty()`** method is a trap for
 
 This trap can intercept these operations:
 
-- {{jsxref("Object.defineProperty()")}}
-- {{jsxref("Reflect.defineProperty()")}}
+*   {{jsxref("Object.defineProperty()")}}
+*   {{jsxref("Reflect.defineProperty()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- A property cannot be added, if the target object is not extensible.
-- A property cannot be added as or modified to be non-configurable, if it does
-  not exists as a non-configurable own property of the target object.
-- A property may not be non-configurable, if a corresponding configurable
-  property of the target object exists.
-- If a property has a corresponding target object property then
+*   A property cannot be added, if the target object is not extensible.
 
-  <code>Object.defineProperty(<var>target</var>, <var>prop</var>,
-  <var>descriptor</var>)</code>
+*   A property cannot be added as or modified to be non-configurable, if it does
+    not exists as a non-configurable own property of the target object.
 
-  will not throw an exception.
+*   A property may not be non-configurable, if a corresponding configurable
+    property of the target object exists.
 
-- In strict mode, a `false` return value from the `defineProperty()` handler
-  will throw a {{jsxref("TypeError")}} exception.
+*   If a property has a corresponding target object property then
+
+    <code>Object.defineProperty(<var>target</var>, <var>prop</var>, <var>descriptor</var>)</code>
+
+    will not throw an exception.
+
+*   In strict mode, a `false` return value from the `defineProperty()` handler
+    will throw a {{jsxref("TypeError")}} exception.
 
 ## Examples
 
@@ -96,12 +99,12 @@ When calling {{jsxref("Object.defineProperty()")}} or
 `defineProperty()` trap has one restriction—only following properties are usable
 (non-standard properties will be ignored):
 
-- `enumerable`
-- `configurable`
-- `writable`
-- `value`
-- `get`
-- `set`
+*   `enumerable`
+*   `configurable`
+*   `writable`
+*   `value`
+*   `get`
+*   `set`
 
 ```js
 const p = new Proxy({}, {
@@ -127,7 +130,7 @@ Object.defineProperty(p, 'name', {
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Object.defineProperty()")}}
-- {{jsxref("Reflect.defineProperty()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Object.defineProperty()")}}
+*   {{jsxref("Reflect.defineProperty()")}}

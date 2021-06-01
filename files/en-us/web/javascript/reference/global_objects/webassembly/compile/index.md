@@ -27,10 +27,10 @@ WebAssembly.compile(bufferSource)
 
 ### Parameters
 
-- _bufferSource_
-  - : A [typed array](/en-US/docs/Web/JavaScript/Typed_arrays) or
-    [ArrayBuffer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
-    containing the binary code of the .wasm module you want to compile.
+*   *bufferSource*
+    *   : A [typed array](/en-US/docs/Web/JavaScript/Typed_arrays) or
+        [ArrayBuffer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
+        containing the binary code of the .wasm module you want to compile.
 
 ### Return value
 
@@ -39,11 +39,11 @@ object representing the compiled module.
 
 ### Exceptions
 
-- If `bufferSource` is not a
-  [typed array](/en-US/docs/Web/JavaScript/Typed_arrays), a
-  {{jsxref("TypeError")}} is thrown.
-- If compilation fails, the promise rejects with a
-  {{jsxref("WebAssembly.CompileError")}}.
+*   If `bufferSource` is not a
+    [typed array](/en-US/docs/Web/JavaScript/Typed_arrays), a
+    {{jsxref("TypeError")}} is thrown.
+*   If compilation fails, the promise rejects with a
+    {{jsxref("WebAssembly.CompileError")}}.
 
 ## Examples
 
@@ -80,6 +80,6 @@ fetch('simple.wasm').then(response =>
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

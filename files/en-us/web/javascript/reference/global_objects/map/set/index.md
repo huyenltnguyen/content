@@ -25,10 +25,10 @@ set(key, value)
 
 ### Parameters
 
-- `key`
-  - : The key of the element to add to the `Map` object.
-- `value`
-  - : The value of the element to add to the `Map` object.
+*   `key`
+    *   : The key of the element to add to the `Map` object.
+*   `value`
+    *   : The value of the element to add to the `Map` object.
 
 ### Return value
 
@@ -71,6 +71,6 @@ myMap.set('bar', 'foo')
 
 ## See also
 
-- {{jsxref("Map")}}
-- {{jsxref("Map.prototype.get()")}}
-- {{jsxref("Map.prototype.has()")}}
+*   {{jsxref("Map")}}
+*   {{jsxref("Map.prototype.get()")}}
+*   {{jsxref("Map.prototype.has()")}}

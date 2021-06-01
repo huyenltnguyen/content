@@ -15,9 +15,7 @@ A {{jsxref("Function")}} object's read-only **`name`** property indicates
 the function's name as specified when it was created, or it may be either
 `anonymous` or `''` (an empty string) for functions created anonymously.
 
-{{EmbedInteractiveExample("pages/js/function-name.html")}}
-
-{{js_property_attributes(0,0,1)}}
+{{EmbedInteractiveExample("pages/js/function-name.html")}}{{js_property_attributes(0,0,1)}}
 
 > **Note:** In non-standard, pre-ES2015 implementations the `configurable`
 > attribute was `false` as well.
@@ -182,10 +180,10 @@ console.log(fooInstance.constructor.name); // logs "Foo"
 ```
 
 > **Warning:** The script interpreter will set the built-in `Function.name`
-> property only if a function does not have an own property called _name_ (see
+> property only if a function does not have an own property called *name* (see
 > section
 > [9.2.11 of the ECMAScript2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/#sec-setfunctionname)).
-> However, ES2015 specifies the _static_ keyword such that static methods will
+> However, ES2015 specifies the *static* keyword such that static methods will
 > be set as OwnProperty of the class constructor function (ECMAScript2015,
 > [14.5.14.21.b](https://www.ecma-international.org/ecma-262/6.0/#sec-runtime-semantics-classdefinitionevaluation) +
 > [12.2.6.9](https://www.ecma-international.org/ecma-262/6.0/#sec-object-initializer-runtime-semantics-propertydefinitionevaluation)).
@@ -221,8 +219,8 @@ console.log(fooInstance.constructor.name); // logs function name()
 ```
 
 You may also see from the ES5 syntax example that in Chrome or Firefox our
-static definition of `Foo.name` becomes _writable_. The built-in definition in
-the absence of a custom static definition is _read-only_:
+static definition of `Foo.name` becomes *writable*. The built-in definition in
+the absence of a custom static definition is *read-only*:
 
 ```js
 Foo.name = 'Hello';
@@ -259,6 +257,6 @@ o[sym2].name; // ""
 
 ## See also
 
-- A polyfill for functions `.name` property is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-function)
-- {{jsxref("Function")}}
+*   A polyfill for functions `.name` property is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-function)
+*   {{jsxref("Function")}}

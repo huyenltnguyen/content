@@ -20,7 +20,9 @@ computed during the construction of the current
 
 ## Syntax
 
-<pre class="brush: js"><var>listFormat</var>.resolvedOptions()</pre>
+```js
+listFormat.resolvedOptions()
+```
 
 ### Return value
 
@@ -32,19 +34,19 @@ object.
 
 The object returned by `resolvedOptions()` has the following properties:
 
-- `locale`
-  - : The BCP 47 language tag for the locale actually used. If any Unicode
-    extension values were requested in the input BCP 47 language tag that led to
-    this locale, the key-value pairs that were requested and are supported for
-    this locale are included in `locale`.
-- `style`
-  - : The value provided for this property in the `options` argument of the
-    constructor or the default value ("`long`"). Its value is either "`long`",
-    "`short`", or "`narrow`".
-- `type`
-  - : The value provided for this property in the `options` argument of the
-    constructor or the default value ("`conjunction`"). Its value is either
-    "`conjunction`", "`disjunction`", or "`unit`".
+*   `locale`
+    *   : The BCP 47 language tag for the locale actually used. If any Unicode
+        extension values were requested in the input BCP 47 language tag that led to
+        this locale, the key-value pairs that were requested and are supported for
+        this locale are included in `locale`.
+*   `style`
+    *   : The value provided for this property in the `options` argument of the
+        constructor or the default value ("`long`"). Its value is either "`long`",
+        "`short`", or "`narrow`".
+*   `type`
+    *   : The value provided for this property in the `options` argument of the
+        constructor or the default value ("`conjunction`"). Its value is either
+        "`conjunction`", "`disjunction`", or "`unit`".
 
 ## Examples
 
@@ -69,12 +71,12 @@ console.log(usedOptions.type);   // "conjunction" (the default value)
 
 ## See also
 
-- {{jsxref("Intl.ListFormat")}}
-- {{jsxref("Intl/NumberFormat/resolvedOptions",
+*   {{jsxref("Intl.ListFormat")}}
+*   {{jsxref("Intl/NumberFormat/resolvedOptions",
 		"Intl.NumberFormat.prototype.resolvedOptions()")}}
-- {{jsxref("Intl/Collator/resolvedOptions",
+*   {{jsxref("Intl/Collator/resolvedOptions",
 		"Intl.Collator.prototype.resolvedOptions()")}}
-- {{jsxref("Intl/DateTimeFormat/resolvedOptions",
+*   {{jsxref("Intl/DateTimeFormat/resolvedOptions",
 		"Intl.DateTimeFormat.prototype.resolvedOptions()")}}
-- {{jsxref("Intl/PluralRules/resolvedOptions",
+*   {{jsxref("Intl/PluralRules/resolvedOptions",
 		"Intl.PluralRules.prototype.resolvedOptions()")}}

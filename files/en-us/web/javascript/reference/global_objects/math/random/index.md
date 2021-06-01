@@ -20,7 +20,7 @@ generation algorithm; it cannot be chosen or reset by the user.
 
 {{EmbedInteractiveExample("pages/js/math-random.html")}}
 
-> **Note:** `Math.random()` _does not_ provide cryptographically secure random
+> **Note:** `Math.random()` *does not* provide cryptographically secure random
 > numbers. Do not use them for anything related to security. Use the Web Crypto
 > API instead, and more precisely the
 > {{domxref("Crypto.getRandomValues",
@@ -43,7 +43,7 @@ A floating-point, pseudo-random number between `0` (inclusive) and 1
 Note that as numbers in JavaScript are IEEE 754 floating point numbers with
 round-to-nearest-even behavior, the ranges claimed for the functions below
 (excluding the one for `Math.random()` itself) aren't exact. If extremely large
-bounds are chosen (2^53 or higher), it's possible in _extremely_ rare cases to
+bounds are chosen (2^53 or higher), it's possible in *extremely* rare cases to
 calculate the usually-excluded upper bound.
 
 ### Getting a random number between 0 (inclusive) and 1 (exclusive)
@@ -68,7 +68,7 @@ function getRandomArbitrary(min, max) {
 
 ### Getting a random integer between two values
 
-This example returns a random _integer_ between the specified values. The value
+This example returns a random *integer* between the specified values. The value
 is no lower than `min` (or the next integer greater than `min` if `min` isn't an
 integer), and is less than (but not equal to) `max`.
 
@@ -109,4 +109,4 @@ function getRandomIntInclusive(min, max) {
 
 ## See also
 
-- {{domxref("Crypto.getRandomValues", "window.crypto.getRandomValues()")}}
+*   {{domxref("Crypto.getRandomValues", "window.crypto.getRandomValues()")}}

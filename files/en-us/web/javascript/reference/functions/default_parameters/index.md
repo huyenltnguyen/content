@@ -11,8 +11,7 @@ browser-compat: javascript.functions.default_parameters
 {{jsSidebar("Functions")}}
 
 <span class="seoSummary"><strong>Default function parameters</strong> allow
-named parameters to be initialized with default values if no value or
-<code>undefined</code> is passed.</span>
+named parameters to be initialized with default values if no value or <code>undefined</code> is passed.</span>
 
 {{EmbedInteractiveExample("pages/js/functions-default.html")}}
 
@@ -32,8 +31,7 @@ In the past, the general strategy for setting defaults was to test parameter
 values in the function body and assign a value if they are `undefined`.
 
 In the following example, if no value is provided for `b` when `multiply` is
-called, `b`'s value would be `undefined` when evaluating <code><var>a</var> \*
-<var>b</var></code> and `multiply` would return `NaN`.
+called, `b`'s value would be `undefined` when evaluating <code><var>a</var> \* <var>b</var></code> and `multiply` would return `NaN`.
 
 ```js
 function multiply(a, b) {
@@ -94,7 +92,7 @@ test(null)       // 'object' (num is set to null)
 
 ### Evaluated at call time
 
-The default argument is evaluated at _call time_. So, unlike (for example)
+The default argument is evaluated at *call time*. So, unlike (for example)
 Python, a new object is created each time the function is called.
 
 ```js
@@ -253,4 +251,4 @@ f()  // 6
 
 ## See also
 
-- [Original proposal at ecmascript.org](http://wiki.ecmascript.org/doku.php?id=harmony:parameter_default_values)
+*   [Original proposal at ecmascript.org](http://wiki.ecmascript.org/doku.php?id=harmony:parameter_default_values)

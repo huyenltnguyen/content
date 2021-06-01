@@ -20,17 +20,18 @@ The static **`Reflect.defineProperty()`** method is like
 
 ## Syntax
 
-<pre class="brush: js">Reflect.defineProperty(<var>target</var>, <var>propertyKey</var>, <var>attributes</var>)
-</pre>
+```js
+Reflect.defineProperty(target, propertyKey, attributes)
+```
 
 ### Parameters
 
-- `target`
-  - : The target object on which to define the property.
-- `propertyKey`
-  - : The name of the property to be defined or modified.
-- `attributes`
-  - : The attributes for the property being defined or modified.
+*   `target`
+    *   : The target object on which to define the property.
+*   `propertyKey`
+    *   : The name of the property to be defined or modified.
+*   `attributes`
+    *   : The attributes for the property being defined or modified.
 
 ### Return value
 
@@ -94,7 +95,7 @@ if (Reflect.defineProperty(target, property, attributes)) {
 
 ## See also
 
-- A polyfill of `Reflect.defineProperty` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- {{jsxref("Object.defineProperty()")}}
+*   A polyfill of `Reflect.defineProperty` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   {{jsxref("Object.defineProperty()")}}

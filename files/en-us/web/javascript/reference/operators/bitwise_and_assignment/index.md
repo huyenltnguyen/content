@@ -19,9 +19,10 @@ the variable.
 
 ## Syntax
 
-<pre class="brush: js"><strong>Operator:</strong> x &#x26;= y
-<strong>Meaning:</strong>  x  = x &#x26; y
-</pre>
+```js
+Operator: x &= y
+Meaning:  x  = x & y
+```
 
 ## Examples
 
@@ -44,5 +45,5 @@ a &= 2; // 0
 
 ## See also
 
-- [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
-- [Bitwise AND operator](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND)
+*   [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
+*   [Bitwise AND operator](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND)

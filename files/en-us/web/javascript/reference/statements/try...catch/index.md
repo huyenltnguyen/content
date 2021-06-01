@@ -29,16 +29,16 @@ finally {
 }
 ```
 
-- <code><em>try_statements</em></code>
-  - : The statements to be executed.
-- <code><em>catch_statements</em></code>
-  - : Statement that is executed if an exception is thrown in the `try`-block.
-- <code><em>exception_var</em></code>
-  - : An optional identifier to hold an exception object for the associated
-    `catch`-block.
-- <code><em>finally_statements</em></code>
-  - : Statements that are executed after the `try` statement completes. These
-    statements execute regardless of whether an exception was thrown or caught.
+*   <code><em>try_statements</em></code>
+    *   : The statements to be executed.
+*   <code><em>catch_statements</em></code>
+    *   : Statement that is executed if an exception is thrown in the `try`-block.
+*   <code><em>exception_var</em></code>
+    *   : An optional identifier to hold an exception object for the associated
+        `catch`-block.
+*   <code><em>finally_statements</em></code>
+    *   : Statements that are executed after the `try` statement completes. These
+        statements execute regardless of whether an exception was thrown or caught.
 
 ## Description
 
@@ -47,9 +47,9 @@ statements. `{}` must always be used, even for single statements. At least one
 `catch`-block, or a `finally`-block, must be present. This gives us three forms
 for the `try` statement:
 
-- `try...catch`
-- `try...finally`
-- `try...catch...finally`
+*   `try...catch`
+*   `try...finally`
+*   `try...catch...finally`
 
 A `catch`-block contains statements that specify what to do if an exception is
 thrown in the `try`-block. If any statement within the `try`-block (or in a
@@ -127,7 +127,7 @@ try {
 
 ### The exception identifier
 
-When an exception is thrown in the `try`-block, _`exception_var`_ (i.e., the `e`
+When an exception is thrown in the `try`-block, *`exception_var`* (i.e., the `e`
 in `catch (e)`) holds the exception value. You can use this identifier to get
 information about the exception that was thrown. This identifier is only
 available in the `catch`-block's {{Glossary("Scope", "scope")}}. If
@@ -279,5 +279,5 @@ same would apply to any value returned from the `catch`-block.
 
 ## See also
 
-- {{jsxref("Error")}}
-- {{jsxref("Statements/throw", "throw")}}
+*   {{jsxref("Error")}}
+*   {{jsxref("Statements/throw", "throw")}}

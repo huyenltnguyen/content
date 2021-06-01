@@ -72,4 +72,4 @@ new RegExp('\n').toString() === '/\\n/'; // true, starting with ES5
 
 ## See also
 
-- {{jsxref("Object.prototype.toString()")}}
+*   {{jsxref("Object.prototype.toString()")}}

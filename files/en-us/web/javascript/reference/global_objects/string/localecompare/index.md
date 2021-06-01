@@ -32,19 +32,19 @@ localeCompare(compareString, locales, options)
 
 ### Parameters
 
-- `compareString`
-  - : The string against which the `referenceStr` is compared.
-- `locales` and `options`
+*   `compareString`
+    *   : The string against which the `referenceStr` is compared.
+*   `locales` and `options`
 
-  - : These arguments customize the behavior of the function and let
-    applications specify the language whose formatting conventions should be
-    used. In implementations which ignore the `locales` and `options` arguments,
-    the locale used and the form of the string returned are entirely
-    implementation-dependent.
+    *   : These arguments customize the behavior of the function and let
+        applications specify the language whose formatting conventions should be
+        used. In implementations which ignore the `locales` and `options` arguments,
+        the locale used and the form of the string returned are entirely
+        implementation-dependent.
 
-    See the
-    [`Intl.Collator()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Collator/Collator)
-    for details on these parameters and how to use them.
+        See the
+        [`Intl.Collator()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Collator/Collator)
+        for details on these parameters and how to use them.
 
 ### Return value
 
@@ -57,9 +57,9 @@ equivalent.
 Returns an integer indicating whether the `referenceStr` comes before, after or
 is equivalent to the `compareString`.
 
-- Negative when the `referenceStr` occurs before `compareString`
-- Positive when the `referenceStr` occurs after `compareString`
-- Returns `0` if they are equivalent
+*   Negative when the `referenceStr` occurs before `compareString`
+*   Positive when the `referenceStr` occurs after `compareString`
+*   Returns `0` if they are equivalent
 
 > **Warning:** Do not rely on exact return values of `-1` or `1`!
 >
@@ -147,15 +147,16 @@ console.log('ä'.localeCompare('a', 'sv', { sensitivity: 'base' })); // a positi
 
 ### Numeric sorting
 
-<pre class="brush: js">// by default, "2" > "10"
-console.log(<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body">"2".localeCompare("10")</span></span></span>); // 1
+```js
+// by default, "2" > "10"
+console.log("2".localeCompare("10")); // 1
 
 // numeric using options:
-console.log(<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body">"2".localeCompare("10", undefined, {numeric: true})</span></span></span>); // -1
+console.log("2".localeCompare("10", undefined, {numeric: true})); // -1
 
 // numeric using locales tag:
-console.log(<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body">"2".localeCompare("10", "en-u-kn-true")</span></span></span>); // -1
-</pre>
+console.log("2".localeCompare("10", "en-u-kn-true")); // -1
+```
 
 ## Specifications
 
@@ -167,4 +168,4 @@ console.log(<span class="message-body-wrapper"><span class="message-flex-body"><
 
 ## See also
 
-- {{jsxref("Global_Objects/Collator", "Intl.Collator")}}
+*   {{jsxref("Global_Objects/Collator", "Intl.Collator")}}

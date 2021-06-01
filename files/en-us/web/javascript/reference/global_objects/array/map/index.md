@@ -39,22 +39,22 @@ map(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callbackFn`
+*   `callbackFn`
 
-  - : Function that is called for every element of `arr`. Each time `callbackFn`
-    executes, the returned value is added to `newArray`.
+    *   : Function that is called for every element of `arr`. Each time `callbackFn`
+        executes, the returned value is added to `newArray`.
 
-    The `callbackFn` function accepts the following arguments:
+        The `callbackFn` function accepts the following arguments:
 
-    - `element`
-      - : The current element being processed in the array.
-    - `index`{{optional_inline}}
-      - : The index of the current element being processed in the array.
-    - `array`{{optional_inline}}
-      - : The array `map` was called upon.
+        *   `element`
+            *   : The current element being processed in the array.
+        *   `index`{{optional_inline}}
+            *   : The index of the current element being processed in the array.
+        *   `array`{{optional_inline}}
+            *   : The array `map` was called upon.
 
-- `thisArg`{{optional_inline}}
-  - : Value to use as `this` when executing `callbackFn`.
+*   `thisArg`{{optional_inline}}
+    *   : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -67,10 +67,10 @@ array, in order, and constructs a new array from the results. `callbackFn` is
 invoked only for indexes of the array which have assigned values (including
 {{jsxref("undefined")}}).
 
-It is _not_ called for missing elements of the array; that is:
+It is *not* called for missing elements of the array; that is:
 
-- indexes that have never been set;
-- indexes which have been deleted.
+*   indexes that have never been set;
+*   indexes which have been deleted.
 
 ### When not to use map()
 
@@ -81,8 +81,8 @@ array is an anti-pattern; use
 
 You shouldn't be using `map` if:
 
-- you're not using the array it returns; and/or
-- you're not returning a value from the callback.
+*   you're not using the array it returns; and/or
+*   you're not returning a value from the callback.
 
 ### Parameters in Detail
 
@@ -320,11 +320,11 @@ While one might expect `[1, 2, 3]`, the actual result is `[1, NaN, NaN]`.
 first is an expression and the second is the radix to the callback function,
 `Array.prototype.map` passes 3 arguments:
 
-- the element
-- the index
-- the array
+*   the element
+*   the index
+*   the array
 
-The third argument is ignored by {{jsxref("parseInt")}}—but _not_ the
+The third argument is ignored by {{jsxref("parseInt")}}—but *not* the
 second one! This is the source of possible confusion.
 
 Here is a concise example of the iteration steps:
@@ -397,8 +397,8 @@ let filteredNumbers = numbers.map(function(num, index) {
 
 ## See also
 
-- A polyfill of `Array.prototype.map` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.forEach()")}}
-- {{jsxref("Map")}} object
-- {{jsxref("Array.from()")}}
+*   A polyfill of `Array.prototype.map` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.forEach()")}}
+*   {{jsxref("Map")}} object
+*   {{jsxref("Array.from()")}}

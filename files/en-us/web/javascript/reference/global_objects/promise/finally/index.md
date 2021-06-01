@@ -25,17 +25,18 @@ This helps to avoid duplicating code in both the promise's
 
 ## Syntax
 
-<pre class="brush: js"><var>p</var>.finally(<var>onFinally</var>);
+```js
+p.finally(onFinally);
 
-<var>p</var>.finally(function() {
+p.finally(function() {
    // settled (fulfilled or rejected)
 });
-</pre>
+```
 
 ### Parameters
 
-- `onFinally`
-  - : A {{jsxref("Function")}} called when the `Promise` is settled.
+*   `onFinally`
+    *   : A {{jsxref("Function")}} called when the `Promise` is settled.
 
 ### Return value
 
@@ -50,19 +51,19 @@ cleanup once the promise is settled, regardless of its outcome.
 The `finally()` method is very similar to calling `.then(onFinally, onFinally)`
 however there are a couple of differences:
 
-- When creating a function inline, you can pass it once, instead of being forced
-  to either declare it twice, or create a variable for it
-- A `finally` callback will not receive any argument, since there's no reliable
-  means of determining if the promise was fulfilled or rejected. This use case
-  is for precisely when you _do not care_ about the rejection reason, or the
-  fulfillment value, and so there's no need to provide it. So for example:
+*   When creating a function inline, you can pass it once, instead of being forced
+    to either declare it twice, or create a variable for it
+*   A `finally` callback will not receive any argument, since there's no reliable
+    means of determining if the promise was fulfilled or rejected. This use case
+    is for precisely when you *do not care* about the rejection reason, or the
+    fulfillment value, and so there's no need to provide it. So for example:
 
-  - Unlike `Promise.resolve(2).then(() => {}, () => {})` (which will be resolved
-    with `undefined`), `Promise.resolve(2).finally(() => {})` will be resolved
-    with `2`.
-  - Similarly, unlike `Promise.reject(3).then(() => {}, () => {})` (which will
-    be fulfilled with `undefined`), `Promise.reject(3).finally(() => {})` will
-    be rejected with `3`.
+    *   Unlike `Promise.resolve(2).then(() => {}, () => {})` (which will be resolved
+        with `undefined`), `Promise.resolve(2).finally(() => {})` will be resolved
+        with `2`.
+    *   Similarly, unlike `Promise.reject(3).then(() => {}, () => {})` (which will
+        be fulfilled with `undefined`), `Promise.reject(3).finally(() => {})` will
+        be rejected with `3`.
 
 > **Note:** A `throw` (or returning a rejected promise) in the `finally`
 > callback will reject the new promise with the rejection reason specified when
@@ -97,8 +98,8 @@ fetch(myRequest).then(function(response) {
 
 ## See also
 
-- A polyfill of `Promise.prototype.finally` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
-- {{jsxref("Promise")}}
-- {{jsxref("Promise.prototype.then()")}}
-- {{jsxref("Promise.prototype.catch()")}}
+*   A polyfill of `Promise.prototype.finally` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
+*   {{jsxref("Promise")}}
+*   {{jsxref("Promise.prototype.then()")}}
+*   {{jsxref("Promise.prototype.catch()")}}

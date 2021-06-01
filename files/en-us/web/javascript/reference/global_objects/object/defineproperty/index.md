@@ -19,17 +19,19 @@ object.
 
 ## Syntax
 
-<pre class="brush: js">Object.defineProperty(<var>obj</var>, <var>prop</var>, <var>descriptor</var>)</pre>
+```js
+Object.defineProperty(obj, prop, descriptor)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object on which to define the property.
-- `prop`
-  - : The name or {{jsxref("Symbol")}} of the property to be defined or
-    modified.
-- `descriptor`
-  - : The descriptor for the property being defined or modified.
+*   `obj`
+    *   : The object on which to define the property.
+*   `prop`
+    *   : The name or {{jsxref("Symbol")}} of the property to be defined or
+        modified.
+*   `descriptor`
+    *   : The descriptor for the property being defined or modified.
 
 ### Return value
 
@@ -47,50 +49,50 @@ method allows these extra details to be changed from their defaults. By default,
 values added using `Object.defineProperty()` are immutable and not enumerable.
 
 Property descriptors present in objects come in two main flavors: data
-descriptors and accessor descriptors. A _<dfn>data descriptor</dfn>_ is a
-property that has a value, which may or may not be writable. An _<dfn>accessor
-descriptor</dfn>_ is a property described by a getter-setter pair of functions.
+descriptors and accessor descriptors. A *<dfn>data descriptor</dfn>* is a
+property that has a value, which may or may not be writable. An *<dfn>accessor
+descriptor</dfn>* is a property described by a getter-setter pair of functions.
 A descriptor must be one of these two flavors; it cannot be both.
 
 Both data and accessor descriptors are objects. They share the following
 optional keys (please note: the **defaults** mentioned here are in the case of
 defining properties using `Object.defineProperty()`):
 
-- `configurable`
-  - : `true` if the type of this property descriptor may be changed and if the
-    property may be deleted from the corresponding object. **Defaults to
-    `false`.**
-- `enumerable`
-  - : `true` if and only if this property shows up during enumeration of the
-    properties on the corresponding object. **Defaults to `false`.**
+*   `configurable`
+    *   : `true` if the type of this property descriptor may be changed and if the
+        property may be deleted from the corresponding object. **Defaults to
+        `false`.**
+*   `enumerable`
+    *   : `true` if and only if this property shows up during enumeration of the
+        properties on the corresponding object. **Defaults to `false`.**
 
 A **data descriptor** also has the following optional keys:
 
-- `value`
-  - : The value associated with the property. Can be any valid JavaScript value
-    (number, object, function, etc). **Defaults to
-    {{jsxref("undefined")}}.**
-- `writable`
-  - : `true` if the value associated with the property may be changed with an
-    {{jsxref("Operators#assignment_operators", "assignment operator", "", 1)}}.
-    **Defaults to `false`.**
+*   `value`
+    *   : The value associated with the property. Can be any valid JavaScript value
+        (number, object, function, etc). **Defaults to
+        {{jsxref("undefined")}}.**
+*   `writable`
+    *   : `true` if the value associated with the property may be changed with an
+        {{jsxref("Operators#assignment_operators", "assignment operator", "", 1)}}.
+        **Defaults to `false`.**
 
 An **accessor descriptor** also has the following optional keys:
 
-- `get`
-  - : A function which serves as a getter for the property, or
-    {{jsxref("undefined")}} if there is no getter. When the property is
-    accessed, this function is called without arguments and with `this` set to
-    the object through which the property is accessed (this may not be the
-    object on which the property is defined due to inheritance). The return
-    value will be used as the value of the property. **Defaults to
-    {{jsxref("undefined")}}.**
-- `set`
-  - : A function which serves as a setter for the property, or
-    {{jsxref("undefined")}} if there is no setter. When the property is
-    assigned, this function is called with one argument (the value being
-    assigned to the property) and with `this` set to the object through which
-    the property is assigned. **Defaults to {{jsxref("undefined")}}.**
+*   `get`
+    *   : A function which serves as a getter for the property, or
+        {{jsxref("undefined")}} if there is no getter. When the property is
+        accessed, this function is called without arguments and with `this` set to
+        the object through which the property is accessed (this may not be the
+        object on which the property is defined due to inheritance). The return
+        value will be used as the value of the property. **Defaults to
+        {{jsxref("undefined")}}.**
+*   `set`
+    *   : A function which serves as a setter for the property, or
+        {{jsxref("undefined")}} if there is no setter. When the property is
+        assigned, this function is called with one argument (the value being
+        assigned to the property) and with `this` set to the object through which
+        the property is assigned. **Defaults to {{jsxref("undefined")}}.**
 
 If a descriptor has neither of `value`, `writable`, `get` and `set` keys, it is
 treated as a data descriptor. If a descriptor has both \[`value` or `writable`]
@@ -542,7 +544,7 @@ and correctly implement redefinition of the
 {{jsxref("Array.length", "length")}} property of arrays. For now,
 don't rely on redefining the {{jsxref("Array.length", "length")}}
 property of an array to either work, or to work in a particular manner. And even
-when you _can_ rely on it,
+when you *can* rely on it,
 [there's really no good reason to do so](http://whereswalden.com/2013/08/05/new-in-firefox-23-the-length-property-of-an-array-can-be-made-non-writable-but-you-shouldnt-do-it/).
 
 ### Internet Explorer 8 specific notes
@@ -551,14 +553,14 @@ Internet Explorer 8 implemented a `Object.defineProperty()` method that could
 [only be used on DOM objects](https://msdn.microsoft.com/en-us/library/dd229916%28VS.85%29.aspx).
 A few things need to be noted:
 
-- Trying to use `Object.defineProperty()` on native objects throws an error.
-- Property attributes must be set to some values. The `configurable`,
-  `enumerable` and `writable` attributes should all be set to `true` for data
-  descriptor and `true` for `configurable`, `false` for `enumerable` for
-  accessor descriptor.(?) Any attempt to provide other value(?) will result in
-  an error being thrown.
-- Reconfiguring a property requires first deleting the property. If the property
-  isn't deleted, it stays as it was before the reconfiguration attempt.
+*   Trying to use `Object.defineProperty()` on native objects throws an error.
+*   Property attributes must be set to some values. The `configurable`,
+    `enumerable` and `writable` attributes should all be set to `true` for data
+    descriptor and `true` for `configurable`, `false` for `enumerable` for
+    accessor descriptor.(?) Any attempt to provide other value(?) will result in
+    an error being thrown.
+*   Reconfiguring a property requires first deleting the property. If the property
+    isn't deleted, it stays as it was before the reconfiguration attempt.
 
 ### Chrome 37 (and below) specific notes
 
@@ -569,13 +571,13 @@ work as expected.
 
 ## See also
 
-- [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
-- {{jsxref("Object.defineProperties()")}}
-- {{jsxref("Object.propertyIsEnumerable()")}}
-- {{jsxref("Object.getOwnPropertyDescriptor()")}}
-- {{jsxref("Object.prototype.watch()")}}
-- {{jsxref("Object.prototype.unwatch()")}}
-- {{jsxref("Functions/get", "get")}}
-- {{jsxref("Functions/set", "set")}}
-- {{jsxref("Object.create()")}}
-- {{jsxref("Reflect.defineProperty()")}}
+*   [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+*   {{jsxref("Object.defineProperties()")}}
+*   {{jsxref("Object.propertyIsEnumerable()")}}
+*   {{jsxref("Object.getOwnPropertyDescriptor()")}}
+*   {{jsxref("Object.prototype.watch()")}}
+*   {{jsxref("Object.prototype.unwatch()")}}
+*   {{jsxref("Functions/get", "get")}}
+*   {{jsxref("Functions/set", "set")}}
+*   {{jsxref("Object.create()")}}
+*   {{jsxref("Reflect.defineProperty()")}}

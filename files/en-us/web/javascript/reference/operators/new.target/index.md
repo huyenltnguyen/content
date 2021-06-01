@@ -47,7 +47,7 @@ In
 
 ## Examples
 
-### new\.target in function calls
+### new.target in function calls
 
 In normal function calls (as opposed to constructor function calls),
 `new.target` is {{jsxref("undefined")}}. This lets you detect whether a
@@ -64,7 +64,7 @@ new Foo()  // logs "Foo instantiated with new"
 Foo()      // throws "Foo() must be called with new"
 ```
 
-### new\.target in constructors
+### new.target in constructors
 
 In class constructors, `new.target` refers to the constructor that was directly
 invoked by `new`. This is also the case if the constructor is in a parent class
@@ -105,7 +105,7 @@ in case of <code>c</code>, the class <code>C</code> was printed.</p>
 
 ## See also
 
-- [Functions](/en-US/docs/Web/JavaScript/Reference/Functions)
-- [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)
-- [`new`](/en-US/docs/Web/JavaScript/Reference/Operators/new)
-- [`this`](/en-US/docs/Web/JavaScript/Reference/Operators/this)
+*   [Functions](/en-US/docs/Web/JavaScript/Reference/Functions)
+*   [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)
+*   [`new`](/en-US/docs/Web/JavaScript/Reference/Operators/new)
+*   [`this`](/en-US/docs/Web/JavaScript/Reference/Operators/this)

@@ -16,7 +16,9 @@ value.
 
 ## Syntax
 
-<pre class="brush: js">Date()[Symbol.toPrimitive](<var>hint</var>);</pre>
+```js
+Date()[Symbol.toPrimitive](hint);
+```
 
 ### Return value
 
@@ -72,4 +74,4 @@ testDate[Symbol.toPrimitive]('default');
 
 ## See also
 
-- {{jsxref("Symbol.toPrimitive")}}
+*   {{jsxref("Symbol.toPrimitive")}}

@@ -73,6 +73,6 @@ let columns;
 
 ## See also
 
-- [`const`](/en-US/docs/Web/JavaScript/Reference/Statements/const)
-- [`let`](/en-US/docs/Web/JavaScript/Reference/Statements/let)
-- [`var`](/en-US/docs/Web/JavaScript/Reference/Statements/var)
+*   [`const`](/en-US/docs/Web/JavaScript/Reference/Statements/const)
+*   [`let`](/en-US/docs/Web/JavaScript/Reference/Statements/let)
+*   [`var`](/en-US/docs/Web/JavaScript/Reference/Statements/var)

@@ -49,7 +49,7 @@ console.log(arr);
 
 ### Unintentional usage
 
-It is a good idea to comment _intentional_ use of the empty statement, as it is
+It is a good idea to comment *intentional* use of the empty statement, as it is
 not really obvious to distinguish from a normal semicolon.
 
 In the following example, the usage is probably not intentional:
@@ -89,4 +89,4 @@ else
 
 ## See also
 
-- {{jsxref("Statements/block", "Block statement")}}
+*   {{jsxref("Statements/block", "Block statement")}}

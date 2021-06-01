@@ -68,5 +68,5 @@ var cheer = function(score) {
 
 ## See also
 
-- [`return`](/en-US/docs/Web/JavaScript/Reference/Statements/return)
-- [`yield`](/en-US/docs/Web/JavaScript/Reference/Operators/yield)
+*   [`return`](/en-US/docs/Web/JavaScript/Reference/Statements/return)
+*   [`yield`](/en-US/docs/Web/JavaScript/Reference/Operators/yield)

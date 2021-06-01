@@ -29,7 +29,12 @@ several different values, which are listed in the table below.
 
 ### Valid hour cycle types
 
-<table class="standard-table"><thead><tr><th scope="col">Hour cycle type</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>h12</code></td><td>Hour system using 1–12; corresponds to 'h' in patterns. The 12 hour clock, with midnight starting at 12:00 am.</td></tr><tr><td><code>h23</code></td><td>Hour system using 0–23; corresponds to 'H' in patterns. The 24 hour clock, with midnight starting at 0:00.</td></tr><tr><td><code>h11</code></td><td>Hour system using 0–11; corresponds to 'K' in patterns. The 12 hour clock, with midnight starting at 0:00 am.</td></tr><tr><td><code>h24</code></td><td>Hour system using 1–24; corresponds to 'k' in pattern. The 24 hour clock, with midnight starting at 24:00.</td></tr></tbody></table>
+| Hour cycle type | Description                                                                                                    |
+| --------------- | -------------------------------------------------------------------------------------------------------------- |
+| `h12`           | Hour system using 1–12; corresponds to 'h' in patterns. The 12 hour clock, with midnight starting at 12:00 am. |
+| `h23`           | Hour system using 0–23; corresponds to 'H' in patterns. The 24 hour clock, with midnight starting at 0:00.     |
+| `h11`           | Hour system using 0–11; corresponds to 'K' in patterns. The 12 hour clock, with midnight starting at 0:00 am.  |
+| `h24`           | Hour system using 1–24; corresponds to 'k' in pattern. The 24 hour clock, with midnight starting at 24:00.     |
 
 ## Examples
 
@@ -76,5 +81,5 @@ console.log(us12hour.hourCycle); // Prints "h12"
 
 ## See also
 
-- {{jsxref("Intl.Locale")}}
-- [Unicode Hour Cycle extension key spec](https://www.unicode.org/reports/tr35/#UnicodeHourCycleIdentifier)
+*   {{jsxref("Intl.Locale")}}
+*   [Unicode Hour Cycle extension key spec](https://www.unicode.org/reports/tr35/#UnicodeHourCycleIdentifier)

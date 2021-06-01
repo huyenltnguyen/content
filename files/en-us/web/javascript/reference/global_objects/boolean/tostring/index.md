@@ -62,4 +62,4 @@ var myVar = flag.toString();
 
 ## See also
 
-- {{jsxref("Object.prototype.toString()")}}
+*   {{jsxref("Object.prototype.toString()")}}

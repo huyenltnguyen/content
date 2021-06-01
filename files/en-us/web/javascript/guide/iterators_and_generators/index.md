@@ -16,12 +16,12 @@ language and provide a mechanism for customizing the behavior of
 
 For details, see also:
 
-- {{jsxref("Iteration_protocols")}}
-- {{jsxref("Statements/for...of","for...of")}}
-- {{jsxref("Statements/function*","function*")}} and
-  {{jsxref("Generator")}}
-- {{jsxref("Operators/yield","yield")}} and
-  {{jsxref("Operators/yield*","yield*")}}
+*   {{jsxref("Iteration_protocols")}}
+*   {{jsxref("Statements/for...of","for...of")}}
+*   {{jsxref("Statements/function*","function*")}} and
+    {{jsxref("Generator")}}
+*   {{jsxref("Operators/yield","yield")}} and
+    {{jsxref("Operators/yield*","yield*")}}
 
 ## Iterators
 
@@ -32,12 +32,12 @@ Specifically, an iterator is any object which implements the
 [Iterator protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterator_protocol)
 by having a `next()` method that returns an object with two properties:
 
-- `value`
-  - : The next value in the iteration sequence.
-- `done`
-  - : This is `true` if the last value in the sequence has already been
-    consumed. If `value` is present alongside `done`, it is the iterator's
-    return value.
+*   `value`
+    *   : The next value in the iteration sequence.
+*   `done`
+    *   : This is `true` if the last value in the sequence has already been
+        consumed. If `value` is present alongside `done`, it is the iterator's
+        return value.
 
 Once created, an iterator object can be iterated explicitly by repeatedly
 calling `next()`. Iterating over an iterator is said to consume the iterator,
@@ -59,14 +59,15 @@ iterator which defines a sequence of integers from `start` (inclusive) to `end`
 (exclusive) spaced `step` apart. Its final return value is the size of the
 sequence it created, tracked by the variable `iterationCount`.
 
-<pre class="brush: js">function makeRangeIterator(<var>start</var> = 0, <var>end</var> = Infinity, <var>step</var> = 1) {
+```js
+function makeRangeIterator(start = 0, end = Infinity, step = 1) {
     let nextIndex = start;
     let iterationCount = 0;
 
     const rangeIterator = {
        next: function() {
            let result;
-           if (nextIndex &#x3C; end) {
+           if (nextIndex < end) {
                result = { value: nextIndex, done: false }
                nextIndex += step;
                iterationCount++;
@@ -77,7 +78,7 @@ sequence it created, tracked by the variable `iterationCount`.
     };
     return rangeIterator;
 }
-</pre>
+```
 
 Using the iterator then looks like this:
 
@@ -116,14 +117,16 @@ each time. Each Generator may only be iterated once.
 We can now adapt the example from above. The behavior of this code is identical,
 but the implementation is much easier to write and read.
 
-<pre class="brush: js">function* makeRangeIterator(<var>start</var> = 0, <var>end</var> = 100, <var>step</var> = 1) {
+```js
+function* makeRangeIterator(start = 0, end = 100, step = 1) {
     let iterationCount = 0;
-    for (let i = start; i &#x3C; end; i += step) {
+    for (let i = start; i < end; i += step) {
         iterationCount++;
         yield i;
     }
     return iterationCount;
-}</pre>
+}
+```
 
 ## Iterables
 
@@ -147,32 +150,33 @@ return `this` from their **@@iterator** method, whereas iterables which can 
 iterated many times must return a new iterator on each invocation
 of **@@iterator**.
 
-<pre class="brush: js">function* makeIterator() {
+```js
+function* makeIterator() {
     yield 1;
     yield 2;
 }
 
-const <var>it</var> = makeIterator();
+const it = makeIterator();
 
-for (const <var>itItem</var> of <var>it</var>) {
-    console.log(<var>itItem</var>);
+for (const itItem of it) {
+    console.log(itItem);
 }
 
-console.log(<var>it</var>[Symbol.iterator]() === <var>it</var>) // true;
+console.log(it[Symbol.iterator]() === it) // true;
 
 // This example show us generator(iterator) is iterable object,
-// which has the @@iterator method return the <var>it</var> (itself),
-// and consequently, the <var>it</var> object can iterate only _once_.
+// which has the @@iterator method return the it (itself),
+// and consequently, the it object can iterate only _once_.
 
-// If we change <var>it</var>'s @@iterator method to a function/generator
-// which returns a new iterator/generator object, (<var>it</var>)
+// If we change it's @@iterator method to a function/generator
+// which returns a new iterator/generator object, (it)
 // can iterate many times
 
-<var>it</var>[Symbol.iterator] = function* () {
+it[Symbol.iterator] = function* () {
   yield 2;
   yield 1;
 };
-</pre>
+```
 
 ### User-defined iterables
 
@@ -237,7 +241,7 @@ a;
 
 ## Advanced generators
 
-Generators compute their `yield`ed values _on demand_, which allows them to
+Generators compute their `yield`ed values *on demand*, which allows them to
 efficiently represent sequences that are expensive to compute (or even infinite
 sequences, as demonstrated above).
 
@@ -245,7 +249,7 @@ The {{jsxref("Global_Objects/Generator/next","next()")}} method
 also accepts a value, which can be used to modify the internal state of the
 generator. A value passed to `next()` will be received by `yield` .
 
-> **Note:** A value passed to the _first_ invocation of `next()` is always
+> **Note:** A value passed to the *first* invocation of `next()` is always
 > ignored.
 
 Here is the fibonacci generator using <code>next(<var>x</var>)</code> to restart

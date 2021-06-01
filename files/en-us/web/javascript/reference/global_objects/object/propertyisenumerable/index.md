@@ -24,8 +24,8 @@ propertyIsEnumerable(prop)
 
 ### Parameters
 
-- `prop`
-  - : The name of the property to test.
+*   `prop`
+    *   : The name of the property to test.
 
 ### Return value
 
@@ -124,7 +124,7 @@ o.propertyIsEnumerable('firstMethod'); // returns false
 
 ## See also
 
-- [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
-- {{jsxref("Statements/for...in", "for...in")}}
-- {{jsxref("Object.keys()")}}
-- {{jsxref("Object.defineProperty()")}}
+*   [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+*   {{jsxref("Statements/for...in", "for...in")}}
+*   {{jsxref("Object.keys()")}}
+*   {{jsxref("Object.defineProperty()")}}

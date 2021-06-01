@@ -77,6 +77,6 @@ var myFun = function () {
 
 ## See also
 
-- {{jsxref("Function.prototype.call()")}}
-- {{jsxref("Function.prototype.apply()")}}
-- {{jsxref("Function.prototype.bind()")}}
+*   {{jsxref("Function.prototype.call()")}}
+*   {{jsxref("Function.prototype.apply()")}}
+*   {{jsxref("Function.prototype.bind()")}}

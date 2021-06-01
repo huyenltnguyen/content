@@ -60,6 +60,6 @@ var foo = life1;
 
 ## See also
 
-- [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
-- [Variables](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables) in
-  the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
+*   [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
+*   [Variables](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables) in
+    the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)

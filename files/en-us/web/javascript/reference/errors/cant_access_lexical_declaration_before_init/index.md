@@ -9,7 +9,7 @@ tags:
 ---
 {{jsSidebar("Errors")}}
 
-The JavaScript exception "can't access lexical declaration \`_variable_' before
+The JavaScript exception "can't access lexical declaration \`*variable*' before
 initialization" occurs when a lexical variable was accessed before it was
 initialized. This happens within any block statement, when
 [`let`](/en-US/docs/Web/JavaScript/Reference/Statements/let) or
@@ -72,4 +72,4 @@ test();
 
 ## See also
 
-- [Temporal Dead Zone and errors with let](/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_and_errors_with_let)
+*   [Temporal Dead Zone and errors with let](/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_and_errors_with_let)

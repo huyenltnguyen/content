@@ -44,8 +44,8 @@ exec(str)
 
 ### Parameters
 
-- `str`
-  - : The string against which to match the regular expression.
+*   `str`
+    *   : The string against which to match the regular expression.
 
 ### Return value
 
@@ -127,7 +127,7 @@ Found abb. Next match starts at 3
 Found ab. Next match starts at 9
 ```
 
-> **Warning:** **Do _not_ place the regular expression literal (or
+> **Warning:** **Do *not* place the regular expression literal (or
 > {{jsxref("RegExp")}} constructor) within the `while` condition!**
 >
 > It will create an infinite loop if there is a match, due to the
@@ -159,6 +159,6 @@ This will log a message containing `'hello world!'`.
 
 ## See also
 
-- [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-  chapter in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
-- {{jsxref("RegExp")}}
+*   [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+    chapter in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
+*   {{jsxref("RegExp")}}

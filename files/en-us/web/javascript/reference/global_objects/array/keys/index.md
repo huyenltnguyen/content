@@ -51,9 +51,9 @@ console.log(denseKeys);  // [0, 1, 2]
 
 ## See also
 
-- A polyfill of `Array.prototype.keys` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.values()")}}
-- {{jsxref("Array.prototype.entries()")}}
-- [Iteration protocols](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+*   A polyfill of `Array.prototype.keys` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.values()")}}
+*   {{jsxref("Array.prototype.entries()")}}
+*   [Iteration protocols](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)

@@ -19,21 +19,22 @@ The **`handler.setPrototypeOf()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  setPrototypeOf: function(<var>target</var>, <var>prototype</var>) {
+```js
+const p = new Proxy(target, {
+  setPrototypeOf: function(target, prototype) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameters are passed to the `setPrototypeOf()` method. `this` is
 bound to the handler.
 
-- `target`
-  - : The target object.
-- `prototype`
-  - : The object's new prototype or `null`.
+*   `target`
+    *   : The target object.
+*   `prototype`
+    *   : The object's new prototype or `null`.
 
 ### Return value
 
@@ -49,20 +50,20 @@ The **`handler.setPrototypeOf()`** method is a trap for
 
 This trap can intercept these operations:
 
-- {{jsxref("Object.setPrototypeOf()")}}
-- {{jsxref("Reflect.setPrototypeOf()")}}
+*   {{jsxref("Object.setPrototypeOf()")}}
+*   {{jsxref("Reflect.setPrototypeOf()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- If `target` is not extensible, the `prototype` parameter must be the same
-  value as
+*   If `target` is not extensible, the `prototype` parameter must be the same
+    value as
 
-  <code>Object.getPrototypeOf(<var>target</var>)</code>
+    <code>Object.getPrototypeOf(<var>target</var>)</code>
 
-  .
+    .
 
 ## Examples
 
@@ -77,7 +78,7 @@ failure to mutate, must create the exception itself.
 
 For example, {{jsxref("Object.setPrototypeOf()")}} will create and
 throw a {{jsxref("TypeError")}} itself. If the mutation is performed by
-an operation that _doesn't_ ordinarily throw in case of failure, such as
+an operation that *doesn't* ordinarily throw in case of failure, such as
 {{jsxref("Reflect.setPrototypeOf()")}}, no exception will be
 thrown.
 
@@ -97,7 +98,7 @@ Reflect.setPrototypeOf(p1, newProto); // returns false
 
 ### Approach 2: Throwing an Exception
 
-The latter approach will cause _any_ operation that attempts to mutate, to
+The latter approach will cause *any* operation that attempts to mutate, to
 throw. This approach is best if you want even non-throwing operations to throw
 on failure, or you want to throw a custom exception value.
 
@@ -125,7 +126,7 @@ Reflect.setPrototypeOf(p2, newProto); // throws new Error("custom error")
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Object.setPrototypeOf()")}}
-- {{jsxref("Reflect.setPrototypeOf()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Object.setPrototypeOf()")}}
+*   {{jsxref("Reflect.setPrototypeOf()")}}

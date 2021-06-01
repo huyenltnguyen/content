@@ -40,17 +40,17 @@ forEach(function callbackFn(value, key, map) { ... }, thisArg)
 
 ### Parameters
 
-- `callbackFn`
-  - : Function to execute for each entry of `myMap`. It takes the following
-    arguments:
-    - `value` {{Optional_Inline}}
-      - : Value of each iteration.
-    - `key` {{Optional_Inline}}
-      - : Key of each iteration.
-    - `map` {{Optional_Inline}}
-      - : The map being iterated (`myMap` in the above Syntax box).
-- `thisArg` {{Optional_Inline}}
-  - : Value to use as `this` when executing `callback`.
+*   `callbackFn`
+    *   : Function to execute for each entry of `myMap`. It takes the following
+        arguments:
+        *   `value` {{Optional_Inline}}
+            *   : Value of each iteration.
+        *   `key` {{Optional_Inline}}
+            *   : Key of each iteration.
+        *   `map` {{Optional_Inline}}
+            *   : The map being iterated (`myMap` in the above Syntax box).
+*   `thisArg` {{Optional_Inline}}
+    *   : Value to use as `this` when executing `callback`.
 
 ### Return value
 
@@ -65,9 +65,9 @@ However, it is executed for values which are present but have the value
 
 `callback` is invoked with **three arguments**:
 
-- the entry's `value`
-- the entry's `key`
-- the **`Map` object** being traversed
+*   the entry's `value`
+*   the entry's `key`
+*   the **`Map` object** being traversed
 
 If a `thisArg` parameter is provided to `forEach`, it will be passed to
 `callback` when invoked, for use as its `this` value. Otherwise, the value
@@ -107,5 +107,5 @@ new Map([['foo', 3], ['bar', {}], ['baz', undefined]]).forEach(logMapElements)
 
 ## See also
 
-- {{jsxref("Array.prototype.forEach()")}}
-- {{jsxref("Set.prototype.forEach()")}}
+*   {{jsxref("Array.prototype.forEach()")}}
+*   {{jsxref("Set.prototype.forEach()")}}

@@ -17,19 +17,20 @@ The **`handler.preventExtensions()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  preventExtensions: function(<var>target</var>) {
+```js
+const p = new Proxy(target, {
+  preventExtensions: function(target) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameter is passed to the `preventExtensions()` method. `this` is
 bound to the handler.
 
-- `target`
-  - : The target object.
+*   `target`
+    *   : The target object.
 
 ### Return value
 
@@ -44,21 +45,21 @@ The **`handler.preventExtensions()`** method is a trap for
 
 This trap can intercept these operations:
 
-- {{jsxref("Object.preventExtensions()")}}
-- {{jsxref("Reflect.preventExtensions()")}}
+*   {{jsxref("Object.preventExtensions()")}}
+*   {{jsxref("Reflect.preventExtensions()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- <code>Object.preventExtensions(<var>proxy</var>)</code>
+*   <code>Object.preventExtensions(<var>proxy</var>)</code>
 
-  only returns `true` if
+    only returns `true` if
 
-  <code>Object.isExtensible(<var>proxy</var>)</code>
+    <code>Object.isExtensible(<var>proxy</var>)</code>
 
-  is `false`.
+    is `false`.
 
 ## Examples
 
@@ -101,7 +102,7 @@ Object.preventExtensions(p); // TypeError is thrown
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Object.preventExtensions()")}}
-- {{jsxref("Reflect.preventExtensions()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Object.preventExtensions()")}}
+*   {{jsxref("Reflect.preventExtensions()")}}

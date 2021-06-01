@@ -21,23 +21,23 @@ The **`Intl.ListFormat`** object enables language-sensitive list formatting.
 
 ## Constructor
 
-- {{jsxref("Intl/ListFormat/ListFormat", "Intl.ListFormat()")}}
-  - : Creates a new `Intl.ListFormat` object.
+*   {{jsxref("Intl/ListFormat/ListFormat", "Intl.ListFormat()")}}
+    *   : Creates a new `Intl.ListFormat` object.
 
 ## Static methods
 
-- {{jsxref("Intl/ListFormat/supportedLocalesOf", "Intl.ListFormat.supportedLocalesOf()")}}
-  - : Returns an array containing those of the provided locales that are
-    supported without having to fall back to the runtime's default locale.
+*   {{jsxref("Intl/ListFormat/supportedLocalesOf", "Intl.ListFormat.supportedLocalesOf()")}}
+    *   : Returns an array containing those of the provided locales that are
+        supported without having to fall back to the runtime's default locale.
 
 ## Instance methods
 
-- {{jsxref("Intl/ListFormat/format", "Intl.ListFormat.prototype.format()")}}
-  - : Returns a language-specific formatted string representing the elements of
-    the list.
-- {{jsxref("Intl/ListFormat/formatToParts", "Intl.ListFormat.prototype.formatToParts()")}}
-  - : Returns an array of objects representing the different components that can
-    be used to format a list of values in a locale-aware fashion.
+*   {{jsxref("Intl/ListFormat/format", "Intl.ListFormat.prototype.format()")}}
+    *   : Returns a language-specific formatted string representing the elements of
+        the list.
+*   {{jsxref("Intl/ListFormat/formatToParts", "Intl.ListFormat.prototype.formatToParts()")}}
+    *   : Returns an array of objects representing the different components that can
+        be used to format a list of values in a locale-aware fashion.
 
 ## Examples
 
@@ -89,4 +89,4 @@ console.log(new Intl.ListFormat('en-GB', { style: 'long', type: 'conjunction' })
 
 ## See also
 
-- {{jsxref("Intl")}}
+*   {{jsxref("Intl")}}

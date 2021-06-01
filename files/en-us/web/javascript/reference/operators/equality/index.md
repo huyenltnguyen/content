@@ -30,28 +30,30 @@ The equality operators (`==` and `!=`) use the
 [Abstract Equality Comparison Algorithm](http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3)
 to compare two operands. This can be roughly summarised as follows:
 
-- If the operands are both objects, return `true` only if both operands
-  reference the same object.
-- If one operand is `null` and the other is `undefined`, return `true`.
-- If the operands are of different types, try to convert them to the same type
-  before comparing:
+*   If the operands are both objects, return `true` only if both operands
+    reference the same object.
 
-  - When comparing a number to a string, try to convert the string to a numeric
-    value.
-  - If one of the operands is `Boolean`, convert the Boolean operand to 1 if it
-    is `true` and +0 if it is `false`.
-  - If one of the operands is an object and the other is a number or a string,
-    try to convert the object to a primitive using the object's `valueOf()` and
-    `toString()` methods.
+*   If one operand is `null` and the other is `undefined`, return `true`.
 
-- If the operands have the same type, they are compared as follows:
+*   If the operands are of different types, try to convert them to the same type
+    before comparing:
 
-  - `String`: return `true` only if both operands have the same characters in
-    the same order.
-  - `Number`: return `true` only if both operands have the same value. `+0` and
-    `-0` are treated as the same value. If either operand is `NaN`, return
-    `false`.
-  - `Boolean`: return `true` only if operands are both `true` or both `false`.
+    *   When comparing a number to a string, try to convert the string to a numeric
+        value.
+    *   If one of the operands is `Boolean`, convert the Boolean operand to 1 if it
+        is `true` and +0 if it is `false`.
+    *   If one of the operands is an object and the other is a number or a string,
+        try to convert the object to a primitive using the object's `valueOf()` and
+        `toString()` methods.
+
+*   If the operands have the same type, they are compared as follows:
+
+    *   `String`: return `true` only if both operands have the same characters in
+        the same order.
+    *   `Number`: return `true` only if both operands have the same value. `+0` and
+        `-0` are treated as the same value. If either operand is `NaN`, return
+        `false`.
+    *   `Boolean`: return `true` only if operands are both `true` or both `false`.
 
 The most notable difference between this operator and the
 [strict equality](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)
@@ -135,6 +137,6 @@ console.log(d == s);    //true
 
 ## See also
 
-- [Inequality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Inequality)
-- [Strict equality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)
-- [Strict inequality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality)
+*   [Inequality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Inequality)
+*   [Strict equality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)
+*   [Strict inequality operator](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality)

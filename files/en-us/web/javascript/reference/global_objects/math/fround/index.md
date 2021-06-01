@@ -28,10 +28,10 @@ Math.fround(doubleFloat)
 
 ### Parameters
 
-- `doubleFloat`
-  - : A {{jsxref("Number")}}. If the parameter is of a different type,
-    it will get converted to a number or to {{jsxref("NaN")}} if it
-    cannot be converted.
+*   `doubleFloat`
+    *   : A {{jsxref("Number")}}. If the parameter is of a different type,
+        it will get converted to a number or to {{jsxref("NaN")}} if it
+        cannot be converted.
 
 ### Return value
 
@@ -79,8 +79,7 @@ Math.fround(1.337); // 1.3370000123977661
 Math.fround(1.337) === 1.337; // false
 ```
 
-<math><semantics><msup><mn>2</mn> <mn>150</mn>
-</msup><annotation encoding="TeX">2^150</annotation> </semantics></math> is too
+<math><semantics><msup><mn>2</mn> <mn>150</mn> </msup><annotation encoding="TeX">2^150</annotation> </semantics></math> is too
 big for a 32-bit float, so `Infinity` is returned:
 
 ```js
@@ -142,6 +141,6 @@ if (!Math.fround) Math.fround = function(arg) {
 
 ## See also
 
-- A polyfill of `Math.fround` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
-- {{jsxref("Math.round()")}}
+*   A polyfill of `Math.fround` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
+*   {{jsxref("Math.round()")}}

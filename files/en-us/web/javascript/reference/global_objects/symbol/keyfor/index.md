@@ -17,12 +17,14 @@ global symbol registry for the given symbol.
 
 ## Syntax
 
-<pre class="brush: js">Symbol.keyFor(<var>sym</var>);</pre>
+```js
+Symbol.keyFor(sym);
+```
 
 ### Parameters
 
-- `sym`
-  - : Symbol, required. The symbol to find a key for.
+*   `sym`
+    *   : Symbol, required. The symbol to find a key for.
 
 ### Return value
 
@@ -55,4 +57,4 @@ Symbol.keyFor(Symbol.iterator) // undefined
 
 ## See also
 
-- {{jsxref("Symbol.for()")}}
+*   {{jsxref("Symbol.for()")}}

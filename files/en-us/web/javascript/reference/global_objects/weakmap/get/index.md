@@ -23,8 +23,8 @@ get(key)
 
 ### Parameters
 
-- `key`
-  - : Required. The key of the element to return from the `WeakMap` object.
+*   `key`
+    *   : Required. The key of the element to return from the `WeakMap` object.
 
 ### Return value
 
@@ -53,6 +53,6 @@ wm.get('baz');  // Returns undefined.
 
 ## See also
 
-- {{jsxref("WeakMap")}}
-- {{jsxref("WeakMap.set()")}}
-- {{jsxref("WeakMap.has()")}}
+*   {{jsxref("WeakMap")}}
+*   {{jsxref("WeakMap.set()")}}
+*   {{jsxref("WeakMap.has()")}}

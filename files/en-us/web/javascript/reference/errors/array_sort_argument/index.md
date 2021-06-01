@@ -52,4 +52,4 @@ var cmp = { asc: (x, y) => x >= y, dsc: (x, y) => x <= y };
 
 ## See also
 
-- {{jsxref("Array.prototype.sort()")}}
+*   {{jsxref("Array.prototype.sort()")}}

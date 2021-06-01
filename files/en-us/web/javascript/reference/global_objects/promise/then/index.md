@@ -25,27 +25,28 @@ two arguments: callback functions for the success and failure cases of the
 
 ## Syntax
 
-<pre class="brush: js"><var>p.then(onFulfilled[, onRejected])</var>;
+```js
+p.then(onFulfilled[, onRejected]);
 
 p.then(value => {
   // fulfillment
 }, reason => {
   // rejection
 });
-</pre>
+```
 
 ### Parameters
 
-- `onFulfilled` {{optional_inline}}
-  - : A {{jsxref("Function")}} called if the `Promise` is fulfilled. This
-    function has one argument, the `fulfillment value`. If it is not a function,
-    it is internally replaced with an "Identity" function (it returns the
-    received argument).
-- `onRejected` {{optional_inline}}
-  - : A {{jsxref("Function")}} called if the `Promise` is rejected. This
-    function has one argument, the `rejection reason`. If it is not a function,
-    it is internally replaced with a "Thrower" function (it throws an error it
-    received as argument).
+*   `onFulfilled` {{optional_inline}}
+    *   : A {{jsxref("Function")}} called if the `Promise` is fulfilled. This
+        function has one argument, the `fulfillment value`. If it is not a function,
+        it is internally replaced with an "Identity" function (it returns the
+        received argument).
+*   `onRejected` {{optional_inline}}
+    *   : A {{jsxref("Function")}} called if the `Promise` is rejected. This
+        function has one argument, the `rejection reason`. If it is not a function,
+        it is internally replaced with a "Thrower" function (it throws an error it
+        received as argument).
 
 ### Return value
 
@@ -54,21 +55,21 @@ handler function (`onFulfilled` or `onRejected`) will be called
 **asynchronously** (scheduled in the current thread loop). The behavior of the
 handler function follows a specific set of rules. If a handler function:
 
-- returns a value, the promise returned by `then` gets resolved with the
-  returned value as its value.
-- doesn't return anything, the promise returned by `then` gets resolved with an
-  `undefined` value.
-- throws an error, the promise returned by `then` gets rejected with the thrown
-  error as its value.
-- returns an already fulfilled promise, the promise returned by `then` gets
-  fulfilled with that promise's value as its value.
-- returns an already rejected promise, the promise returned by `then` gets
-  rejected with that promise's value as its value.
-- returns another **pending** promise object, the resolution/rejection of the
-  promise returned by `then` will be subsequent to the resolution/rejection of
-  the promise returned by the handler. Also, the resolved value of the promise
-  returned by `then` will be the same as the resolved value of the promise
-  returned by the handler.
+*   returns a value, the promise returned by `then` gets resolved with the
+    returned value as its value.
+*   doesn't return anything, the promise returned by `then` gets resolved with an
+    `undefined` value.
+*   throws an error, the promise returned by `then` gets rejected with the thrown
+    error as its value.
+*   returns an already fulfilled promise, the promise returned by `then` gets
+    fulfilled with that promise's value as its value.
+*   returns an already rejected promise, the promise returned by `then` gets
+    rejected with that promise's value as its value.
+*   returns another **pending** promise object, the resolution/rejection of the
+    promise returned by `then` will be subsequent to the resolution/rejection of
+    the promise returned by the handler. Also, the resolved value of the promise
+    returned by `then` will be the same as the resolved value of the promise
+    returned by the handler.
 
 Following, an example to demonstrate the asynchronicity of the `then` method.
 
@@ -100,7 +101,7 @@ setTimeout(() => {
 As the `then` and {{jsxref("Promise.prototype.catch()")}} methods
 return promises, they
 [can be chained](/en-US/docs/Web/JavaScript/Guide/Using_promises#Chaining) — an
-operation called _composition_.
+operation called *composition*.
 
 ## Examples
 
@@ -234,8 +235,9 @@ Promise.resolve()
 You can also use chaining to implement one function with a Promise-based API on
 top of another such function.
 
-<pre class="brush: js">function fetch_current_data() {
-  // The <a href="/en-US/docs/Web/API/GlobalFetch/fetch">fetch</a>() API returns a Promise.  This function
+```js
+function fetch_current_data() {
+  // The fetch() API returns a Promise.  This function
   // exposes a similar API, except the fulfillment
   // value of this function's Promise has had more
   // work done on it.
@@ -249,7 +251,7 @@ top of another such function.
               // fetch_current_data().then()
   });
 }
-</pre>
+```
 
 If `onFulfilled` returns a promise, the return value of `then` will be
 resolved/rejected by the promise.
@@ -290,7 +292,7 @@ p3.then(function(v) {
 });
 ```
 
-### window\.setImmediate style promise-based polyfill
+### window.setImmediate style promise-based polyfill
 
 Using a {{jsxref("Function.prototype.bind()")}} `Reflect.apply`
 ({{jsxref("Reflect.apply()")}}) method to create a (non-cancellable)
@@ -324,5 +326,5 @@ const nextTick = (() => {
 
 ## See also
 
-- {{jsxref("Promise")}}
-- {{jsxref("Promise.prototype.catch()")}}
+*   {{jsxref("Promise")}}
+*   {{jsxref("Promise.prototype.catch()")}}

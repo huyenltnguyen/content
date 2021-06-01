@@ -17,9 +17,9 @@ intercept and redefine fundamental operations for that object.
 
 A `Proxy` is created with two parameters:
 
-- `target`: the original object which you want to proxy
-- `handler`: an object that defines which operations will be intercepted and how
-  to redefine intercepted operations.
+*   `target`: the original object which you want to proxy
+*   `handler`: an object that defines which operations will be intercepted and how
+    to redefine intercepted operations.
 
 For example, this code defines a simple target with just two properties, and an
 even simpler handler with no properties:
@@ -63,7 +63,7 @@ Here we've provided an implementation of the
 {{jsxref("Global_Objects/Proxy/handler/get", "get()")}}
 handler, which intercepts attempts to access properties in the target.
 
-Handler functions are sometimes called _traps_, presumably because they trap
+Handler functions are sometimes called *traps*, presumably because they trap
 calls to the target object. The very simple trap in `handler2` above redefines
 all property accessors:
 
@@ -98,13 +98,13 @@ console.log(proxy3.message2); // world
 
 ## Constructor
 
-- {{jsxref("Global_Objects/Proxy/Proxy", "Proxy()")}}
-  - : Creates a new `Proxy` object.
+*   {{jsxref("Global_Objects/Proxy/Proxy", "Proxy()")}}
+    *   : Creates a new `Proxy` object.
 
 ## Static methods
 
-- {{jsxref("Proxy.revocable()")}}
-  - : Creates a revocable `Proxy` object.
+*   {{jsxref("Proxy.revocable()")}}
+    *   : Creates a revocable `Proxy` object.
 
 ## Examples
 
@@ -412,7 +412,7 @@ console.log(products.number);      // 3
 ### A complete `traps` list example
 
 Now in order to create a complete sample `traps` list, for didactic purposes, we
-will try to proxify a _non-native_ object that is particularly suited to this
+will try to proxify a *non-native* object that is particularly suited to this
 type of operation: the `docCookies` global object created by
 [the "little framework" published on the `document.cookie` page](/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework).
 
@@ -477,12 +477,12 @@ console.log(docCookies.my_cookie1);
 
 ## See also
 
-- ["Proxies are awesome" Brendan Eich presentation at JSConf](https://www.youtube.com/watch?v=sClk6aB_CPk)
-  ([slides](http://www.slideshare.net/BrendanEich/metaprog-5303821))
-- [ECMAScript Harmony Proxy proposal page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies)
-  and
-  [ECMAScript Harmony proxy semantics page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies_semantics)
-- [Tutorial on proxies](http://web.archive.org/web/20171007221059/http://soft.vub.ac.be/~tvcutsem/proxies/)
-- [SpiderMonkey specific Old Proxy API](/en-US/docs/JavaScript/Old_Proxy_API)
-- {{jsxref("Object.watch()")}} is a non-standard feature, but has been
-  supported in Gecko for a long time.
+*   ["Proxies are awesome" Brendan Eich presentation at JSConf](https://www.youtube.com/watch?v=sClk6aB_CPk)
+    ([slides](http://www.slideshare.net/BrendanEich/metaprog-5303821))
+*   [ECMAScript Harmony Proxy proposal page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies)
+    and
+    [ECMAScript Harmony proxy semantics page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies_semantics)
+*   [Tutorial on proxies](http://web.archive.org/web/20171007221059/http://soft.vub.ac.be/~tvcutsem/proxies/)
+*   [SpiderMonkey specific Old Proxy API](/en-US/docs/JavaScript/Old_Proxy_API)
+*   {{jsxref("Object.watch()")}} is a non-standard feature, but has been
+    supported in Gecko for a long time.

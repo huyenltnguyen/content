@@ -18,13 +18,15 @@ symbol gets created in the global symbol registry with this key.
 
 ## Syntax
 
-<pre class="brush: js">Symbol.for(<var>key</var>);</pre>
+```js
+Symbol.for(key);
+```
 
 ### Parameters
 
-- `key`
-  - : String, required. The key for the symbol (and also used for the
-    description of the symbol).
+*   `key`
+    *   : String, required. The key for the symbol (and also used for the
+        description of the symbol).
 
 ### Return value
 
@@ -45,7 +47,10 @@ new global symbol.
 The global symbol registry is a list with the following record structure and it
 is initialized empty:
 
-<table class="standard-table"><caption>A record in the global symbol registry</caption><tbody><tr><th>Field name</th><th>Value</th></tr><tr><td>[[key]]</td><td>A string key used to identify a symbol.</td></tr><tr><td>[[symbol]]</td><td>A symbol that is stored globally.</td></tr></tbody></table>
+| Field name | Value                                   |
+| ---------- | --------------------------------------- |
+| \[\[key]]    | A string key used to identify a symbol. |
+| \[\[symbol]] | A symbol that is stored globally.       |
 
 ## Examples
 
@@ -82,4 +87,4 @@ Symbol.for('mdn.bar');
 
 ## See also
 
-- {{jsxref("Symbol.keyFor()")}}
+*   {{jsxref("Symbol.keyFor()")}}

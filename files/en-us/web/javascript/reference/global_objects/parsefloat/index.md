@@ -16,15 +16,17 @@ first if needed) and returns a floating point number.
 
 ## Syntax
 
-<pre class="brush: js">parseFloat(<em>string</em>)</pre>
+```js
+parseFloat(string)
+```
 
 ### Parameters
 
-- `string`
-  - : The value to parse. If this argument is not a string, then it is converted
-    to one using the [`ToString`](https://tc39.es/ecma262/#sec-tostring)
-    abstract operation. Leading {{glossary("whitespace")}} in this
-    argument is ignored.
+*   `string`
+    *   : The value to parse. If this argument is not a string, then it is converted
+        to one using the [`ToString`](https://tc39.es/ecma262/#sec-tostring)
+        abstract operation. Leading {{glossary("whitespace")}} in this
+        argument is ignored.
 
 ### Return value
 
@@ -37,20 +39,20 @@ converted to a number.
 
 `parseFloat` is a function property of the global object.
 
-- If `parseFloat` encounters a character other than a plus sign (`+`), minus
-  sign (`-` U+002D HYPHEN-MINUS), numeral (`0`–`9`), decimal point (`.`), or
-  exponent (`e` or `E`), it returns the value up to that character, ignoring the
-  invalid character and characters following it.
-- A _second_ decimal point also stops parsing (characters up to that point will
-  still be parsed).
-- Leading and trailing spaces in the argument are ignored.
-- If the argument’s first character can’t be converted to a number (it’s not any
-  of the above characters), `parseFloat` returns {{jsxref("NaN")}}.
-- `parseFloat` can also parse and return {{jsxref("Infinity")}}.
-- `parseFloat` converts {{jsxref("BigInt")}} syntax to
-  {{jsxref("Number",
+*   If `parseFloat` encounters a character other than a plus sign (`+`), minus
+    sign (`-` U+002D HYPHEN-MINUS), numeral (`0`–`9`), decimal point (`.`), or
+    exponent (`e` or `E`), it returns the value up to that character, ignoring the
+    invalid character and characters following it.
+*   A *second* decimal point also stops parsing (characters up to that point will
+    still be parsed).
+*   Leading and trailing spaces in the argument are ignored.
+*   If the argument’s first character can’t be converted to a number (it’s not any
+    of the above characters), `parseFloat` returns {{jsxref("NaN")}}.
+*   `parseFloat` can also parse and return {{jsxref("Infinity")}}.
+*   `parseFloat` converts {{jsxref("BigInt")}} syntax to
+    {{jsxref("Number",
 		"Numbers")}}, losing precision. This happens
-  because the trailing `n` character is discarded.
+    because the trailing `n` character is discarded.
 
 Consider {{jsxref("Number", "Number(value)")}} for stricter parsing,
 which converts to {{jsxref("NaN")}} for arguments with invalid characters
@@ -105,8 +107,8 @@ parseFloat('900719925474099267n');
 
 ## See also
 
-- {{jsxref("parseInt", "parseInt()")}}
-- {{jsxref("Number.parseFloat()")}}
-- {{jsxref("Number.parseInt()")}}
-- {{jsxref("Number.toFixed()")}}
-- {{jsxref("isNaN", "isNaN()")}}
+*   {{jsxref("parseInt", "parseInt()")}}
+*   {{jsxref("Number.parseFloat()")}}
+*   {{jsxref("Number.parseInt()")}}
+*   {{jsxref("Number.toFixed()")}}
+*   {{jsxref("isNaN", "isNaN()")}}

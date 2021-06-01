@@ -16,7 +16,7 @@ browser-compat: javascript.builtins.TypedArray.reduceRight
 The **`reduceRight()`** method applies a function against an accumulator and
 each value of the typed array (from right-to-left) has to reduce it to a single
 value. This method has the same algorithm as
-{{jsxref("Array.prototype.reduceRight()")}}. _TypedArray_ is one of
+{{jsxref("Array.prototype.reduceRight()")}}. *TypedArray* is one of
 the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
@@ -43,9 +43,21 @@ reduceRight(function callbackFn(accumulator, currentValue, index, array) { ... }
 
 ### Parameters
 
-<dl><dt><code><var>callbackFn</var></code></dt><dd>Function to execute on each value in the typed array, taking four arguments:<dl><dt><code><var>accumulator</var></code></dt><dd>The value previously returned in the last invocation of the callback, or
-<code>initialValue</code>, if supplied (see below).</dd><dt><code><var>currentValue</var></code></dt><dd>The current element being processed in the typed array.</dd><dt><code><var>index</var></code></dt><dd>The index of the current element being processed in the typed array.</dd><dt><code><var>array</var></code></dt><dd>The typed array <code>reduceRight()</code> was called upon.</dd></dl></dd><dt><code><var>initialValue</var></code></dt><dd>Optional. Object to use as the first argument to the first call of the
-<code><var>callbackFn</var></code>.</dd></dl>
+*   `callbackFn`
+    *   : Function to execute on each value in the typed array, taking four
+        arguments:
+        *   `accumulator`
+            *   : The value previously returned in the last invocation of the callback,
+                or `initialValue`, if supplied (see below).
+        *   `currentValue`
+            *   : The current element being processed in the typed array.
+        *   `index`
+            *   : The index of the current element being processed in the typed array.
+        *   `array`
+            *   : The typed array `reduceRight()` was called upon.
+*   `initialValue`
+    *   : Optional. Object to use as the first argument to the first call of the
+        `callbackFn`.
 
 ### Return value
 
@@ -101,7 +113,7 @@ var total = new Uint8Array([0, 1, 2, 3]).reduceRight(function(a, b) {
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.reduceRight` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray.prototype.reduce()")}}
-- {{jsxref("Array.prototype.reduceRight()")}}
+*   A polyfill of `TypedArray.prototype.reduceRight` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray.prototype.reduce()")}}
+*   {{jsxref("Array.prototype.reduceRight()")}}

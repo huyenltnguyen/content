@@ -47,6 +47,6 @@ Not part of any standard.
 
 ## See also
 
-- {{jsxref("Error.prototype.stack")}}
-- {{jsxref("Error.prototype.columnNumber")}}
-- {{jsxref("Error.prototype.fileName")}}
+*   {{jsxref("Error.prototype.stack")}}
+*   {{jsxref("Error.prototype.columnNumber")}}
+*   {{jsxref("Error.prototype.fileName")}}

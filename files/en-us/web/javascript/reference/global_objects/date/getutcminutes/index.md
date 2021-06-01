@@ -49,5 +49,5 @@ var minutes = today.getUTCMinutes();
 
 ## See also
 
-- {{jsxref("Date.prototype.getMinutes()")}}
-- {{jsxref("Date.prototype.setUTCMinutes()")}}
+*   {{jsxref("Date.prototype.getMinutes()")}}
+*   {{jsxref("Date.prototype.setUTCMinutes()")}}

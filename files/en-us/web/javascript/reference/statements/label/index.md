@@ -19,15 +19,16 @@ prefixing a statement with an identifier which you can refer to.
 
 ## Syntax
 
-<pre class="brush: js"><em>label</em> :
-  <em>statement</em>
-</pre>
+```js
+label :
+  statement
+```
 
-- <code><em>label</em></code>
-  - : Any JavaScript identifier that is not a reserved word.
-- <code><em>statement</em></code>
-  - : A JavaScript statement. `break` can be used with any labeled statement,
-    and `continue` can be used with looping labeled statements.
+*   <code><em>label</em></code>
+    *   : Any JavaScript identifier that is not a reserved word.
+*   <code><em>statement</em></code>
+    *   : A JavaScript statement. `break` can be used with any labeled statement,
+        and `continue` can be used with looping labeled statements.
 
 ## Description
 
@@ -35,7 +36,7 @@ You can use a label to identify a loop, and then use the `break` or `continue`
 statements to indicate whether a program should interrupt the loop or continue
 its execution.
 
-Note that JavaScript has _no_ `goto` statement, you can only use labels with
+Note that JavaScript has *no* `goto` statement, you can only use labels with
 `break` or `continue`.
 
 In [strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode) code, you
@@ -174,7 +175,7 @@ L: function F() {}
 // SyntaxError: functions cannot be labelled
 ```
 
-[Generator functions](/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+[Generator functions](/en-US/docs/Web/JavaScript/Reference/Statements/function\*)
 can neither be labeled in strict code, nor in non-strict code:
 
 ```js
@@ -192,5 +193,5 @@ L: function* F() {}
 
 ## See also
 
-- {{jsxref("Statements/break", "break")}}
-- {{jsxref("Statements/continue", "continue")}}
+*   {{jsxref("Statements/break", "break")}}
+*   {{jsxref("Statements/continue", "continue")}}

@@ -21,23 +21,23 @@ accessible and mutable from both JavaScript and WebAssembly.
 
 ## Constructor
 
-- [`WebAssembly.Table()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/Table)
-  - : Creates a new `Table` object.
+*   [`WebAssembly.Table()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/Table)
+    *   : Creates a new `Table` object.
 
 ## Instance properties
 
-- {{jsxref("WebAssembly/Table/length","Table.prototype.length")}}
-  - : Returns the length of the table, i.e. the number of elements.
+*   {{jsxref("WebAssembly/Table/length","Table.prototype.length")}}
+    *   : Returns the length of the table, i.e. the number of elements.
 
 ## Instance methods
 
-- {{jsxref("WebAssembly/Table/get","Table.prototype.get()")}}
-  - : Accessor function — gets the element stored at a given index.
-- {{jsxref("WebAssembly/Table/grow","Table.prototype.grow()")}}
-  - : Increases the size of the Table instance by a specified number of
-    elements.
-- {{jsxref("WebAssembly/Table/set","Table.prototype.set()")}}
-  - : Sets an element stored at a given index to a given value.
+*   {{jsxref("WebAssembly/Table/get","Table.prototype.get()")}}
+    *   : Accessor function — gets the element stored at a given index.
+*   {{jsxref("WebAssembly/Table/grow","Table.prototype.grow()")}}
+    *   : Increases the size of the Table instance by a specified number of
+        elements.
+*   {{jsxref("WebAssembly/Table/set","Table.prototype.set()")}}
+    *   : Sets an element stored at a given index to a given value.
 
 ## Examples
 
@@ -105,6 +105,6 @@ but the same table is visible and callable inside the wasm instance too.
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

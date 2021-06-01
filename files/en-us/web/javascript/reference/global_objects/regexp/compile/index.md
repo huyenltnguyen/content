@@ -25,23 +25,23 @@ compile(pattern, flags)
 
 ### Parameters
 
-- `pattern`
-  - : The text of the regular expression.
-- `flags`
-  - : If specified, flags can have any combination of the following values:
-    - `g`
-      - : global match
-    - `i`
-      - : ignore case
-    - `m`
-      - : multiline; treat beginning and end characters (^ and $) as working
-        over multiple lines (i.e., match the beginning or end of _each_ line
-        (delimited by \n or \r), not only the very beginning or end of the whole
-        input string)
-    - `y`
-      - : sticky; matches only from the index indicated by the `lastIndex`
-        property of this regular expression in the target string (and does not
-        attempt to match from any later indexes).
+*   `pattern`
+    *   : The text of the regular expression.
+*   `flags`
+    *   : If specified, flags can have any combination of the following values:
+        *   `g`
+            *   : global match
+        *   `i`
+            *   : ignore case
+        *   `m`
+            *   : multiline; treat beginning and end characters (^ and $) as working
+                over multiple lines (i.e., match the beginning or end of *each* line
+                (delimited by \n or \r), not only the very beginning or end of the whole
+                input string)
+        *   `y`
+            *   : sticky; matches only from the index indicated by the `lastIndex`
+                property of this regular expression in the target string (and does not
+                attempt to match from any later indexes).
 
 ## Description
 
@@ -70,4 +70,4 @@ regexObj.compile('new foo', 'g');
 
 ## See also
 
-- {{jsxref("RegExp")}}
+*   {{jsxref("RegExp")}}

@@ -19,9 +19,7 @@ For more information, see
 {{jsxref("RegExp.@@replace", "RegExp.prototype[@@replace]()")}}
 and {{jsxref("String.prototype.replace()")}}.
 
-{{EmbedInteractiveExample("pages/js/symbol-replace.html")}}
-
-{{js_property_attributes(0,0,0)}}
+{{EmbedInteractiveExample("pages/js/symbol-replace.html")}}{{js_property_attributes(0,0,0)}}
 
 ## Examples
 
@@ -51,9 +49,9 @@ console.log('football'.replace(new CustomReplacer('foo')));
 
 ## See also
 
-- A polyfill of `Symbol.replace` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
-- {{jsxref("Symbol.match")}}
-- {{jsxref("Symbol.search")}}
-- {{jsxref("Symbol.split")}}
-- {{jsxref("RegExp.@@replace", "RegExp.prototype[@@replace]()")}}
+*   A polyfill of `Symbol.replace` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
+*   {{jsxref("Symbol.match")}}
+*   {{jsxref("Symbol.search")}}
+*   {{jsxref("Symbol.split")}}
+*   {{jsxref("RegExp.@@replace", "RegExp.prototype[@@replace]()")}}

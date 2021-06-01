@@ -14,8 +14,8 @@ browser-compat: javascript.builtins.String.raw
 
 The static **`String.raw()`** method is a tag function of
 [template literals](/en-US/docs/Web/JavaScript/Reference/template_strings). This
-is _similar_ to the `r` prefix in Python, or the `@` prefix in C# for string
-literals. (But it is not _identical_; see explanations in
+is *similar* to the `r` prefix in Python, or the `@` prefix in C# for string
+literals. (But it is not *identical*; see explanations in
 [this issue](https://bugs.chromium.org/p/v8/issues/detail?id=5016).) It's used
 to get the raw string form of template literals, that is, substitutions (e.g.
 `${foo}`) are processed, but escapes (e.g. `\n`) are not.
@@ -24,22 +24,23 @@ to get the raw string form of template literals, that is, substitutions (e.g.
 
 ## Syntax
 
-<pre class="brush: js"><code>String.raw(<var>callSite</var>, <var>...substitutions</var>)
+```js
+String.raw(callSite, ...substitutions)
 
-String.raw`<var>templateString</var>`
-</code></pre>
+String.raw`templateString`
+```
 
 ### Parameters
 
-- `callSite`
-  - : Well-formed template call site object, like
-    `{ raw: ['foo', 'bar', 'baz'] }`.
-- `...substitutions`
-  - : Contains substitution values.
-- `templateString`
-  - : A
-    {{jsxref("template_literals", "template literal", "", 1)}},
-    optionally with substitutions (`${...}`).
+*   `callSite`
+    *   : Well-formed template call site object, like
+        `{ raw: ['foo', 'bar', 'baz'] }`.
+*   `...substitutions`
+    *   : Contains substitution values.
+*   `templateString`
+    *   : A
+        {{jsxref("template_literals", "template literal", "", 1)}},
+        optionally with substitutions (`${...}`).
 
 ### Return value
 
@@ -47,9 +48,9 @@ The raw string form of a given template literal.
 
 ### Exceptions
 
-- {{jsxref("TypeError")}}
-  - : A {{jsxref("TypeError")}} is thrown if the first argument is not
-    a well-formed object.
+*   {{jsxref("TypeError")}}
+    *   : A {{jsxref("TypeError")}} is thrown if the first argument is not
+        a well-formed object.
 
 ## Description
 
@@ -111,8 +112,8 @@ String.raw({ raw: 'test' }, 0, 1, 2); // 't0e1s2t'
 
 ## See also
 
-- A polyfill of `String.raw` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- [Template literals](/en-US/docs/Web/JavaScript/Reference/template_strings)
-- {{jsxref("String")}}
-- [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
+*   A polyfill of `String.raw` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   [Template literals](/en-US/docs/Web/JavaScript/Reference/template_strings)
+*   {{jsxref("String")}}
+*   [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)

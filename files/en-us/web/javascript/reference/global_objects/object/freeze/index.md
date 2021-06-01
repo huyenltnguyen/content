@@ -29,12 +29,14 @@ returns the same object that was passed in.
 
 ## Syntax
 
-<pre class="brush: js">Object.freeze(<var>obj</var>)</pre>
+```js
+Object.freeze(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object to freeze.
+*   `obj`
+    *   : The object to freeze.
 
 ### Return value
 
@@ -55,8 +57,8 @@ value). Note that values that are objects can still be modified, unless they are
 also frozen. As an object, an array can be frozen; after doing so, its elements
 cannot be altered and no elements can be added to or removed from the array.
 
-`freeze()` returns the same object that was passed into the function. It _does
-not_ create a frozen copy.
+`freeze()` returns the same object that was passed into the function. It *does
+not* create a frozen copy.
 
 In ES5, if the argument to this method is not an object (a primitive), then it
 will cause a {{jsxref("TypeError")}}. In ES2015, a non-object argument
@@ -74,21 +76,22 @@ An {{domxref("ArrayBufferView")}} with elements will cause a
 {{jsxref("TypeError")}}, as they are views over memory and will
 definitely cause other possible issues:
 
-<pre class="brush: js">> Object.freeze(new Uint8Array(0)) // No elements
-<em>Uint8Array</em> []
+```js
+> Object.freeze(new Uint8Array(0)) // No elements
+Uint8Array []
 
 > Object.freeze(new Uint8Array(1)) // Has elements
 TypeError: Cannot freeze array buffer views with elements
 
 > Object.freeze(new DataView(new ArrayBuffer(32))) // No elements
-<em>DataView</em> {}
+DataView {}
 
 > Object.freeze(new Float64Array(new ArrayBuffer(64), 63, 0)) // No elements
-<em>Float64Array</em> []
+Float64Array []
 
 > Object.freeze(new Float64Array(new ArrayBuffer(64), 32, 2)) // Has elements
 TypeError: Cannot freeze array buffer views with elements
-</pre>
+```
 
 Note that; as the standard three properties (`buf.byteLength`, `buf.byteOffset`
 and `buf.buffer`) are read-only (as are those of an
@@ -173,8 +176,8 @@ fail();
 a.push(2); // throws a TypeError
 ```
 
-The object being frozen is _immutable_. However, it is not necessarily
-_constant_. The following example shows that a frozen object is not constant
+The object being frozen is *immutable*. However, it is not necessarily
+*constant*. The following example shows that a frozen object is not constant
 (freeze is shallow).
 
 ```js
@@ -190,7 +193,7 @@ obj1.internal.a // 'aValue'
 
 To be a constant object, the entire reference graph (direct and indirect
 references to other objects) must reference only immutable frozen objects. The
-object being frozen is said to be immutable because the entire object _state_
+object being frozen is said to be immutable because the entire object *state*
 (values and references to other objects) within the whole object is fixed. Note
 that strings, numbers, and booleans are always immutable and that Functions and
 Arrays are objects.
@@ -199,7 +202,7 @@ Arrays are objects.
 
 The result of calling <code>Object.freeze(<var>object</var>)</code> only applies
 to the immediate properties of `object` itself and will prevent future property
-addition, removal or value re-assignment operations _only_ on `object`. If the
+addition, removal or value re-assignment operations *only* on `object`. If the
 value of those properties are objects themselves, those objects are not frozen
 and may be the target of property addition, removal or value re-assignment
 operations.
@@ -225,7 +228,7 @@ console.log(employee.address.city) // Output: "Noida"
 To make an object immutable, recursively freeze each property which is of type
 object (deep freeze). Use the pattern on a case-by-case basis based on your
 design when you know the object contains no
-[cycles](<https://en.wikipedia.org/wiki/Cycle_(graph_theory)>) in the reference
+[cycles](https://en.wikipedia.org/wiki/Cycle_\(graph_theory\)) in the reference
 graph, otherwise an endless loop will be triggered. An enhancement to
 `deepFreeze()` would be to have an internal function that receives a path (e.g.
 an Array) argument so you can suppress calling `deepFreeze()` recursively when
@@ -272,8 +275,8 @@ obj2.internal.a; // null
 
 ## See also
 
-- {{jsxref("Object.isFrozen()")}}
-- {{jsxref("Object.preventExtensions()")}}
-- {{jsxref("Object.isExtensible()")}}
-- {{jsxref("Object.seal()")}}
-- {{jsxref("Object.isSealed()")}}
+*   {{jsxref("Object.isFrozen()")}}
+*   {{jsxref("Object.preventExtensions()")}}
+*   {{jsxref("Object.isExtensible()")}}
+*   {{jsxref("Object.seal()")}}
+*   {{jsxref("Object.isSealed()")}}

@@ -20,7 +20,7 @@ binary data. This is where typed arrays come in. Each entry in a JavaScript
 typed array is a raw binary value in one of a number of supported formats, from
 8-bit integers to 64-bit floating-point numbers.
 
-However, typed arrays are _not_ to be confused with normal arrays, as calling
+However, typed arrays are *not* to be confused with normal arrays, as calling
 {{jsxref("Array.isArray()")}} on a typed array returns `false`.
 Moreover, not all methods available for normal arrays are supported by typed
 arrays (e.g. push and pop).
@@ -53,7 +53,19 @@ special typed array view, the `Uint8ClampedArray`. It clamps the values between
 0 and 255. This is useful for
 [Canvas data processing](/en-US/docs/Web/API/ImageData), for example.
 
-<table class="standard-table"><thead><tr><th class="header" scope="col">Type</th><th class="header" scope="col">Value Range</th><th class="header" scope="col">Size in bytes</th><th class="header" scope="col">Description</th><th class="header" scope="col">Web IDL type</th><th class="header" scope="col">Equivalent C type</th></tr></thead><tbody><tr><td>{{jsxref("Int8Array")}}</td><td><code>-128</code> to <code>127</code></td><td>1</td><td>8-bit two's complement signed integer</td><td><code>byte</code></td><td><code>int8_t</code></td></tr><tr><td>{{jsxref("Uint8Array")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Uint8ClampedArray")}}</td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer (clamped)</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr><td>{{jsxref("Int16Array")}}</td><td><code>-32768</code> to <code>32767</code></td><td>2</td><td>16-bit two's complement signed integer</td><td><code>short</code></td><td><code>int16_t</code></td></tr><tr><td>{{jsxref("Uint16Array")}}</td><td><code>0</code> to <code>65535</code></td><td>2</td><td>16-bit unsigned integer</td><td><code>unsigned short</code></td><td><code>uint16_t</code></td></tr><tr><td>{{jsxref("Int32Array")}}</td><td><code>-2147483648</code> to <code>2147483647</code></td><td>4</td><td>32-bit two's complement signed integer</td><td><code>long</code></td><td><code>int32_t</code></td></tr><tr><td>{{jsxref("Uint32Array")}}</td><td><code>0</code> to <code>4294967295</code></td><td>4</td><td>32-bit unsigned integer</td><td><code>unsigned long</code></td><td><code>uint32_t</code></td></tr><tr><td>{{jsxref("Float32Array")}}</td><td><code>1.2E-38</code> to <code>3.4E38</code></td><td>4</td><td>32-bit IEEE floating point number (7 significant digits e.g., <code>1.123456</code>)</td><td><code>unrestricted float</code></td><td><code>float</code></td></tr><tr><td>{{jsxref("Float64Array")}}</td><td><code>5E-324</code> to <code>1.8E308</code></td><td>8</td><td>64-bit IEEE floating point number (16 significant digits e.g., <code>1.123...15</code>)</td><td><code>unrestricted double</code></td><td><code>double</code></td></tr><tr><td>{{jsxref("BigInt64Array")}}</td><td><code>-2^63</code> to <code>2^63 - 1</code></td><td>8</td><td>64-bit two's complement signed integer</td><td><code>bigint</code></td><td><code>int64_t (signed long long)</code></td></tr><tr><td>{{jsxref("BigUint64Array")}}</td><td><code>0</code> to <code>2^64 - 1</code></td><td>8</td><td>64-bit unsigned integer</td><td><code>bigint</code></td><td><code>uint64_t (unsigned long long)</code></td></tr></tbody></table>
+| Type                                     | Value Range                   | Size in bytes | Description                                                                  | Web IDL type          | Equivalent C type               |
+| ---------------------------------------- | ----------------------------- | ------------- | ---------------------------------------------------------------------------- | --------------------- | ------------------------------- |
+| {{jsxref("Int8Array")}}         | `-128` to `127`               | 1             | 8-bit two's complement signed integer                                        | `byte`                | `int8_t`                        |
+| {{jsxref("Uint8Array")}}         | `0` to `255`                  | 1             | 8-bit unsigned integer                                                       | `octet`               | `uint8_t`                       |
+| {{jsxref("Uint8ClampedArray")}} | `0` to `255`                  | 1             | 8-bit unsigned integer (clamped)                                             | `octet`               | `uint8_t`                       |
+| {{jsxref("Int16Array")}}         | `-32768` to `32767`           | 2             | 16-bit two's complement signed integer                                       | `short`               | `int16_t`                       |
+| {{jsxref("Uint16Array")}}         | `0` to `65535`                | 2             | 16-bit unsigned integer                                                      | `unsigned short`      | `uint16_t`                      |
+| {{jsxref("Int32Array")}}         | `-2147483648` to `2147483647` | 4             | 32-bit two's complement signed integer                                       | `long`                | `int32_t`                       |
+| {{jsxref("Uint32Array")}}         | `0` to `4294967295`           | 4             | 32-bit unsigned integer                                                      | `unsigned long`       | `uint32_t`                      |
+| {{jsxref("Float32Array")}}     | `1.2E-38` to `3.4E38`         | 4             | 32-bit IEEE floating point number (7 significant digits e.g., `1.123456`)    | `unrestricted float`  | `float`                         |
+| {{jsxref("Float64Array")}}     | `5E-324` to `1.8E308`         | 8             | 64-bit IEEE floating point number (16 significant digits e.g., `1.123...15`) | `unrestricted double` | `double`                        |
+| {{jsxref("BigInt64Array")}}     | `-2^63` to `2^63 - 1`         | 8             | 64-bit two's complement signed integer                                       | `bigint`              | `int64_t (signed long long)`    |
+| {{jsxref("BigUint64Array")}}     | `0` to `2^64 - 1`             | 8             | 64-bit unsigned integer                                                      | `bigint`              | `uint64_t (unsigned long long)` |
 
 ### DataView
 
@@ -70,17 +82,17 @@ methods.
 These are some examples of APIs that make use of typed arrays; there are others,
 and more are being added all the time.
 
-- [`FileReader.prototype.readAsArrayBuffer()`](</en-US/docs/Web/API/FileReader#readasarraybuffer()>)
-  - : The `FileReader.prototype.readAsArrayBuffer()` method starts reading the
-    contents of the specified [`Blob`](/en-US/docs/Web/API/Blob) or
-    [`File`](/en-US/docs/Web/API/File).
-- [`XMLHttpRequest.prototype.send()`](</en-US/docs/Web/API/XMLHttpRequest#send()>)
-  - : `XMLHttpRequest` instances' `send()` method now supports typed arrays and
-    {{jsxref("ArrayBuffer")}} objects as argument.
-- [`ImageData.data`](/en-US/docs/Web/API/ImageData)
-  - : Is a {{jsxref("Uint8ClampedArray")}} representing a
-    one-dimensional array containing the data in the RGBA order, with integer
-    values between `0` and `255` inclusive.
+*   [`FileReader.prototype.readAsArrayBuffer()`](/en-US/docs/Web/API/FileReader#readasarraybuffer\(\))
+    *   : The `FileReader.prototype.readAsArrayBuffer()` method starts reading the
+        contents of the specified [`Blob`](/en-US/docs/Web/API/Blob) or
+        [`File`](/en-US/docs/Web/API/File).
+*   [`XMLHttpRequest.prototype.send()`](/en-US/docs/Web/API/XMLHttpRequest#send\(\))
+    *   : `XMLHttpRequest` instances' `send()` method now supports typed arrays and
+        {{jsxref("ArrayBuffer")}} objects as argument.
+*   [`ImageData.data`](/en-US/docs/Web/API/ImageData)
+    *   : Is a {{jsxref("Uint8ClampedArray")}} representing a
+        one-dimensional array containing the data in the RGBA order, with integer
+        values between `0` and `255` inclusive.
 
 ## Examples
 
@@ -221,8 +233,8 @@ const normalArray = Array.prototype.slice.call(typedArray);
 
 ## See also
 
-- [Getting `ArrayBuffer`s or typed arrays from _Base64_-encoded strings](/en-US/docs/Glossary/Base64#appendix.3a_decode_a_base64_string_to_uint8array_or_arraybuffer)
-- [`StringView` – a C-like representation of strings based on typed arrays](/en-US/docs/Code_snippets/StringView)
-- [Faster Canvas Pixel Manipulation with Typed Arrays](https://hacks.mozilla.org/2011/12/faster-canvas-pixel-manipulation-with-typed-arrays)
-- [Typed Arrays: Binary Data in the Browser](http://www.html5rocks.com/en/tutorials/webgl/typed_arrays)
-- [Endianness](/en-US/docs/Glossary/Endianness)
+*   [Getting `ArrayBuffer`s or typed arrays from *Base64*-encoded strings](/en-US/docs/Glossary/Base64#appendix.3a_decode_a_base64\_string_to_uint8array_or_arraybuffer)
+*   [`StringView` – a C-like representation of strings based on typed arrays](/en-US/docs/Code_snippets/StringView)
+*   [Faster Canvas Pixel Manipulation with Typed Arrays](https://hacks.mozilla.org/2011/12/faster-canvas-pixel-manipulation-with-typed-arrays)
+*   [Typed Arrays: Binary Data in the Browser](http://www.html5rocks.com/en/tutorials/webgl/typed_arrays)
+*   [Endianness](/en-US/docs/Glossary/Endianness)

@@ -19,8 +19,9 @@ The logical nullish assignment (`x ??= y`) operator only assigns if `x` is
 
 ## Syntax
 
-<pre class="brush: js"><em>expr1</em> ??= <em>expr2</em>
-</pre>
+```js
+expr1 ??= expr2
+```
 
 ## Description
 
@@ -36,8 +37,7 @@ evaluated to the left-hand side expression if the left-hand side proves to be
 neither `null` nor `undefined`.
 
 Short circuit means that the <code><em>expr</em></code> part above is **not
-evaluated**, hence any side effects of doing so do not take effect (e.g., if
-<code><em>expr</em></code> is a function call, the calling never takes place).
+evaluated**, hence any side effects of doing so do not take effect (e.g., if <code><em>expr</em></code> is a function call, the calling never takes place).
 
 Logical nullish assignment short-circuits as well meaning that `x ??= y` is
 equivalent to:
@@ -77,7 +77,7 @@ config({}); // { duration: 100, speed: 25 }
 
 ## See also
 
-- [The nullish coalescing operator (`??`)](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
-- {{Glossary("Nullish")}}
-- {{Glossary("Truthy")}}
-- {{Glossary("Falsy")}}
+*   [The nullish coalescing operator (`??`)](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
+*   {{Glossary("Nullish")}}
+*   {{Glossary("Truthy")}}
+*   {{Glossary("Falsy")}}

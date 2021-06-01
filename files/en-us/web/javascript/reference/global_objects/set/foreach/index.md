@@ -40,15 +40,15 @@ forEach(function callbackFn(value, key, set) { ... }, thisArg)
 
 ### Parameters
 
-- `callback`
-  - : Function to execute for each element, taking three arguments:
-    - `value`, `key`
-      - : The current element being processed in the `Set`. As there are no keys
-        in `Set`, the value is passed for both arguments.
-    - `set`
-      - : The `Set` object which `forEach()` was called upon.
-- `thisArg`
-  - : Value to use as `this` when executing `callbackFn`.
+*   `callback`
+    *   : Function to execute for each element, taking three arguments:
+        *   `value`, `key`
+            *   : The current element being processed in the `Set`. As there are no keys
+                in `Set`, the value is passed for both arguments.
+        *   `set`
+            *   : The `Set` object which `forEach()` was called upon.
+*   `thisArg`
+    *   : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -63,9 +63,9 @@ the value `undefined`.
 
 `callback` is invoked with **three arguments**:
 
-- the **element value**
-- the **element key**
-- the **`Set` object being traversed**
+*   the **element value**
+*   the **element key**
+*   the **`Set` object being traversed**
 
 There are no keys in `Set` objects, however, so the first two arguments are both
 **values** contained in the {{jsxref("Set")}}. This is to make it
@@ -117,5 +117,5 @@ new Set(['foo', 'bar', undefined]).forEach(logSetElements);
 
 ## See also
 
-- {{jsxref("Array.prototype.forEach()")}}
-- {{jsxref("Map.prototype.forEach()")}}
+*   {{jsxref("Array.prototype.forEach()")}}
+*   {{jsxref("Map.prototype.forEach()")}}

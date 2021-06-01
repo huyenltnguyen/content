@@ -26,8 +26,8 @@ Atomics.isLockFree(size)
 
 ### Parameters
 
-- `size`
-  - : The size in bytes to check.
+*   `size`
+    *   : The size in bytes to check.
 
 ### Return value
 
@@ -58,4 +58,4 @@ Atomics.isLockFree(8); // true
 
 ## See also
 
-- {{jsxref("Atomics")}}
+*   {{jsxref("Atomics")}}

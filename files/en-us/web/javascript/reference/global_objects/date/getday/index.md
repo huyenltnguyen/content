@@ -67,6 +67,6 @@ console.log(weekday); // 1
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCDate()")}}
-- {{jsxref("Date.prototype.getUTCDay()")}}
-- {{jsxref("Date.prototype.setDate()")}}
+*   {{jsxref("Date.prototype.getUTCDate()")}}
+*   {{jsxref("Date.prototype.getUTCDay()")}}
+*   {{jsxref("Date.prototype.setDate()")}}

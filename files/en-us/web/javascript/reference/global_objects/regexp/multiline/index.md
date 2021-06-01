@@ -16,9 +16,7 @@ The **`multiline`** property indicates whether or not the "`m`" flag is used
 with the regular expression. `multiline` is a read-only property of an
 individual regular expression instance.
 
-{{EmbedInteractiveExample("pages/js/regexp-prototype-multiline.html", "taller")}}
-
-{{js_property_attributes(0, 0, 1)}}
+{{EmbedInteractiveExample("pages/js/regexp-prototype-multiline.html", "taller")}}{{js_property_attributes(0, 0, 1)}}
 
 ## Description
 
@@ -50,11 +48,11 @@ console.log(regex.multiline); // true
 
 ## See also
 
-- {{jsxref("RegExp.lastIndex")}}
-- {{JSxRef("RegExp.prototype.dotAll")}}
-- {{JSxRef("RegExp.prototype.global")}}
-- {{JSxRef("RegExp.prototype.hasIndices")}}
-- {{JSxRef("RegExp.prototype.ignoreCase")}}
-- {{JSxRef("RegExp.prototype.source")}}
-- {{JSxRef("RegExp.prototype.sticky")}}
-- {{JSxRef("RegExp.prototype.unicode")}}
+*   {{jsxref("RegExp.lastIndex")}}
+*   {{JSxRef("RegExp.prototype.dotAll")}}
+*   {{JSxRef("RegExp.prototype.global")}}
+*   {{JSxRef("RegExp.prototype.hasIndices")}}
+*   {{JSxRef("RegExp.prototype.ignoreCase")}}
+*   {{JSxRef("RegExp.prototype.source")}}
+*   {{JSxRef("RegExp.prototype.sticky")}}
+*   {{JSxRef("RegExp.prototype.unicode")}}

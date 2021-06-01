@@ -55,5 +55,5 @@ console.log(mapIter.next().value); // Object
 
 ## See also
 
-- {{jsxref("Map.prototype.entries()")}}
-- {{jsxref("Map.prototype.values()")}}
+*   {{jsxref("Map.prototype.entries()")}}
+*   {{jsxref("Map.prototype.values()")}}

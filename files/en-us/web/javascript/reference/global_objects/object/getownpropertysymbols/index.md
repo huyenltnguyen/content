@@ -18,12 +18,14 @@ properties found directly upon a given object.
 
 ## Syntax
 
-<pre class="brush: js">Object.getOwnPropertySymbols(<var>obj</var>)</pre>
+```js
+Object.getOwnPropertySymbols(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object whose symbol properties are to be returned.
+*   `obj`
+    *   : The object whose symbol properties are to be returned.
 
 ### Return value
 
@@ -69,7 +71,7 @@ console.log(objectSymbols[0]);     // Symbol(a)
 
 ## See also
 
-- A polyfill of `Object.getOwnPropertySymbols` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
-- {{jsxref("Object.getOwnPropertyNames()")}}
-- {{jsxref("Symbol")}}
+*   A polyfill of `Object.getOwnPropertySymbols` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
+*   {{jsxref("Object.getOwnPropertyNames()")}}
+*   {{jsxref("Symbol")}}

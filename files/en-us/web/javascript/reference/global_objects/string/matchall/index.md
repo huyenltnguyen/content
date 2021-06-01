@@ -13,9 +13,8 @@ browser-compat: javascript.builtins.String.matchAll
 ---
 {{JSRef}}
 
-The **`matchAll()`** method returns an iterator of all results matching a
-<var>string</var> against a
-_[regular expression](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)_,
+The **`matchAll()`** method returns an iterator of all results matching a <var>string</var> against a
+*[regular expression](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)*,
 including
 [capturing groups](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges).
 
@@ -29,16 +28,16 @@ matchAll(regexp)
 
 ### Parameters
 
-- `regexp`
+*   `regexp`
 
-  - : A regular expression object.
+    *   : A regular expression object.
 
-    If a non-`RegExp` object `obj` is passed, it is implicitly converted to a
-    {{jsxref("RegExp")}} by using <code>new
-    RegExp(<var>obj</var>)</code>.
+        If a non-`RegExp` object `obj` is passed, it is implicitly converted to a
+        {{jsxref("RegExp")}} by using <code>new
+        RegExp(<var>obj</var>)</code>.
 
-    The `RegExp` object must have the `/g` flag, otherwise a `TypeError` will be
-    thrown.
+        The `RegExp` object must have the `/g` flag, otherwise a `TypeError` will be
+        thrown.
 
 ### Return value
 
@@ -159,11 +158,11 @@ array[1];
 
 ## See also
 
-- A polyfill of `String.prototype.matchAll` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.match()")}}
-- [Using regular expressions in JavaScript](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-- [Capturing groups](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
-- {{jsxref("RegExp")}}
-- {{jsxref("RegExp.prototype.exec()")}}
-- {{jsxref("RegExp.prototype.test()")}}
+*   A polyfill of `String.prototype.matchAll` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.match()")}}
+*   [Using regular expressions in JavaScript](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+*   [Capturing groups](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
+*   {{jsxref("RegExp")}}
+*   {{jsxref("RegExp.prototype.exec()")}}
+*   {{jsxref("RegExp.prototype.test()")}}

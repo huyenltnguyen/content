@@ -10,25 +10,25 @@ browser-compat: javascript.operators.in
 ---
 {{jsSidebar("Operators")}}
 
-<span class="seoSummary">The <strong><code>in</code> operator</strong> returns
-<code>true</code> if the specified property is in the specified object or its
+<span class="seoSummary">The <strong><code>in</code> operator</strong> returns <code>true</code> if the specified property is in the specified object or its
 prototype chain.</span>
 
 {{EmbedInteractiveExample("pages/js/expressions-inoperator.html")}}
 
 ## Syntax
 
-<pre class="brush: js"><var>prop</var> in <var>object</var></pre>
+```js
+prop in object
+```
 
 ### Parameters
 
-- `prop`
-  - : A string or symbol representing a property name or array index
-    (non-symbols will be coerced to strings).
-- `object`
-  - : Object to check if it (or its prototype chain)
-    <span class="short_text" lang="en">contains</span> the property with
-    specified name (`prop`).
+*   `prop`
+    *   : A string or symbol representing a property name or array index
+        (non-symbols will be coerced to strings).
+*   `object`
+    *   : Object to check if it (or its prototype chain) <span class="short_text" lang="en">contains</span> the property with
+        specified name (`prop`).
 
 ## Examples
 
@@ -120,7 +120,7 @@ let empties = new Array(3).fill(undefined)
 ### Inherited properties
 
 The `in` operator returns `true` for properties in the prototype chain. (If you
-want to check for only _non-inherited_ properties,
+want to check for only *non-inherited* properties,
 use {{jsxref("Object.prototype.hasOwnProperty()")}} instead.)
 
 ```js
@@ -137,8 +137,8 @@ use {{jsxref("Object.prototype.hasOwnProperty()")}} instead.)
 
 ## See also
 
-- [`for...in`](/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
-- [`delete`](/en-US/docs/Web/JavaScript/Reference/Operators/delete)
-- {{jsxref("Object.prototype.hasOwnProperty()")}}
-- {{jsxref("Reflect.has()")}}
-- [Enumerability and ownership of properties](/en-US/docs/Enumerability_and_ownership_of_properties)
+*   [`for...in`](/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+*   [`delete`](/en-US/docs/Web/JavaScript/Reference/Operators/delete)
+*   {{jsxref("Object.prototype.hasOwnProperty()")}}
+*   {{jsxref("Reflect.has()")}}
+*   [Enumerability and ownership of properties](/en-US/docs/Enumerability_and_ownership_of_properties)

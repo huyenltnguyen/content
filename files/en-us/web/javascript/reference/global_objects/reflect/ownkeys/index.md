@@ -19,13 +19,14 @@ object's own property keys.
 
 ## Syntax
 
-<pre class="brush: js">Reflect.ownKeys(<var>target</var>)
-</pre>
+```js
+Reflect.ownKeys(target)
+```
 
 ### Parameters
 
-- `target`
-  - : The target object from which to get the own keys.
+*   `target`
+    *   : The target object from which to get the own keys.
 
 ### Return value
 
@@ -71,7 +72,7 @@ Reflect.ownKeys(obj)
 
 ## See also
 
-- A polyfill of `Reflect.ownKeys` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- {{jsxref("Object.getOwnPropertyNames()")}}
+*   A polyfill of `Reflect.ownKeys` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   {{jsxref("Object.getOwnPropertyNames()")}}

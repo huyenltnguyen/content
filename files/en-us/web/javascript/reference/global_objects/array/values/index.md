@@ -109,11 +109,11 @@ iterator.next().value;        //  "n"
 
 ## See also
 
-- A polyfill of `Array.prototype.values` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.keys()")}}
-- {{jsxref("Array.prototype.entries()")}}
-- {{jsxref("Array.prototype.forEach()")}}
-- {{jsxref("Array.prototype.every()")}}
-- {{jsxref("Array.prototype.some()")}}
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+*   A polyfill of `Array.prototype.values` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.keys()")}}
+*   {{jsxref("Array.prototype.entries()")}}
+*   {{jsxref("Array.prototype.forEach()")}}
+*   {{jsxref("Array.prototype.every()")}}
+*   {{jsxref("Array.prototype.some()")}}
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)

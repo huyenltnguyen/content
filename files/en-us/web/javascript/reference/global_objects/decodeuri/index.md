@@ -24,12 +24,14 @@ or by a similar routine.
 
 ## Syntax
 
-<pre class="brush: js"><code>decodeURI(<var>encodedURI</var>)</code></pre>
+```js
+decodeURI(encodedURI)
+```
 
 ### Parameters
 
-- `encodedURI`
-  - : A complete, encoded Uniform Resource Identifier.
+*   `encodedURI`
+    *   : A complete, encoded Uniform Resource Identifier.
 
 ### Return value
 
@@ -79,6 +81,6 @@ try {
 
 ## See also
 
-- {{jsxref("decodeURIComponent", "decodeURIComponent()")}}
-- {{jsxref("encodeURI", "encodeURI()")}}
-- {{jsxref("encodeURIComponent", "encodeURIComponent()")}}
+*   {{jsxref("decodeURIComponent", "decodeURIComponent()")}}
+*   {{jsxref("encodeURI", "encodeURI()")}}
+*   {{jsxref("encodeURIComponent", "encodeURIComponent()")}}

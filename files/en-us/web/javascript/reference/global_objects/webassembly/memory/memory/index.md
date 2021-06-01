@@ -28,22 +28,29 @@ new WebAssembly.Memory(memoryDescriptor)
 
 ### Parameters
 
-<dl><dt><em>memoryDescriptor</em></dt><dd>An object that can contain the following members:<dl><dt><em>initial</em></dt><dd>The initial size of the WebAssembly Memory, in units of WebAssembly pages.</dd><dt><em>maximum {{optional_inline}}</em></dt><dd>The maximum size the WebAssembly Memory is allowed to grow to, in units of
-WebAssembly pages. When present, the <code>maximum</code> parameter acts as a hint
-to the engine to reserve memory up front. However, the engine may ignore or clamp
-this reservation request. Unshared WebAssembly memories don't need to set a
-<code>maximum</code>, but shared memories do.</dd><dt>shared <em>{{optional_inline}}</em></dt><dd>A boolean value that defines whether the memory is a shared memory or not. If
-set to <code>true</code>, it is a shared memory. The default is
-<code>false</code>.</dd></dl></dd></dl>
+*   *memoryDescriptor*
+    *   : An object that can contain the following members:
+        *   *initial*
+            *   : The initial size of the WebAssembly Memory, in units of WebAssembly
+                pages.
+        *   *maximum {{optional_inline}}*
+            *   : The maximum size the WebAssembly Memory is allowed to grow to, in
+                units of WebAssembly pages. When present, the `maximum` parameter acts
+                as a hint to the engine to reserve memory up front. However, the engine
+                may ignore or clamp this reservation request. Unshared WebAssembly
+                memories don't need to set a `maximum`, but shared memories do.
+        *   shared *{{optional_inline}}*
+            *   : A boolean value that defines whether the memory is a shared memory or
+                not. If set to `true`, it is a shared memory. The default is `false`.
 
 > **Note:** A WebAssembly page has a constant size of 65,536 bytes, i.e., 64KiB.
 
 ### Exceptions
 
-- If `memoryDescriptor` is not of type object, a
-  {{jsxref("TypeError")}} is thrown.
-- If `maximum` is specified and is smaller than `initial`, a
-  {{jsxref("RangeError")}} is thrown.
+*   If `memoryDescriptor` is not of type object, a
+    {{jsxref("TypeError")}} is thrown.
+*   If `maximum` is specified and is smaller than `initial`, a
+    {{jsxref("RangeError")}} is thrown.
 
 ## Examples
 
@@ -106,6 +113,6 @@ This memory's `buffer` property will return a
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

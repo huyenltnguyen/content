@@ -19,8 +19,9 @@ bits are shifted in from the right.
 
 ## Syntax
 
-<pre class="brush: js"><code><var>a</var> &#x3C;&#x3C; <var>b</var></code>
-</pre>
+```js
+a << b
+```
 
 ## Description
 
@@ -59,5 +60,5 @@ e.g.: `9 << 3` translates to: `9 * (2 ** 3) = 9 * (8) = 72`.
 
 ## See also
 
-- [Bitwise operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise)
-- [Left shift assignment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment)
+*   [Bitwise operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise)
+*   [Left shift assignment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment)

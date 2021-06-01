@@ -26,8 +26,8 @@ formatToParts(number)
 
 ### Parameters
 
-- `number` {{optional_inline}}
-  - : A {{jsxref("Number")}} or {{jsxref("BigInt")}} to format.
+*   `number` {{optional_inline}}
+    *   : A {{jsxref("Number")}} or {{jsxref("BigInt")}} to format.
 
 ### Return value
 
@@ -51,32 +51,32 @@ like this:
 
 Possible types are the following:
 
-- currency
-  - : The currency string, such as the symbols "$" and "€" or the name "Dollar",
-    "Euro" depending on how `currencyDisplay` is specified.
-- decimal
-  - : The decimal separator string (".").
-- fraction
-  - : The fraction number.
-- group
-  - : The group separator string (",").
-- infinity
-  - : The {{jsxref("Infinity")}} string ("∞").
-- integer
-  - : The integer number.
-- literal
-  - : Any literal strings or whitespace in the formatted number.
-- minusSign
-  - : The minus sign string ("-").
-- nan
-  - : The {{jsxref("NaN")}} string ("NaN").
-- plusSign
-  - : The plus sign string ("+").
-- percentSign
-  - : The percent sign string ("%").
-- unit
-  - : The unit string, such as the "l" or "litres", depending on how
-    `unitDisplay` is specified.
+*   currency
+    *   : The currency string, such as the symbols "$" and "€" or the name "Dollar",
+        "Euro" depending on how `currencyDisplay` is specified.
+*   decimal
+    *   : The decimal separator string (".").
+*   fraction
+    *   : The fraction number.
+*   group
+    *   : The group separator string (",").
+*   infinity
+    *   : The {{jsxref("Infinity")}} string ("∞").
+*   integer
+    *   : The integer number.
+*   literal
+    *   : Any literal strings or whitespace in the formatted number.
+*   minusSign
+    *   : The minus sign string ("-").
+*   nan
+    *   : The {{jsxref("NaN")}} string ("NaN").
+*   plusSign
+    *   : The plus sign string ("+").
+*   percentSign
+    *   : The percent sign string ("%").
+*   unit
+    *   : The unit string, such as the "l" or "litres", depending on how
+        `unitDisplay` is specified.
 
 ## Examples
 
@@ -151,8 +151,8 @@ console.log(numberString);
 
 ## See also
 
-- {{jsxref("Intl.NumberFormat")}}
-- {{jsxref("Intl/NumberFormat/format", "Intl.NumberFormat.prototype.format")}}
-- Formatting dates:
-  {{jsxref("Intl/DateTimeFormat/formatToParts",
+*   {{jsxref("Intl.NumberFormat")}}
+*   {{jsxref("Intl/NumberFormat/format", "Intl.NumberFormat.prototype.format")}}
+*   Formatting dates:
+    {{jsxref("Intl/DateTimeFormat/formatToParts",
 		"Intl.DateTimeFormat.prototype.formatToParts()")}}

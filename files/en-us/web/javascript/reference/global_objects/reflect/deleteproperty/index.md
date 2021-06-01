@@ -21,15 +21,16 @@ function.
 
 ## Syntax
 
-<pre class="brush: js">Reflect.deleteProperty(<var>target</var>, <var>propertyKey</var>)
-</pre>
+```js
+Reflect.deleteProperty(target, propertyKey)
+```
 
 ### Parameters
 
-- `target`
-  - : The target object on which to delete the property.
-- `propertyKey`
-  - : The name of the property to be deleted.
+*   `target`
+    *   : The target object on which to delete the property.
+*   `propertyKey`
+    *   : The name of the property to be deleted.
 
 ### Return value
 
@@ -78,7 +79,7 @@ Reflect.deleteProperty(Object.freeze({foo: 1}), 'foo')  // false
 
 ## See also
 
-- A polyfill of `Reflect.deleteProperty` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- [`delete` operator](/en-US/docs/Web/JavaScript/Reference/Operators/delete)
+*   A polyfill of `Reflect.deleteProperty` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   [`delete` operator](/en-US/docs/Web/JavaScript/Reference/Operators/delete)

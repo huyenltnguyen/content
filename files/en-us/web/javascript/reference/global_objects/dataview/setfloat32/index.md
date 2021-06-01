@@ -25,14 +25,14 @@ setFloat32(byteOffset, value, littleEndian)
 
 ### Parameters
 
-- `byteOffset`
-  - : The offset, in byte, from the start of the view where to store the data.
-- `value`
-  - : The value to set.
-- `littleEndian`
-  - : {{optional_inline}} Indicates whether the 32-bit float is stored in
-    {{Glossary("Endianness", "little- or big-endian")}} format.
-    If `false` or `undefined`, a big-endian value is written.
+*   `byteOffset`
+    *   : The offset, in byte, from the start of the view where to store the data.
+*   `value`
+    *   : The value to set.
+*   `littleEndian`
+    *   : {{optional_inline}} Indicates whether the 32-bit float is stored in
+        {{Glossary("Endianness", "little- or big-endian")}} format.
+        If `false` or `undefined`, a big-endian value is written.
 
 ### Return value
 
@@ -40,9 +40,9 @@ setFloat32(byteOffset, value, littleEndian)
 
 ### Errors thrown
 
-- {{jsxref("RangeError")}}
-  - : Thrown if the `byteOffset` is set such as it would store beyond the end of
-    the view.
+*   {{jsxref("RangeError")}}
+    *   : Thrown if the `byteOffset` is set such as it would store beyond the end of
+        the view.
 
 ## Examples
 
@@ -65,5 +65,5 @@ dataview.getFloat32(1); // 3
 
 ## See also
 
-- {{jsxref("DataView")}}
-- {{jsxref("ArrayBuffer")}}
+*   {{jsxref("DataView")}}
+*   {{jsxref("ArrayBuffer")}}

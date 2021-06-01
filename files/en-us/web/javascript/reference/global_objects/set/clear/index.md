@@ -54,5 +54,5 @@ mySet.has('bar')  // false
 
 ## See also
 
-- {{jsxref("Set")}}
-- {{jsxref("Set.prototype.delete()")}}
+*   {{jsxref("Set")}}
+*   {{jsxref("Set.prototype.delete()")}}

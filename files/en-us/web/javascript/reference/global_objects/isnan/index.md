@@ -24,8 +24,8 @@ isNaN(value)
 
 ### Parameters
 
-- `value`
-  - : The value to be tested.
+*   `value`
+    *   : The value to be tested.
 
 ### Return value
 
@@ -38,14 +38,14 @@ isNaN(value)
 
 Unlike all other possible values in JavaScript, it is not possible to use the
 equality operators (== and ===) to compare a value against
-{{jsxref("NaN")}} to determine whether the value _is_ `NaN` or not,
+{{jsxref("NaN")}} to determine whether the value *is* `NaN` or not,
 because both `NaN == NaN` and `NaN === NaN` evaluate to `false`. Hence, the
 necessity of an `isNaN` function.
 
 ### Origin of NaN values
 
-`NaN` values are generated when arithmetic operations result in _undefined_ or
-_unrepresentable_ values. Such values do not necessarily represent overflow
+`NaN` values are generated when arithmetic operations result in *undefined* or
+*unrepresentable* values. Such values do not necessarily represent overflow
 conditions. A `NaN` also results from attempted coercion to numeric values of
 non-numeric values for which no primitive numeric value is available.
 
@@ -142,5 +142,5 @@ converting values depending on context.
 
 ## See also
 
-- {{jsxref("NaN")}}
-- {{jsxref("Number.isNaN()")}}
+*   {{jsxref("NaN")}}
+*   {{jsxref("Number.isNaN()")}}

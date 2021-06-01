@@ -18,14 +18,16 @@ integer value, and returns that value.
 
 ## Syntax
 
-<pre class="brush: js">BigInt.asUintN(<var>bits</var>, <var>bigint</var>);</pre>
+```js
+BigInt.asUintN(bits, bigint);
+```
 
 ### Parameters
 
-- `bits`
-  - : The amount of bits available for the integer size.
-- `bigint`
-  - : The BigInt value to clamp to fit into the supplied bits.
+*   `bits`
+    *   : The amount of bits available for the integer size.
+*   `bigint`
+    *   : The BigInt value to clamp to fit into the supplied bits.
 
 ### Returns
 
@@ -59,5 +61,5 @@ BigInt.asUintN(64, max + 1n);
 
 ## See also
 
-- {{JSxRef("BigInt")}}
-- {{JSxRef("BigInt.asIntN()")}}
+*   {{JSxRef("BigInt")}}
+*   {{JSxRef("BigInt.asIntN()")}}

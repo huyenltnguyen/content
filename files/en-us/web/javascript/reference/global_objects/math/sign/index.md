@@ -20,23 +20,25 @@ is positive, an explicit (+) will **not** be returned.
 
 ## Syntax
 
-<pre class="brush: js">Math.sign(<var>x</var>)</pre>
+```js
+Math.sign(x)
+```
 
 ### Parameters
 
-- `x`
-  - : A number. If this argument is not a `number`, it is implicitly converted
-    to one.
+*   `x`
+    *   : A number. If this argument is not a `number`, it is implicitly converted
+        to one.
 
 ### Return value
 
 A number representing the sign of the given argument:
 
-- If the argument is positive, returns `1`.
-- If the argument is negative, returns `-1`.
-- If the argument is positive zero, returns `0`.
-- If the argument is negative zero, returns `-0`.
-- Otherwise, {{jsxref("NaN")}} is returned.
+*   If the argument is positive, returns `1`.
+*   If the argument is negative, returns `-1`.
+*   If the argument is positive zero, returns `0`.
+*   If the argument is negative zero, returns `-0`.
+*   Otherwise, {{jsxref("NaN")}} is returned.
 
 ## Description
 
@@ -69,11 +71,11 @@ Math.sign();      // NaN
 
 ## See also
 
-- A polyfill of `Math.sign` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js)
-- {{jsxref("Math.abs()")}}
-- {{jsxref("Math.ceil()")}}
-- {{jsxref("Math.floor()")}}
-- {{jsxref("Math.round()")}}
-- {{jsxref("Math.trunc()")}}
+*   A polyfill of `Math.sign` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js)
+*   {{jsxref("Math.abs()")}}
+*   {{jsxref("Math.ceil()")}}
+*   {{jsxref("Math.floor()")}}
+*   {{jsxref("Math.round()")}}
+*   {{jsxref("Math.trunc()")}}

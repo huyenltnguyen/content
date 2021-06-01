@@ -23,9 +23,9 @@ throw(exception)
 
 ### Parameters
 
-- `exception`
-  - : The exception to throw. For debugging purposes, it is useful to make it an
-    `instanceof` {{jsxref("Error")}}.
+*   `exception`
+    *   : The exception to throw. For debugging purposes, it is useful to make it an
+        `instanceof` {{jsxref("Error")}}.
 
 ### Return value
 
@@ -77,4 +77,4 @@ g.throw(new Error('Something went wrong'));
 
 ## See also
 
-- {{jsxref("Statements/function*", "function*")}}
+*   {{jsxref("Statements/function*", "function*")}}

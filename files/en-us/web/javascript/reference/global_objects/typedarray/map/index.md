@@ -15,7 +15,7 @@ browser-compat: javascript.builtins.TypedArray.map
 
 The **`map()`** method creates a new typed array with the results of calling a
 provided function on every element in this typed array. This method has the same
-algorithm as {{jsxref("Array.prototype.map()")}}_._ _TypedArray_ is
+algorithm as {{jsxref("Array.prototype.map()")}}*.* *TypedArray* is
 one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
@@ -43,17 +43,17 @@ map(function callbackFn(currentValue, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callbackFn`
-  - : A callback function that produces an element of the new typed array,
-    taking three arguments:
-    - `currentValue`
-      - : The current element being processed in the typed array.
-    - `index` {{optional_inline}}
-      - : The index of the current element being processed in the typed array.
-    - `array` {{optional_inline}}
-      - : The typed array `map()` was called upon.
-- `thisArg` {{optional_inline}}
-  - : Value to use as `this` when executing `callbackFn`.
+*   `callbackFn`
+    *   : A callback function that produces an element of the new typed array,
+        taking three arguments:
+        *   `currentValue`
+            *   : The current element being processed in the typed array.
+        *   `index` {{optional_inline}}
+            *   : The index of the current element being processed in the typed array.
+        *   `array` {{optional_inline}}
+            *   : The typed array `map()` was called upon.
+*   `thisArg` {{optional_inline}}
+    *   : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -127,7 +127,7 @@ const doubles = numbers.map(function(num) {
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.map` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray.prototype.filter()")}}
-- {{jsxref("Array.prototype.map()")}}
+*   A polyfill of `TypedArray.prototype.map` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray.prototype.filter()")}}
+*   {{jsxref("Array.prototype.map()")}}

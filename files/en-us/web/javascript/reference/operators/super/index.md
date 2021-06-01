@@ -184,4 +184,4 @@ obj2.method2(); // logs "method 1"
 
 ## See also
 
-- [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)
+*   [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)

@@ -51,6 +51,6 @@ console.log(day); // 25
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCDate()")}}
-- {{jsxref("Date.prototype.getUTCDay()")}}
-- {{jsxref("Date.prototype.setDate()")}}
+*   {{jsxref("Date.prototype.getUTCDate()")}}
+*   {{jsxref("Date.prototype.getUTCDay()")}}
+*   {{jsxref("Date.prototype.setDate()")}}

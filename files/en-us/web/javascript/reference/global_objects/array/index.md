@@ -119,7 +119,8 @@ let removedItem = fruits.splice(pos, 1) // this is how to remove an item
 
 **Remove items from an index position**
 
-<pre class="brush: js">let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot']
+```js
+let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot']
 console.log(vegetables)
 // ["Cabbage", "Turnip", "Radish", "Carrot"]
 
@@ -127,15 +128,15 @@ let pos = 1
 let n = 2
 
 let removedItems = vegetables.splice(pos, n)
-// this is how to remove items, <em>n</em> defines the number of items to be removed,
-// starting at the index position specified by <em>pos</em> and progressing toward the end of array.
+// this is how to remove items, n defines the number of items to be removed,
+// starting at the index position specified by pos and progressing toward the end of array.
 
 console.log(vegetables)
 // ["Cabbage", "Carrot"] (the original array is changed)
 
 console.log(removedItems)
 // ["Turnip", "Radish"]
-</pre>
+```
 
 **Copy an Array**
 
@@ -281,121 +282,121 @@ The properties and elements returned from this match are as follows:
 
 ## Constructor
 
-- {{jsxref("Array/Array", "Array()")}}
-  - : Creates a new `Array` object.
+*   {{jsxref("Array/Array", "Array()")}}
+    *   : Creates a new `Array` object.
 
 ## Static properties
 
-- {{jsxref("Array/@@species", "get Array[@@species]")}}
-  - : The constructor function is used to create derived objects.
+*   {{jsxref("Array/@@species", "get Array[@@species]")}}
+    *   : The constructor function is used to create derived objects.
 
 ## Static methods
 
-- {{jsxref("Array.from()")}}
-  - : Creates a new `Array` instance from an array-like or iterable object.
-- {{jsxref("Array.isArray()")}}
-  - : Returns `true` if the argument is an array, or `false` otherwise.
-- {{jsxref("Array.of()")}}
-  - : Creates a new `Array` instance with a variable number of arguments,
-    regardless of number or type of the arguments.
+*   {{jsxref("Array.from()")}}
+    *   : Creates a new `Array` instance from an array-like or iterable object.
+*   {{jsxref("Array.isArray()")}}
+    *   : Returns `true` if the argument is an array, or `false` otherwise.
+*   {{jsxref("Array.of()")}}
+    *   : Creates a new `Array` instance with a variable number of arguments,
+        regardless of number or type of the arguments.
 
 ## Instance properties
 
-- {{jsxref("Array.prototype.length")}}
-  - : Reflects the number of elements in an array.
-- {{jsxref("Array/@@unscopables", "Array.prototype[@@unscopables]")}}
-  - : A symbol containing property names to exclude from a
-    [`with`](/en-US/docs/Web/JavaScript/Reference/Statements/with) binding
-    scope.
+*   {{jsxref("Array.prototype.length")}}
+    *   : Reflects the number of elements in an array.
+*   {{jsxref("Array/@@unscopables", "Array.prototype[@@unscopables]")}}
+    *   : A symbol containing property names to exclude from a
+        [`with`](/en-US/docs/Web/JavaScript/Reference/Statements/with) binding
+        scope.
 
 ## Instance methods
 
-- {{jsxref("Array.prototype.at()")}}{{Experimental_Inline}}
-  - : Returns the array item at the given index. Accepts negative integers,
-    which count back from the last item.
-- {{jsxref("Array.prototype.concat()")}}
-  - : Returns a new array that is this array joined with other array(s) and/or
-    value(s).
-- {{jsxref("Array.prototype.copyWithin()")}}
-  - : Copies a sequence of array elements within the array.
-- {{jsxref("Array.prototype.entries()")}}
-  - : Returns a new `Array Iterator` object that contains the key/value pairs
-    for each index in the array.
-- {{jsxref("Array.prototype.every()")}}
-  - : Returns `true` if every element in this array satisfies the testing
-    function.
-- {{jsxref("Array.prototype.fill()")}}
-  - : Fills all the elements of an array from a start index to an end index with
-    a static value.
-- {{jsxref("Array.prototype.filter()")}}
-  - : Returns a new array containing all elements of the calling array for which
-    the provided filtering function returns `true`.
-- {{jsxref("Array.prototype.find()")}}
-  - : Returns the found `element` in the array, if some element in the array
-    satisfies the testing function, or `undefined` if not found.
-- {{jsxref("Array.prototype.findIndex()")}}
-  - : Returns the found index in the array, if an element in the array satisfies
-    the testing function, or `-1` if not found.
-- {{jsxref("Array.prototype.forEach()")}}
-  - : Calls a function for each element in the array.
-- {{jsxref("Array.prototype.includes()")}}
-  - : Determines whether the array contains a value, returning `true` or `false`
-    as appropriate.
-- {{jsxref("Array.prototype.indexOf()")}}
-  - : Returns the first (least) index of an element within the array equal to an
-    element, or `-1` if none is found.
-- {{jsxref("Array.prototype.join()")}}
-  - : Joins all elements of an array into a string.
-- {{jsxref("Array.prototype.keys()")}}
-  - : Returns a new `Array Iterator` that contains the keys for each index in
-    the array.
-- {{jsxref("Array.prototype.lastIndexOf()")}}
-  - : Returns the last (greatest) index of an element within the array equal to
-    an element, or `-1` if none is found.
-- {{jsxref("Array.prototype.map()")}}
-  - : Returns a new array containing the results of calling a function on every
-    element in this array.
-- {{jsxref("Array.prototype.pop()")}}
-  - : Removes the last element from an array and returns that element.
-- {{jsxref("Array.prototype.push()")}}
-  - : Adds one or more elements to the end of an array, and returns the new
-    `length` of the array.
-- {{jsxref("Array.prototype.reduce()")}}
-  - : Apply a function against an accumulator and each value of the array (from
-    left-to-right) as to reduce it to a single value.
-- {{jsxref("Array.prototype.reduceRight()")}}
-  - : Apply a function against an accumulator> and each value of the array (from
-    right-to-left) as to reduce it to a single value.
-- {{jsxref("Array.prototype.reverse()")}}
-  - : Reverses the order of the elements of an array _in place_. (First becomes
-    the last, last becomes first.)
-- {{jsxref("Array.prototype.shift()")}}
-  - : Removes the first element from an array and returns that element.
-- {{jsxref("Array.prototype.slice()")}}
-  - : Extracts a section of the calling array and returns a new array.
-- {{jsxref("Array.prototype.some()")}}
-  - : Returns `true` if at least one element in this array satisfies the
-    provided testing function.
-- {{jsxref("Array.prototype.sort()")}}
-  - : Sorts the elements of an array in place and returns the array.
-- {{jsxref("Array.prototype.splice()")}}
-  - : Adds and/or removes elements from an array.
-- {{jsxref("Array.prototype.toLocaleString()")}}
-  - : Returns a localized string representing the array and its elements.
-    Overrides the
-    {{jsxref("Object.prototype.toLocaleString()")}} method.
-- {{jsxref("Array.prototype.toString()")}}
-  - : Returns a string representing the array and its elements. Overrides the
-    {{jsxref("Object.prototype.toString()")}} method.
-- {{jsxref("Array.prototype.unshift()")}}
-  - : Adds one or more elements to the front of an array, and returns the new
-    `length` of the array.
-- {{jsxref("Array.prototype.values()")}}
-  - : Returns a new `Array Iterator` object that contains the values for each
-    index in the array.
-- {{jsxref("Array.prototype.@@iterator()", "Array.prototype[@@iterator]()")}}
-  - : Returns a new `Array Iterator` object that contains the values for each
-    index in the array.
+*   {{jsxref("Array.prototype.at()")}}{{Experimental_Inline}}
+    *   : Returns the array item at the given index. Accepts negative integers,
+        which count back from the last item.
+*   {{jsxref("Array.prototype.concat()")}}
+    *   : Returns a new array that is this array joined with other array(s) and/or
+        value(s).
+*   {{jsxref("Array.prototype.copyWithin()")}}
+    *   : Copies a sequence of array elements within the array.
+*   {{jsxref("Array.prototype.entries()")}}
+    *   : Returns a new `Array Iterator` object that contains the key/value pairs
+        for each index in the array.
+*   {{jsxref("Array.prototype.every()")}}
+    *   : Returns `true` if every element in this array satisfies the testing
+        function.
+*   {{jsxref("Array.prototype.fill()")}}
+    *   : Fills all the elements of an array from a start index to an end index with
+        a static value.
+*   {{jsxref("Array.prototype.filter()")}}
+    *   : Returns a new array containing all elements of the calling array for which
+        the provided filtering function returns `true`.
+*   {{jsxref("Array.prototype.find()")}}
+    *   : Returns the found `element` in the array, if some element in the array
+        satisfies the testing function, or `undefined` if not found.
+*   {{jsxref("Array.prototype.findIndex()")}}
+    *   : Returns the found index in the array, if an element in the array satisfies
+        the testing function, or `-1` if not found.
+*   {{jsxref("Array.prototype.forEach()")}}
+    *   : Calls a function for each element in the array.
+*   {{jsxref("Array.prototype.includes()")}}
+    *   : Determines whether the array contains a value, returning `true` or `false`
+        as appropriate.
+*   {{jsxref("Array.prototype.indexOf()")}}
+    *   : Returns the first (least) index of an element within the array equal to an
+        element, or `-1` if none is found.
+*   {{jsxref("Array.prototype.join()")}}
+    *   : Joins all elements of an array into a string.
+*   {{jsxref("Array.prototype.keys()")}}
+    *   : Returns a new `Array Iterator` that contains the keys for each index in
+        the array.
+*   {{jsxref("Array.prototype.lastIndexOf()")}}
+    *   : Returns the last (greatest) index of an element within the array equal to
+        an element, or `-1` if none is found.
+*   {{jsxref("Array.prototype.map()")}}
+    *   : Returns a new array containing the results of calling a function on every
+        element in this array.
+*   {{jsxref("Array.prototype.pop()")}}
+    *   : Removes the last element from an array and returns that element.
+*   {{jsxref("Array.prototype.push()")}}
+    *   : Adds one or more elements to the end of an array, and returns the new
+        `length` of the array.
+*   {{jsxref("Array.prototype.reduce()")}}
+    *   : Apply a function against an accumulator and each value of the array (from
+        left-to-right) as to reduce it to a single value.
+*   {{jsxref("Array.prototype.reduceRight()")}}
+    *   : Apply a function against an accumulator> and each value of the array (from
+        right-to-left) as to reduce it to a single value.
+*   {{jsxref("Array.prototype.reverse()")}}
+    *   : Reverses the order of the elements of an array *in place*. (First becomes
+        the last, last becomes first.)
+*   {{jsxref("Array.prototype.shift()")}}
+    *   : Removes the first element from an array and returns that element.
+*   {{jsxref("Array.prototype.slice()")}}
+    *   : Extracts a section of the calling array and returns a new array.
+*   {{jsxref("Array.prototype.some()")}}
+    *   : Returns `true` if at least one element in this array satisfies the
+        provided testing function.
+*   {{jsxref("Array.prototype.sort()")}}
+    *   : Sorts the elements of an array in place and returns the array.
+*   {{jsxref("Array.prototype.splice()")}}
+    *   : Adds and/or removes elements from an array.
+*   {{jsxref("Array.prototype.toLocaleString()")}}
+    *   : Returns a localized string representing the array and its elements.
+        Overrides the
+        {{jsxref("Object.prototype.toLocaleString()")}} method.
+*   {{jsxref("Array.prototype.toString()")}}
+    *   : Returns a string representing the array and its elements. Overrides the
+        {{jsxref("Object.prototype.toString()")}} method.
+*   {{jsxref("Array.prototype.unshift()")}}
+    *   : Adds one or more elements to the front of an array, and returns the new
+        `length` of the array.
+*   {{jsxref("Array.prototype.values()")}}
+    *   : Returns a new `Array Iterator` object that contains the values for each
+        index in the array.
+*   {{jsxref("Array.prototype.@@iterator()", "Array.prototype[@@iterator]()")}}
+    *   : Returns a new `Array Iterator` object that contains the values for each
+        index in the array.
 
 ## Examples
 
@@ -501,10 +502,11 @@ Results in
 
 ## See also
 
-- From the JavaScript Guide:
+*   From the JavaScript Guide:
 
-  - [“Indexing object properties”](/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#indexing_object_properties)
-  - [“Indexed collections: `Array` object”](/en-US/docs/Web/JavaScript/Guide/Indexed_collections#array_object)
+    *   [“Indexing object properties”](/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#indexing_object_properties)
+    *   [“Indexed collections: `Array` object”](/en-US/docs/Web/JavaScript/Guide/Indexed_collections#array_object)
 
-- [Typed Arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- [RangeError: invalid array length](/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_array_length)
+*   [Typed Arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+
+*   [RangeError: invalid array length](/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_array_length)

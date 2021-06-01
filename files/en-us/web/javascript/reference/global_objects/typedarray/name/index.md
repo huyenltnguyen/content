@@ -13,9 +13,7 @@ browser-compat: javascript.builtins.TypedArray.name
 The <code><strong><em>TypedArray</em>.name</strong></code> property represents a
 string value of the typed array constructor name.
 
-{{EmbedInteractiveExample("pages/js/typedarray-name.html","shorter")}}
-
-{{js_property_attributes(0,0,0)}}
+{{EmbedInteractiveExample("pages/js/typedarray-name.html","shorter")}}{{js_property_attributes(0,0,0)}}
 
 ## Description
 
@@ -53,5 +51,5 @@ Float64Array.name;      // "Float64Array"
 
 ## See also
 
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- {{jsxref("TypedArray")}}
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("TypedArray")}}

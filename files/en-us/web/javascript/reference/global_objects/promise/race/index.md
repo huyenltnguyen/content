@@ -19,13 +19,15 @@ or reason from that promise.
 
 ## Syntax
 
-<pre class="brush: js">Promise.race(<var>iterable</var>);</pre>
+```js
+Promise.race(iterable);
+```
 
 ### Parameters
 
-- `iterable`
-  - : An iterable object, such as an {{jsxref("Array")}}. See
-    [iterable](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol).
+*   `iterable`
+    *   : An iterable object, such as an {{jsxref("Array")}}. See
+        [iterable](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol).
 
 ### Return value
 
@@ -216,5 +218,5 @@ Promise.any([promise1, promise2]).then((value) => {
 
 ## See also
 
-- {{jsxref("Promise")}}
-- {{jsxref("Promise.all()")}}
+*   {{jsxref("Promise")}}
+*   {{jsxref("Promise.all()")}}

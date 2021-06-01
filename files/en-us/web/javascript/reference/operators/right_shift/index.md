@@ -21,8 +21,9 @@ bit) does not change. Hence the name "sign-propagating".
 
 ## Syntax
 
-<pre class="brush: js"><code><var>a</var> >> <var>b</var></code>
-</pre>
+```js
+a >> b
+```
 
 ## Description
 
@@ -67,5 +68,5 @@ Likewise, `-9 >> 2` yields `-3`, because the sign is preserved:
 
 ## See also
 
-- [Bitwise operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise)
-- [Right shift assignment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment)
+*   [Bitwise operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise)
+*   [Right shift assignment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment)

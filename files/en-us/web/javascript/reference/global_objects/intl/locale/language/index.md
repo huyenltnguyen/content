@@ -64,5 +64,5 @@ console.log(langObj.language); // Prints "es"
 
 ## See also
 
-- {{jsxref("Intl.Locale")}}
-- [Unicode language subtag specification](https://www.unicode.org/reports/tr35/#unicode_language_subtag_validity)
+*   {{jsxref("Intl.Locale")}}
+*   [Unicode language subtag specification](https://www.unicode.org/reports/tr35/#unicode_language_subtag_validity)

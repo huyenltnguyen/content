@@ -17,28 +17,32 @@ optionally initializing it to a value.
 
 ## Syntax
 
-<pre class="brush: js">var <var>varname1</var> [= <var>value1</var>] [, <var>varname2</var> [= <var>value2</var>] ... [, <var>varname<strong>N</strong></var> [= <var>value<strong>N</strong></var>]]];</pre>
+```js
+var varname1 [= value1] [, varname2 [= value2] ... [, varnameN [= valueN]]];
+```
 
-- <code><var>varname<strong>N</strong></var></code>
-  - : Variable name. It can be any legal identifier.
-- <code><var>value<strong>N</strong></var></code> {{optional_inline}}
-  - : Initial value of the variable. It can be any legal expression. Default
-    value is `undefined`.
+*   <code><var>varname<strong>N</strong></var></code>
+    *   : Variable name. It can be any legal identifier.
+*   <code><var>value<strong>N</strong></var></code> {{optional_inline}}
+    *   : Initial value of the variable. It can be any legal expression. Default
+        value is `undefined`.
 
 Alternatively,
 the [Destructuring Assignment ](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)syntax
 can also be used to declare variables.
 
-<pre class="brush: js">var <var>{ bar }</var> = <em>foo</em>; // where foo = { bar:10, baz:12 };
-/* This creates a variable with the name 'bar', which has a value of 10 */</pre>
+```js
+var { bar } = foo; // where foo = { bar:10, baz:12 };
+/* This creates a variable with the name 'bar', which has a value of 10 */
+```
 
 ## Description
 
 `var` declarations, wherever they occur, are processed before any code is
 executed. This is called <dfn>hoisting</dfn>, and is discussed further below.
 
-The scope of a variable declared with `var` is its current _execution context
-and closures thereof_, which is either the enclosing function and functions
+The scope of a variable declared with `var` is its current *execution context
+and closures thereof*, which is either the enclosing function and functions
 declared within it, or, for variables declared outside any function, global.
 Duplicate variable declarations using `var` will not trigger an error, even in
 strict mode, and the variable will not lose its value, unless another assignment
@@ -291,5 +295,5 @@ console.log(typeof y); // "undefined", as y is local to function a
 
 ## See also
 
-- {{jsxref("Statements/let", "let")}}
-- {{jsxref("Statements/const", "const")}}
+*   {{jsxref("Statements/let", "let")}}
+*   {{jsxref("Statements/const", "const")}}

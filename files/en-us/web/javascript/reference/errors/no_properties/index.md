@@ -44,5 +44,5 @@ undefined.bar;
 
 ## See also
 
-- {{jsxref("null")}}
-- {{jsxref("undefined")}}
+*   {{jsxref("null")}}
+*   {{jsxref("undefined")}}

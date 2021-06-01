@@ -71,7 +71,7 @@ console.log(orig.trim()); // 'foo'
 
 ## See also
 
-- A polyfill of `String.prototype.trim` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.trimStart()")}}
-- {{jsxref("String.prototype.trimEnd()")}}
+*   A polyfill of `String.prototype.trim` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.trimStart()")}}
+*   {{jsxref("String.prototype.trimEnd()")}}

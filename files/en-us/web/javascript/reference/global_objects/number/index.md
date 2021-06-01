@@ -9,9 +9,9 @@ tags:
   - Polyfill
 browser-compat: javascript.builtins.Number
 ---
-{{JSRef}}
-
-<div><strong><code>Number</code></strong> is a <a href="/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript">primitive wrapper object</a> used to represent and manipulate numbers like <code>37</code> or <code>-9.25</code>.</div>
+{{JSRef}}**`Number`** is
+a [primitive wrapper object](/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript) used
+to represent and manipulate numbers like `37` or `-9.25`.
 
 The **`Number`** constructor contains constants and methods for working with
 numbers. Values of other types can be converted to numbers using the
@@ -22,7 +22,7 @@ The JavaScript **Number** type is a
 value, like `double` in Java or C#. This means it can represent fractional
 values, but there are some limits to what it can store. A Number only keeps
 about 17 decimal places of precision; arithmetic is subject to
-[rounding](https://en.wikipedia.org/wiki/Floating-point_arithmetic#Representable_numbers,_conversion_and_rounding).
+[rounding](https://en.wikipedia.org/wiki/Floating-point_arithmetic#Representable_numbers,\_conversion_and_rounding).
 The largest value a Number can hold is about 1.8E308. Numbers beyond that are
 replaced with the special Number constant {{jsxref("Infinity")}}.
 
@@ -61,69 +61,68 @@ Number(undefined)  // NaN
 
 ## Constructor
 
-- [`Number()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number)
-  - : Creates a new `Number` value.
+*   [`Number()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number)
+    *   : Creates a new `Number` value.
 
 ## Static properties
 
-- {{jsxref("Number.EPSILON")}}
-  - : The smallest interval between two representable numbers.
-- {{jsxref("Number.MAX_SAFE_INTEGER")}}
-  - : The maximum safe integer in JavaScript (`2^53 - 1`).
-- {{jsxref("Number.MAX_VALUE")}}
-  - : The largest positive representable number.
-- {{jsxref("Number.MIN_SAFE_INTEGER")}}
-  - : The minimum safe integer in JavaScript (`-(2^53 - 1)`).
-- {{jsxref("Number.MIN_VALUE")}}
-  - : The smallest positive representable number—that is, the positive number
-    closest to zero (without actually being zero).
-- {{jsxref("Number.NaN")}}
-  - : Special "**N**ot **a** **N**umber" value.
-- {{jsxref("Number.NEGATIVE_INFINITY")}}
-  - : Special value representing negative infinity. Returned on overflow.
-- {{jsxref("Number.POSITIVE_INFINITY")}}
-  - : Special value representing infinity. Returned on overflow.
-- {{jsxref("Number", "Number.prototype")}}
-  - : Allows the addition of properties to the `Number` object.
+*   {{jsxref("Number.EPSILON")}}
+    *   : The smallest interval between two representable numbers.
+*   {{jsxref("Number.MAX_SAFE_INTEGER")}}
+    *   : The maximum safe integer in JavaScript (`2^53 - 1`).
+*   {{jsxref("Number.MAX_VALUE")}}
+    *   : The largest positive representable number.
+*   {{jsxref("Number.MIN_SAFE_INTEGER")}}
+    *   : The minimum safe integer in JavaScript (`-(2^53 - 1)`).
+*   {{jsxref("Number.MIN_VALUE")}}
+    *   : The smallest positive representable number—that is, the positive number
+        closest to zero (without actually being zero).
+*   {{jsxref("Number.NaN")}}
+    *   : Special "**N**ot **a** **N**umber" value.
+*   {{jsxref("Number.NEGATIVE_INFINITY")}}
+    *   : Special value representing negative infinity. Returned on overflow.
+*   {{jsxref("Number.POSITIVE_INFINITY")}}
+    *   : Special value representing infinity. Returned on overflow.
+*   {{jsxref("Number", "Number.prototype")}}
+    *   : Allows the addition of properties to the `Number` object.
 
 ## Static methods
 
-- {{jsxref("Number.isNaN()")}}
-  - : Determine whether the passed value is `NaN`.
-- {{jsxref("Number.isFinite()")}}
-  - : Determine whether the passed value is a finite number.
-- {{jsxref("Number.isInteger()")}}
-  - : Determine whether the passed value is an integer.
-- {{jsxref("Number.isSafeInteger()")}}
-  - : Determine whether the passed value is a safe integer (number between
-    `-(2^53 - 1)` and `2^53 - 1`).
-- {{jsxref("Number.parseFloat()", "Number.parseFloat(<var>string</var>)")}}
-  - : This is the same as the global
-    {{jsxref("parseFloat", "parseFloat()")}} function.
-- {{jsxref("Number.parseInt()", "Number.parseInt(<var>string</var>, [<var>radix</var>])")}}
-  - : This is the same as the global
-    {{jsxref("parseInt", "parseInt()")}} function.
+*   {{jsxref("Number.isNaN()")}}
+    *   : Determine whether the passed value is `NaN`.
+*   {{jsxref("Number.isFinite()")}}
+    *   : Determine whether the passed value is a finite number.
+*   {{jsxref("Number.isInteger()")}}
+    *   : Determine whether the passed value is an integer.
+*   {{jsxref("Number.isSafeInteger()")}}
+    *   : Determine whether the passed value is a safe integer (number between
+        `-(2^53 - 1)` and `2^53 - 1`).
+*   {{jsxref("Number.parseFloat()", "Number.parseFloat(<var>string</var>)")}}
+    *   : This is the same as the global
+        {{jsxref("parseFloat", "parseFloat()")}} function.
+*   {{jsxref("Number.parseInt()", "Number.parseInt(<var>string</var>, [<var>radix</var>])")}}
+    *   : This is the same as the global
+        {{jsxref("parseInt", "parseInt()")}} function.
 
 ## Instance methods
 
-- {{jsxref("Number.prototype.toExponential()" ,"Number.prototype.toExponential(<var>fractionDigits</var>)")}}
-  - : Returns a string representing the number in exponential notation.
-- {{jsxref("Number.prototype.toFixed()", "Number.prototype.toFixed(<var>digits</var>)")}}
-  - : Returns a string representing the number in fixed-point notation.
-- {{jsxref("Number.prototype.toLocaleString()", "Number.prototype.toLocaleString([<var>locales</var> [, <var>options</var>]])")}}
-  - : Returns a string with a language sensitive representation of this number.
-    Overrides the
-    {{jsxref("Object.prototype.toLocaleString()")}} method.
-- {{jsxref("Number.prototype.toPrecision()", "Number.prototype.toPrecision(<var>precision</var>)")}}
-  - : Returns a string representing the number to a specified precision in
-    fixed-point or exponential notation.
-- {{jsxref("Number.prototype.toString()", "Number.prototype.toString([<var>radix</var>])")}}
-  - : Returns a string representing the specified object in the specified
-    <var>radix</var> ("base"). Overrides the
-    {{jsxref("Object.prototype.toString()")}} method.
-- {{jsxref("Number.prototype.valueOf()")}}
-  - : Returns the primitive value of the specified object. Overrides the
-    {{jsxref("Object.prototype.valueOf()")}} method.
+*   {{jsxref("Number.prototype.toExponential()" ,"Number.prototype.toExponential(<var>fractionDigits</var>)")}}
+    *   : Returns a string representing the number in exponential notation.
+*   {{jsxref("Number.prototype.toFixed()", "Number.prototype.toFixed(<var>digits</var>)")}}
+    *   : Returns a string representing the number in fixed-point notation.
+*   {{jsxref("Number.prototype.toLocaleString()", "Number.prototype.toLocaleString([<var>locales</var> [, <var>options</var>]])")}}
+    *   : Returns a string with a language sensitive representation of this number.
+        Overrides the
+        {{jsxref("Object.prototype.toLocaleString()")}} method.
+*   {{jsxref("Number.prototype.toPrecision()", "Number.prototype.toPrecision(<var>precision</var>)")}}
+    *   : Returns a string representing the number to a specified precision in
+        fixed-point or exponential notation.
+*   {{jsxref("Number.prototype.toString()", "Number.prototype.toString([<var>radix</var>])")}}
+    *   : Returns a string representing the specified object in the specified <var>radix</var> ("base"). Overrides the
+        {{jsxref("Object.prototype.toString()")}} method.
+*   {{jsxref("Number.prototype.valueOf()")}}
+    *   : Returns the primitive value of the specified object. Overrides the
+        {{jsxref("Object.prototype.valueOf()")}} method.
 
 ## Examples
 
@@ -145,7 +144,7 @@ const notANum        = Number.NaN
 The following example shows the minimum and maximum integer values that can be
 represented as `Number` object. (More details on this are described in
 the ECMAScript standard, chapter
-_[6.1.6 The Number Type](https://tc39.github.io/ecma262/#sec-ecmascript-language-types-number-type)._)
+*[6.1.6 The Number Type](https://tc39.github.io/ecma262/#sec-ecmascript-language-types-number-type).*)
 
 ```js
 const biggestInt  = Number.MAX_SAFE_INTEGER  //  (2**53 - 1) =>  9007199254740991
@@ -200,10 +199,10 @@ Number('-Infinity') //-Infinity
 
 ## See also
 
-- A polyfill of modern `Number` behavior (with support binary and octal
-  literals) is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
-- {{jsxref("NaN")}}
-- {{jsxref("Arithmetic operators")}}
-- The {{jsxref("Math")}} global object
-- Integers with arbitrary precision: {{jsxref("BigInt")}}
+*   A polyfill of modern `Number` behavior (with support binary and octal
+    literals) is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
+*   {{jsxref("NaN")}}
+*   {{jsxref("Arithmetic operators")}}
+*   The {{jsxref("Math")}} global object
+*   Integers with arbitrary precision: {{jsxref("BigInt")}}

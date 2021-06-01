@@ -18,15 +18,20 @@ prototype-based inheritance.
 
 {{EmbedInteractiveExample("pages/js/statement-class.html")}}
 
-<div class="noinclude"><p>You can also define a class using a {{jsxref("Operators/class", "class expression",
-    "", 1)}}. But unlike a class expression, a class declaration doesn't allow an existing
-class to be declared again and will throw a {{jsxref("SyntaxError")}} if attempted.</p></div>
+You can also define a class using a
+{{jsxref("Operators/class", "class expression",
+    "", 1)}}.
+But unlike a class expression, a class declaration doesn't allow an existing
+class to be declared again and will throw a {{jsxref("SyntaxError")}} if
+attempted.
 
 ## Syntax
 
-<pre class="brush: js">class <var>name</var> [extends <var>otherName</var>] {
+```js
+class name [extends otherName] {
   // class body
-}</pre>
+}
+```
 
 ## Description
 
@@ -46,7 +51,7 @@ In the following example, we first define a class named `Polygon`, then extend
 it to create a class named `Square`.
 
 Note that `super()`, used in the `constructor`, can only be used in
-constructors, and _must_ be called _before_ the `this` keyword can be used.
+constructors, and *must* be called *before* the `this` keyword can be used.
 
 ```js
 class Polygon {
@@ -93,6 +98,6 @@ class Foo {}; // Uncaught SyntaxError: Identifier 'Foo' has already been declare
 
 ## See also
 
-- [`function` declaration](/en-US/docs/Web/JavaScript/Reference/Statements/function)
-- [`class` expression](/en-US/docs/Web/JavaScript/Reference/Operators/class)
-- [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)
+*   [`function` declaration](/en-US/docs/Web/JavaScript/Reference/Statements/function)
+*   [`class` expression](/en-US/docs/Web/JavaScript/Reference/Operators/class)
+*   [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)

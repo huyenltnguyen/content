@@ -18,14 +18,14 @@ except it also accepts BigInts as operands.
 
 ## Syntax
 
-<pre class="brush: js"><strong>Operator:</strong> <var>var1</var> ** <var>var2</var>
-</pre>
+```js
+Operator: var1 ** var2
+```
 
 ## Description
 
-The exponentiation operator is right-associative: <code><var>a</var> **
-<var>b</var> ** <var>c</var></code> is equal to <code><var>a</var> **
-(<var>b</var> ** <var>c</var>)</code>.
+The exponentiation operator is right-associative: <code><var>a</var> \*\* <var>b</var> \*\* <var>c</var></code> is equal to <code><var>a</var> \*\*
+(<var>b</var> \*\* <var>c</var>)</code>.
 
 In most languages, such as PHP, Python, and others that have an exponentiation
 operator (`**`), the exponentiation operator is defined to have a higher
@@ -94,12 +94,12 @@ To force the base of an exponentiation expression to be a negative number:
 
 ## See also
 
-- [Addition operator](/en-US/docs/Web/JavaScript/Reference/Operators/Addition)
-- [Subtraction operator](/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction)
-- [Division operator](/en-US/docs/Web/JavaScript/Reference/Operators/Division)
-- [Multiplication operator](/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication)
-- [Remainder operator](/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
-- [Increment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Increment)
-- [Decrement operator](/en-US/docs/Web/JavaScript/Reference/Operators/Decrement)
-- [Unary negation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation)
-- [Unary plus operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus)
+*   [Addition operator](/en-US/docs/Web/JavaScript/Reference/Operators/Addition)
+*   [Subtraction operator](/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction)
+*   [Division operator](/en-US/docs/Web/JavaScript/Reference/Operators/Division)
+*   [Multiplication operator](/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication)
+*   [Remainder operator](/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
+*   [Increment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Increment)
+*   [Decrement operator](/en-US/docs/Web/JavaScript/Reference/Operators/Decrement)
+*   [Unary negation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation)
+*   [Unary plus operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus)

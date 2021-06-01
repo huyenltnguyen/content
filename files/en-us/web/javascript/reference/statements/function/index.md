@@ -21,18 +21,19 @@ and a
 
 ## Syntax
 
-<pre class="brush: js">function <var>name</var>([<var>param</var>[, <var>param</var>,[..., <var>param</var>]]]) {
-   [<var>statements</var>]
+```js
+function name([param[, param,[..., param]]]) {
+   [statements]
 }
-</pre>
+```
 
-- `name`
-  - : The function name.
-- `param` {{optional_inline}}
-  - : The name of an argument to be passed to the function. Maximum number of
-    arguments varies in different engines.
-- `statements` {{optional_inline}}
-  - : The statements which comprise the body of the function.
+*   `name`
+    *   : The function name.
+*   `param` {{optional_inline}}
+    *   : The name of an argument to be passed to the function. Maximum number of
+        arguments varies in different engines.
+*   `statements` {{optional_inline}}
+    *   : The statements which comprise the body of the function.
 
 ## Description
 
@@ -145,11 +146,11 @@ function calc_sales(units_a, units_b, units_c) {
 
 ## See also
 
-- {{jsxref("Function")}}
-- {{jsxref("Operators/function", "function expression", "", 1)}}
-- {{jsxref("Statements/function*", "function* statement", "", 1)}}
-- {{jsxref("Operators/function*", "function* expression", "", 1)}}
-- {{jsxref("Functions/Arrow_functions", "Arrow functions", "", 1)}}
-- {{jsxref("GeneratorFunction")}}
-- {{jsxref("Statements/async_function", "async function", "", 1)}}
-- {{jsxref("Operators/async_function", "async function expression", "", 1)}}
+*   {{jsxref("Function")}}
+*   {{jsxref("Operators/function", "function expression", "", 1)}}
+*   {{jsxref("Statements/function*", "function* statement", "", 1)}}
+*   {{jsxref("Operators/function*", "function* expression", "", 1)}}
+*   {{jsxref("Functions/Arrow_functions", "Arrow functions", "", 1)}}
+*   {{jsxref("GeneratorFunction")}}
+*   {{jsxref("Statements/async_function", "async function", "", 1)}}
+*   {{jsxref("Operators/async_function", "async function expression", "", 1)}}

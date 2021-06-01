@@ -23,15 +23,16 @@ specification.
 
 ## Syntax
 
-<pre class="brush: js">`string text`
+```js
+`string text`
 
 `string text line 1
  string text line 2`
 
-`string text ${<var>expression</var>} string text`
+`string text ${expression} string text`
 
-<var>tag</var>`string text ${<var>expression</var>} string text`
-</pre>
+tag`string text ${expression} string text`
+```
 
 ## Description
 
@@ -45,8 +46,7 @@ in the placeholders and the text between the backticks (\` \`) get passed to a
 function.
 
 The default function just concatenates the parts into a single string. If there
-is an expression preceding the template literal (`tag` here), this is called a
-<dfn><em>tagged template</em></dfn>. In that case, the tag expression (usually a
+is an expression preceding the template literal (`tag` here), this is called a <dfn><em>tagged template</em></dfn>. In that case, the tag expression (usually a
 function) gets called with the template literal, which you can then manipulate
 before outputting.
 
@@ -139,7 +139,7 @@ const classes = `header ${ isLargeScreen() ? '' :
 
 ### Tagged templates
 
-A more advanced form of template literals are _tagged_ templates.
+A more advanced form of template literals are *tagged* templates.
 
 Tags allow you to parse template literals with a function. The first argument of
 a tag function contains an array of string values. The remaining arguments are
@@ -244,11 +244,11 @@ Array.from(str).join(',');
 As of ECMAScript 2016, tagged templates conform to the rules of the following
 escape sequences:
 
-- Unicode escapes started by "`\u`", for example `\u00A9`
-- Unicode code point escapes indicated by "`\u{}`", for example `\u{2F804}`
-- Hexadecimal escapes started by "`\x`", for example `\xA9`
-- Octal literal escapes started by "`\0o`" and followed by one or more digits,
-  for example `\0o251`
+*   Unicode escapes started by "`\u`", for example `\u00A9`
+*   Unicode code point escapes indicated by "`\u{}`", for example `\u{2F804}`
+*   Hexadecimal escapes started by "`\x`", for example `\xA9`
+*   Octal literal escapes started by "`\0o`" and followed by one or more digits,
+    for example `\0o251`
 
 This means that a tagged template like the following is problematic, because,
 per ECMAScript grammar, a parser looks for valid Unicode escape sequences, but
@@ -284,8 +284,8 @@ latex`\unicode`
 // { cooked: undefined, raw: "\\unicode" }
 ```
 
-Note that the escape sequence restriction is only dropped from _tagged_
-templates—not from _untagged_ template literals:
+Note that the escape sequence restriction is only dropped from *tagged*
+templates—not from *untagged* template literals:
 
 ```js example-bad
 let bad = `bad escape sequence: \unicode`;
@@ -301,8 +301,8 @@ let bad = `bad escape sequence: \unicode`;
 
 ## See also
 
-- {{jsxref("String")}}
-- {{jsxref("String.raw()")}}
-- [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
-- [Template-like strings in ES3 compatible syntax](https://gist.github.com/WebReflection/8f227532143e63649804)
-- ["ES6 in Depth: Template strings" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
+*   {{jsxref("String")}}
+*   {{jsxref("String.raw()")}}
+*   [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
+*   [Template-like strings in ES3 compatible syntax](https://gist.github.com/WebReflection/8f227532143e63649804)
+*   ["ES6 in Depth: Template strings" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)

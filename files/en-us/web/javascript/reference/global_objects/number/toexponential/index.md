@@ -24,9 +24,9 @@ toExponential(fractionDigits)
 
 ### Parameters
 
-- `fractionDigits` {{optional_inline}}
-  - : Optional. An integer specifying the number of digits after the decimal
-    point. Defaults to as many digits as necessary to specify the number.
+*   `fractionDigits` {{optional_inline}}
+    *   : Optional. An integer specifying the number of digits after the decimal
+        point. Defaults to as many digits as necessary to specify the number.
 
 ### Return value
 
@@ -36,12 +36,12 @@ exponential notation with one digit before the decimal point, rounded to
 
 ### Exceptions
 
-- {{jsxref("RangeError")}}
-  - : If `fractionDigits` is too small or too large. Values between `0` and
-    `100`, inclusive, will not cause a {{jsxref("RangeError")}}.
-- {{jsxref("TypeError")}}
-  - : If this method is invoked on an object that is not a
-    {{jsxref("Number")}}.
+*   {{jsxref("RangeError")}}
+    *   : If `fractionDigits` is too small or too large. Values between `0` and
+        `100`, inclusive, will not cause a {{jsxref("RangeError")}}.
+*   {{jsxref("TypeError")}}
+    *   : If this method is invoked on an object that is not a
+        {{jsxref("Number")}}.
 
 ## Description
 
@@ -85,6 +85,6 @@ console.log(77 .toExponential());     // logs 7.7e+1
 
 ## See also
 
-- {{jsxref("Number.prototype.toFixed()")}}
-- {{jsxref("Number.prototype.toPrecision()")}}
-- {{jsxref("Number.prototype.toString()")}}
+*   {{jsxref("Number.prototype.toFixed()")}}
+*   {{jsxref("Number.prototype.toPrecision()")}}
+*   {{jsxref("Number.prototype.toString()")}}

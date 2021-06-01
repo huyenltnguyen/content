@@ -49,6 +49,6 @@ var dayOfMonth = today.getUTCDate();
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCDate()")}}
-- {{jsxref("Date.prototype.getDay()")}}
-- {{jsxref("Date.prototype.setUTCDate()")}}
+*   {{jsxref("Date.prototype.getUTCDate()")}}
+*   {{jsxref("Date.prototype.getDay()")}}
+*   {{jsxref("Date.prototype.setUTCDate()")}}

@@ -34,7 +34,7 @@ A number corresponding to the year of the given date, according to local time.
 The value returned by `getFullYear()` is an absolute number. For dates between
 the years 1000 and 9999, `getFullYear()` returns a four-digit number, for
 example, 1995. Use this function to make sure a year is compliant with years
-after 2000\.
+after 2000.
 
 ## Examples
 
@@ -58,6 +58,6 @@ var year = today.getFullYear();
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCFullYear()")}}
-- {{jsxref("Date.prototype.setFullYear()")}}
-- {{jsxref("Date.prototype.getYear()")}}
+*   {{jsxref("Date.prototype.getUTCFullYear()")}}
+*   {{jsxref("Date.prototype.setFullYear()")}}
+*   {{jsxref("Date.prototype.getYear()")}}

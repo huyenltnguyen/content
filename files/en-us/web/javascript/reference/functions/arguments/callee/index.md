@@ -93,10 +93,10 @@ example:
 
 This has numerous benefits:
 
-- the function can be called like any other from inside your code
-- it does not create a variable in the outer scope
-  ([except for IE 8 and below](https://kangax.github.io/nfe/#example_1_function_expression_identifier_leaks_into_an_enclosing_scope))
-- it has better performance than accessing the arguments object
+*   the function can be called like any other from inside your code
+*   it does not create a variable in the outer scope
+    ([except for IE 8 and below](https://kangax.github.io/nfe/#example\_1\_function_expression_identifier_leaks_into_an_enclosing_scope))
+*   it has better performance than accessing the arguments object
 
 Another feature that was deprecated was `arguments.callee.caller`, or more
 specifically `Function.caller`. Why is this? Well, at any point in time you can
@@ -177,4 +177,4 @@ john();
 
 ## See also
 
-- {{jsxref("Function")}}
+*   {{jsxref("Function")}}

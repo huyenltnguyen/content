@@ -129,7 +129,7 @@ console.log(/\d+(?!\.)/g.exec('3.141')); // [ '141', index: 2, input: '3.141' ]
 
 Different meaning of `?!` combination usage in
 [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
-`/x(?!y)/ `and
+` /x(?!y)/  `and
 [Ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
 `[^?!]`.
 
@@ -155,12 +155,13 @@ console.log(ripe_oranges); // [ 'ripe orange A ', 'ripe orange C' ]
 
 ## See also
 
-- [Regular expressions guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+*   [Regular expressions guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
-  - [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
-  - [Quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
-  - [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
-  - [Groups and ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
+    *   [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
+    *   [Quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
+    *   [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
+    *   [Groups and ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
 
-- [The `RegExp()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
-- [Assertions in the ECMAScript specification](https://tc39.es/ecma262/#sec-assertion)
+*   [The `RegExp()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+
+*   [Assertions in the ECMAScript specification](https://tc39.es/ecma262/#sec-assertion)

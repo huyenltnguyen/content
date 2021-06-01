@@ -13,8 +13,7 @@ browser-compat: javascript.builtins.Intl.Locale.maximize
 ---
 {{JSRef}}
 
-<span class="seoSummary">The
-<strong><code>Intl.Locale.prototype.maximize()</code></strong> method gets the
+<span class="seoSummary">The <strong><code>Intl.Locale.prototype.maximize()</code></strong> method gets the
 most likely values for the language, script, and region of the locale based on
 existing values.</span>
 
@@ -34,8 +33,8 @@ A {{jsxref("Intl/Locale", "Locale")}} instance whose `baseName`
 property returns the result of the
 [Add Likely Subtags](https://www.unicode.org/reports/tr35/#Likely_Subtags)
 algorithm executed against
-_{{jsxref("Intl/Locale/baseName",
-		"locale.baseName")}}_.
+*{{jsxref("Intl/Locale/baseName",
+		"locale.baseName")}}*.
 
 ## Description
 
@@ -85,6 +84,6 @@ console.log(myLocMaximized.toString());
 
 ## See also
 
-- {{jsxref("Intl.Locale")}}
-- {{jsxref("Intl/Locale/baseName", "Intl.Locale.baseName")}}
-- [Unicode's Likely Subtags spec](https://www.unicode.org/reports/tr35/#Likely_Subtags)
+*   {{jsxref("Intl.Locale")}}
+*   {{jsxref("Intl/Locale/baseName", "Intl.Locale.baseName")}}
+*   [Unicode's Likely Subtags spec](https://www.unicode.org/reports/tr35/#Likely_Subtags)

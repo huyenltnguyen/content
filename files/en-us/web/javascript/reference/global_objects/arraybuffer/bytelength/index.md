@@ -41,4 +41,4 @@ buffer.byteLength; // 8
 
 ## See also
 
-- {{jsxref("ArrayBuffer")}}
+*   {{jsxref("ArrayBuffer")}}

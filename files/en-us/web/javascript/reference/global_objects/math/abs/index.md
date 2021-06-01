@@ -18,12 +18,14 @@ negative.
 
 ## Syntax
 
-<pre class="brush: js">Math.abs(<var>x</var>)</pre>
+```js
+Math.abs(x)
+```
 
 ### Parameters
 
-- `x`
-  - : A number.
+*   `x`
+    *   : A number.
 
 ### Return value
 
@@ -67,8 +69,8 @@ Math.abs();         // NaN
 
 ## See also
 
-- {{jsxref("Math.ceil()")}}
-- {{jsxref("Math.floor()")}}
-- {{jsxref("Math.round()")}}
-- {{jsxref("Math.sign()")}}
-- {{jsxref("Math.trunc()")}}
+*   {{jsxref("Math.ceil()")}}
+*   {{jsxref("Math.floor()")}}
+*   {{jsxref("Math.round()")}}
+*   {{jsxref("Math.sign()")}}
+*   {{jsxref("Math.trunc()")}}

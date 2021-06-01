@@ -55,5 +55,5 @@ console.log(x.valueOf()); // Displays 'Hello world'
 
 ## See also
 
-- {{jsxref("String.prototype.toString()")}}
-- {{jsxref("Object.prototype.valueOf()")}}
+*   {{jsxref("String.prototype.toString()")}}
+*   {{jsxref("Object.prototype.valueOf()")}}

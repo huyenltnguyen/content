@@ -40,8 +40,8 @@ function code is placed correctly in this context at all.
 ### Statements vs expressions
 
 A
-_[function statement](/en-US/docs/Web/JavaScript/Reference/Statements/function)_
-(or _function declaration_) requires a name, this won't work:
+*[function statement](/en-US/docs/Web/JavaScript/Reference/Statements/function)*
+(or *function declaration*) requires a name, this won't work:
 
 ```js example-bad
 function () {
@@ -141,8 +141,8 @@ promise.then(
 
 ## See also
 
-- [Functions in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Functions)
-- [function statement](/en-US/docs/Web/JavaScript/Reference/Statements/function)
-- [function expression](/en-US/docs/Web/JavaScript/Reference/Operators/function)
-- [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
-- [label](/en-US/docs/Web/JavaScript/Reference/Statements/label)
+*   [Functions in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Functions)
+*   [function statement](/en-US/docs/Web/JavaScript/Reference/Statements/function)
+*   [function expression](/en-US/docs/Web/JavaScript/Reference/Operators/function)
+*   [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
+*   [label](/en-US/docs/Web/JavaScript/Reference/Statements/label)

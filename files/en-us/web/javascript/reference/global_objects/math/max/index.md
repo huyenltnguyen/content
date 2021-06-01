@@ -34,9 +34,9 @@ Math.max(value0, value1, ... , valueN)
 
 ### Parameters
 
-- <code><var>value1</var>, <var>value2</var>, ...</code>
-  - : Zero or more numbers among which the largest value will be selected and
-    returned.
+*   <code><var>value1</var>, <var>value2</var>, ...</code>
+    *   : Zero or more numbers among which the largest value will be selected and
+        returned.
 
 ### Return value
 
@@ -114,4 +114,4 @@ for more details. The `reduce` solution does not have this problem.
 
 ## See also
 
-- {{jsxref("Math.min()")}}
+*   {{jsxref("Math.min()")}}

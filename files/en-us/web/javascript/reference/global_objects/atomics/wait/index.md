@@ -27,15 +27,15 @@ Atomics.wait(typedArray, index, value, timeout)
 
 ### Parameters
 
-- `typedArray`
-  - : A shared {{jsxref("Int32Array")}}.
-- `index`
-  - : The position in the `typedArray` to wait on.
-- `value`
-  - : The expected value to test.
-- `timeout` {{optional_inline}}
-  - : Time to wait in milliseconds. {{jsxref("Infinity")}}, if no time is
-    provided.
+*   `typedArray`
+    *   : A shared {{jsxref("Int32Array")}}.
+*   `index`
+    *   : The position in the `typedArray` to wait on.
+*   `value`
+    *   : The expected value to test.
+*   `timeout` {{optional_inline}}
+    *   : Time to wait in milliseconds. {{jsxref("Infinity")}}, if no time is
+        provided.
 
 ### Return value
 
@@ -43,10 +43,10 @@ A string which is either "`ok`", "`not-equal`", or "`timed-out`".
 
 ### Exceptions
 
-- Throws a {{jsxref("TypeError")}}, if `typedArray` is not a shared
-  {{jsxref("Int32Array")}}.
-- Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
-  `typedArray`.
+*   Throws a {{jsxref("TypeError")}}, if `typedArray` is not a shared
+    {{jsxref("Int32Array")}}.
+*   Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
+    `typedArray`.
 
 ## Examples
 
@@ -88,5 +88,5 @@ Atomics.notify(int32, 0, 1);
 
 ## See also
 
-- {{jsxref("Atomics")}}
-- {{jsxref("Atomics.notify()")}}
+*   {{jsxref("Atomics")}}
+*   {{jsxref("Atomics.notify()")}}

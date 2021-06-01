@@ -33,6 +33,6 @@ Not part of any standard.
 
 ## See also
 
-- {{jsxref("Error.prototype.stack")}}
-- {{jsxref("Error.prototype.lineNumber")}}
-- {{jsxref("Error.prototype.fileName")}}
+*   {{jsxref("Error.prototype.stack")}}
+*   {{jsxref("Error.prototype.lineNumber")}}
+*   {{jsxref("Error.prototype.fileName")}}

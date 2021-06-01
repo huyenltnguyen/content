@@ -25,8 +25,8 @@ get(index)
 
 ### Parameters
 
-- _index_
-  - : The index of the function reference you want to retrieve.
+*   *index*
+    *   : The index of the function reference you want to retrieve.
 
 ### Return value
 
@@ -36,7 +36,7 @@ JavaScript wrapper for an underlying wasm function.
 
 ### Exceptions
 
-If _index_ is greater than or equal
+If *index* is greater than or equal
 to {{jsxref("WebAssembly/Table/length","Table.prototype.length")}},
 a {{jsxref("RangeError")}} is thrown.
 
@@ -75,6 +75,6 @@ of the accessor to actually retrieve the value stored inside the reference (e.g.
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

@@ -49,4 +49,4 @@ Not part of any standard.
 
 ## See also
 
-- {{jsxref("WeakMap")}}
+*   {{jsxref("WeakMap")}}

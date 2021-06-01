@@ -15,7 +15,7 @@ tags:
 
 JavaScript is designed on a simple object-based paradigm. An object is a
 collection of properties, and a property is an association between a name (or
-_key_) and a value. A property's value can be a function, in which case the
+*key*) and a value. A property's value can be a function, in which case the
 property is known as a method. In addition to objects that are predefined in the
 browser, you can define your own objects. This chapter describes how to use
 objects, properties, functions, and methods, and how to create your own objects.
@@ -78,7 +78,7 @@ myCar.color; // undefined
 Properties of JavaScript objects can also be accessed or set using a bracket
 notation (for more details see
 [property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)).
-Objects are sometimes called _associative arrays_, since each property is
+Objects are sometimes called *associative arrays*, since each property is
 associated with a string value that can be used to access it. So, for example,
 you could access the properties of the `myCar` object as follows:
 
@@ -164,18 +164,18 @@ myCar.year = 1969
 ## Enumerate the properties of an object
 
 Starting with
-[ECMAScript 5](/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_5_support_in_Mozilla),
+[ECMAScript 5](/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript\_5\_support_in_Mozilla),
 there are three native ways to list/traverse object properties:
 
-- [`for...in`](/en-US/docs/Web/JavaScript/Reference/Statements/for...in) loops
-  This method traverses all enumerable properties of an object and its prototype
-  chain.
-- {{jsxref("Object.keys", "Object.keys(o)")}} This method returns
-  an array with all the own (not in the prototype chain) enumerable properties'
-  names ("keys") of an object `o`.
-- {{jsxref("Object.getOwnPropertyNames", "Object.getOwnPropertyNames(o)")}}
-  This method returns an array containing all own properties' names (enumerable
-  or not) of an object `o`.
+*   [`for...in`](/en-US/docs/Web/JavaScript/Reference/Statements/for...in) loops
+    This method traverses all enumerable properties of an object and its prototype
+    chain.
+*   {{jsxref("Object.keys", "Object.keys(o)")}} This method returns
+    an array with all the own (not in the prototype chain) enumerable properties'
+    names ("keys") of an object `o`.
+*   {{jsxref("Object.getOwnPropertyNames", "Object.getOwnPropertyNames(o)")}}
+    This method returns an array containing all own properties' names (enumerable
+    or not) of an object `o`.
 
 Before ECMAScript 5, there was no native way to list all properties of an
 object. However, this can be achieved with the following function:
@@ -227,9 +227,8 @@ var obj = { property_1:   value_1,   // property_# may be an identifier...
             'property n': value_n }; // or a string
 ```
 
-where `obj` is the name of the new object, each
-<code>property*<var>i</var></code> is an identifier (either a name, a number, or
-a string literal), and each <code>value*<var>i</var></code> is an expression
+where `obj` is the name of the new object, each <code>property\*<var>i</var></code> is an identifier (either a name, a number, or
+a string literal), and each <code>value\*<var>i</var></code> is an expression
 whose value is assigned to the <code>property\_<var>i</var></code>. The `obj`
 and assignment is optional; if you do not need to refer to this object
 elsewhere, you do not need to assign it to a variable. (Note that you may need
@@ -437,7 +436,7 @@ information.
 
 ## Defining methods
 
-A _method_ is a function associated with an object, or, put differently, a
+A *method* is a function associated with an object, or, put differently, a
 method is a property of an object that is a function. Methods are defined the
 way normal functions are defined, except that they have to be assigned as the
 property of an object. See also
@@ -565,8 +564,8 @@ properties.
 
 Getters and setters can be either
 
-- defined using [object initializers](#object_initializers), or
-- added later to any object at any time using a getter or setter adding method.
+*   defined using [object initializers](#object_initializers), or
+*   added later to any object at any time using a getter or setter adding method.
 
 When defining getters and setters using
 [object initializers](#object_initializers) all you need to do is to prefix a
@@ -593,15 +592,14 @@ console.log(o.a); // 25
 
 The `o` object's properties are:
 
-- `o.a` — a number
-- `o.b` — a getter that returns `o.a` plus 1
-- `o.c` — a setter that sets the value of `o.a` to half of the value `o.c` is
-  being set to
+*   `o.a` — a number
+*   `o.b` — a getter that returns `o.a` plus 1
+*   `o.c` — a setter that sets the value of `o.a` to half of the value `o.c` is
+    being set to
 
 Please note that function names of getters and setters defined in an object
-literal using "\[gs]et _property_()" (as opposed to `__define[GS]etter__` ) are
-not the names of the getters themselves, even though the <code>[gs]et
-<em>propertyName</em>(){ }</code> syntax may mislead you to think otherwise.
+literal using "\[gs]et *property*()" (as opposed to `__define[GS]etter__` ) are
+not the names of the getters themselves, even though the <code>\[gs]et <em>propertyName</em>(){ }</code> syntax may mislead you to think otherwise.
 
 Getters and setters can also be added to an object at any time after creation
 using the `Object.defineProperties` method. This method's first parameter is the
@@ -688,10 +686,10 @@ see [Comparison operators](/en-US/docs/Web/JavaScript/Reference/Operators).
 
 ## See also
 
-- To dive deeper, read about the
-  [details of JavaScript's object model](/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model).
-- To learn about ECMAScript 2015 classes (an alternative way to create objects),
-  read the [JavaScript classes](/en-US/docs/Web/JavaScript/Reference/Classes)
-  chapter.
+*   To dive deeper, read about the
+    [details of JavaScript's object model](/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model).
+*   To learn about ECMAScript 2015 classes (an alternative way to create objects),
+    read the [JavaScript classes](/en-US/docs/Web/JavaScript/Reference/Classes)
+    chapter.
 
 {{PreviousNext("Web/JavaScript/Guide/Regular_Expressions", "Web/JavaScript/Guide/Details_of_the_Object_Model")}}

@@ -24,7 +24,7 @@ and the
 
 This object cannot be instantiated directly. Instead, a `Generator` instance can
 be returned from a
-[generator function](/en-US/docs/Web/JavaScript/Reference/Statements/function*):
+[generator function](/en-US/docs/Web/JavaScript/Reference/Statements/function\*):
 
 ```js
 function* generator() {
@@ -42,14 +42,14 @@ console.log(generator().next().value); // 1
 
 ## Instance methods
 
-- {{JSxRef("Generator.prototype.next()")}}
-  - : Returns a value yielded by the
-    {{JSxRef("Operators/yield", "yield")}} expression.
-- {{JSxRef("Generator.prototype.return()")}}
-  - : Returns the given value and finishes the generator.
-- {{JSxRef("Generator.prototype.throw()")}}
-  - : Throws an error to a generator (also finishes the generator, unless caught
-    from within that generator).
+*   {{JSxRef("Generator.prototype.next()")}}
+    *   : Returns a value yielded by the
+        {{JSxRef("Operators/yield", "yield")}} expression.
+*   {{JSxRef("Generator.prototype.return()")}}
+    *   : Returns the given value and finishes the generator.
+*   {{JSxRef("Generator.prototype.throw()")}}
+    *   : Throws an error to a generator (also finishes the generator, unless caught
+        from within that generator).
 
 ## Examples
 
@@ -85,7 +85,7 @@ console.log(generator.next().value); // 2
 
 ## See also
 
-- {{JSxRef("Statements/function*", "function*")}}
-- {{JSxRef("Operators/function*", '<code>function*</code> expression', "", 1)}}
-- {{JSxRef("GeneratorFunction")}}
-- [The Iterator protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
+*   {{JSxRef("Statements/function*", "function*")}}
+*   {{JSxRef("Operators/function*", '<code>function*</code> expression', "", 1)}}
+*   {{JSxRef("GeneratorFunction")}}
+*   [The Iterator protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)

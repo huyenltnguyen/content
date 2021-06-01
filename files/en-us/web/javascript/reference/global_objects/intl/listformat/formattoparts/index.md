@@ -26,9 +26,9 @@ formatToParts(list)
 
 ### Parameters
 
-- `list`
-  - : An {{jsxref("Array")}} of values to be formatted according to a
-    locale.
+*   `list`
+    *   : An {{jsxref("Array")}} of values to be formatted according to a
+        locale.
 
 ### Return value
 
@@ -80,11 +80,11 @@ console.table(myListFormat.formatToParts(fruits));
 
 ## See also
 
-- {{jsxref("Intl.ListFormat")}}
-- {{jsxref("Intl/ListFormat/format", "Intl.ListFormat.prototype.format()")}}
-- {{jsxref("Intl/RelativeTimeFormat/formatToParts",
+*   {{jsxref("Intl.ListFormat")}}
+*   {{jsxref("Intl/ListFormat/format", "Intl.ListFormat.prototype.format()")}}
+*   {{jsxref("Intl/RelativeTimeFormat/formatToParts",
 		"Intl.RelativeTimeFormat.prototype.formatToParts()")}}
-- {{jsxref("Intl/NumberFormat/formatToParts",
+*   {{jsxref("Intl/NumberFormat/formatToParts",
 		"Intl.NumberFormat.prototype.formatToParts()")}}
-- {{jsxref("Intl/DateTimeFormat/formatToParts",
+*   {{jsxref("Intl/DateTimeFormat/formatToParts",
 		"Intl.DateTimeFormat.prototype.formatToParts()")}}

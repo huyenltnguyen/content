@@ -12,8 +12,8 @@ browser-compat: javascript.builtins.Object.constructor
 
 The **`constructor`** property returns a reference to the
 {{jsxref("Object")}} constructor function that created the instance
-object. Note that the value of this property is a reference to _the function
-itself_, not a string containing the function's name.
+object. Note that the value of this property is a reference to *the function
+itself*, not a string containing the function's name.
 
 The value is only read-only for primitive values such as `1`, `true`, and
 `"test"`.
@@ -79,14 +79,16 @@ allows one to set any property on primitive values (except `null` and
 object an instance of the corresponding constructor is created and discarded
 right after the statement was executed.
 
-<pre class="brush: js">let val = null;
-val.constructor = 1; //<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="objectBox-stackTrace reps-custom-format">TypeError: <span class="objectBox objectBox-string">var is null</span></span></span></span></span>
+```js
+let val = null;
+val.constructor = 1; //TypeError: var is null
 
-<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="objectBox-stackTrace reps-custom-format"><span class="objectBox objectBox-string">val = 'abc';</span></span></span></span></span>
-<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="objectBox-stackTrace reps-custom-format"><span class="objectBox objectBox-string">val.constructor = Number; //val.constructor === String</span></span></span></span></span>
+val = 'abc';
+val.constructor = Number; //val.constructor === String
 
-<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="objectBox-stackTrace reps-custom-format"><span class="objectBox objectBox-string">val.foo = 'bar';</span></span></span></span></span> //An implicit instance of <span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="objectBox-stackTrace reps-custom-format"><span class="objectBox objectBox-string">String('abc') was created and assigned the prop foo</span></span></span></span></span>
-<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="objectBox-stackTrace reps-custom-format"><span class="objectBox objectBox-string">val.foo === undefined; //true, since a new instance of String('abc') was created for this comparison, which doesn't have the foo property</span></span></span></span></span></pre>
+val.foo = 'bar'; //An implicit instance of String('abc') was created and assigned the prop foo
+val.foo === undefined; //true, since a new instance of String('abc') was created for this comparison, which doesn't have the foo property
+```
 
 So basically one can change the value of the `constructor` property for
 anything, except the primitives mentioned above, **note that changing the**
@@ -134,7 +136,7 @@ Child.prototype.constructor = Child // return original constructor to Child
 ```
 
 But when do we need to perform the last line here? Unfortunately, the answer is:
-_it depends_.
+*it depends*.
 
 Let's try to define the cases in which re-assignment of the original constructor
 will play a major role, and when it will be one superfluous line of code.
@@ -246,6 +248,6 @@ Child.prototype = Object.create(ParentWithStatic.prototype)
 
 ## See also
 
-- {{jsxref("statements/class","Class declaration","",1)}}
-- {{jsxref("Classes/constructor","Class constructor","",1)}}
-- Glossary: {{Glossary("constructor", "", 1)}}
+*   {{jsxref("statements/class","Class declaration","",1)}}
+*   {{jsxref("Classes/constructor","Class constructor","",1)}}
+*   Glossary: {{Glossary("constructor", "", 1)}}

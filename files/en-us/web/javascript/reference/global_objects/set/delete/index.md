@@ -25,8 +25,8 @@ delete(value)
 
 ### Parameters
 
-- `value`
-  - : The value to remove from `mySet`.
+*   `value`
+    *   : The value to remove from `mySet`.
 
 ### Return value
 
@@ -73,5 +73,5 @@ setObj.forEach(function(point){
 
 ## See also
 
-- {{jsxref("Set")}}
-- {{jsxref("Set.prototype.clear()")}}
+*   {{jsxref("Set")}}
+*   {{jsxref("Set.prototype.clear()")}}

@@ -101,5 +101,5 @@ arc.getArchive(); // [{ val: 11 }, { val: 13 }]
 
 ## See also
 
-- {{jsxref("Object.defineProperty()")}}
-- {{jsxref("Object.defineProperties()")}}
+*   {{jsxref("Object.defineProperty()")}}
+*   {{jsxref("Object.defineProperties()")}}

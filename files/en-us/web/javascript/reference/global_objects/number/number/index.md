@@ -15,13 +15,14 @@ The **`Number()` constructor** creates a {{jsxref("Number")}} object.
 
 ## Syntax
 
-<pre class="brush: js">new Number(<var>value</var>)
-</pre>
+```js
+new Number(value)
+```
 
 ### Parameters
 
-- `value`
-  - : The numeric value of the object being created.
+*   `value`
+    *   : The numeric value of the object being created.
 
 ## Examples
 
@@ -44,9 +45,9 @@ b instanceof Number;         // is false
 
 ## See also
 
-- A polyfill of modern `Number` behavior (with support binary and octal
-  literals) is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
-- {{jsxref("NaN")}}
-- The {{jsxref("Math")}} global object
-- Integers with arbitrary precision: {{jsxref("BigInt")}}
+*   A polyfill of modern `Number` behavior (with support binary and octal
+    literals) is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
+*   {{jsxref("NaN")}}
+*   The {{jsxref("Math")}} global object
+*   Integers with arbitrary precision: {{jsxref("BigInt")}}

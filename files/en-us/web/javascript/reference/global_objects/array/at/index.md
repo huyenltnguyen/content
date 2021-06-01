@@ -35,11 +35,11 @@ at(index)
 
 ### Parameters
 
-- `index`
-  - : The index (position) of the array element to be returned. Supports
-    relative indexing from the end of the array when passed a negative index;
-    i.e. if a negative number is used, the element returned will be found by
-    counting back from the end of the array.
+*   `index`
+    *   : The index (position) of the array element to be returned. Supports
+        relative indexing from the end of the array when passed a negative index;
+        i.e. if a negative number is used, the element returned will be found by
+        counting back from the end of the array.
 
 ### Return value
 
@@ -106,12 +106,12 @@ console.log(atWay); // Logs: 'green'
 
 ## See also
 
-- A polyfill of `Array.prototype.at` is available in
-  [`core-js`](https://github.com/zloirock/core-js#relative-indexing-method)
-- [A polyfill for the at() method](https://github.com/tc39/proposal-relative-indexing-method#polyfill).
-- {{jsxref("Array.prototype.find()")}} – return a value based on a
-  given test.
-- {{jsxref("Array.prototype.includes()")}} – test whether a value
-  exists in the array.
-- {{jsxref("Array.prototype.indexOf()")}} – return the index of a
-  given element.
+*   A polyfill of `Array.prototype.at` is available in
+    [`core-js`](https://github.com/zloirock/core-js#relative-indexing-method)
+*   [A polyfill for the at() method](https://github.com/tc39/proposal-relative-indexing-method#polyfill).
+*   {{jsxref("Array.prototype.find()")}} – return a value based on a
+    given test.
+*   {{jsxref("Array.prototype.includes()")}} – test whether a value
+    exists in the array.
+*   {{jsxref("Array.prototype.indexOf()")}} – return the index of a
+    given element.

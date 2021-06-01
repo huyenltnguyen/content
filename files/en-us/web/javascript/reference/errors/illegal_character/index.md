@@ -28,8 +28,8 @@ SyntaxError: Invalid or unexpected token (Chrome)
 
 There is an invalid or unexpected token that doesn't belong at this position in
 the code. Use an editor that supports syntax highlighting and carefully check
-your code against mismatches like a minus sign (` - `) versus a dash (` – `) or
-simple quotes (` " `) vs non-standard quotation marks (` “ `).
+your code against mismatches like a minus sign (`-`) versus a dash (`–`) or
+simple quotes (`"`) vs non-standard quotation marks (`“`).
 
 ## Examples
 
@@ -100,4 +100,4 @@ var foo = 'bar';<200b>
 
 ## See also
 
-- [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
+*   [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)

@@ -20,12 +20,14 @@ transfers program control to the statement following the terminated statement.
 
 ## Syntax
 
-<pre class="brush: js">break [<var>label</var>];</pre>
+```js
+break [label];
+```
 
-- `label` {{optional_inline}}
-  - : Identifier associated with the label of the statement. If the statement is
-    not a loop or {{jsxref("Statements/switch", "switch")}}, this
-    is required.
+*   `label` {{optional_inline}}
+    *   : Identifier associated with the label of the statement. If the statement is
+        not a loop or {{jsxref("Statements/switch", "switch")}}, this
+        is required.
 
 ## Description
 
@@ -163,6 +165,6 @@ block_1: {
 
 ## See also
 
-- {{jsxref("Statements/continue", "continue")}}
-- {{jsxref("Statements/label", "label", "", 1)}}
-- {{jsxref("Statements/switch", "switch")}}
+*   {{jsxref("Statements/continue", "continue")}}
+*   {{jsxref("Statements/label", "label", "", 1)}}
+*   {{jsxref("Statements/switch", "switch")}}

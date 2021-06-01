@@ -24,9 +24,9 @@ toString(radix)
 
 ### Parameters
 
-- `radix` {{optional_inline}}
-  - : An integer in the range `2` through `36` specifying the base to use for
-    representing numeric values.
+*   `radix` {{optional_inline}}
+    *   : An integer in the range `2` through `36` specifying the base to use for
+        representing numeric values.
 
 ### Return value
 
@@ -34,14 +34,14 @@ A string representing the specified {{jsxref("Number")}} object.
 
 ### Exceptions
 
-- {{jsxref("RangeError")}}
-  - : If `toString()` is given a `radix` less than `2` or greater than `36`, a
-    {{jsxref("RangeError")}} is thrown.
+*   {{jsxref("RangeError")}}
+    *   : If `toString()` is given a `radix` less than `2` or greater than `36`, a
+        {{jsxref("RangeError")}} is thrown.
 
 ## Description
 
 The {{jsxref("Number")}} object overrides the `toString()` method of the
-{{jsxref("Object")}} object. (It does _not_ inherit
+{{jsxref("Object")}} object. (It does *not* inherit
 {{jsxref("Object.prototype.toString()")}}). For
 {{jsxref( "Number")}} objects, the `toString()` method returns a string
 representation of the object in the specified radix.
@@ -90,6 +90,6 @@ console.log((-0xff).toString(2)) // displays '-11111111'
 
 ## See also
 
-- {{jsxref("Number.prototype.toFixed()")}}
-- {{jsxref("Number.prototype.toExponential()")}}
-- {{jsxref("Number.prototype.toPrecision()")}}
+*   {{jsxref("Number.prototype.toFixed()")}}
+*   {{jsxref("Number.prototype.toExponential()")}}
+*   {{jsxref("Number.prototype.toPrecision()")}}

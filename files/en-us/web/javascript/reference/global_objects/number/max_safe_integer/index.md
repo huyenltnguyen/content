@@ -16,14 +16,12 @@ in JavaScript (`2^53 - 1`).
 
 For larger integers, consider using {{jsxref("BigInt")}}.
 
-{{EmbedInteractiveExample("pages/js/number-maxsafeinteger.html")}}
-
-{{js_property_attributes(0, 0, 0)}}
+{{EmbedInteractiveExample("pages/js/number-maxsafeinteger.html")}}{{js_property_attributes(0, 0, 0)}}
 
 ## Description
 
 The `MAX_SAFE_INTEGER` constant has a value of `9007199254740991`
-(9,007,199,254,740,991 or \~9 quadrillion). The reasoning behind that number is
+(9,007,199,254,740,991 or ~9 quadrillion). The reasoning behind that number is
 that JavaScript uses
 [double-precision floating-point format numbers](https://en.wikipedia.org/wiki/Double_precision_floating-point_format)
 as specified in [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point)
@@ -78,8 +76,8 @@ Number.MAX_SAFE_INTEGER * Number.EPSILON; // 2
 
 ## See also
 
-- A polyfill of `Number.MAX_SAFE_INTEGER` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
-- {{jsxref("Number.MIN_SAFE_INTEGER")}}
-- {{jsxref("Number.isSafeInteger()")}}
-- {{jsxref("BigInt")}}
+*   A polyfill of `Number.MAX_SAFE_INTEGER` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
+*   {{jsxref("Number.MIN_SAFE_INTEGER")}}
+*   {{jsxref("Number.isSafeInteger()")}}
+*   {{jsxref("BigInt")}}

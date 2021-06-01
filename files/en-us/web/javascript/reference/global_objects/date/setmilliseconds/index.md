@@ -24,8 +24,8 @@ setMilliseconds(millisecondsValue)
 
 ### Parameters
 
-- `millisecondsValue`
-  - : A number between 0 and 999, representing the milliseconds.
+*   `millisecondsValue`
+    *   : A number between 0 and 999, representing the milliseconds.
 
 ### Return value
 
@@ -58,5 +58,5 @@ theBigDay.setMilliseconds(100);
 
 ## See also
 
-- {{jsxref("Date.prototype.getMilliseconds()")}}
-- {{jsxref("Date.prototype.setUTCMilliseconds()")}}
+*   {{jsxref("Date.prototype.getMilliseconds()")}}
+*   {{jsxref("Date.prototype.setUTCMilliseconds()")}}

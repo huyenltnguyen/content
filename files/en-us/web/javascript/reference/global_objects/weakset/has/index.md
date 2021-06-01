@@ -24,14 +24,14 @@ has(value)
 
 ### Parameters
 
-- `value`
-  - : Required. The object to test for presence in the `WeakSet`.
+*   `value`
+    *   : Required. The object to test for presence in the `WeakSet`.
 
 ### Return value
 
-- Boolean
-  - : Returns `true` if an element with the specified value exists in the
-    `WeakSet` object; otherwise `false`.
+*   Boolean
+    *   : Returns `true` if an element with the specified value exists in the
+        `WeakSet` object; otherwise `false`.
 
 ## Examples
 
@@ -56,6 +56,6 @@ mySet.has(obj);     // returns false
 
 ## See also
 
-- {{jsxref("WeakSet")}}
-- {{jsxref("WeakSet.prototype.add()")}}
-- {{jsxref("WeakSet.prototype.delete()")}}
+*   {{jsxref("WeakSet")}}
+*   {{jsxref("WeakSet.prototype.add()")}}
+*   {{jsxref("WeakSet.prototype.delete()")}}

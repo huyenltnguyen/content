@@ -20,12 +20,14 @@ would.
 
 ## Syntax
 
-<pre class="brush: js">Object.keys(<var>obj</var>)</pre>
+```js
+Object.keys(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object of which the enumerable's own properties are to be returned.
+*   `obj`
+    *   : The object of which the enumerable's own properties are to be returned.
 
 ### Return value
 
@@ -66,7 +68,7 @@ myObj.foo = 1;
 console.log(Object.keys(myObj)); // console: ['foo']
 ```
 
-If you want _all_ properties—including non-enumerables—see
+If you want *all* properties—including non-enumerables—see
 {{jsxref("Object.getOwnPropertyNames()")}}.
 
 ### Non-object coercion
@@ -137,7 +139,7 @@ Please note that the above code includes non-enumerable keys in IE7 (and maybe
 IE8), when passing in an object from a different window.
 
 For a simple Browser Polyfill, see
-[Javascript \- Object.keys Browser Compatibility](http://tokenposts.blogspot.com.au/2012/04/javascript-objectkeys-browser.html).
+[Javascript - Object.keys Browser Compatibility](http://tokenposts.blogspot.com.au/2012/04/javascript-objectkeys-browser.html).
 
 ## Specifications
 
@@ -149,11 +151,11 @@ For a simple Browser Polyfill, see
 
 ## See also
 
-- A polyfill of `Object.keys` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
-- {{jsxref("Object.prototype.propertyIsEnumerable()")}}
-- {{jsxref("Object.create()")}}
-- {{jsxref("Object.getOwnPropertyNames()")}}
-- {{jsxref("Object.values()")}}
-- {{jsxref("Object.entries()")}}
+*   A polyfill of `Object.keys` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+*   {{jsxref("Object.prototype.propertyIsEnumerable()")}}
+*   {{jsxref("Object.create()")}}
+*   {{jsxref("Object.getOwnPropertyNames()")}}
+*   {{jsxref("Object.values()")}}
+*   {{jsxref("Object.entries()")}}

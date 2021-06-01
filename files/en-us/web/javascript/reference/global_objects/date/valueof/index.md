@@ -58,5 +58,5 @@ var myVar = x.valueOf();      // assigns -424713600000 to myVar
 
 ## See also
 
-- {{jsxref("Object.prototype.valueOf()")}}
-- {{jsxref("Date.prototype.getTime()")}}
+*   {{jsxref("Object.prototype.valueOf()")}}
+*   {{jsxref("Date.prototype.getTime()")}}

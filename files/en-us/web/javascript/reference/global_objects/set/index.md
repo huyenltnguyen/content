@@ -30,8 +30,8 @@ Because each value in the `Set` has to be unique, the value equality will be
 checked. In an earlier version of ECMAScript specification, this was not based
 on the same algorithm as the one used in the `===` operator. Specifically, for
 `Set`s, `+0` (which is strictly equal to `-0`) and `-0` were different values.
-However, this was changed in the ECMAScript 2015 specification. See _"Key
-equality for -0 and 0"_ in the [browser compatibility](#browser_compatibility)
+However, this was changed in the ECMAScript 2015 specification. See *"Key
+equality for -0 and 0"* in the [browser compatibility](#browser_compatibility)
 table for details.
 
 {{jsxref("NaN")}} and {{jsxref("undefined")}} can also be stored
@@ -40,61 +40,62 @@ in a Set. All `NaN` values are equated (i.e. `NaN` is considered the same as
 
 ## Constructor
 
-- {{jsxref("Set/Set", "Set()")}}
-  - : Creates a new `Set` object.
+*   {{jsxref("Set/Set", "Set()")}}
+    *   : Creates a new `Set` object.
 
 ## Static properties
 
-- {{jsxref("Set.@@species", "get Set[@@species]")}}
-  - : The constructor function that is used to create derived objects.
+*   {{jsxref("Set.@@species", "get Set[@@species]")}}
+    *   : The constructor function that is used to create derived objects.
 
 ## Instance properties
 
-- {{jsxref("Set.prototype.size")}}
-  - : Returns the number of values in the `Set` object.
+*   {{jsxref("Set.prototype.size")}}
+    *   : Returns the number of values in the `Set` object.
 
 ## Instance methods
 
-- {{jsxref("Set.add", "Set.prototype.add(<var>value</var>)")}}
-  - : Appends `value` to the `Set` object. Returns the `Set` object with added
-    value.
-- {{jsxref("Set.prototype.clear()")}}
-  - : Removes all elements from the `Set` object.
-- {{jsxref("Set.delete", "Set.prototype.delete(<var>value</var>)")}}
-  - : Removes the element associated to the `value` and returns a boolean
-    asserting whether an element was successfully removed or not.
-    <code>Set.prototype.has(<var>value</var>)</code> will return `false`
-    afterwards.
-- {{jsxref("Set.has", "Set.prototype.has(<var>value</var>)")}}
-  - : Returns a boolean asserting whether an element is present with the given
-    value in the `Set` object or not.
+*   {{jsxref("Set.add", "Set.prototype.add(<var>value</var>)")}}
+    *   : Appends `value` to the `Set` object. Returns the `Set` object with added
+        value.
+*   {{jsxref("Set.prototype.clear()")}}
+    *   : Removes all elements from the `Set` object.
+*   {{jsxref("Set.delete", "Set.prototype.delete(<var>value</var>)")}}
+    *   : Removes the element associated to the `value` and returns a boolean
+        asserting whether an element was successfully removed or not. <code>Set.prototype.has(<var>value</var>)</code> will return `false`
+        afterwards.
+*   {{jsxref("Set.has", "Set.prototype.has(<var>value</var>)")}}
+    *   : Returns a boolean asserting whether an element is present with the given
+        value in the `Set` object or not.
 
 ### Iteration methods
 
-- {{jsxref("Set.prototype.@@iterator()", "Set.prototype[@@iterator]()")}}
-  - : Returns a new iterator object that yields the **values** for each element
-    in the `Set` object in insertion order.
-- {{jsxref("Set.prototype.keys()")}}
-  - : Returns a new iterator object that yields the values for each element in
-    the `Set` object in insertion order. (For Sets, this is the same as the
-    **`values()`** method.)
-- {{jsxref("Set.prototype.values()")}}
-  - : Returns a new iterator object that yields the **values** for each element
-    in the `Set` object in insertion order. (For Sets, this is the same as the
-    **`keys()`** method.)
-- {{jsxref("Set.prototype.entries()")}}
+*   {{jsxref("Set.prototype.@@iterator()", "Set.prototype[@@iterator]()")}}
+    *   : Returns a new iterator object that yields the **values** for each element
+        in the `Set` object in insertion order.
 
-  - : Returns a new iterator object that contains **an array of
-    <code>[<var>value</var>, <var>value</var>]</code>** for each element in the
-    `Set` object, in insertion order.
+*   {{jsxref("Set.prototype.keys()")}}
+    *   : Returns a new iterator object that yields the values for each element in
+        the `Set` object in insertion order. (For Sets, this is the same as the
+        **`values()`** method.)
 
-    This is similar to the {{jsxref("Map")}} object, so that each entry's
-    _key_ is the same as its _value_ for a `Set`.
+*   {{jsxref("Set.prototype.values()")}}
+    *   : Returns a new iterator object that yields the **values** for each element
+        in the `Set` object in insertion order. (For Sets, this is the same as the
+        **`keys()`** method.)
 
-- {{jsxref("Set.forEach", "Set.prototype.forEach(<var>callbackFn</var>[, <var>thisArg</var>])")}}
-  - : Calls `callbackFn` once for each value present in the `Set` object, in
-    insertion order. If a `thisArg` parameter is provided, it will be used as
-    the `this` value for each invocation of `callbackFn`.
+*   {{jsxref("Set.prototype.entries()")}}
+
+    *   : Returns a new iterator object that contains **an array of <code>\[<var>value</var>, <var>value</var>]</code>** for each element in the
+        `Set` object, in insertion order.
+
+        This is similar to the {{jsxref("Map")}} object, so that each entry's
+        *key* is the same as its *value* for a `Set`.
+
+*   {{jsxref("Set.forEach", "Set.prototype.forEach(<var>callbackFn</var>[, <var>thisArg</var>])")}}
+    *   : Calls `callbackFn` once for each value present in the `Set` object, in
+        insertion order. If a `thisArg` parameter is provided, it will be used as
+        the `this` value for each invocation of `callbackFn`.
 
 ## Examples
 
@@ -133,7 +134,8 @@ console.log(mySet1)
 
 ### Iterating Sets
 
-<pre class="brush: js">// iterate over items in set
+```js
+// iterate over items in set
 // logs the items in the order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}
 for (let item of mySet1) console.log(item)
 
@@ -147,7 +149,7 @@ for (let item of mySet1.values()) console.log(item)
 // (key and value are the same here)
 for (let [key, value] of mySet1.entries()) console.log(key)
 
-// convert Set object to an Array object, with <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from">Array.from</a>
+// convert Set object to an Array object, with Array.from
 const myArr = Array.from(mySet1) // [1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}]
 
 // the following will also work if run in an HTML document
@@ -173,7 +175,8 @@ mySet1.forEach(function(value) {
 // 1
 // 2
 // 3
-// 4</pre>
+// 4
+```
 
 ### Implementing basic set operations
 
@@ -297,8 +300,8 @@ console.assert(set.size == array.length);</pre>
 
 ## See also
 
-- A polyfill of `Set` is available in
-  [`core-js`](https://github.com/zloirock/core-js#set)
-- {{jsxref("Map")}}
-- {{jsxref("WeakMap")}}
-- {{jsxref("WeakSet")}}
+*   A polyfill of `Set` is available in
+    [`core-js`](https://github.com/zloirock/core-js#set)
+*   {{jsxref("Map")}}
+*   {{jsxref("WeakMap")}}
+*   {{jsxref("WeakSet")}}

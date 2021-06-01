@@ -43,11 +43,11 @@ retrieving object properties. These are summarized in the tables below.
 Note that this is not the most efficient algorithm for all cases, but useful for
 a quick demonstration.
 
-- Detection can occur by
-  `SimplePropertyRetriever.theGetMethodYouWant(obj).indexOf(prop) > -1`
-- Iteration can occur by
-  `SimplePropertyRetriever.theGetMethodYouWant(obj).forEach(function (value, prop) {});`
-  (or use `filter()`, `map()`, etc.)
+*   Detection can occur by
+    `SimplePropertyRetriever.theGetMethodYouWant(obj).indexOf(prop) > -1`
+*   Iteration can occur by
+    `SimplePropertyRetriever.theGetMethodYouWant(obj).forEach(function (value, prop) {});`
+    (or use `filter()`, `map()`, etc.)
 
 ```js
 var SimplePropertyRetriever = {
@@ -116,23 +116,14 @@ var SimplePropertyRetriever = {
 
 ## Detection Table
 
-|                                    | Enumerable | Nonenumerable | Symbols keys | Inherited Enumerable | Inherited Nonenumerable | Inherited Symbols keys |
-| ---------------------------------- | ---------- | ------------- | ------------ | -------------------- | ----------------------- | ---------------------- |
-| `in`                               | true       | true          | true         | true                 | true                    | true                   |
-| `for..in`                          | true       | false         | false        | true                 | false                   | false                  |
-| `obj.hasOwnProperty`               | true       | true          | true         | false                | false                   | false                  |
-| `obj.propertyIsEnumerable`         | true       | false         | true         | false                | false                   | false                  |
-| `Object.keys`                      | true       | false         | false        | false                | false                   | false                  |
-| `Object.getOwnPropertyNames`       | true       | true          | false        | false                | false                   | false                  |
-| `Object.getOwnPropertyDescriptors` | true       | true          | true         | false                | false                   | false                  |
-| `Reflect.ownKeys()`                | true       | true          | true         | false                | false                   | false                  |
+<table><thead><tr><th></th><th>Enumerable</th><th>Nonenumerable</th><th>Symbols keys</th><th>Inherited Enumerable</th><th>Inherited Nonenumerable</th><th>Inherited Symbols keys</th></tr></thead><tbody><tr><th><code>in</code></th><td>true</td><td>true</td><td>true</td><td>true</td><td>true</td><td>true</td></tr><tr><th><code>for..in</code></th><td>true</td><td>false</td><td>false</td><td>true</td><td>false</td><td>false</td></tr><tr><th><code>obj.hasOwnProperty</code></th><td>true</td><td>true</td><td>true</td><td>false</td><td>false</td><td>false</td></tr><tr><th><code>obj.propertyIsEnumerable</code></th><td>true</td><td>false</td><td>true</td><td>false</td><td>false</td><td>false</td></tr><tr><th><code>Object.keys</code></th><td>true</td><td>false</td><td>false</td><td>false</td><td>false</td><td>false</td></tr><tr><th><code>Object.getOwnPropertyNames</code></th><td>true</td><td>true</td><td>false</td><td>false</td><td>false</td><td>false</td></tr><tr><th><code>Object.getOwnPropertyDescriptors</code></th><td>true</td><td>true</td><td>true</td><td>false</td><td>false</td><td>false</td></tr><tr><th><code>Reflect.ownKeys()</code></th><td>true</td><td>true</td><td>true</td><td>false</td><td>false</td><td>false</td></tr></tbody></table>
 
 ## See also
 
-- [`in`](/en-US/docs/Web/JavaScript/Reference/Operators/in)
-- [`for..in`](/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
-- {{jsxref("Object.hasOwnProperty()")}}
-- {{jsxref("Object.propertyIsEnumerable()")}}
-- {{jsxref("Object.getOwnPropertyNames()")}}
-- {{jsxref("Object.keys()")}}
-- {{jsxref("Object.getOwnPropertyDescriptors()")}}
+*   [`in`](/en-US/docs/Web/JavaScript/Reference/Operators/in)
+*   [`for..in`](/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+*   {{jsxref("Object.hasOwnProperty()")}}
+*   {{jsxref("Object.propertyIsEnumerable()")}}
+*   {{jsxref("Object.getOwnPropertyNames()")}}
+*   {{jsxref("Object.keys()")}}
+*   {{jsxref("Object.getOwnPropertyDescriptors()")}}

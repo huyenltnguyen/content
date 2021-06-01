@@ -25,35 +25,31 @@ slice(beginIndex, endIndex)
 
 ### Parameters
 
-- `beginIndex`
+*   `beginIndex`
 
-  - : The zero-based index at which to begin extraction. If negative, it is
-    treated as <code><var>str</var>.length + <var>beginIndex</var></code>. (For
-    example, if `beginIndex` is `-3`, it is treated as
-    <code><var>str</var>.length - 3</code>.) If `beginIndex` is not a number
-    after
-    {{jsxref('Number', 'Number(<var>beginIndex</var>)')}}, it
-    is treated as `0`.
+    *   : The zero-based index at which to begin extraction. If negative, it is
+        treated as <code><var>str</var>.length + <var>beginIndex</var></code>. (For
+        example, if `beginIndex` is `-3`, it is treated as <code><var>str</var>.length - 3</code>.) If `beginIndex` is not a number
+        after
+        {{jsxref('Number', 'Number(<var>beginIndex</var>)')}}, it
+        is treated as `0`.
 
-    If `beginIndex` is greater than or equal to
-    <code><var>str</var>.length</code>, an empty string is returned.
+        If `beginIndex` is greater than or equal to <code><var>str</var>.length</code>, an empty string is returned.
 
-- `endIndex` {{optional_inline}}
+*   `endIndex` {{optional_inline}}
 
-  - : The zero-based index _before_ which to end extraction. The character at
-    this index will not be included.
+    *   : The zero-based index *before* which to end extraction. The character at
+        this index will not be included.
 
-    If `endIndex` is omitted or undefined, or greater than
-    <code><var>str</var>.length</code>, `slice()` extracts to the end of the
-    string. If negative, it is treated as <code><var>str</var>.length +
-    <var>endIndex</var></code>. (For example, if `endIndex` is `-3`, it is
-    treated as <code><var>str</var>.length - 3</code>.) If it is not undefined,
-    and <code>Number(<var>endIndex</var>)</code> is not positive, an empty
-    string is returned.
+        If `endIndex` is omitted or undefined, or greater than <code><var>str</var>.length</code>, `slice()` extracts to the end of the
+        string. If negative, it is treated as <code><var>str</var>.length + <var>endIndex</var></code>. (For example, if `endIndex` is `-3`, it is
+        treated as <code><var>str</var>.length - 3</code>.) If it is not undefined,
+        and <code>Number(<var>endIndex</var>)</code> is not positive, an empty
+        string is returned.
 
-    If `endIndex` is specified, `endIndex` should be greater than `beginIndex`,
-    otherwise an empty string is returned. (For example, `slice(-3, 0)`,
-    `slice(-1, -3)`, or `slice(3, 1)` returns `""`.)
+        If `endIndex` is specified, `endIndex` should be greater than `beginIndex`,
+        otherwise an empty string is returned. (For example, `slice(-3, 0)`,
+        `slice(-1, -3)`, or `slice(3, 1)` returns `""`.)
 
 ### Return value
 
@@ -64,8 +60,7 @@ A new string containing the extracted section of the string.
 `slice()` extracts the text from one string and returns a new string. Changes to
 the text in one string do not affect the other string.
 
-`slice()` extracts up to but not including `endIndex`.
-<code><var>str</var>.slice(1, 4)</code> extracts the second character through
+`slice()` extracts up to but not including `endIndex`. <code><var>str</var>.slice(1, 4)</code> extracts the second character through
 the fourth character (characters indexed `1`, `2`, and `3`).
 
 As an example, <code><var>str</var>.slice(2, -1)</code> extracts the third
@@ -132,6 +127,6 @@ console.log(str.slice(-5, -1)) // => "n us"
 
 ## See also
 
-- {{jsxref("String.prototype.substr()")}}
-- {{jsxref("String.prototype.substring()")}}
-- {{jsxref("Array.prototype.slice()")}}
+*   {{jsxref("String.prototype.substr()")}}
+*   {{jsxref("String.prototype.substring()")}}
+*   {{jsxref("Array.prototype.slice()")}}

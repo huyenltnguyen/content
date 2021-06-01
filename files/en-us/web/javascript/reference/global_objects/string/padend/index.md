@@ -27,15 +27,15 @@ padEnd(targetLength, padString)
 
 ### Parameters
 
-- `targetLength`
-  - : The length of the resulting string once the current `str` has been padded.
-    If the value is lower than <code><var>str.</var>length</code>, the current
-    string will be returned as-is.
-- `padString` {{optional_inline}}
-  - : The string to pad the current `str` with. If `padString` is too long to
-    stay within `targetLength`, it will be truncated: for left-to-right
-    languages the left-most part and for right-to-left languages the right-most
-    will be applied. The default value for this parameter is "` `" (`U+0020`).
+*   `targetLength`
+    *   : The length of the resulting string once the current `str` has been padded.
+        If the value is lower than <code><var>str.</var>length</code> , the current
+        string will be returned as-is.
+*   `padString` {{optional_inline}}
+    *   : The string to pad the current `str` with. If `padString` is too long to
+        stay within `targetLength`, it will be truncated: for left-to-right
+        languages the left-most part and for right-to-left languages the right-most
+        will be applied. The default value for this parameter is "` `" (`U+0020`).
 
 ### Return value
 
@@ -63,7 +63,7 @@ A {{jsxref("String")}} of the specified `targetLength` with the
 
 ## See also
 
-- A polyfill of `String.prototype.padEnd` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.padStart()")}}
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
+*   A polyfill of `String.prototype.padEnd` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.padStart()")}}
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)

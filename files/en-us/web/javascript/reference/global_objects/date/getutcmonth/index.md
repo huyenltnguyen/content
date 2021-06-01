@@ -51,5 +51,5 @@ var month = today.getUTCMonth();
 
 ## See also
 
-- {{jsxref("Date.prototype.getMonth()")}}
-- {{jsxref("Date.prototype.setUTCMonth()")}}
+*   {{jsxref("Date.prototype.getMonth()")}}
+*   {{jsxref("Date.prototype.setUTCMonth()")}}

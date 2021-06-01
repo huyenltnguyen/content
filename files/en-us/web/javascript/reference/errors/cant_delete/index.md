@@ -70,6 +70,6 @@ delete Math.PI;  // TypeError
 
 ## See also
 
-- [delete operator](/en-US/docs/Web/JavaScript/Reference/Operators/delete)
-- {{jsxref("Object.defineProperty()")}}
-- {{jsxref("Object.freeze()")}}
+*   [delete operator](/en-US/docs/Web/JavaScript/Reference/Operators/delete)
+*   {{jsxref("Object.defineProperty()")}}
+*   {{jsxref("Object.freeze()")}}

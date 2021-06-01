@@ -26,8 +26,8 @@ concat(str1, str2, ... , strN)
 
 ### Parameters
 
-- `strN`
-  - : One or more strings to concatenate to `str`.
+*   `strN`
+    *   : One or more strings to concatenate to `str`.
 
 ### Return value
 
@@ -80,5 +80,5 @@ let greetList = ['Hello', ' ', 'Venkat', '!']
 
 ## See also
 
-- {{jsxref("Array.prototype.concat()")}}
-- {{jsxref("Operators/Assignment_Operators", "Assignment operators", "", 1)}}
+*   {{jsxref("Array.prototype.concat()")}}
+*   {{jsxref("Operators/Assignment_Operators", "Assignment operators", "", 1)}}

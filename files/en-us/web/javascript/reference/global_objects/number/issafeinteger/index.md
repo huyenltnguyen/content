@@ -18,19 +18,19 @@ a number that is a <dfn>safe integer</dfn>.
 
 A safe integer is an integer that
 
-- can be exactly represented as an IEEE-754 double precision number, and
-- whose IEEE-754 representation cannot be the result of rounding any other
-  integer to fit the IEEE-754 representation.
+*   can be exactly represented as an IEEE-754 double precision number, and
+*   whose IEEE-754 representation cannot be the result of rounding any other
+    integer to fit the IEEE-754 representation.
 
 For example, `2^53 - 1` is a safe integer: it can be exactly represented, and no
 other integer rounds to it under any IEEE-754 rounding mode. In contrast, `2^53`
-is _not_ a safe integer: it can be exactly represented in IEEE-754, but the
+is *not* a safe integer: it can be exactly represented in IEEE-754, but the
 integer `2^53 + 1` can't be directly represented in IEEE-754 but instead rounds
 to `2^53` under round-to-nearest and round-to-zero rounding. The safe integers
 consist of all integers from `-(2^53 - 1)` inclusive to `2^53 - 1` inclusive (±
 `9007199254740991` or ± 9,007,199,254,740,991).
 
-Handling values larger or smaller than \~9 quadrillion with full precision
+Handling values larger or smaller than ~9 quadrillion with full precision
 requires using an
 [arbitrary precision arithmetic library](https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic).
 See
@@ -47,8 +47,8 @@ Number.isSafeInteger(testValue)
 
 ### Parameters
 
-- `testValue`
-  - : The value to be tested for being a safe integer.
+*   `testValue`
+    *   : The value to be tested for being a safe integer.
 
 ### Return value
 
@@ -88,9 +88,9 @@ Number.isSafeInteger(3.0);                  // true
 
 ## See also
 
-- A polyfill of `Number.isSafeInteger` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
-- The {{jsxref("Number")}} object it belongs to.
-- {{jsxref("Number.MIN_SAFE_INTEGER")}}
-- {{jsxref("Number.MAX_SAFE_INTEGER")}}
-- {{jsxref("BigInt")}}
+*   A polyfill of `Number.isSafeInteger` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
+*   The {{jsxref("Number")}} object it belongs to.
+*   {{jsxref("Number.MIN_SAFE_INTEGER")}}
+*   {{jsxref("Number.MAX_SAFE_INTEGER")}}
+*   {{jsxref("BigInt")}}

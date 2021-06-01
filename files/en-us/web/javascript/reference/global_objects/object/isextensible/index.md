@@ -18,12 +18,14 @@ The **`Object.isExtensible()`** method determines if an object is extensible
 
 ## Syntax
 
-<pre class="brush: js">Object.isExtensible(<var>obj</var>)</pre>
+```js
+Object.isExtensible(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object which should be checked.
+*   `obj`
+    *   : The object which should be checked.
 
 ### Return value
 
@@ -86,9 +88,9 @@ Object.isExtensible(1);
 
 ## See also
 
-- {{jsxref("Object.preventExtensions()")}}
-- {{jsxref("Object.seal()")}}
-- {{jsxref("Object.isSealed()")}}
-- {{jsxref("Object.freeze()")}}
-- {{jsxref("Object.isFrozen()")}}
-- {{jsxref("Reflect.isExtensible()")}}
+*   {{jsxref("Object.preventExtensions()")}}
+*   {{jsxref("Object.seal()")}}
+*   {{jsxref("Object.isSealed()")}}
+*   {{jsxref("Object.freeze()")}}
+*   {{jsxref("Object.isFrozen()")}}
+*   {{jsxref("Reflect.isExtensible()")}}

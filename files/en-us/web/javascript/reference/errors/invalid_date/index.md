@@ -63,6 +63,6 @@ new Date(1317826080); // Unix Time Stamp for 05 October 2011 14:48:00 UTC
 
 ## See also
 
-- {{jsxref("Date")}}
-- {{jsxref("Date.prototype.parse()")}}
-- {{jsxref("Date.prototype.toISOString()")}}
+*   {{jsxref("Date")}}
+*   {{jsxref("Date.prototype.parse()")}}
+*   {{jsxref("Date.prototype.toISOString()")}}

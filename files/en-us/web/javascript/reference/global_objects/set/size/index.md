@@ -45,4 +45,4 @@ mySet.size; // 3
 
 ## See also
 
-- {{jsxref("Set")}}
+*   {{jsxref("Set")}}

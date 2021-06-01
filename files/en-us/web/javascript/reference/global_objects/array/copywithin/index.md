@@ -28,30 +28,30 @@ copyWithin(target, start, end)
 
 ### Parameters
 
-- `target`
+*   `target`
 
-  - : Zero-based index at which to copy the sequence to. If negative, `target`
-    will be counted from the end.
+    *   : Zero-based index at which to copy the sequence to. If negative, `target`
+        will be counted from the end.
 
-    If `target` is at or greater than `arr.length`, nothing will be copied. If
-    `target` is positioned after `start`, the copied sequence will be trimmed to
-    fit `arr.length`.
+        If `target` is at or greater than `arr.length`, nothing will be copied. If
+        `target` is positioned after `start`, the copied sequence will be trimmed to
+        fit `arr.length`.
 
-- `start` {{optional_inline}}
+*   `start` {{optional_inline}}
 
-  - : Zero-based index at which to start copying elements from. If negative,
-    `start` will be counted from the end.
+    *   : Zero-based index at which to start copying elements from. If negative,
+        `start` will be counted from the end.
 
-    If `start` is omitted, `copyWithin` will copy from index `0`.
+        If `start` is omitted, `copyWithin` will copy from index `0`.
 
-- `end` {{optional_inline}}
+*   `end` {{optional_inline}}
 
-  - : Zero-based index at which to end copying elements from. `copyWithin`
-    copies up to but not including `end`. If negative, `end` will be counted
-    from the end.
+    *   : Zero-based index at which to end copying elements from. `copyWithin`
+        copies up to but not including `end`. If negative, `end` will be counted
+        from the end.
 
-    If `end` is omitted, `copyWithin` will copy until the last index (default to
-    `arr.length`).
+        If `end` is omitted, `copyWithin` will copy until the last index (default to
+        `arr.length`).
 
 ### Return value
 
@@ -66,7 +66,7 @@ of the same name. The sequence is copied and pasted as one operation; pasted
 sequence will have the copied values even when the copy and paste region
 overlap.
 
-The `copyWithin` function is intentionally _generic_, it does not require that
+The `copyWithin` function is intentionally *generic*, it does not require that
 its `this` value be an {{jsxref("Array")}} object.
 
 The `copyWithin` method is a mutable method. It does not alter the length of
@@ -113,7 +113,7 @@ i32a.copyWithin(0, 2)
 
 ## See also
 
-- A polyfill of `Array.prototype.copyWithin` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
-- {{jsxref("Array")}}
+*   A polyfill of `Array.prototype.copyWithin` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+*   {{jsxref("Array")}}

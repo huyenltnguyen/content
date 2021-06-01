@@ -67,6 +67,6 @@ console.log(d.toTimeString()); // 14:39:07 GMT-0600 (PDT)
 
 ## See also
 
-- {{jsxref("Date.prototype.toLocaleTimeString()")}}
-- {{jsxref("Date.prototype.toDateString()")}}
-- {{jsxref("Date.prototype.toString()")}}
+*   {{jsxref("Date.prototype.toLocaleTimeString()")}}
+*   {{jsxref("Date.prototype.toDateString()")}}
+*   {{jsxref("Date.prototype.toString()")}}

@@ -14,8 +14,7 @@ browser-compat: javascript.builtins.Function.Function
 creates a new <code>Function</code> <strong>object</strong>. Calling the
 constructor directly can create functions dynamically, but suffers from security
 and similar (but far less significant) performance issues to
-{{jsxref("Global_Objects/eval")}}. However, unlike eval, the
-<code>Function</code> constructor creates functions which execute in the global
+{{jsxref("Global_Objects/eval")}}. However, unlike eval, the <code>Function</code> constructor creates functions which execute in the global
 scope only.</span>
 
 {{EmbedInteractiveExample("pages/js/function-constructor.html","shorter")}}
@@ -30,14 +29,14 @@ new Function(arg1, ... , argN, functionBody)
 
 ### Parameters
 
-- <code><var>arg1</var>, <var>arg2</var>, ... <var>argN</var></code>
-  - : Names to be used by the function as formal argument names. Each must be a
-    string that corresponds to a valid JavaScript identifier, or a list of such
-    strings separated with a comma. For example: "`x`", "`theValue`"—or
-    "`x,theValue`".
-- `functionBody`
-  - : A string containing the JavaScript statements comprising the function
-    definition.
+*   <code><var>arg1</var>, <var>arg2</var>, ... <var>argN</var></code>
+    *   : Names to be used by the function as formal argument names. Each must be a
+        string that corresponds to a valid JavaScript identifier, or a list of such
+        strings separated with a comma. For example: "`x`", "`theValue`"—or
+        "`x,theValue`".
+*   `functionBody`
+    *   : A string containing the JavaScript statements comprising the function
+        definition.
 
 ## Description
 
@@ -87,10 +86,10 @@ function body, "`return a + b`".
 
 ## See also
 
-- {{jsxref("Functions", "Functions and function scope", "", 1)}}
-- {{jsxref("Statements/function", "function")}} statement
-- {{jsxref("Operators/function", "function")}} expression
-- {{jsxref("Statements/function*", "function*")}} statement
-- {{jsxref("Operators/function*", "function*")}} expression
-- {{jsxref("AsyncFunction")}}
-- {{jsxref("GeneratorFunction")}}
+*   {{jsxref("Functions", "Functions and function scope", "", 1)}}
+*   {{jsxref("Statements/function", "function")}} statement
+*   {{jsxref("Operators/function", "function")}} expression
+*   {{jsxref("Statements/function*", "function*")}} statement
+*   {{jsxref("Operators/function*", "function*")}} expression
+*   {{jsxref("AsyncFunction")}}
+*   {{jsxref("GeneratorFunction")}}

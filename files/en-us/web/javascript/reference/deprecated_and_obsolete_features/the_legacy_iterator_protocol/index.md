@@ -27,15 +27,17 @@ following semantics, and throws
 {{jsxref("Global_Objects/StopIteration", "StopIteration")}}
 at the end of iteration.
 
-<table class="standard-table"><tbody><tr><th scope="col">Property</th><th scope="col">Value</th></tr><tr><td><code>next</code></td><td>A zero arguments function that returns an value.</td></tr></tbody></table>
+| Property | Value                                            |
+| -------- | ------------------------------------------------ |
+| `next`   | A zero arguments function that returns an value. |
 
 ### Difference between legacy and ES2015 iterator protocols
 
-- The value was returned directly as a return value of calls to `next`, instead
-  of the `value` property of a placeholder object
-- Iteration termination was expressed by throwing a
-  {{jsxref("Global_Objects/StopIteration", "StopIteration")}}
-  object.
+*   The value was returned directly as a return value of calls to `next`, instead
+    of the `value` property of a placeholder object
+*   Iteration termination was expressed by throwing a
+    {{jsxref("Global_Objects/StopIteration", "StopIteration")}}
+    object.
 
 ### Simple example with the old protocol
 
@@ -69,6 +71,6 @@ catch(e){
 
 ## See also
 
-- [Iterators and generators](/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
-- More
-  [deprecated and obsolete features](/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
+*   [Iterators and generators](/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
+*   More
+    [deprecated and obsolete features](/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)

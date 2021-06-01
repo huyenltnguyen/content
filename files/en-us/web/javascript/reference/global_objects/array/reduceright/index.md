@@ -41,11 +41,22 @@ reduceRight(function callbackFn(accumulator, currentValue, index, array) { ... }
 
 ### Parameters
 
-<dl><dt><code><var>callbackFn</var></code></dt><dd>Function to execute on each value in the array, taking four arguments:<dl><dt><code><var>accumulator</var></code></dt><dd>The value previously returned in the last invocation of the callback, or
-<code><var>initialValue</var></code>, if supplied. (See below.)</dd><dt><code><var>currentValue</var></code></dt><dd>The current element being processed in the array.</dd><dt><code><var>index</var></code>{{optional_inline}}</dt><dd>The index of the current element being processed in the array.</dd><dt><code><var>array</var></code>{{optional_inline}}</dt><dd>The array <code>reduceRight()</code> was called upon.</dd></dl></dd><dt><code><var>initialValue</var></code> {{optional_inline}}</dt><dd>Value to use as accumulator to the first call of the
-<code><var>callbackFn</var></code>. If no initial value is supplied, the last element in
-the array will be used and skipped. Calling reduce or reduceRight on an empty array
-without an initial value creates a <code>TypeError</code>.</dd></dl>
+*   `callbackFn`
+    *   : Function to execute on each value in the array, taking four arguments:
+        *   `accumulator`
+            *   : The value previously returned in the last invocation of the callback,
+                or `initialValue`, if supplied. (See below.)
+        *   `currentValue`
+            *   : The current element being processed in the array.
+        *   `index`{{optional_inline}}
+            *   : The index of the current element being processed in the array.
+        *   `array`{{optional_inline}}
+            *   : The array `reduceRight()` was called upon.
+*   `initialValue` {{optional_inline}}
+    *   : Value to use as accumulator to the first call of the `callbackFn`. If no
+        initial value is supplied, the last element in the array will be used and
+        skipped. Calling reduce or reduceRight on an empty array without an initial
+        value creates a `TypeError`.
 
 ### Return value
 
@@ -232,7 +243,7 @@ function is the final result. In this example we use `reduceRight()` to
 implement function composition.
 
 See also
-[Function composition](<https://en.wikipedia.org/wiki/Function_composition_(computer_science)>)
+[Function composition](https://en.wikipedia.org/wiki/Function_composition_\(computer_science\))
 on Wikipedia.
 
 ```js
@@ -261,6 +272,6 @@ console.log(compose(inc, double)(2)); // 5
 
 ## See also
 
-- A polyfill of `Array.prototype.reduceRight` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.reduce()")}}
+*   A polyfill of `Array.prototype.reduceRight` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.reduce()")}}

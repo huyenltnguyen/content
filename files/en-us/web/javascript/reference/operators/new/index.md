@@ -19,20 +19,23 @@ function.
 
 ## Syntax
 
-<pre class="brush: js">new <var>constructor</var>[([<var>arguments</var>])]</pre>
+```js
+new constructor[([arguments])]
+```
 
 ### Parameters
 
-- `constructor`
-  - : A class or function that specifies the type of the object instance.
-- `arguments`
-  - : A list of values that the `constructor` will be called with.
+*   `constructor`
+    *   : A class or function that specifies the type of the object instance.
+*   `arguments`
+    *   : A list of values that the `constructor` will be called with.
 
 ## Description
 
 The **`new`** keyword does the following things:
 
 1.  Creates a blank, plain JavaScript object.
+
 2.  Adds a property to the new object (`__proto__`) that links to the
     constructor function's prototype object
 
@@ -43,6 +46,7 @@ The **`new`** keyword does the following things:
 3.  Binds the newly created object instance as the `this` context (i.e. all
     references to `this` in the constructor function now refer to the object
     created in the first step).
+
 4.  Returns `this` if the function doesn't return an object.
 
 Creating a user-defined object requires two steps:
@@ -232,6 +236,6 @@ car2.owner.name
 
 ## See also
 
-- {{jsxref("Function")}}
-- {{jsxref("Reflect.construct()")}}
-- {{jsxref("Object")}}
+*   {{jsxref("Function")}}
+*   {{jsxref("Reflect.construct()")}}
+*   {{jsxref("Object")}}

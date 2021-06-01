@@ -16,9 +16,7 @@ The **`global`** property indicates whether or not the "`g`" flag is used with
 the regular expression. `global` is a read-only property of an individual
 regular expression instance.
 
-{{EmbedInteractiveExample("pages/js/regexp-prototype-global.html")}}
-
-{{js_property_attributes(0, 0, 1)}}
+{{EmbedInteractiveExample("pages/js/regexp-prototype-global.html")}}{{js_property_attributes(0, 0, 1)}}
 
 ## Description
 
@@ -62,11 +60,11 @@ console.log(str2);  // Output: examplefoo
 
 ## See also
 
-- {{jsxref("RegExp.lastIndex")}}
-- {{JSxRef("RegExp.prototype.dotAll")}}
-- {{JSxRef("RegExp.prototype.hasIndices")}}
-- {{JSxRef("RegExp.prototype.ignoreCase")}}
-- {{JSxRef("RegExp.prototype.multiline")}}
-- {{JSxRef("RegExp.prototype.source")}}
-- {{JSxRef("RegExp.prototype.sticky")}}
-- {{JSxRef("RegExp.prototype.unicode")}}
+*   {{jsxref("RegExp.lastIndex")}}
+*   {{JSxRef("RegExp.prototype.dotAll")}}
+*   {{JSxRef("RegExp.prototype.hasIndices")}}
+*   {{JSxRef("RegExp.prototype.ignoreCase")}}
+*   {{JSxRef("RegExp.prototype.multiline")}}
+*   {{JSxRef("RegExp.prototype.source")}}
+*   {{JSxRef("RegExp.prototype.sticky")}}
+*   {{JSxRef("RegExp.prototype.unicode")}}

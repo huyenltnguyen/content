@@ -16,41 +16,42 @@ The **`handler.set()`** method is a trap for setting a property value.
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  set: function(<var>target</var>, <var>property</var>, <var>value</var>, <var>receiver</var>) {
+```js
+const p = new Proxy(target, {
+  set: function(target, property, value, receiver) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameters are passed to the `set()` method. `this` is bound to
 the handler.
 
-- `target`
-  - : The target object.
-- `property`
-  - : The name or {{jsxref("Symbol")}} of the property to set.
-- `value`
-  - : The new value of the property to set.
-- `receiver`
+*   `target`
+    *   : The target object.
+*   `property`
+    *   : The name or {{jsxref("Symbol")}} of the property to set.
+*   `value`
+    *   : The new value of the property to set.
+*   `receiver`
 
-  - : The object to which the assignment was originally directed. This is
-    usually the proxy itself. But a `set()` handler can also be called
-    indirectly, via the prototype chain or various other ways.
+    *   : The object to which the assignment was originally directed. This is
+        usually the proxy itself. But a `set()` handler can also be called
+        indirectly, via the prototype chain or various other ways.
 
-    For example, suppose a script does <code><var>obj</var>.name = "jen"</code>,
-    and `obj` is not a proxy, and has no own property `.name`, but it has a
-    proxy on its prototype chain. That proxy's `set()` handler will be called,
-    and `obj` will be passed as the receiver.
+        For example, suppose a script does <code><var>obj</var>.name = "jen"</code>,
+        and `obj` is not a proxy, and has no own property `.name`, but it has a
+        proxy on its prototype chain. That proxy's `set()` handler will be called,
+        and `obj` will be passed as the receiver.
 
 ### Return value
 
 The `set()` method should return a boolean value.
 
-- Return `true` to indicate that assignment succeeded.
-- If the `set()` method returns `false`, and the assignment happened in
-  strict-mode code, a {{jsxref("TypeError")}} will be thrown.
+*   Return `true` to indicate that assignment succeeded.
+*   If the `set()` method returns `false`, and the assignment happened in
+    strict-mode code, a {{jsxref("TypeError")}} will be thrown.
 
 ## Description
 
@@ -60,33 +61,33 @@ The **`handler.set()`** method is a trap for setting property value.
 
 This trap can intercept these operations:
 
-- Property assignment:
+*   Property assignment:
 
-  <code><var>proxy</var>[<var>foo</var>] = <var>bar</var></code>
+    <code><var>proxy</var>\[<var>foo</var>] = <var>bar</var></code>
 
-  and
+    and
 
-  <code><var>proxy</var>.<var>foo</var> = <var>bar</var></code>
+    <code><var>proxy</var>.<var>foo</var> = <var>bar</var></code>
 
-- Inherited property assignment:
+*   Inherited property assignment:
 
-  <code>Object.create(<var>proxy</var>)[<var>foo</var>] = <var>bar</var></code>
+    <code>Object.create(<var>proxy</var>)\[<var>foo</var>] = <var>bar</var></code>
 
-- {{jsxref("Reflect.set()")}}
+*   {{jsxref("Reflect.set()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- Cannot change the value of a property to be different from the value of the
-  corresponding target object property if the corresponding target object
-  property is a non-writable, non-configurable data property.
-- Cannot set the value of a property if the corresponding target object property
-  is a non-configurable accessor property that has `undefined` as its `[[Set]]`
-  attribute.
-- In strict mode, a `false` return value from the `set()` handler will throw a
-  {{jsxref("TypeError")}} exception.
+*   Cannot change the value of a property to be different from the value of the
+    corresponding target object property if the corresponding target object
+    property is a non-writable, non-configurable data property.
+*   Cannot set the value of a property if the corresponding target object property
+    is a non-configurable accessor property that has `undefined` as its `[[Set]]`
+    attribute.
+*   In strict mode, a `false` return value from the `set()` handler will throw a
+    {{jsxref("TypeError")}} exception.
 
 ## Examples
 
@@ -120,6 +121,6 @@ console.log(p.a);       // 10
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Reflect.set()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Reflect.set()")}}

@@ -56,5 +56,5 @@ console.log(mapIter.next().value); // "baz"
 
 ## See also
 
-- {{jsxref("Map.prototype.entries()")}}
-- {{jsxref("Map.prototype.keys()")}}
+*   {{jsxref("Map.prototype.entries()")}}
+*   {{jsxref("Map.prototype.keys()")}}

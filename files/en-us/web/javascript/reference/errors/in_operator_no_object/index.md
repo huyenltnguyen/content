@@ -87,4 +87,4 @@ var trees = ['redwood', 'bay', 'cedar', 'oak', 'maple'];
 
 ## See also
 
-- [`in` operator](/en-US/docs/Web/JavaScript/Reference/Operators/in)
+*   [`in` operator](/en-US/docs/Web/JavaScript/Reference/Operators/in)

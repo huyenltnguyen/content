@@ -53,32 +53,32 @@ reduce(function callbackFn(accumulator, currentValue, index, array) { ... }, ini
 
 ### Parameters
 
-- `callbackFn`
+*   `callbackFn`
 
-  - : A function to execute on each element in the array (except for the first,
-    if no `initialValue` is supplied).
+    *   : A function to execute on each element in the array (except for the first,
+        if no `initialValue` is supplied).
 
-    It takes four arguments:
+        It takes four arguments:
 
-    - `accumulator`
-      - : The accumulator accumulates <var>callbackFn</var>'s return values. It
-        is the accumulated value previously returned in the last invocation of
-        the callback—or `initialValue`, if it was supplied (see below).
-    - `currentValue`
-      - : The current element being processed in the array.
-    - `index` {{optional_inline}}
-      - : The index of the current element being processed in the array. Starts
-        from index `0` if an `initialValue` is provided. Otherwise, it starts
-        from index `1`.
-    - `array` {{optional_inline}}
-      - : The array `reduce()` was called upon.
+        *   `accumulator`
+            *   : The accumulator accumulates <var>callbackFn</var> 's return values. It
+                is the accumulated value previously returned in the last invocation of
+                the callback—or `initialValue`, if it was supplied (see below).
+        *   `currentValue`
+            *   : The current element being processed in the array.
+        *   `index` {{optional_inline}}
+            *   : The index of the current element being processed in the array. Starts
+                from index `0` if an `initialValue` is provided. Otherwise, it starts
+                from index `1`.
+        *   `array` {{optional_inline}}
+            *   : The array `reduce()` was called upon.
 
-- `initialValue` {{optional_inline}}
-  - : A value to use as the first argument to the first call of the
-    `callbackFn`. If no `initialValue` is supplied, the first element in the
-    array will be used as the initial `accumulator` value and skipped as
-    `currentValue`. Calling `reduce()` on an empty array without an
-    `initialValue` will throw a {{jsxref("TypeError")}}.
+*   `initialValue` {{optional_inline}}
+    *   : A value to use as the first argument to the first call of the
+        `callbackFn`. If no `initialValue` is supplied, the first element in the
+        array will be used as the initial `accumulator` value and skipped as
+        `currentValue`. Calling `reduce()` on an empty array without an
+        `initialValue` will throw a {{jsxref("TypeError")}}.
 
 ### Return value
 
@@ -110,7 +110,7 @@ If the array is empty and no `initialValue` is provided,
 
 If the array only has one element (regardless of position) and no `initialValue`
 is provided, or if `initialValue` is provided but the array is empty, the solo
-value will be returned _without_ calling _`callbackFn`._
+value will be returned *without* calling *`callbackFn`.*
 
 If `initialValue` is provided and the array is not empty then the reduce method
 will always invoke the callback function starting at index 0. If `initialValue`
@@ -538,6 +538,6 @@ if (!Array.prototype.mapUsingReduce) {
 
 ## See also
 
-- A polyfill of `Array.prototype.reduce` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.reduceRight()")}}
+*   A polyfill of `Array.prototype.reduce` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.reduceRight()")}}

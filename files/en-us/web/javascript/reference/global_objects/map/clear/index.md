@@ -54,4 +54,4 @@ myMap.has('bar')  // false
 
 ## See also
 
-- {{jsxref("Map")}}
+*   {{jsxref("Map")}}

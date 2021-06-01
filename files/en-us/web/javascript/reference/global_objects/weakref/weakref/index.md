@@ -21,9 +21,9 @@ new WeakRef(targetObject);
 
 ### Parameters
 
-- targetObject
-  - : The target object the WeakRef should refer to (also called the
-    _referent_).
+*   targetObject
+    *   : The target object the WeakRef should refer to (also called the
+        *referent*).
 
 ## Examples
 
@@ -53,4 +53,4 @@ class Counter {
 
 ## See also
 
-- {{jsxref("WeakRef")}}
+*   {{jsxref("WeakRef")}}

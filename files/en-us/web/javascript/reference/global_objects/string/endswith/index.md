@@ -27,11 +27,13 @@ endsWith(searchString, length)
 
 ### Parameters
 
-- `searchString`
-  - : The characters to be searched for at the end of `str`.
-- `length` {{optional_inline}}
-  - : If provided, it is used as the length of `str`. Defaults to
-    <code><var>str</var>.length</code>.
+*   `searchString`
+    *   : The characters to be searched for at the end of `str`.
+*   `length` {{optional_inline}}
+
+    *   : If provided, it is used as the length of `str`. Defaults to
+
+        <code><var>str</var>.length</code> .
 
 ### Return value
 
@@ -82,9 +84,9 @@ if (!String.prototype.endsWith) {
 
 ## See also
 
-- A polyfill of `String.prototype.endsWith` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.startsWith()")}}
-- {{jsxref("String.prototype.includes()")}}
-- {{jsxref("String.prototype.indexOf()")}}
-- {{jsxref("String.prototype.lastIndexOf()")}}
+*   A polyfill of `String.prototype.endsWith` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.startsWith()")}}
+*   {{jsxref("String.prototype.includes()")}}
+*   {{jsxref("String.prototype.indexOf()")}}
+*   {{jsxref("String.prototype.lastIndexOf()")}}

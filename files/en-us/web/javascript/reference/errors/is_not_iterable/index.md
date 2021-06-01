@@ -153,9 +153,9 @@ Array.from(myEmptyIterable);  // []
 
 ## See also
 
-- [iterable protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol)
-- {{jsxref("Object.keys")}}
-- {{jsxref("Object.entries")}}
-- {{jsxref("Map")}}
-- [generators](/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generators)
-- [for…of](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement)
+*   [iterable protocol](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol)
+*   {{jsxref("Object.keys")}}
+*   {{jsxref("Object.entries")}}
+*   {{jsxref("Map")}}
+*   [generators](/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generators)
+*   [for…of](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement)

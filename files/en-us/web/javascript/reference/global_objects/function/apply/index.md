@@ -25,26 +25,26 @@ apply(thisArg, argsArray)
 
 ### Parameters
 
-- `thisArg`
+*   `thisArg`
 
-  - : The value of `this` provided for the call to `func`.
+    *   : The value of `this` provided for the call to `func`.
 
-    Note that `this` may not be the actual value seen by the method: if the
-    method is a function in
-    {{jsxref("Strict_mode", "non-strict mode", "", 1)}} code,
-    {{jsxref("null")}} and {{jsxref("undefined")}} will be
-    replaced with the global object, and primitive values will be boxed. This
-    argument is required.
+        Note that `this` may not be the actual value seen by the method: if the
+        method is a function in
+        {{jsxref("Strict_mode", "non-strict mode", "", 1)}} code,
+        {{jsxref("null")}} and {{jsxref("undefined")}} will be
+        replaced with the global object, and primitive values will be boxed. This
+        argument is required.
 
-- `argsArray` {{optional_inline}}
+*   `argsArray` {{optional_inline}}
 
-  - : An array-like object, specifying the arguments with which `func` should be
-    called, or {{jsxref("null")}} or {{jsxref("undefined")}} if
-    no arguments should be provided to the function.
+    *   : An array-like object, specifying the arguments with which `func` should be
+        called, or {{jsxref("null")}} or {{jsxref("undefined")}} if
+        no arguments should be provided to the function.
 
-    Starting with ECMAScript 5 these arguments can be a generic array-like
-    object instead of an array. See below for
-    [browser compatibility](#browser_compatibility) information.
+        Starting with ECMAScript 5 these arguments can be a generic array-like
+        object instead of an array. See below for
+        [browser compatibility](#browser_compatibility) information.
 
 ### Return value
 
@@ -70,9 +70,8 @@ rewrite the method for the new object.
 `apply` is very similar to {{jsxref("Function.call", "call()")}},
 except for the type of arguments it supports. You use an arguments array instead
 of a list of arguments (parameters). With `apply`, you can also use an array
-literal, for example, <code><var>func</var>.apply(this, ['eat',
-'bananas'])</code>, or an {{jsxref("Array")}} object, for example,
-<code><var>func</var>.apply(this, new Array('eat', 'bananas'))</code>.
+literal, for example, <code><var>func</var>.apply(this, \['eat',
+'bananas'])</code>, or an {{jsxref("Array")}} object, for example, <code><var>func</var>.apply(this, new Array('eat', 'bananas'))</code>.
 
 You can also use {{jsxref("Functions/arguments", "arguments")}}
 for the `argsArray` parameter.
@@ -104,7 +103,7 @@ element, instead of adding the elements individually. So you end up with an
 array inside an array.
 
 What if that is not what you want? `concat` does have the desired behavior in
-this case, but it does not append to the _existing_ array—it instead creates and
+this case, but it does not append to the *existing* array—it instead creates and
 returns a new array.
 
 But you wanted to append to the existing array... So what now? Write a loop?
@@ -243,9 +242,9 @@ console.log(myInstance.constructor);              // logs 'MyConstructor'
 
 ## See also
 
-- {{jsxref("Functions/arguments", "arguments")}} object
-- {{jsxref("Function.prototype.bind()")}}
-- {{jsxref("Function.prototype.call()")}}
-- {{jsxref("Functions", "Functions and function scope", "", 1)}}
-- {{jsxref("Reflect.apply()")}}
-- {{jsxref("Operators/Spread_syntax", "Spread syntax", "", 1)}}
+*   {{jsxref("Functions/arguments", "arguments")}} object
+*   {{jsxref("Function.prototype.bind()")}}
+*   {{jsxref("Function.prototype.call()")}}
+*   {{jsxref("Functions", "Functions and function scope", "", 1)}}
+*   {{jsxref("Reflect.apply()")}}
+*   {{jsxref("Operators/Spread_syntax", "Spread syntax", "", 1)}}

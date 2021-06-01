@@ -21,8 +21,9 @@ operators, zero-fill right shift returns an unsigned 32-bit integer.
 
 ## Syntax
 
-<pre class="brush: js"><code><var>a</var> >>> <var>b</var></code>
-</pre>
+```js
+a >>> b
+```
 
 ## Description
 
@@ -69,5 +70,5 @@ yields 1073741821, which is different than `-9 >> 2` (which yields `-3`):
 
 ## See also
 
-- [Bitwise operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise)
-- [Unsigned right shift assignment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment)
+*   [Bitwise operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise)
+*   [Unsigned right shift assignment operator](/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment)

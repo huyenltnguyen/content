@@ -19,12 +19,14 @@ The **`Math.clz32()`** function returns the number of leading zero bits in the
 
 ## Syntax
 
-<pre class="brush: js">Math.clz32(<var>x</var>)</pre>
+```js
+Math.clz32(x)
+```
 
 ### Parameters
 
-- `x`
-  - : A number.
+*   `x`
+    *   : A number.
 
 ### Return value
 
@@ -185,7 +187,7 @@ if (!Math.clz32) Math.clz32 = (function(log, LN2){
 
 ## See also
 
-- A polyfill of `Math.clz32` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
-- {{jsxref("Math")}}
-- {{jsxref("Math.imul")}}
+*   A polyfill of `Math.clz32` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
+*   {{jsxref("Math")}}
+*   {{jsxref("Math.imul")}}

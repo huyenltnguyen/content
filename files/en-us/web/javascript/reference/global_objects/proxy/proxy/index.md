@@ -15,24 +15,26 @@ objects.
 
 ## Syntax
 
-<pre class="brush: js">new Proxy(<var>target</var>, <var>handler</var>)</pre>
+```js
+new Proxy(target, handler)
+```
 
 ### Parameters
 
-- `target`
-  - : A target object to wrap with `Proxy`. It can be any sort of object,
-    including a native array, a function, or even another proxy.
-- `handler`
-  - : An object whose properties are functions that define the behavior of the
-    proxy when an operation is performed on it.
+*   `target`
+    *   : A target object to wrap with `Proxy`. It can be any sort of object,
+        including a native array, a function, or even another proxy.
+*   `handler`
+    *   : An object whose properties are functions that define the behavior of the
+        proxy when an operation is performed on it.
 
 ## Description
 
 Use the `Proxy()` constructor to create a new `Proxy` object. This constructor
 takes two mandatory arguments:
 
-- `target` is the object for which you want to create the proxy
-- `handler` is the object that defines the custom behavior of the proxy.
+*   `target` is the object for which you want to create the proxy
+*   `handler` is the object that defines the custom behavior of the proxy.
 
 An empty handler will create a proxy that behaves, in almost all respects,
 exactly like the target. By defining any of a set group of functions on the
@@ -44,39 +46,39 @@ target's
 ### Handler functions
 
 This section lists all the handler functions you can define. Handler functions
-are sometimes called _traps_, because they trap calls to the underlying target
+are sometimes called *traps*, because they trap calls to the underlying target
 object.
 
-- {{JSxRef("Global_Objects/Proxy/Proxy/apply", "handler.apply()")}}
-  - : A trap for a function call.
-- {{JSxRef("Global_Objects/Proxy/Proxy/construct", "handler.construct()")}}
-  - : A trap for the {{JSxRef("Operators/new", "new")}} operator.
-- {{JSxRef("Global_Objects/Proxy/Proxy/defineProperty", "handler.defineProperty()")}}
-  - : A trap for {{JSxRef("Object.defineProperty")}}.
-- {{JSxRef("Global_Objects/Proxy/Proxy/deleteProperty", "handler.deleteProperty()")}}
-  - : A trap for the {{JSxRef("Operators/delete", "delete")}}
-    operator.
-- {{JSxRef("Global_Objects/Proxy/Proxy/get", "handler.get()")}}
-  - : A trap for getting property values.
-- {{JSxRef("Global_Objects/Proxy/Proxy/getOwnPropertyDescriptor",
+*   {{JSxRef("Global_Objects/Proxy/Proxy/apply", "handler.apply()")}}
+    *   : A trap for a function call.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/construct", "handler.construct()")}}
+    *   : A trap for the {{JSxRef("Operators/new", "new")}} operator.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/defineProperty", "handler.defineProperty()")}}
+    *   : A trap for {{JSxRef("Object.defineProperty")}}.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/deleteProperty", "handler.deleteProperty()")}}
+    *   : A trap for the {{JSxRef("Operators/delete", "delete")}}
+        operator.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/get", "handler.get()")}}
+    *   : A trap for getting property values.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/getOwnPropertyDescriptor",
     "handler.getOwnPropertyDescriptor()")}}
-  - : A trap for {{JSxRef("Object.getOwnPropertyDescriptor")}}.
-- {{JSxRef("Global_Objects/Proxy/Proxy/getPrototypeOf", "handler.getPrototypeOf()")}}
-  - : A trap for {{JSxRef("Object.getPrototypeOf")}}.
-- {{JSxRef("Global_Objects/Proxy/Proxy/has", "handler.has()")}}
-  - : A trap for the {{JSxRef("Operators/in", "in")}} operator.
-- {{JSxRef("Global_Objects/Proxy/Proxy/isExtensible", "handler.isExtensible()")}}
-  - : A trap for {{JSxRef("Object.isExtensible")}}.
-- {{JSxRef("Global_Objects/Proxy/Proxy/ownKeys", "handler.ownKeys()")}}
-  - : A trap for {{JSxRef("Object.getOwnPropertyNames")}} and
-    {{JSxRef("Object.getOwnPropertySymbols")}}.
-- {{JSxRef("Global_Objects/Proxy/Proxy/preventExtensions",
+    *   : A trap for {{JSxRef("Object.getOwnPropertyDescriptor")}}.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/getPrototypeOf", "handler.getPrototypeOf()")}}
+    *   : A trap for {{JSxRef("Object.getPrototypeOf")}}.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/has", "handler.has()")}}
+    *   : A trap for the {{JSxRef("Operators/in", "in")}} operator.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/isExtensible", "handler.isExtensible()")}}
+    *   : A trap for {{JSxRef("Object.isExtensible")}}.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/ownKeys", "handler.ownKeys()")}}
+    *   : A trap for {{JSxRef("Object.getOwnPropertyNames")}} and
+        {{JSxRef("Object.getOwnPropertySymbols")}}.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/preventExtensions",
     "handler.preventExtensions()")}}
-  - : A trap for {{JSxRef("Object.preventExtensions")}}.
-- {{JSxRef("Global_Objects/Proxy/Proxy/set", "handler.set()")}}
-  - : A trap for setting property values.
-- {{JSxRef("Global_Objects/Proxy/Proxy/setPrototypeOf", "handler.setPrototypeOf()")}}
-  - : A trap for {{JSxRef("Object.setPrototypeOf")}}.
+    *   : A trap for {{JSxRef("Object.preventExtensions")}}.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/set", "handler.set()")}}
+    *   : A trap for setting property values.
+*   {{JSxRef("Global_Objects/Proxy/Proxy/setPrototypeOf", "handler.setPrototypeOf()")}}
+    *   : A trap for {{JSxRef("Object.setPrototypeOf")}}.
 
 ## Examples
 
@@ -117,5 +119,5 @@ console.log(proxy.proxied);    // "replaced value"
 
 ## See also
 
-- [`Proxy` and `Reflect` in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Meta_programming)
-- {{jsxref("Global_Objects/Reflect", "Reflect")}}
+*   [`Proxy` and `Reflect` in the JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Meta_programming)
+*   {{jsxref("Global_Objects/Reflect", "Reflect")}}

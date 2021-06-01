@@ -17,20 +17,21 @@ internal method.
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>obj</var>, {
-  getPrototypeOf(<var>target</var>) {
+```js
+const p = new Proxy(obj, {
+  getPrototypeOf(target) {
   ...
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameter is passed to the `getPrototypeOf()` method. `this` is
 bound to the handler.
 
-- `target`
-  - : The target object.
+*   `target`
+    *   : The target object.
 
 ### Return value
 
@@ -42,27 +43,27 @@ The `getPrototypeOf()` method must return an object or `null`.
 
 This trap can intercept these operations:
 
-- {{jsxref("Object.getPrototypeOf()")}}
-- {{jsxref("Reflect.getPrototypeOf()")}}
-- {{jsxref("Object/proto", "__proto__")}}
-- {{jsxref("Object.prototype.isPrototypeOf()")}}
-- {{jsxref("Operators/instanceof", "instanceof")}}
+*   {{jsxref("Object.getPrototypeOf()")}}
+*   {{jsxref("Reflect.getPrototypeOf()")}}
+*   {{jsxref("Object/proto", "__proto__")}}
+*   {{jsxref("Object.prototype.isPrototypeOf()")}}
+*   {{jsxref("Operators/instanceof", "instanceof")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- `getPrototypeOf()` method must return an object or `null`.
-- If `target` is not extensible,
+*   `getPrototypeOf()` method must return an object or `null`.
+*   If `target` is not extensible,
 
-  <code>Object.getPrototypeOf(<var>proxy</var>)</code>
+    <code>Object.getPrototypeOf(<var>proxy</var>)</code>
 
-  method must return the same value as
+    method must return the same value as
 
-  <code>Object.getPrototypeOf(<var>target</var>)</code>
+    <code>Object.getPrototypeOf(<var>target</var>)</code>
 
-  .
+    .
 
 ## Examples
 
@@ -131,7 +132,7 @@ Object.getPrototypeOf(p); // TypeError: expected same prototype value
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Object.getPrototypeOf()")}}
-- {{jsxref("Reflect.getPrototypeOf()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Object.getPrototypeOf()")}}
+*   {{jsxref("Reflect.getPrototypeOf()")}}

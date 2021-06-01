@@ -32,10 +32,10 @@ As a baseline requirement, documents will need to be in a
 
 For top-level documents, two headers will need to be set:
 
-- [`Cross-Origin-Opener-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
-  with `same-origin` as value (protects your origin from attackers)
-- [`Cross-Origin-Embedder-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
-  with `require-corp` as value (protects victims from your origin)
+*   [`Cross-Origin-Opener-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
+    with `same-origin` as value (protects your origin from attackers)
+*   [`Cross-Origin-Embedder-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
+    with `require-corp` as value (protects victims from your origin)
 
 With these two headers set, `postMessage()` will no longer throw for
 `SharedArrayBuffer` objects and shared memory across threads is therefore
@@ -53,7 +53,7 @@ setting the
 [`Cross-Origin-Resource-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Resource-Policy "The HTTP Cross-Origin-Resource-Policy response header conveys a desire that the browser blocks no-cors cross-origin/cross-site requests to the given resource.")
 header to any other value than `same-origin` opens up the resource to potential
 attacks, such as
-[Spectre](<https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)>).
+[Spectre](https://en.wikipedia.org/wiki/Spectre_\(security_vulnerability\)).
 
 Note that the
 [`Cross-Origin-Opener-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
@@ -66,21 +66,21 @@ same-origin and carry the same two headers with the same two values.
 As a result of this newly required environment, there are a couple API
 implications:
 
-- The `Atomics` object is always available.
-- `SharedArrayBuffer` objects are in principle always available, but
-  unfortunately the constructor on the global object is hidden, unless the two
-  headers mentioned above are set, for compatibility with web content. There is
-  hope that this restriction can be removed in the future.
-  [`WebAssembly.Memory`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)
-  can still be used to get an instance.
-- Unless the two headers mentioned above are set, the various `postMessage()`
-  APIs will throw for `SharedArrayBuffer` objects. If they are set,
-  `postMessage()` on `Window` objects and dedicated workers will function and
-  allow for memory sharing.
-- To avoid having to check whether `postMessage()` throws,
-  [`self.crossOriginIsolated`](/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated)
-  is being standardized (a getter that returns a boolean; `true` if the headers
-  are set), available in window and worker contexts.
+*   The `Atomics` object is always available.
+*   `SharedArrayBuffer` objects are in principle always available, but
+    unfortunately the constructor on the global object is hidden, unless the two
+    headers mentioned above are set, for compatibility with web content. There is
+    hope that this restriction can be removed in the future.
+    [`WebAssembly.Memory`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)
+    can still be used to get an instance.
+*   Unless the two headers mentioned above are set, the various `postMessage()`
+    APIs will throw for `SharedArrayBuffer` objects. If they are set,
+    `postMessage()` on `Window` objects and dedicated workers will function and
+    allow for memory sharing.
+*   To avoid having to check whether `postMessage()` throws,
+    [`self.crossOriginIsolated`](/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated)
+    is being standardized (a getter that returns a boolean; `true` if the headers
+    are set), available in window and worker contexts.
 
 ## WebAssembly Shared Memory
 
@@ -106,18 +106,18 @@ WebAssembly atomic instructions are also unconditionally allowed.
 
 ## Further reading
 
-- [COOP and COEP explained](https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit).
-- `Cross-Origin-Opener-Policy`:
-  [whatwg/html issue #3740](https://github.com/whatwg/html/issues/3740),
-  [draft specification](https://gist.github.com/annevk/6f2dd8c79c77123f39797f6bdac43f3e).
-- `Cross-Origin-Embedder-Policy`:
-  [whatwg/html issue #4175](https://github.com/whatwg/html/issues/4175),
-  [draft specification](https://mikewest.github.io/corpp/).
-- `Cross-Origin-Resource-Policy`:
-  [standardized in Fetch](https://fetch.spec.whatwg.org/#cross-origin-resource-policy-header),
-  new `cross-origin` value is part of the `Cross-Origin-Embedder-Policy` effort.
-- `postMessage()` changes and
-  [`self.crossOriginIsolated`](/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated):
-  [whatwg/html issue #4732](https://github.com/whatwg/html/issues/4732),
-  [whatwg/html issue #4872](https://github.com/whatwg/html/issues/4872),
-  [draft specification](https://github.com/whatwg/html/pull/4734).
+*   [COOP and COEP explained](https://docs.google.com/document/d/1zDlfvfTJ\_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit).
+*   `Cross-Origin-Opener-Policy`:
+    [whatwg/html issue #3740](https://github.com/whatwg/html/issues/3740),
+    [draft specification](https://gist.github.com/annevk/6f2dd8c79c77123f39797f6bdac43f3e).
+*   `Cross-Origin-Embedder-Policy`:
+    [whatwg/html issue #4175](https://github.com/whatwg/html/issues/4175),
+    [draft specification](https://mikewest.github.io/corpp/).
+*   `Cross-Origin-Resource-Policy`:
+    [standardized in Fetch](https://fetch.spec.whatwg.org/#cross-origin-resource-policy-header),
+    new `cross-origin` value is part of the `Cross-Origin-Embedder-Policy` effort.
+*   `postMessage()` changes and
+    [`self.crossOriginIsolated`](/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated):
+    [whatwg/html issue #4732](https://github.com/whatwg/html/issues/4732),
+    [whatwg/html issue #4872](https://github.com/whatwg/html/issues/4872),
+    [draft specification](https://github.com/whatwg/html/pull/4734).

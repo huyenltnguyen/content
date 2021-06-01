@@ -28,14 +28,30 @@ new Intl.RelativeTimeFormat(locales, options)
 
 ### Parameters
 
-- `locales` {{optional_inline}}
-  - : A string with a BCP 47 language tag, or an array of such strings. For the
-    general form and interpretation of the `locales` argument, see the
-    {{jsxref("Global_Objects/Intl", "Intl", "#Locale_identification_and_negotiation", 1)}}
-    page.
-- `options` {{optional_inline}}
-  - : An object with some or all of the following properties:
-    <dl><dt><code>localeMatcher</code></dt><dd>The locale matching algorithm to use. Possible values are "<code>lookup</code>" and "<code>best fit</code>"; the default is "<code>best fit</code>". For information about this option, see the {{jsxref("Global_Objects/Intl", "Intl", "#Locale_negotiation", 1)}} page.</dd><dt><code>numeric</code></dt><dd>The format of output message. Possible values are:<ul><li>"<code>always</code>" (default, e.g., <code>1 day ago</code>),</li><li>or "<code>auto</code>" (e.g., <code>yesterday</code>). The "<code>auto</code>" value allows to not always have to use numeric values in the output.</li></ul></dd><dt><code>style</code></dt><dd>The length of the internationalized message. Possible values are:<ul><li>"<code>long</code>" (default, e.g., <code>in 1 month</code>)</li><li>"<code>short</code>" (e.g., <code>in 1 mo.</code>),</li><li>or "<code>narrow</code>" (e.g., <code>in 1 mo.</code>). The narrow style could be similar to the short style for some locales.</li></ul></dd></dl>
+*   `locales` {{optional_inline}}
+    *   : A string with a BCP 47 language tag, or an array of such strings. For the
+        general form and interpretation of the `locales` argument, see the
+        {{jsxref("Global_Objects/Intl", "Intl", "#Locale_identification_and_negotiation", 1)}}
+        page.
+*   `options` {{optional_inline}}
+    *   : An object with some or all of the following properties:
+        *   `localeMatcher`
+            *   : The locale matching algorithm to use. Possible values are "`lookup`"
+                and "`best fit`"; the default is "`best fit`". For information about
+                this option, see the
+                {{jsxref("Global_Objects/Intl", "Intl", "#Locale_negotiation", 1)}}
+                page.
+        *   `numeric`
+            *   : The format of output message. Possible values are:
+                *   "`always`" (default, e.g., `1 day ago`),
+                *   or "`auto`" (e.g., `yesterday`). The "`auto`" value allows to not
+                    always have to use numeric values in the output.
+        *   `style`
+            *   : The length of the internationalized message. Possible values are:
+                *   "`long`" (default, e.g., `in 1 month`)
+                *   "`short`" (e.g., `in 1 mo.`),
+                *   or "`narrow`" (e.g., `in 1 mo.`). The narrow style could be similar to
+                    the short style for some locales.
 
 ## Examples
 
@@ -92,6 +108,6 @@ rtf.format(1, "day");
 
 ## See also
 
-- {{jsxref("Intl.RelativeTimeFormat")}}
-- {{jsxref("Global_Objects/Intl", "Intl")}}
-- [The Intl.RelativeTimeFormat API](https://developers.google.com/web/updates/2018/10/intl-relativetimeformat)
+*   {{jsxref("Intl.RelativeTimeFormat")}}
+*   {{jsxref("Global_Objects/Intl", "Intl")}}
+*   [The Intl.RelativeTimeFormat API](https://developers.google.com/web/updates/2018/10/intl-relativetimeformat)

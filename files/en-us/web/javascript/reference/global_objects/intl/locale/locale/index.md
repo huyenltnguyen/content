@@ -28,11 +28,11 @@ new Intl.Locale(tag, options)
 
 ### Parameters
 
-- `tag`
-  - : The Unicode locale identifier string.
-- `options`
-  - : An object that contains configuration for the Locale. Keys are Unicode
-    locale tags, values are valid Unicode tag values.
+*   `tag`
+    *   : The Unicode locale identifier string.
+*   `options`
+    *   : An object that contains configuration for the Locale. Keys are Unicode
+        locale tags, values are valid Unicode tag values.
 
 ## Examples
 
@@ -73,5 +73,5 @@ console.log(us12hour.hourCycle); // Prints "h12"
 
 ## See also
 
-- {{jsxref("Intl.Collator")}}
-- [Unicode locale identifiers spec](https://www.unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers)
+*   {{jsxref("Intl.Collator")}}
+*   [Unicode locale identifiers spec](https://www.unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers)

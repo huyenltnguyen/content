@@ -15,7 +15,7 @@ browser-compat: javascript.builtins.TypedArray.some
 
 The **`some()`** method tests whether some element in the typed array passes the
 test implemented by the provided function. This method has the same algorithm as
-{{jsxref("Array.prototype.some()")}}_._ _TypedArray_ is one of the
+{{jsxref("Array.prototype.some()")}}*.* *TypedArray* is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
 
@@ -42,7 +42,16 @@ some(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-<dl><dt><code>callbackFn</code></dt><dd>Function to test for each element, taking three arguments:<dl><dt><code>element</code></dt><dd>The current element being processed in the typed array.</dd><dt><code>index</code></dt><dd>The index of the current element being processed in the typed array.</dd><dt><code>array</code></dt><dd>The typed array <code>some</code> was called upon.</dd></dl></dd><dt><code>thisArg</code></dt><dd>Optional. Value to use as <code>this</code> when executing <code>callback</code>.</dd></dl>
+*   `callbackFn`
+    *   : Function to test for each element, taking three arguments:
+        *   `element`
+            *   : The current element being processed in the typed array.
+        *   `index`
+            *   : The index of the current element being processed in the typed array.
+        *   `array`
+            *   : The typed array `some` was called upon.
+*   `thisArg`
+    *   : Optional. Value to use as `this` when executing `callback`.
 
 ### Return value
 
@@ -70,7 +79,7 @@ ultimately observable by `callbackFn` is determined according to
 
 ## Polyfill
 
-Since there is no global object with the name _TypedArray_, polyfilling must be
+Since there is no global object with the name *TypedArray*, polyfilling must be
 done on an "as needed" basis.
 
 ```js
@@ -122,7 +131,7 @@ new Uint8Array([12, 5, 8, 1, 4]).some(elem => elem > 10); // true
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.some` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray.prototype.every()")}}
-- {{jsxref("Array.prototype.some()")}}
+*   A polyfill of `TypedArray.prototype.some` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray.prototype.every()")}}
+*   {{jsxref("Array.prototype.some()")}}

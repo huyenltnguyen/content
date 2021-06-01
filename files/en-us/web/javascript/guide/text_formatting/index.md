@@ -236,8 +236,8 @@ console.log(hanDecimalRMBInChina.format(1314.25)); // ￥ 一,三一四.二五
 The {{jsxref("Intl/Collator")}} object is useful for comparing and
 sorting strings.
 
-For example, there are actually two different sort orders in German, _phonebook_
-and _dictionary_. Phonebook sort emphasizes sound, and it’s as if “ä”, “ö”, and
+For example, there are actually two different sort orders in German, *phonebook*
+and *dictionary*. Phonebook sort emphasizes sound, and it’s as if “ä”, “ö”, and
 so on were expanded to “ae”, “oe”, and so on prior to sorting.
 
 ```js
@@ -251,8 +251,8 @@ console.log(names.sort(germanPhonebook.compare).join(', '));
 ```
 
 Some German words conjugate with extra umlauts, so in dictionaries it’s sensible
-to order ignoring umlauts (except when ordering words differing _only_ by
-umlauts: _schon_ before _schön_).
+to order ignoring umlauts (except when ordering words differing *only* by
+umlauts: *schon* before *schön*).
 
 ```js
 const germanDictionary = new Intl.Collator('de-DE-u-co-dict');

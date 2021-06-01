@@ -84,7 +84,7 @@ class myDate extends Date {
 
 ## See also
 
-- [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)
-- [constructor](/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
-- [super](/en-US/docs/Web/JavaScript/Reference/Operators/super)
-- [Anurag Majumdar - Super & Extends in JavaScript](https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420)
+*   [Classes](/en-US/docs/Web/JavaScript/Reference/Classes)
+*   [constructor](/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
+*   [super](/en-US/docs/Web/JavaScript/Reference/Operators/super)
+*   [Anurag Majumdar - Super & Extends in JavaScript](https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420)

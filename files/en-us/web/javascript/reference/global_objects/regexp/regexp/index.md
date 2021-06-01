@@ -23,67 +23,68 @@ in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide).
 
 Literal, constructor, and factory notations are possible:
 
-<pre class="brush: js">/<var>pattern</var>/<var>flags</var>
-new RegExp(<var>pattern</var>[, <var>flags</var>])
-RegExp(<var>pattern</var>[, <var>flags</var>])
-</pre>
+```js
+/pattern/flags
+new RegExp(pattern[, flags])
+RegExp(pattern[, flags])
+```
 
 ### Parameters
 
-- `pattern`
+*   `pattern`
 
-  - : The text of the regular expression.
+    *   : The text of the regular expression.
 
-    As of ES5, this can also be another `RegExp` object or literal (for the two
-    RegExp constructor notations only). Patterns may include
-    [special characters](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Using_special_characters)
-    to match a wider range of values than would a literal string.
+        As of ES5, this can also be another `RegExp` object or literal (for the two
+        RegExp constructor notations only). Patterns may include
+        [special characters](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Using_special_characters)
+        to match a wider range of values than would a literal string.
 
-- `flags`
+*   `flags`
 
-  - : If specified, `flags` is a string that contains the flags to add.
+    *   : If specified, `flags` is a string that contains the flags to add.
 
-    Alternatively, if an object is supplied for the pattern, the `flags` string
-    will replace any of that object's flags (and `lastIndex` will be reset to
-    `0`) (as of ES2015).
+        Alternatively, if an object is supplied for the pattern, the `flags` string
+        will replace any of that object's flags (and `lastIndex` will be reset to
+        `0`) (as of ES2015).
 
-    If `flags` is not specified and a regular expressions object is supplied,
-    that object's flags (and `lastIndex` value) will be copied over.
+        If `flags` is not specified and a regular expressions object is supplied,
+        that object's flags (and `lastIndex` value) will be copied over.
 
-    `flags` may contain any combination of the following characters:
+        `flags` may contain any combination of the following characters:
 
-    - `d` (indices)
-      - : Generate indices for substring matches.
-    - `g` (global match)
-      - : Find all matches rather than stopping after the first match.
-    - `i` (ignore case)
-      - : If `u` flag is also enabled, use Unicode case folding.
-    - `m` (multiline)
-      - : Treat beginning and end characters (`^` and `$`) as working over
-        multiple lines. In other words, match the beginning or end of _each_
-        line (delimited by `\n` or `\r`), not only the very beginning or end of
-        the whole input string.
-    - `s` ("dotAll")
-      - : Allows `.` to match newlines.
-    - `u` (unicode)
-      - : Treat `pattern` as a sequence of Unicode code points. (See also
-        [Binary strings](/en-US/docs/Web/API/DOMString/Binary)).
-    - `y` (sticky)
-      - : Matches only from the index indicated by the `lastIndex` property of
-        this regular expression in the target string. Does not attempt to match
-        from any later indexes.
+        *   `d` (indices)
+            *   : Generate indices for substring matches.
+        *   `g` (global match)
+            *   : Find all matches rather than stopping after the first match.
+        *   `i` (ignore case)
+            *   : If `u` flag is also enabled, use Unicode case folding.
+        *   `m` (multiline)
+            *   : Treat beginning and end characters (`^` and `$`) as working over
+                multiple lines. In other words, match the beginning or end of *each*
+                line (delimited by `\n` or `\r`), not only the very beginning or end of
+                the whole input string.
+        *   `s` ("dotAll")
+            *   : Allows `.` to match newlines.
+        *   `u` (unicode)
+            *   : Treat `pattern` as a sequence of Unicode code points. (See also
+                [Binary strings](/en-US/docs/Web/API/DOMString/Binary)).
+        *   `y` (sticky)
+            *   : Matches only from the index indicated by the `lastIndex` property of
+                this regular expression in the target string. Does not attempt to match
+                from any later indexes.
 
 ## Examples
 
 ### Literal notation and constructor
 
-There are two ways to create a `RegExp` object: a _literal notation_ and a
-_constructor_.
+There are two ways to create a `RegExp` object: a *literal notation* and a
+*constructor*.
 
-- **The literal notation's** parameters are enclosed between slashes and do not
-  use quotation marks.
-- **The constructor function's** parameters are not enclosed between slashes but
-  do use quotation marks.
+*   **The literal notation's** parameters are enclosed between slashes and do not
+    use quotation marks.
+*   **The constructor function's** parameters are not enclosed between slashes but
+    do use quotation marks.
 
 The following three expressions create the same regular expression:
 
@@ -115,7 +116,7 @@ source, such as user input.
 
 ## See also
 
-- [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-  chapter in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
-- {{jsxref("String.prototype.match()")}}
-- {{jsxref("String.prototype.replace()")}}
+*   [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+    chapter in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
+*   {{jsxref("String.prototype.match()")}}
+*   {{jsxref("String.prototype.replace()")}}

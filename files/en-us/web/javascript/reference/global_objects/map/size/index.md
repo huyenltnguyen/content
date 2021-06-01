@@ -44,4 +44,4 @@ myMap.size // 3
 
 ## See also
 
-- {{jsxref("Map")}}
+*   {{jsxref("Map")}}

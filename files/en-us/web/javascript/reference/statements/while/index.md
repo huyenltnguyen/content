@@ -18,24 +18,25 @@ executing the statement.
 
 ## Syntax
 
-<pre class="brush: js">while (<var>condition</var>)
-  <var>statement</var>
-</pre>
+```js
+while (condition)
+  statement
+```
 
-- `condition`
-  - : An expression evaluated before each pass through the loop. If this
-    condition evaluates to true, `statement` is executed. When condition
-    evaluates to false, execution continues with the statement after the `while`
-    loop.
-- `statement`
+*   `condition`
+    *   : An expression evaluated before each pass through the loop. If this
+        condition evaluates to true, `statement` is executed. When condition
+        evaluates to false, execution continues with the statement after the `while`
+        loop.
+*   `statement`
 
-  - : An optional statement that is executed as long as the condition evaluates
-    to true. To execute multiple statements within the loop, use a
-    [block](/en-US/docs/JavaScript/Reference/Statements/block) statement
-    (`{ ... }`) to group those statements.
+    *   : An optional statement that is executed as long as the condition evaluates
+        to true. To execute multiple statements within the loop, use a
+        [block](/en-US/docs/JavaScript/Reference/Statements/block) statement
+        (`{ ... }`) to group those statements.
 
-    Note: Use the `break` statement to stop a loop before condition evaluates to
-    true.
+        Note: Use the `break` statement to stop a loop before condition evaluates to
+        true.
 
 ## Examples
 
@@ -56,9 +57,9 @@ while (n < 3) {
 Each iteration, the loop increments `n` and adds it to `x`. Therefore, `x` and
 `n` take on the following values:
 
-- After the first pass: `n` = 1 and `x` = 1
-- After the second pass: `n` = 2 and `x` = 3
-- After the third pass: `n` = 3 and `x` = 6
+*   After the first pass: `n` = 1 and `x` = 1
+*   After the second pass: `n` = 2 and `x` = 3
+*   After the third pass: `n` = 3 and `x` = 6
 
 After completing the third pass, the condition `n` < 3 is no longer true, so the
 loop terminates.
@@ -73,5 +74,5 @@ loop terminates.
 
 ## See also
 
-- {{jsxref("Statements/do...while", "do...while")}}
-- {{jsxref("Statements/for", "for")}}
+*   {{jsxref("Statements/do...while", "do...while")}}
+*   {{jsxref("Statements/for", "for")}}

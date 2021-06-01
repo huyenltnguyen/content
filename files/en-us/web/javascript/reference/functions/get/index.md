@@ -18,42 +18,45 @@ when that property is looked up.
 
 ## Syntax
 
-<pre class="brush: js">{get <var>prop</var>() { ... } }
-{get [<var>expression</var>]() { ... } }</pre>
+```js
+{get prop() { ... } }
+{get [expression]() { ... } }
+```
 
 ### Parameters
 
-- `prop`
-  - : The name of the property to bind to the given function.
-- `expression`
-  - : Starting with ECMAScript 2015, you can also use expressions for a computed
-    property name to bind to the given function.
+*   `prop`
+    *   : The name of the property to bind to the given function.
+*   `expression`
+    *   : Starting with ECMAScript 2015, you can also use expressions for a computed
+        property name to bind to the given function.
 
 ## Description
 
 Sometimes it is desirable to allow access to a property that returns a
 dynamically computed value, or you may want to reflect the status of an internal
 variable without requiring the use of explicit method calls. In JavaScript, this
-can be accomplished with the use of a _getter_.
+can be accomplished with the use of a *getter*.
 
 It is not possible to simultaneously have a getter bound to a property and have
-that property actually hold a value, although it _is_ possible to use a getter
+that property actually hold a value, although it *is* possible to use a getter
 and a setter in conjunction to create a type of pseudo-property.
 
 Note the following when working with the `get` syntax:
 
-- It can have an identifier which is either a number or a string;
-- It must have exactly zero parameters (see
-  [Incompatible <abbr title="ECMAScript 5th edition">ES5</abbr> change: literal getter and setter functions must now have exactly zero or one arguments](http://whereswalden.com/2010/08/22/incompatible-es5-change-literal-getter-and-setter-functions-must-now-have-exactly-zero-or-one-arguments/)
+*   It can have an identifier which is either a number or a string;
 
-  <abbr title="ECMAScript 5th edition">ES5</abbr>
+*   It must have exactly zero parameters (see
+    [Incompatible <abbr title="ECMAScript 5th edition">ES5</abbr> change: literal getter and setter functions must now have exactly zero or one arguments](http://whereswalden.com/2010/08/22/incompatible-es5-change-literal-getter-and-setter-functions-must-now-have-exactly-zero-or-one-arguments/)
 
-  [Incompatible <abbr title="ECMAScript 5th edition">ES5</abbr> change: literal getter and setter functions must now have exactly zero or one arguments](http://whereswalden.com/2010/08/22/incompatible-es5-change-literal-getter-and-setter-functions-must-now-have-exactly-zero-or-one-arguments/)
-  for more information);
+    <abbr title="ECMAScript 5th edition">ES5</abbr>
 
-- It must not appear in an object literal with another `get` or with a data
-  entry for the same property (`{ get x() { }, get x() { } }` and
-  `{ x: ..., get x() { } }` are forbidden).
+    [Incompatible <abbr title="ECMAScript 5th edition">ES5</abbr> change: literal getter and setter functions must now have exactly zero or one arguments](http://whereswalden.com/2010/08/22/incompatible-es5-change-literal-getter-and-setter-functions-must-now-have-exactly-zero-or-one-arguments/)
+    for more information);
+
+*   It must not appear in an object literal with another `get` or with a data
+    entry for the same property (`{ get x() { }, get x() { } }` and
+    `{ x: ..., get x() { } }` are forbidden).
 
 ## Examples
 
@@ -80,8 +83,9 @@ Note that attempting to assign a value to `latest` will not change it.
 If you want to remove the getter, you can just
 {{jsxref("Operators/delete", "delete")}} it:
 
-<pre class="brush: js">delete <var>obj</var>.latest;
-</pre>
+```js
+delete obj.latest;
+```
 
 ### Defining a getter on existing objects using `defineProperty`
 
@@ -110,8 +114,8 @@ console.log(obj.foo); // "bar"
 
 ### Smart / self-overwriting / lazy getters
 
-Getters give you a way to _define_ a property of an object, but they do not
-_calculate_ the property's value until it is accessed. A getter defers the cost
+Getters give you a way to *define* a property of an object, but they do not
+*calculate* the property's value until it is accessed. A getter defers the cost
 of calculating the value until the value is needed. If it is never needed, you
 never pay the cost.
 
@@ -122,12 +126,12 @@ calculated the first time the getter is called, and is then cached so subsequent
 accesses return the cached value without recalculating it. This is useful in the
 following situations:
 
-- If the calculation of a property value is expensive (takes much RAM or CPU
-  time, spawns worker threads, retrieves remote file, etc).
-- If the value isn't needed just now. It will be used later, or in some case
-  it's not used at all.
-- If it's used, it will be accessed several times, and there is no need to
-  re-calculate that value will never be changed or shouldn't be re-calculated.
+*   If the calculation of a property value is expensive (takes much RAM or CPU
+    time, spawns worker threads, retrieves remote file, etc).
+*   If the value isn't needed just now. It will be used later, or in some case
+    it's not used at all.
+*   If it's used, it will be accessed several times, and there is no need to
+    re-calculate that value will never be changed or shouldn't be re-calculated.
 
 > **Note:** This means that you shouldn’t write a lazy getter for a property
 > whose value you expect to change, because if the getter is lazy then it will
@@ -148,7 +152,7 @@ get notifier() {
 ```
 
 For Firefox code, see also the `XPCOMUtils.jsm` code module, which defines the
-[`defineLazyGetter()`](</en-US/docs/Mozilla/JavaScript_code_modules/XPCOMUtils.jsm#defineLazyGetter()>)
+[`defineLazyGetter()`](/en-US/docs/Mozilla/JavaScript_code_modules/XPCOMUtils.jsm#defineLazyGetter\(\))
 function.
 
 ### `get` vs. `defineProperty`
@@ -193,10 +197,10 @@ console.log(
 
 ## See also
 
-- [setter](/en-US/docs/Web/JavaScript/Reference/Functions/set)
-- {{jsxref("Operators/delete", "delete")}}
-- {{jsxref("Object.defineProperty()")}}
-- {{jsxref("Object.defineGetter", "__defineGetter__")}}
-- {{jsxref("Object.defineSetter", "__defineSetter__")}}
-- [Defining Getters and Setters](/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Defining_getters_and_setters)
-  in JavaScript Guide
+*   [setter](/en-US/docs/Web/JavaScript/Reference/Functions/set)
+*   {{jsxref("Operators/delete", "delete")}}
+*   {{jsxref("Object.defineProperty()")}}
+*   {{jsxref("Object.defineGetter", "__defineGetter__")}}
+*   {{jsxref("Object.defineSetter", "__defineSetter__")}}
+*   [Defining Getters and Setters](/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Defining_getters_and_setters)
+    in JavaScript Guide

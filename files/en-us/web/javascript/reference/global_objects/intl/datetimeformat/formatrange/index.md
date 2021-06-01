@@ -83,4 +83,4 @@ console.log(fmt2.formatRange(date1, date3));
 
 ## See also
 
-- {{jsxref("Intl.DateTimeFormat")}}
+*   {{jsxref("Intl.DateTimeFormat")}}

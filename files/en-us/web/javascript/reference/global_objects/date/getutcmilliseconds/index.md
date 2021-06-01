@@ -54,5 +54,5 @@ var milliseconds = today.getUTCMilliseconds();
 
 ## See also
 
-- {{jsxref("Date.prototype.getMilliseconds()")}}
-- {{jsxref("Date.prototype.setUTCMilliseconds()")}}
+*   {{jsxref("Date.prototype.getMilliseconds()")}}
+*   {{jsxref("Date.prototype.setUTCMilliseconds()")}}

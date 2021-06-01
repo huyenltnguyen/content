@@ -17,7 +17,7 @@ The global property **`Infinity`** is a numeric value representing infinity.
 
 ## Description
 
-`Infinity` is a property of the _global object_. In other words, it is a
+`Infinity` is a property of the *global object*. In other words, it is a
 variable in global scope.
 
 The initial value of `Infinity` is
@@ -53,6 +53,6 @@ console.log(1 / 0             ); /* Infinity */
 
 ## See also
 
-- {{jsxref("Number.NEGATIVE_INFINITY")}}
-- {{jsxref("Number.POSITIVE_INFINITY")}}
-- {{jsxref("Number.isFinite")}}
+*   {{jsxref("Number.NEGATIVE_INFINITY")}}
+*   {{jsxref("Number.POSITIVE_INFINITY")}}
+*   {{jsxref("Number.isFinite")}}

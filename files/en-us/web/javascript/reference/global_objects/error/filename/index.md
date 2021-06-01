@@ -39,6 +39,6 @@ Not part of any standard.
 
 ## See also
 
-- {{jsxref("Error.prototype.stack")}}
-- {{jsxref("Error.prototype.columnNumber")}}
-- {{jsxref("Error.prototype.lineNumber")}}
+*   {{jsxref("Error.prototype.stack")}}
+*   {{jsxref("Error.prototype.columnNumber")}}
+*   {{jsxref("Error.prototype.lineNumber")}}

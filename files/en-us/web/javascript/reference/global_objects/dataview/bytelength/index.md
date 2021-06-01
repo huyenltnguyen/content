@@ -51,6 +51,6 @@ dataview3.byteLength; // 6 (due to the offset of the constructed DataView)
 
 ## See also
 
-- {{jsxref("DataView")}}
-- {{jsxref("ArrayBuffer")}}
-- {{jsxref("SharedArrayBuffer")}}
+*   {{jsxref("DataView")}}
+*   {{jsxref("ArrayBuffer")}}
+*   {{jsxref("SharedArrayBuffer")}}

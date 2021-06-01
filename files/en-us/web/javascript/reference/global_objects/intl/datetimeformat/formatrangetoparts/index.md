@@ -76,5 +76,5 @@ fmt.formatRangeToParts(date1, date2);
 
 ## See also
 
-- {{jsxref("Intl.DateTimeFormat.prototype.formatRange()")}}
-- {{jsxref("Intl.DateTimeFormat")}}
+*   {{jsxref("Intl.DateTimeFormat.prototype.formatRange()")}}
+*   {{jsxref("Intl.DateTimeFormat")}}

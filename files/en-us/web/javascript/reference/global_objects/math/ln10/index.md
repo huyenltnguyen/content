@@ -14,11 +14,9 @@ The **`Math.LN10`** property represents the natural logarithm of 10,
 approximately 2.302:
 
 <math display="block"><semantics><mrow><mstyle mathvariant="monospace"><mi>Math.LN10</mi></mstyle><mo>=</mo><mo lspace="0em" rspace="0em">ln</mo><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>≈</mo><mn>2.302</mn></mrow><annotation encoding="TeX">\mathtt{\mi{Math.LN10}}
-= \ln(10) \approx 2.302</annotation></semantics></math>
+\= \ln(10) \approx 2.302</annotation></semantics></math>
 
-{{EmbedInteractiveExample("pages/js/math-ln10.html","shorter")}}
-
-{{js_property_attributes(0, 0, 0)}}
+{{EmbedInteractiveExample("pages/js/math-ln10.html","shorter")}}{{js_property_attributes(0, 0, 0)}}
 
 ## Description
 
@@ -50,6 +48,6 @@ getNatLog10(); // 2.302585092994046
 
 ## See also
 
-- {{jsxref("Math.exp()")}}
-- {{jsxref("Math.log()")}}
-- {{jsxref("Math.log10()")}}
+*   {{jsxref("Math.exp()")}}
+*   {{jsxref("Math.log()")}}
+*   {{jsxref("Math.log10()")}}

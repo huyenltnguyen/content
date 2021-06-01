@@ -87,6 +87,6 @@ if (done === true) {
 
 ## See also
 
-- [`if...else`](/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-- [Comparison operators](/en-US/docs/Web/JavaScript/Reference/Operators)
-- [Making decisions in your code — conditionals](/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+*   [`if...else`](/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+*   [Comparison operators](/en-US/docs/Web/JavaScript/Reference/Operators)
+*   [Making decisions in your code — conditionals](/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)

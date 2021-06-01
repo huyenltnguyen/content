@@ -25,8 +25,8 @@ select(number)
 
 ### Parameters
 
-- `number`
-  - : The number to get a plural rule for.
+*   `number`
+    *   : The number to get a plural rule for.
 
 ### Return value
 
@@ -69,4 +69,4 @@ new Intl.PluralRules('ar-EG').select(18);
 
 ## See also
 
-- {{jsxref("Intl.PluralRules")}}
+*   {{jsxref("Intl.PluralRules")}}

@@ -25,18 +25,18 @@ parseInt(string, radix)
 
 ### Parameters
 
-- `string`
-  - : The value to parse. If this argument is not a string, then it is converted
-    to one using the [`ToString`](https://tc39.es/ecma262/#sec-tostring)
-    abstract operation. Leading {{glossary("whitespace")}} in this
-    argument is ignored.
-- `radix`<var> {{optional_inline}}</var>
-  - : An integer between `2` and `36` that represents the _radix_ (the base in
-    mathematical numeral systems) of the `string`. Be careful—this does
-    **_not_** default to `10`! If the radix value is not of the `Number` type it
-    will be coerced to a `Number`.
-    > **Warning:** The [description below](#description) explains in more detail
-    > what happens when `radix` is not provided.
+*   `string`
+    *   : The value to parse. If this argument is not a string, then it is converted
+        to one using the [`ToString`](https://tc39.es/ecma262/#sec-tostring)
+        abstract operation. Leading {{glossary("whitespace")}} in this
+        argument is ignored.
+*   `radix`<var> {{optional_inline}}</var>
+    *   : An integer between `2` and `36` that represents the *radix* (the base in
+        mathematical numeral systems) of the `string`. Be careful—this does
+        ***not*** default to `10`! If the radix value is not of the `Number` type it
+        will be coerced to a `Number`.
+        > **Warning:** The [description below](#description) explains in more detail
+        > what happens when `radix` is not provided.
 
 ### Return value
 
@@ -44,8 +44,8 @@ An integer parsed from the given `string`.
 
 Or {{jsxref("NaN")}} when
 
-- the `radix` is smaller than `2` or bigger than `36`, or
-- the first non-whitespace character cannot be converted to a number.
+*   the `radix` is smaller than `2` or bigger than `36`, or
+*   the first non-whitespace character cannot be converted to a number.
 
 ## Description
 
@@ -69,7 +69,7 @@ Leading and trailing spaces are allowed.
 Because some numbers use the `e` character in their string representation (e.g.
 **`6.022E23`** for 6.022 × 10^23), using `parseInt` to truncate numbers will
 produce unexpected results when used on very large or very small numbers.
-`parseInt` should _not_ be used as a substitute for
+`parseInt` should *not* be used as a substitute for
 {{jsxref("Math.floor()")}}.
 
 `parseInt` understands exactly two signs: `+` for positive, and `-` for negative
@@ -99,8 +99,7 @@ call the {{jsxref("isNaN")}} function to determine if the result of
 `parseInt` is `NaN`. If `NaN` is passed on to arithmetic operations, the
 operation result will also be `NaN`.
 
-To convert a number to its string literal in a particular radix, use
-<code><var>thatNumber</var>.toString(<var>radix</var>)</code>.
+To convert a number to its string literal in a particular radix, use <code><var>thatNumber</var>.toString(<var>radix</var>)</code>.
 
 > **Warning:** `parseInt` converts a {{jsxref("BigInt")}} to a
 > {{jsxref("Number")}} and loses precision in the process. This is
@@ -263,9 +262,9 @@ parseInt('11', obj); // 11
 
 ## See also
 
-- {{jsxref("Global_Objects/parseFloat", "parseFloat()")}}
-- {{jsxref("Number.parseFloat()")}}
-- {{jsxref("Number.parseInt()")}}
-- {{jsxref("Global_Objects/isNaN", "isNaN()")}}
-- {{jsxref("Number.toString()")}}
-- {{jsxref("Object.valueOf")}}
+*   {{jsxref("Global_Objects/parseFloat", "parseFloat()")}}
+*   {{jsxref("Number.parseFloat()")}}
+*   {{jsxref("Number.parseInt()")}}
+*   {{jsxref("Global_Objects/isNaN", "isNaN()")}}
+*   {{jsxref("Number.toString()")}}
+*   {{jsxref("Object.valueOf")}}

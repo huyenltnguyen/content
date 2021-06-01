@@ -51,5 +51,5 @@ class MyMap extends Map {
 
 ## See also
 
-- {{jsxref("Map")}}
-- {{jsxref("Symbol.species")}}
+*   {{jsxref("Map")}}
+*   {{jsxref("Symbol.species")}}

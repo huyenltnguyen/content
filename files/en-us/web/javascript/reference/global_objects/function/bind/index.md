@@ -29,20 +29,20 @@ bind(thisArg, arg1, ... , argN)
 
 ### Parameters
 
-- `thisArg`
-  - : The value to be passed as the `this` parameter to the target function
-    `func` when the bound function is called. The value is ignored if the bound
-    function is constructed using the
-    {{jsxref("Operators/new", "new")}} operator. When using `bind` to
-    create a function (supplied as a callback) inside a `setTimeout`, any
-    primitive value passed as `thisArg` is converted to object. If no arguments
-    are provided to `bind `, or if the `thisArg` is `null` or `undefined`, the
-    `this` of the executing scope is treated as the `thisArg` for the new
-    function.
-- <code><var>arg1</var>, <var>arg2</var>, ...<var>argN</var></code>
-  {{optional_inline}}
-  - : Arguments to prepend to arguments provided to the bound function when
-    invoking `func`.
+*   `thisArg`
+    *   : The value to be passed as the `this` parameter to the target function
+        `func` when the bound function is called. The value is ignored if the bound
+        function is constructed using the
+        {{jsxref("Operators/new", "new")}} operator. When using `bind` to
+        create a function (supplied as a callback) inside a `setTimeout`, any
+        primitive value passed as `thisArg` is converted to object. If no arguments
+        are provided to ` bind  `, or if the `thisArg` is `null` or `undefined`, the
+        `this` of the executing scope is treated as the `thisArg` for the new
+        function.
+*   <code><var>arg1</var>, <var>arg2</var>, ...<var>argN</var></code>
+    {{optional_inline}}
+    *   : Arguments to prepend to arguments provided to the bound function when
+        invoking `func`.
 
 ### Return value
 
@@ -51,29 +51,28 @@ arguments (if provided).
 
 ## Description
 
-The `bind()` function creates a new **bound function**, which is an _exotic
-function object_ (a term from ECMAScript 2015) that wraps the original function
+The `bind()` function creates a new **bound function**, which is an *exotic
+function object* (a term from ECMAScript 2015) that wraps the original function
 object. Calling the bound function generally results in the execution of its
 wrapped function.
 
 A bound function has the following internal properties:
 
-- **`[[BoundTargetFunction]]`**
-  - : The wrapped function object
-- **`[[BoundThis]]`**
-  - : The value that is always passed as `this` value when calling the wrapped
-    function.
-- **`[[BoundArguments]]`**
-  - : A list of values whose elements are used as the first arguments to any
-    call to the wrapped function.
-- **`[[Call]]`**
-  - : Executes code associated with this object. Invoked via a function call
-    expression. The arguments to the internal method are a `this` value and a
-    list containing the arguments passed to the function by a call expression.
+*   **`[[BoundTargetFunction]]`**
+    *   : The wrapped function object
+*   **`[[BoundThis]]`**
+    *   : The value that is always passed as `this` value when calling the wrapped
+        function.
+*   **`[[BoundArguments]]`**
+    *   : A list of values whose elements are used as the first arguments to any
+        call to the wrapped function.
+*   **`[[Call]]`**
+    *   : Executes code associated with this object. Invoked via a function call
+        expression. The arguments to the internal method are a `this` value and a
+        list containing the arguments passed to the function by a call expression.
 
 When a bound function is called, it calls internal method `[[Call]]` on
-`[[BoundTargetFunction]]`, with following arguments
-<code>Call(<var>boundThis</var>, ...<var>args</var>)</code>. Where `boundThis`
+`[[BoundTargetFunction]]`, with following arguments <code>Call(<var>boundThis</var>, ...<var>args</var>)</code>. Where `boundThis`
 is `[[BoundThis]]`, `args` is `[[BoundArguments]]`, followed by the arguments
 passed by the function call.
 
@@ -309,8 +308,8 @@ slice(arguments);
 
 ## See also
 
-- A polyfill of `Function.prototype.bind` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-function)
-- {{jsxref("Function.prototype.apply()")}}
-- {{jsxref("Function.prototype.call()")}}
-- {{jsxref("Functions", "Functions", "", 1)}}
+*   A polyfill of `Function.prototype.bind` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-function)
+*   {{jsxref("Function.prototype.apply()")}}
+*   {{jsxref("Function.prototype.call()")}}
+*   {{jsxref("Functions", "Functions", "", 1)}}

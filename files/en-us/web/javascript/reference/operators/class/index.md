@@ -26,9 +26,11 @@ JavaScript classes use prototype-based inheritance.
 
 ## Syntax
 
-<pre class="brush: js">const <var>MyClass</var> = class [<var>className</var>] [extends <var>otherClassName</var>] {
+```js
+const MyClass = class [className] [extends otherClassName] {
     // class body
-};</pre>
+};
+```
 
 ## Description
 
@@ -43,20 +45,21 @@ There are several differences between class expressions and
 {{jsxref("Statements/class", "class statements", "", "true")}},
 however:
 
-- Class expressions may omit the class name ("binding identifier"), which is not
-  possible with
-  {{jsxref("Statements/class", "class statements", "", "true")}}.
-- Class expressions allow you to redefine (re-declare) classes **without
-  throwing** a
-  {{jsxref("Global_Objects/SyntaxError", "SyntaxError")}}. This
-  is not the case with
-  {{jsxref("Statements/class", "class statements", "", "true")}}.
+*   Class expressions may omit the class name ("binding identifier"), which is not
+    possible with
+    {{jsxref("Statements/class", "class statements", "", "true")}}.
+*   Class expressions allow you to redefine (re-declare) classes **without
+    throwing** a
+    {{jsxref("Global_Objects/SyntaxError", "SyntaxError")}}. This
+    is not the case with
+    {{jsxref("Statements/class", "class statements", "", "true")}}.
 
 The `constructor` method is optional. Classes generated with class expressions
 will always respond to {{jsxref("Operators/typeof", "typeof")}} with
 the value "`function`".
 
-<pre class="brush: js">'use strict';
+```js
+'use strict';
 let Foo = class {};  // constructor property is optional
 Foo = class {};      // Re-declaration is allowed
 
@@ -65,8 +68,8 @@ typeof class {};        // returns "function"
 
 Foo instanceof Object;   // true
 Foo instanceof Function; // true
-class Foo {}            // Throws SyntaxError (class <em>declarations</em> do not allow re-declaration)
-</pre>
+class Foo {}            // Throws SyntaxError (class declarations do not allow re-declaration)
+```
 
 ## Examples
 
@@ -91,7 +94,7 @@ Foo.name;        // "Foo"
 ### Named class expressions
 
 If you want to refer to the current class inside the class body, you can create
-a _named class expression_. The name is only visible within the scope of the
+a *named class expression*. The name is only visible within the scope of the
 class expression itself.
 
 ```js
@@ -117,6 +120,6 @@ Foo.name;          // "NamedFoo"
 
 ## See also
 
-- {{jsxref("Operators/function", "function expression", "", "true")}}
-- {{jsxref("Statements/class", "class declaration", "", "true")}}
-- {{jsxref("Classes", "Classes", "", "true")}}
+*   {{jsxref("Operators/function", "function expression", "", "true")}}
+*   {{jsxref("Statements/class", "class declaration", "", "true")}}
+*   {{jsxref("Classes", "Classes", "", "true")}}

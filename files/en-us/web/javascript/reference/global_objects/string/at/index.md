@@ -29,11 +29,11 @@ at(index)
 
 ### Parameters
 
-- `index`
-  - : The index (position) of the string character to be returned. Supports
-    relative indexing from the end of the string when passed a negative index;
-    i.e. if a negative number is used, the character returned will be found by
-    counting back from the end of the string.
+*   `index`
+    *   : The index (position) of the string character to be returned. Supports
+        relative indexing from the end of the string when passed a negative index;
+        i.e. if a negative number is used, the character returned will be found by
+        counting back from the end of the string.
 
 ### Return value
 
@@ -97,9 +97,9 @@ console.log(atWay); // Logs: 't'
 
 ## See also
 
-- [A polyfill for the at() method](https://github.com/tc39/proposal-relative-indexing-method#polyfill).
-- {{jsxref("String.prototype.indexOf()")}}
-- {{jsxref("String.prototype.lastIndexOf()")}}
-- {{jsxref("String.prototype.charCodeAt()")}}
-- {{jsxref("String.prototype.codePointAt()")}}
-- {{jsxref("String.prototype.split()")}}
+*   [A polyfill for the at() method](https://github.com/tc39/proposal-relative-indexing-method#polyfill).
+*   {{jsxref("String.prototype.indexOf()")}}
+*   {{jsxref("String.prototype.lastIndexOf()")}}
+*   {{jsxref("String.prototype.charCodeAt()")}}
+*   {{jsxref("String.prototype.codePointAt()")}}
+*   {{jsxref("String.prototype.split()")}}

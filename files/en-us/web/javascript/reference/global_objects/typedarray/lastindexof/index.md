@@ -16,7 +16,7 @@ browser-compat: javascript.builtins.TypedArray.lastIndexOf
 The **`lastIndexOf()`** method returns the last index at which a given element
 can be found in the typed array, or -1 if it is not present. The typed array is
 searched backwards, starting at `fromIndex`. This method has the same algorithm
-as {{jsxref("Array.prototype.lastIndexOf()")}}. _TypedArray_ is one
+as {{jsxref("Array.prototype.lastIndexOf()")}}. *TypedArray* is one
 of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
@@ -32,16 +32,16 @@ lastIndexOf(searchElement, fromIndex)
 
 ### Parameters
 
-- `searchElement`
-  - : Element to locate in the typed array.
-- `fromIndex`
-  - : Optional. The index at which to start searching backwards. Defaults to the
-    typed array's length, i.e. the whole typed array will be searched. If the
-    index is greater than or equal to the length of the typed array, the whole
-    typed array will be searched. If negative, it is taken as the offset from
-    the end of the typed array. Note that even when the index is negative, the
-    typed array is still searched from back to front. If the calculated index is
-    less than 0, -1 is returned, i.e. the typed array will not be searched.
+*   `searchElement`
+    *   : Element to locate in the typed array.
+*   `fromIndex`
+    *   : Optional. The index at which to start searching backwards. Defaults to the
+        typed array's length, i.e. the whole typed array will be searched. If the
+        index is greater than or equal to the length of the typed array, the whole
+        typed array will be searched. If negative, it is taken as the offset from
+        the end of the typed array. Note that even when the index is negative, the
+        typed array is still searched from back to front. If the calculated index is
+        less than 0, -1 is returned, i.e. the typed array will not be searched.
 
 ### Return value
 
@@ -77,7 +77,7 @@ uint8.lastIndexOf(2, -1); // 3
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.lastIndexOf` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray.prototype.indexOf()")}}
-- {{jsxref("Array.prototype.lastIndexOf()")}}
+*   A polyfill of `TypedArray.prototype.lastIndexOf` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray.prototype.indexOf()")}}
+*   {{jsxref("Array.prototype.lastIndexOf()")}}

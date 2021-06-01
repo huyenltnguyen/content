@@ -17,7 +17,7 @@ chapter of the <a href="/en-US/docs/Web/JavaScript/Guide">JavaScript Guide</a>
 introduces the different iteration statements available to JavaScript.</p>
 
 You can think of a loop as a computerized version of the game where you tell
-someone to take _X_ steps in one direction, then _Y_ steps in another. For
+someone to take *X* steps in one direction, then *Y* steps in another. For
 example, the idea "Go five steps to the east" could be expressed this way as a
 loop:
 
@@ -38,14 +38,14 @@ one type of loop over the others.
 
 The statements for loops provided in JavaScript are:
 
-- [for statement](#for_statement)
-- [do...while statement](#do...while_statement)
-- [while statement](#while_statement)
-- [labeled statement](#labeled_statement)
-- [break statement](#break_statement)
-- [continue statement](#continue_statement)
-- [for...in statement](#for...in_statement)
-- [for...of statement](#for...of_statement)
+*   [for statement](#for_statement)
+*   [do...while statement](#do...while_statement)
+*   [while statement](#while_statement)
+*   [labeled statement](#labeled_statement)
+*   [break statement](#break_statement)
+*   [continue statement](#continue_statement)
+*   [for...in statement](#for...in_statement)
+*   [for...of statement](#for...of_statement)
 
 ## `for` statement
 
@@ -79,7 +79,7 @@ When a `for` loop executes, the following occurs:
 
 In the example below, the function contains a `for` statement that counts the
 number of selected options in a scrolling list (a
-[`<select>`](/en-US/docs/Web/HTML/Element/select "The HTML <select> element represents a control that provides a menu of options")
+[`<select>`](/en-US/docs/Web/HTML/Element/select "The HTML \<select> element represents a control that provides a menu of options")
 element that allows multiple selections). The `for` statement declares the
 variable `i` and initializes it to `0`. It checks that `i` is less than the
 number of options in the `<select>` element, performs the succeeding `if`
@@ -126,12 +126,13 @@ repeats until a specified condition evaluates to false.
 
 A `do...while` statement looks as follows:
 
-<pre class="brush: js">do
-  <em>statement</em>
+```js
+do
+  statement
 while (condition);
-</pre>
+```
 
-_`statement`_ is always executed once before the condition is checked. (To
+*`statement`* is always executed once before the condition is checked. (To
 execute multiple statements, use a block statement (`{ ... }`) to group those
 statements.)
 
@@ -158,15 +159,16 @@ A {{jsxref("statements/while","while")}} statement executes its
 statements as long as a specified condition evaluates to `true`. A `while`
 statement looks as follows:
 
-<pre class="brush: js">while (<em>condition</em>)
-  <em>statement</em>
-</pre>
+```js
+while (condition)
+  statement
+```
 
-If the *`condition `*becomes `false`, `statement` within the loop stops
+If the \*` condition  `\*becomes `false`, `statement` within the loop stops
 executing and control passes to the statement following the loop.
 
-The condition test occurs _before_ `statement` in the loop is executed. If the
-condition returns `true`, `statement` is executed and the _`condition`_ is
+The condition test occurs *before* `statement` in the loop is executed. If the
+condition returns `true`, `statement` is executed and the *`condition`* is
 tested again. If the condition returns `false`, execution stops, and control is
 passed to the statement following `while`.
 
@@ -175,7 +177,7 @@ statements.
 
 ### Example 1
 
-The following `while` loop iterates as long as _`n`_ is less than `3`:
+The following `while` loop iterates as long as *`n`* is less than `3`:
 
 ```js
 let n = 0;
@@ -189,9 +191,9 @@ while (n < 3) {
 With each iteration, the loop increments `n` and adds that value to `x`.
 Therefore, `x` and `n` take on the following values:
 
-- After the first pass: `n` = `1` and `x` = `1`
-- After the second pass: `n` = `2` and `x` = `3`
-- After the third pass: `n` = `3` and `x` = `6`
+*   After the first pass: `n` = `1` and `x` = `1`
+*   After the second pass: `n` = `2` and `x` = `3`
+*   After the third pass: `n` = `3` and `x` = `6`
 
 After completing the third pass, the condition `n < 3` is no longer `true`, so
 the loop terminates.
@@ -245,17 +247,18 @@ while (theMark === true) {
 Use the {{jsxref("statements/break","break")}} statement to
 terminate a loop, `switch`, or in conjunction with a labeled statement.
 
-- When you use `break` without a label, it terminates the innermost enclosing
-  `while`, `do-while`, `for`, or `switch` immediately and transfers control to
-  the following statement.
-- When you use `break` with a label, it terminates the specified labeled
-  statement.
+*   When you use `break` without a label, it terminates the innermost enclosing
+    `while`, `do-while`, `for`, or `switch` immediately and transfers control to
+    the following statement.
+*   When you use `break` with a label, it terminates the specified labeled
+    statement.
 
 The syntax of the `break` statement looks like this:
 
-<pre class="brush: js">break;
-break [<em>label</em>];
-</pre>
+```js
+break;
+break [label];
+```
 
 1.  The first form of the syntax terminates the innermost enclosing loop or
     `switch.`
@@ -301,19 +304,20 @@ labelCancelLoops: while (true) {
 The {{jsxref("statements/continue","continue")}} statement can
 be used to restart a `while`, `do-while`, `for`, or `label` statement.
 
-- When you use `continue` without a label, it terminates the current iteration
-  of the innermost enclosing `while`, `do-while`, or `for` statement and
-  continues execution of the loop with the next iteration. In contrast to the
-  `break` statement, `continue` does not terminate the execution of the loop
-  entirely. In a `while` loop, it jumps back to the condition. In a `for` loop,
-  it jumps to the `increment-expression`.
-- When you use `continue` with a label, it applies to the looping statement
-  identified with that label.
+*   When you use `continue` without a label, it terminates the current iteration
+    of the innermost enclosing `while`, `do-while`, or `for` statement and
+    continues execution of the loop with the next iteration. In contrast to the
+    `break` statement, `continue` does not terminate the execution of the loop
+    entirely. In a `while` loop, it jumps back to the condition. In a `for` loop,
+    it jumps to the `increment-expression`.
+*   When you use `continue` with a label, it applies to the looping statement
+    identified with that label.
 
 The syntax of the `continue` statement looks like the following:
 
-<pre class="brush: js">continue [<em>label</em>];
-</pre>
+```js
+continue [label];
+```
 
 ### Example 1
 
@@ -349,16 +353,16 @@ while (i < 5) {
 
 ### Example 2
 
-A statement labeled _`checkiandj`_ contains a statement labeled _`checkj`_. If
+A statement labeled *`checkiandj`* contains a statement labeled *`checkj`*. If
 `continue` is encountered, the program terminates the current iteration of
-_`checkj`_ and begins the next iteration. Each time `continue` is encountered,
-_`checkj`_ reiterates until its condition returns `false`. When `false` is
-returned, the remainder of the _`checkiandj`_ statement is completed, and
-_`checkiandj`_ reiterates until its condition returns `false`. When `false` is
-returned, the program continues at the statement following _`checkiandj`_.
+*`checkj`* and begins the next iteration. Each time `continue` is encountered,
+*`checkj`* reiterates until its condition returns `false`. When `false` is
+returned, the remainder of the *`checkiandj`* statement is completed, and
+*`checkiandj`* reiterates until its condition returns `false`. When `false` is
+returned, the program continues at the statement following *`checkiandj`*.
 
-If `continue` had a label of _`checkiandj`_, the program would continue at the
-top of the _`checkiandj`_ statement.
+If `continue` had a label of *`checkiandj`*, the program would continue at the
+top of the *`checkiandj`* statement.
 
 ```js
 let i = 0;
@@ -440,9 +444,10 @@ creates a loop Iterating over
 invoking a custom iteration hook with statements to be executed for the value of
 each distinct property.
 
-<pre class="brush: js">for (<em>variable</em> of <em>object</em>)
-  <em>statement</em>
-</pre>
+```js
+for (variable of object)
+  statement
+```
 
 The following example shows the difference between a `for...of` loop and a
 {{jsxref("statements/for...in","for...in")}} loop. While

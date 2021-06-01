@@ -79,18 +79,18 @@ Do not use a `Boolean` object in place of a `Boolean` primitive.
 
 ## Constructor
 
-- {{jsxref("Global_Objects/Boolean/Boolean", "Boolean()")}}
-  - : Creates a new `Boolean` object.
+*   {{jsxref("Global_Objects/Boolean/Boolean", "Boolean()")}}
+    *   : Creates a new `Boolean` object.
 
 ## Instance methods
 
-- {{jsxref("Boolean.prototype.toString()")}}
-  - : Returns a string of either `true` or `false` depending upon the value of
-    the object. Overrides the
-    {{jsxref("Object.prototype.toString()")}} method.
-- {{jsxref("Boolean.prototype.valueOf()")}}
-  - : Returns the primitive value of the {{jsxref("Boolean")}} object.
-    Overrides the {{jsxref("Object.prototype.valueOf()")}} method.
+*   {{jsxref("Boolean.prototype.toString()")}}
+    *   : Returns a string of either `true` or `false` depending upon the value of
+        the object. Overrides the
+        {{jsxref("Object.prototype.toString()")}} method.
+*   {{jsxref("Boolean.prototype.valueOf()")}}
+    *   : Returns the primitive value of the {{jsxref("Boolean")}} object.
+        Overrides the {{jsxref("Object.prototype.valueOf()")}} method.
 
 ## Examples
 
@@ -125,6 +125,6 @@ var bObjProto = new Boolean({});
 
 ## See also
 
-- [Boolean](/en-US/docs/Glossary/Boolean)
-- [Boolean primitives](/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
-- [Boolean data type (Wikipedia)](https://en.wikipedia.org/wiki/Boolean_data_type)
+*   [Boolean](/en-US/docs/Glossary/Boolean)
+*   [Boolean primitives](/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
+*   [Boolean data type (Wikipedia)](https://en.wikipedia.org/wiki/Boolean_data_type)

@@ -63,12 +63,12 @@ console.log(regex2.exec(str2).indices); // Output: undefined
 
 ## See also
 
-- {{JSxRef("RegExp.lastIndex")}}
-- {{JSxRef("RegExp.prototype.exec()")}}
-- {{JSxRef("RegExp.prototype.dotAll")}}
-- {{JSxRef("RegExp.prototype.global")}}
-- {{JSxRef("RegExp.prototype.ignoreCase")}}
-- {{JSxRef("RegExp.prototype.multiline")}}
-- {{JSxRef("RegExp.prototype.source")}}
-- {{JSxRef("RegExp.prototype.sticky")}}
-- {{JSxRef("RegExp.prototype.unicode")}}
+*   {{JSxRef("RegExp.lastIndex")}}
+*   {{JSxRef("RegExp.prototype.exec()")}}
+*   {{JSxRef("RegExp.prototype.dotAll")}}
+*   {{JSxRef("RegExp.prototype.global")}}
+*   {{JSxRef("RegExp.prototype.ignoreCase")}}
+*   {{JSxRef("RegExp.prototype.multiline")}}
+*   {{JSxRef("RegExp.prototype.source")}}
+*   {{JSxRef("RegExp.prototype.sticky")}}
+*   {{JSxRef("RegExp.prototype.unicode")}}

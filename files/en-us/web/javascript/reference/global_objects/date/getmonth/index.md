@@ -66,5 +66,5 @@ console.log(month); // 11
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCMonth()")}}
-- {{jsxref("Date.prototype.setMonth()")}}
+*   {{jsxref("Date.prototype.getUTCMonth()")}}
+*   {{jsxref("Date.prototype.setMonth()")}}

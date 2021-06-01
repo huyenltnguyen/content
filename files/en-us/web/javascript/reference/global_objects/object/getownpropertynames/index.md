@@ -21,13 +21,15 @@ directly in a given object.
 
 ## Syntax
 
-<pre class="brush: js">Object.getOwnPropertyNames(<var>obj</var>)</pre>
+```js
+Object.getOwnPropertyNames(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object whose enumerable and non-enumerable properties are to be
-    returned.
+*   `obj`
+    *   : The object whose enumerable and non-enumerable properties are to be
+        returned.
 
 ### Return value
 
@@ -159,11 +161,11 @@ console.log(nonenum_only);
 
 ## See also
 
-- A polyfill of `Object.getOwnPropertyNames` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
-- {{jsxref("Object.prototype.hasOwnProperty()")}}
-- {{jsxref("Object.prototype.propertyIsEnumerable()")}}
-- {{jsxref("Object.create()")}}
-- {{jsxref("Object.keys()")}}
-- {{jsxref("Array.forEach()")}}
+*   A polyfill of `Object.getOwnPropertyNames` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+*   {{jsxref("Object.prototype.hasOwnProperty()")}}
+*   {{jsxref("Object.prototype.propertyIsEnumerable()")}}
+*   {{jsxref("Object.create()")}}
+*   {{jsxref("Object.keys()")}}
+*   {{jsxref("Array.forEach()")}}

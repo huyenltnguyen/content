@@ -61,5 +61,5 @@ class MyTypedArray extends Uint8Array {
 
 ## See also
 
-- {{jsxref("TypedArray")}}
-- {{jsxref("Symbol.species")}}
+*   {{jsxref("TypedArray")}}
+*   {{jsxref("Symbol.species")}}

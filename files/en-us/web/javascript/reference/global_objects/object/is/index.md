@@ -26,10 +26,10 @@ Object.is(value1, value2);
 
 ### Parameters
 
-- `value1`
-  - : The first value to compare.
-- `value2`
-  - : The second value to compare.
+*   `value1`
+    *   : The first value to compare.
+*   `value2`
+    *   : The second value to compare.
 
 ### Return value
 
@@ -42,26 +42,26 @@ the same value.
 [the same value](/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness).
 Two values are the same if one of the following holds:
 
-- both {{jsxref("undefined")}}
-- both {{jsxref("null")}}
-- both `true` or both `false`
-- both strings of the same length with the same characters in the same order
-- both the same object (meaning both values reference the same object in memory)
-- both numbers and
+*   both {{jsxref("undefined")}}
+*   both {{jsxref("null")}}
+*   both `true` or both `false`
+*   both strings of the same length with the same characters in the same order
+*   both the same object (meaning both values reference the same object in memory)
+*   both numbers and
 
-  - both `+0`
-  - both `-0`
-  - both {{jsxref("NaN")}}
-  - or both non-zero and both not {{jsxref("NaN")}} and both have the
-    same value
+    *   both `+0`
+    *   both `-0`
+    *   both {{jsxref("NaN")}}
+    *   or both non-zero and both not {{jsxref("NaN")}} and both have the
+        same value
 
-This is _not_ the same as being equal according to the
+This is *not* the same as being equal according to the
 {{jsxref("Operators", "==", "#Equality")}} operator. The `==`
 operator applies various coercions to both sides (if they are not the same Type)
 before testing for equality (resulting in such behavior as `"" == false` being
 `true`), but `Object.is` doesn't coerce either value.
 
-This is also _not_ the same as being equal according to the
+This is also *not* the same as being equal according to the
 {{jsxref("Operators", "===", "#Identity")}} operator. The only
 difference between `Object.is()` and `===` is in their treatment of signed
 zeroes and NaNs. For example, the `===` operator (and the `==` operator) treats
@@ -131,7 +131,7 @@ if (!Object.is) {
 
 ## See also
 
-- A polyfill of `Object.is` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- [Equality comparisons and sameness](/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
-  — a comparison of all three built-in sameness facilities
+*   A polyfill of `Object.is` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   [Equality comparisons and sameness](/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+    — a comparison of all three built-in sameness facilities

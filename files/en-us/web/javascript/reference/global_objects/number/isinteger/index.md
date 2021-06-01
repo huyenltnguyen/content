@@ -18,12 +18,14 @@ integer.
 
 ## Syntax
 
-<pre class="brush: js">Number.isInteger(<var>value</var>)</pre>
+```js
+Number.isInteger(value)
+```
 
 ### Parameters
 
-- `value`
-  - : The value to be tested for being an integer.
+*   `value`
+    *   : The value to be tested for being an integer.
 
 ### Return value
 
@@ -83,6 +85,6 @@ Number.isInteger = Number.isInteger || function(value) {
 
 ## See also
 
-- A polyfill of `Number.isInteger` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
-- The {{jsxref("Number")}} object it belongs to.
+*   A polyfill of `Number.isInteger` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
+*   The {{jsxref("Number")}} object it belongs to.

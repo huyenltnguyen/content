@@ -18,29 +18,29 @@ remains for compatibility.
 
 ## Constructor
 
-- {{jsxref("EvalError/EvalError", "EvalError()")}}
-  - : Creates a new `EvalError` object.
+*   {{jsxref("EvalError/EvalError", "EvalError()")}}
+    *   : Creates a new `EvalError` object.
 
 ## Instance properties
 
-- {{jsxref("Error.prototype.message", "EvalError.prototype.message")}}
-  - : Error message. Although ECMA-262 specifies that
-    {{jsxref("EvalError")}} should provide its own `message` property,
-    in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
-    {{jsxref("Error.prototype.message")}}.
-- {{jsxref("Error.prototype.name", "EvalError.prototype.name")}}
-  - : Error name. Inherited from {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.fileName", "EvalError.prototype.fileName")}}
-  - : Path to file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.lineNumber", "EvalError.prototype.lineNumber")}}
-  - : Line number in file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.columnNumber", "EvalError.prototype.columnNumber")}}
-  - : Column number in line that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.stack", "EvalError.prototype.stack")}}
-  - : Stack trace. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.message", "EvalError.prototype.message")}}
+    *   : Error message. Although ECMA-262 specifies that
+        {{jsxref("EvalError")}} should provide its own `message` property,
+        in [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
+        {{jsxref("Error.prototype.message")}}.
+*   {{jsxref("Error.prototype.name", "EvalError.prototype.name")}}
+    *   : Error name. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.fileName", "EvalError.prototype.fileName")}}
+    *   : Path to file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.lineNumber", "EvalError.prototype.lineNumber")}}
+    *   : Line number in file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.columnNumber", "EvalError.prototype.columnNumber")}}
+    *   : Column number in line that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.stack", "EvalError.prototype.stack")}}
+    *   : Stack trace. Inherited from {{jsxref("Error")}}.
 
 ## Examples
 
@@ -74,5 +74,5 @@ try {
 
 ## See also
 
-- {{jsxref("Error")}}
-- {{jsxref("Global_Objects/eval", "eval()")}}
+*   {{jsxref("Error")}}
+*   {{jsxref("Global_Objects/eval", "eval()")}}

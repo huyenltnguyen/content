@@ -22,7 +22,9 @@ as the initial value of the
 
 ## Syntax
 
-<pre class="brush: js"><var>mySet</var>[Symbol.iterator]</pre>
+```js
+mySet[Symbol.iterator]
+```
 
 ### Return value
 
@@ -70,6 +72,6 @@ for (const v of mySet) {
 
 ## See also
 
-- {{jsxref("Set.prototype.entries()")}}
-- {{jsxref("Set.prototype.keys()")}}
-- {{jsxref("Set.prototype.values()")}}
+*   {{jsxref("Set.prototype.entries()")}}
+*   {{jsxref("Set.prototype.keys()")}}
+*   {{jsxref("Set.prototype.values()")}}

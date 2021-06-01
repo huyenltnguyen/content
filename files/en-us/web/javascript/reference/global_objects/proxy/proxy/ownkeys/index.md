@@ -17,19 +17,20 @@ The **`handler.ownKeys()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  ownKeys: function(<var>target</var>) {
+```js
+const p = new Proxy(target, {
+  ownKeys: function(target) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameter is passed to the `ownKeys()` method. `this` is bound to
 the handler.
 
-- `target`
-  - : The target object.
+*   `target`
+    *   : The target object.
 
 ### Return value
 
@@ -44,23 +45,23 @@ The **`handler.ownKeys()`** method is a trap for
 
 This trap can intercept these operations:
 
-- {{jsxref("Object.getOwnPropertyNames()")}}
-- {{jsxref("Object.getOwnPropertySymbols()")}}
-- {{jsxref("Object.keys()")}}
-- {{jsxref("Reflect.ownKeys()")}}
+*   {{jsxref("Object.getOwnPropertyNames()")}}
+*   {{jsxref("Object.getOwnPropertySymbols()")}}
+*   {{jsxref("Object.keys()")}}
+*   {{jsxref("Reflect.ownKeys()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- The result of `ownKeys()` must be an array.
-- The type of each array element is either a {{jsxref("String")}} or a
-  {{jsxref("Symbol")}}.
-- The result List must contain the keys of all non-configurable own properties
-  of the target object.
-- If the target object is not extensible, then the result List must contain all
-  the keys of the own properties of the target object and no other values.
+*   The result of `ownKeys()` must be an array.
+*   The type of each array element is either a {{jsxref("String")}} or a
+    {{jsxref("Symbol")}}.
+*   The result List must contain the keys of all non-configurable own properties
+    of the target object.
+*   If the target object is not extensible, then the result List must contain all
+    the keys of the own properties of the target object and no other values.
 
 ## Examples
 
@@ -113,7 +114,7 @@ console.log(Object.getOwnPropertyNames(p));
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Object.getOwnPropertyNames()")}}
-- {{jsxref("Reflect.ownKeys()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Object.getOwnPropertyNames()")}}
+*   {{jsxref("Reflect.ownKeys()")}}

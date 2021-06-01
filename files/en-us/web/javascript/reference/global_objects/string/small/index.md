@@ -65,7 +65,7 @@ document.getElementById('yourElemId').style.fontSize = '0.7em';
 
 ## See also
 
-- A polyfill of `String.prototype.small` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.fontsize()")}}
-- {{jsxref("String.prototype.big()")}}
+*   A polyfill of `String.prototype.small` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.fontsize()")}}
+*   {{jsxref("String.prototype.big()")}}

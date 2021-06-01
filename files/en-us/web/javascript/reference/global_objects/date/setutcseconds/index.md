@@ -25,10 +25,10 @@ setUTCSeconds(secondsValue, msValue)
 
 ### Parameters
 
-- `secondsValue`
-  - : An integer between 0 and 59, representing the seconds.
-- `msValue`
-  - : Optional. A number between 0 and 999, representing the milliseconds.
+*   `secondsValue`
+    *   : An integer between 0 and 59, representing the seconds.
+*   `msValue`
+    *   : Optional. A number between 0 and 999, representing the milliseconds.
 
 ### Return value
 
@@ -66,5 +66,5 @@ theBigDay.setUTCSeconds(20);
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCSeconds()")}}
-- {{jsxref("Date.prototype.setSeconds()")}}
+*   {{jsxref("Date.prototype.getUTCSeconds()")}}
+*   {{jsxref("Date.prototype.setSeconds()")}}

@@ -33,38 +33,35 @@ splice(start, deleteCount, item1, item2, itemN)
 
 ### Parameters
 
-- `start`
+*   `start`
 
-  - : The index at which to start changing the array.
+    *   : The index at which to start changing the array.
 
-    If greater than the length of the array, `start` will be set to the length
-    of the array. In this case, no element will be deleted but the method will
-    behave as an adding function, adding as many element as item\[n\*] provided.
+        If greater than the length of the array, `start` will be set to the length
+        of the array. In this case, no element will be deleted but the method will
+        behave as an adding function, adding as many element as item\[n\*] provided.
 
-    If negative, it will begin that many elements from the end of the array. (In
-    this case, the origin `-1`, meaning <code>-<var>n</var></code> is the index
-    of the `n`th last element, and is therefore equivalent to the index of
-    <code><var>array</var>.length - <var>n</var></code>.) If
-    <code><var>array</var>.length + <var>start</var></code> is less than `0`, it
-    will begin from index `0`.
+        If negative, it will begin that many elements from the end of the array. (In
+        this case, the origin `-1`, meaning <code>-<var>n</var></code> is the index
+        of the `n`th last element, and is therefore equivalent to the index of <code><var>array</var>.length - <var>n</var></code>.) If <code><var>array</var>.length + <var>start</var></code> is less than `0`, it
+        will begin from index `0`.
 
-- `deleteCount` {{optional_inline}}
+*   `deleteCount` {{optional_inline}}
 
-  - : An integer indicating the number of elements in the array to remove from
-    `start`.
+    *   : An integer indicating the number of elements in the array to remove from
+        `start`.
 
-    If `deleteCount` is omitted, or if its value is equal to or larger than
-    <code><var>array</var>.length - <var>start</var></code> (that is, if it is
-    equal to or greater than the number of elements left in the array, starting
-    at `start`), then all the elements from `start` to the end of the array will
-    be deleted.
+        If `deleteCount` is omitted, or if its value is equal to or larger than <code><var>array</var>.length - <var>start</var></code> (that is, if it is
+        equal to or greater than the number of elements left in the array, starting
+        at `start`), then all the elements from `start` to the end of the array will
+        be deleted.
 
-    If `deleteCount` is `0` or negative, no elements are removed. In this case,
-    you should specify at least one new element (see below).
+        If `deleteCount` is `0` or negative, no elements are removed. In this case,
+        you should specify at least one new element (see below).
 
-- <code><var>item1</var>, <var>item2</var>, ...</code> {{optional_inline}}
-  - : The elements to add to the array, beginning from `start`. If you do not
-    specify any elements, `splice()` will only remove elements from the array.
+*   <code><var>item1</var>, <var>item2</var>, ...</code> {{optional_inline}}
+    *   : The elements to add to the array, beginning from `start`. If you do not
+        specify any elements, `splice()` will only remove elements from the array.
 
 ### Return value
 
@@ -171,12 +168,12 @@ let removed = myFish.splice(2)
 
 ## See also
 
-- {{jsxref("Array.prototype.push()", "push()")}} /
-  {{jsxref("Array.prototype.pop()",
+*   {{jsxref("Array.prototype.push()", "push()")}} /
+    {{jsxref("Array.prototype.pop()",
     "pop()")}}— add/remove
-  elements from the end of the array
-- {{jsxref("Array.prototype.unshift()", "unshift()")}} /
-  {{jsxref("Array.prototype.shift()", "shift()")}}— add/remove
-  elements from the beginning of the array
-- {{jsxref("Array.prototype.concat()", "concat()")}}— returns
-  a new array comprised of this array joined with other array(s) and/or value(s)
+    elements from the end of the array
+*   {{jsxref("Array.prototype.unshift()", "unshift()")}} /
+    {{jsxref("Array.prototype.shift()", "shift()")}}— add/remove
+    elements from the beginning of the array
+*   {{jsxref("Array.prototype.concat()", "concat()")}}— returns
+    a new array comprised of this array joined with other array(s) and/or value(s)

@@ -23,12 +23,14 @@ characters).
 
 ## Syntax
 
-<pre class="brush: js">encodeURI(<var>URI</var>)</pre>
+```js
+encodeURI(URI)
+```
 
 ### Parameters
 
-- `URI`
-  - : A complete URI.
+*   `URI`
+    *   : A complete URI.
 
 ### Return value
 
@@ -53,11 +55,11 @@ purpose but are allowed in a URI "as is". (See
 
 `encodeURI()` escapes all characters **except**:
 
-<pre class="brush: plain"><strong>Not Escaped</strong>:
+```plain
+Not Escaped:
 
-    A-Z a-z 0-9 ; , / ? : @ &#x26; = + $ - _ . ! ~ * ' ( ) #<code>
-</code>
-</pre>
+    A-Z a-z 0-9 ; , / ? : @ & = + $ - _ . ! ~ * ' ( ) #
+```
 
 ## Examples
 
@@ -82,7 +84,7 @@ console.log(encodeURIComponent(set2)); // -_.!~*'()
 console.log(encodeURIComponent(set3)); // ABC%20abc%20123 (the space gets encoded as %20)
 ```
 
-Note that `encodeURI()` by itself _cannot_ form proper HTTP
+Note that `encodeURI()` by itself *cannot* form proper HTTP
 {{HTTPMethod("GET")}} and {{HTTPMethod("POST")}} requests, such as
 for {{domxref("XMLHttpRequest")}}, because "`&`", "`+`", and "`=`"
 are not encoded, which are treated as special characters in `GET` and `POST`
@@ -128,6 +130,6 @@ function fixedEncodeURI(str) {
 
 ## See also
 
-- {{jsxref("decodeURI", "decodeURI()")}}
-- {{jsxref("encodeURIComponent", "encodeURIComponent()")}}
-- {{jsxref("decodeURIComponent", "decodeURIComponent()")}}
+*   {{jsxref("decodeURI", "decodeURI()")}}
+*   {{jsxref("encodeURIComponent", "encodeURIComponent()")}}
+*   {{jsxref("decodeURIComponent", "decodeURIComponent()")}}

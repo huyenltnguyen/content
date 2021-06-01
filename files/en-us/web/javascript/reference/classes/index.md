@@ -169,7 +169,7 @@ console.log([...pentagon.getSides()]); // [1,2,3,4,5]
 The {{jsxref("Classes/static", "static", "", "true")}} keyword
 defines a static method or property for a class. Static members (properties and
 methods) are called without
-[instantiating ](</en-US/docs/Learn/JavaScript/Objects#the_object_(class_instance)> 'An example of class instance is "var john = new Person();"')their
+[instantiating ](/en-US/docs/Learn/JavaScript/Objects#the_object_\(class_instance\) "An example of class instance is \"var john = new Person();\"")their
 class and **cannot** be called through a class instance. Static methods are
 often used to create utility functions for an application, whereas static
 properties are useful for caches, fixed-configuration, or any other data you
@@ -342,7 +342,7 @@ For more information, see
 ## Sub classing with `extends`
 
 The {{jsxref("Classes/extends", "extends")}} keyword is used in
-_class declarations_ or _class expressions_ to create a class as a child of
+*class declarations* or *class expressions* to create a class as a child of
 another class.
 
 ```js
@@ -476,7 +476,7 @@ l.speak();
 
 ## Mix-ins
 
-Abstract subclasses or _mix-ins_ are templates for classes. An ECMAScript class
+Abstract subclasses or *mix-ins* are templates for classes. An ECMAScript class
 can only have a single superclass, so multiple inheritance from tooling classes,
 for example, is not possible. The functionality must be provided by the
 superclass.
@@ -511,7 +511,7 @@ definition of a class with the same name twice, you'll get a <code>SyntaxError:
 redeclaration of let <em>ClassName</em>;</code>. (See further discussion of this
 issue in {{Bug(1428672)}}.) Doing something similar in Chrome Developer
 Tools gives you a message like <code>Uncaught SyntaxError: Identifier
-'<em>ClassName</em>' has already been declared at &#x3C;anonymous>:1:1</code>.
+'<em>ClassName</em>' has already been declared at \<anonymous>:1:1</code>.
 
 ## Specifications
 
@@ -523,11 +523,11 @@ Tools gives you a message like <code>Uncaught SyntaxError: Identifier
 
 ## See also
 
-- {{jsxref("Functions", "Functions", "", "true")}}
-- {{jsxref("Statements/class", "class declaration", "", "true")}}
-- {{jsxref("Operators/class", "class expression", "", "true")}}
-- {{jsxref("Classes/Public_class_fields", "Public class fields", "", "true")}}
-- {{jsxref("Classes/Private_class_fields", "Private class fields", "", "true")}}
-- {{jsxref("Operators/super", "super")}}
-- [Blog post: "ES6 In Depth: Classes"](https://hacks.mozilla.org/2015/07/es6-in-depth-classes/)
-- [Fields and public/private class properties proposal (stage 3)](https://github.com/tc39/proposal-class-fields)
+*   {{jsxref("Functions", "Functions", "", "true")}}
+*   {{jsxref("Statements/class", "class declaration", "", "true")}}
+*   {{jsxref("Operators/class", "class expression", "", "true")}}
+*   {{jsxref("Classes/Public_class_fields", "Public class fields", "", "true")}}
+*   {{jsxref("Classes/Private_class_fields", "Private class fields", "", "true")}}
+*   {{jsxref("Operators/super", "super")}}
+*   [Blog post: "ES6 In Depth: Classes"](https://hacks.mozilla.org/2015/07/es6-in-depth-classes/)
+*   [Fields and public/private class properties proposal (stage 3)](https://github.com/tc39/proposal-class-fields)

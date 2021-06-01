@@ -92,5 +92,5 @@ LUNG_COUNT = 3;  // ok (anatomically unlikely, though)
 
 ## See also
 
-- {{jsxref("Object.defineProperty()")}}
-- {{jsxref("Object.freeze()")}}
+*   {{jsxref("Object.defineProperty()")}}
+*   {{jsxref("Object.freeze()")}}

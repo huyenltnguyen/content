@@ -16,7 +16,7 @@ browser-compat: javascript.builtins.TypedArray.slice
 The **`slice()`** method returns a new typed array (with a new underlying
 buffer), that contains a copy of a portion of the original typed array. This
 method has the same algorithm as
-{{jsxref("Array.prototype.slice()")}}. _TypedArray_ is one of the
+{{jsxref("Array.prototype.slice()")}}. *TypedArray* is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
 
@@ -32,29 +32,29 @@ slice(start, end)
 
 ### Parameters
 
-- `start` {{optional_inline}}
+*   `start` {{optional_inline}}
 
-  - : Zero-based index at which to begin extraction.
+    *   : Zero-based index at which to begin extraction.
 
-    A negative index can be used, indicating an offset from the end of the
-    sequence. `slice(-2)` extracts the last two elements in the sequence.
+        A negative index can be used, indicating an offset from the end of the
+        sequence. `slice(-2)` extracts the last two elements in the sequence.
 
-    If `start` is undefined, `slice` begins from index `0`.
+        If `start` is undefined, `slice` begins from index `0`.
 
-- `end` {{optional_inline}}
+*   `end` {{optional_inline}}
 
-  - : Zero-based index _before_ which to end extraction. `slice` extracts up to
-    but not including `end`.
+    *   : Zero-based index *before* which to end extraction. `slice` extracts up to
+        but not including `end`.
 
-    For example, `slice(1,4)` extracts the second element through the fourth
-    element (elements indexed 1, 2, and 3).
+        For example, `slice(1,4)` extracts the second element through the fourth
+        element (elements indexed 1, 2, and 3).
 
-    A negative index can be used, indicating an offset from the end of the
-    sequence. `slice(2,-1)` extracts the third element through the
-    second-to-last element in the sequence.
+        A negative index can be used, indicating an offset from the end of the
+        sequence. `slice(2,-1)` extracts the third element through the
+        second-to-last element in the sequence.
 
-    If `end` is omitted, `slice` extracts through the end of the sequence
-    (`typedarray.length`).
+        If `end` is omitted, `slice` extracts through the end of the sequence
+        (`typedarray.length`).
 
 ### Return value
 
@@ -82,7 +82,7 @@ uint8.slice(0,1); // Uint8Array [ 1 ]
 
 ## Polyfill
 
-Since there is no global object with the name _TypedArray_, polyfilling must be
+Since there is no global object with the name *TypedArray*, polyfilling must be
 done on an "as needed" basis.
 
 ```js
@@ -110,6 +110,6 @@ If you need to support truly obsolete JavaScript engines that don't support
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.slice` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("Array.prototype.slice()")}}
+*   A polyfill of `TypedArray.prototype.slice` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("Array.prototype.slice()")}}

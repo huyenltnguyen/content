@@ -63,5 +63,5 @@ Object.defineProperty(obj, "foo", {value: "baz", configurable: true});
 
 ## See also
 
-- [\[\[Configurable\]\]](/en-US/docs/Web/JavaScript/Data_structures#properties)
-- {{jsxref("Object.defineProperty()")}}
+*   [\[\[Configurable\]\]](/en-US/docs/Web/JavaScript/Data_structures#properties)
+*   {{jsxref("Object.defineProperty()")}}

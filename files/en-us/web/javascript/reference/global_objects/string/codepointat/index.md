@@ -26,8 +26,8 @@ codePointAt(pos)
 
 ### Parameters
 
-- `pos`
-  - : Position of an element in `str` to return the code point value from.
+*   `pos`
+    *   : Position of an element in `str` to return the code point value from.
 
 ### Return value
 
@@ -132,9 +132,9 @@ if (!String.prototype.codePointAt) {
 
 ## See also
 
-- A polyfill of `String.prototype.codePointAt` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.fromCodePoint()")}}
-- {{jsxref("String.fromCharCode()")}}
-- {{jsxref("String.prototype.charCodeAt()")}}
-- {{jsxref("String.prototype.charAt()")}}
+*   A polyfill of `String.prototype.codePointAt` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.fromCodePoint()")}}
+*   {{jsxref("String.fromCharCode()")}}
+*   {{jsxref("String.prototype.charCodeAt()")}}
+*   {{jsxref("String.prototype.charAt()")}}

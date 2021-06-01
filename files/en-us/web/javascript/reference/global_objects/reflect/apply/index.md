@@ -19,18 +19,19 @@ as specified.
 
 ## Syntax
 
-<pre class="brush: js">Reflect.apply(<var>target</var>, <var>thisArgument</var>, <var>argumentsList</var>)
-</pre>
+```js
+Reflect.apply(target, thisArgument, argumentsList)
+```
 
 ### Parameters
 
-- `target`
-  - : The target function to call.
-- `thisArgument`
-  - : The value of `this` provided for the call to `target`.
-- `argumentsList`
-  - : An array-like object specifying the arguments with which `target` should
-    be called.
+*   `target`
+    *   : The target function to call.
+*   `thisArgument`
+    *   : The value of `this` provided for the call to `target`.
+*   `argumentsList`
+    *   : An array-like object specifying the arguments with which `target` should
+        be called.
 
 ### Return value
 
@@ -82,7 +83,7 @@ Reflect.apply(''.charAt, 'ponies', [3])
 
 ## See also
 
-- A polyfill of `Reflect.apply` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- {{jsxref("Function.prototype.apply()")}}
+*   A polyfill of `Reflect.apply` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   {{jsxref("Function.prototype.apply()")}}

@@ -30,12 +30,12 @@ format(value, unit)
 
 ### Parameters
 
-- `value`
-  - : Numeric value to use in the internationalized relative time message.
-- `unit`
-  - : Unit to use in the relative time internationalized message. Possible
-    values are: "`year`", "`quarter`", "`month`", "`week`", "`day`", "`hour`",
-    "`minute`", "`second`". Plural forms are also permitted.
+*   `value`
+    *   : Numeric value to use in the internationalized relative time message.
+*   `unit`
+    *   : Unit to use in the relative time internationalized message. Possible
+        values are: "`year`", "`quarter`", "`month`", "`week`", "`day`", "`hour`",
+        "`minute`", "`second`". Plural forms are also permitted.
 
 ## Description
 
@@ -102,4 +102,4 @@ rtf.format(1, "day");
 
 ## See also
 
-- {{jsxref("Intl.RelativeTimeFormat")}}
+*   {{jsxref("Intl.RelativeTimeFormat")}}

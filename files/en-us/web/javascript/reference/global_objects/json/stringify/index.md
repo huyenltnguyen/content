@@ -30,16 +30,28 @@ JSON.stringify(value, replacer, space)
 
 ### Parameters
 
-<dl><dt><code><var>value</var></code></dt><dd>The value to convert to a JSON string.</dd><dt><code><var>replacer</var></code> {{optional_inline}}</dt><dd>A function that alters the behavior of the stringification process, or an array of
-{{JSxRef("String")}} and {{JSxRef("Number")}} that serve as an allowlist for
-selecting/filtering the properties of the value object to be included in the JSON
-string. If this value is {{JSxRef("null")}} or not provided, all properties of the
-object are included in the resulting JSON string.</dd><dt><code><var>space</var></code> {{optional_inline}}</dt><dd>A {{JSxRef("String")}} or {{JSxRef("Number")}} object that's used to insert white
-space into the output JSON string for readability purposes.<p>If this is a <code>Number</code>, it indicates the number of space characters to
-use as white space; this number is capped at 10 (if it is greater, the value is just
-<code>10</code>). Values less than 1 indicate that no space should be used.</p><p>If this is a <code>String</code>, the string (or the first 10 characters of the
-string, if it's longer than that) is used as white space. If this parameter is not
-provided (or is {{JSxRef("null")}}), no white space is used.</p></dd></dl>
+*   `value`
+    *   : The value to convert to a JSON string.
+*   `replacer` {{optional_inline}}
+    *   : A function that alters the behavior of the stringification process, or an
+        array of {{JSxRef("String")}} and {{JSxRef("Number")}} that
+        serve as an allowlist for selecting/filtering the properties of the value
+        object to be included in the JSON string. If this value is
+        {{JSxRef("null")}} or not provided, all properties of the object are
+        included in the resulting JSON string.
+*   `space` {{optional_inline}}
+
+    *   : A {{JSxRef("String")}} or {{JSxRef("Number")}} object
+        that's used to insert white space into the output JSON string for
+        readability purposes.
+
+        If this is a `Number`, it indicates the number of space characters to use as
+        white space; this number is capped at 10 (if it is greater, the value is
+        just `10`). Values less than 1 indicate that no space should be used.
+
+        If this is a `String`, the string (or the first 10 characters of the string,
+        if it's longer than that) is used as white space. If this parameter is not
+        provided (or is {{JSxRef("null")}}), no white space is used.
 
 ### Return value
 
@@ -47,38 +59,38 @@ A JSON string representing the given value, or undefined.
 
 ### Exceptions
 
-- Throws a {{JSxRef("TypeError")}} ("cyclic object value") exception
-  when a circular reference is found.
-- Throws a {{JSxRef("TypeError")}} ("BigInt value can't be serialized
-  in JSON") when trying to stringify a {{jsxref("BigInt")}} value.
+*   Throws a {{JSxRef("TypeError")}} ("cyclic object value") exception
+    when a circular reference is found.
+*   Throws a {{JSxRef("TypeError")}} ("BigInt value can't be serialized
+    in JSON") when trying to stringify a {{jsxref("BigInt")}} value.
 
 ## Description
 
 `JSON.stringify()` converts a value to JSON notation representing it:
 
-- If the value has a [`toJSON()`](#tojson_behavior) method, it's responsible to
-  define what data will be serialized.
-- {{JSxRef("Boolean")}}, {{JSxRef("Number")}}, and
-  {{JSxRef("String")}} objects are converted to the corresponding
-  primitive values during stringification, in accord with the traditional
-  conversion semantics.
-- {{JSxRef("undefined")}}, {{JSxRef("Function")}}s, and
-  {{JSxRef("Symbol")}}s are not valid JSON values. If any such values
-  are encountered during conversion they are either omitted (when found in an
-  object) or changed to {{JSxRef("null")}} (when found in an array).
-  `JSON.stringify()` can return `undefined` when passing in "pure" values like
-  `JSON.stringify(function(){})` or `JSON.stringify(undefined)`.
-- All {{JSxRef("Symbol")}}-keyed properties will be completely ignored,
-  even when using the `replacer` function.
-- The instances of {{JSxRef("Date")}} implement the `toJSON()` function by
-  returning a string (the same as `date.toISOString()`). Thus, they are treated
-  as strings.
-- The numbers {{JSxRef("Infinity")}} and {{JSxRef("NaN")}}, as well
-  as the value {{JSxRef("null")}}, are all considered `null`.
-- All the other {{JSxRef("Object")}} instances (including
-  {{JSxRef("Map")}}, {{JSxRef("Set")}},
-  {{JSxRef("WeakMap")}}, and {{JSxRef("WeakSet")}}) will have only
-  their enumerable properties serialized.
+*   If the value has a [`toJSON()`](#tojson_behavior) method, it's responsible to
+    define what data will be serialized.
+*   {{JSxRef("Boolean")}}, {{JSxRef("Number")}}, and
+    {{JSxRef("String")}} objects are converted to the corresponding
+    primitive values during stringification, in accord with the traditional
+    conversion semantics.
+*   {{JSxRef("undefined")}}, {{JSxRef("Function")}}s, and
+    {{JSxRef("Symbol")}}s are not valid JSON values. If any such values
+    are encountered during conversion they are either omitted (when found in an
+    object) or changed to {{JSxRef("null")}} (when found in an array).
+    `JSON.stringify()` can return `undefined` when passing in "pure" values like
+    `JSON.stringify(function(){})` or `JSON.stringify(undefined)`.
+*   All {{JSxRef("Symbol")}}-keyed properties will be completely ignored,
+    even when using the `replacer` function.
+*   The instances of {{JSxRef("Date")}} implement the `toJSON()` function by
+    returning a string (the same as `date.toISOString()`). Thus, they are treated
+    as strings.
+*   The numbers {{JSxRef("Infinity")}} and {{JSxRef("NaN")}}, as well
+    as the value {{JSxRef("null")}}, are all considered `null`.
+*   All the other {{JSxRef("Object")}} instances (including
+    {{JSxRef("Map")}}, {{JSxRef("Set")}},
+    {{JSxRef("WeakMap")}}, and {{JSxRef("WeakSet")}}) will have only
+    their enumerable properties serialized.
 
 ## Examples
 
@@ -152,8 +164,7 @@ JSON.stringify({x: 2n});
 
 The `replacer` parameter can be either a function or an array.
 
-**As a function**, it takes two parameters: the <var>key</var> and the
-<var>value</var> being stringified. The object in which the key was found is
+**As a function**, it takes two parameters: the <var>key</var> and the <var>value</var> being stringified. The object in which the key was found is
 provided as the `replacer`'s `this` parameter.
 
 Initially, the `replacer` function is called with an empty string as key
@@ -162,13 +173,13 @@ on the object or array being stringified.
 
 It should return the value that should be added to the JSON string, as follows:
 
-- If you return a {{JSxRef("Number")}}, {{JSxRef("String")}},
-  {{JSxRef("Boolean")}}, or {{JSxRef("null")}}, the stringified
-  version of that value is used as the property's value.
-- If you return a {{JSxRef("Function")}}, {{JSxRef("Symbol")}}, or
-  {{JSxRef("undefined")}}, the property is not included in the output.
-- If you return any other object, the object is recursively stringified, calling
-  the `replacer` function on each property.
+*   If you return a {{JSxRef("Number")}}, {{JSxRef("String")}},
+    {{JSxRef("Boolean")}}, or {{JSxRef("null")}}, the stringified
+    version of that value is used as the property's value.
+*   If you return a {{JSxRef("Function")}}, {{JSxRef("Symbol")}}, or
+    {{JSxRef("undefined")}}, the property is not included in the output.
+*   If you return any other object, the object is recursively stringified, calling
+    the `replacer` function on each property.
 
 > **Note:** You cannot use the `replacer` function to remove values from an
 > array. If you return `undefined` or a function then `null` is used instead.
@@ -209,10 +220,10 @@ JSON.stringify(foo, ['week', 'month']);
 
 The `space` argument may be used to control spacing in the final string.
 
-- **If it is a number**, successive levels in the stringification will each be
-  indented by this many space characters (up to 10).
-- **If it is a string**, successive levels will be indented by this string (or
-  the first ten characters of it).
+*   **If it is a number**, successive levels in the stringification will each be
+    indented by this many space characters (up to 10).
+*   **If it is a string**, successive levels will be indented by this string (or
+    the first ten characters of it).
 
 ```js
 JSON.stringify({ a: 2 }, null, ' ');
@@ -240,9 +251,9 @@ instead of the object being serialized, the value returned by the `toJSON()`
 method when called will be serialized. `JSON.stringify()` calls `toJSON` with
 one parameter:
 
-- if this object is a property value, the property name
-- if it is in an array, the index in the array, as a string
-- an empty string if `JSON.stringify()` was directly called on this object
+*   if this object is a property value, the property name
+*   if it is in an array, the index in the array, as a string
+*   an empty string if `JSON.stringify()` was directly called on this object
 
 For example:
 
@@ -391,7 +402,7 @@ JSON.stringify("\uD800"); // '"�"'
 ```
 
 But with this change `JSON.stringify` represents lone surrogates using JSON
-escape sequences that _can_ be encoded in valid UTF-8 or UTF-16:
+escape sequences that *can* be encoded in valid UTF-8 or UTF-16:
 
 ```js
 JSON.stringify("\uD800"); // '"\\ud800"'
@@ -400,7 +411,7 @@ JSON.stringify("\uD800"); // '"\\ud800"'
 This change should be backwards-compatible as long as you pass the result of
 `JSON.stringify` to APIs such as `JSON.parse` that will accept any valid JSON
 text, because they will treat Unicode escapes of lone surrogates as identical to
-the lone surrogates themselves. _Only_ if you are directly interpreting the
+the lone surrogates themselves. *Only* if you are directly interpreting the
 result of `JSON.stringify` do you need to carefully handle `JSON.stringify`'s
 two possible encodings of these code points.
 
@@ -414,7 +425,7 @@ two possible encodings of these code points.
 
 ## See also
 
-- A polyfill of modern `JSON.stringify` behavior (symbol and well-formed
-  unicode) is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-function)
-- {{JSxRef("JSON.parse()")}}
+*   A polyfill of modern `JSON.stringify` behavior (symbol and well-formed
+    unicode) is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-function)
+*   {{JSxRef("JSON.parse()")}}

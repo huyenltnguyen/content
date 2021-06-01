@@ -55,4 +55,4 @@ console.log(typeof num)     // number
 
 ## See also
 
-- {{jsxref("Number.prototype.toSource()")}}
+*   {{jsxref("Number.prototype.toSource()")}}

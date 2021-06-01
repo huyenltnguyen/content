@@ -17,21 +17,22 @@ The **`handler.getOwnPropertyDescriptor()`** method is a trap for
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  getOwnPropertyDescriptor: function(<var>target</var>, <var>prop</var>) {
+```js
+const p = new Proxy(target, {
+  getOwnPropertyDescriptor: function(target, prop) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameters are passed to the `getOwnPropertyDescriptor()` method.
 `this` is bound to the handler.
 
-- `target`
-  - : The target object.
-- `prop`
-  - : The name of the property whose description should be retrieved.
+*   `target`
+    *   : The target object.
+*   `prop`
+    *   : The name of the property whose description should be retrieved.
 
 ### Return value
 
@@ -46,30 +47,30 @@ The **`handler.getOwnPropertyDescriptor()`** method is a trap for
 
 This trap can intercept these operations:
 
-- {{jsxref("Object.getOwnPropertyDescriptor()")}}
-- {{jsxref("Reflect.getOwnPropertyDescriptor()")}}
+*   {{jsxref("Object.getOwnPropertyDescriptor()")}}
+*   {{jsxref("Reflect.getOwnPropertyDescriptor()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- `getOwnPropertyDescriptor()` must return an object or `undefined`.
-- A property cannot be reported as non-existent, if it exists as a
-  non-configurable own property of the target object.
-- A property cannot be reported as non-existent, if it exists as an own property
-  of the target object and the target object is not extensible.
-- A property cannot be reported as existent, if it does not exists as an own
-  property of the target object and the target object is not extensible.
-- A property cannot be reported as non-configurable, if it does not exists as an
-  own property of the target object or if it exists as a configurable own
-  property of the target object.
-- The result of
+*   `getOwnPropertyDescriptor()` must return an object or `undefined`.
+*   A property cannot be reported as non-existent, if it exists as a
+    non-configurable own property of the target object.
+*   A property cannot be reported as non-existent, if it exists as an own property
+    of the target object and the target object is not extensible.
+*   A property cannot be reported as existent, if it does not exists as an own
+    property of the target object and the target object is not extensible.
+*   A property cannot be reported as non-configurable, if it does not exists as an
+    own property of the target object or if it exists as a configurable own
+    property of the target object.
+*   The result of
 
-  <code>Object.getOwnPropertyDescriptor(<var>target</var>)</code>
+    <code>Object.getOwnPropertyDescriptor(<var>target</var>)</code>
 
-  can be applied to the target object using `Object.defineProperty()` and will
-  not throw an exception.
+    can be applied to the target object using `Object.defineProperty()` and will
+    not throw an exception.
 
 ## Examples
 
@@ -114,7 +115,7 @@ Object.getOwnPropertyDescriptor(p, 'a'); // TypeError is thrown
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Object.getOwnPropertyDescriptor()")}}
-- {{jsxref("Reflect.getOwnPropertyDescriptor()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Object.getOwnPropertyDescriptor()")}}
+*   {{jsxref("Reflect.getOwnPropertyDescriptor()")}}

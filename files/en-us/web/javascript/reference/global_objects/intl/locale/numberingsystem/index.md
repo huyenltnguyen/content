@@ -14,11 +14,9 @@ browser-compat: javascript.builtins.Intl.Locale.numberingSystem
 ---
 {{JSRef}}
 
-<span class="seoSummary">The
-<strong><code>Intl.Locale.prototype.numberingSystem</code></strong> property is
-an accessor property that returns the
-<a href="https://en.wikipedia.org/wiki/Numeral_system">numeral system</a> used
-by the locale.</span>
+The **`Intl.Locale.prototype.numberingSystem`** property is an accessor property
+that returns the [numeral system](https://en.wikipedia.org/wiki/Numeral_system)
+used by the locale.
 
 ## Description
 
@@ -159,5 +157,5 @@ console.log(us12hour.numberingSystem); // Prints "latn"
 
 ## See also
 
-- {{jsxref("Intl/Locale", "Intl.Locale")}}
-- [Details on the standard Unicode numeral systems](https://github.com/unicode-org/cldr/blob/master/common/supplemental/numberingSystems.xml)
+*   {{jsxref("Intl/Locale", "Intl.Locale")}}
+*   [Details on the standard Unicode numeral systems](https://github.com/unicode-org/cldr/blob/master/common/supplemental/numberingSystems.xml)

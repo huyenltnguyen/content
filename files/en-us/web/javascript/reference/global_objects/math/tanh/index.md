@@ -15,18 +15,7 @@ browser-compat: javascript.builtins.Math.tanh
 The **`Math.tanh()`** function returns the hyperbolic tangent of a number, that
 is
 
-<math display="block"><semantics><mrow><mo lspace="0em" rspace="0em">tanh</mo>
-<mi>x</mi> <mo>=</mo> <mfrac><mrow><mo lspace="0em" rspace="0em">sinh</mo>
-<mi>x</mi> </mrow><mrow><mo lspace="0em" rspace="0em">cosh</mo> <mi>x</mi>
-</mrow></mfrac><mo>=</mo> <mfrac><mrow><msup><mi>e</mi> <mi>x</mi>
-</msup><mo>-</mo> <msup><mi>e</mi> <mrow><mo>-</mo> <mi>x</mi>
-</mrow></msup></mrow><mrow><msup><mi>e</mi> <mi>x</mi> </msup><mo>+</mo>
-<msup><mi>e</mi> <mrow><mo>-</mo> <mi>x</mi>
-</mrow></msup></mrow></mfrac><mo>=</mo> <mfrac><mrow><msup><mi>e</mi>
-<mrow><mn>2</mn> <mi>x</mi> </mrow></msup><mo>-</mo> <mn>1</mn>
-</mrow><mrow><msup><mi>e</mi> <mrow><mn>2</mn> <mi>x</mi>
-</mrow></msup><mo>+</mo> <mn>1</mn>
-</mrow></mfrac></mrow><annotation encoding="TeX">\tanh x = \frac{\sinh x}{\cosh
+<math display="block"><semantics><mrow><mo lspace="0em" rspace="0em">tanh</mo> <mi>x</mi> <mo>=</mo> <mfrac><mrow><mo lspace="0em" rspace="0em">sinh</mo> <mi>x</mi> </mrow><mrow><mo lspace="0em" rspace="0em">cosh</mo> <mi>x</mi> </mrow></mfrac><mo>=</mo> <mfrac><mrow><msup><mi>e</mi> <mi>x</mi> </msup><mo>-</mo> <msup><mi>e</mi> <mrow><mo>-</mo> <mi>x</mi> </mrow></msup></mrow><mrow><msup><mi>e</mi> <mi>x</mi> </msup><mo>+</mo> <msup><mi>e</mi> <mrow><mo>-</mo> <mi>x</mi> </mrow></msup></mrow></mfrac><mo>=</mo> <mfrac><mrow><msup><mi>e</mi> <mrow><mn>2</mn> <mi>x</mi> </mrow></msup><mo>-</mo> <mn>1</mn> </mrow><mrow><msup><mi>e</mi> <mrow><mn>2</mn> <mi>x</mi> </mrow></msup><mo>+</mo> <mn>1</mn> </mrow></mfrac></mrow><annotation encoding="TeX">\tanh x = \frac{\sinh x}{\cosh
 x} = \frac {e^x - e^{-x}} {e^x + e^{-x}} = \frac{e^{2x} -
 1}{e^{2x}+1}</annotation></semantics></math>
 
@@ -34,12 +23,14 @@ x} = \frac {e^x - e^{-x}} {e^x + e^{-x}} = \frac{e^{2x} -
 
 ## Syntax
 
-<pre class="brush: js">Math.tanh(<var>x</var>)</pre>
+```js
+Math.tanh(x)
+```
 
 ### Parameters
 
-- `x`
-  - : A number.
+*   `x`
+    *   : A number.
 
 ### Return value
 
@@ -83,10 +74,10 @@ Math.tanh(1);        // 0.7615941559557649
 
 ## See also
 
-- A polyfill of `Math.tanh` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
-- {{jsxref("Math.acosh()")}}
-- {{jsxref("Math.asinh()")}}
-- {{jsxref("Math.atanh()")}}
-- {{jsxref("Math.cosh()")}}
-- {{jsxref("Math.sinh()")}}
+*   A polyfill of `Math.tanh` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
+*   {{jsxref("Math.acosh()")}}
+*   {{jsxref("Math.asinh()")}}
+*   {{jsxref("Math.atanh()")}}
+*   {{jsxref("Math.cosh()")}}
+*   {{jsxref("Math.sinh()")}}

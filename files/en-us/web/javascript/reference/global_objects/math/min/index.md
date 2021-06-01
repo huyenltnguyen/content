@@ -17,8 +17,7 @@ browser-compat: javascript.builtins.Math.min
 ---
 {{JSRef}}
 
-<span class="seoSummary">The static function
-<strong><code>Math.min()</code></strong> returns the lowest-valued number passed
+<span class="seoSummary">The static function <strong><code>Math.min()</code></strong> returns the lowest-valued number passed
 into it, or {{jsxref("NaN")}} if any parameter isn't a number and can't
 be converted into one.</span>
 
@@ -35,9 +34,9 @@ Math.min(value0, value1, ... , valueN)
 
 ### Parameters
 
-- <code><var>value1</var>, <var>value2</var>, ...</code>
-  - : Zero or more numbers among which the lowest value will be selected and
-    returned.
+*   <code><var>value1</var>, <var>value2</var>, ...</code>
+    *   : Zero or more numbers among which the lowest value will be selected and
+        returned.
 
 ### Return value
 
@@ -99,4 +98,4 @@ the other end.
 
 ## See also
 
-- {{jsxref("Math.max()")}}
+*   {{jsxref("Math.max()")}}

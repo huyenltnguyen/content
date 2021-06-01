@@ -17,9 +17,7 @@ is used in the creation of the default string description of an object. It is
 accessed internally by the
 {{jsxref("Object.prototype.toString()")}} method.
 
-{{EmbedInteractiveExample("pages/js/symbol-tostringtag.html")}}
-
-{{js_property_attributes(0,0,0)}}
+{{EmbedInteractiveExample("pages/js/symbol-tostringtag.html")}}{{js_property_attributes(0,0,0)}}
 
 ## Examples
 
@@ -91,6 +89,6 @@ test[Symbol.toStringTag];  // Returns HTMLButtonElement
 
 ## See also
 
-- A polyfill of `Symbol.toStringTag` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
-- {{jsxref("Object.prototype.toString()")}}
+*   A polyfill of `Symbol.toStringTag` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
+*   {{jsxref("Object.prototype.toString()")}}

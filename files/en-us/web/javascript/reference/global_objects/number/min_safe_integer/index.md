@@ -17,9 +17,7 @@ in JavaScript (`-(2^53 - 1)`).
 To represent integers smaller than this, consider using
 {{jsxref("BigInt")}}.
 
-{{EmbedInteractiveExample("pages/js/number-min-safe-integer.html")}}
-
-{{js_property_attributes(0, 0, 0)}}
+{{EmbedInteractiveExample("pages/js/number-min-safe-integer.html")}}{{js_property_attributes(0, 0, 0)}}
 
 ## Description
 
@@ -54,8 +52,8 @@ Number.MIN_SAFE_INTEGER // -9007199254740991
 
 ## See also
 
-- A polyfill of `Number.MIN_SAFE_INTEGER` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
-- {{jsxref("Number.MAX_SAFE_INTEGER")}}
-- {{jsxref("Number.isSafeInteger()")}}
-- {{jsxref("BigInt")}}
+*   A polyfill of `Number.MIN_SAFE_INTEGER` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
+*   {{jsxref("Number.MAX_SAFE_INTEGER")}}
+*   {{jsxref("Number.isSafeInteger()")}}
+*   {{jsxref("BigInt")}}

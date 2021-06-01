@@ -38,12 +38,12 @@ Array.from(arrayLike, function mapFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `arrayLike`
-  - : An array-like or iterable object to convert to an array.
-- `mapFn` {{Optional_inline}}
-  - : Map function to call on every element of the array.
-- `thisArg` {{Optional_inline}}
-  - : Value to use as `this` when executing `mapFn`.
+*   `arrayLike`
+    *   : An array-like or iterable object to convert to an array.
+*   `mapFn` {{Optional_inline}}
+    *   : Map function to call on every element of the array.
+*   `thisArg` {{Optional_inline}}
+    *   : Value to use as `this` when executing `mapFn`.
 
 ### Return value
 
@@ -53,18 +53,16 @@ A new {{jsxref("Array")}} instance.
 
 `Array.from()` lets you create `Array`s from:
 
-- array-like objects (objects with a `length` property and indexed elements); or
-- [iterable objects](/en-US/docs/Web/JavaScript/Guide/iterable) (objects such as
-  {{jsxref("Map")}} and {{jsxref("Set")}}).
+*   array-like objects (objects with a `length` property and indexed elements); or
+*   [iterable objects](/en-US/docs/Web/JavaScript/Guide/iterable) (objects such as
+    {{jsxref("Map")}} and {{jsxref("Set")}}).
 
 `Array.from()` has an optional parameter `mapFn`, which allows you to execute a
 {{jsxref("Array.prototype.map()", "map()")}} function on each
 element of the array being created.
 
-More clearly, <code>Array.from(<var>obj</var>, <var>mapFn</var>,
-<var>thisArg</var>)</code> has the same result
-as <code>Array.from(<var>obj</var>).map(<var>mapFn</var>,
-<var>thisArg</var>)</code>, except that it does not create an intermediate
+More clearly, <code>Array.from(<var>obj</var>, <var>mapFn</var>, <var>thisArg</var>)</code> has the same result
+as <code>Array.from(<var>obj</var>).map(<var>mapFn</var>, <var>thisArg</var>)</code>, except that it does not create an intermediate
 array.
 
 > **Note:** This is especially important for certain array subclasses, like
@@ -76,8 +74,8 @@ The `length` property of the `from()` method is `1`.
 
 In ES2015, the class syntax allows sub-classing of both built-in and
 user-defined classes. As a result, static methods such as `Array.from()` are
-"inherited" by subclasses of `Array`, and create new instances _of the
-subclass_, not `Array`.
+"inherited" by subclasses of `Array`, and create new instances *of the
+subclass*, not `Array`.
 
 ## Examples
 
@@ -185,8 +183,7 @@ your scripts, allowing use of `Array.from()` in implementations that don't
 natively support it.
 
 > **Note:** This algorithm is exactly as specified in ECMA-6th> Edition
-> (assuming `Object` and `TypeError` have their original values and that
-> <code><var>callback</var>.call()</code> evaluates to the original value of
+> (assuming `Object` and `TypeError` have their original values and that <code><var>callback</var>.call()</code> evaluates to the original value of
 > {{jsxref("Function.prototype.call()")}}).
 >
 > In addition, since true iterables cannot be polyfilled, this implementation
@@ -332,8 +329,8 @@ if (!Array.from) {
 
 ## See also
 
-- A polyfill of `Array.from` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array")}}
-- {{jsxref("Array.prototype.map()")}}
-- {{jsxref("TypedArray.from()")}}
+*   A polyfill of `Array.from` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array")}}
+*   {{jsxref("Array.prototype.map()")}}
+*   {{jsxref("TypedArray.from()")}}

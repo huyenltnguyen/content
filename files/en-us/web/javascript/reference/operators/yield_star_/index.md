@@ -22,10 +22,12 @@ object.
 
 ## Syntax
 
-<pre class="brush: js"> yield* <var>expression</var>;</pre>
+```js
+ yield* expression;
+```
 
-- `expression`
-  - : The expression which returns an iterable object.
+*   `expression`
+    *   : The expression which returns an iterable object.
 
 ## Description
 
@@ -123,7 +125,7 @@ console.log(iterator.next()); // {value: 'foo', done: true}
 
 ## See also
 
-- [The Iterator protocol](/en-US/docs/Web/JavaScript/Guide/The_Iterator_protocol)
-- {{jsxref("Statements/function*", "function*")}}
-- {{jsxref("Operators/function*", "function* expression")}}
-- {{jsxref("Operators/yield", "yield")}}
+*   [The Iterator protocol](/en-US/docs/Web/JavaScript/Guide/The_Iterator_protocol)
+*   {{jsxref("Statements/function*", "function*")}}
+*   {{jsxref("Operators/function*", "function* expression")}}
+*   {{jsxref("Operators/yield", "yield")}}

@@ -24,12 +24,12 @@ set(index, value)
 
 ### Parameters
 
-- _index_
-  - : The index of the function reference you want to mutate.
-- _value_
-  - : The value you want to mutate the reference to. This must be an
-    [exported WebAssembly function](/en-US/docs/WebAssembly/Exported_functions),
-    a JavaScript wrapper for an underlying wasm function.
+*   *index*
+    *   : The index of the function reference you want to mutate.
+*   *value*
+    *   : The value you want to mutate the reference to. This must be an
+        [exported WebAssembly function](/en-US/docs/WebAssembly/Exported_functions),
+        a JavaScript wrapper for an underlying wasm function.
 
 ### Return value
 
@@ -37,12 +37,12 @@ Void.
 
 ### Exceptions
 
-- If _index_ is greater than or equal
-  to {{jsxref("WebAssembly/Table/length","Table.prototype.length")}},
-  a {{jsxref("RangeError")}} is thrown.
-- If _value_ is not an exported WebAssembly function or
-  [`null`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/null), a
-  {{jsxref("TypeError")}} is thrown.
+*   If *index* is greater than or equal
+    to {{jsxref("WebAssembly/Table/length","Table.prototype.length")}},
+    a {{jsxref("RangeError")}} is thrown.
+*   If *value* is not an exported WebAssembly function or
+    [`null`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/null), a
+    {{jsxref("TypeError")}} is thrown.
 
 ## Examples
 
@@ -109,6 +109,6 @@ but the same table is visible and callable inside the wasm instance too.
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

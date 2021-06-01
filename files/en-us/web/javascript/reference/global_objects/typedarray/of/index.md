@@ -29,12 +29,22 @@ TypedArray.of(element0, element1, ... , elementN)
 
 Where `TypedArray` is one of:
 
-<div class="threecolumns"><ul><li>{{jsxref("Int8Array")}}</li><li>{{jsxref("Uint8Array")}}</li><li>{{jsxref("Uint8ClampedArray")}}</li><li>{{jsxref("Int16Array")}}</li><li>{{jsxref("Uint16Array")}}</li><li>{{jsxref("Int32Array")}}</li><li>{{jsxref("Uint32Array")}}</li><li>{{jsxref("Float32Array")}}</li><li>{{jsxref("Float64Array")}}</li><li>{{jsxref("BigInt64Array")}}</li><li>{{jsxref("BigUint64Array")}}</li></ul></div>
+*   {{jsxref("Int8Array")}}
+*   {{jsxref("Uint8Array")}}
+*   {{jsxref("Uint8ClampedArray")}}
+*   {{jsxref("Int16Array")}}
+*   {{jsxref("Uint16Array")}}
+*   {{jsxref("Int32Array")}}
+*   {{jsxref("Uint32Array")}}
+*   {{jsxref("Float32Array")}}
+*   {{jsxref("Float64Array")}}
+*   {{jsxref("BigInt64Array")}}
+*   {{jsxref("BigUint64Array")}}
 
 ### Parameters
 
-- <code><var>element<var>N</var></var></code>
-  - : Elements of which to create the typed array.
+*   <code><var>element<var>N</var></var></code>
+    *   : Elements of which to create the typed array.
 
 ### Return value
 
@@ -42,28 +52,27 @@ A new {{jsxref("TypedArray")}} instance.
 
 ## Description
 
-Some subtle distinctions between {{jsxref("Array.of()")}} and
-<code><var>TypedArray</var>.of()</code>:
+Some subtle distinctions between {{jsxref("Array.of()")}} and <code><var>TypedArray</var>.of()</code>:
 
-- If the `this` value passed to
+*   If the `this` value passed to
 
-  <code><var>TypedArray</var>.of()</code>
+    <code><var>TypedArray</var>.of()</code>
 
-  is not a constructor,
+    is not a constructor,
 
-  <code><var>TypedArray</var>.of()</code>
+    <code><var>TypedArray</var>.of()</code>
 
-  will throw a {{jsxref("TypeError")}}, where `Array.of()` defaults to
-  creating a new {{jsxref("Array")}}.
+    will throw a {{jsxref("TypeError")}}, where `Array.of()` defaults to
+    creating a new {{jsxref("Array")}}.
 
-- <code><var>TypedArray</var>.of()</code>
+*   <code><var>TypedArray</var>.of()</code>
 
-  uses `[[Put]]` where `Array.of()` uses `[[DefineProperty]]`. Hence, when
-  working with {{jsxref("Proxy")}} objects, it calls
-  {{jsxref("Global_Objects/Proxy/handler/set",
+    uses `[[Put]]` where `Array.of()` uses `[[DefineProperty]]`. Hence, when
+    working with {{jsxref("Proxy")}} objects, it calls
+    {{jsxref("Global_Objects/Proxy/handler/set",
     "handler.set")}}
-  to create new elements rather than
-  {{jsxref("Global_Objects/Proxy/handler/defineProperty", "handler.defineProperty()")}}.
+    to create new elements rather than
+    {{jsxref("Global_Objects/Proxy/handler/defineProperty", "handler.defineProperty()")}}.
 
 ## Examples
 
@@ -86,7 +95,7 @@ Int16Array.of(undefined);    // Int16Array [ 0 ]
 
 ## See also
 
-- A polyfill of `TypedArray.of` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray.from()")}}
-- {{jsxref("Array.of()")}}
+*   A polyfill of `TypedArray.of` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray.from()")}}
+*   {{jsxref("Array.of()")}}

@@ -34,13 +34,14 @@ for complete information about expressions.
 The most basic statement is a <dfn>block statement</dfn>, which is used to group
 statements. The block is delimited by a pair of curly brackets:
 
-<pre class="brush: js">{
-  <var>statement_1</var>;
-  <var>statement_2</var>;
+```js
+{
+  statement_1;
+  statement_2;
   ⋮
-  <var>statement_n</var>;
+  statement_n;
 }
-</pre>
+```
 
 ### Example
 
@@ -58,8 +59,8 @@ Here, `{ x++; }` is the block statement.
 > **Note:** JavaScript before ECMAScript2015 (6th edition) **does not** have
 > block scope!  In older JavaScript, variables introduced within a block are
 > scoped to the containing function or script, and the effects of setting them
-> persist beyond the block itself. In other words, _block statements do not
-> define a scope_.
+> persist beyond the block itself. In other words, *block statements do not
+> define a scope*.
 >
 > "Standalone" blocks in JavaScript can produce completely different results
 > from what they would produce in C or Java. For example:
@@ -95,11 +96,13 @@ Use the optional `else` clause to execute a statement if the condition is
 
 An `if` statement looks like this:
 
-<pre class="brush: js">if (<var>condition</var>) {
-  <var>statement_1</var>;
+```js
+if (condition) {
+  statement_1;
 } else {
-  <var>statement_2</var>;
-}</pre>
+  statement_2;
+}
+```
 
 Here, the `condition` can be any expression that evaluates to `true` or `false`.
 (See
@@ -113,16 +116,17 @@ including further nested `if` statements.
 You can also compound the statements using `else if` to have multiple conditions
 tested in sequence, as follows:
 
-<pre class="brush: js">if (<var>condition_1</var>) {
-  <var>statement_1</var>;
-} else if (<var>condition_2</var>) {
-  <var>statement_2</var>;
-} else if (<var>condition_n</var>) {
-  <var>statement_n</var>;
+```js
+if (condition_1) {
+  statement_1;
+} else if (condition_2) {
+  statement_2;
+} else if (condition_n) {
+  statement_n;
 } else {
-  <var>statement_last</var>;
+  statement_last;
 }
-</pre>
+```
 
 In the case of multiple conditions, only the first logical condition which
 evaluates to `true` will be executed. To execute multiple statements, group them
@@ -130,22 +134,23 @@ within a block statement (`{ … }`).
 
 #### Best practice
 
-In general, it's good practice to always use block statements—_especially_ when
+In general, it's good practice to always use block statements—*especially* when
 nesting `if` statements:
 
-<pre class="brush: js">if (<var>condition</var>) {
-  <var>statement_1_runs_if_condition_is_true</var>;
-  <var>statement_2_runs_if_condition_is_true</var>;
+```js
+if (condition) {
+  statement_1_runs_if_condition_is_true;
+  statement_2_runs_if_condition_is_true;
 } else {
-  <var>statement_3_runs_if_condition_is_false</var>;
-  <var>statement_4_runs_if_condition_is_false</var>;
+  statement_3_runs_if_condition_is_false;
+  statement_4_runs_if_condition_is_false;
 }
-</pre>
+```
 
 It's unwise to use simple assignments in a conditional expression, because the
 assignment can be confused with equality when glancing over the code.
 
-For example, do _not_ write code like this:
+For example, do *not* write code like this:
 
 ```js example-bad
 // Prone to being misread as "x == y"
@@ -168,12 +173,12 @@ if ((x = y)) {
 The following values evaluate to `false` (also known as
 [Falsy](/en-US/docs/Glossary/Falsy) values):
 
-- `false`
-- `undefined`
-- `null`
-- `0`
-- `NaN`
-- the empty string (`""`)
+*   `false`
+*   `undefined`
+*   `null`
+*   `0`
+*   `NaN`
+*   the empty string (`""`)
 
 All other values—including all objects—evaluate to `true` when passed to a
 conditional statement.
@@ -216,34 +221,35 @@ executes the associated statement.
 
 A `switch` statement looks like this:
 
-<pre class="brush: js">switch (<var>expression</var>) {
-  case <var>label_1</var>:
-    <var>statements_1</var>
+```js
+switch (expression) {
+  case label_1:
+    statements_1
     [break;]
-  case <var>label_2</var>:
-    <var>statements_2</var>
+  case label_2:
+    statements_2
     [break;]
     …
   default:
-    <var>statements_def</var>
+    statements_def
     [break;]
 }
-</pre>
+```
 
 JavaScript evaluates the above switch statement as follows:
 
-- The program first looks for a `case` clause with a label matching the value of
-  expression and then transfers control to that clause, executing the associated
-  statements.
-- If no matching label is found, the program looks for the optional `default`
-  clause:
+*   The program first looks for a `case` clause with a label matching the value of
+    expression and then transfers control to that clause, executing the associated
+    statements.
+*   If no matching label is found, the program looks for the optional `default`
+    clause:
 
-  - If a `default` clause is found, the program transfers control to that
-    clause, executing the associated statements.
-  - If no `default` clause is found, the program resumes execution at the
-    statement following the end of `switch`.
-  - (By convention, the `default` clause is written as the last clause, but it
-    does not need to be so.)
+    *   If a `default` clause is found, the program transfers control to that
+        clause, executing the associated statements.
+    *   If no `default` clause is found, the program resumes execution at the
+        statement following the end of `switch`.
+    *   (By convention, the `default` clause is written as the last clause, but it
+        does not need to be so.)
 
 #### break statements
 
@@ -261,7 +267,8 @@ When `break` is encountered, the program exits the `switch` and continues
 execution from the statement following `switch`. If `break` were omitted, the
 statement for `case 'Cherries'` would also be executed.
 
-<pre class="brush: js">switch (<var>fruittype</var>) {
+```js
+switch (fruittype) {
   case 'Oranges':
     console.log('Oranges are $0.59 a pound.');
     break;
@@ -283,15 +290,16 @@ statement for `case 'Cherries'` would also be executed.
   default:
    console.log(`Sorry, we are out of ${fruittype}.`);
 }
-console.log("Is there anything else you'd like?");</pre>
+console.log("Is there anything else you'd like?");
+```
 
 ## Exception handling statements
 
 You can throw exceptions using the `throw` statement and handle them using the
 `try...catch` statements.
 
-- [`throw` statement](#throw_statement)
-- [`try...catch` statement](#try...catch_statement)
+*   [`throw` statement](#throw_statement)
+*   [`try...catch` statement](#try...catch_statement)
 
 ### Exception types
 
@@ -300,17 +308,18 @@ objects are created equal. While it is common to throw numbers or strings as
 errors, it is frequently more effective to use one of the exception types
 specifically created for this purpose:
 
-- [ECMAScript exceptions](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#error_types)
-- [`DOMException`](/en-US/docs/Web/API/DOMException "The DOMException interface represents an abnormal event (called an exception) which occurs as a result of calling a method or accessing a property of a web API.")
-  and [`DOMError`](/en-US/docs/Web/API/DOMError "The DOMError interface describes an error object that contains an error name.")
+*   [ECMAScript exceptions](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#error_types)
+*   [`DOMException`](/en-US/docs/Web/API/DOMException "The DOMException interface represents an abnormal event (called an exception) which occurs as a result of calling a method or accessing a property of a web API.")
+    and [`DOMError`](/en-US/docs/Web/API/DOMError "The DOMError interface describes an error object that contains an error name.")
 
 ### `throw` statement
 
 Use the `throw` statement to throw an exception. A `throw` statement
 specifies the value to be thrown:
 
-<pre class="brush: js">throw <var>expression</var>;
-</pre>
+```js
+throw expression;
+```
 
 You may throw any expression, not just expressions of a specific type. The
 following code throws several exceptions of varying types:
@@ -355,7 +364,7 @@ do if an exception is thrown in the `try` block.
 In other words, you want the `try` block to succeed—but if it does not, you want
 control to pass to the `catch` block. If any statement within the `try` block
 (or in a function called from within the `try` block) throws an exception,
-control _immediately_ shifts to the `catch` block. If no exception is thrown in
+control *immediately* shifts to the `catch` block. If no exception is thrown in
 the `try` block, the `catch` block is skipped. The `finally` block executes
 after the `try` and `catch` blocks execute but before the statements following
 the `try...catch` statement.
@@ -392,10 +401,11 @@ catch (e) {
 You can use a `catch` block to handle all exceptions that may be generated in
 the `try` block.
 
-<pre class="brush: js">catch (<var>catchID</var>) {
-  <var>statements</var>
+```js
+catch (catchID) {
+  statements
 }
-</pre>
+```
 
 The `catch` block specifies an identifier (`catchID` in the preceding syntax)
 that holds the value specified by the `throw` statement. You can use this
@@ -425,12 +435,12 @@ catch (err) {
 
 #### The `finally` block
 
-The `finally` block contains statements to be executed _after_ the `try` and
-`catch` blocks execute. Additionally, the `finally` block executes _before_ the
+The `finally` block contains statements to be executed *after* the `try` and
+`catch` blocks execute. Additionally, the `finally` block executes *before* the
 code that follows the `try…catch…finally` statement.
 
-It is also important to note that the `finally` block will execute _whether or
-not_ an exception is thrown. If an exception is thrown, however, the statements
+It is also important to note that the `finally` block will execute *whether or
+not* an exception is thrown. If an exception is thrown, however, the statements
 in the `finally` block execute even if no `catch` block handles the exception
 that was thrown.
 
@@ -441,7 +451,7 @@ script has tied up.
 The following example opens a file and then executes statements that use the
 file. (Server-side JavaScript allows you to access files.) If an exception is
 thrown while the file is open, the `finally` block closes the file before the
-script fails. Using `finally` here _ensures_ that the file is never left open,
+script fails. Using `finally` here *ensures* that the file is never left open,
 even if an error occurs.
 
 ```js
@@ -515,7 +525,7 @@ try {
 
 You can nest one or more `try...catch` statements.
 
-If an inner `try` block does _not_ have a corresponding `catch` block:
+If an inner `try` block does *not* have a corresponding `catch` block:
 
 1.  it *must* contain a `finally` block, and
 2.  the enclosing `try...catch` statement's `catch` block is checked for a

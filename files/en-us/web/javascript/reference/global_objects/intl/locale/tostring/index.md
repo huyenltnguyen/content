@@ -13,10 +13,8 @@ browser-compat: javascript.builtins.Intl.Locale.toString
 ---
 {{JSRef}}
 
-<span class="seoSummary">The
-<strong><code>Intl.Locale.prototype.toString()</code></strong> returns the
-Locale's full
-<a href="https://www.unicode.org/reports/tr35/#Unicode_locale_identifier">locale
+<span class="seoSummary">The <strong><code>Intl.Locale.prototype.toString()</code></strong> returns the
+Locale's full <a href="https://www.unicode.org/reports/tr35/#Unicode_locale_identifier">locale
 identifier string</a>.</span>
 
 {{EmbedInteractiveExample("pages/js/intl-locale-prototype-tostring.html")}}
@@ -65,5 +63,5 @@ console.log(myLocale.toString()); // Prints "fr-Latn-FR-u-ca-gregory-hc-h24"
 
 ## See also
 
-- {{jsxref("Intl.Locale")}}
-- {{jsxref("Intl/Locale/baseName", "Intl.Locale.baseName")}}
+*   {{jsxref("Intl.Locale")}}
+*   {{jsxref("Intl/Locale/baseName", "Intl.Locale.baseName")}}

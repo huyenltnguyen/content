@@ -18,12 +18,14 @@ with a given reason.
 
 ## Syntax
 
-<pre class="brush: js">Promise.reject(<var>reason</var>);</pre>
+```js
+Promise.reject(reason);
+```
 
 ### Parameters
 
-- `reason`
-  - : Reason why this `Promise` rejected.
+*   `reason`
+    *   : Reason why this `Promise` rejected.
 
 ### Return value
 
@@ -57,4 +59,4 @@ Promise.reject(new Error('fail')).then(function() {
 
 ## See also
 
-- {{jsxref("Promise")}}
+*   {{jsxref("Promise")}}

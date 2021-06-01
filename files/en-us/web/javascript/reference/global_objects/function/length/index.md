@@ -12,9 +12,7 @@ browser-compat: javascript.builtins.Function.length
 The **`length`** property indicates the number of parameters expected by the
 function.
 
-{{EmbedInteractiveExample("pages/js/function-length.html")}}
-
-{{js_property_attributes(0,0,1)}}
+{{EmbedInteractiveExample("pages/js/function-length.html")}}{{js_property_attributes(0,0,1)}}
 
 ## Description
 
@@ -69,4 +67,4 @@ console.log((function(a, b = 1, c) {}).length);
 
 ## See also
 
-- {{jsxref("Function")}}
+*   {{jsxref("Function")}}

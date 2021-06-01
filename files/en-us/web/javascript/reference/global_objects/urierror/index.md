@@ -16,29 +16,29 @@ function was used in a wrong way.
 
 ## Constructor
 
-- {{jsxref("Global_Objects/URIError/URIError", "URIError()")}}
-  - : Creates a new `URIError` object.
+*   {{jsxref("Global_Objects/URIError/URIError", "URIError()")}}
+    *   : Creates a new `URIError` object.
 
 ## Instance properties
 
-- {{jsxref("Error.prototype.message", "URIError.prototype.message")}}
-  - : Error message. Although ECMA-262 specifies that
-    {{jsxref("URIError")}} should provide its own `message` property, in
-    [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
-    {{jsxref("Error.prototype.message")}}.
-- {{jsxref("Error.prototype.name", "URIError.prototype.name")}}
-  - : Error name. Inherited from {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.fileName", "URIError.prototype.fileName")}}
-  - : Path to file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.lineNumber", "URIError.prototype.lineNumber")}}
-  - : Line number in file that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.columnNumber", "URIError.prototype.columnNumber")}}
-  - : Column number in line that raised this error. Inherited from
-    {{jsxref("Error")}}.
-- {{jsxref("Error.prototype.stack", "URIError.prototype.stack")}}
-  - : Stack trace. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.message", "URIError.prototype.message")}}
+    *   : Error message. Although ECMA-262 specifies that
+        {{jsxref("URIError")}} should provide its own `message` property, in
+        [SpiderMonkey](/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits
+        {{jsxref("Error.prototype.message")}}.
+*   {{jsxref("Error.prototype.name", "URIError.prototype.name")}}
+    *   : Error name. Inherited from {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.fileName", "URIError.prototype.fileName")}}
+    *   : Path to file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.lineNumber", "URIError.prototype.lineNumber")}}
+    *   : Line number in file that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.columnNumber", "URIError.prototype.columnNumber")}}
+    *   : Column number in line that raised this error. Inherited from
+        {{jsxref("Error")}}.
+*   {{jsxref("Error.prototype.stack", "URIError.prototype.stack")}}
+    *   : Stack trace. Inherited from {{jsxref("Error")}}.
 
 ## Examples
 
@@ -84,8 +84,8 @@ try {
 
 ## See also
 
-- {{jsxref("Error")}}
-- {{jsxref("Global_Objects/decodeURI", "decodeURI()")}}
-- {{jsxref("Global_Objects/decodeURIComponent", "decodeURIComponent()")}}
-- {{jsxref("Global_Objects/encodeURI", "encodeURI()")}}
-- {{jsxref("Global_Objects/encodeURIComponent", "encodeURIComponent()")}}
+*   {{jsxref("Error")}}
+*   {{jsxref("Global_Objects/decodeURI", "decodeURI()")}}
+*   {{jsxref("Global_Objects/decodeURIComponent", "decodeURIComponent()")}}
+*   {{jsxref("Global_Objects/encodeURI", "encodeURI()")}}
+*   {{jsxref("Global_Objects/encodeURIComponent", "encodeURIComponent()")}}

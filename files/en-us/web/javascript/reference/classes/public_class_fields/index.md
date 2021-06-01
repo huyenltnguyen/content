@@ -12,7 +12,7 @@ browser-compat: javascript.classes.public_class_fields
 > **Note:** This page describes experimental features.
 >
 > Both public and private field declarations are an
-> [experimental feature (stage 3\)](https://github.com/tc39/proposal-class-fields)
+> [experimental feature (stage 3)](https://github.com/tc39/proposal-class-fields)
 > proposed at [TC39](https://tc39.es/), the JavaScript standards committee.
 >
 > Support in browsers is limited, but the feature can be used through a build
@@ -309,10 +309,10 @@ console.log(instance.msg)
 
 ## See also
 
-- [Public and private class fields](https://v8.dev/features/class-fields)
-  article at the v8.dev site.
-- [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript)
-  explainer, by the
-  [Public and private instance fields](https://github.com/tc39/proposal-class-fields)
-  authors
-- [The Semantics of All JS Class Elements](https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html)
+*   [Public and private class fields](https://v8.dev/features/class-fields)
+    article at the v8.dev site.
+*   [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript)
+    explainer, by the
+    [Public and private instance fields](https://github.com/tc39/proposal-class-fields)
+    authors
+*   [The Semantics of All JS Class Elements](https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html)

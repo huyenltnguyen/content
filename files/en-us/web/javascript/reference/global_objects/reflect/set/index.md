@@ -26,15 +26,15 @@ Reflect.set(target, propertyKey, value, receiver)
 
 ### Parameters
 
-- `target`
-  - : The target object on which to set the property.
-- `propertyKey`
-  - : The name of the property to set.
-- `value`
-  - : The value to set.
-- `receiver` {{optional_inline}}
-  - : The value of `this` provided for the call to `target` if a setter is
-    encountered.
+*   `target`
+    *   : The target object on which to set the property.
+*   `propertyKey`
+    *   : The name of the property to set.
+*   `value`
+    *   : The value to set.
+*   `receiver` {{optional_inline}}
+    *   : The value of `this` provided for the call to `target` if a setter is
+        encountered.
 
 ### Return value
 
@@ -89,7 +89,7 @@ Reflect.getOwnPropertyDescriptor(obj, 'undefined')
 
 ## See also
 
-- A polyfill of `Reflect.set` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- [Property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)
+*   A polyfill of `Reflect.set` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   [Property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)

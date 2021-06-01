@@ -37,13 +37,13 @@ that's why JavaScript presents an error in strict mode.
 
 Three things to note about declared and undeclared variables:
 
-- Declared variables are constrained in the execution context in which they are
-  declared. Undeclared variables are always global.
-- Declared variables are created before any code is executed. Undeclared
-  variables do not exist until the code assigning to them is executed.
-- Declared variables are a non-configurable property of their execution context
-  (function or global). Undeclared variables are configurable (e.g. can be
-  deleted).
+*   Declared variables are constrained in the execution context in which they are
+    declared. Undeclared variables are always global.
+*   Declared variables are created before any code is executed. Undeclared
+    variables do not exist until the code assigning to them is executed.
+*   Declared variables are a non-configurable property of their execution context
+    (function or global). Undeclared variables are configurable (e.g. can be
+    deleted).
 
 For more details and examples, see the
 [`var`](/en-US/docs/Web/JavaScript/Reference/Statements/var) reference page.
@@ -82,4 +82,4 @@ foo();
 
 ## See also
 
-- [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+*   [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)

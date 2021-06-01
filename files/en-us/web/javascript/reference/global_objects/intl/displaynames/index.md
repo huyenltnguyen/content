@@ -22,23 +22,23 @@ language, region and script display names.
 
 ## Constructor
 
-- {{jsxref("Intl/DisplayNames/DisplayNames", "Intl.DisplayNames()")}}
-  - : Creates a new `Intl.DisplayNames` object.
+*   {{jsxref("Intl/DisplayNames/DisplayNames", "Intl.DisplayNames()")}}
+    *   : Creates a new `Intl.DisplayNames` object.
 
 ## Static methods
 
-- {{jsxref("Intl/DisplayNames/supportedLocalesOf", "Intl.DisplayNames.supportedLocalesOf()")}}
-  - : Returns an array containing those of the provided locales that are
-    supported without having to fall back to the runtime's default locale.
+*   {{jsxref("Intl/DisplayNames/supportedLocalesOf", "Intl.DisplayNames.supportedLocalesOf()")}}
+    *   : Returns an array containing those of the provided locales that are
+        supported without having to fall back to the runtime's default locale.
 
 ## Instance methods
 
-- {{jsxref("Intl/DisplayNames/of", "Intl.DisplayNames.prototype.of()")}}
-  - : This method receives a `code` and returns a string based on the locale and
-    options provided when instantiating `Intl.DisplayNames`.
-- {{jsxref("Intl/DisplayNames/resolvedOptions", "Intl.DisplayNames.prototype.resolvedOptions()")}}
-  - : Returns a new object with properties reflecting the locale and formatting
-    options computed during initialization of the object.
+*   {{jsxref("Intl/DisplayNames/of", "Intl.DisplayNames.prototype.of()")}}
+    *   : This method receives a `code` and returns a string based on the locale and
+        options provided when instantiating `Intl.DisplayNames`.
+*   {{jsxref("Intl/DisplayNames/resolvedOptions", "Intl.DisplayNames.prototype.resolvedOptions()")}}
+    *   : Returns a new object with properties reflecting the locale and formatting
+        options computed during initialization of the object.
 
 ## Examples
 
@@ -139,4 +139,4 @@ currencyNames.of('CNY'); // "人民幣"
 
 ## See also
 
-- {{jsxref("Intl")}}
+*   {{jsxref("Intl")}}

@@ -29,39 +29,39 @@ split(separator, limit)
 
 ### Parameters
 
-- `separator` {{optional_inline}}
-  - : The pattern describing where each split should occur.  The `separator` can
-    be a simple string or it can be a
-    {{jsxref("Global_Objects/RegExp", "regular expression", "", 1)}}.
-    - The simplest case is when `separator` is just a single character; this is
-      used to split a delimited string.  For example, a string containing tab
-      separated values (TSV) could be parsed by passing a tab character as the
-      separator, like this: `myString.split("\t")`.
-    - If `separator` contains multiple characters, that entire character
-      sequence must be found in order to split.
-    - If `separator` is omitted or does not occur in `str`, the returned array
-      contains one element consisting of the entire string.
-    - If `separator` appears at the beginning (or end) of the string, it still
-      has the effect of splitting.  The result is an empty (i.e. zero length)
-      string, which appears at the first (or last) position of the returned
-      array.
-    - If `separator` is an empty string (`""`), `str` is converted to an array
-      of each of its UTF-16 "characters".
-      > **Warning:** When the empty string (`""`) is used as a separator, the
-      > string is **not** split by _user-perceived characters_
-      > ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries))
-      > or unicode characters (codepoints), but by UTF-16 codeunits. This
-      > destroys [surrogate pairs](http://unicode.org/faq/utf_bom.html#utf16-2).
-      > See
-      > [“How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
-- `limit` {{optional_inline}}
-  - : A non-negative integer specifying a limit on the number of substrings to
-    be included in the array. If provided, splits the string at each occurrence
-    of the specified `separator`, but stops when `limit` entries have been
-    placed in the array. Any leftover text is not included in the array at all.
-    - The array may contain fewer entries than `limit` if the end of the string
-      is reached before the limit is reached.
-    - If `limit` is `0`, `[]` is returned.
+*   `separator` {{optional_inline}}
+    *   : The pattern describing where each split should occur.  The `separator` can
+        be a simple string or it can be a
+        {{jsxref("Global_Objects/RegExp", "regular expression", "", 1)}}.
+        *   The simplest case is when `separator` is just a single character; this is
+            used to split a delimited string.  For example, a string containing tab
+            separated values (TSV) could be parsed by passing a tab character as the
+            separator, like this: `myString.split("\t")`.
+        *   If `separator` contains multiple characters, that entire character
+            sequence must be found in order to split.
+        *   If `separator` is omitted or does not occur in `str`, the returned array
+            contains one element consisting of the entire string.
+        *   If `separator` appears at the beginning (or end) of the string, it still
+            has the effect of splitting.  The result is an empty (i.e. zero length)
+            string, which appears at the first (or last) position of the returned
+            array.
+        *   If `separator` is an empty string (`""`), `str` is converted to an array
+            of each of its UTF-16 "characters".
+            > **Warning:** When the empty string (`""`) is used as a separator, the
+            > string is **not** split by *user-perceived characters*
+            > ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries))
+            > or unicode characters (codepoints), but by UTF-16 codeunits. This
+            > destroys [surrogate pairs](http://unicode.org/faq/utf_bom.html#utf16-2).
+            > See
+            > [“How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
+*   `limit` {{optional_inline}}
+    *   : A non-negative integer specifying a limit on the number of substrings to
+        be included in the array. If provided, splits the string at each occurrence
+        of the specified `separator`, but stops when `limit` entries have been
+        placed in the array. Any leftover text is not included in the array at all.
+        *   The array may contain fewer entries than `limit` if the end of the string
+            is reached before the limit is reached.
+        *   If `limit` is `0`, `[]` is returned.
 
 ### Return value
 
@@ -185,7 +185,7 @@ This script displays the following:
 ### Splitting with a `RegExp` to include parts of the separator in the result
 
 If `separator` is a regular expression that contains capturing parentheses
-` (``) `, matched results are included in the array.
+`(``)`, matched results are included in the array.
 
 ```js
 const myString = 'Hello 1 word. Sentence number 2.'
@@ -241,8 +241,8 @@ This script displays the following:
 
 ## See also
 
-- {{jsxref("String.prototype.charAt()")}}
-- {{jsxref("String.prototype.indexOf()")}}
-- {{jsxref("String.prototype.lastIndexOf()")}}
-- {{jsxref("Array.prototype.join()")}}
-- [Using regular expressions in JavaScript](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+*   {{jsxref("String.prototype.charAt()")}}
+*   {{jsxref("String.prototype.indexOf()")}}
+*   {{jsxref("String.prototype.lastIndexOf()")}}
+*   {{jsxref("Array.prototype.join()")}}
+*   [Using regular expressions in JavaScript](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)

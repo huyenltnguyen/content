@@ -22,8 +22,9 @@ will return a non-Boolean value.
 
 ## Syntax
 
-<pre class="brush: js"><em>expr1</em> || <em>expr2</em>
-</pre>
+```js
+expr1 || expr2
+```
 
 ## Description
 
@@ -35,11 +36,11 @@ is so-called {{Glossary("falsy")}}.
 
 Examples of expressions that can be converted to false are:
 
-- `null`;
-- `NaN`;
-- `0`;
-- empty string (`""` or `''` or ` `` `);
-- `undefined`.
+*   `null`;
+*   `NaN`;
+*   `0`;
+*   empty string (`""` or `''` or ` `` `);
+*   `undefined`.
 
 Even though the `||` operator can be used with operands that are not Boolean
 values, it can still be considered a boolean operator since its return value can
@@ -61,8 +62,7 @@ The logical OR expression is evaluated left to right, it is tested for possible
 evaluated to the truthy expression.
 
 Short circuit means that the <code><em>expr</em></code> part above is **not
-evaluated**, hence any side effects of doing so do not take effect (e.g., if
-<code><em>expr</em></code> is a function call, the calling never takes place).
+evaluated**, hence any side effects of doing so do not take effect (e.g., if <code><em>expr</em></code> is a function call, the calling never takes place).
 This happens because the value of the operator is already determined after the
 evaluation of the first operand. See example:
 
@@ -106,7 +106,7 @@ o10 = false || varObject // f || object returns varObject
 ```
 
 > **Note:** If you use this operator to provide a default value to some
-> variable, be aware that any _falsy_ value will not be used. If you only need
+> variable, be aware that any *falsy* value will not be used. If you only need
 > to filter out {{jsxref("null")}} or {{jsxref("undefined")}},
 > consider using
 > [the nullish coalescing operator](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator).
@@ -168,7 +168,7 @@ is always equal to:
 
 ## See also
 
-- [The nullish coalescing operator (`??`)](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
-- {{jsxref("Boolean")}}
-- {{Glossary("Truthy")}}
-- {{Glossary("Falsy")}}
+*   [The nullish coalescing operator (`??`)](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
+*   {{jsxref("Boolean")}}
+*   {{Glossary("Truthy")}}
+*   {{Glossary("Falsy")}}

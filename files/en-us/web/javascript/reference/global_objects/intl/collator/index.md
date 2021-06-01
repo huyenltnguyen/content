@@ -21,25 +21,25 @@ The **`Intl.Collator`** object enables language-sensitive string comparison.
 
 ## Constructor
 
-- {{jsxref("Intl/Collator/Collator", "Intl.Collator()")}}
-  - : Creates a new `Collator` object.
+*   {{jsxref("Intl/Collator/Collator", "Intl.Collator()")}}
+    *   : Creates a new `Collator` object.
 
 ## Static methods
 
-- {{jsxref("Intl/Collator/supportedLocalesOf", "Intl.Collator.supportedLocalesOf()")}}
-  - : Returns an array containing those of the provided locales that are
-    supported without having to fall back to the runtime's default locale.
+*   {{jsxref("Intl/Collator/supportedLocalesOf", "Intl.Collator.supportedLocalesOf()")}}
+    *   : Returns an array containing those of the provided locales that are
+        supported without having to fall back to the runtime's default locale.
 
 ## Instance methods
 
-- {{jsxref("Intl/Collator/compare", "Intl.Collator.prototype.compare")}}
-  - : Getter function that compares two strings according to the sort order of
-    this
-    {{jsxref("Global_Objects/Intl/Collator", "Intl.Collator")}}
-    object.
-- {{jsxref("Intl/Collator/resolvedOptions", "Intl.Collator.prototype.resolvedOptions()")}}
-  - : Returns a new object with properties reflecting the locale and collation
-    options computed during initialization of the object.
+*   {{jsxref("Intl/Collator/compare", "Intl.Collator.prototype.compare")}}
+    *   : Getter function that compares two strings according to the sort order of
+        this
+        {{jsxref("Global_Objects/Intl/Collator", "Intl.Collator")}}
+        object.
+*   {{jsxref("Intl/Collator/resolvedOptions", "Intl.Collator.prototype.resolvedOptions()")}}
+    *   : Returns a new object with properties reflecting the locale and collation
+        options computed during initialization of the object.
 
 ## Examples
 
@@ -101,4 +101,4 @@ console.log(new Intl.Collator('sv', { sensitivity: 'base' }).compare('ä', 'a'))
 
 ## See also
 
-- {{jsxref("Intl")}}
+*   {{jsxref("Intl")}}

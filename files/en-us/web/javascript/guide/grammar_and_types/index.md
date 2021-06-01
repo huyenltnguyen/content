@@ -33,7 +33,7 @@ In JavaScript, instructions are called
 semicolons (;).
 
 A semicolon is not necessary after a statement if it is written on its own line.
-But if more than one statement on a line is desired, then they _must_ be
+But if more than one statement on a line is desired, then they *must* be
 separated by semicolons.
 
 > **Note:** ECMAScript also has rules for automatic insertion of semicolons
@@ -47,8 +47,8 @@ statement, even when it is not strictly needed. This practice reduces the
 chances of bugs getting into the code.
 
 The source text of JavaScript script gets scanned from left to right, and is
-converted into a sequence of input elements which are _tokens_, _control
-characters_, _line terminators_, _comments_, or
+converted into a sequence of input elements which are *tokens*, *control
+characters*, *line terminators*, *comments*, or
 {{glossary("whitespace")}}. (Spaces, tabs, and newline characters are
 considered whitespace.)
 
@@ -81,13 +81,13 @@ Comments behave like whitespace, and are discarded during script execution.
 
 JavaScript has three kinds of variable declarations.
 
-- {{jsxref("Statements/var", "var")}}
-  - : Declares a variable, optionally initializing it to a value.
-- {{jsxref("Statements/let", "let")}}
-  - : Declares a block-scoped, local variable, optionally initializing it to a
-    value.
-- {{jsxref("Statements/const", "const")}}
-  - : Declares a block-scoped, read-only named constant.
+*   {{jsxref("Statements/var", "var")}}
+    *   : Declares a variable, optionally initializing it to a value.
+*   {{jsxref("Statements/let", "let")}}
+    *   : Declares a block-scoped, local variable, optionally initializing it to a
+        value.
+*   {{jsxref("Statements/const", "const")}}
+    *   : Declares a block-scoped, read-only named constant.
 
 ### Variables
 
@@ -115,13 +115,13 @@ Some examples of legal names are `Number_hits`, `temp99`, `$credit`, and
 
 You can declare a variable in two ways:
 
-- With the keyword {{jsxref("Statements/var", "var")}}. For
-  example, `var x = 42`. This syntax can be used to declare both **local** and
-  **global** variables, depending on the _execution context_.
-- With the keyword {{jsxref("Statements/const", "const")}} or
-  {{jsxref("Statements/let", "let")}}. For example, `let y = 13`.
-  This syntax can be used to declare a block-scope local variable. (See
-  [Variable scope](#variable_scope) below.)
+*   With the keyword {{jsxref("Statements/var", "var")}}. For
+    example, `var x = 42`. This syntax can be used to declare both **local** and
+    **global** variables, depending on the *execution context*.
+*   With the keyword {{jsxref("Statements/const", "const")}} or
+    {{jsxref("Statements/let", "let")}}. For example, `let y = 13`.
+    This syntax can be used to declare a block-scope local variable. (See
+    [Variable scope](#variable_scope) below.)
 
 You can declare variables to unpack values from
 [Object Literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals)
@@ -203,15 +203,15 @@ console.log(n * 32); // Will log 0 to the console
 
 ### Variable scope
 
-When you declare a variable outside of any function, it is called a _global_
+When you declare a variable outside of any function, it is called a *global*
 variable, because it is available to any other code in the current document.
-When you declare a variable within a function, it is called a _local_ variable,
+When you declare a variable within a function, it is called a *local* variable,
 because it is available only within that function.
 
 JavaScript before ECMAScript 2015 does not have
 [block statement](/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#block_statement)
-scope. Rather, a variable declared within a block is local to the _function (or
-global scope)_ that the block resides within.
+scope. Rather, a variable declared within a block is local to the *function (or
+global scope)* that the block resides within.
 
 For example, the following code will log `5`, because the scope of `x` is the
 global context (or the function context if the code is part of a function). The
@@ -225,7 +225,7 @@ console.log(x);  // x is 5
 ```
 
 This behavior changes when using the `let` declaration (introduced in ECMAScript
-2015).
+2015\).
 
 ```js
 if (true) {
@@ -302,8 +302,8 @@ let x = 3;
 
 ### Function hoisting
 
-In the case of functions, only function _declarations_ are hoisted—but _not_ the
-function _expressions_.
+In the case of functions, only function *declarations* are hoisted—but *not* the
+function *expressions*.
 
 ```js
 /* Function declaration */
@@ -325,7 +325,7 @@ var baz = function() {
 
 ### Global variables
 
-Global variables are in fact properties of the _global object_.
+Global variables are in fact properties of the *global object*.
 
 In web pages, the global object is {{domxref("window")}}, so you can set
 and access global variables using the <code>window.<var>variable</var></code>
@@ -396,25 +396,25 @@ console.log(MY_ARRAY); //logs ['HTML','CSS','JAVASCRIPT'];
 
 The latest ECMAScript standard defines eight data types:
 
-- Seven data types that are
-  {{Glossary("Primitive", "primitives")}}:
+*   Seven data types that are
+    {{Glossary("Primitive", "primitives")}}:
 
-  1.  {{Glossary("Boolean")}}. `true` and `false`.
-  2.  {{Glossary("null")}}. A special keyword denoting a null value.
-      (Because JavaScript is case-sensitive, `null` is not the same as `Null`,
-      `NULL`, or any other variant.)
-  3.  {{Glossary("undefined")}}. A top-level property whose value is not
-      defined.
-  4.  {{Glossary("Number")}}. An integer or floating point number. For
-      example: `42` or `3.14159`.
-  5.  {{Glossary("BigInt")}}. An integer with arbitrary precision. For
-      example: `9007199254740992n`.
-  6.  {{Glossary("String")}}. A sequence of characters that represent a
-      text value. For example: "Howdy"
-  7.  {{Glossary("Symbol")}} (new in ECMAScript 2015). A data type whose
-      instances are unique and immutable.
+    1.  {{Glossary("Boolean")}}. `true` and `false`.
+    2.  {{Glossary("null")}}. A special keyword denoting a null value.
+        (Because JavaScript is case-sensitive, `null` is not the same as `Null`,
+        `NULL`, or any other variant.)
+    3.  {{Glossary("undefined")}}. A top-level property whose value is not
+        defined.
+    4.  {{Glossary("Number")}}. An integer or floating point number. For
+        example: `42` or `3.14159`.
+    5.  {{Glossary("BigInt")}}. An integer with arbitrary precision. For
+        example: `9007199254740992n`.
+    6.  {{Glossary("String")}}. A sequence of characters that represent a
+        text value. For example: "Howdy"
+    7.  {{Glossary("Symbol")}} (new in ECMAScript 2015). A data type whose
+        instances are unique and immutable.
 
-- and {{Glossary("Object")}}
+*   and {{Glossary("Object")}}
 
 Although these data types are relatively few, they enable you to perform useful
 functions with your applications.
@@ -425,7 +425,7 @@ containers for values, and functions as procedures that your script can perform.
 
 ### Data type conversion
 
-JavaScript is a _dynamically typed_ language. This means you don't have to
+JavaScript is a *dynamically typed* language. This means you don't have to
 specify the data type of a variable when you declare it. It also means that data
 types are automatically converted as-needed during script execution.
 
@@ -455,7 +455,7 @@ x = 'The answer is ' + 42 // "The answer is 42"
 y = 42 + ' is the answer' // "42 is the answer"
 ```
 
-With all other operators, JavaScript does _not_ convert numeric values to
+With all other operators, JavaScript does *not* convert numeric values to
 strings. For example:
 
 ```js
@@ -468,13 +468,13 @@ strings. For example:
 In the case that a value representing a number is in memory as a string, there
 are methods for conversion.
 
-- {{jsxref("parseInt", "parseInt()")}}
-- {{jsxref("parseFloat", "parseFloat()")}}
+*   {{jsxref("parseInt", "parseInt()")}}
+*   {{jsxref("parseFloat", "parseFloat()")}}
 
 `parseInt` only returns whole numbers, so its use is diminished for decimals.
 
 > **Note:** Additionally, a best practice for `parseInt` is to always include
-> the _radix_ parameter. The radix parameter is used to specify which numerical
+> the *radix* parameter. The radix parameter is used to specify which numerical
 > system is to be used.
 
 ```js
@@ -492,17 +492,17 @@ An alternative method of retrieving a number from a string is with the `+`
 
 ## Literals
 
-_Literals_ represent values in JavaScript. These are fixed values—not
-variables—that you _literally_ provide in your script. This section describes
+*Literals* represent values in JavaScript. These are fixed values—not
+variables—that you *literally* provide in your script. This section describes
 the following types of literals:
 
-- [Array literals](#array_literals)
-- [Boolean literals](#boolean_literals)
-- [Floating-point literals](#floating-point_literals)
-- [Numeric literals](#numeric_literals)
-- [Object literals](#object_literals)
-- [RegExp literals](#regexp_literals)
-- [String literals](#string_literals)
+*   [Array literals](#array_literals)
+*   [Boolean literals](#boolean_literals)
+*   [Floating-point literals](#floating-point_literals)
+*   [Numeric literals](#numeric_literals)
+*   [Object literals](#object_literals)
+*   [RegExp literals](#regexp_literals)
+*   [String literals](#string_literals)
 
 ### Array literals
 
@@ -518,7 +518,7 @@ The following example creates the `coffees` array with three elements and a
 let coffees = ['French Roast', 'Colombian', 'Kona'];
 ```
 
-> **Note:** An array literal is a type of _object initializer_. See
+> **Note:** An array literal is a type of *object initializer*. See
 > [Using Object Initializers](/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#using_object_initializers).
 
 If an array is created using a literal in a top-level script, JavaScript
@@ -543,9 +543,9 @@ let fish = ['Lion', , 'Angel'];
 
 This array has two elements with values and one empty element:
 
-- `fish[0]` is "Lion"
-- `fish[1]` is `undefined`
-- `fish[2]` is "Angel"
+*   `fish[0]` is "Lion"
+*   `fish[1]` is `undefined`
+*   `fish[2]` is "Angel"
 
 If you include a trailing comma at the end of the list of elements, the comma is
 ignored.
@@ -597,17 +597,17 @@ The Boolean type has two literal values: `true` and `false`.
 written in decimal (base 10), hexadecimal (base 16), octal (base 8) and binary
 (base 2).
 
-- A _decimal_ numeric literal is a sequence of digits without a leading `0`
-  (zero).
-- A leading `0` (zero) on a numeric literal, or a leading `0o` (or `0O`)
-  indicates it is in _octal_. Octal numerics can include only the digits
-  `0`–`7`.
-- A leading `0x` (or `0X`) indicates a _hexadecimal_ numeric type. Hexadecimal
-  numerics can include digits (`0`–`9`) and the letters `a`–`f` and `A`–`F`.
-  (The case of a character does not change its value. Therefore: `0xa` = `0xA` =
-  `10` and `0xf` = `0xF` = `15`.)
-- A leading `0b` (or `0B`) indicates a _binary_ numeric literal. Binary numerics
-  can only include the digits `0` and `1`.
+*   A *decimal* numeric literal is a sequence of digits without a leading `0`
+    (zero).
+*   A leading `0` (zero) on a numeric literal, or a leading `0o` (or `0O`)
+    indicates it is in *octal*. Octal numerics can include only the digits
+    `0`–`7`.
+*   A leading `0x` (or `0X`) indicates a *hexadecimal* numeric type. Hexadecimal
+    numerics can include digits (`0`–`9`) and the letters `a`–`f` and `A`–`F`.
+    (The case of a character does not change its value. Therefore: `0xa` = `0xA` =
+    `10` and `0xf` = `0xF` = `15`.)
+*   A leading `0b` (or `0B`) indicates a *binary* numeric literal. Binary numerics
+    can only include the digits `0` and `1`.
 
 Some examples of numeric literals are:
 
@@ -623,10 +623,10 @@ For more information, see
 
 A floating-point literal can have the following parts:
 
-- A decimal integer which can be signed (preceded by "`+`" or "`-`"),
-- A decimal point ("`.`"),
-- A fraction (another decimal number),
-- An exponent.
+*   A decimal integer which can be signed (preceded by "`+`" or "`-`"),
+*   A decimal point ("`.`"),
+*   A fraction (another decimal number),
+*   An exponent.
 
 The exponent part is an "`e`" or "`E`" followed by an integer, which can be
 signed (preceded by "`+`" or "`-`"). A floating-point literal must have at least
@@ -692,7 +692,7 @@ property name would not be a valid JavaScript
 enclosed in quotes.
 
 Property names that are not valid identifiers cannot be accessed as a dot (`.`)
-property, but _can_ be accessed and set with the array-like notation("`[]`").
+property, but *can* be accessed and set with the array-like notation("`[]`").
 
 ```js
 var unusualPropertyNames = {
@@ -826,7 +826,7 @@ For characters not listed in the table, a preceding backslash is ignored, but
 this usage is deprecated and should be avoided.
 
 You can insert a quotation mark inside a string by preceding it with a
-backslash. This is known as _escaping_ the quotation mark. For example:
+backslash. This is known as *escaping* the quotation mark. For example:
 
 ```js
 var quote = "He read \"The Cremation of Sam McGee\" by R.W. Service.";
@@ -885,10 +885,10 @@ This chapter focuses on basic syntax for declarations and types. To learn more
 about JavaScript's language constructs, see also the following chapters in this
 guide:
 
-- [Control flow and error handling](/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
-- [Loops and iteration](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
-- [Functions](/en-US/docs/Web/JavaScript/Guide/Functions)
-- [Expressions and operators](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+*   [Control flow and error handling](/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+*   [Loops and iteration](/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+*   [Functions](/en-US/docs/Web/JavaScript/Guide/Functions)
+*   [Expressions and operators](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
 In the next chapter, we will have a look at control flow constructs and error
 handling.

@@ -21,13 +21,15 @@ validated as structurally valid language tags.
 
 ## Syntax
 
-<pre class="brush: js">Intl.getCanonicalLocales(<var>locales</var>)</pre>
+```js
+Intl.getCanonicalLocales(locales)
+```
 
 ### Parameters
 
-- `locales`
-  - : A list of {{jsxref("String")}} values for which to get the
-    canonical locale names.
+*   `locales`
+    *   : A list of {{jsxref("String")}} values for which to get the
+        canonical locale names.
 
 ### Return value
 
@@ -59,8 +61,8 @@ Intl.getCanonicalLocales('EN_US');
 
 ## See also
 
-- {{jsxref("Intl/NumberFormat/supportedLocalesOf",
+*   {{jsxref("Intl/NumberFormat/supportedLocalesOf",
 		"Intl.NumberFormat.supportedLocalesOf()")}}
-- {{jsxref("Intl/DateTimeFormat/supportedLocalesOf",
+*   {{jsxref("Intl/DateTimeFormat/supportedLocalesOf",
 		"Intl.DateTimeFormat.supportedLocalesOf()")}}
-- {{jsxref("Intl/Collator/supportedLocalesOf", "Intl.Collator.supportedLocalesOf()")}}
+*   {{jsxref("Intl/Collator/supportedLocalesOf", "Intl.Collator.supportedLocalesOf()")}}

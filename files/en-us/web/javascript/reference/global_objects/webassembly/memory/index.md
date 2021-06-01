@@ -20,19 +20,19 @@ mutable from both JavaScript and WebAssembly.
 
 ## Constructor
 
-- [`WebAssembly.Memory()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/Memory)
-  - : Creates a new `Memory` object.
+*   [`WebAssembly.Memory()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/Memory)
+    *   : Creates a new `Memory` object.
 
 ## Instance properties
 
-- [`Memory.prototype.buffer`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer)
-  - : An accessor property that returns the buffer contained in the memory.
+*   [`Memory.prototype.buffer`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer)
+    *   : An accessor property that returns the buffer contained in the memory.
 
 ## Instance methods
 
-- [`Memory.prototype.grow()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/grow)
-  - : Increases the size of the memory instance by a specified number of
-    WebAssembly pages (each one is 64KB in size).
+*   [`Memory.prototype.grow()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/grow)
+    *   : Increases the size of the memory instance by a specified number of
+        WebAssembly pages (each one is 64KB in size).
 
 ## Examples
 
@@ -109,6 +109,6 @@ This memory's `buffer` property will return a
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

@@ -29,18 +29,18 @@ setUTCHours(hoursValue, minutesValue, secondsValue, msValue)
 
 ### Parameters
 
-- `hoursValue`
-  - : An integer between 0 and 23, representing the hour.
-- `minutesValue`
-  - : Optional. An integer between 0 and 59, representing the minutes.
-- `secondsValue`
-  - : Optional. An integer between 0 and 59, representing the seconds. If you
-    specify the `secondsValue` parameter, you must also specify the
-    `minutesValue`.
-- `msValue`
-  - : Optional. A number between 0 and 999, representing the milliseconds. If
-    you specify the `msValue` parameter, you must also specify the
-    `minutesValue` and `secondsValue`.
+*   `hoursValue`
+    *   : An integer between 0 and 23, representing the hour.
+*   `minutesValue`
+    *   : Optional. An integer between 0 and 59, representing the minutes.
+*   `secondsValue`
+    *   : Optional. An integer between 0 and 59, representing the seconds. If you
+        specify the `secondsValue` parameter, you must also specify the
+        `minutesValue`.
+*   `msValue`
+    *   : Optional. A number between 0 and 999, representing the milliseconds. If
+        you specify the `msValue` parameter, you must also specify the
+        `minutesValue` and `secondsValue`.
 
 ### Return value
 
@@ -82,5 +82,5 @@ theBigDay.setUTCHours(8);
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCHours()")}}
-- {{jsxref("Date.prototype.setHours()")}}
+*   {{jsxref("Date.prototype.getUTCHours()")}}
+*   {{jsxref("Date.prototype.setHours()")}}

@@ -26,10 +26,10 @@ substr(start, length)
 
 ### Parameters
 
-- `start`
-  - : The index of the first character to include in the returned substring.
-- `length`
-  - : Optional. The number of characters to extract.
+*   `start`
+    *   : The index of the first character to include in the returned substring.
+*   `length`
+    *   : Optional. The number of characters to extract.
 
 ### Return value
 
@@ -40,28 +40,32 @@ A new string containing the specified part of the given string.
 `substr()` extracts `length` characters from a `str`, counting from the `start`
 index.
 
-- If `start` is a positive number, the index starts counting at the start of the
-  string. Its value is capped at
+*   If `start` is a positive number, the index starts counting at the start of the
+    string. Its value is capped at
 
-  <code><var>str</var>.length</code>
+    <code><var>str</var>.length</code>
 
-  .
+    .
 
-- If `start` is a negative number, the index starts counting from the end of the
-  string. Its value is capped at
+*   If `start` is a negative number, the index starts counting from the end of the
+    string. Its value is capped at
 
-  <code>-<var>str</var>.length</code>
+    <code>-<var>str</var>.length</code>
 
-  .
+    .
 
-- Note: In Microsoft JScript, negative values of the `start` argument are not
-  considered to refer to the end of the string.
-- If `length` is omitted, `substr()` extracts characters to the end of the
-  string.
-- If `length` is {{jsxref("undefined")}}, `substr()` extracts
-  characters to the end of the string.
-- If `length` is a negative number, it is treated as `0`.
-- For both `start` and `length`, {{jsxref("NaN")}} is treated as `0`.
+*   Note: In Microsoft JScript, negative values of the `start` argument are not
+    considered to refer to the end of the string.
+
+*   If `length` is omitted, `substr()` extracts characters to the end of the
+    string.
+
+*   If `length` is {{jsxref("undefined")}}, `substr()` extracts
+    characters to the end of the string.
+
+*   If `length` is a negative number, it is treated as `0`.
+
+*   For both `start` and `length`, {{jsxref("NaN")}} is treated as `0`.
 
 ## Polyfill
 
@@ -117,5 +121,5 @@ console.log(aString.substr(20, 2));  // ''
 
 ## See also
 
-- {{jsxref("String.prototype.slice()")}}
-- {{jsxref("String.prototype.substring()")}}
+*   {{jsxref("String.prototype.slice()")}}
+*   {{jsxref("String.prototype.substring()")}}

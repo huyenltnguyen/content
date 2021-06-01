@@ -35,23 +35,23 @@ method on does not have this function? For example, JavaScript `Objects` have no
 There are many built-in functions in need of a (callback) function. You will
 have to provide a function in order to have these methods working properly:
 
-- When working with {{jsxref("Array")}} or {{jsxref("TypedArray")}}
-  objects:
+*   When working with {{jsxref("Array")}} or {{jsxref("TypedArray")}}
+    objects:
 
-  - {{jsxref("Array.prototype.every()")}},
-    {{jsxref("Array.prototype.some()")}},
-    {{jsxref("Array.prototype.forEach()")}},
-    {{jsxref("Array.prototype.map()")}},
-    {{jsxref("Array.prototype.filter()")}}, 
-    {{jsxref("Array.prototype.reduce()")}},
-    {{jsxref("Array.prototype.reduceRight()")}},
-    {{jsxref("Array.prototype.find()")}}
+    *   {{jsxref("Array.prototype.every()")}},
+        {{jsxref("Array.prototype.some()")}},
+        {{jsxref("Array.prototype.forEach()")}},
+        {{jsxref("Array.prototype.map()")}},
+        {{jsxref("Array.prototype.filter()")}}, 
+        {{jsxref("Array.prototype.reduce()")}},
+        {{jsxref("Array.prototype.reduceRight()")}},
+        {{jsxref("Array.prototype.find()")}}
 
-- When working with {{jsxref("Map")}} and {{jsxref("Set")}}
-  objects:
+*   When working with {{jsxref("Map")}} and {{jsxref("Set")}}
+    objects:
 
-  - {{jsxref("Map.prototype.forEach()")}} and
-    {{jsxref("Set.prototype.forEach()")}}
+    *   {{jsxref("Map.prototype.forEach()")}} and
+        {{jsxref("Set.prototype.forEach()")}}
 
 ## Examples
 
@@ -191,4 +191,4 @@ The correct import usage (`App.js`):
 
 ## See also
 
-- [Functions](/en-US/docs/Web/JavaScript/Reference/Functions)
+*   [Functions](/en-US/docs/Web/JavaScript/Reference/Functions)

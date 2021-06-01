@@ -58,6 +58,6 @@ console.log(str);               // Mon, 18 Dec 1995 17:28:35 GMT
 
 ## See also
 
-- {{jsxref("Date.prototype.toLocaleDateString()")}}
-- {{jsxref("Date.prototype.toTimeString()")}}
-- {{jsxref("Date.prototype.toUTCString()")}}
+*   {{jsxref("Date.prototype.toLocaleDateString()")}}
+*   {{jsxref("Date.prototype.toTimeString()")}}
+*   {{jsxref("Date.prototype.toUTCString()")}}

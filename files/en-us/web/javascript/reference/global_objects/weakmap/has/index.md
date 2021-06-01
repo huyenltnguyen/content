@@ -24,15 +24,15 @@ has(key)
 
 ### Parameters
 
-- `key`
-  - : Required. The key of the element to test for presence in the `WeakMap`
-    object.
+*   `key`
+    *   : Required. The key of the element to test for presence in the `WeakMap`
+        object.
 
 ### Return value
 
-- Boolean
-  - : Returns `true` if an element with the specified key exists in the
-    `WeakMap` object; otherwise `false`.
+*   Boolean
+    *   : Returns `true` if an element with the specified key exists in the
+        `WeakMap` object; otherwise `false`.
 
 ## Examples
 
@@ -56,6 +56,6 @@ wm.has('baz');  // returns false
 
 ## See also
 
-- {{jsxref("WeakMap")}}
-- {{jsxref("WeakMap.prototype.set()")}}
-- {{jsxref("WeakMap.prototype.get()")}}
+*   {{jsxref("WeakMap")}}
+*   {{jsxref("WeakMap.prototype.set()")}}
+*   {{jsxref("WeakMap.prototype.get()")}}

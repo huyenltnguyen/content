@@ -20,70 +20,74 @@ another statement can be executed.
 
 ## Syntax
 
-<pre class="brush: js">if (<var>condition</var>) {
-   <var>statement1</var>
+```js
+if (condition) {
+   statement1
 } else {
-   <var>statement2</var>
+   statement2
 }
-</pre>
+```
 
-- `condition`
-  - : An
-    [expression](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions)
-    that is considered to be either {{Glossary("truthy")}} or
-    {{Glossary("falsy")}}.
-- `statement1`
-  - : Statement that is executed if <var>condition</var> is
-    {{Glossary("truthy")}}. Can be any statement, including further nested
-    `if` statements. To execute multiple statements, use a
-    [block](/en-US/docs/Web/JavaScript/Reference/Statements/block) statement
-    (`{ ... }`) to group those statements. To execute no statements, use an
-    [empty](/en-US/docs/Web/JavaScript/Reference/Statements/Empty) statement.
-- `statement2`
-  - : Statement that is executed if `condition` is {{Glossary("falsy")}}
-    and the `else` clause exists. Can be any statement, including block
-    statements and further nested `if` statements.
+*   `condition`
+    *   : An
+        [expression](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions)
+        that is considered to be either {{Glossary("truthy")}} or
+        {{Glossary("falsy")}}.
+*   `statement1`
+    *   : Statement that is executed if <var>condition</var> is
+        {{Glossary("truthy")}}. Can be any statement, including further nested
+        `if` statements. To execute multiple statements, use a
+        [block](/en-US/docs/Web/JavaScript/Reference/Statements/block) statement
+        (`{ ... }`) to group those statements. To execute no statements, use an
+        [empty](/en-US/docs/Web/JavaScript/Reference/Statements/Empty) statement.
+*   `statement2`
+    *   : Statement that is executed if `condition` is {{Glossary("falsy")}}
+        and the `else` clause exists. Can be any statement, including block
+        statements and further nested `if` statements.
 
 ## Description
 
 Multiple `if...else` statements can be nested to create an `else if` clause.
 Note that there is no `elseif` (in one word) keyword in JavaScript.
 
-<pre class="brush: js">if (<var>condition1</var>)
-  <var>statement1</var>
-else if (<var>condition2</var>)
-  <var>statement2</var>
-else if (<var>condition3</var>)
-  <var>statement3</var>
+```js
+if (condition1)
+  statement1
+else if (condition2)
+  statement2
+else if (condition3)
+  statement3
 ...
 else
-  <var>statementN</var>
-</pre>
+  statementN
+```
 
 To see how this works, this is how it would look if the nesting were properly
 indented:
 
-<pre class="brush: js">if (<var>condition1</var>)
-  <var>statement1</var>
+```js
+if (condition1)
+  statement1
 else
-  if (<var>condition2</var>)
-    <var>statement2</var>
+  if (condition2)
+    statement2
   else
-    if (<var>condition3</var>)
+    if (condition3)
 ...
-</pre>
+```
 
 To execute multiple statements within a clause, use a block statement
 (`{ ... }`) to group those statements. In general, it is a good practice to
 always use block statements, especially in code involving nested `if`
 statements:
 
-<pre class="brush: js">if (<var>condition</var>) {
-  <var>statements1</var>
+```js
+if (condition) {
+  statements1
 } else {
-  <var>statements2</var>
+  statements2
 }
-</pre>
+```
 
 Do not confuse the primitive Boolean values `true` and `false` with truthiness
 or falsiness of the
@@ -157,6 +161,6 @@ if ((x = y)) {
 
 ## See also
 
-- {{jsxref("Statements/block", "block")}}
-- {{jsxref("Statements/switch", "switch")}}
-- [Conditional operator](/en-US/docs/JavaScript/Reference/Operators/Conditional_Operator)
+*   {{jsxref("Statements/block", "block")}}
+*   {{jsxref("Statements/switch", "switch")}}
+*   [Conditional operator](/en-US/docs/JavaScript/Reference/Operators/Conditional_Operator)

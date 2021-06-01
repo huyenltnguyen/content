@@ -12,8 +12,7 @@ browser-compat: javascript.builtins.Intl.Locale.minimize
 ---
 {{JSRef}}
 
-<span class="seoSummary">The
-<strong><code>Intl.Locale.prototype.minimize()</code></strong> method attempts
+<span class="seoSummary">The <strong><code>Intl.Locale.prototype.minimize()</code></strong> method attempts
 to remove information about the locale that would be added by calling
 {{jsxref("Intl/Locale/maximize", "Locale.maximize()")}}.</span>
 
@@ -33,8 +32,8 @@ A {{jsxref("Intl/Locale", "Locale")}} instance whose `baseName`
 property returns the result of the
 [Remove Likely Subtags](https://www.unicode.org/reports/tr35/#Likely_Subtags)
 algorithm executed against
-_{{jsxref("Intl/Locale/baseName",
-		"locale.baseName")}}_.
+*{{jsxref("Intl/Locale/baseName",
+		"locale.baseName")}}*.
 
 ## Description
 
@@ -84,5 +83,5 @@ console.log(myLocMinimized.toString());
 
 ## See also
 
-- {{jsxref("Intl.Locale")}}
-- {{jsxref("Intl/Locale/baseName", "Intl.Locale.baseName")}}
+*   {{jsxref("Intl.Locale")}}
+*   {{jsxref("Intl/Locale/baseName", "Intl.Locale.baseName")}}

@@ -24,28 +24,28 @@ that you have used JavaScript functions to create simple objects.
 Class-based object-oriented languages, such as Java and C++, are founded on the
 concept of two distinct entities: classes and instances.
 
-- A _class_ defines all of the properties that characterize a certain set of
-  objects (considering methods and fields in Java, or members in C++, to be
-  properties). A class is abstract rather than any particular member in a set of
-  objects it describes. For example, the `Employee` class could represent the
-  set of all employees.
-- An _instance_, on the other hand, is the instantiation of a class; that is.
-  For example, `Victoria` could be an instance of the `Employee` class,
-  representing a particular individual as an employee. An instance has exactly
-  the same properties of its parent class (no more, no less).
+*   A *class* defines all of the properties that characterize a certain set of
+    objects (considering methods and fields in Java, or members in C++, to be
+    properties). A class is abstract rather than any particular member in a set of
+    objects it describes. For example, the `Employee` class could represent the
+    set of all employees.
+*   An *instance*, on the other hand, is the instantiation of a class; that is.
+    For example, `Victoria` could be an instance of the `Employee` class,
+    representing a particular individual as an employee. An instance has exactly
+    the same properties of its parent class (no more, no less).
 
 A prototype-based language, such as JavaScript, does not make this distinction:
-it has objects. A prototype-based language has the notion of a _prototypical
-object_, an object used as a template from which to get the initial properties
+it has objects. A prototype-based language has the notion of a *prototypical
+object*, an object used as a template from which to get the initial properties
 for a new object. Any object can specify its own properties, either when you
 create it or at run time. In addition, any object can be associated as the
-_prototype_ for another object, allowing the second object to share the first
+*prototype* for another object, allowing the second object to share the first
 object's properties.
 
 ### Defining a class
 
-In class-based languages, you define a class in a separate _class definition_.
-In that definition you can specify special methods, called _constructors_, to
+In class-based languages, you define a class in a separate *class definition*.
+In that definition you can specify special methods, called *constructors*, to
 create instances of the class. A constructor method can specify initial values
 for the instance's properties and perform other processing appropriate at
 creation time. You use the `new` operator in association with the constructor
@@ -62,14 +62,14 @@ with a constructor function to create a new object.
 >
 > > JavaScript classes, introduced in ECMAScript 2015, are primarily syntactical
 > > sugar over JavaScript's existing prototype-based inheritance. The class
-> > syntax _does not_ introduce a new object-oriented inheritance model to
+> > syntax *does not* introduce a new object-oriented inheritance model to
 > > JavaScript.
 
 ### Subclasses and inheritance
 
 In a class-based language, you create a hierarchy of classes through the class
 definitions. In a class definition, you can specify that the new class is a
-_subclass_ of an already existing class. The subclass inherits all the
+*subclass* of an already existing class. The subclass inherits all the
 properties of the superclass and additionally can add new properties or modify
 the inherited ones. For example, assume the `Employee` class includes only the
 `name` and `dept` properties, and `Manager` is a subclass of `Employee` that
@@ -114,20 +114,20 @@ figure.
 
 This shows an object hierarchy with the following objects:
 
-- `Employee` has the properties `name` (whose value defaults to the empty
-  string) and `dept` (whose value defaults to "general").
-- `Manager` is based on `Employee`. It adds the `reports` property (whose value
-  defaults to an empty array, intended to have an array of `Employee` objects as
-  its value).
-- `WorkerBee` is also based on `Employee`. It adds the `projects` property
-  (whose value defaults to an empty array, intended to have an array of strings
-  as its value).
-- `SalesPerson` is based on `WorkerBee`. It adds the `quota` property (whose
-  value defaults to 100). It also overrides the `dept` property with the value
-  "sales", indicating that all salespersons are in the same department.
-- `Engineer` is based on `WorkerBee`. It adds the `machine` property (whose
-  value defaults to the empty string) and also overrides the `dept` property
-  with the value "engineering".
+*   `Employee` has the properties `name` (whose value defaults to the empty
+    string) and `dept` (whose value defaults to "general").
+*   `Manager` is based on `Employee`. It adds the `reports` property (whose value
+    defaults to an empty array, intended to have an array of `Employee` objects as
+    its value).
+*   `WorkerBee` is also based on `Employee`. It adds the `projects` property
+    (whose value defaults to an empty array, intended to have an array of strings
+    as its value).
+*   `SalesPerson` is based on `WorkerBee`. It adds the `quota` property (whose
+    value defaults to 100). It also overrides the `dept` property with the value
+    "sales", indicating that all salespersons are in the same department.
+*   `Engineer` is based on `WorkerBee`. It adds the `machine` property (whose
+    value defaults to the empty string) and also overrides the `dept` property
+    with the value "engineering".
 
 ## Creating the hierarchy
 
@@ -265,7 +265,7 @@ default values for their properties. The next figure illustrates using these
 JavaScript definitions to create new objects and shows the property values for
 the new objects.
 
-> **Note:** The term _instance_ has a specific technical meaning in class-based
+> **Note:** The term *instance* has a specific technical meaning in class-based
 > languages. In these languages, an instance is an individual instantiation of a
 > class and is fundamentally different from a class. In JavaScript, "instance"
 > does not have this technical meaning because JavaScript does not have this
@@ -273,31 +273,49 @@ the new objects.
 > JavaScript, "instance" can be used informally to mean an object created using
 > a particular constructor function. So, in this example, you could informally
 > say that `jane` is an instance of `Engineer`. Similarly, although the terms
-> _parent_, _child_, _ancestor_, and _descendant_ do not have formal meanings in
+> *parent*, *child*, *ancestor*, and *descendant* do not have formal meanings in
 > JavaScript; you can use them informally to refer to objects higher or lower in
 > the prototype chain.
 
 ### Creating objects with simple definitions
 
-<div class="twocolumns"><h4 id="Object_hierarchy">Object hierarchy</h4><p>The following hierarchy is created using the code on the right side.</p><p><img src="figure8.3.png"></p><h4 id="Individual_objects_Jim_Sally_Mark_Fred_Jane_etc._Instances_created_from_constructor">Individual objects = Jim, Sally, Mark, Fred, Jane, etc.<br>"Instances" created from constructor</h4><pre class="brush: js">var jim = new Employee;
+#### Object hierarchy
+
+The following hierarchy is created using the code on the right side.
+
+![](figure8.3.png)
+
+#### Individual objects = Jim, Sally, Mark, Fred, Jane, etc.<br>"Instances" created from constructor
+
+```js
+var jim = new Employee;
 // Parentheses can be omitted if the
 // constructor takes no arguments.
 // jim.name is ''
 // jim.dept is 'general'
 
-var sally = new Manager; // sally.name is '' // sally.dept is 'general' //
-sally.reports is []
+var sally = new Manager;
+// sally.name is ''
+// sally.dept is 'general'
+// sally.reports is []
 
-var mark = new WorkerBee; // mark.name is '' // mark.dept is 'general' //
-mark.projects is []
+var mark = new WorkerBee;
+// mark.name is ''
+// mark.dept is 'general'
+// mark.projects is []
 
-var fred = new SalesPerson; // fred.name is '' // fred.dept is 'sales' //
-fred.projects is [] // fred.quota is 100
+var fred = new SalesPerson;
+// fred.name is ''
+// fred.dept is 'sales'
+// fred.projects is []
+// fred.quota is 100
 
-var jane = new Engineer; // jane.name is '' // jane.dept is 'engineering' //
-jane.projects is [] // jane.machine is ''
-
-</pre></div>
+var jane = new Engineer;
+// jane.name is ''
+// jane.dept is 'engineering'
+// jane.projects is []
+// jane.machine is ''
+```
 
 ## Object properties
 
@@ -316,12 +334,12 @@ var mark = new WorkerBee;
 When JavaScript sees the `new` operator, it creates a new generic object
 and implicitly sets the value of the internal property \[\[Prototype]] to the
 value of `WorkerBee.prototype` and passes this new object as the value of the
-_`this`_ keyword to the `WorkerBee` constructor function. The internal
+*`this`* keyword to the `WorkerBee` constructor function. The internal
 \[\[Prototype]] property determines the prototype chain used to return property
 values. Once these properties are set, JavaScript returns the new object and the
 assignment statement sets the variable `mark` to that object.
 
-This process does not explicitly put values in the `mark` object (_local_
+This process does not explicitly put values in the `mark` object (*local*
 values) for the properties that `mark` inherits from the prototype chain. When
 you ask for the value of a property, JavaScript first checks to see if the value
 exists in that object. If it does, that value is returned. If the value is not
@@ -672,7 +690,7 @@ Employee.prototype.name = 'Unknown';
 At first glance, you might expect that new value to propagate down to all the
 instances of `Employee`. However, it does not.
 
-When you create _any_ instance of the `Employee` object, that instance gets a
+When you create *any* instance of the `Employee` object, that instance gets a
 **local value** for the `name` property (the empty string). This means that when
 you set the `WorkerBee` prototype by creating a new `Employee` object,
 `WorkerBee.prototype` has a local value for the `name` property. Therefore, when

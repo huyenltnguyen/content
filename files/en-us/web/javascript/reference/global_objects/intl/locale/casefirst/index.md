@@ -29,7 +29,11 @@ below.
 
 ### `caseFirst` values
 
-<table class="standard-table"><thead><tr><th scope="col">Value</th><th scope="col">Description</th></tr></thead><tbody><tr><td><code>upper</code></td><td>Upper case to be sorted before lower case.</td></tr><tr><td><code>lower</code></td><td>Lower case to be sorted before upper case.</td></tr><tr><td><code>false</code></td><td>No special case ordering.</td></tr></tbody></table>
+| Value   | Description                                |
+| ------- | ------------------------------------------ |
+| `upper` | Upper case to be sorted before lower case. |
+| `lower` | Lower case to be sorted before upper case. |
+| `false` | No special case ordering.                  |
 
 ## Examples
 
@@ -72,5 +76,5 @@ console.log(us12hour.caseFirst); // Prints "lower"
 
 ## See also
 
-- {{jsxref("Intl.Locale")}}
-- [Unicode case first collation spec](https://github.com/unicode-org/cldr/blob/master/common/bcp47/collation.xml#L49)
+*   {{jsxref("Intl.Locale")}}
+*   [Unicode case first collation spec](https://github.com/unicode-org/cldr/blob/master/common/bcp47/collation.xml#L49)

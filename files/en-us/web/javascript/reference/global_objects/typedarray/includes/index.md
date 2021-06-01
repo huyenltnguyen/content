@@ -15,7 +15,7 @@ browser-compat: javascript.builtins.TypedArray.includes
 
 The **`includes()`** method determines whether a typed array includes a certain
 element, returning `true` or `false` as appropriate. This method has the same
-algorithm as {{jsxref("Array.prototype.includes()")}}. _TypedArray_
+algorithm as {{jsxref("Array.prototype.includes()")}}. *TypedArray*
 is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
@@ -31,11 +31,11 @@ includes(searchElement, fromIndex)
 
 ### Parameters
 
-- `searchElement`
-  - : The element to search for.
-- `fromIndex` {{optional_inline}}
-  - : The position in this array at which to begin searching for
-    `searchElement`; defaults to 0.
+*   `searchElement`
+    *   : The element to search for.
+*   `fromIndex` {{optional_inline}}
+    *   : The position in this array at which to begin searching for
+        `searchElement`; defaults to 0.
 
 ### Return value
 
@@ -67,8 +67,8 @@ new Float64Array([NaN]).includes(NaN); // true;
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.includes` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("Array.prototype.includes()")}}
-- {{jsxref("String.prototype.includes()")}}
-- {{jsxref("TypedArray.prototype.indexOf()")}}
+*   A polyfill of `TypedArray.prototype.includes` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("Array.prototype.includes()")}}
+*   {{jsxref("String.prototype.includes()")}}
+*   {{jsxref("TypedArray.prototype.indexOf()")}}

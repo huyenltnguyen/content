@@ -53,7 +53,7 @@ const myAsyncIterable = {
 ```
 
 When creating an API, remember that async iterables are designed to represent
-something _iterable_ — like a stream of data or a list —, not to completely
+something *iterable* — like a stream of data or a list —, not to completely
 replace callbacks and events in most situations.
 
 ### Built-in Async Iterables
@@ -73,5 +73,5 @@ recently landing in the spec.
 
 ## See also
 
-- [Iteration protocols](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
-- [for await... of](/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)
+*   [Iteration protocols](/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
+*   [for await... of](/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)

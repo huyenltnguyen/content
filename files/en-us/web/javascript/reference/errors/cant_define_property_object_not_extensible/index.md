@@ -82,4 +82,4 @@ Object.preventExtensions(obj);
 
 ## See also
 
-- {{jsxref("Object.preventExtensions()")}}
+*   {{jsxref("Object.preventExtensions()")}}

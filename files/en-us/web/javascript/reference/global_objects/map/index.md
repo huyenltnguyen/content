@@ -21,19 +21,19 @@ either a key or a value.
 
 A `Map` object iterates its elements in insertion order — a
 {{jsxref("Statements/for...of", "for...of")}} loop returns an
-array of <code>[<var>key</var>, <var>value</var>]</code> for each iteration.
+array of <code>\[<var>key</var>, <var>value</var>]</code> for each iteration.
 
 ### Key equality
 
-- Key equality is based on the
-  [`sameValueZero`](/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality)
-  algorithm.
-- {{jsxref("NaN")}} is considered the same as `NaN` (even though
-  `NaN !== NaN`) and all other values are considered equal according to the
-  semantics of the `===` operator.
-- In the current ECMAScript specification, `-0` and `+0` are considered equal,
-  although this was not so in earlier drafts. See _"Value equality for -0 and
-  0"_ in the [Browser compatibility](#browser_compatibility) table for details.
+*   Key equality is based on the
+    [`sameValueZero`](/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality)
+    algorithm.
+*   {{jsxref("NaN")}} is considered the same as `NaN` (even though
+    `NaN !== NaN`) and all other values are considered equal according to the
+    semantics of the `===` operator.
+*   In the current ECMAScript specification, `-0` and `+0` are considered equal,
+    although this was not so in earlier drafts. See *"Value equality for -0 and
+    0"* in the [Browser compatibility](#browser_compatibility) table for details.
 
 ### Objects vs. Maps
 
@@ -98,8 +98,7 @@ wrongMap.delete('bla') // false
 console.log(wrongMap)  // Map { bla: 'blaa', bla2: 'blaaa2' }
 ```
 
-The correct usage for storing data in the Map is through the
-<code>set(<var>key</var>, <var>value</var>)</code> method.
+The correct usage for storing data in the Map is through the <code>set(<var>key</var>, <var>value</var>)</code> method.
 
 ```js example-good
 let contacts = new Map()
@@ -115,59 +114,63 @@ console.log(contacts.size) // 1
 
 ## Constructor
 
-- {{jsxref("Map/Map", "Map()")}}
-  - : Creates a new `Map` object.
+*   {{jsxref("Map/Map", "Map()")}}
+    *   : Creates a new `Map` object.
 
 ## Static properties
 
-- {{jsxref("Map.@@species", "get Map[@@species]")}}
-  - : The constructor function that is used to create derived objects.
+*   {{jsxref("Map.@@species", "get Map[@@species]")}}
+    *   : The constructor function that is used to create derived objects.
 
 ## Instance properties
 
-- {{jsxref("Map.prototype.size")}}
-  - : Returns the number of key/value pairs in the `Map` object.
+*   {{jsxref("Map.prototype.size")}}
+    *   : Returns the number of key/value pairs in the `Map` object.
 
 ## Instance methods
 
-- {{jsxref("Map.prototype.clear()")}}
-  - : Removes all key-value pairs from the `Map` object.
-- {{jsxref("Map.delete", "Map.prototype.delete(<var>key</var>)")}}
-  - : Returns `true` if an element in the `Map` object existed and has been
-    removed, or `false` if the element does not exist.
-    <code>Map.prototype.has(<var>key</var>)</code> will return `false`
-    afterwards.
-- {{jsxref("Map.get", "Map.prototype.get(<var>key</var>)")}}
-  - : Returns the value associated to the `key`, or `undefined` if there is
-    none.
-- {{jsxref("Map.has", "Map.prototype.has(<var>key</var>)")}}
-  - : Returns a boolean asserting whether a value has been associated to the
-    `key` in the `Map` object or not.
-- {{jsxref("Map.set", "Map.prototype.set(<var>key</var>, <var>value</var>)")}}
-  - : Sets the `value` for the `key` in the `Map` object. Returns the `Map`
-    object.
+*   {{jsxref("Map.prototype.clear()")}}
+    *   : Removes all key-value pairs from the `Map` object.
+
+*   {{jsxref("Map.delete", "Map.prototype.delete(<var>key</var>)")}}
+
+    *   : Returns `true` if an element in the `Map` object existed and has been
+        removed, or `false` if the element does not exist.
+
+        <code>Map.prototype.has(<var>key</var>)</code> will return `false`
+        afterwards.
+
+*   {{jsxref("Map.get", "Map.prototype.get(<var>key</var>)")}}
+    *   : Returns the value associated to the `key`, or `undefined` if there is
+        none.
+
+*   {{jsxref("Map.has", "Map.prototype.has(<var>key</var>)")}}
+    *   : Returns a boolean asserting whether a value has been associated to the
+        `key` in the `Map` object or not.
+
+*   {{jsxref("Map.set", "Map.prototype.set(<var>key</var>, <var>value</var>)")}}
+    *   : Sets the `value` for the `key` in the `Map` object. Returns the `Map`
+        object.
 
 ### Iteration methods
 
-- {{jsxref("Map.@@iterator", "Map.prototype[@@iterator]()")}}
-  - : Returns a new Iterator object that contains **an array of
-    <code>[<var>key</var>, <var>value</var>]</code>** for each element in the
-    `Map` object in insertion order.
-- {{jsxref("Map.prototype.keys()")}}
-  - : Returns a new Iterator object that contains the **keys** for each element
-    in the `Map` object in insertion order.
-- {{jsxref("Map.prototype.values()")}}
-  - : Returns a new Iterator object that contains the **values** for each
-    element in the `Map` object in insertion order.
-- {{jsxref("Map.prototype.entries()")}}
-  - : Returns a new Iterator object that contains **an array of
-    <code>[<var>key</var>, <var>value</var>]</code>** for each element in the
-    `Map` object in insertion order.
-- {{jsxref("Map.forEach", "Map.prototype.forEach(<var>callbackFn</var>[,
+*   {{jsxref("Map.@@iterator", "Map.prototype[@@iterator]()")}}
+    *   : Returns a new Iterator object that contains **an array of <code>\[<var>key</var>, <var>value</var>]</code>** for each element in the
+        `Map` object in insertion order.
+*   {{jsxref("Map.prototype.keys()")}}
+    *   : Returns a new Iterator object that contains the **keys** for each element
+        in the `Map` object in insertion order.
+*   {{jsxref("Map.prototype.values()")}}
+    *   : Returns a new Iterator object that contains the **values** for each
+        element in the `Map` object in insertion order.
+*   {{jsxref("Map.prototype.entries()")}}
+    *   : Returns a new Iterator object that contains **an array of <code>\[<var>key</var>, <var>value</var>]</code>** for each element in the
+        `Map` object in insertion order.
+*   {{jsxref("Map.forEach", "Map.prototype.forEach(<var>callbackFn</var>[,
     <var>thisArg</var>])")}}
-  - : Calls `callbackFn` once for each key-value pair present in the `Map`
-    object, in insertion order. If a `thisArg` parameter is provided to
-    `forEach`, it will be used as the `this` value for each callback.
+    *   : Calls `callbackFn` once for each key-value pair present in the `Map`
+        object, in insertion order. If a `thisArg` parameter is provided to
+        `forEach`, it will be used as the `this` value for each callback.
 
 ## Examples
 
@@ -298,7 +301,7 @@ console.log(clone.get(1))       // one
 console.log(original === clone) // false (useful for shallow comparison)
 ```
 
-> **Note:** Keep in mind that _the data itself_ is not cloned.
+> **Note:** Keep in mind that *the data itself* is not cloned.
 
 Maps can be merged, maintaining key uniqueness:
 
@@ -355,8 +358,8 @@ console.log(merged.get(3)) // three
 
 ## See also
 
-- A polyfill of `Map` is available in
-  [`core-js`](https://github.com/zloirock/core-js#map)
-- {{jsxref("Set")}}
-- {{jsxref("WeakMap")}}
-- {{jsxref("WeakSet")}}
+*   A polyfill of `Map` is available in
+    [`core-js`](https://github.com/zloirock/core-js#map)
+*   {{jsxref("Set")}}
+*   {{jsxref("WeakMap")}}
+*   {{jsxref("WeakSet")}}

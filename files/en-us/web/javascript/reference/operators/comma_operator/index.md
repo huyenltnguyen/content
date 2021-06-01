@@ -24,13 +24,15 @@ expressions. This is commonly used to provide multiple parameters to a
 
 ## Syntax
 
-<pre class="brush: js"><em>expr1</em>, <em>expr2, expr3...</em></pre>
+```js
+expr1, expr2, expr3...
+```
 
 ### Parameters
 
-- `expr1`, `expr2`, `expr3`...
-  - : One or more expressions, the last of which is returned as the value of the
-    compound expression.
+*   `expr1`, `expr2`, `expr3`...
+    *   : One or more expressions, the last of which is returned as the value of the
+        compound expression.
 
 ## Usage notes
 
@@ -96,4 +98,4 @@ function myFunc() {
 
 ## See also
 
-- [`for` loop](/en-US/docs/Web/JavaScript/Reference/Statements/for)
+*   [`for` loop](/en-US/docs/Web/JavaScript/Reference/Statements/for)

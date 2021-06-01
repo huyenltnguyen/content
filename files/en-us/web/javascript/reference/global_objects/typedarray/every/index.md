@@ -15,7 +15,7 @@ browser-compat: javascript.builtins.TypedArray.every
 
 The **`every()`** method tests whether all elements in the typed array pass the
 test implemented by the provided function. This method has the same algorithm as
-{{jsxref("Array.prototype.every()")}}_._ _TypedArray_ is one of the
+{{jsxref("Array.prototype.every()")}}*.* *TypedArray* is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
 
@@ -42,7 +42,16 @@ every(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-<dl><dt><code><var>callbackFn</var></code></dt><dd>A function to test for each element, taking three arguments:<dl><dt><code><var>element</var></code></dt><dd>The current element being processed in the typed array.</dd><dt><code><var>index</var></code> {{Optional_inline}}</dt><dd>The index of the current element being processed in the typed array.</dd><dt><code><var>array</var></code> {{Optional_inline}}</dt><dd>The typed array <code>every</code> was called upon.</dd></dl></dd><dt><code><var>thisArg</var></code> {{Optional_inline}}</dt><dd>A value to use as <code>this</code> when executing <code><var>callbackFn</var></code>.</dd></dl>
+*   `callbackFn`
+    *   : A function to test for each element, taking three arguments:
+        *   `element`
+            *   : The current element being processed in the typed array.
+        *   `index` {{Optional_inline}}
+            *   : The index of the current element being processed in the typed array.
+        *   `array` {{Optional_inline}}
+            *   : The typed array `every` was called upon.
+*   `thisArg` {{Optional_inline}}
+    *   : A value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -103,7 +112,7 @@ new Uint8Array([12, 54, 18, 130, 44]).every(elem => elem >= 10); // true
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.every` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray.prototype.some()")}}
-- {{jsxref("Array.prototype.every()")}}
+*   A polyfill of `TypedArray.prototype.every` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray.prototype.some()")}}
+*   {{jsxref("Array.prototype.every()")}}

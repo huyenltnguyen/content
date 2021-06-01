@@ -21,7 +21,7 @@ regular expressions that contains the substring preceding the most recent match.
 
 The `leftContext` property is static, it is not a property of an individual
 regular expression object. Instead, you always use it as `RegExp.leftContext` or
-`` RegExp['$`'] ``.
+``RegExp['$`']``.
 
 The value of the `leftContext` property is read-only and modified whenever a
 successful match is made.
@@ -52,8 +52,8 @@ RegExp['$`'];       // "hello "
 
 ## See also
 
-- {{jsxref("RegExp.input", "RegExp.input ($_)")}}
-- {{jsxref("RegExp.lastMatch", "RegExp.lastMatch ($&amp;)")}}
-- {{jsxref("RegExp.lastParen", "RegExp.lastParen ($+)")}}
-- {{jsxref("RegExp.rightContext", "RegExp.rightContext ($')")}}
-- {{jsxref("RegExp.n", "RegExp.$1-$9")}}
+*   {{jsxref("RegExp.input", "RegExp.input ($_)")}}
+*   {{jsxref("RegExp.lastMatch", "RegExp.lastMatch ($&amp;)")}}
+*   {{jsxref("RegExp.lastParen", "RegExp.lastParen ($+)")}}
+*   {{jsxref("RegExp.rightContext", "RegExp.rightContext ($')")}}
+*   {{jsxref("RegExp.n", "RegExp.$1-$9")}}

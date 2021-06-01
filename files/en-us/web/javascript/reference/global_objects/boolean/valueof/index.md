@@ -53,4 +53,4 @@ myVar = x.valueOf(); // assigns false to myVar
 
 ## See also
 
-- {{jsxref("Object.prototype.valueOf()")}}
+*   {{jsxref("Object.prototype.valueOf()")}}

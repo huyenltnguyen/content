@@ -41,16 +41,16 @@ some(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-- `callback`
-  - : A function to test for each element, taking three arguments:
-    - `element`
-      - : The current element being processed in the array.
-    - `index`{{optional_inline}}
-      - : The index of the current element being processed in the array.
-    - `array`{{optional_inline}}
-      - : The array `some()` was called upon.
-- `thisArg`{{optional_inline}}
-  - : A value to use as `this` when executing `callbackFn`.
+*   `callback`
+    *   : A function to test for each element, taking three arguments:
+        *   `element`
+            *   : The current element being processed in the array.
+        *   `index`{{optional_inline}}
+            *   : The index of the current element being processed in the array.
+        *   `array`{{optional_inline}}
+            *   : The array `some()` was called upon.
+*   `thisArg`{{optional_inline}}
+    *   : A value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -61,7 +61,7 @@ at least one element in the array. Otherwise, `false`.
 
 The `some()` method executes the `callbackFn` function once for each element
 present in the array until it finds the one where `callbackFn` returns a
-_truthy_ value (a value that becomes true when converted to a Boolean). If such
+*truthy* value (a value that becomes true when converted to a Boolean). If such
 an element is found, `some()` immediately returns `true`. Otherwise, `some()`
 returns `false`. `callbackFn` is invoked only for indexes of the array with
 assigned values. It is not invoked for indexes which have been deleted or which
@@ -218,9 +218,9 @@ getBoolean('true');  // true
 
 ## See also
 
-- A polyfill of `Array.prototype.some` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.every()")}}
-- {{jsxref("Array.prototype.forEach()")}}
-- {{jsxref("Array.prototype.find()")}}
-- {{jsxref("TypedArray.prototype.some()")}}
+*   A polyfill of `Array.prototype.some` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.every()")}}
+*   {{jsxref("Array.prototype.forEach()")}}
+*   {{jsxref("Array.prototype.find()")}}
+*   {{jsxref("TypedArray.prototype.some()")}}

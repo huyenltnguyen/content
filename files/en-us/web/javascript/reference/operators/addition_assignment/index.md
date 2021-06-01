@@ -20,8 +20,10 @@ concatenation is possible.
 
 ## Syntax
 
-<pre class="brush: js"><strong>Operator:</strong> x += y
-<strong>Meaning:</strong>  x  = x + y</pre>
+```js
+Operator: x += y
+Meaning:  x  = x + y
+```
 
 ## Examples
 
@@ -62,5 +64,5 @@ foo += 'bar' // "foobar"
 
 ## See also
 
-- [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
-- [Addition operator](/en-US/docs/Web/JavaScript/Reference/Operators/Addition)
+*   [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
+*   [Addition operator](/en-US/docs/Web/JavaScript/Reference/Operators/Addition)

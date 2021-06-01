@@ -20,13 +20,14 @@ the value of the internal `[[Prototype]]` property) of the specified object.
 
 ## Syntax
 
-<pre class="brush: js">Reflect.getPrototypeOf(<var>target</var>)
-</pre>
+```js
+Reflect.getPrototypeOf(target)
+```
 
 ### Parameters
 
-- `target`
-  - : The target object of which to get the prototype.
+*   `target`
+    *   : The target object of which to get the prototype.
 
 ### Return value
 
@@ -82,7 +83,7 @@ Reflect.getPrototypeOf(Object('foo'))  // String.prototype
 
 ## See also
 
-- A polyfill of `Reflect.getPrototypeOf` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- {{jsxref("Object.getPrototypeOf()")}}
+*   A polyfill of `Reflect.getPrototypeOf` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   {{jsxref("Object.getPrototypeOf()")}}

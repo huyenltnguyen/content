@@ -24,79 +24,79 @@ Besides the generic `Error` constructor, there are other core error constructors
 in JavaScript. For client-side exceptions, see
 [Exception handling statements](/en-US/docs/Web/JavaScript/Guide/Statements#Exception_handling_statements).
 
-- {{JSxRef("EvalError")}}
-  - : Creates an instance representing an error that occurs regarding the global
-    function {{JSxRef("eval", "eval()")}}.
-- {{JSxRef("RangeError")}}
-  - : Creates an instance representing an error that occurs when a numeric
-    variable or parameter is outside of its valid range.
-- {{JSxRef("ReferenceError")}}
-  - : Creates an instance representing an error that occurs when de-referencing
-    an invalid reference.
-- {{JSxRef("SyntaxError")}}
-  - : Creates an instance representing a syntax error.
-- {{JSxRef("TypeError")}}
-  - : Creates an instance representing an error that occurs when a variable or
-    parameter is not of a valid type.
-- {{JSxRef("URIError")}}
-  - : Creates an instance representing an error that occurs when
-    {{JSxRef("encodeURI", "encodeURI()")}} or
-    {{JSxRef("decodeURI", "decodeURI()")}} are passed invalid
-    parameters.
-- {{JSxRef("AggregateError")}}
-  - : Creates an instance representing several errors wrapped in a single error
-    when multiple errors need to be reported by an operation, for example by
-    {{JSxRef("Promise.any()")}}.
-- {{JSxRef("InternalError")}} {{non-standard_inline}}
-  - : Creates an instance representing an error that occurs when an internal
-    error in the JavaScript engine is thrown. E.g. "too much recursion".
+*   {{JSxRef("EvalError")}}
+    *   : Creates an instance representing an error that occurs regarding the global
+        function {{JSxRef("eval", "eval()")}}.
+*   {{JSxRef("RangeError")}}
+    *   : Creates an instance representing an error that occurs when a numeric
+        variable or parameter is outside of its valid range.
+*   {{JSxRef("ReferenceError")}}
+    *   : Creates an instance representing an error that occurs when de-referencing
+        an invalid reference.
+*   {{JSxRef("SyntaxError")}}
+    *   : Creates an instance representing a syntax error.
+*   {{JSxRef("TypeError")}}
+    *   : Creates an instance representing an error that occurs when a variable or
+        parameter is not of a valid type.
+*   {{JSxRef("URIError")}}
+    *   : Creates an instance representing an error that occurs when
+        {{JSxRef("encodeURI", "encodeURI()")}} or
+        {{JSxRef("decodeURI", "decodeURI()")}} are passed invalid
+        parameters.
+*   {{JSxRef("AggregateError")}}
+    *   : Creates an instance representing several errors wrapped in a single error
+        when multiple errors need to be reported by an operation, for example by
+        {{JSxRef("Promise.any()")}}.
+*   {{JSxRef("InternalError")}} {{non-standard_inline}}
+    *   : Creates an instance representing an error that occurs when an internal
+        error in the JavaScript engine is thrown. E.g. "too much recursion".
 
 ## Constructor
 
-- [`Error()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Error)
-  - : Creates a new `Error` object.
+*   [`Error()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Error)
+    *   : Creates a new `Error` object.
 
 ## Static methods
 
-- {{JSxRef("Error.captureStackTrace()")}}
-  - : A non-standard **V8** function that creates the
-    {{JSxRef("Error.prototype.stack", "stack")}} property on an
-    Error instance.
+*   {{JSxRef("Error.captureStackTrace()")}}
+    *   : A non-standard **V8** function that creates the
+        {{JSxRef("Error.prototype.stack", "stack")}} property on an
+        Error instance.
 
 ## Instance properties
 
-- {{jsxref("Error.prototype.message")}}
-  - : Error message.
-- {{jsxref("Error.prototype.name")}}
-  - : Error name.
-- {{jsxref("Error.prototype.description")}}
-  {{non-standard_inline}}
-  - : A non-standard Microsoft property for the error description. Similar to
-    {{jsxref("Error.prototype.message", "message")}}.
-- {{jsxref("Error.prototype.number")}}
-  {{non-standard_inline}}
-  - : A non-standard Microsoft property for an error number.
-- {{jsxref("Error.prototype.fileName")}}
-  {{non-standard_inline}}
-  - : A non-standard Mozilla property for the path to the file that raised this
-    error.
-- {{jsxref("Error.prototype.lineNumber")}}
-  {{non-standard_inline}}
-  - : A non-standard Mozilla property for the line number in the file that
-    raised this error.
-- {{jsxref("Error.prototype.columnNumber")}}
-  {{non-standard_inline}}
-  - : A non-standard Mozilla property for the column number in the line that
-    raised this error.
-- {{jsxref("Error.prototype.stack")}}
-  {{non-standard_inline}}
-  - : A non-standard Mozilla property for a stack trace.
+*   {{jsxref("Error.prototype.message")}}
+    *   : Error message.
+*   {{jsxref("Error.prototype.name")}}
+    *   : Error name.
+*   {{jsxref("Error.prototype.description")}}
+    {{non-standard_inline}}
+    *   : A non-standard Microsoft property for the error description. Similar to
+        {{jsxref("Error.prototype.message", "message")}}.
+*   {{jsxref("Error.prototype.number")}}
+    {{non-standard_inline}}
+    *   : A non-standard Microsoft property for an error number.
+*   {{jsxref("Error.prototype.fileName")}}
+    {{non-standard_inline}}
+    *   : A non-standard Mozilla property for the path to the file that raised this
+        error.
+*   {{jsxref("Error.prototype.lineNumber")}}
+    {{non-standard_inline}}
+    *   : A non-standard Mozilla property for the line number in the file that
+        raised this error.
+*   {{jsxref("Error.prototype.columnNumber")}}
+    {{non-standard_inline}}
+    *   : A non-standard Mozilla property for the column number in the line that
+        raised this error.
+*   {{jsxref("Error.prototype.stack")}}
+    {{non-standard_inline}}
+    *   : A non-standard Mozilla property for a stack trace.
 
 ## Instance methods
 
-- {{jsxref("Error.prototype.toString()")}}
-  - : Returns a string representing the specified object. Overrides the
-    {{jsxref("Object.prototype.toString()")}} method.
+*   {{jsxref("Error.prototype.toString()")}}
+    *   : Returns a string representing the specified object. Overrides the
+        {{jsxref("Object.prototype.toString()")}} method.
 
 ## Examples
 
@@ -237,5 +237,5 @@ try {
 
 ## See also
 
-- {{JSxRef("Statements/throw", "throw")}}
-- {{JSxRef("Statements/try...catch", "try...catch")}}
+*   {{JSxRef("Statements/throw", "throw")}}
+*   {{JSxRef("Statements/try...catch", "try...catch")}}

@@ -103,7 +103,8 @@ get the format of the language used in the user interface of your application,
 make sure to specify that language (and possibly some fallback languages) using
 the `locales` argument:
 
-<pre class="brush: js">var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+```js
+var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
 
 // formats below assume the local time zone of the locale;
 // America/Los_Angeles for the US
@@ -126,7 +127,7 @@ console.log(date.toLocaleDateString('fa-IR'));
 
 // Arabic in most Arabic speaking countries uses real Arabic digits
 console.log(date.toLocaleDateString('ar-EG'));
-// → "<span dir="rtl">٢٠‏/١٢‏/٢٠١٢</span>"
+// → "٢٠‏/١٢‏/٢٠١٢"
 
 // for Japanese, applications may want to use the Japanese calendar,
 // where 2012 was the year 24 of the Heisei era
@@ -137,7 +138,7 @@ console.log(date.toLocaleDateString('ja-JP-u-ca-japanese'));
 // Balinese, include a fallback language, in this case Indonesian
 console.log(date.toLocaleDateString(['ban', 'id']));
 // → "20/12/2012"
-</pre>
+```
 
 ### Using options
 
@@ -169,7 +170,7 @@ console.log(date.toLocaleDateString('en-US', options));
 
 ## See also
 
-- {{jsxref("Global_Objects/DateTimeFormat", "Intl.DateTimeFormat")}}
-- {{jsxref("Date.prototype.toLocaleString()")}}
-- {{jsxref("Date.prototype.toLocaleTimeString()")}}
-- {{jsxref("Date.prototype.toString()")}}
+*   {{jsxref("Global_Objects/DateTimeFormat", "Intl.DateTimeFormat")}}
+*   {{jsxref("Date.prototype.toLocaleString()")}}
+*   {{jsxref("Date.prototype.toLocaleTimeString()")}}
+*   {{jsxref("Date.prototype.toString()")}}

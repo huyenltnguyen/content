@@ -62,14 +62,14 @@ of defined values in the array. See also
 
 {{js_property_attributes(1, 0, 0)}}
 
-- `Writable`: If this attribute set to `false`, the value of the property cannot
-  be changed.
-- `Configurable`: If this attribute set to `false`, any attempts to delete the
-  property or change its attributes (`Writable`, `Configurable`, or
-  `Enumerable`) will fail.
-- `Enumerable`: If this attribute set to `true`, the property will be iterated
-  over during [for](/en-US/docs/Web/JavaScript/Reference/Statements/for) or
-  [for..in](/en-US/docs/Web/JavaScript/Reference/Statements/for...in) loops.
+*   `Writable`: If this attribute set to `false`, the value of the property cannot
+    be changed.
+*   `Configurable`: If this attribute set to `false`, any attempts to delete the
+    property or change its attributes (`Writable`, `Configurable`, or
+    `Enumerable`) will fail.
+*   `Enumerable`: If this attribute set to `true`, the property will be iterated
+    over during [for](/en-US/docs/Web/JavaScript/Reference/Statements/for) or
+    [for..in](/en-US/docs/Web/JavaScript/Reference/Statements/for...in) loops.
 
 ## Examples
 
@@ -121,5 +121,5 @@ console.log(numbers); // [undefined, undefined, undefined]
 
 ## See also
 
-- {{jsxref("Array")}}
-- [RangeError: invalid array length](/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_array_length)
+*   {{jsxref("Array")}}
+*   [RangeError: invalid array length](/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_array_length)

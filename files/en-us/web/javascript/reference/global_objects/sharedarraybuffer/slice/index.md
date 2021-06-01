@@ -31,29 +31,29 @@ slice(begin, end)
 
 ### Parameters
 
-- `begin` {{optional_inline}}
+*   `begin` {{optional_inline}}
 
-  - : Zero-based index at which to begin extraction.
+    *   : Zero-based index at which to begin extraction.
 
-    A negative index can be used, indicating an offset from the end of the
-    sequence. `slice(-2)` extracts the last two elements in the sequence.
+        A negative index can be used, indicating an offset from the end of the
+        sequence. `slice(-2)` extracts the last two elements in the sequence.
 
-    If `begin` is undefined, `slice` begins from index `0`.
+        If `begin` is undefined, `slice` begins from index `0`.
 
-- `end` {{optional_inline}}
+*   `end` {{optional_inline}}
 
-  - : Zero-based index _before_ which to end extraction. `slice` extracts up to
-    but not including `end`.
+    *   : Zero-based index *before* which to end extraction. `slice` extracts up to
+        but not including `end`.
 
-    For example, `slice(1,4)` extracts the second element through the fourth
-    element (elements indexed 1, 2, and 3).
+        For example, `slice(1,4)` extracts the second element through the fourth
+        element (elements indexed 1, 2, and 3).
 
-    A negative index can be used, indicating an offset from the end of the
-    sequence. `slice(2,-1)` extracts the third element through the
-    second-to-last element in the sequence.
+        A negative index can be used, indicating an offset from the end of the
+        sequence. `slice(2,-1)` extracts the third element through the
+        second-to-last element in the sequence.
 
-    If `end` is omitted, `slice` extracts through the end of the sequence
-    (`sab.byteLength`).
+        If `end` is omitted, `slice` extracts through the end of the sequence
+        (`sab.byteLength`).
 
 ### Return value
 
@@ -82,5 +82,5 @@ sab.slice(0, 1); // SharedArrayBuffer { byteLength: 1 }
 
 ## See also
 
-- {{jsxref("SharedArrayBuffer")}}
-- {{jsxref("Array.prototype.slice()")}}
+*   {{jsxref("SharedArrayBuffer")}}
+*   {{jsxref("Array.prototype.slice()")}}

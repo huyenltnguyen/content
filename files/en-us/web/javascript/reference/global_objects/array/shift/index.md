@@ -92,7 +92,7 @@ while( typeof (i = names.shift()) !== 'undefined' ) {
 
 ## See also
 
-- {{jsxref("Array.prototype.push()")}}
-- {{jsxref("Array.prototype.pop()")}}
-- {{jsxref("Array.prototype.unshift()")}}
-- {{jsxref("Array.prototype.concat()")}}
+*   {{jsxref("Array.prototype.push()")}}
+*   {{jsxref("Array.prototype.pop()")}}
+*   {{jsxref("Array.prototype.unshift()")}}
+*   {{jsxref("Array.prototype.concat()")}}

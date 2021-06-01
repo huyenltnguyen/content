@@ -20,9 +20,11 @@ in JavaScript.
 
 ## Syntax
 
-<pre class="brush: js">function f(<var>a</var>, <var>b</var>, ...<var>theArgs</var>) {
+```js
+function f(a, b, ...theArgs) {
   // ...
-}</pre>
+}
+```
 
 ## Description
 
@@ -70,18 +72,18 @@ foo(arg1, arg2, ...correct)
 There are three main differences between rest parameters and the
 {{jsxref("Functions/arguments", "arguments")}} object:
 
-- The `arguments` object is **not a real array**, while rest parameters are
-  {{jsxref("Global_Objects/Array", "Array")}} instances, meaning
-  methods like {{jsxref("Array.sort", "sort")}},
-  {{jsxref("Array.map", "map")}},
-  {{jsxref("Array.forEach", "forEach")}} or
-  {{jsxref("Array/pop", "pop")}} can be applied on it directly;
-- The `arguments` object has additional functionality specific to itself (like
-  the `callee` property).
-- The `...restParam` bundles all the extra parameters into a single array,
-  therefore it does not contain any named argument defined **before** the
-  `...restParam`. Whereas the `arguments` object contains all of the parameters
-  -- including all of the stuff in the `...restParam` -- **un**bundled.
+*   The `arguments` object is **not a real array**, while rest parameters are
+    {{jsxref("Global_Objects/Array", "Array")}} instances, meaning
+    methods like {{jsxref("Array.sort", "sort")}},
+    {{jsxref("Array.map", "map")}},
+    {{jsxref("Array.forEach", "forEach")}} or
+    {{jsxref("Array/pop", "pop")}} can be applied on it directly;
+*   The `arguments` object has additional functionality specific to itself (like
+    the `callee` property).
+*   The `...restParam` bundles all the extra parameters into a single array,
+    therefore it does not contain any named argument defined **before** the
+    `...restParam`. Whereas the `arguments` object contains all of the parameters
+    \-- including all of the stuff in the `...restParam` -- **un**bundled.
 
 ### From arguments to an array
 
@@ -238,11 +240,11 @@ console.log(sortArguments(5, 3, 7, 1))  // 1, 3, 5, 7
 
 ## See also
 
-- [Spread syntax](/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-  (also ‘`...`’)
-- [Arguments object](/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
-- [Array](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-- [Functions](/en-US/docs/Web/JavaScript/Reference/Functions "Functions and function scope")
-- [Original proposal at ecmascript.org](http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters)
-- [JavaScript arguments object and beyond](http://javascriptweblog.wordpress.com/2011/01/18/javascripts-arguments-object-and-beyond/)
-- [Destructuring assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+*   [Spread syntax](/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+    (also ‘`...`’)
+*   [Arguments object](/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
+*   [Array](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+*   [Functions](/en-US/docs/Web/JavaScript/Reference/Functions "Functions and function scope")
+*   [Original proposal at ecmascript.org](http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters)
+*   [JavaScript arguments object and beyond](http://javascriptweblog.wordpress.com/2011/01/18/javascripts-arguments-object-and-beyond/)
+*   [Destructuring assignment](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)

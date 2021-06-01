@@ -41,4 +41,4 @@ sab.byteLength; // 1024
 
 ## See also
 
-- {{jsxref("SharedArrayBuffer")}}
+*   {{jsxref("SharedArrayBuffer")}}

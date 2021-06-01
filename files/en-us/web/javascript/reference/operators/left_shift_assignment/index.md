@@ -18,8 +18,10 @@ the left and assigns the result to the variable.
 
 ## Syntax
 
-<pre class="brush: js"><strong>Operator:</strong> x &#x3C;&#x3C;= y
-<strong>Meaning:</strong>  x   = x &#x3C;&#x3C; y</pre>
+```js
+Operator: x <<= y
+Meaning:  x   = x << y
+```
 
 ## Examples
 
@@ -43,5 +45,5 @@ a <<= 2; // 20
 
 ## See also
 
-- [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
-- [Left shift operator](/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift)
+*   [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
+*   [Left shift operator](/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift)

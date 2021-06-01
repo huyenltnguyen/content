@@ -31,8 +31,8 @@ format(number)
 
 ### Parameters
 
-- `number`
-  - : A {{jsxref("Number")}} or {{jsxref("BigInt")}} to format.
+*   `number`
+    *   : A {{jsxref("Number")}} or {{jsxref("BigInt")}} to format.
 
 ## Description
 
@@ -81,5 +81,5 @@ console.log(formatted.join('; '));
 
 ## See also
 
-- {{jsxref("Intl/NumberFormat", "Intl.NumberFormat")}}
-- {{jsxref("Number.prototype.toLocaleString()")}}
+*   {{jsxref("Intl/NumberFormat", "Intl.NumberFormat")}}
+*   {{jsxref("Number.prototype.toLocaleString()")}}

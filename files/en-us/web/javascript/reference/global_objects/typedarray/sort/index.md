@@ -13,10 +13,10 @@ browser-compat: javascript.builtins.TypedArray.sort
 ---
 {{JSRef}}
 
-The **`sort()`** method sorts the elements of a typed array numerically _in
-place_ and returns the typed array. This method has the same algorithm as
+The **`sort()`** method sorts the elements of a typed array numerically *in
+place* and returns the typed array. This method has the same algorithm as
 {{jsxref("Array.prototype.sort()")}}, except that sorts the values
-numerically instead of as strings. _TypedArray_ is one of the
+numerically instead of as strings. *TypedArray* is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
 
@@ -40,8 +40,8 @@ sort(function compareFn(firstEl, secondEl) { ... })
 
 ### Parameters
 
-- `compareFunction` {{optional_inline}}
-  - : Specifies a function that defines the sort order.
+*   `compareFunction` {{optional_inline}}
+    *   : Specifies a function that defines the sort order.
 
 ### Return value
 
@@ -80,6 +80,6 @@ numbers.sort((a, b) => a - b); // compare numbers
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.sort` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("Array.prototype.sort()")}}
+*   A polyfill of `TypedArray.prototype.sort` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("Array.prototype.sort()")}}

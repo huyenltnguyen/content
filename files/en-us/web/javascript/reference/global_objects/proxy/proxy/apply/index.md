@@ -16,23 +16,24 @@ The **`handler.apply()`** method is a trap for a function call.
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  apply: function(<var>target</var>, <var>thisArg</var>, <var>argumentsList</var>) {
+```js
+const p = new Proxy(target, {
+  apply: function(target, thisArg, argumentsList) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameters are passed to the `apply()` method. `this` is bound to
 the handler.
 
-- `target`
-  - : The target object.
-- `thisArg`
-  - : The `this` argument for the call.
-- `argumentsList`
-  - : The list of arguments for the call.
+*   `target`
+    *   : The target object.
+*   `thisArg`
+    *   : The `this` argument for the call.
+*   `argumentsList`
+    *   : The list of arguments for the call.
 
 ### Return value
 
@@ -46,10 +47,10 @@ The **`handler.apply()`** method is a trap for a function call.
 
 This trap can intercept these operations:
 
-- <code><var>proxy</var>(...<var>args</var>)</code>
-- {{jsxref("Function.prototype.apply()")}} and
-  {{jsxref("Function.prototype.call()")}}
-- {{jsxref("Reflect.apply()")}}
+*   <code><var>proxy</var>(...<var>args</var>)</code>
+*   {{jsxref("Function.prototype.apply()")}} and
+    {{jsxref("Function.prototype.call()")}}
+*   {{jsxref("Reflect.apply()")}}
 
 ### Invariants
 
@@ -86,8 +87,8 @@ console.log(p(1, 2, 3)); // "called: 1, 2, 3"
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Function.prototype.apply()")}}
-- {{jsxref("Function.prototype.call()")}}
-- {{jsxref("Reflect.apply()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Function.prototype.apply()")}}
+*   {{jsxref("Function.prototype.call()")}}
+*   {{jsxref("Reflect.apply()")}}

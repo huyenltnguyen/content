@@ -18,8 +18,9 @@ The logical OR assignment (`x ||= y`) operator only assigns if `x` is
 
 ## Syntax
 
-<pre class="brush: js"><em>expr1</em> ||= <em>expr2</em>
-</pre>
+```js
+expr1 ||= expr2
+```
 
 ## Description
 
@@ -83,9 +84,9 @@ be used, otherwise you want to use the `??=` operator (for
 
 ## See also
 
-- [Logical OR (||)](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
-- [The nullish coalescing operator (`??`)](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
-- [Bitwise OR assignment (`|=`)](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment)
-- {{jsxref("Boolean")}}
-- {{Glossary("Truthy")}}
-- {{Glossary("Falsy")}}
+*   [Logical OR (||)](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
+*   [The nullish coalescing operator (`??`)](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
+*   [Bitwise OR assignment (`|=`)](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment)
+*   {{jsxref("Boolean")}}
+*   {{Glossary("Truthy")}}
+*   {{Glossary("Falsy")}}

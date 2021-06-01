@@ -70,4 +70,4 @@ if (foo.hasOwnProperty('bar')) {
 
 ## See also
 
-- {{jsxref("Operators/Property_Accessors", "property accessors", 0, 1)}}
+*   {{jsxref("Operators/Property_Accessors", "property accessors", 0, 1)}}

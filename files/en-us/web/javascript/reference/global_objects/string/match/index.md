@@ -12,7 +12,7 @@ browser-compat: javascript.builtins.String.match
 ---
 {{JSRef}}
 
-The **`match()`** method retrieves the result of matching a _string_ against a
+The **`match()`** method retrieves the result of matching a *string* against a
 [regular expression](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
 {{EmbedInteractiveExample("pages/js/string-match.html", "shorter")}}
@@ -25,43 +25,43 @@ match(regexp)
 
 ### Parameters
 
-- `regexp`
+*   `regexp`
 
-  - : A regular expression object.
+    *   : A regular expression object.
 
-    If `regexp` is a non-`RegExp` object, it is implicitly converted to a
-    {{jsxref("RegExp")}} by using <code>new
-    RegExp(<var>regexp</var>)</code>.
+        If `regexp` is a non-`RegExp` object, it is implicitly converted to a
+        {{jsxref("RegExp")}} by using <code>new
+        RegExp(<var>regexp</var>)</code>.
 
-    If you don't give any parameter and use the `match()` method directly, you
-    will get an {{jsxref("Array")}} with an empty string: `[""]`.
+        If you don't give any parameter and use the `match()` method directly, you
+        will get an {{jsxref("Array")}} with an empty string: `[""]`.
 
 ### Return value
 
 An {{jsxref("Array")}} whose contents depend on the presence or absence of
 the global (`g`) flag, or {{jsxref("null")}} if no matches are found.
 
-- If the `g` flag is used, all results matching the complete regular expression
-  will be returned, but capturing groups will not.
-- if the `g` flag is not used, only the first complete match and its related
-  capturing groups are returned. In this case, the returned item will have
-  additional properties as described below.
+*   If the `g` flag is used, all results matching the complete regular expression
+    will be returned, but capturing groups will not.
+*   if the `g` flag is not used, only the first complete match and its related
+    capturing groups are returned. In this case, the returned item will have
+    additional properties as described below.
 
 #### Additional properties
 
 As explained above, some results contain additional properties as described
 below.
 
-- `groups`
-  - : An object of named capturing groups whose keys are the names and values
-    are the capturing groups or {{jsxref("undefined")}} if no named
-    capturing groups were defined. See
-    [Groups and Ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
-    for more information.
-- `index`
-  - : The index of the search at which the result was found.
-- `input`
-  - : A copy of the search string.
+*   `groups`
+    *   : An object of named capturing groups whose keys are the names and values
+        are the capturing groups or {{jsxref("undefined")}} if no named
+        capturing groups were defined. See
+        [Groups and Ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
+        for more information.
+*   `index`
+    *   : The index of the search at which the result was found.
+*   `input`
+    *   : A copy of the search string.
 
 ## Description
 
@@ -71,15 +71,15 @@ return the same result as
 
 ### Other methods
 
-- If you need to know if a string matches a regular expression
-  {{jsxref("RegExp")}}, use
-  {{jsxref("RegExp.prototype.test()", "RegExp.test()")}}.
-- If you only want the first match found, you might want to use
-  {{jsxref("RegExp.prototype.exec()", "RegExp.exec()")}}
-  instead.
-- If you want to obtain capture groups and the global flag is set, you need to
-  use {{jsxref("RegExp.prototype.exec()", "RegExp.exec()")}}
-  or {{jsxref("String.prototype.matchAll()")}} instead.
+*   If you need to know if a string matches a regular expression
+    {{jsxref("RegExp")}}, use
+    {{jsxref("RegExp.prototype.test()", "RegExp.test()")}}.
+*   If you only want the first match found, you might want to use
+    {{jsxref("RegExp.prototype.exec()", "RegExp.exec()")}}
+    instead.
+*   If you want to obtain capture groups and the global flag is set, you need to
+    use {{jsxref("RegExp.prototype.exec()", "RegExp.exec()")}}
+    or {{jsxref("String.prototype.matchAll()")}} instead.
 
 ## Examples
 
@@ -185,7 +185,7 @@ str3.match(null);       // returns ["null"]
 
 ## See also
 
-- {{jsxref("String.prototype.matchAll()")}}
-- {{jsxref("RegExp")}}
-- {{jsxref("RegExp.prototype.exec()")}}
-- {{jsxref("RegExp.prototype.test()")}}
+*   {{jsxref("String.prototype.matchAll()")}}
+*   {{jsxref("RegExp")}}
+*   {{jsxref("RegExp.prototype.exec()")}}
+*   {{jsxref("RegExp.prototype.test()")}}

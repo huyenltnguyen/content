@@ -20,12 +20,14 @@ or a {{jsxref("DataView")}}.
 
 ## Syntax
 
-<pre class="brush: js">ArrayBuffer.isView(<var>value</var>)</pre>
+```js
+ArrayBuffer.isView(value)
+```
 
 ### Parameters
 
-- `value`
-  - : The value to be checked.
+*   `value`
+    *   : The value to be checked.
 
 ### Return value
 
@@ -63,4 +65,4 @@ ArrayBuffer.isView(dv); // true
 
 ## See also
 
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)

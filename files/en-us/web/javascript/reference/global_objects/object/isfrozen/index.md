@@ -17,12 +17,14 @@ The **`Object.isFrozen()`** determines if an object is
 
 ## Syntax
 
-<pre class="brush: js">Object.isFrozen(<var>obj</var>)</pre>
+```js
+Object.isFrozen(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object which should be checked.
+*   `obj`
+    *   : The object which should be checked.
 
 ### Return value
 
@@ -150,8 +152,8 @@ Object.isFrozen(1);
 
 ## See also
 
-- {{jsxref("Object.freeze()")}}
-- {{jsxref("Object.preventExtensions()")}}
-- {{jsxref("Object.isExtensible()")}}
-- {{jsxref("Object.seal()")}}
-- {{jsxref("Object.isSealed()")}}
+*   {{jsxref("Object.freeze()")}}
+*   {{jsxref("Object.preventExtensions()")}}
+*   {{jsxref("Object.isExtensible()")}}
+*   {{jsxref("Object.seal()")}}
+*   {{jsxref("Object.isSealed()")}}

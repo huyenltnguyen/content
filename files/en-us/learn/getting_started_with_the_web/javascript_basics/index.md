@@ -9,9 +9,7 @@ tags:
   - Web
   - l10n:priority
 ---
-{{LearnSidebar}}
-
-{{PreviousMenuNext("Learn/Getting_started_with_the_web/CSS_basics", "Learn/Getting_started_with_the_web/Publishing_your_website", "Learn/Getting_started_with_the_web")}}
+{{LearnSidebar}}{{PreviousMenuNext("Learn/Getting_started_with_the_web/CSS_basics", "Learn/Getting_started_with_the_web/Publishing_your_website", "Learn/Getting_started_with_the_web")}}
 
 JavaScript is a programming language that adds interactivity to your website.
 This happens in games, in the behavior of responses when buttons are pressed or
@@ -35,15 +33,15 @@ JavaScript itself is relatively compact, yet very flexible. Developers have
 written a variety of tools on top of the core JavaScript language, unlocking a
 vast amount of functionality with minimum effort. These include:
 
-- Browser Application Programming Interfaces
-  ({{Glossary("API","APIs")}}) built into web browsers, providing
-  functionality such as dynamically creating HTML and setting CSS styles;
-  collecting and manipulating a video stream from a user's webcam, or generating
-  3D graphics and audio samples.
-- Third-party APIs that allow developers to incorporate functionality in sites
-  from other content providers, such as Twitter or Facebook.
-- Third-party frameworks and libraries that you can apply to HTML to accelerate
-  the work of building sites and applications.
+*   Browser Application Programming Interfaces
+    ({{Glossary("API","APIs")}}) built into web browsers, providing
+    functionality such as dynamically creating HTML and setting CSS styles;
+    collecting and manipulating a video stream from a user's webcam, or generating
+    3D graphics and audio samples.
+*   Third-party APIs that allow developers to incorporate functionality in sites
+    from other content providers, such as Twitter or Facebook.
+*   Third-party frameworks and libraries that you can apply to HTML to accelerate
+    the work of building sites and applications.
 
 It's outside the scope of this article—as a light introduction to JavaScript—to
 present the details of how the core JavaScript language is different from the
@@ -54,7 +52,7 @@ parts of MDN.
 The section below introduces some aspects of the core language and offers an
 opportunity to play with a few browser API features too. Have fun!
 
-## A _Hello world!_ example
+## A *Hello world!* example
 
 JavaScript is one of the most popular modern web technologies! As your
 JavaScript skills grow, your websites will enter a new dimension of power and
@@ -63,13 +61,14 @@ creativity.
 However, getting comfortable with JavaScript is more challenging than getting
 comfortable with HTML and CSS. You may have to start small, and progress
 gradually. To begin, let's examine how to add JavaScript to your page for
-creating a _Hello world!_ example. (_Hello world!_
-is[ the standard for introductory programming examples](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program).)
+creating a *Hello world!* example. (*Hello world!*
+is[ the standard for introductory programming examples](https://en.wikipedia.org/wiki/%22Hello,\_World!%22\_program).)
 
 <div class="warning"><p><strong>Important</strong>: If you haven't been following along with the rest of our course, <a href="https://github.com/mdn/beginner-html-site-styled/archive/gh-pages.zip">download this example code</a> and use it as a starting point.</p></div>
 
 1.  Go to your test site and create a new folder named `scripts`. Within the
     scripts folder, create a new file called `main.js`, and save it.
+
 2.  In your `index.html` file, enter this code on a new line, just before the
     closing `</body>` tag:
 
@@ -80,6 +79,7 @@ is[ the standard for introductory programming examples](https://en.wikipedia.org
 3.  This is doing the same job as the {{htmlelement("link")}} element
     for CSS. It applies the JavaScript to the page, so it can have an effect on
     the HTML (along with the CSS, and anything else on the page).
+
 4.  Add this code to the `main.js` file:
 
     ```js
@@ -96,7 +96,7 @@ is[ the standard for introductory programming examples](https://en.wikipedia.org
 
 ### What happened?
 
-The heading text changed to _Hello world!_ using JavaScript. You did this by
+The heading text changed to *Hello world!* using JavaScript. You did this by
 using a function called
 `{{domxref("Document.querySelector", "querySelector()")}}`
 to grab a reference to your heading, and then store it in a variable called
@@ -105,7 +105,7 @@ to do something to an element, you need to select it first.
 
 Following that, the code set the value of the `myHeading` variable's
 `{{domxref("Node.textContent", "textContent")}}` property (which
-represents the content of the heading) to _Hello world!_.
+represents the content of the heading) to *Hello world!*.
 
 <div class="note"><p><strong>Note</strong>: Both of the features you used in this exercise are parts of the <a href="/en-US/docs/Web/API/Document_Object_Model">Document Object Model (DOM) API</a>, which has the capability to manipulate documents.</p></div>
 
@@ -234,11 +234,11 @@ a function that executes when you call the function name in your code. This is a
 good alternative to repeatedly writing the same code. You have already seen some
 uses of functions previously. For example:
 
-    ```js
+1.  ```js
     let myVariable = document.querySelector('h1');
     ```
 
-    ```js
+2.  ```js
     alert('hello!');
     ```
 
@@ -330,8 +330,11 @@ clicks the displayed image.
 1.  Choose an image you want to feature on your example site. Ideally, the image
     will be the same size as the image you added previously, or as close as
     possible.
+
 2.  Save this image in your `images` folder.
-3.  Rename the image _firefox2.png_.
+
+3.  Rename the image *firefox2.png*.
+
 4.  Add the JavaScript below to your `main.js` file.
 
     ```js
@@ -404,7 +407,7 @@ option to change the user, and therefore, the welcome message.
     [`prompt()`](/en-US/docs/Web/API/Window/prompt) function, which displays a
     dialog box, similar to `alert()`. This `prompt()` function does more than
     `alert()`, asking the user to enter data, and storing it in a variable after
-    the user clicks _OK._ In this case, we are asking the user to enter a name.
+    the user clicks *OK.* In this case, we are asking the user to enter a name.
     Next, the code calls on an API `localStorage`, which allows us to store data
     in the browser and retrieve it later. We use localStorage's `setItem()`
     function to create and store a data item called `'name'`, setting its value
@@ -444,14 +447,14 @@ option to change the user, and therefore, the welcome message.
 ### A user name of null?
 
 When you run the example and get the dialog box that prompts you to enter your
-user name, try pressing the _Cancel_ button. You should end up with a title that
-reads _Mozilla is cool, null_. This happens because—when you cancel the
+user name, try pressing the *Cancel* button. You should end up with a title that
+reads *Mozilla is cool, null*. This happens because—when you cancel the
 prompt—the value is set as
-[`null`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/null). _Null_ is a
+[`null`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/null). *Null* is a
 special value in JavaScript that refers to the absence of a value.
 
-Also, try clicking _OK_ without entering a name. You should end up with a title
-that reads _Mozilla is cool,_ for fairly obvious reasons.
+Also, try clicking *OK* without entering a name. You should end up with a title
+that reads *Mozilla is cool,* for fairly obvious reasons.
 
 To avoid these problems, you could check that the user hasn't entered a blank
 name. Update your `setUserName()` function to this:
@@ -488,23 +491,23 @@ wish to go further, take advantage of the resources listed below.
 
 ## See also
 
-- [Dynamic client-side scripting with JavaScript](/en-US/docs/Learn/JavaScript)
-  - : Dive into JavaScript in much more detail.
-- [Learn JavaScript](https://learnjavascript.online/)
-  - : This is an excellent resource for aspiring web developers! Learn
-    JavaScript in an interactive environment, with short lessons and interactive
-    tests, guided by an automated assessment. The first 40 lessons are free. The
-    complete course is available for a small one-time payment.
+*   [Dynamic client-side scripting with JavaScript](/en-US/docs/Learn/JavaScript)
+    *   : Dive into JavaScript in much more detail.
+*   [Learn JavaScript](https://learnjavascript.online/)
+    *   : This is an excellent resource for aspiring web developers! Learn
+        JavaScript in an interactive environment, with short lessons and interactive
+        tests, guided by an automated assessment. The first 40 lessons are free. The
+        complete course is available for a small one-time payment.
 
 {{PreviousMenuNext("Learn/Getting_started_with_the_web/CSS_basics", "Learn/Getting_started_with_the_web/Publishing_your_website", "Learn/Getting_started_with_the_web")}}
 
 ## In this module
 
-- [Installing basic software](/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software)
-- [What will your website look like?](/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like)
-- [Dealing with files](/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files)
-- [HTML basics](/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
-- [CSS basics](/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
-- [JavaScript basics](/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
-- [Publishing your website](/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website)
-- [How the web works](/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+*   [Installing basic software](/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software)
+*   [What will your website look like?](/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like)
+*   [Dealing with files](/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files)
+*   [HTML basics](/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+*   [CSS basics](/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+*   [JavaScript basics](/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+*   [Publishing your website](/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website)
+*   [How the web works](/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)

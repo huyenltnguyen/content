@@ -27,16 +27,16 @@ indexOf(searchElement, fromIndex)
 
 ### Parameters
 
-- `searchElement`
-  - : Element to locate in the array.
-- `fromIndex` {{optional_inline}}
-  - : The index to start the search at. If the index is greater than or equal to
-    the array's length, -1 is returned, which means the array will not be
-    searched. If the provided index value is a negative number, it is taken as
-    the offset from the end of the array. Note: if the provided index is
-    negative, the array is still searched from front to back. If the provided
-    index is 0, then the whole array will be searched. Default: 0 (entire array
-    is searched).
+*   `searchElement`
+    *   : Element to locate in the array.
+*   `fromIndex` {{optional_inline}}
+    *   : The index to start the search at. If the index is greater than or equal to
+        the array's length, -1 is returned, which means the array will not be
+        searched. If the provided index value is a negative number, it is taken as
+        the offset from the end of the array. Note: if the provided index is
+        negative, the array is still searched from front to back. If the provided
+        index is 0, then the whole array will be searched. Default: 0 (entire array
+        is searched).
 
 ### Return value
 
@@ -215,8 +215,8 @@ if (!Array.prototype.indexOf) {
 
 ## See also
 
-- A polyfill of `Array.prototype.indexOf` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.lastIndexOf()")}}
-- {{jsxref("TypedArray.prototype.indexOf()")}}
-- {{jsxref("String.prototype.indexOf()")}}
+*   A polyfill of `Array.prototype.indexOf` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.lastIndexOf()")}}
+*   {{jsxref("TypedArray.prototype.indexOf()")}}
+*   {{jsxref("String.prototype.indexOf()")}}

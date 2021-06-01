@@ -52,5 +52,5 @@ class MySet extends Set {
 
 ## See also
 
-- {{jsxref("Set")}}
-- {{jsxref("Symbol.species")}}
+*   {{jsxref("Set")}}
+*   {{jsxref("Symbol.species")}}

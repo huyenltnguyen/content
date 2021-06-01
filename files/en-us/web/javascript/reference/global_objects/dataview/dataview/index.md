@@ -27,17 +27,17 @@ new DataView(buffer, byteOffset, byteLength)
 
 ### Parameters
 
-- `buffer`
-  - : An existing {{jsxref("ArrayBuffer")}} or
-    {{jsxref("SharedArrayBuffer")}} to use as the storage backing the
-    new `DataView` object.
-- `byteOffset` {{optional_inline}}
-  - : The offset, in bytes, to the first byte in the above buffer for the new
-    view to reference. If unspecified, the buffer view starts with the first
-    byte.
-- `byteLength` {{optional_inline}}
-  - : The number of elements in the byte array. If unspecified, the view's
-    length will match the buffer's length.
+*   `buffer`
+    *   : An existing {{jsxref("ArrayBuffer")}} or
+        {{jsxref("SharedArrayBuffer")}} to use as the storage backing the
+        new `DataView` object.
+*   `byteOffset` {{optional_inline}}
+    *   : The offset, in bytes, to the first byte in the above buffer for the new
+        view to reference. If unspecified, the buffer view starts with the first
+        byte.
+*   `byteLength` {{optional_inline}}
+    *   : The number of elements in the byte array. If unspecified, the view's
+        length will match the buffer's length.
 
 ### Return value
 
@@ -52,14 +52,14 @@ form.
 
 ### Exceptions
 
-- {{jsxref("RangeError")}}
+*   {{jsxref("RangeError")}}
 
-  - : Thrown if the `byteOffset` or `byteLength` parameter values result in the
-    view extending past the end of the buffer.
+    *   : Thrown if the `byteOffset` or `byteLength` parameter values result in the
+        view extending past the end of the buffer.
 
-    For example, if the buffer is 16 bytes long, the `byteOffset` is 8, and the
-    `byteLength` is 10, this error is thrown because the resulting view tries to
-    extend 2 bytes past the total length of the buffer.
+        For example, if the buffer is 16 bytes long, the `byteOffset` is 8, and the
+        `byteLength` is 10, this error is thrown because the resulting view tries to
+        extend 2 bytes past the total length of the buffer.
 
 ## Examples
 
@@ -83,6 +83,6 @@ view.getInt16(1); // 42
 
 ## See also
 
-- A polyfill of `DataView` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("DataView")}}
+*   A polyfill of `DataView` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("DataView")}}

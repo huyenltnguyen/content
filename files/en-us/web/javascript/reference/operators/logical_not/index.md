@@ -20,8 +20,9 @@ single operand can be converted to `true`; otherwise, returns `true`.
 
 ## Syntax
 
-<pre class="brush: js">!<var>expr</var>
-</pre>
+```js
+!expr
+```
 
 ## Description
 
@@ -34,11 +35,11 @@ is so-called {{Glossary("falsy")}}.
 
 Examples of expressions that can be converted to false are:
 
-- `null`;
-- `NaN`;
-- `0`;
-- empty string (`""` or `''` or ` `` `);
-- `undefined`.
+*   `null`;
+*   `NaN`;
+*   `0`;
+*   empty string (`""` or `''` or ` `` `);
+*   `undefined`.
 
 Even though the `!` operator can be used with operands that are not Boolean
 values, it can still be considered a boolean operator since its return value can
@@ -76,12 +77,14 @@ The same conversion can be done through the
   "Boolean")}}
 function.
 
-<pre class="brush: js">n1 = !!true                   // !!truthy returns true
-n2 = !!{}                     // !!truthy returns true: <strong>any</strong> object is truthy...
-n3 = !!(new Boolean(false))   // ...even Boolean objects with a false <em>.valueOf()</em>!
+```js
+n1 = !!true                   // !!truthy returns true
+n2 = !!{}                     // !!truthy returns true: any object is truthy...
+n3 = !!(new Boolean(false))   // ...even Boolean objects with a false .valueOf()!
 n4 = !!false                  // !!falsy returns false
 n5 = !!""                     // !!falsy returns false
-n6 = !!Boolean(false)         // !!falsy returns false</pre>
+n6 = !!Boolean(false)         // !!falsy returns false
+```
 
 ### Converting between NOTs
 
@@ -107,6 +110,6 @@ bCondition
 
 ## See also
 
-- {{jsxref("Boolean")}}
-- {{Glossary("Truthy")}}
-- {{Glossary("Falsy")}}
+*   {{jsxref("Boolean")}}
+*   {{Glossary("Truthy")}}
+*   {{Glossary("Falsy")}}

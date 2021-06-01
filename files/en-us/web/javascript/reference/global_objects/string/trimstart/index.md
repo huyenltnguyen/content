@@ -104,7 +104,7 @@ ES6:
 
 ## See also
 
-- A polyfill of `String.prototype.trimStart` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.trim()")}}
-- {{jsxref("String.prototype.trimEnd()")}}
+*   A polyfill of `String.prototype.trimStart` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.trim()")}}
+*   {{jsxref("String.prototype.trimEnd()")}}

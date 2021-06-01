@@ -63,12 +63,13 @@ do {
 
 ## See also
 
-- [Regular expressions guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+*   [Regular expressions guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
-  - [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
-  - [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
-  - [Quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
-  - [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
+    *   [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
+    *   [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
+    *   [Quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
+    *   [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
 
-- [The `RegExp()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
-- [ClassRanges in the ECMAScript specification](https://tc39.es/ecma262/#sec-classranges)
+*   [The `RegExp()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+
+*   [ClassRanges in the ECMAScript specification](https://tc39.es/ecma262/#sec-classranges)

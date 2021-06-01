@@ -109,6 +109,6 @@ console.log(date);
 
 ## See also
 
-- {{jsxref("Date.prototype.toLocaleFormat")}}
-- {{jsxref("Date.prototype.toLocaleDateString")}}
-- {{jsxref("Intl/DateTimeFormat", "Intl.DateTimeFormat")}}
+*   {{jsxref("Date.prototype.toLocaleFormat")}}
+*   {{jsxref("Date.prototype.toLocaleDateString")}}
+*   {{jsxref("Intl/DateTimeFormat", "Intl.DateTimeFormat")}}

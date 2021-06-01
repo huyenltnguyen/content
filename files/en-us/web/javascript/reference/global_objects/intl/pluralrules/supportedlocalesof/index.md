@@ -26,20 +26,20 @@ Intl.PluralRules.supportedLocalesOf(locales, options)
 
 ### Parameters
 
-- `locales`
-  - : A string with a BCP 47 language tag, or an array of such strings. For the
-    general form of the `locales` argument, see the
-    {{jsxref("Intl",
+*   `locales`
+    *   : A string with a BCP 47 language tag, or an array of such strings. For the
+        general form of the `locales` argument, see the
+        {{jsxref("Intl",
 		"Intl", "#Locale_identification_and_negotiation", 1)}}
-    page.
-- `options` {{optional_inline}}
-  - : An object that may have the following property:
-    - `localeMatcher`
-      - : The locale matching algorithm to use. Possible values are "`lookup`"
-        and "`best fit`"; the default is "`best fit`". For information about
-        this option, see the
-        {{jsxref("Intl", "Intl", "#Locale_negotiation", 1)}}
         page.
+*   `options` {{optional_inline}}
+    *   : An object that may have the following property:
+        *   `localeMatcher`
+            *   : The locale matching algorithm to use. Possible values are "`lookup`"
+                and "`best fit`"; the default is "`best fit`". For information about
+                this option, see the
+                {{jsxref("Intl", "Intl", "#Locale_negotiation", 1)}}
+                page.
 
 ### Return value
 
@@ -84,4 +84,4 @@ console.log(Intl.PluralRules.supportedLocalesOf(locales, options).join(', '));
 
 ## See also
 
-- {{jsxref("Intl.PluralRules")}}
+*   {{jsxref("Intl.PluralRules")}}

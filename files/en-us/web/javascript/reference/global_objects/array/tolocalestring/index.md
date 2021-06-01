@@ -28,14 +28,14 @@ toLocaleString(locales, options);
 
 ### Parameters
 
-- `locales` {{optional_inline}}
-  - : A string with a BCP 47 language tag, or an array of such strings. For the
-    general form and interpretation of the `locales` argument, see the
-    {{jsxref("Intl")}} page.
-- `options` {{optional_inline}}
-  - : An object with configuration properties, for numbers see
-    {{jsxref("Number.prototype.toLocaleString()")}}, and for
-    dates see {{jsxref("Date.prototype.toLocaleString()")}}.
+*   `locales` {{optional_inline}}
+    *   : A string with a BCP 47 language tag, or an array of such strings. For the
+        general form and interpretation of the `locales` argument, see the
+        {{jsxref("Intl")}} page.
+*   `options` {{optional_inline}}
+    *   : An object with configuration properties, for numbers see
+        {{jsxref("Number.prototype.toLocaleString()")}}, and for
+        dates see {{jsxref("Date.prototype.toLocaleString()")}}.
 
 ### Return value
 
@@ -139,9 +139,9 @@ them non-enumerable.
 The elements of the array are converted to strings using their `toLocaleString`
 methods.
 
-- `Object`: {{jsxref("Object.prototype.toLocaleString()")}}
-- `Number`: {{jsxref("Number.prototype.toLocaleString()")}}
-- `Date`: {{jsxref("Date.prototype.toLocaleString()")}}
+*   `Object`: {{jsxref("Object.prototype.toLocaleString()")}}
+*   `Number`: {{jsxref("Number.prototype.toLocaleString()")}}
+*   `Date`: {{jsxref("Date.prototype.toLocaleString()")}}
 
 Always display the currency for the strings and numbers in the `prices` array:
 
@@ -166,8 +166,8 @@ pages.
 
 ## See also
 
-- {{jsxref("Array.prototype.toString()")}}
-- {{jsxref("Intl")}}
-- {{jsxref("Object.prototype.toLocaleString()")}}
-- {{jsxref("Number.prototype.toLocaleString()")}}
-- {{jsxref("Date.prototype.toLocaleString()")}}
+*   {{jsxref("Array.prototype.toString()")}}
+*   {{jsxref("Intl")}}
+*   {{jsxref("Object.prototype.toLocaleString()")}}
+*   {{jsxref("Number.prototype.toLocaleString()")}}
+*   {{jsxref("Date.prototype.toLocaleString()")}}

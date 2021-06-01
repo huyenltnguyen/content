@@ -64,6 +64,6 @@ a * c + b * c // 9
 
 ## See also
 
-- [Operator precedence](/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
-- {{jsxref("Operators/delete", "delete")}}
-- {{jsxref("Operators/typeof", "typeof")}}
+*   [Operator precedence](/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+*   {{jsxref("Operators/delete", "delete")}}
+*   {{jsxref("Operators/typeof", "typeof")}}

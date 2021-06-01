@@ -25,8 +25,8 @@ has(key)
 
 ### Parameters
 
-- `key`
-  - : The key of the element to test for presence in the `Map` object.
+*   `key`
+    *   : The key of the element to test for presence in the `Map` object.
 
 ### Return value
 
@@ -55,6 +55,6 @@ myMap.has('baz')   // returns false
 
 ## See also
 
-- {{jsxref("Map")}}
-- {{jsxref("Map.prototype.set()")}}
-- {{jsxref("Map.prototype.get()")}}
+*   {{jsxref("Map")}}
+*   {{jsxref("Map.prototype.set()")}}
+*   {{jsxref("Map.prototype.get()")}}

@@ -19,8 +19,8 @@ representing the UTF-16 code unit at the given index.
 The UTF-16 code unit matches the Unicode code point for code points which can be
 represented in a single UTF-16 code unit. If the Unicode code point cannot be
 represented in a single UTF-16 code unit (because its value is greater than
-`0xFFFF`) then the code unit returned will be _the first part of a surrogate
-pair_ for the code point. If you want the entire code point value, use
+`0xFFFF`) then the code unit returned will be *the first part of a surrogate
+pair* for the code point. If you want the entire code point value, use
 {{jsxref("Global_Objects/String/codePointAt", "codePointAt()")}}.
 
 ## Syntax
@@ -31,9 +31,9 @@ charCodeAt(index)
 
 ### Parameters
 
-- `index`
-  - : An integer greater than or equal to `0` and less than the `length` of the
-    string. If `index` is not a number, it defaults to `0`.
+*   `index`
+    *   : An integer greater than or equal to `0` and less than the `length` of the
+        string. If `index` is not a number, it defaults to `0`.
 
 ### Return value
 
@@ -46,17 +46,16 @@ A number representing the UTF-16 code unit value of the character at the given
 Unicode code points range from `0` to `1114111` (`0x10FFFF`). The first 128
 Unicode code points are a direct match of the ASCII character encoding. (For
 information on Unicode, see the
-[JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Values,_variables,_and_literals#Unicode).)
+[JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Values,\_variables,\_and_literals#Unicode).)
 
 > **Note:** `charCodeAt()` will always return a value that is less than `65536`.
-> This is because the higher code points are represented by _a pair_ of (lower
+> This is because the higher code points are represented by *a pair* of (lower
 > valued) "surrogate" pseudo-characters which are used to comprise the real
 > character.
 >
 > Because of this, in order to examine (or reproduce) the full character for
 > individual character values of `65536` or greater, for such characters, it is
-> necessary to retrieve not only <code>charCodeAt(<var>i</var>)</code>, but also
-> <code>charCodeAt(<var>i</var>+1)</code> (as if manipulating a string with two
+> necessary to retrieve not only <code>charCodeAt(<var>i</var>)</code>, but also <code>charCodeAt(<var>i</var>+1)</code> (as if manipulating a string with two
 > letters), or to use <code>codePointAt(<var>i</var>)</code> instead. See
 > examples 2 and 3 (below).
 
@@ -168,7 +167,7 @@ function knownCharCodeAt(str, idx) {
 
 ## See also
 
-- {{jsxref("String.fromCharCode()")}}
-- {{jsxref("String.prototype.charAt()")}}
-- {{jsxref("String.fromCodePoint()")}}
-- {{jsxref("String.prototype.codePointAt()")}}
+*   {{jsxref("String.fromCharCode()")}}
+*   {{jsxref("String.prototype.charAt()")}}
+*   {{jsxref("String.fromCodePoint()")}}
+*   {{jsxref("String.prototype.codePointAt()")}}

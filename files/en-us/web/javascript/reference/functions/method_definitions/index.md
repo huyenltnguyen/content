@@ -20,23 +20,24 @@ the method's name.
 
 ## Syntax
 
-<pre class="brush: js">const obj = {
-  get <var>property</var>() {},
-  set <var>property</var>(<var>value</var>) {},
-  <var>property</var>( <var>parameters…</var> ) {},
-  *<var>generator</var>( <var>parameters…</var> ) {},
-  async <var>property</var>( <var>parameters…</var> ) {},
-  async* <var>generator</var>( <var>parameters…</var> ) {},
+```js
+const obj = {
+  get property() {},
+  set property(value) {},
+  property( parameters… ) {},
+  *generator( parameters… ) {},
+  async property( parameters… ) {},
+  async* generator( parameters… ) {},
 
   //  with computed keys
-  get [<var>property]</var>() {},
-  set [<var>property]</var>(<var>value</var>) {},
-  [<var>property</var>]( <var>parameters…</var> ) {},
-  *[<var>generator</var>]( <var>parameters…</var> ) {},
-  async [<var>property</var>]( <var>parameters…</var> ) {},
-  async* [<var>generator]</var>( <var>parameters…</var> ) {},
+  get [property]() {},
+  set [property](value) {},
+  [property]( parameters… ) {},
+  *[generator]( parameters… ) {},
+  async [property]( parameters… ) {},
+  async* [generator]( parameters… ) {},
 };
-</pre>
+```
 
 ## Description
 
@@ -73,18 +74,18 @@ const obj = {
 
 ### Generator methods
 
-[Generator methods](/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+[Generator methods](/en-US/docs/Web/JavaScript/Reference/Statements/function\*)
 can be defined using the shorthand syntax as well.
 
 When doing so:
 
-- The asterisk (`*`) in the shorthand syntax must be _before_ the generator
-  property name. (That is, `* g(){}` will work, but `g *(){}` will not.)
-- Non-generator method definitions cannot contain the `yield` keyword. This
-  means that
-  [legacy generator functions](/en-US/docs/Web/JavaScript/Reference/Statements/Legacy_generator_function)
-  won't work either, and will throw a {{jsxref("SyntaxError")}}. Always
-  use `yield` in conjunction with the asterisk (`*`).
+*   The asterisk (`*`) in the shorthand syntax must be *before* the generator
+    property name. (That is, `* g(){}` will work, but `g *(){}` will not.)
+*   Non-generator method definitions cannot contain the `yield` keyword. This
+    means that
+    [legacy generator functions](/en-US/docs/Web/JavaScript/Reference/Statements/Legacy_generator_function)
+    won't work either, and will throw a {{jsxref("SyntaxError")}}. Always
+    use `yield` in conjunction with the asterisk (`*`).
 
 ```js
 // Using a named property
@@ -135,7 +136,7 @@ const obj3 = {
 
 ### Async generator methods
 
-[Generator methods](/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+[Generator methods](/en-US/docs/Web/JavaScript/Reference/Statements/function\*)
 can also be
 {{jsxref("Statements/async_function", "async", "", 1)}}.
 
@@ -221,6 +222,6 @@ console.log(window[name]())  // 1
 
 ## See also
 
-- [`get`](/en-US/docs/Web/JavaScript/Reference/Functions/get)
-- [`set`](/en-US/docs/Web/JavaScript/Reference/Functions/set)
-- [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
+*   [`get`](/en-US/docs/Web/JavaScript/Reference/Functions/get)
+*   [`set`](/en-US/docs/Web/JavaScript/Reference/Functions/set)
+*   [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)

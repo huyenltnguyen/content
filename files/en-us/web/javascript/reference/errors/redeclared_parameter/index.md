@@ -64,8 +64,8 @@ function f(arg) {
 
 ## See also
 
-- {{jsxref("Statements/let", "let")}}
-- {{jsxref("Statements/const", "const")}}
-- {{jsxref("Statements/var", "var")}}
-- [Declaring variables](/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#Declarations)
-  in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
+*   {{jsxref("Statements/let", "let")}}
+*   {{jsxref("Statements/const", "const")}}
+*   {{jsxref("Statements/var", "var")}}
+*   [Declaring variables](/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#Declarations)
+    in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)

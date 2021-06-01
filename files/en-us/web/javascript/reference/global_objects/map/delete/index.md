@@ -25,8 +25,8 @@ delete(key)
 
 ### Parameters
 
-- `key`
-  - : The key of the element to remove from the `Map` object.
+*   `key`
+    *   : The key of the element to remove from the `Map` object.
 
 ### Return value
 
@@ -55,4 +55,4 @@ myMap.has('bar');    // Returns false. The "bar" element is no longer present.
 
 ## See also
 
-- {{jsxref("Map")}}
+*   {{jsxref("Map")}}

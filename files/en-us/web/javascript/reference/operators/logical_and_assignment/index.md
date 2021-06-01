@@ -18,8 +18,9 @@ The logical AND assignment (`x &&= y`) operator only assigns if `x` is
 
 ## Syntax
 
-<pre class="brush: js"><em>expr1</em> &#x26;&#x26;= <em>expr2</em>
-</pre>
+```js
+expr1 &&= expr2
+```
 
 ## Description
 
@@ -33,8 +34,7 @@ evaluation using the following rule:
 expression;
 
 Short circuit means that the <code><em>expr</em></code> part above is **not
-evaluated**, hence any side effects of doing so do not take effect (e.g., if
-<code><em>expr</em></code> is a function call, the calling never takes place).
+evaluated**, hence any side effects of doing so do not take effect (e.g., if <code><em>expr</em></code> is a function call, the calling never takes place).
 
 Logical AND assignment short-circuits as well meaning that `x &&= y` is
 equivalent to:
@@ -73,9 +73,9 @@ y &&= 0; // 0
 
 ## See also
 
-- [Logical AND (&&)](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
-- [The nullish coalescing operator (`??`)](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
-- [Bitwise AND assignment (`&=`)](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment)
-- {{jsxref("Boolean")}}
-- {{Glossary("Truthy")}}
-- {{Glossary("Falsy")}}
+*   [Logical AND (&&)](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
+*   [The nullish coalescing operator (`??`)](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
+*   [Bitwise AND assignment (`&=`)](/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment)
+*   {{jsxref("Boolean")}}
+*   {{Glossary("Truthy")}}
+*   {{Glossary("Falsy")}}

@@ -120,6 +120,6 @@ JSON.parse('{"foo": 1.0}');
 
 ## See also
 
-- {{jsxref("JSON")}}
-- {{jsxref("JSON.parse()")}}
-- {{jsxref("JSON.stringify()")}}
+*   {{jsxref("JSON")}}
+*   {{jsxref("JSON.parse()")}}
+*   {{jsxref("JSON.stringify()")}}

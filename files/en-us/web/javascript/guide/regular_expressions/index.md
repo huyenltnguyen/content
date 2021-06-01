@@ -31,28 +31,28 @@ expressions.
 
 You construct a regular expression in one of two ways:
 
-- Using a regular expression literal, which consists of a pattern enclosed
-  between slashes, as follows:
+*   Using a regular expression literal, which consists of a pattern enclosed
+    between slashes, as follows:
 
-  ```js
-    let re = /ab+c/;
+    ```js
+      let re = /ab+c/;
     ```
 
-  Regular expression literals provide compilation of the regular expression when
-  the script is loaded. If the regular expression remains constant, using this
-  can improve performance.
+    Regular expression literals provide compilation of the regular expression when
+    the script is loaded. If the regular expression remains constant, using this
+    can improve performance.
 
-- Or calling the constructor function of the {{jsxref("RegExp")}}
-  object, as follows:
+*   Or calling the constructor function of the {{jsxref("RegExp")}}
+    object, as follows:
 
-  ```js
-    let re = new RegExp('ab+c');
+    ```js
+      let re = new RegExp('ab+c');
     ```
 
-  Using the constructor function provides runtime compilation of the regular
-  expression. Use the constructor function when you know the regular expression
-  pattern will be changing, or you don't know the pattern and are getting it
-  from another source, such as user input.
+    Using the constructor function provides runtime compilation of the regular
+    expression. Use the constructor function when you know the regular expression
+    pattern will be changing, or you don't know the pattern and are getting it
+    from another source, such as user input.
 
 ## Writing a regular expression pattern
 
@@ -84,29 +84,29 @@ substring `"abc"`.
 
 When the search for a match requires something more than a direct match, such as
 finding one or more b's, or finding white space, you can include special
-characters in the pattern. For example, to match _a single `"a"` followed by
-zero or more `"b"`s followed by `"c"`_, you'd use the pattern `/ab*c/`: the `*`
+characters in the pattern. For example, to match *a single `"a"` followed by
+zero or more `"b"`s followed by `"c"`*, you'd use the pattern `/ab*c/`: the `*`
 after `"b"` means "0 or more occurrences of the preceding item." In the string
 `"cbbabbbbcdebc"`, this pattern will match the substring `"abbbbc"`.
 
 The following pages provide lists of the different special characters that fit
 into each category, along with descriptions and examples.
 
-- [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
-  - : Assertions include boundaries, which indicate the beginnings and endings
-    of lines and words, and other patterns indicating in some way that a match
-    is possible (including look-ahead, look-behind, and conditional
-    expressions).
-- [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
-  - : Distinguish different types of characters. For example, distinguishing
-    between letters and digits.
-- [Groups and ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
-  - : Indicate groups and ranges of expression characters.
-- [Quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
-  - : Indicate numbers of characters or expressions to match.
-- [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
-  - : Distinguish based on unicode character properties, for example, upper- and
-    lower-case letters, math symbols, and punctuation.
+*   [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
+    *   : Assertions include boundaries, which indicate the beginnings and endings
+        of lines and words, and other patterns indicating in some way that a match
+        is possible (including look-ahead, look-behind, and conditional
+        expressions).
+*   [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
+    *   : Distinguish different types of characters. For example, distinguishing
+        between letters and digits.
+*   [Groups and ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
+    *   : Indicate groups and ranges of expression characters.
+*   [Quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
+    *   : Indicate numbers of characters or expressions to match.
+*   [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
+    *   : Distinguish based on unicode character properties, for example, upper- and
+        lower-case letters, math symbols, and punctuation.
 
 If you want to look at all the special characters that can be used in regular
 expressions in a single table, see the following:
@@ -156,7 +156,7 @@ search, looking in the whole string and returning all matches. It is explained
 in detail below in
 [Advanced Searching With Flags](#advanced_searching_with_flags).
 
-_Why isn't this built into JavaScript?_ There is a proposal to add such a
+*Why isn't this built into JavaScript?* There is a proposal to add such a
 function to RegExp, but it was
 [rejected by TC39.](https://github.com/benjamingr/RegExp.escape/issues/37)
 
@@ -175,7 +175,16 @@ with the `String` methods `match()`, `replace()`, `search()`, and `split()`.
 These methods are explained in detail in the
 [JavaScript reference](/en-US/docs/Web/JavaScript/Reference).
 
-<table class="standard-table"><caption>Methods that use regular expressions</caption><thead><tr><th scope="col">Method</th><th scope="col">Description</th></tr></thead><tbody><tr><td>{{jsxref("RegExp.exec", "exec()")}}</td><td>Executes a search for a match in a string. It returns an array of information or <code>null</code> on a mismatch.</td></tr><tr><td>{{jsxref("RegExp.test", "test()")}}</td><td>Tests for a match in a string. It returns <code>true</code> or <code>false</code>.</td></tr><tr><td>{{jsxref("String.match", "match()")}}</td><td>Returns an array containing all of the matches, including capturing groups, or <code>null</code> if no match is found.</td></tr><tr><td>{{jsxref("String.matchAll", "matchAll()")}}</td><td>Returns an iterator containing all of the matches, including capturing groups.</td></tr><tr><td>{{jsxref("String.search", "search()")}}</td><td>Tests for a match in a string. It returns the index of the match, or <code>-1</code> if the search fails.</td></tr><tr><td>{{jsxref("String.replace", "replace()")}}</td><td>Executes a search for a match in a string, and replaces the matched substring with a replacement substring.</td></tr><tr><td>{{jsxref("String.replaceAll", "replaceAll()")}}</td><td>Executes a search for all matches in a string, and replaces the matched substrings with a replacement substring.</td></tr><tr><td>{{jsxref("String.split", "split()")}}</td><td>Uses a regular expression or a fixed string to break a string into an array of substrings.</td></tr></tbody></table>
+| Method                                                           | Description                                                                                                      |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| {{jsxref("RegExp.exec", "exec()")}}                 | Executes a search for a match in a string. It returns an array of information or `null` on a mismatch.           |
+| {{jsxref("RegExp.test", "test()")}}                 | Tests for a match in a string. It returns `true` or `false`.                                                     |
+| {{jsxref("String.match", "match()")}}                 | Returns an array containing all of the matches, including capturing groups, or `null` if no match is found.      |
+| {{jsxref("String.matchAll", "matchAll()")}}         | Returns an iterator containing all of the matches, including capturing groups.                                   |
+| {{jsxref("String.search", "search()")}}             | Tests for a match in a string. It returns the index of the match, or `-1` if the search fails.                   |
+| {{jsxref("String.replace", "replace()")}}         | Executes a search for a match in a string, and replaces the matched substring with a replacement substring.      |
+| {{jsxref("String.replaceAll", "replaceAll()")}} | Executes a search for all matches in a string, and replaces the matched substrings with a replacement substring. |
+| {{jsxref("String.split", "split()")}}                 | Uses a regular expression or a fixed string to break a string into an array of substrings.                       |
 
 When you want to know whether a pattern is found in a string, use the `test()`
 or `search()` methods; for more information (but slower execution) use the
@@ -255,7 +264,15 @@ Regular expressions have six optional flags that allow for functionality like
 global and case insensitive searching. These flags can be used separately or
 together in any order, and are included as part of the regular expression.
 
-<table class="standard-table"><caption>Regular expression flags</caption><thead><tr><th scope="col">Flag</th><th scope="col">Description</th><th scope="col">Corresponding property</th></tr></thead><tbody><tr><td><code>d</code></td><td>Generate indices for substring matches.</td><td><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices">RegExp.prototype.hasIndices</a></code></td></tr><tr><td><code>g</code></td><td>Global search.</td><td><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global">RegExp.prototype.global</a></code></td></tr><tr><td><code>i</code></td><td>Case-insensitive search.</td><td><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase">RegExp.prototype.ignoreCase</a></code></td></tr><tr><td><code>m</code></td><td>Multi-line search.</td><td><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline">RegExp.prototype.multiline</a></code></td></tr><tr><td><code>s</code></td><td>Allows <code>.</code> to match newline characters.</td><td><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll">RegExp.prototype.dotAll</a></code></td></tr><tr><td><code>u</code></td><td>"unicode"; treat a pattern as a sequence of unicode code points.</td><td><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode">RegExp.prototype.unicode</a></code></td></tr><tr><td><code>y</code></td><td>Perform a "sticky" search that matches starting at the current position in the target string. See {{jsxref("RegExp.sticky", "sticky")}}.</td><td><code><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky">RegExp.prototype.sticky</a></code></td></tr></tbody></table>
+| Flag | Description                                                                                                                                         | Corresponding property                                                                                 |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| `d`  | Generate indices for substring matches.                                                                                                             | [`RegExp.prototype.hasIndices`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices) |
+| `g`  | Global search.                                                                                                                                      | [`RegExp.prototype.global`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global)         |
+| `i`  | Case-insensitive search.                                                                                                                            | [`RegExp.prototype.ignoreCase`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase) |
+| `m`  | Multi-line search.                                                                                                                                  | [`RegExp.prototype.multiline`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline)   |
+| `s`  | Allows `.` to match newline characters.                                                                                                             | [`RegExp.prototype.dotAll`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll)         |
+| `u`  | "unicode"; treat a pattern as a sequence of unicode code points.                                                                                    | [`RegExp.prototype.unicode`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)       |
+| `y`  | Perform a "sticky" search that matches starting at the current position in the target string. See {{jsxref("RegExp.sticky", "sticky")}}. | [`RegExp.prototype.sticky`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky)         |
 
 To include a flag with the regular expression, use this syntax:
 
@@ -311,7 +328,7 @@ is used. The roles of "class" and "argument" get reversed: In the case of
 `.match()`, the string class (or data type) owns the method and the regular
 expression is just an argument, while in the case of `.exec()`, it is the
 regular expression that owns the method, with the string being the argument.
-Contrast this _`str.match(re)`_ versus _`re.exec(str)`_. The `g` flag is used
+Contrast this *`str.match(re)`* versus *`re.exec(str)`*. The `g` flag is used
 with the **`.exec()`** method to get iterative progression.
 
 ```js
@@ -326,19 +343,19 @@ var xArray; while(xArray = re.exec(str)) console.log(xArray);
 
 > **Note:** Several examples are also available in:
 >
-> - The reference pages for {{jsxref("RegExp.exec", "exec()")}},
->   {{jsxref("RegExp.test", "test()")}},
->   {{jsxref("String.match", "match()")}},
->   {{jsxref("String.matchAll", "matchAll()")}},
->   {{jsxref("String.search", "search()")}},
->   {{jsxref("String.replace", "replace()")}},
->   {{jsxref("String.split", "split()")}}
-> - This guide articles':
->   [character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes),
->   [assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions),
->   [groups and ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges),
->   [quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers),
->   [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
+> *   The reference pages for {{jsxref("RegExp.exec", "exec()")}},
+>     {{jsxref("RegExp.test", "test()")}},
+>     {{jsxref("String.match", "match()")}},
+>     {{jsxref("String.matchAll", "matchAll()")}},
+>     {{jsxref("String.search", "search()")}},
+>     {{jsxref("String.replace", "replace()")}},
+>     {{jsxref("String.split", "split()")}}
+> *   This guide articles':
+>     [character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes),
+>     [assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions),
+>     [groups and ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges),
+>     [quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers),
+>     [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
 
 ### Using special characters to verify input
 
@@ -397,11 +414,11 @@ function testInfo(phoneInput) {
 
 ## Tools
 
-- [RegExr](https://regexr.com/)
-  - : An online tool to learn, build, & test Regular Expressions.
-- [Regex tester](https://regex101.com/)
-  - : An online regex builder/debugger
-- [Regex visualizer](https://extendsclass.com/regex-tester.html)
-  - : An online visual regex tester.
+*   [RegExr](https://regexr.com/)
+    *   : An online tool to learn, build, & test Regular Expressions.
+*   [Regex tester](https://regex101.com/)
+    *   : An online regex builder/debugger
+*   [Regex visualizer](https://extendsclass.com/regex-tester.html)
+    *   : An online visual regex tester.
 
 {{PreviousNext("Web/JavaScript/Guide/Text_formatting", "Web/JavaScript/Guide/Indexed_collections")}}

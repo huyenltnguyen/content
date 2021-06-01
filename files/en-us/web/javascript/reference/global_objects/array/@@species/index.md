@@ -62,5 +62,5 @@ class MyArray extends Array {
 
 ## See also
 
-- {{jsxref("Array")}}
-- {{jsxref("Symbol.species")}}
+*   {{jsxref("Array")}}
+*   {{jsxref("Symbol.species")}}

@@ -28,11 +28,11 @@ TypeError: invalid arguments (Firefox)
 [Typed array](/en-US/docs/Web/JavaScript/Typed_arrays) constructors require
 either
 
-- a length,
-- another typed array,
-- array-like objects,
-- iterable objects or
-- an {{jsxref("ArrayBuffer")}} object
+*   a length,
+*   another typed array,
+*   array-like objects,
+*   iterable objects or
+*   an {{jsxref("ArrayBuffer")}} object
 
 to create a new typed array. Other constructor arguments will not create a valid
 typed array.
@@ -80,6 +80,6 @@ var uint8 = new Uint8Array(iterable);
 
 ## See also
 
-- [Typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- {{jsxref("ArrayBuffer")}}
-- {{jsxref("Uint8Array")}}
+*   [Typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   {{jsxref("ArrayBuffer")}}
+*   {{jsxref("Uint8Array")}}

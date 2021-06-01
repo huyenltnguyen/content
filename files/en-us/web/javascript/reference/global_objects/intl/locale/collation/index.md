@@ -14,12 +14,11 @@ browser-compat: javascript.builtins.Intl.Locale.collation
 ---
 {{JSRef}}
 
-<span class="seoSummary">The
-<strong><code>Intl.Locale.prototype.collation</code></strong> property is an
-accessor property that returns the
-<a href="https://www.unicode.org/reports/tr35/tr35-collation.html#CLDR_Collation">collation
-type</a> for the <code>Locale</code>, which is used to order strings according
-to the locale's rules.</span>
+The **`Intl.Locale.prototype.collation`** property is an accessor property that
+returns the
+[collation type](https://www.unicode.org/reports/tr35/tr35-collation.html#CLDR_Collation)
+for the `Locale`, which is used to order strings according to the locale's
+rules.
 
 ## Description
 
@@ -83,4 +82,4 @@ console.log(configColl.collation); // Prints "emoji"
 
 ## See also
 
-- {{jsxref("Intl.Locale")}}
+*   {{jsxref("Intl.Locale")}}

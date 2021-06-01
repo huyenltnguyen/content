@@ -22,11 +22,11 @@ that represents a Unicode locale identifier.
 ## Description
 
 The **`Intl.Locale`** object was created to allow for easier manipulation of
-Unicode locales. Unicode represents locales with a string, called a _locale
-identifier_. The locale identifier consists of a _language identifier_ and
-_extension tags_. Language identifiers are the core of the locale, consisting of
-_language_, _script_, and _region subtags_. Additional information about the
-locale is stored in the optional _extension tags_. Extension tags hold
+Unicode locales. Unicode represents locales with a string, called a *locale
+identifier*. The locale identifier consists of a *language identifier* and
+*extension tags*. Language identifiers are the core of the locale, consisting of
+*language*, *script*, and *region subtags*. Additional information about the
+locale is stored in the optional *extension tags*. Extension tags hold
 information about locale aspects such as calendar type, clock type, and
 numbering system type.
 
@@ -37,48 +37,48 @@ region, as well as extension tags.
 
 ## Constructor
 
-- {{jsxref("Intl/Locale/Locale", "Intl.Locale()")}}
-  - : Creates a new `Locale` object.
+*   {{jsxref("Intl/Locale/Locale", "Intl.Locale()")}}
+    *   : Creates a new `Locale` object.
 
 ## Instance properties
 
-- {{jsxref("Intl/Locale/baseName", "Intl.Locale.prototype.baseName")}}
-  - : Returns basic, core information about the `Locale` in the form of a
-    substring of the complete data string.
-- {{jsxref("Intl/Locale/calendar", "Intl.Locale.prototype.calendar")}}
-  - : Returns the part of the `Locale` that indicates the Locale's calendar era.
-- {{jsxref("Intl/Locale/caseFirst", "Intl.Locale.prototype.caseFirst")}}
-  - : Returns whether case is taken into account for the locale's collation
-    rules.
-- {{jsxref("Intl/Locale/collation", "Intl.Locale.prototype.collation")}}
-  - : Returns the collation type for the `Locale`, which is used to order
-    strings according to the locale's rules.
-- {{jsxref("Intl/Locale/hourCycle", "Intl.Locale.prototype.hourCycle")}}
-  - : Returns the time keeping format convention used by the locale.
-- {{jsxref("Intl/Locale/language", "Intl.Locale.prototype.language")}}
-  - : Returns the language associated with the locale.
-- {{jsxref("Intl/Locale/numberingSystem", "Intl.Locale.prototype.numberingSystem")}}
-  - : Returns the numeral system used by the locale.
-- {{jsxref("Intl/Locale/numeric", "Intl.Locale.prototype.numeric")}}
-  - : Returns whether the locale has special collation handling for numeric
-    characters.
-- {{jsxref("Intl/Locale/region", "Intl.Locale.prototype.region")}}
-  - : Returns the region of the world (usually a country) associated with the
-    locale.
-- {{jsxref("Intl/Locale/script", "Intl.Locale.prototype.script")}}
-  - : Returns the script used for writing the particular language used in the
-    locale.
+*   {{jsxref("Intl/Locale/baseName", "Intl.Locale.prototype.baseName")}}
+    *   : Returns basic, core information about the `Locale` in the form of a
+        substring of the complete data string.
+*   {{jsxref("Intl/Locale/calendar", "Intl.Locale.prototype.calendar")}}
+    *   : Returns the part of the `Locale` that indicates the Locale's calendar era.
+*   {{jsxref("Intl/Locale/caseFirst", "Intl.Locale.prototype.caseFirst")}}
+    *   : Returns whether case is taken into account for the locale's collation
+        rules.
+*   {{jsxref("Intl/Locale/collation", "Intl.Locale.prototype.collation")}}
+    *   : Returns the collation type for the `Locale`, which is used to order
+        strings according to the locale's rules.
+*   {{jsxref("Intl/Locale/hourCycle", "Intl.Locale.prototype.hourCycle")}}
+    *   : Returns the time keeping format convention used by the locale.
+*   {{jsxref("Intl/Locale/language", "Intl.Locale.prototype.language")}}
+    *   : Returns the language associated with the locale.
+*   {{jsxref("Intl/Locale/numberingSystem", "Intl.Locale.prototype.numberingSystem")}}
+    *   : Returns the numeral system used by the locale.
+*   {{jsxref("Intl/Locale/numeric", "Intl.Locale.prototype.numeric")}}
+    *   : Returns whether the locale has special collation handling for numeric
+        characters.
+*   {{jsxref("Intl/Locale/region", "Intl.Locale.prototype.region")}}
+    *   : Returns the region of the world (usually a country) associated with the
+        locale.
+*   {{jsxref("Intl/Locale/script", "Intl.Locale.prototype.script")}}
+    *   : Returns the script used for writing the particular language used in the
+        locale.
 
 ## Instance methods
 
-- {{jsxref("Intl/Locale/maximize", "Intl.Locale.prototype.maximize()")}}
-  - : Gets the most likely values for the language, script, and region of the
-    locale based on existing values.
-- {{jsxref("Intl/Locale/minimize", "Intl.Locale.prototype.minimize()")}}
-  - : Gets the most likely values for the language, script, and region of the
-    locale based on existing values.
-- {{jsxref("Intl/Locale/toString", "Intl.Locale.prototype.toString()")}}
-  - : Returns the Locale's full locale identifier string.
+*   {{jsxref("Intl/Locale/maximize", "Intl.Locale.prototype.maximize()")}}
+    *   : Gets the most likely values for the language, script, and region of the
+        locale based on existing values.
+*   {{jsxref("Intl/Locale/minimize", "Intl.Locale.prototype.minimize()")}}
+    *   : Gets the most likely values for the language, script, and region of the
+        locale based on existing values.
+*   {{jsxref("Intl/Locale/toString", "Intl.Locale.prototype.toString()")}}
+    *   : Returns the Locale's full locale identifier string.
 
 ## Examples
 
@@ -115,6 +115,6 @@ console.log(us12hour.hourCycle); // Prints "h12"
 
 ## See also
 
-- {{jsxref("Intl")}}
-- [The Intl.Locale Polyfill](https://formatjs.io/docs/polyfills/intl-locale)
-- [Unicode locale identifiers spec](https://www.unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers)
+*   {{jsxref("Intl")}}
+*   [The Intl.Locale Polyfill](https://formatjs.io/docs/polyfills/intl-locale)
+*   [Unicode locale identifiers spec](https://www.unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers)

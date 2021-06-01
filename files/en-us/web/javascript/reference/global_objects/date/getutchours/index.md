@@ -49,5 +49,5 @@ var hours = today.getUTCHours();
 
 ## See also
 
-- {{jsxref("Date.prototype.getHours()")}}
-- {{jsxref("Date.prototype.setUTCHours()")}}
+*   {{jsxref("Date.prototype.getHours()")}}
+*   {{jsxref("Date.prototype.setUTCHours()")}}

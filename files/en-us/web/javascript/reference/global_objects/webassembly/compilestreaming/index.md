@@ -30,11 +30,11 @@ WebAssembly.compileStreaming(source)
 
 ### Parameters
 
-- _source_
-  - : A
-    [`Response`](/en-US/docs/Web/API/Response "The Response interface of the Fetch API represents the response to a request.")
-    object or a promise that will fulfill with one, representing the underlying
-    source of a .wasm module you want to stream and compile.
+*   *source*
+    *   : A
+        [`Response`](/en-US/docs/Web/API/Response "The Response interface of the Fetch API represents the response to a request.")
+        object or a promise that will fulfill with one, representing the underlying
+        source of a .wasm module you want to stream and compile.
 
 ### Return value
 
@@ -43,11 +43,11 @@ object representing the compiled module.
 
 ### Exceptions
 
-- If `bufferSource` is not a
-  [typed array](/en-US/docs/Web/JavaScript/Typed_arrays), a
-  {{jsxref("TypeError")}} is thrown.
-- If compilation fails, the promise rejects with a
-  {{jsxref("WebAssembly.CompileError")}}.
+*   If `bufferSource` is not a
+    [typed array](/en-US/docs/Web/JavaScript/Typed_arrays), a
+    {{jsxref("TypeError")}} is thrown.
+*   If compilation fails, the promise rejects with a
+    {{jsxref("WebAssembly.CompileError")}}.
 
 ## Examples
 
@@ -87,6 +87,6 @@ invoked.
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

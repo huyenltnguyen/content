@@ -25,9 +25,9 @@ hasOwnProperty(prop)
 
 ### Parameters
 
-- <var>prop</var>
-  - : The {{jsxref("String")}} name or {{Glossary("Symbol")}} of
-    the property to test.
+*   <var>prop</var>
+    *   : The {{jsxref("String")}} name or {{Glossary("Symbol")}} of
+        the property to test.
 
 ### Return value
 
@@ -115,7 +115,7 @@ for (var name in buz) {
 
 JavaScript does not protect the property name `hasOwnProperty`; thus, if the
 possibility exists that an object might have a property with this name, it is
-necessary to use an _external_ `hasOwnProperty` to get correct results:
+necessary to use an *external* `hasOwnProperty` to get correct results:
 
 ```js
 var foo = {
@@ -148,8 +148,8 @@ Note that in the last case there are no newly created objects.
 
 ## See also
 
-- [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
-- {{jsxref("Object.getOwnPropertyNames()")}}
-- {{jsxref("Statements/for...in", "for...in")}}
-- {{jsxref("Operators/in", "in")}}
-- [JavaScript Guide: Inheritance revisited](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+*   [Enumerability and ownership of properties](/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+*   {{jsxref("Object.getOwnPropertyNames()")}}
+*   {{jsxref("Statements/for...in", "for...in")}}
+*   {{jsxref("Operators/in", "in")}}
+*   [JavaScript Guide: Inheritance revisited](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)

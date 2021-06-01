@@ -16,7 +16,7 @@ browser-compat: javascript.builtins.TypedArray.forEach
 
 The **`forEach()`** method executes a provided function once per array element.
 This method has the same algorithm as
-{{jsxref("Array.prototype.forEach()")}}. _TypedArray_ is one of the
+{{jsxref("Array.prototype.forEach()")}}. *TypedArray* is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
 
@@ -41,7 +41,17 @@ forEach(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-<dl><dt><code><var>callbackFn</var></code></dt><dd>Function that produces an element of the new typed array, taking three arguments:<dl><dt><code><var>element</var></code></dt><dd>The current element being processed in the typed array.</dd><dt><code><var>index</var></code></dt><dd>The index of the current element being processed in the array.</dd><dt><code><var>array</var></code></dt><dd>The array <code>forEach()</code> was called upon.</dd></dl></dd><dt><code><var>thisArg</var></code> {{optional_inline}}</dt><dd>Value to use as <code>this</code> when executing <code><var>callbackFn</var></code>.</dd></dl>
+*   `callbackFn`
+    *   : Function that produces an element of the new typed array, taking three
+        arguments:
+        *   `element`
+            *   : The current element being processed in the typed array.
+        *   `index`
+            *   : The index of the current element being processed in the array.
+        *   `array`
+            *   : The array `forEach()` was called upon.
+*   `thisArg` {{optional_inline}}
+    *   : Value to use as `this` when executing `callbackFn`.
 
 ### Return value
 
@@ -56,9 +66,9 @@ present and have the value {{jsxref("undefined")}}.
 
 `callbackFn` is invoked with **three arguments**:
 
-- the **element value**
-- the **element index**
-- the **typed array being traversed**
+*   the **element value**
+*   the **element index**
+*   the **typed array being traversed**
 
 If a `thisArg` parameter is provided to `forEach()`, it will be passed to
 `callbackFn` when invoked, for use as its `this` value.  Otherwise, the value
@@ -108,9 +118,9 @@ new Uint8Array([0, 1, 2, 3]).forEach(logArrayElements);
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.forEach` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray.prototype.map()")}}
-- {{jsxref("TypedArray.prototype.every()")}}
-- {{jsxref("TypedArray.prototype.some()")}}
-- {{jsxref("Array.prototype.forEach()")}}
+*   A polyfill of `TypedArray.prototype.forEach` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray.prototype.map()")}}
+*   {{jsxref("TypedArray.prototype.every()")}}
+*   {{jsxref("TypedArray.prototype.some()")}}
+*   {{jsxref("Array.prototype.forEach()")}}

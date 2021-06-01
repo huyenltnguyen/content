@@ -19,9 +19,7 @@ For more information, see
 {{jsxref("RegExp.@@split", "RegExp.prototype[@@split]()")}}
 and {{jsxref("String.prototype.split()")}}.
 
-{{EmbedInteractiveExample("pages/js/symbol-split.html")}}
-
-{{js_property_attributes(0,0,0)}}
+{{EmbedInteractiveExample("pages/js/symbol-split.html")}}{{js_property_attributes(0,0,0)}}
 
 ## Examples
 
@@ -49,9 +47,9 @@ console.log('Another one bites the dust'.split(new ReverseSplit()));
 
 ## See also
 
-- A polyfill of `Symbol.split` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
-- {{jsxref("Symbol.match")}}
-- {{jsxref("Symbol.replace")}}
-- {{jsxref("Symbol.search")}}
-- {{jsxref("RegExp.@@split", "RegExp.prototype[@@split]()")}}
+*   A polyfill of `Symbol.split` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
+*   {{jsxref("Symbol.match")}}
+*   {{jsxref("Symbol.replace")}}
+*   {{jsxref("Symbol.search")}}
+*   {{jsxref("RegExp.@@split", "RegExp.prototype[@@split]()")}}

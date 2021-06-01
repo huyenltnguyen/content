@@ -17,21 +17,22 @@ given position in the array and returns that value.
 
 ## Syntax
 
-<pre class="brush: js">Atomics.store(<var>typedArray</var>, <var>index</var>, <var>value</var>)
-</pre>
+```js
+Atomics.store(typedArray, index, value)
+```
 
 ### Parameters
 
-- `typedArray`
-  - : An integer typed array. One of {{jsxref("Int8Array")}},
-    {{jsxref("Uint8Array")}}, {{jsxref("Int16Array")}},
-    {{jsxref("Uint16Array")}}, {{jsxref("Int32Array")}},
-    {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
-    {{jsxref("BigUint64Array")}}.
-- `index`
-  - : The position in the `typedArray` to store a `value` in.
-- `value`
-  - : The number to store.
+*   `typedArray`
+    *   : An integer typed array. One of {{jsxref("Int8Array")}},
+        {{jsxref("Uint8Array")}}, {{jsxref("Int16Array")}},
+        {{jsxref("Uint16Array")}}, {{jsxref("Int32Array")}},
+        {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
+        {{jsxref("BigUint64Array")}}.
+*   `index`
+    *   : The position in the `typedArray` to store a `value` in.
+*   `value`
+    *   : The number to store.
 
 ### Return value
 
@@ -39,10 +40,10 @@ The value that has been stored.
 
 ### Exceptions
 
-- Throws a {{jsxref("TypeError")}}, if `typedArray` is not one of the
-  allowed integer types.
-- Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
-  `typedArray`.
+*   Throws a {{jsxref("TypeError")}}, if `typedArray` is not one of the
+    allowed integer types.
+*   Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
+    `typedArray`.
 
 ## Examples
 
@@ -65,5 +66,5 @@ Atomics.store(ta, 0, 12); // 12
 
 ## See also
 
-- {{jsxref("Atomics")}}
-- {{jsxref("Atomics.load()")}}
+*   {{jsxref("Atomics")}}
+*   {{jsxref("Atomics.load()")}}

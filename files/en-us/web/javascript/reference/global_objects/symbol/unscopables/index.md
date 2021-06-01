@@ -27,7 +27,7 @@ bindings. Note that if using
 statements are not available and will likely also not need this symbol.
 
 Setting a property to `true` in an `unscopables` object will make it
-_unscopable_ and therefore it won't appear in lexical scope variables. Setting a
+*unscopable* and therefore it won't appear in lexical scope variables. Setting a
 property to `false` will make it `scopable` and thus it will appear in lexical
 scope variables.
 
@@ -89,6 +89,6 @@ with (obj) {
 
 ## See also
 
-- {{jsxref("Array.@@unscopables", "Array.prototype[@@unscopables]")}}
-- [`with`](/en-US/docs/Web/JavaScript/Reference/Statements/with) statement (not
-  available in [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode))
+*   {{jsxref("Array.@@unscopables", "Array.prototype[@@unscopables]")}}
+*   [`with`](/en-US/docs/Web/JavaScript/Reference/Statements/with) statement (not
+    available in [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode))

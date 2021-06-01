@@ -28,24 +28,23 @@ includes(searchElement, fromIndex)
 
 ### Parameters
 
-- `searchElement`
-  - : The value to search for.
-    > **Note:** When comparing strings and characters, `includes()` is
-    > _case-sensitive_.
-- `fromIndex` {{optional_inline}}
+*   `searchElement`
+    *   : The value to search for.
+        > **Note:** When comparing strings and characters, `includes()` is
+        > *case-sensitive*.
+*   `fromIndex` {{optional_inline}}
 
-  - : The position in this array at which to begin searching for
-    `searchElement`.
+    *   : The position in this array at which to begin searching for
+        `searchElement`.
 
-    The first element to be searched is found at `fromIndex` for positive values
-    of `fromIndex`, or at <code><var>arr</var>.length +
-    <var>fromIndex</var></code> for negative values of `fromIndex` (using the
-    {{interwiki("wikipedia", "absolute
+        The first element to be searched is found at `fromIndex` for positive values
+        of `fromIndex`, or at <code><var>arr</var>.length + <var>fromIndex</var></code> for negative values of `fromIndex` (using the
+        {{interwiki("wikipedia", "absolute
     value")}} of
-    `fromIndex` as the number of elements from the end of the array at which to
-    start the search).
+        `fromIndex` as the number of elements from the end of the array at which to
+        start the search).
 
-    Defaults to `0`.
+        Defaults to `0`.
 
 ### Return value
 
@@ -54,7 +53,7 @@ found within the array (or the part of the array indicated by the index
 `fromIndex`, if specified).
 
 Values of zero are all considered to be equal, regardless of sign. (That is,
-`-0` is considered to be equal to both `0` and `+0`), but `false` is _not_
+`-0` is considered to be equal to both `0` and `+0`), but `false` is *not*
 considered to be the same as `0`.
 
 > **Note:** Technically speaking, `includes()` uses the
@@ -129,10 +128,10 @@ The example below illustrates `includes()` method called on the function's
 
 ## See also
 
-- A polyfill of `Array.prototype.includes` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("TypedArray.prototype.includes()")}}
-- {{jsxref("String.prototype.includes()")}}
-- {{jsxref("Array.prototype.indexOf()")}}
-- {{jsxref("Array.prototype.find()")}}
-- {{jsxref("Array.prototype.findIndex()")}}
+*   A polyfill of `Array.prototype.includes` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("TypedArray.prototype.includes()")}}
+*   {{jsxref("String.prototype.includes()")}}
+*   {{jsxref("Array.prototype.indexOf()")}}
+*   {{jsxref("Array.prototype.find()")}}
+*   {{jsxref("Array.prototype.findIndex()")}}

@@ -32,8 +32,9 @@ used. In implementations, which ignore the `locales` and `options` arguments,
 the locale used and the form of the string returned are entirely implementation
 dependent.
 
-<div>See the <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat"><code>Intl.NumberFormat()</code>
-constructor</a> for details on these parameters and how to use them.</div>
+See the
+[`Intl.NumberFormat()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat)
+for details on these parameters and how to use them.
 
 ### Return value
 
@@ -102,13 +103,14 @@ to get the format of the language used in the user interface of your
 application, make sure to specify that language (and possibly some fallback
 languages) using the `locales` argument:
 
-<pre class="brush: js">var number = 123456.789;
+```js
+var number = 123456.789;
 
 // German uses comma as decimal separator and period for thousands
 console.log(number.toLocaleString('de-DE'));
 // → 123.456,789
 
-// Arabic in most Arabic speaking countries uses <a href="https://en.wikipedia.org/wiki/Eastern_Arabic_numerals">Eastern Arabic</a> digits
+// Arabic in most Arabic speaking countries uses Eastern Arabic digits
 console.log(number.toLocaleString('ar-EG'));
 // → ١٢٣٤٥٦٫٧٨٩
 
@@ -124,7 +126,7 @@ console.log(number.toLocaleString('zh-Hans-CN-u-nu-hanidec'));
 // Balinese, include a fallback language, in this case Indonesian
 console.log(number.toLocaleString(['ban', 'id']));
 // → 123.456,789
-</pre>
+```
 
 ### Using `options`
 
@@ -164,4 +166,4 @@ console.log(num.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFrac
 
 ## See also
 
-- {{jsxref("Number.prototype.toString()")}}
+*   {{jsxref("Number.prototype.toString()")}}

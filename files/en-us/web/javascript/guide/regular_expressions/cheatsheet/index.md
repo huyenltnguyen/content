@@ -9,13 +9,11 @@ tags:
 ---
 {{jsSidebar("JavaScript Guide")}}
 
-<span class="seoSummary">This page provides an overall cheat sheet of all the
-capabilities of <code>RegExp</code> syntax by aggregating the content of the
-articles in the <code>RegExp</code> guide. If you need more information on a
-specific topic, please follow the link on the corresponding heading to access
-the full article or head to
-<a href="/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">the
-guide</a>.</span>
+This page provides an overall cheat sheet of all the capabilities of
+`RegExp` syntax by aggregating the content of the articles in the `RegExp`
+guide. If you need more information on a specific topic, please follow the link
+on the corresponding heading to access the full article or head to
+[the guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
 ## [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
 
@@ -48,19 +46,45 @@ guide</a>.</span>
 
 ## [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
 
-<pre class="brush: js">// Non-binary values
-\p{<em>UnicodePropertyValue</em>}
-\p{<em>UnicodePropertyName</em>=<em>UnicodePropertyValue</em>}
+```js
+// Non-binary values
+\p{UnicodePropertyValue}
+\p{UnicodePropertyName=UnicodePropertyValue}
 
 // Binary and non-binary values
-\p{<em>UnicodeBinaryPropertyName</em>}
+\p{UnicodeBinaryPropertyName}
 
 // Negation: \P is negated \p
-\P{<em>UnicodePropertyValue</em>}
-\P{<em>UnicodeBinaryPropertyName</em>}
-</pre>
+\P{UnicodePropertyValue}
+\P{UnicodeBinaryPropertyName}
+```
 
-<dl><dt>UnicodeBinaryPropertyName</dt><dd>The name of a <a href="https://tc39.es/ecma262/#table-binary-unicode-properties">binary property</a>. E.g.: <code><a href="https://unicode.org/reports/tr18/#General_Category_Property">ASCII</a></code>, <code><a href="https://unicode.org/reports/tr44/#Alphabetic">Alpha</a></code>, <code>Math</code>, <code><a href="https://unicode.org/reports/tr44/#Diacritic">Diacritic</a></code>, <code><a href="https://unicode.org/reports/tr51/#Emoji_Properties">Emoji</a></code>, <code><a href="https://unicode.org/reports/tr44/#Hex_Digit">Hex_Digit</a></code>, <code>Math</code>, <code><a href="https://unicode.org/reports/tr44/#White_Space">White_space</a></code>, etc. See <a href="https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt">Unicode Data PropList.txt </a>for more info.</dd><dt>UnicodePropertyName</dt><dd>The name of a <a href="https://tc39.es/ecma262/#table-nonbinary-unicode-properties">non-binary</a> property:<ul><li><a href="https://unicode.org/reports/tr18/#General_Category_Property">General_Category</a> (<code>gc</code>)</li><li><a href="https://unicode.org/reports/tr24/#Script">Script</a> (<code>sc</code>)</li><li><a href="https://unicode.org/reports/tr24/#Script_Extensions">Script_Extensions</a> (<code>scx</code>)</li></ul><p>See also <a href="https://www.unicode.org/Public/UCD/latest/ucd/PropertyValueAliases.txt">PropertyValueAliases.txt</a></p></dd><dt>UnicodePropertyValue</dt><dd>One of the tokens listed in the Values section, below. Many values have aliases or shorthand (e.g. the value <code>Decimal_Number</code> for the <code>General_Category</code> property may be written <code>Nd</code>, <code>digit</code>, or <code>Decimal_Number</code>). For most values, the <em><code>UnicodePropertyName</code></em> part and equals sign may be omitted. If a <em><code>UnicodePropertyName</code></em> is specified, the value must correspond to the property type given.</dd></dl>
+*   UnicodeBinaryPropertyName
+    *   : The name of a
+        [binary property](https://tc39.es/ecma262/#table-binary-unicode-properties).
+        E.g.: [`ASCII`](https://unicode.org/reports/tr18/#General_Category_Property), [`Alpha`](https://unicode.org/reports/tr44/#Alphabetic),
+        `Math`,
+        [`Diacritic`](https://unicode.org/reports/tr44/#Diacritic), [`Emoji`](https://unicode.org/reports/tr51/#Emoji_Properties), [`Hex_Digit`](https://unicode.org/reports/tr44/#Hex_Digit), `Math`,
+        [`White_space`](https://unicode.org/reports/tr44/#White_Space), etc. See
+        [Unicode Data PropList.txt ](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt)for
+        more info.
+*   UnicodePropertyName
+    *   : The name of a
+        [non-binary](https://tc39.es/ecma262/#table-nonbinary-unicode-properties)
+        property:
+        *   [General_Category](https://unicode.org/reports/tr18/#General_Category_Property)
+            (`gc`)
+        *   [Script](https://unicode.org/reports/tr24/#Script) (`sc`)
+        *   [Script_Extensions](https://unicode.org/reports/tr24/#Script_Extensions) (`scx`)
+            See also
+            [PropertyValueAliases.txt](https://www.unicode.org/Public/UCD/latest/ucd/PropertyValueAliases.txt)
+*   UnicodePropertyValue
+    *   : One of the tokens listed in the Values section, below. Many values have
+        aliases or shorthand (e.g. the value `Decimal_Number` for the
+        `General_Category` property may be written `Nd`, `digit`, or
+        `Decimal_Number`). For most values, the *`UnicodePropertyName`* part and
+        equals sign may be omitted. If a *`UnicodePropertyName`* is specified, the
+        value must correspond to the property type given.
 
 > **Note:** As there are many properties and values available, we will not
 > describe them exhaustively here but rather provide various examples

@@ -27,11 +27,11 @@ startsWith(searchString, position)
 
 ### Parameters
 
-- `searchString`
-  - : The characters to be searched for at the start of this string.
-- `position` {{optional_inline}}
-  - : The position in this string at which to begin searching for
-    `searchString`. Defaults to `0`.
+*   `searchString`
+    *   : The characters to be searched for at the start of this string.
+*   `position` {{optional_inline}}
+    *   : The position in this string at which to begin searching for
+        `searchString`. Defaults to `0`.
 
 ### Return value
 
@@ -87,9 +87,9 @@ compact, Polyfill is available
 
 ## See also
 
-- A polyfill of `String.prototype.startsWith` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.endsWith()")}}
-- {{jsxref("String.prototype.includes()")}}
-- {{jsxref("String.prototype.indexOf()")}}
-- {{jsxref("String.prototype.lastIndexOf()")}}
+*   A polyfill of `String.prototype.startsWith` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.endsWith()")}}
+*   {{jsxref("String.prototype.includes()")}}
+*   {{jsxref("String.prototype.indexOf()")}}
+*   {{jsxref("String.prototype.lastIndexOf()")}}

@@ -25,12 +25,12 @@ getFloat64(byteOffset, littleEndian)
 
 ### Parameters
 
-- `byteOffset`
-  - : The offset, in byte, from the start of the view where to read the data.
-- `littleEndian`
-  - : {{optional_inline}} Indicates whether the 64-bit float is stored in
-    {{Glossary("Endianness", "little- or big-endian")}} format.
-    If `false` or `undefined`, a big-endian value is read.
+*   `byteOffset`
+    *   : The offset, in byte, from the start of the view where to read the data.
+*   `littleEndian`
+    *   : {{optional_inline}} Indicates whether the 64-bit float is stored in
+        {{Glossary("Endianness", "little- or big-endian")}} format.
+        If `false` or `undefined`, a big-endian value is read.
 
 ### Return value
 
@@ -38,9 +38,9 @@ A signed 64-bit float number.
 
 ### Errors thrown
 
-- {{jsxref("RangeError")}}
-  - : Thrown if the `byteOffset` is set such as it would read beyond the end of
-    the view.
+*   {{jsxref("RangeError")}}
+    *   : Thrown if the `byteOffset` is set such as it would read beyond the end of
+        the view.
 
 ## Description
 
@@ -67,5 +67,5 @@ dataview.getFloat64(0); // 0
 
 ## See also
 
-- {{jsxref("DataView")}}
-- {{jsxref("ArrayBuffer")}}
+*   {{jsxref("DataView")}}
+*   {{jsxref("ArrayBuffer")}}

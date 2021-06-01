@@ -88,12 +88,13 @@ console.log(text.match(nonGreedyRegexp));
 
 ## See also
 
-- [Regular expressions guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+*   [Regular expressions guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
-  - [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
-  - [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
-  - [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
-  - [Groups and ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
+    *   [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
+    *   [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
+    *   [Unicode property escapes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
+    *   [Groups and ranges](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
 
-- [The `RegExp()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
-- [Quantifiers in the ECMAScript specification](https://tc39.es/ecma262/#sec-quantifier)
+*   [The `RegExp()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+
+*   [Quantifiers in the ECMAScript specification](https://tc39.es/ecma262/#sec-quantifier)

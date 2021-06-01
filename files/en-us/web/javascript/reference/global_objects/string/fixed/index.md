@@ -53,8 +53,8 @@ console.log(worldString.fixed()); // "<tt>Hello, world</tt>"
 
 ## See also
 
-- A polyfill of `String.prototype.fixed` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.bold()")}}
-- {{jsxref("String.prototype.italics()")}}
-- {{jsxref("String.prototype.strike()")}}
+*   A polyfill of `String.prototype.fixed` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.bold()")}}
+*   {{jsxref("String.prototype.italics()")}}
+*   {{jsxref("String.prototype.strike()")}}

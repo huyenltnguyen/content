@@ -25,8 +25,8 @@ WebAssembly.Module.exports(module)
 
 ### Parameters
 
-- _module_
-  - : A {{jsxref("WebAssembly.Module")}} object.
+*   *module*
+    *   : A {{jsxref("WebAssembly.Module")}} object.
 
 ### Return value
 
@@ -107,6 +107,6 @@ The `exports[0]` output looks like this:
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

@@ -24,11 +24,11 @@ toFixed(digits)
 
 ### Parameters
 
-- `digits` {{optional_inline}}
-  - : The number of digits to appear after the decimal point; this may be a
-    value between `0` and `20`, inclusive, and implementations may optionally
-    support a larger range of values. If this argument is omitted, it is treated
-    as `0`.
+*   `digits` {{optional_inline}}
+    *   : The number of digits to appear after the decimal point; this may be a
+        value between `0` and `20`, inclusive, and implementations may optionally
+        support a larger range of values. If this argument is omitted, it is treated
+        as `0`.
 
 ### Return value
 
@@ -36,13 +36,13 @@ A string representing the given number using fixed-point notation.
 
 ### Exceptions
 
-- {{jsxref("RangeError")}}
-  - : If `digits` is too small or too large. Values between `0` and `100`,
-    inclusive, will not cause a {{jsxref("RangeError")}}.
-    Implementations are allowed to support larger and smaller values as chosen.
-- {{jsxref("TypeError")}}
-  - : If this method is invoked on an object that is not a
-    {{jsxref( "Number")}}.
+*   {{jsxref("RangeError")}}
+    *   : If `digits` is too small or too large. Values between `0` and `100`,
+        inclusive, will not cause a {{jsxref("RangeError")}}.
+        Implementations are allowed to support larger and smaller values as chosen.
+*   {{jsxref("TypeError")}}
+    *   : If this method is invoked on an object that is not a
+        {{jsxref( "Number")}}.
 
 ## Description
 
@@ -87,6 +87,6 @@ numObj.toFixed(6)      // Returns '12345.678900': note added zeros
 
 ## See also
 
-- {{jsxref("Number.prototype.toExponential()")}}
-- {{jsxref("Number.prototype.toPrecision()")}}
-- {{jsxref("Number.prototype.toString()")}}
+*   {{jsxref("Number.prototype.toExponential()")}}
+*   {{jsxref("Number.prototype.toPrecision()")}}
+*   {{jsxref("Number.prototype.toString()")}}

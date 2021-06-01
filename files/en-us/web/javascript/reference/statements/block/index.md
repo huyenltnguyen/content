@@ -22,24 +22,26 @@ group zero or more statements. The block is delimited by a pair of braces
 
 ### Block Statement
 
-<pre class="brush: js">{
-  <em>StatementList</em>
+```js
+{
+  StatementList
 }
-</pre>
+```
 
 ### Labelled Block Statement
 
-<pre class="brush: js"><em>LabelIdentifier</em>: {
-  <em>StatementList</em>
+```js
+LabelIdentifier: {
+  StatementList
 }
-</pre>
+```
 
-- `StatementList`
-  - : Statements grouped within the block statement.
-- `LabelIdentifier`
-  - : An optional {{jsxref("Statements/label", "label", "", 1)}}
-    for visual identification or as a target for
-    {{jsxref("Statements/break", "break")}}.
+*   `StatementList`
+    *   : Statements grouped within the block statement.
+*   `LabelIdentifier`
+    *   : An optional {{jsxref("Statements/label", "label", "", 1)}}
+        for visual identification or as a target for
+        {{jsxref("Statements/break", "break")}}.
 
 ## Description
 
@@ -106,7 +108,7 @@ const c = 1;
 console.log(c); // logs 1 and does not throw SyntaxError...
 ```
 
-Note that the block-scoped `const c = 2` _does not_ throw a
+Note that the block-scoped `const c = 2` *does not* throw a
 `SyntaxError: Identifier 'c' has already been declared` because it can be
 declared uniquely within the block.
 
@@ -124,6 +126,6 @@ block-level functions were forbidden in strict mode.
 
 ## See also
 
-- {{jsxref("Statements/while", "while")}}
-- {{jsxref("Statements/if...else", "if...else")}}
-- {{jsxref("Statements/let", "let")}}
+*   {{jsxref("Statements/while", "while")}}
+*   {{jsxref("Statements/if...else", "if...else")}}
+*   {{jsxref("Statements/let", "let")}}

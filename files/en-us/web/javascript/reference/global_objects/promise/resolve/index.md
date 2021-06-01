@@ -22,14 +22,15 @@ resolves to something) into a single layer.
 
 ## Syntax
 
-<pre class="brush: js">Promise.resolve(<var>value</var>);
-</pre>
+```js
+Promise.resolve(value);
+```
 
 ### Parameters
 
-- `value`
-  - : Argument to be resolved by this `Promise`. Can also be a `Promise` or a
-    thenable to resolve.
+*   `value`
+    *   : Argument to be resolved by this `Promise`. Can also be a `Promise` or a
+        thenable to resolve.
 
 ### Return value
 
@@ -134,4 +135,4 @@ p3.then(function(v) {
 
 ## See also
 
-- {{jsxref("Promise")}}
+*   {{jsxref("Promise")}}

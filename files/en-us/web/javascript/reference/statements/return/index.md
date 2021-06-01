@@ -16,11 +16,13 @@ returned to the function caller.
 
 ## Syntax
 
-<pre class="brush: js">return [<var>expression</var>]; </pre>
+```js
+return [expression]; 
+```
 
-- `expression`
-  - : The expression whose value is to be returned. If omitted, `undefined` is
-    returned instead.
+*   `expression`
+    *   : The expression whose value is to be returned. If omitted, `undefined` is
+        returned instead.
 
 ## Description
 
@@ -135,5 +137,5 @@ answer(1337); // 56154
 
 ## See also
 
-- [Functions](/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope)
-- [Closures](/en-US/docs/Web/JavaScript/Closures)
+*   [Functions](/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope)
+*   [Closures](/en-US/docs/Web/JavaScript/Closures)

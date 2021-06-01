@@ -31,8 +31,8 @@ format(date)
 
 ### Parameters
 
-- `date`
-  - : The date to format.
+*   `date`
+    *   : The date to format.
 
 ## Description
 
@@ -112,7 +112,7 @@ let formattedDate = Intl.DateTimeFormat(undefined, {
 
 ## See also
 
-- {{jsxref("Intl.DateTimeFormat")}}
-- {{jsxref("Date.prototype.toLocaleString()")}}
-- {{jsxref("Date.prototype.toLocaleDateString()")}}
-- {{jsxref("Date.prototype.toLocaleTimeString()")}}
+*   {{jsxref("Intl.DateTimeFormat")}}
+*   {{jsxref("Date.prototype.toLocaleString()")}}
+*   {{jsxref("Date.prototype.toLocaleDateString()")}}
+*   {{jsxref("Date.prototype.toLocaleTimeString()")}}

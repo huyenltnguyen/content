@@ -15,7 +15,7 @@ browser-compat: javascript.builtins.TypedArray.join
 
 The **`join()`** method joins all elements of an array into a string. This
 method has the same algorithm as
-{{jsxref("Array.prototype.join()")}}. _TypedArray_ is one of the
+{{jsxref("Array.prototype.join()")}}. *TypedArray* is one of the
 [typed array types](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#TypedArray_objects)
 here.
 
@@ -30,10 +30,10 @@ join(separator)
 
 ### Parameters
 
-- `separator` {{optional_inline}}
-  - : Specifies a string to separate each element. The `separator` is converted
-    to a string if necessary. If omitted, the typed array elements are separated
-    with a comma (",").
+*   `separator` {{optional_inline}}
+    *   : Specifies a string to separate each element. The `separator` is converted
+        to a string if necessary. If omitted, the typed array elements are separated
+        with a comma (",").
 
 ### Return value
 
@@ -52,7 +52,7 @@ uint8.join('');    // '123'
 
 ## Polyfill
 
-Since there is no global object with the name _TypedArray_, polyfilling must be
+Since there is no global object with the name *TypedArray*, polyfilling must be
 done on an "as needed" basis.
 
 ```js
@@ -78,7 +78,7 @@ If you need to support truly obsolete JavaScript engines that don't support
 
 ## See also
 
-- A polyfill of `TypedArray.prototype.join` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
-- {{jsxref("TypedArray")}}
-- {{jsxref("Array.prototype.join()")}}
+*   A polyfill of `TypedArray.prototype.join` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-typed-arrays)
+*   {{jsxref("TypedArray")}}
+*   {{jsxref("Array.prototype.join()")}}

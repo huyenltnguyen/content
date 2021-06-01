@@ -30,12 +30,14 @@ Usually, {{jsxref("decodeURI")}} or
 
 ## Syntax
 
-<pre class="brush: js">unescape(<var>str</var>)</pre>
+```js
+unescape(str)
+```
 
 ### Parameters
 
-- `str`
-  - : A string to be decoded.
+*   `str`
+    *   : A string to be decoded.
 
 ### Return value
 
@@ -43,7 +45,7 @@ A new string in which certain characters have been unescaped.
 
 ## Description
 
-The `unescape` function is a property of the _global object_.
+The `unescape` function is a property of the *global object*.
 
 ## Examples
 
@@ -65,6 +67,6 @@ unescape('%u0107');     // "ć"
 
 ## See also
 
-- {{jsxref("decodeURI")}}
-- {{jsxref("decodeURIComponent")}}
-- {{jsxref("escape")}}
+*   {{jsxref("decodeURI")}}
+*   {{jsxref("decodeURIComponent")}}
+*   {{jsxref("escape")}}

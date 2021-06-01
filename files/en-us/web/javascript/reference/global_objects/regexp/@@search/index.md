@@ -20,18 +20,20 @@ regular expression and a string.
 
 ## Syntax
 
-<pre class="brush: js"><var>regexp</var>[Symbol.search](<var>str</var>)</pre>
+```js
+regexp[Symbol.search](str)
+```
 
 ### Parameters
 
-- `str`
-  - : A {{jsxref("String")}} that is a target of the search.
+*   `str`
+    *   : A {{jsxref("String")}} that is a target of the search.
 
 ### Return value
 
-- integer
-  - : If successful, `[@@search]()` returns the index of the first match of the
-    regular expression inside the string. Otherwise, it returns -1.
+*   integer
+    *   : If successful, `[@@search]()` returns the index of the first match of the
+        regular expression inside the string. Otherwise, it returns -1.
 
 ## Description
 
@@ -94,11 +96,11 @@ console.log(result); // 3
 
 ## See also
 
-- A polyfill of `RegExp.prototype[@@search]` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.prototype.search()")}}
-- {{jsxref("RegExp.prototype.@@match()", "RegExp.prototype[@@match]()")}}
-- {{jsxref("RegExp.prototype.@@replace()", "RegExp.prototype[@@replace]()")}}
-- {{jsxref("RegExp.prototype.@@split()", "RegExp.prototype[@@split]()")}}
-- {{jsxref("RegExp.prototype.exec()")}}
-- {{jsxref("RegExp.prototype.test()")}}
+*   A polyfill of `RegExp.prototype[@@search]` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.prototype.search()")}}
+*   {{jsxref("RegExp.prototype.@@match()", "RegExp.prototype[@@match]()")}}
+*   {{jsxref("RegExp.prototype.@@replace()", "RegExp.prototype[@@replace]()")}}
+*   {{jsxref("RegExp.prototype.@@split()", "RegExp.prototype[@@split]()")}}
+*   {{jsxref("RegExp.prototype.exec()")}}
+*   {{jsxref("RegExp.prototype.test()")}}

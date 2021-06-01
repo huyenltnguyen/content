@@ -28,10 +28,10 @@ Warning
 
 Unreachable code after a return statement might occur in these situations:
 
-- When using an expression after a
-  {{jsxref("Statements/return", "return")}} statement, or
-- when using a semicolon-less return statement but including an expression
-  directly after.
+*   When using an expression after a
+    {{jsxref("Statements/return", "return")}} statement, or
+*   when using a semicolon-less return statement but including an expression
+    directly after.
 
 When an expression exists after a valid `return` statement, a warning is given
 to indicate that the code after the `return` statement is unreachable, meaning
@@ -46,10 +46,10 @@ statement is written.
 Warnings will not be shown for semicolon-less returns if these statements follow
 it:
 
-- {{jsxref("Statements/throw", "throw")}}
-- {{jsxref("Statements/break", "break")}}
-- {{jsxref("Statements/var", "var")}}
-- {{jsxref("Statements/function", "function")}}
+*   {{jsxref("Statements/throw", "throw")}}
+*   {{jsxref("Statements/break", "break")}}
+*   {{jsxref("Statements/var", "var")}}
+*   {{jsxref("Statements/function", "function")}}
 
 ## Examples
 
@@ -86,5 +86,5 @@ function f() {
 
 ## See also
 
-- {{jsxref("Statements/return", "Automatic Semicolon Insertion",
+*   {{jsxref("Statements/return", "Automatic Semicolon Insertion",
     "#Automatic_Semicolon_Insertion", 1)}}

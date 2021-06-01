@@ -29,8 +29,8 @@ number of characters in the string.
 
 ECMAScript 2016 (ed. 7) established a maximum length of `2^53 - 1` elements.
 Previously, no maximum length was specified. In Firefox, strings have a maximum
-length of `2**30 - 2` (\~1GB). In versions prior to Firefox 65, the maximum
-length was `2**28 - 1` (\~256MB).
+length of `2**30 - 2` (~1GB). In versions prior to Firefox 65, the maximum
+length was `2**28 - 1` (~256MB).
 
 For an empty string, `length` is 0.
 
@@ -101,4 +101,4 @@ console.log(myString.length);
 
 ## See also
 
-- [JavaScript `String.length` and Internationalizing Web Applications](https://downloads.teradata.com/blog/jasonstrimpel/2011/11/javascript-string-length-and-internationalizing-web-applications)
+*   [JavaScript `String.length` and Internationalizing Web Applications](https://downloads.teradata.com/blog/jasonstrimpel/2011/11/javascript-string-length-and-internationalizing-web-applications)

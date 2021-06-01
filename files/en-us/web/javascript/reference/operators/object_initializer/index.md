@@ -19,7 +19,7 @@ browser-compat: javascript.operators.object_initializer
 
 Objects can be initialized using
 [`new Object()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/Object), [`Object.create()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create),
-or using the _literal_ notation (_initializer_ notation). An object initializer
+or using the *literal* notation (*initializer* notation). An object initializer
 is a comma-delimited list of zero or more pairs of property names and associated
 values of an object, enclosed in curly braces (`{}`).
 
@@ -27,31 +27,33 @@ values of an object, enclosed in curly braces (`{}`).
 
 ## Syntax
 
-<pre class="brush: js">let o = {}
+```js
+let o = {}
 let o = {a: 'foo', b: 42, c: {}}
 
 let a = 'foo', b = 42, c = {}
 let o = {a: a, b: b, c: c}
 
 let o = {
-  <var>property: function </var>(<var>parameters</var>) {},
-  get <var>property</var>() {},
-  set <var>property</var>(<var>value</var>) {}
+  property: function (parameters) {},
+  get property() {},
+  set property(value) {}
 };
-</pre>
+```
 
 ### New notations in ECMAScript 2015
 
 Please see the compatibility table for support for these notations. In
 non-supporting environments, these notations will lead to syntax errors.
 
-<pre class="brush: js">// Shorthand property names (ES2015)
+```js
+// Shorthand property names (ES2015)
 let a = 'foo', b = 42, c = {};
 let o = {a, b, c}
 
 // Shorthand method names (ES2015)
 let o = {
-  <var>property</var>(<var>parameters</var>) {}
+  property(parameters) {}
 }
 
 // Computed property names (ES2015)
@@ -59,12 +61,13 @@ let prop = 'foo';
 let o = {
   [prop]: 'hey',
   ['b' + 'ar']: 'there'
-}</pre>
+}
+```
 
 ## Description
 
 An object initializer is an expression that describes the initialization of an
-{{jsxref("Object")}}. Objects consist of _properties_, which are used to
+{{jsxref("Object")}}. Objects consist of *properties*, which are used to
 describe an object. The values of object properties can either contain
 [primitive](/en-US/docs/Glossary/primitive) data types or other objects.
 
@@ -74,15 +77,15 @@ The object literal notation is not the same as the **J**ava**S**cript **O**bject
 **N**otation ([JSON](/en-US/docs/Glossary/JSON)). Although they look similar,
 there are differences between them:
 
-- JSON permits _only_ property definition using `"property": value` syntax.  The
-  property name must be double-quoted, and the definition cannot be a shorthand.
-- In JSON the values can only be strings, numbers, arrays, `true`, `false`,
-  `null`, or another (JSON) object.
-- A function value (see "Methods" below) can not be assigned to a value in JSON.
-- Objects like {{jsxref("Date")}} will be a string after
-  {{jsxref("JSON.parse()")}}.
-- {{jsxref("JSON.parse()")}} will reject computed property names and
-  an error will be thrown.
+*   JSON permits *only* property definition using `"property": value` syntax.  The
+    property name must be double-quoted, and the definition cannot be a shorthand.
+*   In JSON the values can only be strings, numbers, arrays, `true`, `false`,
+    `null`, or another (JSON) object.
+*   A function value (see "Methods" below) can not be assigned to a value in JSON.
+*   Objects like {{jsxref("Date")}} will be a string after
+    {{jsxref("JSON.parse()")}}.
+*   {{jsxref("JSON.parse()")}} will reject computed property names and
+    an error will be thrown.
 
 ## Examples
 
@@ -94,7 +97,7 @@ An empty object with no properties can be created like this:
 let object = {}
 ```
 
-However, the advantage of the _literal_ or _initializer_ notation is, that you
+However, the advantage of the *literal* or *initializer* notation is, that you
 are able to quickly create objects with properties inside the curly braces. You
 notate a list of `key: value` pairs delimited by commas.
 
@@ -194,37 +197,45 @@ A property of an object can also refer to a
 [getter](/en-US/docs/Web/JavaScript/Reference/Functions/get) or
 [setter](/en-US/docs/Web/JavaScript/Reference/Functions/set) method.
 
-<pre class="brush: js">let o = {
-  <var>property: function </var>(<var>parameters</var>) {},
-  get <var>property</var>() {},
-  set <var>property</var>(<var>value</var>) {}
-}</pre>
+```js
+let o = {
+  property: function (parameters) {},
+  get property() {},
+  set property(value) {}
+}
+```
 
 In ECMAScript 2015, a shorthand notation is available, so that the keyword
 "`function`" is no longer necessary.
 
-<pre class="brush: js">// Shorthand method names (ES2015)
+```js
+// Shorthand method names (ES2015)
 let o = {
-  <var>property</var>(<var>parameters</var>) {},
-}</pre>
+  property(parameters) {},
+}
+```
 
 In ECMAScript 2015, there is a way to concisely define properties whose values
 are generator functions:
 
-<pre class="brush: js">let o = {
-  *<var>generator</var>() {
+```js
+let o = {
+  *generator() {
     ...........
   }
-};</pre>
+};
+```
 
 Which is equivalent to this ES5-like notation (but note that ECMAScript 5 has no
 generators):
 
-<pre class="brush: js">let o = {
-  generator<var>: function* </var>() {
+```js
+let o = {
+  generator: function* () {
     ...........
   }
-};</pre>
+};
+```
 
 For more information and examples about methods, see
 [method definitions](/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions).
@@ -353,8 +364,8 @@ assert(obj3.__proto__ === 17)
 
 ## See also
 
-- [Property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)
-- [`get`](/en-US/docs/Web/JavaScript/Reference/Functions/get) /
-  [`set`](/en-US/docs/Web/JavaScript/Reference/Functions/set)
-- [Method definitions](/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)
-- [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
+*   [Property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)
+*   [`get`](/en-US/docs/Web/JavaScript/Reference/Functions/get) /
+    [`set`](/en-US/docs/Web/JavaScript/Reference/Functions/set)
+*   [Method definitions](/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)
+*   [Lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)

@@ -17,9 +17,7 @@ smallest floating point number greater than 1.
 You do not have to create a {{jsxref("Number")}} object to access this
 static property (use `Number.EPSILON`).
 
-{{EmbedInteractiveExample("pages/js/number-epsilon.html")}}
-
-{{js_property_attributes(0, 0, 0)}}
+{{EmbedInteractiveExample("pages/js/number-epsilon.html")}}{{js_property_attributes(0, 0, 0)}}
 
 ## Description
 
@@ -55,6 +53,6 @@ if (Number.EPSILON === undefined) {
 
 ## See also
 
-- A polyfill of `Number.EPSILON` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
-- The {{jsxref("Number")}} object it belongs to
+*   A polyfill of `Number.EPSILON` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
+*   The {{jsxref("Number")}} object it belongs to

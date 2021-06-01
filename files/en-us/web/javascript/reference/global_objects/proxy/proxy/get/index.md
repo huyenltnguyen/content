@@ -16,23 +16,24 @@ The **`handler.get()`** method is a trap for getting a property value.
 
 ## Syntax
 
-<pre class="brush: js">const <var>p</var> = new Proxy(<var>target</var>, {
-  get: function(<var>target</var>, <var>property</var>, <var>receiver</var>) {
+```js
+const p = new Proxy(target, {
+  get: function(target, property, receiver) {
   }
 });
-</pre>
+```
 
 ### Parameters
 
 The following parameters are passed to the `get()` method. `this` is bound to
 the handler.
 
-- `target`
-  - : The target object.
-- `property`
-  - : The name or {{jsxref("Symbol")}}  of the property to get.
-- `receiver`
-  - : Either the proxy or an object that inherits from the proxy.
+*   `target`
+    *   : The target object.
+*   `property`
+    *   : The name or {{jsxref("Symbol")}}  of the property to get.
+*   `receiver`
+    *   : Either the proxy or an object that inherits from the proxy.
 
 ### Return value
 
@@ -46,31 +47,31 @@ The **`handler.get()`** method is a trap for getting a property value.
 
 This trap can intercept these operations:
 
-- Property access:
+*   Property access:
 
-  <code><var>proxy</var>[<var>foo</var>]</code>
+    <code><var>proxy</var>\[<var>foo</var>]</code>
 
-  and
+    and
 
-  <code><var>proxy</var>.<var>bar</var></code>
+    <code><var>proxy</var>.<var>bar</var></code>
 
-- Inherited property access:
+*   Inherited property access:
 
-  <code>Object.create(<var>proxy</var>)[<var>foo</var>]</code>
+    <code>Object.create(<var>proxy</var>)\[<var>foo</var>]</code>
 
-- {{jsxref("Reflect.get()")}}
+*   {{jsxref("Reflect.get()")}}
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a
 {{jsxref("TypeError")}}:
 
-- The value reported for a property must be the same as the value of the
-  corresponding target object property if the target object property is a
-  non-writable, non-configurable own data property.
-- The value reported for a property must be undefined if the corresponding
-  target object property is a non-configurable own accessor property that has
-  `undefined` as its `[[Get]]` attribute.
+*   The value reported for a property must be the same as the value of the
+    corresponding target object property if the target object property is a
+    non-writable, non-configurable own data property.
+*   The value reported for a property must be undefined if the corresponding
+    target object property is a non-configurable own accessor property that has
+    `undefined` as its `[[Get]]` attribute.
 
 ## Examples
 
@@ -120,6 +121,6 @@ p.a; // TypeError is thrown
 
 ## See also
 
-- {{jsxref("Proxy")}}
-- {{jsxref("Proxy.handler", "handler")}}
-- {{jsxref("Reflect.get()")}}
+*   {{jsxref("Proxy")}}
+*   {{jsxref("Proxy.handler", "handler")}}
+*   {{jsxref("Reflect.get()")}}

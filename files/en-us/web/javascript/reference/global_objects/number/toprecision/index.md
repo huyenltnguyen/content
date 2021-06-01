@@ -24,8 +24,8 @@ toPrecision(precision)
 
 ### Parameters
 
-- `precision` {{optional_inline}}
-  - : An integer specifying the number of significant digits.
+*   `precision` {{optional_inline}}
+    *   : An integer specifying the number of significant digits.
 
 ### Return value
 
@@ -41,11 +41,11 @@ argument is a non-integer value, it is rounded to the nearest integer.
 
 ### Exceptions
 
-- {{jsxref("Global_Objects/RangeError", "RangeError")}}
-  - : If `precision` is not between `1` and `100` (inclusive), a
-    {{jsxref("RangeError")}} is thrown. Implementations are allowed to
-    support larger and smaller values as well. ECMA-262 only requires a
-    precision of up to 21 significant digits.
+*   {{jsxref("Global_Objects/RangeError", "RangeError")}}
+    *   : If `precision` is not between `1` and `100` (inclusive), a
+        {{jsxref("RangeError")}} is thrown. Implementations are allowed to
+        support larger and smaller values as well. ECMA-262 only requires a
+        precision of up to 21 significant digits.
 
 ## Examples
 
@@ -80,6 +80,6 @@ console.log((1234.5).toPrecision(2)) // logs '1.2e+3'
 
 ## See also
 
-- {{jsxref("Number.prototype.toFixed()")}}
-- {{jsxref("Number.prototype.toExponential()")}}
-- {{jsxref("Number.prototype.toString()")}}
+*   {{jsxref("Number.prototype.toFixed()")}}
+*   {{jsxref("Number.prototype.toExponential()")}}
+*   {{jsxref("Number.prototype.toString()")}}

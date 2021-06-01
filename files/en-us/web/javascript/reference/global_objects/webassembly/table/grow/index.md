@@ -25,8 +25,8 @@ grow(number)
 
 ### Parameters
 
-- _number_
-  - : The number of elements you want to grow the table by.
+*   *number*
+    *   : The number of elements you want to grow the table by.
 
 ### Return value
 
@@ -66,6 +66,6 @@ console.log(table.length);   // "3"
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

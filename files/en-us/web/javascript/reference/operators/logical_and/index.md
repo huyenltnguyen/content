@@ -22,8 +22,9 @@ return a non-Boolean value.
 
 ## Syntax
 
-<pre class="brush: js"><em>expr1</em> &#x26;&#x26; <em>expr2</em>
-</pre>
+```js
+expr1 && expr2
+```
 
 ## Description
 
@@ -35,11 +36,11 @@ is so-called {{Glossary("falsy")}}.
 
 Examples of expressions that can be converted to false are:
 
-- `null`;
-- `NaN`;
-- `0`;
-- empty string (`""` or `''` or ` `` `);
-- `undefined`.
+*   `null`;
+*   `NaN`;
+*   `0`;
+*   empty string (`""` or `''` or ` `` `);
+*   `undefined`.
 
 Even though the `&&` operator can be used with operands that are not Boolean
 values, it can still be considered a boolean operator since its return value can
@@ -56,12 +57,11 @@ constructor.
 The logical AND expression is evaluated left to right, it is tested for possible
 "short-circuit" evaluation using the following rule:
 
-<code>(some falsy expression) &#x26;&#x26; <em>expr</em></code> is short-circuit
+<code>(some falsy expression) && <em>expr</em></code> is short-circuit
 evaluated to the falsy expression;
 
 Short circuit means that the <code><em>expr</em></code> part above is **not
-evaluated**, hence any side effects of doing so do not take effect (e.g., if
-<code><em>expr</em></code> is a function call, the calling never takes place).
+evaluated**, hence any side effects of doing so do not take effect (e.g., if <code><em>expr</em></code> is a function call, the calling never takes place).
 This happens because the value of the operator is already determined after the
 evaluation of the first operand. See example:
 
@@ -160,6 +160,6 @@ bCondition1 || bCondition2 && bCondition3
 
 ## See also
 
-- {{jsxref("Boolean")}}
-- {{Glossary("Truthy")}}
-- {{Glossary("Falsy")}}
+*   {{jsxref("Boolean")}}
+*   {{Glossary("Truthy")}}
+*   {{Glossary("Falsy")}}

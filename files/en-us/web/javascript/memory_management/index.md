@@ -15,7 +15,7 @@ as [malloc()](https://pubs.opengroup.org/onlinepubs/009695399/functions/malloc.
 and
 [free()](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation#Overview_of_functions).
 In contrast, JavaScript automatically allocates memory when objects are created
-and frees it when they are not used anymore (_garbage collection_). This
+and frees it when they are not used anymore (*garbage collection*). This
 automaticity is a potential source of confusion: it can give developers the
 false impression that they don't need to worry about memory management.
 
@@ -105,12 +105,12 @@ in the program the allocated memory is no longer needed and to release it.
 
 Some high-level languages, such as JavaScript, utilize a form of automatic
 memory management known as
-[garbage collection](<https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)>)
+[garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_\(computer_science\))
 (GC). The purpose of a garbage collector is to monitor memory allocation and
 determine when a block of allocated memory is no longer needed and reclaim it.
 This automatic process is an approximation since the general problem of
 determining whether or not a specific piece of memory is still needed is
-[undecidable](https://en.wikipedia.org/wiki/Decidability_%28logic%29).
+[undecidable](https://en.wikipedia.org/wiki/Decidability\_%28logic%29).
 
 ## Garbage collection
 
@@ -123,7 +123,7 @@ garbage collection algorithms and their respective limitations.
 ### References
 
 The main concept that garbage collection algorithms rely on is the concept of
-_reference_. Within the context of memory management, an object is said to
+*reference*. Within the context of memory management, an object is said to
 reference another object if the former has access to the latter (either
 implicitly or explicitly). For instance, a JavaScript object has a reference to
 its [prototype](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
@@ -223,11 +223,11 @@ issues such as the browser becoming increasingly slower.
 This algorithm reduces the definition of "an object is no longer needed" to "an
 object is unreachable".
 
-This algorithm assumes the knowledge of a set of objects called _roots._ In
+This algorithm assumes the knowledge of a set of objects called *roots.* In
 JavaScript, the root is the global object. Periodically, the garbage collector
 will start from these roots, find all objects that are referenced from these
 roots, then all objects referenced from these, etc. Starting from the roots, the
-garbage collector will thus find all _reachable_ objects and collect all
+garbage collector will thus find all *reachable* objects and collect all
 non-reachable objects.
 
 This algorithm is an improvement over the previous one since an object
@@ -279,6 +279,6 @@ node --expose-gc --inspect index.js
 
 #### See also
 
-- [IBM article on "Memory leak patterns in JavaScript" (2007)](http://www.ibm.com/developerworks/web/library/wa-memleak/)
-- [Kangax article on how to register event handler and avoid memory leaks (2010)](https://msdn.microsoft.com/en-us/magazine/ff728624.aspx)
-- [Performance](/en-US/docs/Mozilla/Performance)
+*   [IBM article on "Memory leak patterns in JavaScript" (2007)](http://www.ibm.com/developerworks/web/library/wa-memleak/)
+*   [Kangax article on how to register event handler and avoid memory leaks (2010)](https://msdn.microsoft.com/en-us/magazine/ff728624.aspx)
+*   [Performance](/en-US/docs/Mozilla/Performance)

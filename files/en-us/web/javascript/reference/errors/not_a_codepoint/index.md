@@ -60,4 +60,4 @@ String.fromCodePoint(0x1D306, 0x61, 0x1D307) // "\uD834\uDF06a\uD834\uDF07"
 
 ## See also
 
-- {{jsxref("String.fromCodePoint()")}}
+*   {{jsxref("String.fromCodePoint()")}}

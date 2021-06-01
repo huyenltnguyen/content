@@ -46,6 +46,6 @@ dataview2.byteOffset; // 3 (as specified when constructing the DataView)
 
 ## See also
 
-- {{jsxref("DataView")}}
-- {{jsxref("ArrayBuffer")}}
-- {{jsxref("SharedArrayBuffer")}}
+*   {{jsxref("DataView")}}
+*   {{jsxref("ArrayBuffer")}}
+*   {{jsxref("SharedArrayBuffer")}}

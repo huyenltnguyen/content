@@ -11,29 +11,28 @@ browser-compat: javascript.statements.switch
 ---
 {{jsSidebar("Statements")}}
 
-<span class="seoSummary">The <strong><code>switch</code></strong> statement
-evaluates an
-<a href="/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators">expression</a>,
-matching the expression's value to a <code>case</code> clause, and executes
-<a href="/en-US/docs/Web/JavaScript/Reference/Statements">statements</a>
-associated with that <code>case</code>, as well as statements in
-<code>case</code>s that follow the matching <code>case</code>.</span>
+The **`switch`** statement evaluates an
+[expression](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators),
+matching the expression's value to a `case` clause, and executes
+[statements](/en-US/docs/Web/JavaScript/Reference/Statements) associated with
+that `case`, as well as statements in `case`s that follow the matching `case`.
 
 {{EmbedInteractiveExample("pages/js/statement-switch.html", "taller")}}
 
 ## Syntax
 
-<pre class="brush: js">switch (<var>expression</var>) {
-  case <var>value1</var>:
+```js
+switch (expression) {
+  case value1:
     //Statements executed when the
     //result of expression matches value1
     [break;]
-  case <var>value2</var>:
+  case value2:
     //Statements executed when the
     //result of expression matches value2
     [break;]
   ...
-  case <var>valueN</var>:
+  case valueN:
     //Statements executed when the
     //result of expression matches valueN
     [break;]
@@ -41,17 +40,18 @@ associated with that <code>case</code>, as well as statements in
     //Statements executed when none of
     //the values match the value of the expression
     [break;]]
-}</pre>
+}
+```
 
-- `expression`
-  - : An expression whose result is matched against each `case` clause.
-- <code>case <var>valueN</var></code> {{optional_inline}}
-  - : A `case` clause used to match against `expression`. If the `expression`
-    matches the specified `valueN`, the statements inside the `case` clause are
-    executed until either the end of the `switch` statement or a `break`.
-- `default` {{optional_inline}}
-  - : A `default` clause; if provided, this clause is executed if the value of
-    `expression` doesn't match any of the `case` clauses.
+*   `expression`
+    *   : An expression whose result is matched against each `case` clause.
+*   <code>case <var>valueN</var></code> {{optional_inline}}
+    *   : A `case` clause used to match against `expression`. If the `expression`
+        matches the specified `valueN`, the statements inside the `case` clause are
+        executed until either the end of the `switch` statement or a `break`.
+*   `default` {{optional_inline}}
+    *   : A `default` clause; if provided, this clause is executed if the value of
+        `expression` doesn't match any of the `case` clauses.
 
 ## Description
 
@@ -228,8 +228,15 @@ switch (foo) {
 
 The output from this example:
 
-<table class="standard-table"><thead><tr><th scope="col">Value</th><th scope="col">Log text</th></tr></thead><tbody><tr><td><code>foo</code> is <code>NaN</code> or not <code>1</code>, <code>2</code>,
-<code>3</code>, <code>4</code>, <code>5</code>, or <code>0</code></td><td>Please pick a number from 0 to 5!</td></tr><tr><td><code>0</code></td><td>Output: So What Is Your Name?</td></tr><tr><td><code>1</code></td><td>Output: What Is Your Name?</td></tr><tr><td><code>2</code></td><td>Output: Your Name?</td></tr><tr><td><code>3</code></td><td>Output: Name?</td></tr><tr><td><code>4</code></td><td>Output: ?</td></tr><tr><td><code>5</code></td><td>Output: !</td></tr></tbody></table>
+| Value                                                 | Log text                          |
+| ----------------------------------------------------- | --------------------------------- |
+| `foo` is `NaN` or not `1`, `2`, `3`, `4`, `5`, or `0` | Please pick a number from 0 to 5! |
+| `0`                                                   | Output: So What Is Your Name?     |
+| `1`                                                   | Output: What Is Your Name?        |
+| `2`                                                   | Output: Your Name?                |
+| `3`                                                   | Output: Name?                     |
+| `4`                                                   | Output: ?                         |
+| `5`                                                   | Output: !                         |
 
 ### Block-scope variables within `switch` statements
 
@@ -270,23 +277,25 @@ variable name within the same block scope.
 
 We can easily fix this by wrapping our `case` clauses with brackets:
 
-<pre class="brush: js">const action = 'say_hello';
+```js
+const action = 'say_hello';
 switch (action) {
-  case 'say_hello': <strong>{ // added brackets</strong>
+  case 'say_hello': { // added brackets
     let message = 'hello';
     console.log(message);
     break;
-  <strong>} // added brackets</strong>
-  case 'say_hi': <strong>{ // added brackets</strong>
+  } // added brackets
+  case 'say_hi': { // added brackets
     let message = 'hi';
     console.log(message);
     break;
-  <strong>} // added brackets</strong>
-  default: <strong>{ // added brackets</strong>
+  } // added brackets
+  default: { // added brackets
     console.log('Empty action received.');
     break;
-  <strong>} // added brackets</strong>
-}</pre>
+  } // added brackets
+}
+```
 
 This code will now output `hello` in the console as it should, without any
 errors at all.
@@ -301,4 +310,4 @@ errors at all.
 
 ## See also
 
-- {{jsxref("Statements/if...else", "if...else")}}
+*   {{jsxref("Statements/if...else", "if...else")}}

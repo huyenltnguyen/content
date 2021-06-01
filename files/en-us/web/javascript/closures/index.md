@@ -43,7 +43,7 @@ function, `init()`.
 Run the code using [this JSFiddle link](https://jsfiddle.net/xAFs9/3/) and
 notice that the `alert()` statement within the `displayName()` function
 successfully displays the value of the `name` variable, which is declared in its
-parent function. This is an example of _lexical_ _scoping_, which describes how
+parent function. This is an example of *lexical* *scoping*, which describes how
 a parser resolves variable names when functions are nested. The word
 *lexical* refers to the fact that lexical scoping uses the location where a
 variable is declared within the source code to determine where that variable is
@@ -69,8 +69,8 @@ myFunc();
 
 Running this code has exactly the same effect as the previous example of the
 `init()` function above. What's different (and interesting) is that the
-`displayName()` inner function is returned from the outer function _before being
-executed_.
+`displayName()` inner function is returned from the outer function *before being
+executed*.
 
 At first glance, it might seem unintuitive that this code still works. In some
 programming languages, the local variables within a function exist for just the
@@ -79,7 +79,7 @@ might expect that the name variable would no longer be accessible. However,
 because the code still works as expected, this is obviously not the case in
 JavaScript.
 
-The reason is that functions in JavaScript form closures. A _closure_ is the
+The reason is that functions in JavaScript form closures. A *closure* is the
 combination of a function and the lexical environment within which that function
 was declared. This environment consists of any local variables that were
 in-scope at the time the closure was created. In this case, `myFunc` is a
@@ -242,7 +242,7 @@ there is a single lexical environment that is shared by the three functions:
 `counter.increment`, `counter.decrement`, and `counter.value`.
 
 The shared lexical environment is created in the body of an anonymous function,
-_which is executed as soon as it has been defined_ (also known as
+*which is executed as soon as it has been defined* (also known as
 an [IIFE](/en-US/docs/Glossary/IIFE)). The lexical environment contains two
 private items: a variable called `privateCounter`, and a function called
 `changeBy`. You can't access either of these private members from outside the
@@ -295,16 +295,16 @@ environment changes by changing the value of this variable. Changes to the
 variable value in one closure don't affect the value in the other closure.
 
 > **Note:** Using closures in this way provides benefits that are normally
-> associated with object-oriented programming. In particular, _data hiding_ and
-> _encapsulation_.
+> associated with object-oriented programming. In particular, *data hiding* and
+> *encapsulation*.
 
 ## Closure Scope Chain
 
 Every closure has three scopes:
 
-- Local Scope (Own scope)
-- Outer Functions Scope
-- Global Scope
+*   Local Scope (Own scope)
+*   Outer Functions Scope
+*   Global Scope
 
 A common mistake is not realizing that in the case where the outer function is
 itself a nested function, access to the outer function's scope includes the
@@ -353,7 +353,7 @@ console.log(s3) //log 20
 
 In the example above, there's a series of nested functions, all of which have
 access to the outer functions' scope. In this context, we can say that closures
-have access to _all_ outer function scopes.
+have access to *all* outer function scopes.
 
 ## Creating closures in loops: A common mistake
 
@@ -444,7 +444,7 @@ setupHelp();
 Run the code using [this JSFiddle link](https://jsfiddle.net/v7gjv/9573/).
 
 This works as expected. Rather than the callbacks all sharing a single lexical
-environment, the `makeHelpCallback` function creates _a new lexical environment_
+environment, the `makeHelpCallback` function creates *a new lexical environment*
 for each callback, in which `help` refers to the corresponding string from the
 `helpText` array.
 
@@ -507,7 +507,7 @@ block-scoped variable, meaning that no additional closures are required.
 
 Another alternative could be to use `forEach()` to iterate over the `helpText`
 array and attach a listener to each
-[`<input>`](/en-US/docs/Web/HTML/Element/input "The HTML <input> element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent."),
+[`<input>`](/en-US/docs/Web/HTML/Element/input "The HTML \<input> element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent."),
 as shown:
 
 ```js

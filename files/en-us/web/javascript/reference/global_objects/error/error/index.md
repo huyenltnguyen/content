@@ -22,15 +22,15 @@ new Error(message, fileName, lineNumber)
 
 ### Parameters
 
-- `message`{{Optional_Inline}}
-  - : A human-readable description of the error.
-- `fileName` {{Optional_Inline}}{{Non-standard_inline}}
-  - : The value for the `fileName` property on the created `Error` object.
-    Defaults to the name of the file containing the code that called the
-    `Error()` constructor.
-- `lineNumber` {{Optional_Inline}}{{Non-standard_inline}}
-  - : The value for the `lineNumber` property on the created `Error` object.
-    Defaults to the line number containing the `Error()` constructor invocation.
+*   `message`{{Optional_Inline}}
+    *   : A human-readable description of the error.
+*   `fileName` {{Optional_Inline}}{{Non-standard_inline}}
+    *   : The value for the `fileName` property on the created `Error` object.
+        Defaults to the name of the file containing the code that called the
+        `Error()` constructor.
+*   `lineNumber` {{Optional_Inline}}{{Non-standard_inline}}
+    *   : The value for the `lineNumber` property on the created `Error` object.
+        Defaults to the line number containing the `Error()` constructor invocation.
 
 ## Examples
 
@@ -60,5 +60,5 @@ const y = new Error('I was constructed via the "new" keyword!')
 
 ## See also
 
-- {{JSxRef("Statements/throw", "throw")}}
-- {{JSxRef("Statements/try...catch", "try...catch")}}
+*   {{JSxRef("Statements/throw", "throw")}}
+*   {{JSxRef("Statements/try...catch", "try...catch")}}

@@ -70,5 +70,5 @@ console.log(frBuddhist.calendar); // Prints "buddhist"
 
 ## See also
 
-- {{jsxref("Intl/Locale", "Intl.Locale")}}
-- [Unicode Calendar Identifiers](https://www.unicode.org/reports/tr35/#UnicodeCalendarIdentifier)
+*   {{jsxref("Intl/Locale", "Intl.Locale")}}
+*   [Unicode Calendar Identifiers](https://www.unicode.org/reports/tr35/#UnicodeCalendarIdentifier)

@@ -19,37 +19,38 @@ modified value is written back.
 
 ## Syntax
 
-<pre class="brush: js">Atomics.and(<var>typedArray</var>, <var>index</var>, <var>value</var>)
-</pre>
+```js
+Atomics.and(typedArray, index, value)
+```
 
 ### Parameters
 
-- `typedArray`
-  - : An integer typed array. One of {{jsxref("Int8Array")}},
-    {{jsxref("Uint8Array")}}, {{jsxref("Int16Array")}},
-    {{jsxref("Uint16Array")}}, {{jsxref("Int32Array")}},
-    {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
-    {{jsxref("BigUint64Array")}}.
-- `index`
-  - : The position in the `typedArray` to compute the bitwise AND.
-- `value`
-  - : The number to compute the bitwise AND with.
+*   `typedArray`
+    *   : An integer typed array. One of {{jsxref("Int8Array")}},
+        {{jsxref("Uint8Array")}}, {{jsxref("Int16Array")}},
+        {{jsxref("Uint16Array")}}, {{jsxref("Int32Array")}},
+        {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
+        {{jsxref("BigUint64Array")}}.
+*   `index`
+    *   : The position in the `typedArray` to compute the bitwise AND.
+*   `value`
+    *   : The number to compute the bitwise AND with.
 
 ### Return value
 
 The old value at the given position
-(<code><var>typedArray</var>[<var>index</var>]</code>).
+(<code><var>typedArray</var>\[<var>index</var>]</code>).
 
 ### Exceptions
 
-- Throws a {{jsxref("TypeError")}}, if `typedArray` is not one of the
-  allowed integer types.
-- Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
-  `typedArray`.
+*   Throws a {{jsxref("TypeError")}}, if `typedArray` is not one of the
+    allowed integer types.
+*   Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
+    `typedArray`.
 
 ## Description
 
-The bitwise AND operation only yields 1, if both `a` and `b` are 1\. The truth
+The bitwise AND operation only yields 1, if both `a` and `b` are 1. The truth
 table for the AND operation is:
 
 | `a` | `b` | `a & b` |
@@ -91,6 +92,6 @@ Atomics.load(ta, 0);  // 1
 
 ## See also
 
-- {{jsxref("Atomics")}}
-- {{jsxref("Atomics.or()")}}
-- {{jsxref("Atomics.xor()")}}
+*   {{jsxref("Atomics")}}
+*   {{jsxref("Atomics.or()")}}
+*   {{jsxref("Atomics.xor()")}}

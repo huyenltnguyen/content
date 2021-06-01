@@ -22,11 +22,11 @@ new AggregateError(errors, message)
 
 ### Parameters
 
-- `errors`
-  - : An iterable of errors, may not actually be {{JSxRef("Error")}}
-    instances.
-- `message`{{Optional_Inline}}
-  - : An optional human-readable description of the aggregate error.
+*   `errors`
+    *   : An iterable of errors, may not actually be {{JSxRef("Error")}}
+        instances.
+*   `message`{{Optional_Inline}}
+    *   : An optional human-readable description of the aggregate error.
 
 ## Examples
 
@@ -55,6 +55,6 @@ try {
 
 ## See also
 
-- A polyfill of `AggregateError` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
-- {{jsxref("Promise.any")}}
+*   A polyfill of `AggregateError` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
+*   {{jsxref("Promise.any")}}

@@ -24,8 +24,8 @@ getInt8(byteOffset)
 
 ### Parameters
 
-- `byteOffset`
-  - : The offset, in byte, from the start of the view where to read the data.
+*   `byteOffset`
+    *   : The offset, in byte, from the start of the view where to read the data.
 
 ### Return value
 
@@ -33,9 +33,9 @@ A signed 8-bit integer number.
 
 ### Errors thrown
 
-- {{jsxref("RangeError")}}
-  - : Thrown if the `byteOffset` is set such as it would read beyond the end of
-    the view.
+*   {{jsxref("RangeError")}}
+    *   : Thrown if the `byteOffset` is set such as it would read beyond the end of
+        the view.
 
 ## Description
 
@@ -62,5 +62,5 @@ dataview.getInt8(1); // 0
 
 ## See also
 
-- {{jsxref("DataView")}}
-- {{jsxref("ArrayBuffer")}}
+*   {{jsxref("DataView")}}
+*   {{jsxref("ArrayBuffer")}}

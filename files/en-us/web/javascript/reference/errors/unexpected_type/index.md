@@ -9,7 +9,7 @@ tags:
 ---
 {{jsSidebar("Errors")}}
 
-The JavaScript exception "_x_ is (not) _y_" occurs when there was an unexpected
+The JavaScript exception "*x* is (not) *y*" occurs when there was an unexpected
 type. Oftentimes, unexpected {{jsxref("undefined")}} or
 {{jsxref("null")}} values.
 
@@ -79,5 +79,5 @@ if (typeof foo !== 'undefined') {
 
 ## See also
 
-- {{jsxref("undefined")}}
-- {{jsxref("null")}}
+*   {{jsxref("undefined")}}
+*   {{jsxref("null")}}

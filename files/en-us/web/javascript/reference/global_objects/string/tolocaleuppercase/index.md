@@ -27,12 +27,12 @@ toLocaleUpperCase([locale1, locale2, ...])
 
 ### Parameters
 
-- `locale` {{optional_inline}}
-  - : The `locale` parameter indicates the locale to be used to convert to upper
-    case according to any locale-specific case mappings. If multiple locales are
-    given in an {{jsxref("Array")}}, the
-    [best available locale](https://tc39.github.io/ecma402/#sec-bestavailablelocale)
-    is used. The default locale is the host environment’s current locale.
+*   `locale` {{optional_inline}}
+    *   : The `locale` parameter indicates the locale to be used to convert to upper
+        case according to any locale-specific case mappings. If multiple locales are
+        given in an {{jsxref("Array")}}, the
+        [best available locale](https://tc39.github.io/ecma402/#sec-bestavailablelocale)
+        is used. The default locale is the host environment’s current locale.
 
 ### Return value
 
@@ -41,10 +41,10 @@ to any locale-specific case mappings.
 
 ### Exceptions
 
-- A {{jsxref("RangeError")}} ("invalid language tag: xx_yy") is thrown
-  if a `locale` argument isn't a valid language tag.
-- A {{jsxref("TypeError")}} ("invalid element in locales argument") is
-  thrown if an array element isn't of type string.
+*   A {{jsxref("RangeError")}} ("invalid language tag: xx_yy") is thrown
+    if a `locale` argument isn't a valid language tag.
+*   A {{jsxref("TypeError")}} ("invalid element in locales argument") is
+    thrown if an array element isn't of type string.
 
 ## Description
 
@@ -89,6 +89,6 @@ let locales = ['lt', 'LT', 'lt-LT', 'lt-u-co-phonebk', 'lt-x-lietuva'];
 
 ## See also
 
-- {{jsxref("String.prototype.toLocaleLowerCase()")}}
-- {{jsxref("String.prototype.toLowerCase()")}}
-- {{jsxref("String.prototype.toUpperCase()")}}
+*   {{jsxref("String.prototype.toLocaleLowerCase()")}}
+*   {{jsxref("String.prototype.toLowerCase()")}}
+*   {{jsxref("String.prototype.toUpperCase()")}}

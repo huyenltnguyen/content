@@ -14,14 +14,15 @@ The **`BigInt()`** constructor returns a value of type **bigint**.
 
 ## Syntax
 
-<pre class="brush: js">BigInt(<var>value</var>);
-</pre>
+```js
+BigInt(value);
+```
 
 ### Parameters
 
-- `value`
-  - : The numeric value of the object being created. May be a string or an
-    integer.
+*   `value`
+    *   : The numeric value of the object being created. May be a string or an
+        integer.
 
 > **Note:** `BigInt()` is not used with the
 > {{JSxRef("Operators/new", "new")}} operator.
@@ -45,4 +46,4 @@ BigInt(123);
 
 ## See also
 
-- {{jsxref("BigInt")}} class
+*   {{jsxref("BigInt")}} class

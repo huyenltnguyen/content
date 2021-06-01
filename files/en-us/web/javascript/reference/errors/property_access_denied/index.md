@@ -51,5 +51,5 @@ domain for which you violated the
 
 ## See also
 
-- {{HTMLElement("iframe")}}
-- [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
+*   {{HTMLElement("iframe")}}
+*   [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)

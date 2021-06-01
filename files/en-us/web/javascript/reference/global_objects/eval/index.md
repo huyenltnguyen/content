@@ -28,10 +28,10 @@ eval(string)
 
 ### Parameters
 
-- `string`
-  - : A string representing a JavaScript expression, statement, or sequence of
-    statements. The expression can include variables and properties of existing
-    objects.
+*   `string`
+    *   : A string representing a JavaScript expression, statement, or sequence of
+        statements. The expression can include variables and properties of existing
+        objects.
 
 ### Return value
 
@@ -70,7 +70,7 @@ var expression = new String('2 + 2');
 eval(expression.toString());            // returns 4
 ```
 
-If you use the `eval` function _indirectly,_ by invoking it via a reference
+If you use the `eval` function *indirectly,* by invoking it via a reference
 other than `eval`,
 [as of ECMAScript 5](http://www.ecma-international.org/ecma-262/5.1/#sec-10.4.2)
 it works in the global scope rather than the local scope. This means, for
@@ -186,14 +186,14 @@ console.log(runCodeWithDateFunction(
 The code above may seem inefficiently slow because of the triple nested
 function, but let's analyze the benefits of the above efficient method:
 
-- It allows the code in the string passed to `runCodeWithDateFunction()` to be
-  minified.
-- Function call overhead is minimal, making the far smaller code size well worth
-  the benefit
-- `Function()` more easily allows your code to utilize the performance buttering
-  `"use strict";`
-- The code does not use `eval()`, making it orders of magnitude faster than
-  otherwise.
+*   It allows the code in the string passed to `runCodeWithDateFunction()` to be
+    minified.
+*   Function call overhead is minimal, making the far smaller code size well worth
+    the benefit
+*   `Function()` more easily allows your code to utilize the performance buttering
+    `"use strict";`
+*   The code does not use `eval()`, making it orders of magnitude faster than
+    otherwise.
 
 Lastly, let's examine minification. With using `Function()` as shown above, you
 can minify the code string passed to `runCodeWithDateFunction()` far more
@@ -389,6 +389,6 @@ var fct2 = eval(fctStr2)  // return a function
 
 ## See also
 
-- {{jsxref("Global_Objects/uneval", "uneval()")}}
-- [Property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)
-- [WebExtensions: Using eval in content scripts](</en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#using_eval()_in_content_scripts>)
+*   {{jsxref("Global_Objects/uneval", "uneval()")}}
+*   [Property accessors](/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)
+*   [WebExtensions: Using eval in content scripts](/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#using_eval\(\)\_in_content_scripts)

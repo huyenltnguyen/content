@@ -22,12 +22,14 @@ must be specified in {{interwiki("wikipedia", "radians")}}.
 
 ## Syntax
 
-<pre class="brush: js">Math.cos(<var>x</var>)</pre>
+```js
+Math.cos(x)
+```
 
 ### Parameters
 
-- `x`
-  - : The angle in radians for which to return the cosine.
+*   `x`
+    *   : The angle in radians for which to return the cosine.
 
 ### Return value
 
@@ -64,9 +66,9 @@ Math.cos(2 * Math.PI); // 1
 
 ## See also
 
-- {{jsxref("Math.acos()")}}
-- {{jsxref("Math.asin()")}}
-- {{jsxref("Math.atan()")}}
-- {{jsxref("Math.atan2()")}}
-- {{jsxref("Math.sin()")}}
-- {{jsxref("Math.tan()")}}
+*   {{jsxref("Math.acos()")}}
+*   {{jsxref("Math.asin()")}}
+*   {{jsxref("Math.atan()")}}
+*   {{jsxref("Math.atan2()")}}
+*   {{jsxref("Math.sin()")}}
+*   {{jsxref("Math.tan()")}}

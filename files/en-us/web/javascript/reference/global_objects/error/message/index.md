@@ -44,5 +44,5 @@ throw e;
 
 ## See also
 
-- {{jsxref("Error.prototype.name")}}
-- {{jsxref("Error.prototype.toString()")}}
+*   {{jsxref("Error.prototype.name")}}
+*   {{jsxref("Error.prototype.toString()")}}

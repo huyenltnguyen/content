@@ -11,7 +11,7 @@ browser-compat: javascript.builtins.Array.reverse
 {{JSRef}}
 
 The **`reverse()`** method reverses an array
-_[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_. The first array
+*[in place](https://en.wikipedia.org/wiki/In-place_algorithm)*. The first array
 element becomes the last, and the last array element becomes the first.
 
 {{EmbedInteractiveExample("pages/js/array-reverse.html")}}
@@ -83,6 +83,6 @@ console.log(a); // {0: 3, 1: 2, 2: 1, length: 3}
 
 ## See also
 
-- {{jsxref("Array.prototype.join()")}}
-- {{jsxref("Array.prototype.sort()")}}
-- {{jsxref("TypedArray.prototype.reverse()")}}
+*   {{jsxref("Array.prototype.join()")}}
+*   {{jsxref("Array.prototype.sort()")}}
+*   {{jsxref("TypedArray.prototype.reverse()")}}

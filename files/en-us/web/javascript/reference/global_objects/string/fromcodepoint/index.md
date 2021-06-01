@@ -29,8 +29,8 @@ String.fromCodePoint(num1, num2, ..., numN)
 
 ### Parameters
 
-- <code><var>num1</var>, ..., <var>numN</var></code>
-  - : A sequence of code points.
+*   <code><var>num1</var>, ..., <var>numN</var></code>
+    *   : A sequence of code points.
 
 ### Return value
 
@@ -38,13 +38,13 @@ A string created by using the specified sequence of code points.
 
 ### Exceptions
 
-- A {{jsxref("Errors/Not_a_codepoint", "RangeError")}} is
-  thrown if an invalid Unicode code point is given (e.g.
-  `"RangeError: NaN is not a valid code point"`).
+*   A {{jsxref("Errors/Not_a_codepoint", "RangeError")}} is
+    thrown if an invalid Unicode code point is given (e.g.
+    `"RangeError: NaN is not a valid code point"`).
 
 ## Description
 
-This method returns a string (and _not_ a {{jsxref("String")}} object).
+This method returns a string (and *not* a {{jsxref("String")}} object).
 
 Because `fromCodePoint()` is a static method of {{jsxref("String")}},
 you must call it as `String.fromCodePoint()`, rather than as a method of a
@@ -151,9 +151,9 @@ String.fromCodePoint(0x1F303); // or 127747 in decimal
 
 ## See also
 
-- A polyfill of `String.fromCodePoint` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- {{jsxref("String.fromCharCode()")}}
-- {{jsxref("String.prototype.charAt()")}}
-- {{jsxref("String.prototype.codePointAt()")}}
-- {{jsxref("String.prototype.charCodeAt()")}}
+*   A polyfill of `String.fromCodePoint` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   {{jsxref("String.fromCharCode()")}}
+*   {{jsxref("String.prototype.charAt()")}}
+*   {{jsxref("String.prototype.codePointAt()")}}
+*   {{jsxref("String.prototype.charCodeAt()")}}

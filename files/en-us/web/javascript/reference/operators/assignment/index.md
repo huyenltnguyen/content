@@ -20,8 +20,9 @@ variables
 
 ## Syntax
 
-<pre class="brush: js"><strong>Operator:</strong> x = y
-</pre>
+```js
+Operator: x = y
+```
 
 ## Examples
 
@@ -47,4 +48,4 @@ x = y = z // x, y and z are all 25
 
 ## See also
 
-- [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
+*   [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)

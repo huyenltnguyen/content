@@ -24,19 +24,22 @@ value - for example `obj.catch(() => {})`.
 
 ## Syntax
 
-<pre class="brush: js"><var>p</var>.catch(<var>onRejected</var>);
+```js
+p.catch(onRejected);
 
-p.catch(function(<var>reason</var>) {
+p.catch(function(reason) {
    // rejection
 });
-</pre>
+```
 
 ### Parameters
 
-<dl><dt><code><var>onRejected</var></code></dt><dd>A {{jsxref("Function")}} called when the <code>Promise</code> is rejected. This
-function has one argument:<dl><dt><code><var>reason</var></code></dt><dd>The rejection reason.</dd></dl>The Promise returned by <code>catch()</code> is rejected if
-<code><var>onRejected</var></code> throws an error or returns a Promise which is
-itself rejected; otherwise, it is resolved.</dd></dl>
+*   `onRejected`
+    *   : A {{jsxref("Function")}} called when the `Promise` is rejected. This
+        function has one argument:
+        *   `reason` \* : The rejection reason. The Promise returned by `catch()` is
+            rejected if `onRejected` throws an error or returns a Promise which is
+            itself rejected; otherwise, it is resolved.
 
 ### Return value
 
@@ -185,5 +188,5 @@ p2.then(function (value) {
 
 ## See also
 
-- {{jsxref("Promise")}}
-- {{jsxref("Promise.prototype.then()")}}
+*   {{jsxref("Promise")}}
+*   {{jsxref("Promise.prototype.then()")}}

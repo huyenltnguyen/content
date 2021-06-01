@@ -37,16 +37,16 @@ even though not all may use it. See the list below.
 
 ### Objects overriding toLocaleString
 
-- {{jsxref("Array")}}:
-  {{jsxref("Array.prototype.toLocaleString()")}}
-- {{jsxref("Number")}}:
-  {{jsxref("Number.prototype.toLocaleString()")}}
-- {{jsxref("Date")}}:
-  {{jsxref("Date.prototype.toLocaleString()")}}
-- {{jsxref("TypedArray")}}:
-  {{jsxref("TypedArray.prototype.toLocaleString()")}}
-- {{jsxref("BigInt")}}:
-  {{jsxref("BigInt.prototype.toLocaleString()")}}
+*   {{jsxref("Array")}}:
+    {{jsxref("Array.prototype.toLocaleString()")}}
+*   {{jsxref("Number")}}:
+    {{jsxref("Number.prototype.toLocaleString()")}}
+*   {{jsxref("Date")}}:
+    {{jsxref("Date.prototype.toLocaleString()")}}
+*   {{jsxref("TypedArray")}}:
+    {{jsxref("TypedArray.prototype.toLocaleString()")}}
+*   {{jsxref("BigInt")}}:
+    {{jsxref("BigInt.prototype.toLocaleString()")}}
 
 ## Examples
 
@@ -116,4 +116,4 @@ let frNumber = testNumber.toLocaleString('fr');
 
 ## See also
 
-- {{jsxref("Object.prototype.toString()")}}
+*   {{jsxref("Object.prototype.toString()")}}

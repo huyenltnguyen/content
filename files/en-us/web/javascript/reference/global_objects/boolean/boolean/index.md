@@ -24,8 +24,8 @@ new Boolean(value)
 
 ### Parameters
 
-- `value` {{optional_inline}}
-  - : The initial value of the `Boolean` object.
+*   `value` {{optional_inline}}
+    *   : The initial value of the `Boolean` object.
 
 ## Examples
 
@@ -60,4 +60,4 @@ var bObjProto = new Boolean({});
 
 ## See also
 
-- [Boolean](/en-US/docs/Glossary/Boolean)
+*   [Boolean](/en-US/docs/Glossary/Boolean)

@@ -60,4 +60,4 @@ var data = [{foo: 'bar'}, {bar: 'foo'}];
 
 ## See also
 
-- {{jsxref("Array")}}
+*   {{jsxref("Array")}}

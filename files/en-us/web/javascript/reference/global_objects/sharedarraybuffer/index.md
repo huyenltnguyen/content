@@ -49,16 +49,16 @@ while until the change is propagated to all contexts. To synchronize,
 
 ### APIs which use SharedArrayBuffer objects
 
-- [`WebGLRenderingContext.bufferData()`](/en-US/docs/Web/API/WebGLRenderingContext/bufferData "The WebGLRenderingContext.bufferData() method of the WebGL API initializes and creates the buffer object's data store.")
-- [`WebGLRenderingContext.bufferSubData()`](/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData "The WebGLRenderingContext.bufferSubData() method of the WebGL API updates a subset of a buffer object's data store.")
-- [`WebGL2RenderingContext.getBufferSubData()`](/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData "The WebGL2RenderingContext.getBufferSubData() method of the WebGL 2 API reads data from a buffer binding point and writes them to an ArrayBuffer or SharedArrayBuffer.")
+*   [`WebGLRenderingContext.bufferData()`](/en-US/docs/Web/API/WebGLRenderingContext/bufferData "The WebGLRenderingContext.bufferData() method of the WebGL API initializes and creates the buffer object's data store.")
+*   [`WebGLRenderingContext.bufferSubData()`](/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData "The WebGLRenderingContext.bufferSubData() method of the WebGL API updates a subset of a buffer object's data store.")
+*   [`WebGL2RenderingContext.getBufferSubData()`](/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData "The WebGL2RenderingContext.getBufferSubData() method of the WebGL 2 API reads data from a buffer binding point and writes them to an ArrayBuffer or SharedArrayBuffer.")
 
 ### Security requirements
 
 Shared memory and high-resolution timers were effectively
 [disabled at the start of 2018](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/)
 in light of
-[Spectre](<https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)>). In
+[Spectre](https://en.wikipedia.org/wiki/Spectre_\(security_vulnerability\)). In
 2020, a new, secure approach has been standardized to re-enable shared memory.
 With a few security measures,
 [`postMessage()`](/en-US/docs/Web/API/Window/postMessage) will no longer throw
@@ -71,10 +71,10 @@ As a baseline requirement, your document needs to be in a
 For top-level documents, two headers will need to be set to cross-origin isolate
 your site:
 
-- [`Cross-Origin-Opener-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
-  with `same-origin` as value (protects your origin from attackers)
-- [`Cross-Origin-Embedder-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
-  with `require-corp` as value (protects victims from your origin)
+*   [`Cross-Origin-Opener-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
+    with `same-origin` as value (protects your origin from attackers)
+*   [`Cross-Origin-Embedder-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
+    with `require-corp` as value (protects victims from your origin)
 
 ```plain
 Cross-Origin-Opener-Policy: same-origin
@@ -116,22 +116,22 @@ var sab = new SharedArrayBuffer(1024);
 
 ## Constructor
 
-- [`SharedArrayBuffer()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/SharedArrayBuffer)
-  - : Creates a new `SharedArrayBuffer` object.
+*   [`SharedArrayBuffer()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/SharedArrayBuffer)
+    *   : Creates a new `SharedArrayBuffer` object.
 
 ## Instance properties
 
-- {{jsxref("SharedArrayBuffer.prototype.byteLength")}}
-  - : The size, in bytes, of the array. This is established when the array is
-    constructed and cannot be changed. **Read only.**
+*   {{jsxref("SharedArrayBuffer.prototype.byteLength")}}
+    *   : The size, in bytes, of the array. This is established when the array is
+        constructed and cannot be changed. **Read only.**
 
 ## Instance methods
 
-- {{jsxref("SharedArrayBuffer.slice", "SharedArrayBuffer.prototype.slice(begin, end)")}}
-  - : Returns a new `SharedArrayBuffer` whose contents are a copy of this
-    `SharedArrayBuffer`'s bytes from `begin`, inclusive, up to `end`, exclusive.
-    If either `begin` or `end` is negative, it refers to an index from the end
-    of the array, as opposed to from the beginning.
+*   {{jsxref("SharedArrayBuffer.slice", "SharedArrayBuffer.prototype.slice(begin, end)")}}
+    *   : Returns a new `SharedArrayBuffer` whose contents are a copy of this
+        `SharedArrayBuffer`'s bytes from `begin`, inclusive, up to `end`, exclusive.
+        If either `begin` or `end` is negative, it refers to an index from the end
+        of the array, as opposed to from the beginning.
 
 ## Examples
 
@@ -170,11 +170,11 @@ gl.bufferData(gl.ARRAY_BUFFER, sab, gl.STATIC_DRAW);
 
 ## See also
 
-- {{jsxref("Atomics")}}
-- {{jsxref("ArrayBuffer")}}
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- [Web Workers](/en-US/docs/Web/API/Web_Workers_API)
-- [parlib-simple ](https://github.com/lars-t-hansen/parlib-simple)– a simple
-  library providing synchronization and work distribution abstractions.
-- [Shared Memory – a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
-- [A Taste of JavaScript’s New Parallel Primitives – Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
+*   {{jsxref("Atomics")}}
+*   {{jsxref("ArrayBuffer")}}
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   [Web Workers](/en-US/docs/Web/API/Web_Workers_API)
+*   [parlib-simple ](https://github.com/lars-t-hansen/parlib-simple)– a simple
+    library providing synchronization and work distribution abstractions.
+*   [Shared Memory – a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
+*   [A Taste of JavaScript’s New Parallel Primitives – Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)

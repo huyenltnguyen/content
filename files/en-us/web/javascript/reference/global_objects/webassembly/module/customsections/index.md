@@ -25,11 +25,11 @@ WebAssembly.Module.customSections(module, sectionName)
 
 ### Parameters
 
-- _module_
-  - : The {{jsxref("WebAssembly.Module")}} object whose custom
-    sections are being considered.
-- _sectionName_
-  - : The string name of the desired custom section.
+*   *module*
+    *   : The {{jsxref("WebAssembly.Module")}} object whose custom
+        sections are being considered.
+*   *sectionName*
+    *   : The string name of the desired custom section.
 
 ### Return value
 
@@ -104,6 +104,6 @@ WebAssembly.compileStreaming(fetch('simple-name-section.wasm'))
 
 ## See also
 
-- [WebAssembly](/en-US/docs/WebAssembly) overview page
-- [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
-- [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+*   [WebAssembly](/en-US/docs/WebAssembly) overview page
+*   [WebAssembly concepts](/en-US/docs/WebAssembly/Concepts)
+*   [Using the WebAssembly JavaScript API](/en-US/docs/WebAssembly/Using_the_JavaScript_API)

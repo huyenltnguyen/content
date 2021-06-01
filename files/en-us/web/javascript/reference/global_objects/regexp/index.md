@@ -21,13 +21,13 @@ in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
 ### Literal notation and constructor
 
-There are two ways to create a `RegExp` object: a _literal notation_ and a
-_constructor_.
+There are two ways to create a `RegExp` object: a *literal notation* and a
+*constructor*.
 
-- **The literal notation's** parameters are enclosed between slashes and do not
-  use quotation marks.
-- **The constructor function's** parameters are not enclosed between slashes but
-  do use quotation marks.
+*   **The literal notation's** parameters are enclosed between slashes and do not
+    use quotation marks.
+*   **The constructor function's** parameters are not enclosed between slashes but
+    do use quotation marks.
 
 The following three expressions create the same regular expression object:
 
@@ -77,63 +77,63 @@ expressions.). See also
 
 ## Constructor
 
-- {{jsxref("RegExp/RegExp", "RegExp()")}}
-  - : Creates a new `RegExp` object.
+*   {{jsxref("RegExp/RegExp", "RegExp()")}}
+    *   : Creates a new `RegExp` object.
 
 ## Static properties
 
-- {{jsxref("RegExp.@@species", "get RegExp[@@species]")}}
-  - : The constructor function that is used to create derived objects.
+*   {{jsxref("RegExp.@@species", "get RegExp[@@species]")}}
+    *   : The constructor function that is used to create derived objects.
 
 ## Instance properties
 
-- {{JSxRef("RegExp.prototype.flags")}}
-  - : A string that contains the flags of the `RegExp` object.
-- {{JSxRef("RegExp.prototype.dotAll")}}
-  - : Whether `.` matches newlines or not.
-- {{JSxRef("RegExp.prototype.global")}}
-  - : Whether to test the regular expression against all possible matches in a
-    string, or only against the first.
-- {{JSxRef("RegExp.prototype.hasIndices")}}
-  - : Whether the regular expression result exposes the start and end indices of
-    captured substrings.
-- {{JSxRef("RegExp.prototype.ignoreCase")}}
-  - : Whether to ignore case while attempting a match in a string.
-- {{JSxRef("RegExp.prototype.multiline")}}
-  - : Whether or not to search in strings across multiple lines.
-- {{JSxRef("RegExp.prototype.source")}}
-  - : The text of the pattern.
-- {{JSxRef("RegExp.prototype.sticky")}}
-  - : Whether or not the search is sticky.
-- {{JSxRef("RegExp.prototype.unicode")}}
-  - : Whether or not Unicode features are enabled.
-- {{jsxref("RegExp.lastIndex", "RegExp: lastIndex")}}
-  - : The index at which to start the next match.
+*   {{JSxRef("RegExp.prototype.flags")}}
+    *   : A string that contains the flags of the `RegExp` object.
+*   {{JSxRef("RegExp.prototype.dotAll")}}
+    *   : Whether `.` matches newlines or not.
+*   {{JSxRef("RegExp.prototype.global")}}
+    *   : Whether to test the regular expression against all possible matches in a
+        string, or only against the first.
+*   {{JSxRef("RegExp.prototype.hasIndices")}}
+    *   : Whether the regular expression result exposes the start and end indices of
+        captured substrings.
+*   {{JSxRef("RegExp.prototype.ignoreCase")}}
+    *   : Whether to ignore case while attempting a match in a string.
+*   {{JSxRef("RegExp.prototype.multiline")}}
+    *   : Whether or not to search in strings across multiple lines.
+*   {{JSxRef("RegExp.prototype.source")}}
+    *   : The text of the pattern.
+*   {{JSxRef("RegExp.prototype.sticky")}}
+    *   : Whether or not the search is sticky.
+*   {{JSxRef("RegExp.prototype.unicode")}}
+    *   : Whether or not Unicode features are enabled.
+*   {{jsxref("RegExp.lastIndex", "RegExp: lastIndex")}}
+    *   : The index at which to start the next match.
 
 ## Instance methods
 
-- {{JSxRef("RegExp.prototype.compile()")}}
-  {{deprecated_inline}}
-  - : (Re-)compiles a regular expression during execution of a script.
-- {{JSxRef("RegExp.prototype.exec()")}}
-  - : Executes a search for a match in its string parameter.
-- {{JSxRef("RegExp.prototype.test()")}}
-  - : Tests for a match in its string parameter.
-- {{JSxRef("RegExp.prototype.toString()")}}
-  - : Returns a string representing the specified object. Overrides the
-    {{JSxRef("Object.prototype.toString()")}} method.
-- {{JSxRef("RegExp.prototype.@@match()", "RegExp.prototype[@@match]()")}}
-  - : Performs match to given string and returns match result.
-- {{JSxRef("RegExp.prototype.@@matchAll()", "RegExp.prototype[@@matchAll]()")}}
-  - : Returns all matches of the regular expression against a string.
-- {{JSxRef("RegExp.prototype.@@replace()", "RegExp.prototype[@@replace]()")}}
-  - : Replaces matches in given string with new substring.
-- {{JSxRef("RegExp.prototype.@@search()", "RegExp.prototype[@@search]()")}}
-  - : Searches the match in given string and returns the index the pattern found
-    in the string.
-- {{JSxRef("RegExp.prototype.@@split()", "RegExp.prototype[@@split]()")}}
-  - : Splits given string into an array by separating the string into
-    substrings.
+*   {{JSxRef("RegExp.prototype.compile()")}}
+    {{deprecated_inline}}
+    *   : (Re-)compiles a regular expression during execution of a script.
+*   {{JSxRef("RegExp.prototype.exec()")}}
+    *   : Executes a search for a match in its string parameter.
+*   {{JSxRef("RegExp.prototype.test()")}}
+    *   : Tests for a match in its string parameter.
+*   {{JSxRef("RegExp.prototype.toString()")}}
+    *   : Returns a string representing the specified object. Overrides the
+        {{JSxRef("Object.prototype.toString()")}} method.
+*   {{JSxRef("RegExp.prototype.@@match()", "RegExp.prototype[@@match]()")}}
+    *   : Performs match to given string and returns match result.
+*   {{JSxRef("RegExp.prototype.@@matchAll()", "RegExp.prototype[@@matchAll]()")}}
+    *   : Returns all matches of the regular expression against a string.
+*   {{JSxRef("RegExp.prototype.@@replace()", "RegExp.prototype[@@replace]()")}}
+    *   : Replaces matches in given string with new substring.
+*   {{JSxRef("RegExp.prototype.@@search()", "RegExp.prototype[@@search]()")}}
+    *   : Searches the match in given string and returns the index the pattern found
+        in the string.
+*   {{JSxRef("RegExp.prototype.@@split()", "RegExp.prototype[@@split]()")}}
+    *   : Splits given string into an array by separating the string into
+        substrings.
 
 ## Examples
 
@@ -142,8 +142,8 @@ expressions.). See also
 The following script uses the
 {{jsxref("String.prototype.replace()", "replace()")}} method
 of the {{jsxref("Global_Objects/String", "String")}} instance to
-match a name in the format _first last_ and output it in the format _last,
-first_.
+match a name in the format *first last* and output it in the format *last,
+first*.
 
 In the replacement text, the script uses `$1` and `$2` to indicate the results
 of the corresponding matching parentheses in the regular expression pattern.
@@ -223,8 +223,7 @@ With the global flag `g`, all 6 digits would be matched, not just 3.
 `\w` and `\W` only matches ASCII based characters; for example, `a` to `z`, `A`
 to `Z`, `0` to `9`, and `_`.
 
-To match characters from other languages such as Cyrillic or Hebrew, use
-<code>\u<var>hhhh</var></code>, where `hhhh` is the character's Unicode value in
+To match characters from other languages such as Cyrillic or Hebrew, use <code>\u<var>hhhh</var></code>, where `hhhh` is the character's Unicode value in
 hexadecimal.
 
 This example demonstrates how one can separate out Unicode characters from a
@@ -295,10 +294,10 @@ return an empty string instead of `undefined`
 
 ## See also
 
-- A polyfill of many modern `RegExp` features is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
-- [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-  chapter in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
-- {{jsxref("String.prototype.match()")}}
-- {{jsxref("String.prototype.replace()")}}
-- {{jsxref("String.prototype.split()")}}
+*   A polyfill of many modern `RegExp` features is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+*   [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+    chapter in the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide)
+*   {{jsxref("String.prototype.match()")}}
+*   {{jsxref("String.prototype.replace()")}}
+*   {{jsxref("String.prototype.split()")}}

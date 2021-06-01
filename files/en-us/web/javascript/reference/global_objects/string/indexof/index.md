@@ -13,8 +13,7 @@ browser-compat: javascript.builtins.String.indexOf
 
 <span class="seoSummary">The <strong><code>indexOf()</code></strong> method
 returns the index within the calling {{jsxref("String")}} object of the
-first occurrence of the specified value, starting the search at
-<code>fromIndex</code>. Returns <code>-1</code> if the value is not
+first occurrence of the specified value, starting the search at <code>fromIndex</code>. Returns <code>-1</code> if the value is not
 found.</span>
 
 {{EmbedInteractiveExample("pages/js/string-indexof.html")}}
@@ -31,33 +30,31 @@ indexOf(searchValue, fromIndex)
 
 ### Parameters
 
-- `searchValue`
+*   `searchValue`
 
-  - : The string value to search for.
+    *   : The string value to search for.
 
-    If no string is explicitly provided,
-    [<var>searchValue</var> will be coerced to "`undefined`"](https://tc39.github.io/ecma262/#sec-tostring),
-    and this value will be searched for in `str`.
+        If no string is explicitly provided,
+        [<var>searchValue</var> will be coerced to "`undefined`"](https://tc39.github.io/ecma262/#sec-tostring),
+        and this value will be searched for in `str`.
 
-    So, for example: `'undefined'.indexOf()` will return `0`, as `undefined` is
-    found at position `0` in the string `undefined`. `'undefine'.indexOf()`
-    however will return `-1`, as `undefined` is not found in the string
-    `undefine`.
+        So, for example: `'undefined'.indexOf()` will return `0`, as `undefined` is
+        found at position `0` in the string `undefined`. `'undefine'.indexOf()`
+        however will return `-1`, as `undefined` is not found in the string
+        `undefine`.
 
-- <var><code>fromIndex</code></var> {{optional_inline}}
+*   <var><code>fromIndex</code></var> {{optional_inline}}
 
-  - : An integer representing the index at which to start the search. Defaults
-    to `0`.
+    *   : An integer representing the index at which to start the search. Defaults
+        to `0`.
 
-    For <var><code>fromIndex</code></var> values lower than `0`, or greater than
-    <code><var>str</var>.length</code>, the search starts at index `0` and
-    <code><var>str</var>.length</code>, respectively.
+        For <var><code>fromIndex</code></var> values lower than `0`, or greater than <code><var>str</var>.length</code>, the search starts at index `0` and <code><var>str</var>.length</code>, respectively.
 
-    For example, `'hello world'.indexOf('o', -5)` will return `4`, as it starts
-    at position `0`, and `o` is found at position `4`. On the other hand,
-    `'hello world'.indexOf('o', 11)` (and with any `fromIndex` value greater
-    than `11`) will return `-1`, as the search is started at position `11`, a
-    position _after_ the end of the string.
+        For example, `'hello world'.indexOf('o', -5)` will return `4`, as it starts
+        at position `0`, and `o` is found at position `4`. On the other hand,
+        `'hello world'.indexOf('o', 11)` (and with any `fromIndex` value greater
+        than `11`) will return `-1`, as the search is started at position `11`, a
+        position *after* the end of the string.
 
 ### Return value
 
@@ -75,7 +72,7 @@ value is the same as the `fromIndex` value:
 ```
 
 However, with any `fromIndex` value equal to or greater than the string's
-`length`, the returned value _is_ the string's `length`:
+`length`, the returned value *is* the string's `length`:
 
 ```js
 'hello world'.indexOf('', 11) // returns 11
@@ -186,8 +183,8 @@ console.log(count)  // displays 4
 
 ## See also
 
-- {{jsxref("String.prototype.charAt()")}}
-- {{jsxref("String.prototype.lastIndexOf()")}}
-- {{jsxref("String.prototype.includes()")}}
-- {{jsxref("String.prototype.split()")}}
-- {{jsxref("Array.prototype.indexOf()")}}
+*   {{jsxref("String.prototype.charAt()")}}
+*   {{jsxref("String.prototype.lastIndexOf()")}}
+*   {{jsxref("String.prototype.includes()")}}
+*   {{jsxref("String.prototype.split()")}}
+*   {{jsxref("Array.prototype.indexOf()")}}

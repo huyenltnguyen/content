@@ -23,14 +23,14 @@ Atomics.load(typedArray, index)
 
 ### Parameters
 
-- `typedArray`
-  - : An integer typed array. One of {{jsxref("Int8Array")}},
-    {{jsxref("Uint8Array")}}, {{jsxref("Int16Array")}},
-    {{jsxref("Uint16Array")}}, {{jsxref("Int32Array")}},
-    {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
-    {{jsxref("BigUint64Array")}}.
-- `index`
-  - : The position in the `typedArray` to load from.
+*   `typedArray`
+    *   : An integer typed array. One of {{jsxref("Int8Array")}},
+        {{jsxref("Uint8Array")}}, {{jsxref("Int16Array")}},
+        {{jsxref("Uint16Array")}}, {{jsxref("Int32Array")}},
+        {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
+        {{jsxref("BigUint64Array")}}.
+*   `index`
+    *   : The position in the `typedArray` to load from.
 
 ### Return value
 
@@ -38,10 +38,10 @@ The value at the given position (`typedArray[index]`).
 
 ### Exceptions
 
-- Throws a {{jsxref("TypeError")}}, if `typedArray` is not one of the
-  allowed integer types.
-- Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
-  `typedArray`.
+*   Throws a {{jsxref("TypeError")}}, if `typedArray` is not one of the
+    allowed integer types.
+*   Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
+    `typedArray`.
 
 ## Examples
 
@@ -65,5 +65,5 @@ Atomics.load(ta, 0); // 12
 
 ## See also
 
-- {{jsxref("Atomics")}}
-- {{jsxref("Atomics.store()")}}
+*   {{jsxref("Atomics")}}
+*   {{jsxref("Atomics.store()")}}

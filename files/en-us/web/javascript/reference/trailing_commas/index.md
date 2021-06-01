@@ -51,7 +51,7 @@ arr.length; // 3
 ```
 
 If more than one trailing comma is used, an elision (or hole) is produced. An
-array with holes is called _sparse_ (a _dense_ array has no holes). When
+array with holes is called *sparse* (a *dense* array has no holes). When
 iterating arrays for example with
 {{jsxref("Array.prototype.forEach()")}} or
 {{jsxref("Array.prototype.map()")}}, array holes are skipped.
@@ -193,6 +193,6 @@ JSON.parse('{"foo" : 1 }');
 
 ## See also
 
-- Initial ECMAScript proposal:
-  [trailing function commas](https://github.com/tc39/proposal-trailing-function-commas)
-  by Jeff Morrison
+*   Initial ECMAScript proposal:
+    [trailing function commas](https://github.com/tc39/proposal-trailing-function-commas)
+    by Jeff Morrison

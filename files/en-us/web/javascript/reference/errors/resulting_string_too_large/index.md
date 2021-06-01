@@ -57,4 +57,4 @@ size is 2^28 - 1 (`0xFFFFFFF`).
 
 ## See also
 
-- {{jsxref("String.prototype.repeat()")}}
+*   {{jsxref("String.prototype.repeat()")}}

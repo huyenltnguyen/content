@@ -25,13 +25,13 @@ slice(begin, end)
 
 ### Parameters
 
-- `begin`
-  - : Zero-based byte index at which to begin slicing.
-- `end` {{optional_inline}}
-  - : Byte index before which to end slicing. If end is unspecified, the new
-    `ArrayBuffer` contains all bytes from begin to the end of this
-    `ArrayBuffer`. If negative, it will make the Byte index begin from the last
-    Byte.
+*   `begin`
+    *   : Zero-based byte index at which to begin slicing.
+*   `end` {{optional_inline}}
+    *   : Byte index before which to end slicing. If end is unspecified, the new
+        `ArrayBuffer` contains all bytes from begin to the end of this
+        `ArrayBuffer`. If negative, it will make the Byte index begin from the last
+        Byte.
 
 ### Return value
 
@@ -66,4 +66,4 @@ const buf2 = buf1.slice(0);
 
 ## See also
 
-- {{jsxref("ArrayBuffer")}}
+*   {{jsxref("ArrayBuffer")}}

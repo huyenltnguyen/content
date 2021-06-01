@@ -18,12 +18,14 @@ being added to an object (i.e. prevents future extensions to the object).
 
 ## Syntax
 
-<pre class="brush: js">Object.preventExtensions(<var>obj</var>)</pre>
+```js
+Object.preventExtensions(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object which should be made non-extensible.
+*   `obj`
+    *   : The object which should be made non-extensible.
 
 ### Return value
 
@@ -35,7 +37,7 @@ An object is extensible if new properties can be added to it.
 `Object.preventExtensions()` marks an object as no longer extensible, so that it
 will never have properties beyond the ones it had at the time it was marked as
 non-extensible. Note that the properties of a non-extensible object, in general,
-may still be _deleted_. Attempting to add new properties to a non-extensible
+may still be *deleted*. Attempting to add new properties to a non-extensible
 object will fail, either silently or by throwing a
 {{jsxref("TypeError")}} (most commonly, but not exclusively, when in
 {{jsxref("Functions_and_function_scope/Strict_mode", "strict
@@ -121,9 +123,9 @@ Object.preventExtensions(1);
 
 ## See also
 
-- {{jsxref("Object.isExtensible()")}}
-- {{jsxref("Object.seal()")}}
-- {{jsxref("Object.isSealed()")}}
-- {{jsxref("Object.freeze()")}}
-- {{jsxref("Object.isFrozen()")}}
-- {{jsxref("Reflect.preventExtensions()")}}
+*   {{jsxref("Object.isExtensible()")}}
+*   {{jsxref("Object.seal()")}}
+*   {{jsxref("Object.isSealed()")}}
+*   {{jsxref("Object.freeze()")}}
+*   {{jsxref("Object.isFrozen()")}}
+*   {{jsxref("Reflect.preventExtensions()")}}

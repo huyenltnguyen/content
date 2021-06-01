@@ -49,6 +49,6 @@ console.log('ALPHABET'.toLowerCase()); // 'alphabet'
 
 ## See also
 
-- {{jsxref("String.prototype.toLocaleLowerCase()")}}
-- {{jsxref("String.prototype.toLocaleUpperCase()")}}
-- {{jsxref("String.prototype.toUpperCase()")}}
+*   {{jsxref("String.prototype.toLocaleLowerCase()")}}
+*   {{jsxref("String.prototype.toLocaleUpperCase()")}}
+*   {{jsxref("String.prototype.toUpperCase()")}}

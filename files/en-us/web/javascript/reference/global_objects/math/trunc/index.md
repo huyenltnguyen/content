@@ -19,13 +19,14 @@ any fractional digits.
 
 ## Syntax
 
-<pre class="brush: js">Math.trunc(<var>x</var>)
-</pre>
+```js
+Math.trunc(x)
+```
 
 ### Parameters
 
-- `x`
-  - : A number.
+*   `x`
+    *   : A number.
 
 ### Return value
 
@@ -70,11 +71,11 @@ Math.trunc();         // NaN
 
 ## See also
 
-- A polyfill of `Math.trunc` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js)
-- {{jsxref("Math.abs()")}}
-- {{jsxref("Math.ceil()")}}
-- {{jsxref("Math.floor()")}}
-- {{jsxref("Math.round()")}}
-- {{jsxref("Math.sign()")}}
+*   A polyfill of `Math.trunc` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-math)
+*   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js)
+*   {{jsxref("Math.abs()")}}
+*   {{jsxref("Math.ceil()")}}
+*   {{jsxref("Math.floor()")}}
+*   {{jsxref("Math.round()")}}
+*   {{jsxref("Math.sign()")}}

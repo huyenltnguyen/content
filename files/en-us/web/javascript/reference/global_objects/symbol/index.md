@@ -85,82 +85,82 @@ array will be empty unless you've set Symbol properties on the object.
 
 ## Constructor
 
-- [`Symbol()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/Symbol)
-  - : Creates a new `Symbol` object. It is incomplete as a constructor because
-    it does not support the syntax "`new Symbol()`".
+*   [`Symbol()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/Symbol)
+    *   : Creates a new `Symbol` object. It is incomplete as a constructor because
+        it does not support the syntax "`new Symbol()`".
 
 ## Static properties
 
-- {{jsxref("Symbol.asyncIterator")}}
-  - : A method that returns the default AsyncIterator for an object. Used by
-    [`for await...of`](/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of).
-- {{jsxref("Symbol.hasInstance")}}
-  - : A method determining if a constructor object recognizes an object as its
-    instance. Used by
-    {{jsxref("Operators/instanceof", "instanceof")}}.
-- {{jsxref("Symbol.isConcatSpreadable")}}
-  - : A Boolean value indicating if an object should be flattened to its array
-    elements. Used by {{jsxref("Array.prototype.concat()")}}.
-- {{jsxref("Symbol.iterator")}}
-  - : A method returning the default iterator for an object. Used by
-    [`for...of`](/en-US/docs/Web/JavaScript/Reference/Statements/for...of).
-- {{jsxref("Symbol.match")}}
-  - : A method that matches against a string, also used to determine if an
-    object may be used as a regular expression. Used by
-    {{jsxref("String.prototype.match()")}}.
-- {{jsxref("Symbol.matchAll")}}
-  - : A method that returns an iterator, that yields matches of the regular
-    expression against a string. Used by
-    {{jsxref("String.prototype.matchAll()")}}.
-- {{jsxref("Symbol.replace")}}
-  - : A method that replaces matched substrings of a string. Used by
-    {{jsxref("String.prototype.replace()")}}.
-- {{jsxref("Symbol.search")}}
-  - : A method that returns the index within a string that matches the regular
-    expression. Used by {{jsxref("String.prototype.search()")}}.
-- {{jsxref("Symbol.split")}}
-  - : A method that splits a string at the indices that match a regular
-    expression. Used by {{jsxref("String.prototype.split()")}}.
-- {{jsxref("Symbol.species")}}
-  - : A constructor function that is used to create derived objects.
-- {{jsxref("Symbol.toPrimitive")}}
-  - : A method converting an object to a primitive value.
-- {{jsxref("Symbol.toStringTag")}}
-  - : A string value used for the default description of an object. Used by
-    {{jsxref("Object.prototype.toString()")}}.
-- {{jsxref("Symbol.unscopables")}}
-  - : An object value of whose own and inherited property names are excluded
-    from the [`with`](/en-US/docs/Web/JavaScript/Reference/Statements/with)
-    environment bindings of the associated object.
+*   {{jsxref("Symbol.asyncIterator")}}
+    *   : A method that returns the default AsyncIterator for an object. Used by
+        [`for await...of`](/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of).
+*   {{jsxref("Symbol.hasInstance")}}
+    *   : A method determining if a constructor object recognizes an object as its
+        instance. Used by
+        {{jsxref("Operators/instanceof", "instanceof")}}.
+*   {{jsxref("Symbol.isConcatSpreadable")}}
+    *   : A Boolean value indicating if an object should be flattened to its array
+        elements. Used by {{jsxref("Array.prototype.concat()")}}.
+*   {{jsxref("Symbol.iterator")}}
+    *   : A method returning the default iterator for an object. Used by
+        [`for...of`](/en-US/docs/Web/JavaScript/Reference/Statements/for...of).
+*   {{jsxref("Symbol.match")}}
+    *   : A method that matches against a string, also used to determine if an
+        object may be used as a regular expression. Used by
+        {{jsxref("String.prototype.match()")}}.
+*   {{jsxref("Symbol.matchAll")}}
+    *   : A method that returns an iterator, that yields matches of the regular
+        expression against a string. Used by
+        {{jsxref("String.prototype.matchAll()")}}.
+*   {{jsxref("Symbol.replace")}}
+    *   : A method that replaces matched substrings of a string. Used by
+        {{jsxref("String.prototype.replace()")}}.
+*   {{jsxref("Symbol.search")}}
+    *   : A method that returns the index within a string that matches the regular
+        expression. Used by {{jsxref("String.prototype.search()")}}.
+*   {{jsxref("Symbol.split")}}
+    *   : A method that splits a string at the indices that match a regular
+        expression. Used by {{jsxref("String.prototype.split()")}}.
+*   {{jsxref("Symbol.species")}}
+    *   : A constructor function that is used to create derived objects.
+*   {{jsxref("Symbol.toPrimitive")}}
+    *   : A method converting an object to a primitive value.
+*   {{jsxref("Symbol.toStringTag")}}
+    *   : A string value used for the default description of an object. Used by
+        {{jsxref("Object.prototype.toString()")}}.
+*   {{jsxref("Symbol.unscopables")}}
+    *   : An object value of whose own and inherited property names are excluded
+        from the [`with`](/en-US/docs/Web/JavaScript/Reference/Statements/with)
+        environment bindings of the associated object.
 
 ## Static methods
 
-- {{jsxref("Symbol.for()", "Symbol.for(key)")}}
-  - : Searches for existing Symbols with the given `key` and returns it if
-    found. Otherwise a new Symbol gets created in the global Symbol registry
-    with `key`.
-- {{jsxref("Symbol.keyFor", "Symbol.keyFor(sym)")}}
-  - : Retrieves a shared Symbol key from the global Symbol registry for the
-    given Symbol.
+*   {{jsxref("Symbol.for()", "Symbol.for(key)")}}
+    *   : Searches for existing Symbols with the given `key` and returns it if
+        found. Otherwise a new Symbol gets created in the global Symbol registry
+        with `key`.
+*   {{jsxref("Symbol.keyFor", "Symbol.keyFor(sym)")}}
+    *   : Retrieves a shared Symbol key from the global Symbol registry for the
+        given Symbol.
 
 ## Instance properties
 
-- {{jsxref("Symbol.prototype.description")}}
-  - : A read-only string containing the description of the Symbol.
+*   {{jsxref("Symbol.prototype.description")}}
+    *   : A read-only string containing the description of the Symbol.
 
 ## Instance methods
 
-- {{jsxref("Symbol.prototype.toSource()")}}
-  - : Returns a string containing the source of the Symbol. Overrides the
-    {{jsxref("Object.prototype.toSource()")}} method.
-- {{jsxref("Symbol.prototype.toString()")}}
-  - : Returns a string containing the description of the Symbol. Overrides the
-    {{jsxref("Object.prototype.toString()")}} method.
-- {{jsxref("Symbol.prototype.valueOf()")}}
-  - : Returns the Symbol. Overrides the
-    {{jsxref("Object.prototype.valueOf()")}} method.
-- {{jsxref("Symbol.prototype.@@toPrimitive()", "Symbol.prototype[@@toPrimitive]")}}
-  - : Returns the Symbol.
+*   {{jsxref("Symbol.prototype.toSource()")}}
+    *   : Returns a string containing the source of the Symbol. Overrides the
+        {{jsxref("Object.prototype.toSource()")}} method.
+*   {{jsxref("Symbol.prototype.toString()")}}
+    *   : Returns a string containing the description of the Symbol. Overrides the
+        {{jsxref("Object.prototype.toString()")}} method.
+*   {{jsxref("Symbol.prototype.valueOf()")}}
+    *   : Returns the Symbol. Overrides the
+        {{jsxref("Object.prototype.valueOf()")}} method.
+*   {{jsxref("Symbol.prototype.@@toPrimitive()", "Symbol.prototype[@@toPrimitive]")}}
+    *   : Returns the Symbol.
 
 ## Examples
 
@@ -179,38 +179,39 @@ typeof Symbol.iterator === 'symbol'
 
 Some things to note when working with type conversion of Symbols.
 
-- When trying to convert a Symbol to a number, a
-  {{jsxref("TypeError")}} will be thrown (e.g.
+*   When trying to convert a Symbol to a number, a
+    {{jsxref("TypeError")}} will be thrown (e.g.
 
-  <code>+<var>sym</var></code>
+    <code>+<var>sym</var></code>
 
-  or
+    or
 
-  <code><var>sym</var> | 0</code>
+    <code><var>sym</var> | 0</code>
 
-  ).
+    ).
 
-- When using loose equality,
+*   When using loose equality,
 
-  <code>Object(<var>sym</var>) == <var>sym</var></code>
+    <code>Object(<var>sym</var>) == <var>sym</var></code>
 
-  returns `true`.
+    returns `true`.
 
-- `Symbol("foo") + "bar" `throws a {{jsxref("TypeError")}} (can't
-  convert Symbol to string). This prevents you from silently creating a new
-  string property name from a Symbol, for example.
-- The
-  ["safer" <code>String(<var>sym</var>)</code> conversion](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_conversion)
+*   ` Symbol("foo") + "bar"  `throws a {{jsxref("TypeError")}} (can't
+    convert Symbol to string). This prevents you from silently creating a new
+    string property name from a Symbol, for example.
 
-  <code>String(<var>sym</var>)</code>
+*   The
+    ["safer" <code>String(<var>sym</var>)</code> conversion](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_conversion)
 
-  ["safer" <code>String(<var>sym</var>)</code> conversion](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_conversion)
-  works like a call to {{jsxref("Symbol.prototype.toString()")}}
-  with Symbols, but note that
+    <code>String(<var>sym</var>)</code>
 
-  <code>new String(<var>sym</var>)</code>
+    ["safer" <code>String(<var>sym</var>)</code> conversion](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_conversion)
+    works like a call to {{jsxref("Symbol.prototype.toString()")}}
+    with Symbols, but note that
 
-  will throw.
+    <code>new String(<var>sym</var>)</code>
+
+    will throw.
 
 ### Symbols and for...in iteration
 
@@ -268,9 +269,9 @@ obj[Object(sym)]     // still 1
 
 ## See also
 
-- A polyfill of `Symbol` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
-- [Glossary: Symbol data type](/en-US/docs/Glossary/Symbol)
-- {{jsxref("Operators/typeof", "typeof")}}
-- [Data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
-- ["ES6 In Depth: Symbols" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)
+*   A polyfill of `Symbol` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-symbol)
+*   [Glossary: Symbol data type](/en-US/docs/Glossary/Symbol)
+*   {{jsxref("Operators/typeof", "typeof")}}
+*   [Data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
+*   ["ES6 In Depth: Symbols" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)

@@ -91,4 +91,4 @@ Not part of any standard.
 
 ## See also
 
-- {{jsxref("Function.name")}}
+*   {{jsxref("Function.name")}}

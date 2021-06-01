@@ -17,14 +17,16 @@ The **`Math.pow()`** function returns the `base` to the `exponent` power, as in
 
 ## Syntax
 
-<pre class="brush: js">Math.pow(<var>base</var>, <var>exponent</var>)</pre>
+```js
+Math.pow(base, exponent)
+```
 
 ### Parameters
 
-- `base`
-  - : The base number.
-- `exponent`
-  - : The exponent used to raise the `base`.
+*   `base`
+    *   : The base number.
+*   `exponent`
+    *   : The exponent used to raise the `base`.
 
 ### Return value
 
@@ -76,8 +78,8 @@ Math.pow(-7, 1/3); // NaN
 
 ## See also
 
-- {{jsxref("Math.cbrt()")}}
-- {{jsxref("Math.exp()")}}
-- {{jsxref("Math.log()")}}
-- {{jsxref("Math.sqrt()")}}
-- [Exponentiation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)
+*   {{jsxref("Math.cbrt()")}}
+*   {{jsxref("Math.exp()")}}
+*   {{jsxref("Math.log()")}}
+*   {{jsxref("Math.sqrt()")}}
+*   [Exponentiation operator](/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)

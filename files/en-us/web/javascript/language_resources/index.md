@@ -32,17 +32,17 @@ from [ecmascript.org](https://www.ecmascript.org/community.php).
 
 ## Implementations
 
-- [SpiderMonkey](/en-US/docs/SpiderMonkey) - the JavaScript engine used
-  in various Mozilla products, including Firefox;
-- [Rhino](/en-US/docs/Rhino) - the JavaScript engine is written in Java;
-- [Tamarin](/en-US/docs/Tamarin) - the ActionScript virtual machine (used in the
-  Adobe® Flash® Player);
-- [Other implementations](https://en.wikipedia.org/wiki/List_of_ECMAScript_engines)
-  (Wikipedia).
+*   [SpiderMonkey](/en-US/docs/SpiderMonkey) - the JavaScript engine used
+    in various Mozilla products, including Firefox;
+*   [Rhino](/en-US/docs/Rhino) - the JavaScript engine is written in Java;
+*   [Tamarin](/en-US/docs/Tamarin) - the ActionScript virtual machine (used in the
+    Adobe® Flash® Player);
+*   [Other implementations](https://en.wikipedia.org/wiki/List_of_ECMAScript_engines)
+    (Wikipedia).
 
 ## See also
 
-- [Brendan Eich's blog](https://brendaneich.com/). Brendan is the creator of
-  JavaScript and the SpiderMonkey JS engine. He still works with the ECMA
-  working group to evolve the language.
-- [Dmitry Soshnikov's analysis of ECMA-262 Edition 3 and 5](http://dmitrysoshnikov.com/)
+*   [Brendan Eich's blog](https://brendaneich.com/). Brendan is the creator of
+    JavaScript and the SpiderMonkey JS engine. He still works with the ECMA
+    working group to evolve the language.
+*   [Dmitry Soshnikov's analysis of ECMA-262 Edition 3 and 5](http://dmitrysoshnikov.com/)

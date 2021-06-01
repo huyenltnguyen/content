@@ -37,44 +37,44 @@ becomes true and are typically used as blocking constructs.
 
 ## Static methods
 
-- {{jsxref("Atomics.add()")}}
-  - : Adds the provided value to the existing value at the specified index of
-    the array. Returns the old value at that index.
-- {{jsxref("Atomics.and()")}}
-  - : Computes a bitwise AND on the value at the specified index of the array
-    with the provided value. Returns the old value at that index.
-- {{jsxref("Atomics.compareExchange()")}}
-  - : Stores a value at the specified index of the array, if it equals a value.
-    Returns the old value.
-- {{jsxref("Atomics.exchange()")}}
-  - : Stores a value at the specified index of the array. Returns the old value.
-- {{jsxref("Atomics.isLockFree()", "Atomics.isLockFree(size)")}}
-  - : An optimization primitive that can be used to determine whether to use
-    locks or atomic operations. Returns `true` if an atomic operation on arrays
-    of the given element size will be implemented using a hardware atomic
-    operation (as opposed to a lock). Experts only.
-- {{jsxref("Atomics.load()")}}
-  - : Returns the value at the specified index of the array.
-- {{jsxref("Atomics.notify()")}}
-  - : Notifies agents that are waiting on the specified index of the array.
-    Returns the number of agents that were notified.
-- {{jsxref("Atomics.or()")}}
-  - : Computes a bitwise OR on the value at the specified index of the array
-    with the provided value. Returns the old value at that index.
-- {{jsxref("Atomics.store()")}}
-  - : Stores a value at the specified index of the array. Returns the value.
-- {{jsxref("Atomics.sub()")}}
-  - : Subtracts a value at the specified index of the array. Returns the old
-    value at that index.
-- {{jsxref("Atomics.wait()")}}
-  - : Verifies that the specified index of the array still contains a value and
-    sleeps awaiting or times out. Returns either "`ok`", "`not-equal`", or
-    "`timed-out`". If waiting is not allowed in the calling agent then it throws
-    an {{JSxref("Error")}} exception. (Most browsers will not allow
-    `wait()` on the browser's main thread.)
-- {{jsxref("Atomics.xor()")}}
-  - : Computes a bitwise XOR on the value at the specified index of the array
-    with the provided value. Returns the old value at that index.
+*   {{jsxref("Atomics.add()")}}
+    *   : Adds the provided value to the existing value at the specified index of
+        the array. Returns the old value at that index.
+*   {{jsxref("Atomics.and()")}}
+    *   : Computes a bitwise AND on the value at the specified index of the array
+        with the provided value. Returns the old value at that index.
+*   {{jsxref("Atomics.compareExchange()")}}
+    *   : Stores a value at the specified index of the array, if it equals a value.
+        Returns the old value.
+*   {{jsxref("Atomics.exchange()")}}
+    *   : Stores a value at the specified index of the array. Returns the old value.
+*   {{jsxref("Atomics.isLockFree()", "Atomics.isLockFree(size)")}}
+    *   : An optimization primitive that can be used to determine whether to use
+        locks or atomic operations. Returns `true` if an atomic operation on arrays
+        of the given element size will be implemented using a hardware atomic
+        operation (as opposed to a lock). Experts only.
+*   {{jsxref("Atomics.load()")}}
+    *   : Returns the value at the specified index of the array.
+*   {{jsxref("Atomics.notify()")}}
+    *   : Notifies agents that are waiting on the specified index of the array.
+        Returns the number of agents that were notified.
+*   {{jsxref("Atomics.or()")}}
+    *   : Computes a bitwise OR on the value at the specified index of the array
+        with the provided value. Returns the old value at that index.
+*   {{jsxref("Atomics.store()")}}
+    *   : Stores a value at the specified index of the array. Returns the value.
+*   {{jsxref("Atomics.sub()")}}
+    *   : Subtracts a value at the specified index of the array. Returns the old
+        value at that index.
+*   {{jsxref("Atomics.wait()")}}
+    *   : Verifies that the specified index of the array still contains a value and
+        sleeps awaiting or times out. Returns either "`ok`", "`not-equal`", or
+        "`timed-out`". If waiting is not allowed in the calling agent then it throws
+        an {{JSxref("Error")}} exception. (Most browsers will not allow
+        `wait()` on the browser's main thread.)
+*   {{jsxref("Atomics.xor()")}}
+    *   : Computes a bitwise XOR on the value at the specified index of the array
+        with the provided value. Returns the old value at that index.
 
 ## Examples
 
@@ -154,10 +154,10 @@ Atomics.notify(int32, 0, 1);
 
 ## See also
 
-- {{jsxref("ArrayBuffer")}}
-- [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
-- [Web Workers](/en-US/docs/Web/API/Web_Workers_API)
-- [parlib-simple ](https://github.com/lars-t-hansen/parlib-simple)– a simple
-  library providing synchronization and work distribution abstractions.
-- [Shared Memory – a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
-- [A Taste of JavaScript’s New Parallel Primitives – Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
+*   {{jsxref("ArrayBuffer")}}
+*   [JavaScript typed arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+*   [Web Workers](/en-US/docs/Web/API/Web_Workers_API)
+*   [parlib-simple ](https://github.com/lars-t-hansen/parlib-simple)– a simple
+    library providing synchronization and work distribution abstractions.
+*   [Shared Memory – a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
+*   [A Taste of JavaScript’s New Parallel Primitives – Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)

@@ -24,7 +24,7 @@ The **`escape()`** function computes a new string in which certain characters
 have been replaced by a hexadecimal escape sequence.
 
 > **Note:** This function was used mostly for URL queries (the part of a URL
-> following `?`)—_not_ for escaping ordinary String literals, which use the
+> following `?`)—*not* for escaping ordinary String literals, which use the
 > format "<code>\x<var>HH</var></code>". (`HH` are two hexadecimal digits, and
 > the form <code>\x<var>HH</var>\x<var>HH</var></code> is used for higher-plane
 > Unicode characters.)
@@ -34,12 +34,14 @@ have been replaced by a hexadecimal escape sequence.
 
 ## Syntax
 
-<pre class="brush: js">escape(<var>str</var>)</pre>
+```js
+escape(str)
+```
 
 ### Parameters
 
-- `str`
-  - : A string to be encoded.
+*   `str`
+    *   : A string to be encoded.
 
 ### Return value
 
@@ -47,7 +49,7 @@ A new string in which certain characters have been escaped.
 
 ## Description
 
-The `escape` function is a property of the _global object_. Special characters
+The `escape` function is a property of the *global object*. Special characters
 are encoded with the exception of: `@*_+-./`
 
 The hexadecimal form for characters, whose code unit value is `0xFF` or less, is
@@ -77,6 +79,6 @@ escape('@*_+-./');    // "@*_+-./"
 
 ## See also
 
-- {{jsxref("encodeURI")}}
-- {{jsxref("encodeURIComponent")}}
-- {{jsxref("unescape")}}
+*   {{jsxref("encodeURI")}}
+*   {{jsxref("encodeURIComponent")}}
+*   {{jsxref("unescape")}}

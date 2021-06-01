@@ -17,12 +17,14 @@ to a given number.
 
 ## Syntax
 
-<pre class="brush: js">Math.floor(<var>x</var>)</pre>
+```js
+Math.floor(x)
+```
 
 ### Parameters
 
-- `x`
-  - : A number.
+*   `x`
+    *   : A number.
 
 ### Return value
 
@@ -117,8 +119,8 @@ ceil10(-59, 1);       // -50
 
 ## See also
 
-- {{jsxref("Math.abs()")}}
-- {{jsxref("Math.ceil()")}}
-- {{jsxref("Math.round()")}}
-- {{jsxref("Math.sign()")}}
-- {{jsxref("Math.trunc()")}}
+*   {{jsxref("Math.abs()")}}
+*   {{jsxref("Math.ceil()")}}
+*   {{jsxref("Math.round()")}}
+*   {{jsxref("Math.sign()")}}
+*   {{jsxref("Math.trunc()")}}

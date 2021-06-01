@@ -14,9 +14,7 @@ browser-compat: javascript.builtins.Map.@@toStringTag
 
 The **`Map[@@toStringTag]`** property has an initial value of "Map".
 
-{{EmbedInteractiveExample("pages/js/map-prototype-@@tostringtag.html","shorter")}}
-
-{{js_property_attributes(0,0,1)}}
+{{EmbedInteractiveExample("pages/js/map-prototype-@@tostringtag.html","shorter")}}{{js_property_attributes(0,0,1)}}
 
 ## Syntax
 
@@ -42,4 +40,4 @@ Object.prototype.toString.call(new Map()) // "[object Map]"
 
 ## See also
 
-- {{jsxref("Symbol.toStringTag")}}
+*   {{jsxref("Symbol.toStringTag")}}

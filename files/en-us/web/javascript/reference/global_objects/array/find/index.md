@@ -19,18 +19,18 @@ function, {{jsxref("undefined")}} is returned.
 
 {{EmbedInteractiveExample("pages/js/array-find.html","shorter")}}
 
-- If you need the **index** of the found element in the array, use
-  {{jsxref("Array.findIndex", "findIndex()")}}.
-- If you need to find the **index of a value**, use
-  {{jsxref("Array.prototype.indexOf()")}}. (It’s similar to
-  {{jsxref("Array.findIndex",
+*   If you need the **index** of the found element in the array, use
+    {{jsxref("Array.findIndex", "findIndex()")}}.
+*   If you need to find the **index of a value**, use
+    {{jsxref("Array.prototype.indexOf()")}}. (It’s similar to
+    {{jsxref("Array.findIndex",
     "findIndex()")}}, but checks
-  each element for equality with the value instead of using a testing function.)
-- If you need to find if a value **exists** in an array, use
-  {{jsxref("Array.prototype.includes()")}}. Again, it checks each
-  element for equality with the value instead of using a testing function.
-- If you need to find if any element satisfies the provided testing function,
-  use {{jsxref("Array.prototype.some()")}}.
+    each element for equality with the value instead of using a testing function.)
+*   If you need to find if a value **exists** in an array, use
+    {{jsxref("Array.prototype.includes()")}}. Again, it checks each
+    element for equality with the value instead of using a testing function.
+*   If you need to find if any element satisfies the provided testing function,
+    use {{jsxref("Array.prototype.some()")}}.
 
 ## Syntax
 
@@ -53,8 +53,17 @@ find(function callbackFn(element, index, array) { ... }, thisArg)
 
 ### Parameters
 
-<dl><dt><code><var>callbackFn</var></code></dt><dd>Function to execute on each value in the array, taking 3 arguments:<dl><dt><code><var>element</var></code></dt><dd>The current element in the array.</dd><dt><code><var>index</var></code> {{optional_inline}}</dt><dd>The index (position) of the current element in the array.</dd><dt><code><var>array</var></code> {{optional_inline}}</dt><dd>The array that <code>find</code> was called on.</dd></dl></dd><dt><code><var>thisArg</var></code> {{optional_inline}}</dt><dd>Object to use as {{jsxref("Operators/this", "this")}} inside
-<code><var>callbackFn</var></code>.</dd></dl>
+*   `callbackFn`
+    *   : Function to execute on each value in the array, taking 3 arguments:
+        *   `element`
+            *   : The current element in the array.
+        *   `index` {{optional_inline}}
+            *   : The index (position) of the current element in the array.
+        *   `array` {{optional_inline}}
+            *   : The array that `find` was called on.
+*   `thisArg` {{optional_inline}}
+    *   : Object to use as {{jsxref("Operators/this", "this")}} inside
+        `callbackFn`.
 
 ### Return value
 
@@ -68,7 +77,7 @@ array until the `callbackFn` returns a [truthy](/en-US/docs/Glossary/Truthy)
 value. If so, `find` immediately returns the value of that element. Otherwise,
 `find` returns {{jsxref("undefined")}}.
 
-`callbackFn` is invoked for _every_ index of the array, not just those with
+`callbackFn` is invoked for *every* index of the array, not just those with
 assigned values. This means it may be less efficient for sparse arrays, compared
 to methods that only visit assigned values.
 
@@ -78,15 +87,15 @@ value inside each invocation of the `callbackFn`. If it is not provided, then
 
 The `find` method does not mutate the array on which it is called, but the
 function provided to `callbackFn` can. If so, the elements processed by `find`
-are set _before_ the first invocation of `callbackFn`. Therefore:
+are set *before* the first invocation of `callbackFn`. Therefore:
 
-- `callbackFn` will not visit any elements added to the array after the call to
-  `find` begins.
-- If an existing, yet-unvisited element of the array is changed by `callbackFn`,
-  its value passed to the `callbackFn` will be the value at the time `find`
-  visits that element's index.
-- Elements that are {{jsxref("Operators/delete", "deleted")}} are
-  still visited.
+*   `callbackFn` will not visit any elements added to the array after the call to
+    `find` begins.
+*   If an existing, yet-unvisited element of the array is changed by `callbackFn`,
+    its value passed to the `callbackFn` will be the value at the time `find`
+    visits that element's index.
+*   Elements that are {{jsxref("Operators/delete", "deleted")}} are
+    still visited.
 
 ## Examples
 
@@ -141,7 +150,7 @@ console.log([4, 6, 8, 12].find(isPrime)); // undefined, not found
 console.log([4, 5, 8, 12].find(isPrime)); // 5
 ```
 
-The following examples show that nonexistent and deleted elements _are_ visited,
+The following examples show that nonexistent and deleted elements *are* visited,
 and that the value passed to the callback is their value when visited:
 
 ```js
@@ -184,14 +193,14 @@ array.find(function(value, index) {
 
 ## See also
 
-- A polyfill of `Array.prototype.find` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- {{jsxref("Array.prototype.findIndex()")}} – find and return an
-  index
-- {{jsxref("Array.prototype.includes()")}} – test whether a value
-  exists in the array
-- {{jsxref("Array.prototype.filter()")}} – remove all non-matching
-  elements
-- {{jsxref("Array.prototype.every()")}} – test all elements
-- {{jsxref("Array.prototype.some()")}} – test until one element
-  matches
+*   A polyfill of `Array.prototype.find` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-array)
+*   {{jsxref("Array.prototype.findIndex()")}} – find and return an
+    index
+*   {{jsxref("Array.prototype.includes()")}} – test whether a value
+    exists in the array
+*   {{jsxref("Array.prototype.filter()")}} – remove all non-matching
+    elements
+*   {{jsxref("Array.prototype.every()")}} – test all elements
+*   {{jsxref("Array.prototype.some()")}} – test until one element
+    matches

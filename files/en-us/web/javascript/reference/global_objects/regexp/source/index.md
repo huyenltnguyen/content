@@ -16,9 +16,7 @@ The **`source`** property returns a {{jsxref("String")}} containing the
 source text of the regexp object, and it doesn't contain the two forward slashes
 on both sides and any flags.
 
-{{EmbedInteractiveExample("pages/js/regexp-prototype-source.html")}}
-
-{{js_property_attributes(0, 0, 1)}}
+{{EmbedInteractiveExample("pages/js/regexp-prototype-source.html")}}{{js_property_attributes(0, 0, 1)}}
 
 ## Examples
 
@@ -53,4 +51,4 @@ new RegExp('\n').source === '\\n'; // true, starting with ES5
 
 ## See also
 
-- {{jsxref("RegExp.prototype.flags")}}
+*   {{jsxref("RegExp.prototype.flags")}}

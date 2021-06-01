@@ -11,12 +11,11 @@ browser-compat: javascript.builtins.Array.join
 ---
 {{JSRef}}
 
-<span class="seoSummary">The <code><strong>join()</strong></code> method creates
-and returns a new string by concatenating all of the elements in an array (or an
-<a href="/en-US/docs/Web/JavaScript/Guide/Indexed_collections#Working_with_array-like_objects">array-like
-object</a>), separated by commas or a specified separator string. If the array
-has only one item, then that item will be returned without using the
-separator.</span>
+The **`join()`** method creates and returns a new string by concatenating all of
+the elements in an array (or an
+[array-like object](/en-US/docs/Web/JavaScript/Guide/Indexed_collections#Working_with_array-like_objects)),
+separated by commas or a specified separator string. If the array has only one
+item, then that item will be returned without using the separator.
 
 {{EmbedInteractiveExample("pages/js/array-join.html")}}
 
@@ -29,11 +28,11 @@ join(separator)
 
 ### Parameters
 
-- `separator` {{optional_inline}}
-  - : Specifies a string to separate each pair of adjacent elements of the
-    array. The separator is converted to a string if necessary. If omitted, the
-    array elements are separated with a comma (","). If `separator` is an empty
-    string, all elements are joined without any characters in between them.
+*   `separator` {{optional_inline}}
+    *   : Specifies a string to separate each pair of adjacent elements of the
+        array. The separator is converted to a string if necessary. If omitted, the
+        array elements are separated with a comma (","). If `separator` is an empty
+        string, all elements are joined without any characters in between them.
 
 ### Return value
 
@@ -70,13 +69,14 @@ The following example joins array-like object
 calling {{jsxref("Function.prototype.call")}} on
 `Array.prototype.join`.
 
-<pre class="brush: js">function f(a, b, c) {
+```js
+function f(a, b, c) {
   var s = Array.prototype.join.call(arguments);
-  console.log(s); // '<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="objectBox objectBox-string">1,a,true'</span></span></span></span>
+  console.log(s); // '1,a,true'
 }
 f(1, 'a', true);
 //expected output: "1,a,true"
-</pre>
+```
 
 ## Specifications
 
@@ -88,6 +88,6 @@ f(1, 'a', true);
 
 ## See also
 
-- {{jsxref("String.prototype.split()")}}
-- {{jsxref("Array.prototype.toString()")}}
-- {{jsxref("TypedArray.prototype.join()")}}
+*   {{jsxref("String.prototype.split()")}}
+*   {{jsxref("Array.prototype.toString()")}}
+*   {{jsxref("TypedArray.prototype.join()")}}

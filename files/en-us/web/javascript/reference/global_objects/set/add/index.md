@@ -25,8 +25,8 @@ add(value)
 
 ### Parameters
 
-- `value`
-  - : The value of the element to add to the `Set` object.
+*   `value`
+    *   : The value of the element to add to the `Set` object.
 
 ### Return value
 
@@ -56,6 +56,6 @@ console.log(mySet);
 
 ## See also
 
-- {{jsxref("Set")}}
-- {{jsxref("Set.prototype.delete()")}}
-- {{jsxref("Set.prototype.has()")}}
+*   {{jsxref("Set")}}
+*   {{jsxref("Set.prototype.delete()")}}
+*   {{jsxref("Set.prototype.has()")}}

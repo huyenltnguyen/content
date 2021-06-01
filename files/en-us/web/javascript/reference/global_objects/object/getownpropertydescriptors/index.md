@@ -17,12 +17,14 @@ descriptors of a given object.
 
 ## Syntax
 
-<pre class="brush: js">Object.getOwnPropertyDescriptors(<var>obj</var>)</pre>
+```js
+Object.getOwnPropertyDescriptors(obj)
+```
 
 ### Parameters
 
-- `obj`
-  - : The object for which to get all own property descriptors.
+*   `obj`
+    *   : The object for which to get all own property descriptors.
 
 ### Return value
 
@@ -40,25 +42,25 @@ found in {{jsxref("Object.defineProperty()")}}.
 A <dfn>property descriptor</dfn> is a record with some of the following
 attributes:
 
-- `value`
-  - : The value associated with the property (data descriptors only).
-- `writable`
-  - : `true` if and only if the value associated with the property may be
-    changed (data descriptors only).
-- `get`
-  - : A function which serves as a getter for the property, or
-    {{jsxref("undefined")}} if there is no getter (accessor descriptors
-    only).
-- `set`
-  - : A function which serves as a setter for the property, or
-    {{jsxref("undefined")}} if there is no setter (accessor descriptors
-    only).
-- `configurable`
-  - : `true` if and only if the type of this property descriptor may be changed
-    and if the property may be deleted from the corresponding object.
-- `enumerable`
-  - : `true` if and only if this property shows up during enumeration of the
-    properties on the corresponding object.
+*   `value`
+    *   : The value associated with the property (data descriptors only).
+*   `writable`
+    *   : `true` if and only if the value associated with the property may be
+        changed (data descriptors only).
+*   `get`
+    *   : A function which serves as a getter for the property, or
+        {{jsxref("undefined")}} if there is no getter (accessor descriptors
+        only).
+*   `set`
+    *   : A function which serves as a setter for the property, or
+        {{jsxref("undefined")}} if there is no setter (accessor descriptors
+        only).
+*   `configurable`
+    *   : `true` if and only if the type of this property descriptor may be changed
+        and if the property may be deleted from the corresponding object.
+*   `enumerable`
+    *   : `true` if and only if this property shows up during enumeration of the
+        properties on the corresponding object.
 
 ## Examples
 
@@ -107,8 +109,8 @@ subclass.prototype = Object.create(
 
 ## See also
 
-- A polyfill of `Object.getOwnPropertyDescriptors` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
-- {{jsxref("Object.getOwnPropertyDescriptor()")}}
-- {{jsxref("Object.defineProperty()")}}
-- [Polyfill](https://github.com/tc39/proposal-object-getownpropertydescriptors)
+*   A polyfill of `Object.getOwnPropertyDescriptors` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+*   {{jsxref("Object.getOwnPropertyDescriptor()")}}
+*   {{jsxref("Object.defineProperty()")}}
+*   [Polyfill](https://github.com/tc39/proposal-object-getownpropertydescriptors)

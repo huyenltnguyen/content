@@ -16,9 +16,7 @@ The **`ignoreCase`** property indicates whether or not the "`i`" flag is used
 with the regular expression. `ignoreCase` is a read-only property of an
 individual regular expression instance.
 
-{{EmbedInteractiveExample("pages/js/regexp-prototype-ignorecase.html")}}
-
-{{js_property_attributes(0, 0, 1)}}
+{{EmbedInteractiveExample("pages/js/regexp-prototype-ignorecase.html")}}{{js_property_attributes(0, 0, 1)}}
 
 ## Description
 
@@ -48,11 +46,11 @@ console.log(regex.ignoreCase); // true
 
 ## See also
 
-- {{jsxref("RegExp.lastIndex")}}
-- {{JSxRef("RegExp.prototype.dotAll")}}
-- {{JSxRef("RegExp.prototype.global")}}
-- {{JSxRef("RegExp.prototype.hasIndices")}}
-- {{JSxRef("RegExp.prototype.multiline")}}
-- {{JSxRef("RegExp.prototype.source")}}
-- {{JSxRef("RegExp.prototype.sticky")}}
-- {{JSxRef("RegExp.prototype.unicode")}}
+*   {{jsxref("RegExp.lastIndex")}}
+*   {{JSxRef("RegExp.prototype.dotAll")}}
+*   {{JSxRef("RegExp.prototype.global")}}
+*   {{JSxRef("RegExp.prototype.hasIndices")}}
+*   {{JSxRef("RegExp.prototype.multiline")}}
+*   {{JSxRef("RegExp.prototype.source")}}
+*   {{JSxRef("RegExp.prototype.sticky")}}
+*   {{JSxRef("RegExp.prototype.unicode")}}

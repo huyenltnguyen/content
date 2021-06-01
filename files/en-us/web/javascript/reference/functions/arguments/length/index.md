@@ -48,5 +48,5 @@ function adder(base /*, n2, ... */) {
 
 ## See also
 
-- {{jsxref("Function")}}
-- {{jsxref("Function.length")}}
+*   {{jsxref("Function")}}
+*   {{jsxref("Function.length")}}

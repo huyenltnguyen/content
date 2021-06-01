@@ -19,33 +19,34 @@ modified value is written back.
 
 ## Syntax
 
-<pre class="brush: js">Atomics.or(<var>typedArray</var>, <var>index</var>, <var>value</var>)
-</pre>
+```js
+Atomics.or(typedArray, index, value)
+```
 
 ### Parameters
 
-- `typedArray`
-  - : An integer typed array. One of {{jsxref("Int8Array")}},
-    {{jsxref("Uint8Array")}}, {{jsxref("Int16Array")}},
-    {{jsxref("Uint16Array")}}, {{jsxref("Int32Array")}},
-    {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
-    {{jsxref("BigUint64Array")}}.
-- `index`
-  - : The position in the `typedArray` to compute the bitwise OR.
-- `value`
-  - : The number to compute the bitwise OR with.
+*   `typedArray`
+    *   : An integer typed array. One of {{jsxref("Int8Array")}},
+        {{jsxref("Uint8Array")}}, {{jsxref("Int16Array")}},
+        {{jsxref("Uint16Array")}}, {{jsxref("Int32Array")}},
+        {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
+        {{jsxref("BigUint64Array")}}.
+*   `index`
+    *   : The position in the `typedArray` to compute the bitwise OR.
+*   `value`
+    *   : The number to compute the bitwise OR with.
 
 ### Return value
 
 The old value at the given position
-(<code><var>typedArray</var>[<var>index</var>]</code>).
+(<code><var>typedArray</var>\[<var>index</var>]</code>).
 
 ### Exceptions
 
-- Throws a {{jsxref("TypeError")}}, if `typedArray` is not one of the
-  allowed integer types.
-- Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
-  `typedArray`.
+*   Throws a {{jsxref("TypeError")}}, if `typedArray` is not one of the
+    allowed integer types.
+*   Throws a {{jsxref("RangeError")}}, if `index` is out of bounds in the
+    `typedArray`.
 
 ## Description
 
@@ -91,6 +92,6 @@ Atomics.load(ta, 0);  // 3
 
 ## See also
 
-- {{jsxref("Atomics")}}
-- {{jsxref("Atomics.and()")}}
-- {{jsxref("Atomics.xor()")}}
+*   {{jsxref("Atomics")}}
+*   {{jsxref("Atomics.and()")}}
+*   {{jsxref("Atomics.xor()")}}

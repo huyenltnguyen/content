@@ -29,12 +29,12 @@ getBigUint64(byteOffset, littleEndian)
 
 ### Parameters
 
-- byteOffset
-  - : The offset, in bytes, from the start of the view to read the data from.
-- littleEndian
-  - : {{optional_inline}} Indicates whether the 64-bit int is stored in
-    [little- or big-endian](/en-US/docs/Glossary/Endianness) format. If `false`
-    or `undefined`, a big-endian value is read.
+*   byteOffset
+    *   : The offset, in bytes, from the start of the view to read the data from.
+*   littleEndian
+    *   : {{optional_inline}} Indicates whether the 64-bit int is stored in
+        [little- or big-endian](/en-US/docs/Glossary/Endianness) format. If `false`
+        or `undefined`, a big-endian value is read.
 
 ### Return value
 
@@ -42,9 +42,9 @@ A {{jsxref("BigInt")}}.
 
 ### Errors thrown
 
-- {{jsxref("RangeError")}}
-  - : Thrown if the `byteOffset` is set such that it would read beyond the end
-    of the view.
+*   {{jsxref("RangeError")}}
+    *   : Thrown if the `byteOffset` is set such that it would read beyond the end
+        of the view.
 
 ## Description
 
@@ -71,6 +71,6 @@ dataview.getBigUint64(0); // 0n
 
 ## See also
 
-- {{jsxref("DataView")}}
-- {{jsxref("ArrayBuffer")}}
-- {{jsxref("BigInt")}}
+*   {{jsxref("DataView")}}
+*   {{jsxref("ArrayBuffer")}}
+*   {{jsxref("BigInt")}}

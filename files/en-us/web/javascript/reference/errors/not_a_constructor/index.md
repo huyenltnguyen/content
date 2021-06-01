@@ -47,7 +47,7 @@ following JavaScript standard built-in objects are not a constructor:
 {{jsxref("Symbol")}}, {{jsxref("Reflect")}},
 {{jsxref("Intl")}}, {{jsxref("Atomics")}}.
 
-[Generator functions](/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+[Generator functions](/en-US/docs/Web/JavaScript/Reference/Statements/function\*)
 cannot be used as constructors either.
 
 ## Examples
@@ -93,7 +93,7 @@ var mycar = new Car('Eagle', 'Talon TSi', 1993);
 ### In Promises
 
 When returning an immediately-resolved or immediately-rejected Promise, you do
-not need to create a _new Promise(...)_ and act on it.
+not need to create a *new Promise(...)* and act on it.
 
 This is not legal (the
 [Promise constructor](/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Promise#Constructor)
@@ -106,7 +106,7 @@ return new Promise.resolve(true);
 
 Instead, use
 the[ Promise.resolve()](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve) or
-[Promise.reject()](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject) [static methods](<https://en.wikipedia.org/wiki/Method_(computer_programming)#Static_methods>):
+[Promise.reject()](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject) [static methods](https://en.wikipedia.org/wiki/Method_\(computer_programming\)#Static_methods):
 
 ```js
 // This is legal, but unnecessarily long:
@@ -119,5 +119,5 @@ return Promise.reject(false);
 
 ## See also
 
-- [constructor](/en-US/docs/Glossary/Constructor)
-- [`new` operator](/en-US/docs/Web/JavaScript/Reference/Operators/new)
+*   [constructor](/en-US/docs/Glossary/Constructor)
+*   [`new` operator](/en-US/docs/Web/JavaScript/Reference/Operators/new)

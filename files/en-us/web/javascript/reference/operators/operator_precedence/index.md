@@ -19,7 +19,9 @@ lower precedence.
 Consider an expression describable by the representation below. Note that both
 OP<sub>1</sub> and OP<sub>2</sub> are fill-in-the-blanks for OPerators.
 
-<pre class="brush: js">a OP<sub>1</sub> b OP<sub>2</sub> c</pre>
+```js
+a OP1 b OP2 c
+```
 
 If <code>OP<sub>1</sub></code> and <code>OP<sub>2</sub></code> have different
 precedence levels (see the table below), the operator with the highest

@@ -52,5 +52,5 @@ console.log(minutes); // 15
 
 ## See also
 
-- {{jsxref("Date.prototype.getUTCMinutes()")}}
-- {{jsxref("Date.prototype.setMinutes()")}}
+*   {{jsxref("Date.prototype.getUTCMinutes()")}}
+*   {{jsxref("Date.prototype.setMinutes()")}}

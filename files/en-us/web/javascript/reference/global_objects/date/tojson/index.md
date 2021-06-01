@@ -57,6 +57,6 @@ console.log(jsonDate); //2015-10-26T07:46:36.611Z
 
 ## See also
 
-- {{jsxref("Date.prototype.toLocaleDateString()")}}
-- {{jsxref("Date.prototype.toTimeString()")}}
-- {{jsxref("Date.prototype.toUTCString()")}}
+*   {{jsxref("Date.prototype.toLocaleDateString()")}}
+*   {{jsxref("Date.prototype.toTimeString()")}}
+*   {{jsxref("Date.prototype.toUTCString()")}}

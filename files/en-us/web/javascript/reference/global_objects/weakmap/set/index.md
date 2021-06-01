@@ -24,12 +24,12 @@ set(key, value)
 
 ### Parameters
 
-- `key`
-  - : Required. Must be `object`. The key of the element to add to the `WeakMap`
-    object.
-- `value`
-  - : Required. Any value. The value of the element to add to the `WeakMap`
-    object.
+*   `key`
+    *   : Required. Must be `object`. The key of the element to add to the `WeakMap`
+        object.
+*   `value`
+    *   : Required. Any value. The value of the element to add to the `WeakMap`
+        object.
 
 ### Return value
 
@@ -60,6 +60,6 @@ wm.set(obj, 'baz');
 
 ## See also
 
-- {{jsxref("WeakMap")}}
-- {{jsxref("WeakMap.prototype.get()")}}
-- {{jsxref("WeakMap.prototype.has()")}}
+*   {{jsxref("WeakMap")}}
+*   {{jsxref("WeakMap.prototype.get()")}}
+*   {{jsxref("WeakMap.prototype.has()")}}

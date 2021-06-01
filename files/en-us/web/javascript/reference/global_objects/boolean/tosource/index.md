@@ -49,4 +49,4 @@ Not part of any standard.
 
 ## See also
 
-- {{jsxref("Object.prototype.toSource()")}}
+*   {{jsxref("Object.prototype.toSource()")}}

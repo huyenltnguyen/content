@@ -25,13 +25,13 @@ setMonth(monthValue, dayValue)
 
 ### Parameters
 
-- `monthValue`
-  - : A zero-based integer representing the month of the year offset from the
-    start of the year. So, 0 represents January, 11 represents December, -1
-    represents December of the previous year, and 12 represents January of the
-    following year.
-- `dayValue`
-  - : Optional. An integer from 1 to 31, representing the day of the month.
+*   `monthValue`
+    *   : A zero-based integer representing the month of the year offset from the
+        start of the year. So, 0 represents January, 11 represents December, -1
+        represents December of the previous year, and 12 represents January of the
+        following year.
+*   `dayValue`
+    *   : Optional. An integer from 1 to 31, representing the day of the month.
 
 ### Return value
 
@@ -80,5 +80,5 @@ console.log(endOfMonth); //Wed Mar 02 2016 00:00:00
 
 ## See also
 
-- {{jsxref("Date.prototype.getMonth()")}}
-- {{jsxref("Date.prototype.setUTCMonth()")}}
+*   {{jsxref("Date.prototype.getMonth()")}}
+*   {{jsxref("Date.prototype.setUTCMonth()")}}

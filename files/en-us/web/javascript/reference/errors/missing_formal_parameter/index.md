@@ -88,7 +88,7 @@ log({obj: "value"}); // Object { obj: "value" }
 
 ## See also
 
-- Other errors regarding formal parameters:
+*   Other errors regarding formal parameters:
 
-  - [SyntaxError: Malformed formal parameter](/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_formal_parameter)
-  - [SyntaxError: redeclaration of formal parameter "x"](/en-US/docs/Web/JavaScript/Reference/Errors/Redeclared_parameter)
+    *   [SyntaxError: Malformed formal parameter](/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_formal_parameter)
+    *   [SyntaxError: redeclaration of formal parameter "x"](/en-US/docs/Web/JavaScript/Reference/Errors/Redeclared_parameter)

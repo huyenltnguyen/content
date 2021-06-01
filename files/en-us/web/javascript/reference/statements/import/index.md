@@ -32,33 +32,34 @@ Backward compatibility can be ensured using attribute `nomodule` on the
 
 ## Syntax
 
-<pre class="brush: js">import <em>defaultExport</em> from "<em>module-name</em>";
-import * as <em>name</em> from "<em>module-name</em>";
-import { <em>export1</em> } from "<em>module-name</em>";
-import { <em>export1</em> as <em>alias1</em> } from "<em>module-name</em>";
-import { <em>export1</em> , <em>export2</em> } from "<em>module-name</em>";
-import { <em>foo</em> , <em>bar</em> } from "<em>module-name/path/to/specific/un-exported/file</em>";
-import { <em>export1</em> , <em>export2</em> as <em>alias2</em> , [...] } from "<em>module-name</em>";
-import <em>defaultExport</em>, { export1 [ , [...] ] } from "<em>module-name</em>";
-import <em>defaultExport</em>, * as <em>name</em> from "<em>module-name</em>";
-import "<em>module-name</em>";
-var promise = import("<em>module-name</em>");
-</pre>
+```js
+import defaultExport from "module-name";
+import * as name from "module-name";
+import { export1 } from "module-name";
+import { export1 as alias1 } from "module-name";
+import { export1 , export2 } from "module-name";
+import { foo , bar } from "module-name/path/to/specific/un-exported/file";
+import { export1 , export2 as alias2 , [...] } from "module-name";
+import defaultExport, { export1 [ , [...] ] } from "module-name";
+import defaultExport, * as name from "module-name";
+import "module-name";
+var promise = import("module-name");
+```
 
-- `defaultExport`
-  - : Name that will refer to the default export from the module.
-- `module-name`
-  - : The module to import from. This is often a relative or absolute path name
-    to the `.js` file containing the module. Certain bundlers may permit or
-    require the use of the extension; check your environment. Only single
-    quoted and double quoted Strings are allowed.
-- `name`
-  - : Name of the module object that will be used as a kind of namespace when
-    referring to the imports.
-- `exportN`
-  - : Name of the exports to be imported.
-- `aliasN`
-  - : Names that will refer to the named imports.
+*   `defaultExport`
+    *   : Name that will refer to the default export from the module.
+*   `module-name`
+    *   : The module to import from. This is often a relative or absolute path name
+        to the `.js` file containing the module. Certain bundlers may permit or
+        require the use of the extension; check your environment. Only single
+        quoted and double quoted Strings are allowed.
+*   `name`
+    *   : Name of the module object that will be used as a kind of namespace when
+        referring to the imports.
+*   `exportN`
+    *   : Name of the exports to be imported.
+*   `aliasN`
+    *   : Names that will refer to the named imports.
 
 ## Description
 
@@ -72,8 +73,9 @@ them. Below are examples to clarify the syntax.
 This inserts `myModule` into the current scope, containing all the exports from
 the module in the file located in `/modules/my-module.js`.
 
-<pre class="brush: js">import * as <em>myModule</em> from '/modules/my-module.js';
-</pre>
+```js
+import * as myModule from '/modules/my-module.js';
+```
 
 Here, accessing the exports means using the module name ("myModule" in this
 case) as a namespace. For example, if the module imported above includes an
@@ -198,18 +200,18 @@ imported module being evaluated at load time. In situations where you wish to
 load a module conditionally or on demand, you can use a dynamic import instead.
 The following are some reasons why you might need to use dynamic import:
 
-- When importing statically significantly slows the loading of your code and
-  there is a low likelihood that you will need the code you are importing, or
-  you will not need it until a later time.
-- When importing statically significantly increases your program's memory usage
-  and there is a low likelihood that you will need the code you are importing.
-- When the module you are importing does not exist at load time
-- When the import specifier string needs to be constructed dynamically. (Static
-  import only supports static specifiers.)
-- When the module being imported has side effects, and you do not want those
-  side effects unless some condition is true. (It is recommended not to have any
-  side effects in a module, but you sometimes cannot control this in your module
-  dependencies.)
+*   When importing statically significantly slows the loading of your code and
+    there is a low likelihood that you will need the code you are importing, or
+    you will not need it until a later time.
+*   When importing statically significantly increases your program's memory usage
+    and there is a low likelihood that you will need the code you are importing.
+*   When the module you are importing does not exist at load time
+*   When the import specifier string needs to be constructed dynamically. (Static
+    import only supports static specifiers.)
+*   When the module being imported has side effects, and you do not want those
+    side effects unless some condition is true. (It is recommended not to have any
+    side effects in a module, but you sometimes cannot control this in your module
+    dependencies.)
 
 Use dynamic import only when necessary. The static form is preferable for
 loading initial dependencies, and can benefit more readily from static analysis
@@ -298,15 +300,15 @@ for (const link of document.querySelectorAll("nav > a")) {
 
 ## See also
 
-- {{JSxRef("Statements/export", "export")}}
-- [`import.meta`](/en-US/docs/Web/JavaScript/Reference/Statements/import.meta)
-- Limin Zhu, Brian Terlson and Microsoft Edge Team:
-  [Previewing ES6 Modules and more from ES2015, ES2016 and beyond](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/)
-- Hacks blog post by Jason Orendorff:
-  [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
-- Hacks blog post by Lin Clark:
-  [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
-- Axel Rauschmayer's book:
-  ["Exploring JS: Modules"](http://exploringjs.com/es6/ch_modules.html)
-- The Modern JavaScript Tutorial(javascript.info):
-  [Export and Import](https://javascript.info/import-export)
+*   {{JSxRef("Statements/export", "export")}}
+*   [`import.meta`](/en-US/docs/Web/JavaScript/Reference/Statements/import.meta)
+*   Limin Zhu, Brian Terlson and Microsoft Edge Team:
+    [Previewing ES6 Modules and more from ES2015, ES2016 and beyond](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/)
+*   Hacks blog post by Jason Orendorff:
+    [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
+*   Hacks blog post by Lin Clark:
+    [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
+*   Axel Rauschmayer's book:
+    ["Exploring JS: Modules"](http://exploringjs.com/es6/ch_modules.html)
+*   The Modern JavaScript Tutorial(javascript.info):
+    [Export and Import](https://javascript.info/import-export)

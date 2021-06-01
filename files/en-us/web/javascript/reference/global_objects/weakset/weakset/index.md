@@ -12,7 +12,7 @@ browser-compat: javascript.builtins.WeakSet.WeakSet
 {{JSRef}}
 
 The **`WeakSet`** constructor lets you create `WeakSet` objects that store
-weakly held _objects_ in a collection.
+weakly held *objects* in a collection.
 
 ## Syntax
 
@@ -23,11 +23,11 @@ new WeakSet(iterable)
 
 ### Parameters
 
-- <var>iterable</var>
-  - : If an
-    [iterable object](/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
-    is passed, all of its elements will be added to the new `WeakSet`. null is
-    treated as undefined.
+*   <var>iterable</var>
+    *   : If an
+        [iterable object](/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+        is passed, all of its elements will be added to the new `WeakSet`. null is
+        treated as undefined.
 
 ## Examples
 
@@ -62,6 +62,6 @@ same object\***. And so they are both added to the set.
 
 ## See also
 
-- A polyfill of `WeakSet` is available in
-  [`core-js`](https://github.com/zloirock/core-js#weakset)
-- {{jsxref("WeakSet")}}
+*   A polyfill of `WeakSet` is available in
+    [`core-js`](https://github.com/zloirock/core-js#weakset)
+*   {{jsxref("WeakSet")}}

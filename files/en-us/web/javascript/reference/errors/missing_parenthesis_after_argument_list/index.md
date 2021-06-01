@@ -65,4 +65,4 @@ console.log('"Java" + "Script" = \"' + 'Java' + 'Script\"');
 
 ## See also
 
-- [Functions](/en-US/docs/Web/JavaScript/Guide/Functions)
+*   [Functions](/en-US/docs/Web/JavaScript/Guide/Functions)

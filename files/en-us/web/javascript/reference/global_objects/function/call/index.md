@@ -26,21 +26,21 @@ call(thisArg, arg1, ... , argN)
 
 ### Parameters
 
-- `thisArg` {{optional_inline}}
-  - : The value to use as `this` when calling `func`.
-    > **Note:** In certain cases, `thisArg` may not be the actual value seen by
-    > the method.
-    >
-    > If the method is a function in
-    > {{jsxref("Strict_mode", "non-strict mode", "",
+*   `thisArg` {{optional_inline}}
+    *   : The value to use as `this` when calling `func`.
+        > **Note:** In certain cases, `thisArg` may not be the actual value seen by
+        > the method.
+        >
+        > If the method is a function in
+        > {{jsxref("Strict_mode", "non-strict mode", "",
         1)}},
-    > {{jsxref("Global_Objects/null", "null")}} and
-    > {{jsxref("Global_Objects/undefined", "undefined")}} will
-    > be replaced with the global object, and primitive values will be converted
-    > to objects.
-- <code><var>arg1</var>, <var>arg2</var>,
-  ...<var>argN</var></code> {{optional_inline}}
-  - : Arguments for the function.
+        > {{jsxref("Global_Objects/null", "null")}} and
+        > {{jsxref("Global_Objects/undefined", "undefined")}} will
+        > be replaced with the global object, and primitive values will be converted
+        > to objects.
+*   <code><var>arg1</var>, <var>arg2</var>,
+    ...<var>argN</var></code> {{optional_inline}}
+    *   : Arguments for the function.
 
 ### Return value
 
@@ -181,6 +181,6 @@ display.call(); // Cannot read the property of 'sData' of undefined
 
 ## See also
 
-- {{jsxref("Function.prototype.bind()")}}
-- {{jsxref("Function.prototype.apply()")}}
-- [Introduction to Object-Oriented JavaScript](/en-US/docs/Learn/JavaScript/Objects)
+*   {{jsxref("Function.prototype.bind()")}}
+*   {{jsxref("Function.prototype.apply()")}}
+*   [Introduction to Object-Oriented JavaScript](/en-US/docs/Learn/JavaScript/Objects)

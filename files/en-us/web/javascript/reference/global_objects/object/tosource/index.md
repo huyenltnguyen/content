@@ -29,17 +29,17 @@ A string representing the source code of the object.
 
 The `toSource()` method returns the following values:
 
-- For the built-in {{jsxref("Object")}} object, `toSource()` returns the
-  following string indicating that the source code is not available:
+*   For the built-in {{jsxref("Object")}} object, `toSource()` returns the
+    following string indicating that the source code is not available:
 
-  ```js
-    function Object() {
-        [native code]
-    }
+    ```js
+      function Object() {
+          [native code]
+      }
     ```
 
-- For instances of {{jsxref("Object")}}, `toSource()` returns a string
-  representing the source code.
+*   For instances of {{jsxref("Object")}}, `toSource()` returns a string
+    representing the source code.
 
 You can call `toSource()` while debugging to examine the contents of an object.
 
@@ -63,23 +63,23 @@ console.log(new Person('Joe').toSource()); // ---> new Person("Joe")
 
 Each core JavaScript type has its own `toSource()` method. These objects are:
 
-- {{jsxref("Array.prototype.toSource()")}} —
-  {{jsxref("Array")}} object.
-- {{jsxref("Boolean.prototype.toSource()")}} —
-  {{jsxref("Boolean")}} object.
-- {{jsxref("Date.prototype.toSource()")}} —
-  {{jsxref("Date")}} object.
-- {{jsxref("Function.prototype.toSource()")}} —
-  {{jsxref("Function")}} object.
-- {{jsxref("Number.prototype.toSource()")}} —
-  {{jsxref("Number")}} object.
-- {{jsxref("RegExp.prototype.toSource()")}} —
-  {{jsxref("RegExp")}} object.
-- {{jsxref("String.prototype.toSource()")}} —
-  {{jsxref("String")}} object.
-- {{jsxref("Symbol.prototype.toSource()")}} —
-  {{jsxref("Symbol")}} object.
-- `Math.toSource()` — Returns the String "Math".
+*   {{jsxref("Array.prototype.toSource()")}} —
+    {{jsxref("Array")}} object.
+*   {{jsxref("Boolean.prototype.toSource()")}} —
+    {{jsxref("Boolean")}} object.
+*   {{jsxref("Date.prototype.toSource()")}} —
+    {{jsxref("Date")}} object.
+*   {{jsxref("Function.prototype.toSource()")}} —
+    {{jsxref("Function")}} object.
+*   {{jsxref("Number.prototype.toSource()")}} —
+    {{jsxref("Number")}} object.
+*   {{jsxref("RegExp.prototype.toSource()")}} —
+    {{jsxref("RegExp")}} object.
+*   {{jsxref("String.prototype.toSource()")}} —
+    {{jsxref("String")}} object.
+*   {{jsxref("Symbol.prototype.toSource()")}} —
+    {{jsxref("Symbol")}} object.
+*   `Math.toSource()` — Returns the String "Math".
 
 ### Limitations on cyclical objects
 
@@ -141,4 +141,4 @@ Not part of any standard.
 
 ## See also
 
-- {{jsxref("Object.prototype.toString()")}}
+*   {{jsxref("Object.prototype.toString()")}}

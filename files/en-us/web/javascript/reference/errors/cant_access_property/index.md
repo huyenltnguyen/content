@@ -63,5 +63,5 @@ if (typeof foo !== 'undefined') {
 
 ## See also
 
-- {{jsxref("undefined")}}
-- {{jsxref("null")}}
+*   {{jsxref("undefined")}}
+*   {{jsxref("null")}}

@@ -43,6 +43,6 @@ dataview.buffer; // ArrayBuffer { byteLength: 8 }
 
 ## See also
 
-- {{jsxref("DataView")}}
-- {{jsxref("ArrayBuffer")}}
-- {{jsxref("SharedArrayBuffer")}}
+*   {{jsxref("DataView")}}
+*   {{jsxref("ArrayBuffer")}}
+*   {{jsxref("SharedArrayBuffer")}}

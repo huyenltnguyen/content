@@ -16,7 +16,9 @@ property.
 
 ## Syntax
 
-<pre class="brush: js"><var>arguments</var>[Symbol.iterator]()</pre>
+```js
+arguments[Symbol.iterator]()
+```
 
 ## Examples
 
@@ -43,4 +45,4 @@ f('w', 'y', 'k', 'o', 'p');
 
 ## See also
 
-- {{jsxref("Array.prototype.values()")}}
+*   {{jsxref("Array.prototype.values()")}}

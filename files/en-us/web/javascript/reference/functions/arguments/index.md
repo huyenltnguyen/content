@@ -11,10 +11,9 @@ browser-compat: javascript.functions.arguments
 ---
 {{JSSidebar("Functions")}}
 
-<span class="summary"><strong><code>arguments</code></strong> is an
-<code>Array</code>-like object accessible inside
-<a href="/en-US/docs/Web/JavaScript/Guide/Functions">functions</a> that contains
-the values of the arguments passed to that function.</span>
+**`arguments`** is an `Array`-like object accessible inside
+[functions](/en-US/docs/Web/JavaScript/Guide/Functions) that contains the values
+of the arguments passed to that function.
 
 {{EmbedInteractiveExample("pages/js/functions-arguments.html")}}
 
@@ -118,15 +117,15 @@ console.log(typeof arguments[0]); // returns the type of the first argument
 
 ## Properties
 
-- {{jsxref("Functions/arguments/callee", "arguments.callee")}}
-  - : Reference to the currently executing function that the arguments belong
-    to. Forbidden in strict mode.
-- {{jsxref("Functions/arguments/length", "arguments.length")}}
-  - : The number of arguments that were passed to the function.
-- {{jsxref("Functions/arguments/@@iterator", "arguments[@@iterator]")}}
-  - : Returns a new
-    {{jsxref("Array/@@iterator", "Array iterator", "", 0)}}
-    object that contains the values for each index in `arguments`.
+*   {{jsxref("Functions/arguments/callee", "arguments.callee")}}
+    *   : Reference to the currently executing function that the arguments belong
+        to. Forbidden in strict mode.
+*   {{jsxref("Functions/arguments/length", "arguments.length")}}
+    *   : The number of arguments that were passed to the function.
+*   {{jsxref("Functions/arguments/@@iterator", "arguments[@@iterator]")}}
+    *   : Returns a new
+        {{jsxref("Array/@@iterator", "Array iterator", "", 0)}}
+        object that contains the values for each index in `arguments`.
 
 ## Examples
 
@@ -285,5 +284,5 @@ func(); // undefined
 
 ## See also
 
-- {{JSxRef("Function")}}
-- [Rest parameters](/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+*   {{JSxRef("Function")}}
+*   [Rest parameters](/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)

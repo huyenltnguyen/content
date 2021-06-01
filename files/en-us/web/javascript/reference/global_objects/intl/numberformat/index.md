@@ -21,26 +21,26 @@ The **`Intl.NumberFormat`** object enables language-sensitive number formatting.
 
 ## Constructor
 
-- {{jsxref("Intl/NumberFormat/NumberFormat", "Intl.NumberFormat()")}}
-  - : Creates a new `NumberFormat` object.
+*   {{jsxref("Intl/NumberFormat/NumberFormat", "Intl.NumberFormat()")}}
+    *   : Creates a new `NumberFormat` object.
 
 ## Static methods
 
-- {{jsxref("Intl/NumberFormat/supportedLocalesOf", "Intl.NumberFormat.supportedLocalesOf()")}}
-  - : Returns an array containing those of the provided locales that are
-    supported without having to fall back to the runtime's default locale.
+*   {{jsxref("Intl/NumberFormat/supportedLocalesOf", "Intl.NumberFormat.supportedLocalesOf()")}}
+    *   : Returns an array containing those of the provided locales that are
+        supported without having to fall back to the runtime's default locale.
 
 ## Instance methods
 
-- {{jsxref("Intl/NumberFormat/format", "Intl.NumberFormat.prototype.format()")}}
-  - : Getter function that formats a number according to the locale and
-    formatting options of this {{jsxref("Intl/NumberFormat")}} object.
-- {{jsxref("Intl/NumberFormat/formatToParts", "Intl.NumberFormat.prototype.formatToParts()")}}
-  - : Returns an {{jsxref("Array")}} of objects representing the number
-    string in parts that can be used for custom locale-aware formatting.
-- {{jsxref("Intl/NumberFormat/resolvedOptions", "Intl.NumberFormat.prototype.resolvedOptions()")}}
-  - : Returns a new object with properties reflecting the locale and collation
-    options computed during initialization of the object.
+*   {{jsxref("Intl/NumberFormat/format", "Intl.NumberFormat.prototype.format()")}}
+    *   : Getter function that formats a number according to the locale and
+        formatting options of this {{jsxref("Intl/NumberFormat")}} object.
+*   {{jsxref("Intl/NumberFormat/formatToParts", "Intl.NumberFormat.prototype.formatToParts()")}}
+    *   : Returns an {{jsxref("Array")}} of objects representing the number
+        string in parts that can be used for custom locale-aware formatting.
+*   {{jsxref("Intl/NumberFormat/resolvedOptions", "Intl.NumberFormat.prototype.resolvedOptions()")}}
+    *   : Returns a new object with properties reflecting the locale and collation
+        options computed during initialization of the object.
 
 ## Examples
 
@@ -139,4 +139,4 @@ console.log((16).toLocaleString('en-GB', {
 
 ## See also
 
-- {{jsxref("Intl")}}
+*   {{jsxref("Intl")}}

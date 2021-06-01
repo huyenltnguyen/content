@@ -29,13 +29,15 @@ immediately reject upon any of them rejecting.
 
 ## Syntax
 
-<pre class="brush: js"><var>Promise</var>.allSettled(<var>iterable</var>);</pre>
+```js
+Promise.allSettled(iterable);
+```
 
 ### Parameters
 
-- `iterable`
-  - : An [iterable](/en-US/docs/Web/JavaScript/Guide/iterable) object, such as
-    an {{jsxref("Array")}}, in which each member is a `Promise`.
+*   `iterable`
+    *   : An [iterable](/en-US/docs/Web/JavaScript/Guide/iterable) object, such as
+        an {{jsxref("Array")}}, in which each member is a `Promise`.
 
 ### Return value
 
@@ -85,10 +87,10 @@ Promise.allSettled([
 
 ## See also
 
-- A polyfill of `Promise.allSettled` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
-- [Promises](/en-US/docs/Archive/Add-ons/Techniques/Promises)
-- [Using promises](/en-US/docs/Web/JavaScript/Guide/Using_promises)
-- [Graceful asynchronous programming with promises](/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
-- {{jsxref("Promise")}}
-- {{jsxref("Promise.all()")}}
+*   A polyfill of `Promise.allSettled` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
+*   [Promises](/en-US/docs/Archive/Add-ons/Techniques/Promises)
+*   [Using promises](/en-US/docs/Web/JavaScript/Guide/Using_promises)
+*   [Graceful asynchronous programming with promises](/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
+*   {{jsxref("Promise")}}
+*   {{jsxref("Promise.all()")}}

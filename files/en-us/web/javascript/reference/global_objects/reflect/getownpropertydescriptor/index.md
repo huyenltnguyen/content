@@ -12,8 +12,7 @@ browser-compat: javascript.builtins.Reflect.getOwnPropertyDescriptor
 ---
 {{JSRef}}
 
-<span class="seoSummary">The static
-<strong><code>Reflect.getOwnPropertyDescriptor()</code></strong> method is
+<span class="seoSummary">The static <strong><code>Reflect.getOwnPropertyDescriptor()</code></strong> method is
 similar to {{jsxref("Object.getOwnPropertyDescriptor()")}}. It
 returns a property descriptor of the given property if it exists on the object,
 {{jsxref("undefined")}} otherwise.</span>
@@ -22,15 +21,16 @@ returns a property descriptor of the given property if it exists on the object,
 
 ## Syntax
 
-<pre class="brush: js">Reflect.getOwnPropertyDescriptor(<var>target</var>, <var>propertyKey</var>)
-</pre>
+```js
+Reflect.getOwnPropertyDescriptor(target, propertyKey)
+```
 
 ### Parameters
 
-- `target`
-  - : The target object in which to look for the property.
-- `propertyKey`
-  - : The name of the property to get an own property descriptor for.
+*   `target`
+    *   : The target object in which to look for the property.
+*   `propertyKey`
+    *   : The name of the property to get an own property descriptor for.
 
 ### Return value
 
@@ -90,7 +90,7 @@ Object.getOwnPropertyDescriptor('foo', 0)
 
 ## See also
 
-- A polyfill of `Reflect.getOwnPropertyDescriptor` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
-- {{jsxref("Reflect")}}
-- {{jsxref("Object.getOwnPropertyDescriptor()")}}
+*   A polyfill of `Reflect.getOwnPropertyDescriptor` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-reflect)
+*   {{jsxref("Reflect")}}
+*   {{jsxref("Object.getOwnPropertyDescriptor()")}}

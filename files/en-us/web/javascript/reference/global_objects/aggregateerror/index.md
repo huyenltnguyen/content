@@ -18,15 +18,15 @@ when all promises passed to it reject.
 
 ## Constructor
 
-- {{jsxref("Global_Objects/AggregateError/AggregateError", "AggregateError()")}}
-  - : Creates a new `AggregateError` object.
+*   {{jsxref("Global_Objects/AggregateError/AggregateError", "AggregateError()")}}
+    *   : Creates a new `AggregateError` object.
 
 ## Instance properties
 
-- {{JSxRef("Error.prototype.message", "AggregateError.prototype.message")}}
-  - : Error message, defaults to `""`.
-- {{JSxRef("Error.prototype.name", "AggregateError.prototype.name")}}
-  - : Error name, defaults to `AggregateError`.
+*   {{JSxRef("Error.prototype.message", "AggregateError.prototype.message")}}
+    *   : Error message, defaults to `""`.
+*   {{JSxRef("Error.prototype.name", "AggregateError.prototype.name")}}
+    *   : Error name, defaults to `AggregateError`.
 
 ## Examples
 
@@ -68,7 +68,7 @@ try {
 
 ## See also
 
-- A polyfill of `AggregateError` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
-- {{JSxRef("Error")}}
-- {{JSxRef("Promise.any")}}
+*   A polyfill of `AggregateError` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-promise)
+*   {{JSxRef("Error")}}
+*   {{JSxRef("Promise.any")}}

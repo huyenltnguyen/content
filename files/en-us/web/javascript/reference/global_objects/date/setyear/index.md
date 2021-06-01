@@ -26,8 +26,8 @@ setYear(yearValue)
 
 ### Parameters
 
-- `yearValue`
-  - : An integer.
+*   `yearValue`
+    *   : An integer.
 
 ### Return value
 
@@ -64,7 +64,7 @@ theBigDay.setYear(2000);
 
 ## See also
 
-- {{jsxref("Date.prototype.getFullYear()")}}
-- {{jsxref("Date.prototype.getUTCFullYear()")}}
-- {{jsxref("Date.prototype.setFullYear()")}}
-- {{jsxref("Date.prototype.setUTCFullYear()")}}
+*   {{jsxref("Date.prototype.getFullYear()")}}
+*   {{jsxref("Date.prototype.getUTCFullYear()")}}
+*   {{jsxref("Date.prototype.setFullYear()")}}
+*   {{jsxref("Date.prototype.setUTCFullYear()")}}

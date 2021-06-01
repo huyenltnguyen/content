@@ -18,8 +18,10 @@ right operand and assigns the remainder to the variable.
 
 ## Syntax
 
-<pre class="brush: js"><strong>Operator:</strong> x %= y
-<strong>Meaning:</strong>  x  = x % y</pre>
+```js
+Operator: x %= y
+Meaning:  x  = x % y
+```
 
 ## Examples
 
@@ -44,5 +46,5 @@ bar %= 0     // NaN
 
 ## See also
 
-- [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
-- [Remainder operator](/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
+*   [Assignment operators in the JS guide](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
+*   [Remainder operator](/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)

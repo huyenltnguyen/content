@@ -21,12 +21,14 @@ more robust version of the original, global
 
 ## Syntax
 
-<pre class="brush: js">Number.isNaN(<var>value</var>)</pre>
+```js
+Number.isNaN(value)
+```
 
 ### Parameters
 
-- `value`
-  - : The value to be tested for {{jsxref("NaN")}}.
+*   `value`
+    *   : The value to be tested for {{jsxref("NaN")}}.
 
 ### Return value
 
@@ -39,7 +41,7 @@ Due to both equality operators,
 {{jsxref("Operators", "==",
   "#Equality")}} and
 {{jsxref("Operators", "===", "#Identity")}}, evaluating to `false`
-when checking if {{jsxref("NaN")}} _is_ {{jsxref("NaN")}}, the
+when checking if {{jsxref("NaN")}} *is* {{jsxref("NaN")}}, the
 function `Number.isNaN()` has become necessary. This situation is unlike all
 other possible value comparisons in JavaScript.
 
@@ -96,7 +98,7 @@ Number.isNaN = Number.isNaN || function isNaN(input) {
 
 ## See also
 
-- A polyfill of `Number.isNaN` is available in
-  [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
-- {{jsxref("Number")}}
-- {{jsxref("isNaN", "isNaN()")}}
+*   A polyfill of `Number.isNaN` is available in
+    [`core-js`](https://github.com/zloirock/core-js#ecmascript-number)
+*   {{jsxref("Number")}}
+*   {{jsxref("isNaN", "isNaN()")}}

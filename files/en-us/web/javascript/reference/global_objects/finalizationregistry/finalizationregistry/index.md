@@ -33,9 +33,9 @@ new FinalizationRegistry(function callbackFn(heldValue) { ... })
 
 ### Parameters
 
-- `callback` {{optional_inline}}
-  - : The callback function this registry should use. If provided, this must be
-    a function.
+*   `callback` {{optional_inline}}
+    *   : The callback function this registry should use. If provided, this must be
+        a function.
 
 ## Examples
 
@@ -59,4 +59,4 @@ const registry = new FinalizationRegistry(heldValue => {
 
 ## See also
 
-- {{jsxref("FinalizationRegistry")}}
+*   {{jsxref("FinalizationRegistry")}}

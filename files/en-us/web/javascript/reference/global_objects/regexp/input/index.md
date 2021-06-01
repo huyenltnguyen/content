@@ -48,8 +48,8 @@ RegExp.$_;            // "hi world!"
 
 ## See also
 
-- {{jsxref("RegExp.lastMatch", "RegExp.lastMatch ($&amp;)")}}
-- {{jsxref("RegExp.lastParen", "RegExp.lastParen ($+)")}}
-- {{jsxref("RegExp.leftContext", "RegExp.leftContext ($`)")}}
-- {{jsxref("RegExp.rightContext", "RegExp.rightContext ($')")}}
-- {{jsxref("RegExp.n", "RegExp.$1-$9")}}
+*   {{jsxref("RegExp.lastMatch", "RegExp.lastMatch ($&amp;)")}}
+*   {{jsxref("RegExp.lastParen", "RegExp.lastParen ($+)")}}
+*   {{jsxref("RegExp.leftContext", "RegExp.leftContext ($`)")}}
+*   {{jsxref("RegExp.rightContext", "RegExp.rightContext ($')")}}
+*   {{jsxref("RegExp.n", "RegExp.$1-$9")}}
